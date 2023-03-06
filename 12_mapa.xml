@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rectangle class="fundo">
+	<scrollBox align="client">
+		<flowLayout class="tile" align="top" height="400" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraMapaLayout">
+			<flowLineBreak/>
+
+		<!-- PRIMEIRA LINHA -->
+			<!-- TERCEIRA LINHA -->
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="800" horzAlign="center" lineSpacing="10" margins="{top=5}">
+			
+				<!-- PRIMEIRA COLUNA -->
+				<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
+
+					<!-- IMAGEM -->
+					<flowPart class="tileCarac" height="470" frameStyle="frames/panel3transp/frame.xml" margins="{left = 0, right = 4}">
+						<image align="client" style="proportional" field="imagens.mapa" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+						<label align="bottom" autoSize="true" text="MAPA MUNDI" fontSize="20" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>
+
+				</flowLayout>
+				<flowLineBreak/>
+
+			</flowLayout>
+
+		</flowLayout>
+	</scrollBox>
+</rectangle>

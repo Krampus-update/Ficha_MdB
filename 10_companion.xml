@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rectangle class="fundo">
+	<script> require("common.lua"); </script>
+	<scrollBox align="client">
+		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraCompanionLayout">
+
+			<!-- PARTE SUPERIOR DA COMPANION -->
+			<flowLayout class="oneLineTile" autoHeight="true" minScaledWidth="290" horzAlign="center">
+
+				<!-- NOME DO PERSONAGEM -->
+				<flowPart name="flwNomeCompanion1" minWidth="320" maxWidth="1600" frameStyle="frames/banner/magicGroup.xml" height="175" vertAlign="center" avoidScale="true">
+					<layout align="client" name="layNomeHolderCompanion">
+							<edit name="edtNomeCompanion1" field="nomeCompanion" class="transparente vcenter" fontSize="17" align="client"/>
+							<label margins="{left=3}" name="labNomeCompanion1" align="bottom" text="NOME DO COMPANION" class="tituloCampo" autoSize="true"/>
+					</layout>
+				</flowPart>
+					<!-- GRID DE INFORMACOES SUPERIORES DA COMPANION -->
+						<flowLayout  minWidth="320" maxWidth="1600" name="fraUpperGridCompanion" avoidScale="true" frameStyle="frames/panel4transp/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">
+					<!-- CLASSE; NIVEL; EXPERIÉCIA -->		
+						<upperGridCampo field="classeCompanion" minWidth="100" titulo="CLASSES"/>
+						<upperGridCampo field="niveisCompanion" titulo="NIVEIS"/>
+						<upperGridCampo field="experiencia" titulo="SESSÕES"/>
+					<!-- ORIGEM; REGIÃO; PASSADO -->	
+						<!-- ORIGEM é o equilavente a raça, por exemplo Humano -->
+						<upperGridCampo field="origemCompanion" minWidth="100" titulo="ORIGEM"/>
+						<upperGridCampo field="regiaoCompanion" titulo="REGIÃO"/>
+						<!-- PASSADO é o equilavente a antecedente, por exemplo Sabio -->
+							<upperGridCampo field="antecedenteCompanion" titulo="PASSADO"/>
+					<!-- ALINHAMENTO; DEVOÇÕES; JOGADOR -->	
+						<upperGridCampo field="alinhamentoCompanion" titulo="ALINHAMENTO"/>
+						<!-- ORDEVOÇÕESIGEM é referente o deus que cultua, por exemplo Nimble -->
+						<upperGridCampo field="devocoesCompanion" titulo="DEVOÇÕES"/>
+						<upperGridCampo field="nomeDoJogador" titulo="JOGADOR"/>
+				</flowLayout>
+			</flowLayout>
+			<flowLineBreak/>
+			<!-- SEGUNDA PARTE -->
+			<flowLayout class="oneLineTile" horzAlign="justify" autoHeight="true" avoidScale="true">
+
+				<!-- GRAU DE LEALDADE -->
+				<flowPart minWidth="280" maxWidth="800" height="64" frameStyle="frames/posCaptionEdit1/frame.xml">
+					<edit align="left" class="pericia" field="graudelealdade" width="65"/>
+					<label align="client" text="GRAU DE LEALDADE" margins="{left=10}" class="tituloCampo" horzTextAlign="center"/>
+				</flowPart>
+
+				<!-- CA -->
+				<flowPart minWidth="280" maxWidth="800" height="64" frameStyle="frames/posCaptionEdit2/frame.xml">
+					<edit align="left" class="pericia" field="CACompanion" width="70"/>
+					<label align="client" text="CLASSE DE ARMADURA" textTrimming="none" wordWrap="true" margins="{left=10}" class="tituloCampo" horzTextAlign="center"/>
+				</flowPart>
+			</flowLayout>
+
+			<flowLineBreak/>
+
+			<!-- TERCEIRA PARTE --> 
+			<flowLayout autoHeight="true" class="oneLineTile" minScaledWidth="290" horzAlign="center">
+
+			<!-- ATRIBUTOS -->
+				<flowLayout name="fraLayAtributosCompanion" class="tile" vertAlign="leading" autoHeight="true" minScaledWidth="290" maxControlsPerLine="3" horzAlign="center"
+							lineSpacing="10"
+							margins="{left=2, top=2, right=16, bottom=4}" avoidScale="true">
+
+					<boxAtributo titulo="FORÇA" field="companionforca">
+						{{"Atletismo", "companionatletismo"}}
+					</boxAtributo>
+
+					<boxAtributo titulo="DESTREZA" field="companiondestreza">
+						{{"Acrobacia", "companionacrobacia"},
+						 {"Furtividade", "companionfurtividade"},
+						 {"Prestidigitação", "companionprestidigitacao"}}
+					</boxAtributo>
+
+					<boxAtributo titulo="CONSTITUIÇÃO" field="companionconstituicao">
+						{{"Concentração", "companionconcentracao"},
+						 {"Tolerancia", "companiontolerancia"}}
+					</boxAtributo>
+
+					<boxAtributo titulo="INTELIGÊNCIA" field="companioninteligencia">
+						{{"Arcanismo", "companionarcanismo"},
+						 {"História", "companionhistoria"},
+						 {"Investigação", "companioninvestigacao"},
+						 {"Natureza", "companionnatureza"},
+						 {"Religião", "companionreligiao"}}
+					</boxAtributo>
+
+					<boxAtributo titulo="SABEDORIA" field="companionsabedoria">
+						{{"Adestrar Animais", "companionadestrarAnimais"},
+						 {"Intuição", "companionintuicao"},
+						 {"Medicina", "companionmedicina"},
+						 {"Percepção", "companionpercepcao"},
+						 {"Sobrevivência", "companionsobrevivencia"}}
+					</boxAtributo>
+
+					<boxAtributo titulo="CARISMA" field="companioncarisma">
+						{{"Atuação", "companionatuacao"},
+						 {"Enganação", "companionenganacao"},
+						 {"Intimidação", "companionintimidacao"},
+						 {"Persuasão", "companionpersuasao"}}
+					</boxAtributo>
+				</flowLayout>
+				<!-- segunda coluna -->
+				<flowLayout autoHeight="true" horzAlign="center" vertAlign="leading" class="halfTile" maxControlsPerLine="1">
+
+					<!-- Inspiração e Deslocamento -->
+					<flowLayout minWidth="235" maxWidth="475" autoHeight="true" avoidScale="false" vertAlign="center" horzAlign="justify">
+
+							<!-- INICIATIVA -->
+							<flowPart stepSizes="{105}" minScaledWidth="75" height="120" frameStyle="frames/panel4transp/frame.xml">
+								<button align="top" text="INICIATIVA" height="20" fontSize="9" wordWrap="true" horzTextAlign="center" margins="{left=5, right=5}" textTrimming="none">
+									<event name="onKeyDown"> common.keyDown(sheet, event); </event>
+									<event name="onKeyUp"> common.keyUp(sheet, event); </event>
+									<event name="onClick"> common.onClick(sheet, common.rolaIniciativa, nil, nil, false); </event>
+									<event name="onMenu"> common.onClick(sheet, common.rolaIniciativa, nil, nil, true); </event>
+								</button>
+								<edit align="client" class="atributo transparente" field="iniciativacompanion" fontSize="30"/>
+							</flowPart>
+
+							<!-- DESLOCAMENTO ANDANDO  -->
+							<flowPart stepSizes="{105}" minScaledWidth="75" height="120" frameStyle="frames/panel4transp/frame.xml">
+								<label align="top" text="DESLOCAMENTO ANDANDO" height="20" fontSize="9" wordWrap="true" horzTextAlign="center" textTrimming="none"/>
+								<edit align="client" class="atributo transparente" field="deslocamento andando Companion" fontSize="30"/>
+							</flowPart>
+
+							<!-- DESLOCAMENTO NADO -->
+							<flowPart stepSizes="{105}" minScaledWidth="75" height="120" frameStyle="frames/panel4transp/frame.xml">
+								<label align="top" text="DESLOCAMENTO NADO / ESCALADA" height="20" fontSize="9" wordWrap="true" horzTextAlign="center" textTrimming="none"/>
+								<edit align="client" class="atributo transparente" field="deslocamento nado Companion" fontSize="30"/>
+							</flowPart>
+
+							<!-- DESLOCAMENTO VOO -->
+							<flowPart stepSizes="{105}" minScaledWidth="75" height="120" frameStyle="frames/panel4transp/frame.xml">
+								<label align="top" text="DESLOCAMENTO VOO" height="20" fontSize="9" wordWrap="true" horzTextAlign="center" textTrimming="none"/>
+								<edit align="client" class="atributo transparente" field="deslocamento voo Companion" fontSize="30"/>
+							</flowPart>
+
+					</flowLayout>
+
+					<!-- PONTOS DE VIDA -->
+					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="175" margins="{left=2, right=2, top=4, bottom=8}">
+						<!-- PONTOS DE VIDA REAIS -->
+						<frame align="client" frameStyle="frames/panel5/topPanel.xml" margins="{left = 4, right = 4, bottom=4}">
+							<layout align="client" margins="{left=5,right=5,bottom=5,top=5}">
+								<flowLayout align="top" horzAlign="center" height="30" margins="{bottom=5}">
+									<script> require("descanso.lua"); </script>
+									<button text="Short Rest" width="75" onClick="descanso.curto(sheet);"/>
+									<button text="Long Rest" width="75" onClick="descanso.longo(sheet);"/>
+									<button text="Dano" width="50" onClick="levarDano(sheet);"/>
+									<colorComboBox align="right" margins="{left=2}" width="50" field="barColor2" useAlpha="false"/>
+										<dataLink field="barColor2" defaultValue="Red">
+											<event name="onChange">
+												self.progBar2:setColor(sheet.barColor2);
+											</event>
+										</dataLink>
+								</flowLayout>
+								<layout align="client" margins="{bottom=10}">
+									<layout align="right" width="81">
+										<edit  align="left" margins="{left=2}" width="35" field="PV2" type="number" min="0"/>
+										<label align="left" margins="{left=2}" text="/" width="5"/>
+										<edit  align="left" margins="{left=2}" width="35" field="PVmax2" type="number" min="0"/>
+									</layout>
+
+										<progressBar name="progBar2" align="client" color="yellow" min="0" field="PV2" fieldMax="PVmax2"/>
+
+									<label align="client" autoSize="true" text="PONTOS DE VIDA" fontSize="11" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" margins="{top=1,left=1}" fontColor="black"/>
+									<label align="client" autoSize="true" text="PONTOS DE VIDA" fontSize="11" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+									<dataLink fields="{'PV2', 'PVmax2'}"><event name="onChange">
+										local jogador = Firecast.getPersonagemDe(sheet).dono;
+										if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(1, sheet.PV2, sheet.PVmax2); end;
+									</event></dataLink>
+								</layout>
+								<dataLink field="descansoLongo">
+									<event name="onChange">
+										if sheet.descansoLongo then sheet.PV2 = sheet.PVmax2; end;
+									</event>
+								</dataLink>
+							</layout>
+						</frame>
+
+						<!-- PONTOS DE VIDA TEMPORARIOS -->
+						<frame align="bottom" height="70" frameStyle="frames/panel5/bottomPanel.xml" margins="{left = 4, right = 4}">
+							<edit align="client" field="PVTemporario" class="transparente" margins="{top=2}" horzTextAlign="center" vertTextAlign="center" fontSize="36" fontStyle="bold" type="number"/>
+							<label align="bottom" autoSize="true" text="PONTOS DE VIDA TEMPORÁRIOS" fontSize="11" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+						</frame>
+					</flowPart>
+
+					<!-- TESTES DE VIDA -->
+					<flowLayout autoHeight="true" minWidth="235" maxWidth="475" minScaledWidth="235" horzAlign="justify">
+
+						<!-- DANO DO COMPANION -->
+						<flowPart frameStyle="frames/panel4transp/frame.xml" stepSizes="{130, 150, 160}" height="100">
+							<layout align="top" height="25">
+								<label align="left" class="tituloCampo" autoSize="true" text="ACERTO:" textTrimming="none" wordWrap="false" fontSize="10" horzTextAlign="trailing"/>
+								<layout align="client" margins="{left=5, right=3}">
+									<edit align="client" class="transparente" field="DadosDeVidaTotalcompanion" vertTextAlign="center" horzTextAlign="center"/>
+									<horzLine align="bottom" strokeColor="gray"/>
+								</layout>
+							</layout>
+							<edit align="client" field="DadosDeVidacompanion" class="transparente" margins="{top=2}" horzTextAlign="center" vertTextAlign="center" fontSize="21"/>
+							<label align="bottom" autoSize="true" text="DANO DO COMPANION" fontSize="11" vertTextAlign="center" horzTextAlign="center"/>
+						</flowPart>
+
+						<!-- TESTES CONTRA MORTE -->
+						<flowPart frameStyle="frames/panel4transp/frame.xml" stepSizes="{170, 170}" height="100">
+							<layout align="top" height="25" margins="{left=2}">
+								<label align="client" autoSize="true" fontSize="10" text="SUCESSOS" wordWrap="false" vertTextAlign="center" horzTextAlign="trailing" margins="{right=6}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.s0" margins="{right=2}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.s1" margins="{right=2}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.s2" margins="{right=6}"/>
+							</layout>
+
+							<layout align="top" height="25" margins="{left=2, top = 4}">
+								<label align="client" autoSize="true" fontSize="10" text="FALHAS" vertTextAlign="center" horzTextAlign="trailing" margins="{right=6}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.f0" margins="{right=2}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.f1" margins="{right=2}"/>
+								<dndCheckBox align="right" width="25" field="testesContraMorte.f2" margins="{right=6}"/>
+							</layout>
+							<button align="bottom" text="TESTE CONTRA MORTE" fontSize="11" vertTextAlign="center" horzTextAlign="center">
+								<event name="onKeyDown"> common.keyDown(sheet, event); </event>
+								<event name="onKeyUp"> common.keyUp(sheet, event); </event>
+								<event name="onClick"> common.onClick(sheet, common.deathSave, nil, nil, false); </event>
+								<event name="onMenu"> common.onClick(sheet, common.deathSave, nil, nil, true); </event>
+							</button>		
+						</flowPart>
+					</flowLayout>
+				</flowLayout>
+			</flowLayout>
+		</flowLayout>
+	</scrollBox>
+</rectangle>
