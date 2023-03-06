@@ -29,6 +29,10 @@ local function constructNew_frmMagiaItemSemCheckbox()
     obj:setName("frmMagiaItemSemCheckbox");
 
 
+			
+
+
+
 			local function askForDelete()
 				Dialogs.confirmYesNo("Deseja realmente apagar este item?",
 									 function (confirmado)
@@ -68,6 +72,10 @@ local function constructNew_frmMagiaItemSemCheckbox()
 				if mensagem ~= "" then mesa.chat:enviarMensagem(mensagem); end;
 			end;
 			
+
+
+
+		
 
 
     obj.edtNome = GUI.fromHandle(_obj_newObject("edit"));

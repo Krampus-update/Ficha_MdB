@@ -32,23 +32,7 @@ local function constructNew_frmMdB()
     obj:setName("frmMdB");
     obj:setTheme("dark");
 
-
-		local function mudaNick(nome)
-			if not nome then return; end;
-			if not sheet then return; end;
-
-			if not common.isMainChar(sheet) then return; end;
-			if not common.isMyChar(sheet) then return; end;
-
-			local mesa = common.getMesa(sheet);
-			if not mesa then return; end;
-
-			if not mesa.meuJogador.isJogador then return; end;
-			if not (mesa.meuJogador.nick ~= nome) then return; end;
-
-			mesa.chat:enviarMensagem("/nick " .. nome);
-		end;
-	
+ require('mudaNick.lua') 
 
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -658,6 +642,10 @@ local function constructNew_frmMdB()
     obj.cbProfforca:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -687,6 +675,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -757,6 +749,10 @@ local function constructNew_frmMdB()
     obj.cbProfatletismo:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -786,6 +782,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -856,6 +856,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiaforca:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -885,6 +889,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1029,6 +1037,10 @@ local function constructNew_frmMdB()
     obj.cbProfdestreza:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1058,6 +1070,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1128,6 +1144,10 @@ local function constructNew_frmMdB()
     obj.cbProfacrobacia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1157,6 +1177,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1227,6 +1251,10 @@ local function constructNew_frmMdB()
     obj.cbProffurtividade:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1256,6 +1284,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1326,6 +1358,10 @@ local function constructNew_frmMdB()
     obj.cbProfiniciativa:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1355,6 +1391,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1425,6 +1465,10 @@ local function constructNew_frmMdB()
     obj.cbProfprestidigitacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1454,6 +1498,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1524,6 +1572,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiadestreza:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1553,6 +1605,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1697,6 +1753,10 @@ local function constructNew_frmMdB()
     obj.cbProfconstituicao:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1726,6 +1786,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1796,6 +1860,10 @@ local function constructNew_frmMdB()
     obj.cbProfconcentracao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1825,6 +1893,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1895,6 +1967,10 @@ local function constructNew_frmMdB()
     obj.cbProftolerancia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -1924,6 +2000,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -1994,6 +2074,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiaconstituicao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2023,6 +2107,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2167,6 +2255,10 @@ local function constructNew_frmMdB()
     obj.cbProfinteligencia:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2196,6 +2288,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2266,6 +2362,10 @@ local function constructNew_frmMdB()
     obj.cbProfarcanismo:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2295,6 +2395,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2365,6 +2469,10 @@ local function constructNew_frmMdB()
     obj.cbProfhistoria:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2394,6 +2502,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2464,6 +2576,10 @@ local function constructNew_frmMdB()
     obj.cbProfnatureza:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2493,6 +2609,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2563,6 +2683,10 @@ local function constructNew_frmMdB()
     obj.cbProfreligiao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2592,6 +2716,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2662,6 +2790,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiainteligencia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2691,6 +2823,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2835,6 +2971,10 @@ local function constructNew_frmMdB()
     obj.cbProfsabedoria:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2864,6 +3004,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -2934,6 +3078,10 @@ local function constructNew_frmMdB()
     obj.cbProfadestrarAnimais:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -2963,6 +3111,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3033,6 +3185,10 @@ local function constructNew_frmMdB()
     obj.cbProfmedicina:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3062,6 +3218,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink70 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3132,6 +3292,10 @@ local function constructNew_frmMdB()
     obj.cbProfpercepcao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3161,6 +3325,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink73 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3231,6 +3399,10 @@ local function constructNew_frmMdB()
     obj.cbProfsobrevivencia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3260,6 +3432,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink76 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3330,6 +3506,10 @@ local function constructNew_frmMdB()
     obj.cbProfbedoria:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3359,6 +3539,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink79 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3503,6 +3687,10 @@ local function constructNew_frmMdB()
     obj.cbProfcarisma:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3532,6 +3720,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink83 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3602,6 +3794,10 @@ local function constructNew_frmMdB()
     obj.cbProfatuacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3631,6 +3827,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink86 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3701,6 +3901,10 @@ local function constructNew_frmMdB()
     obj.cbProfenganacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3730,6 +3934,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink89 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3800,6 +4008,10 @@ local function constructNew_frmMdB()
     obj.cbProfintimidacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3829,6 +4041,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink92 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3899,6 +4115,10 @@ local function constructNew_frmMdB()
     obj.cbProfpersuasao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -3928,6 +4148,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink95 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -3998,6 +4222,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiacarisma:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -4027,6 +4255,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink98 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -4171,6 +4403,10 @@ local function constructNew_frmMdB()
     obj.cbProfsanidade:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -4200,6 +4436,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink102 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -4270,6 +4510,10 @@ local function constructNew_frmMdB()
     obj.cbProfnidade:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -4299,6 +4543,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink105 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -4443,6 +4691,10 @@ local function constructNew_frmMdB()
     obj.cbProfhonra:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -4472,6 +4724,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink109 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -4542,6 +4798,10 @@ local function constructNew_frmMdB()
     obj.cbProfpericiahonra:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -4571,6 +4831,10 @@ local function constructNew_frmMdB()
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink112 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -5666,12 +5930,20 @@ local function constructNew_frmMdB()
     obj.fraEquipamentoLayout:setVertAlign("leading");
 
 
+				
+
+
+
 					local function recalcularTamanhoEquipsDefesa()
 						self.flwPartEquipDefense.height = self.rclEquipsDefense.height + self.labEquipDefense.height +
 														self.layEquipDefenseBottom.height + 
 														self.flwPartEquipDefense.padding.top + self.flwPartEquipDefense.padding.bottom + 7;
 					end;
 				
+
+
+
+			
 
 
     obj.flwPartEquipAttack = GUI.fromHandle(_obj_newObject("flowPart"));
@@ -8304,7 +8576,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab7:setTitle("Importar");
     obj.tab7:setName("tab7");
 
+ 
+
+
  require("import5etools.lua"); 
+
+
+ 
 
 
     obj.scrollBox5 = GUI.fromHandle(_obj_newObject("scrollBox"));
@@ -8329,7 +8607,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBoxImportSource:setAlign("top");
     obj.comboBoxImportSource:setField("importSourceName");
 
+ 
+
+
  dload.getSourceNames(self, "spells", function(items) self.comboBoxImportSource:setItems(items); end); 
+
+
+ 
 
 
     obj.dataLink130 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -8565,18 +8849,6 @@ self.upperGridMagicBox3._RecalcSize();
     obj.frmGerenciador02:setAlign("client");
     obj.frmGerenciador02:setTheme("dark");
     obj.frmGerenciador02:setMargins({top=1});
-
-
-		local function write(str)
-            local mesa = Firecast.getMesaDe(sheet);
-            if str then
-                mesa.activeChat:escrever(str);
-            else
-                mesa.activeChat:escrever("String nula");
-            end;
-        end;
-		
-
 
     obj.scrollBox7 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox7:setParent(obj.frmGerenciador02);
@@ -12077,6 +12349,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionforca:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12106,6 +12382,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12176,6 +12456,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionatletismo:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12205,6 +12489,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12349,6 +12637,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompaniondestreza:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12378,6 +12670,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12448,6 +12744,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionacrobacia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12477,6 +12777,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12547,6 +12851,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionfurtividade:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12576,6 +12884,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12646,6 +12958,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionprestidigitacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12675,6 +12991,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12819,6 +13139,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionconstituicao:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12848,6 +13172,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -12918,6 +13246,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionconcentracao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -12947,6 +13279,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13017,6 +13353,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompaniontolerancia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13046,6 +13386,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13190,6 +13534,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanioninteligencia:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13219,6 +13567,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13289,6 +13641,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionarcanismo:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13318,6 +13674,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13388,6 +13748,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionhistoria:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13417,6 +13781,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13487,6 +13855,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanioninvestigacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13516,6 +13888,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13586,6 +13962,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionnatureza:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13615,6 +13995,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13685,6 +14069,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionreligiao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13714,6 +14102,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13858,6 +14250,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionsabedoria:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13887,6 +14283,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13957,6 +14357,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionadestrarAnimais:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -13986,6 +14390,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14056,6 +14464,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionintuicao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14085,6 +14497,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14155,6 +14571,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionmedicina:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14184,6 +14604,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14254,6 +14678,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionpercepcao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14283,6 +14711,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14353,6 +14785,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionsobrevivencia:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14382,6 +14818,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14526,6 +14966,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanioncarisma:setImageUnchecked("images/checkbox2_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14555,6 +14999,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14625,6 +15073,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionatuacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14654,6 +15106,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14724,6 +15180,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionenganacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14753,6 +15213,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14823,6 +15287,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionintimidacao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14852,6 +15320,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -14922,6 +15394,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.cbProfcompanionpersuasao:setImageUnchecked("images/checkbox1_unchecked.png");
 
 
+				
+
+
+
 					function updateCbVisibility(pericia)
 						if sheet ~= nil then
 							if common.pericias[pericia] ~= nil then
@@ -14951,6 +15427,10 @@ self.upperGridMagicBox3._RecalcSize();
 						end;
 					end;
 				
+
+
+
+			
 
 
     obj.dataLink229 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -15759,6 +16239,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.MultiVerso_MdB:setTheme("dark");
 
 
+		
+
+
+
 			local function recursiveFindControls(node, controlsList)
 				local children = node:getChildren();
 				if node:getClassName() == "recordList" then
@@ -15822,6 +16306,10 @@ self.upperGridMagicBox3._RecalcSize();
 			end;
 
 		
+
+
+	
+	
 
 
     obj.scrollBox10 = GUI.fromHandle(_obj_newObject("scrollBox"));
@@ -16190,7 +16678,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            mudaNick(sheet.nome);
+            mudaNick(sheet.nome,sheet);
         end, obj);
 
     obj._e_event1 = obj.dataLink2:addEventListener("onChange",
@@ -19470,7 +19958,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event437 = obj.button58:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local meses = ndb.getChildNodes(sheet.listaMeses);
+            								local meses = NDB.getChildNodes(sheet.listaMeses);
             								local num = #meses + 1;
             
             								local node = self.rclMeses:append();
@@ -19509,7 +19997,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event440 = obj.button59:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local semana = ndb.getChildNodes(sheet.listaSemana);
+            								local semana = NDB.getChildNodes(sheet.listaSemana);
             								local num = #semana + 1;
             
             								local node = self.rclSemana:append();
@@ -19562,7 +20050,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event444 = obj.button61:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local estacao = ndb.getChildNodes(sheet.listaEstacoes);
+            								local estacao = NDB.getChildNodes(sheet.listaEstacoes);
             								local num = #estacao + 1;
             
             								local node = self.rclEstacoes:append();
@@ -19600,9 +20088,8 @@ self.upperGridMagicBox3._RecalcSize();
             							local ano = math.floor((tempo-1) / anoDuracao) + 1;
             							tempoRestante = tempoRestante - ((ano-1) * anoDuracao);
             
-            							local meses = ndb.getChildNodes(sheet.listaMeses);
+            							local meses = NDB.getChildNodes(sheet.listaMeses);
             							local mes = #meses;
-            							local mesDuracao = 1;
             							local search = true;
             							local aux = 0;
             							for i=1, #meses, 1 do
@@ -19650,10 +20137,10 @@ self.upperGridMagicBox3._RecalcSize();
             							local desvioSemana = tonumber(sheet.desvioSemana) or 0;
             							local desvioEstacao = tonumber(sheet.desvioEstacao) or 0;
             
-            							local meses = ndb.getChildNodes(sheet.listaMeses);
-            							local semana = ndb.getChildNodes(sheet.listaSemana); 
-            							local estacoes = ndb.getChildNodes(sheet.listaEstacoes); 
-            							local luas = ndb.getChildNodes(sheet.listaLuas); 
+            							local meses = NDB.getChildNodes(sheet.listaMeses);
+            							local semana = NDB.getChildNodes(sheet.listaSemana); 
+            							local estacoes = NDB.getChildNodes(sheet.listaEstacoes); 
+            							local luas = NDB.getChildNodes(sheet.listaLuas); 
             
             							-- processing date
             
@@ -19708,8 +20195,7 @@ self.upperGridMagicBox3._RecalcSize();
             							-- defining temperatures
             							math.randomseed(tempo + seed);
             
-            							local mimTemp = 0;
-            							local maxTemp = 0;
+            							local maxTemp = nil;
             
             							 -- The average temperature
             							local temperatures = {tonumber(estacoes[estacao].temperatura_1) or 0,tonumber(estacoes[estacao].temperatura_2) or 0,tonumber(estacoes[estacao].temperatura_3) or 0,tonumber(estacoes[estacao].temperatura_4) or 0,tonumber(estacoes[estacao].temperatura_5) or 0};
@@ -19724,7 +20210,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
             
             							local MinMaxTemps = {tonumber(estacoes[estacao].temperaturaMM_1) or 1,tonumber(estacoes[estacao].temperaturaMM_2) or 1,tonumber(estacoes[estacao].temperaturaMM_3) or 1,tonumber(estacoes[estacao].temperaturaMM_4) or 1,tonumber(estacoes[estacao].temperaturaMM_5) or 1};
-            							local selected = 5;
+            							local selected = nil;
             
             							-- Define temperature range to be used
             							local sensacao = "";

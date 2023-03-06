@@ -32,9 +32,17 @@ local function constructNew_frmItemFormula()
   require("common.lua"); 
 
 
+ 
+		
+
+
 
 			require("common.lua");
 		
+
+
+
+	
 
 
     obj.flowLayout1 = GUI.fromHandle(_obj_newObject("flowLayout"));

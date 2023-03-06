@@ -4,9 +4,7 @@
 	<import file="templates.xml"/>
 
 
-	<script>
-		require('mudaNick.lua')
-	</script>
+	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
 

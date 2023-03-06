@@ -31,6 +31,9 @@ local function constructNew_frmNivelDeMagia()
   require("common.lua"); 
 
 
+ 
+
+
 
 		require("common.lua");
 		local function atualizaTamanho()
@@ -44,6 +47,9 @@ local function constructNew_frmNivelDeMagia()
 			self:setHeight(h1 + h2);
 		end;
 	
+
+
+ 
 
 
     obj.outLay = GUI.fromHandle(_obj_newObject("flowLayout"));

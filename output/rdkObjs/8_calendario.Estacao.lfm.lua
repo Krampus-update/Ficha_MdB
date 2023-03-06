@@ -133,10 +133,10 @@ local function constructNew_frmGerenciador02_ESTACAO()
 
     obj._e_event2 = obj.button2:addEventListener("onClick",
         function (_)
-            dialogs.confirmOkCancel("Tem certeza que quer apagar esse mês?",
+            Dialogs.confirmOkCancel("Tem certeza que quer apagar esse mês?",
             					function (confirmado)
             						if confirmado then
-            							ndb.deleteNode(sheet);
+            							NDB.deleteNode(sheet);
             						end;
             				end);
         end, obj);
@@ -144,9 +144,9 @@ local function constructNew_frmGerenciador02_ESTACAO()
     obj._e_event3 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet~= nil then
-            					local node = ndb.getRoot(sheet);
+            					local node = NDB.getRoot(sheet);
             					local mod = 0;
-            					local nodes = ndb.getChildNodes(node.listaEstacoes); 
+            					local nodes = NDB.getChildNodes(node.listaEstacoes); 
             					for i=1, #nodes, 1 do
             						nodes[i].cumulativo = mod;
             						mod = mod + (tonumber(nodes[i].dias) or 0);

@@ -105,10 +105,10 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj._e_event1 = obj.button2:addEventListener("onClick",
         function (_)
-            dialogs.confirmOkCancel("Tem certeza que quer apagar esse mês?",
+            Dialogs.confirmOkCancel("Tem certeza que quer apagar esse mês?",
             					function (confirmado)
             						if confirmado then
-            							ndb.deleteNode(sheet);
+            							NDB.deleteNode(sheet);
             						end;
             				end);
         end, obj);

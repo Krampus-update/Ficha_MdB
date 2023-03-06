@@ -31,18 +31,6 @@ local function constructNew_frmGerenciador02()
     obj:setTheme("dark");
     obj:setMargins({top=1});
 
-
-		local function write(str)
-            local mesa = Firecast.getMesaDe(sheet);
-            if str then
-                mesa.activeChat:escrever(str);
-            else
-                mesa.activeChat:escrever("String nula");
-            end;
-        end;
-		
-
-
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj);
     obj.scrollBox1:setAlign("client");
@@ -2649,7 +2637,7 @@ local function constructNew_frmGerenciador02()
     obj._e_event8 = obj.button1:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local meses = ndb.getChildNodes(sheet.listaMeses);
+            								local meses = NDB.getChildNodes(sheet.listaMeses);
             								local num = #meses + 1;
             
             								local node = self.rclMeses:append();
@@ -2688,7 +2676,7 @@ local function constructNew_frmGerenciador02()
     obj._e_event11 = obj.button2:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local semana = ndb.getChildNodes(sheet.listaSemana);
+            								local semana = NDB.getChildNodes(sheet.listaSemana);
             								local num = #semana + 1;
             
             								local node = self.rclSemana:append();
@@ -2741,7 +2729,7 @@ local function constructNew_frmGerenciador02()
     obj._e_event15 = obj.button4:addEventListener("onClick",
         function (_)
             if sheet~=nil then
-            								local estacao = ndb.getChildNodes(sheet.listaEstacoes);
+            								local estacao = NDB.getChildNodes(sheet.listaEstacoes);
             								local num = #estacao + 1;
             
             								local node = self.rclEstacoes:append();
@@ -2779,9 +2767,8 @@ local function constructNew_frmGerenciador02()
             							local ano = math.floor((tempo-1) / anoDuracao) + 1;
             							tempoRestante = tempoRestante - ((ano-1) * anoDuracao);
             
-            							local meses = ndb.getChildNodes(sheet.listaMeses);
+            							local meses = NDB.getChildNodes(sheet.listaMeses);
             							local mes = #meses;
-            							local mesDuracao = 1;
             							local search = true;
             							local aux = 0;
             							for i=1, #meses, 1 do
@@ -2829,10 +2816,10 @@ local function constructNew_frmGerenciador02()
             							local desvioSemana = tonumber(sheet.desvioSemana) or 0;
             							local desvioEstacao = tonumber(sheet.desvioEstacao) or 0;
             
-            							local meses = ndb.getChildNodes(sheet.listaMeses);
-            							local semana = ndb.getChildNodes(sheet.listaSemana); 
-            							local estacoes = ndb.getChildNodes(sheet.listaEstacoes); 
-            							local luas = ndb.getChildNodes(sheet.listaLuas); 
+            							local meses = NDB.getChildNodes(sheet.listaMeses);
+            							local semana = NDB.getChildNodes(sheet.listaSemana); 
+            							local estacoes = NDB.getChildNodes(sheet.listaEstacoes); 
+            							local luas = NDB.getChildNodes(sheet.listaLuas); 
             
             							-- processing date
             
@@ -2887,8 +2874,7 @@ local function constructNew_frmGerenciador02()
             							-- defining temperatures
             							math.randomseed(tempo + seed);
             
-            							local mimTemp = 0;
-            							local maxTemp = 0;
+            							local maxTemp = nil;
             
             							 -- The average temperature
             							local temperatures = {tonumber(estacoes[estacao].temperatura_1) or 0,tonumber(estacoes[estacao].temperatura_2) or 0,tonumber(estacoes[estacao].temperatura_3) or 0,tonumber(estacoes[estacao].temperatura_4) or 0,tonumber(estacoes[estacao].temperatura_5) or 0};
@@ -2903,7 +2889,7 @@ local function constructNew_frmGerenciador02()
             							end;
             
             							local MinMaxTemps = {tonumber(estacoes[estacao].temperaturaMM_1) or 1,tonumber(estacoes[estacao].temperaturaMM_2) or 1,tonumber(estacoes[estacao].temperaturaMM_3) or 1,tonumber(estacoes[estacao].temperaturaMM_4) or 1,tonumber(estacoes[estacao].temperaturaMM_5) or 1};
-            							local selected = 5;
+            							local selected = nil;
             
             							-- Define temperature range to be used
             							local sensacao = "";
