@@ -5231,7 +5231,7 @@ require('mudaNick.lua')
     obj.label25 = GUI.fromHandle(_obj_newObject("label"));
     obj.label25:setParent(obj.layout59);
     obj.label25:setLeft(10);
-    obj.label25:setTop(40);
+    obj.label25:setTop(38);
     obj.label25:setWidth(90);
     obj.label25:setHeight(20);
     obj.label25:setText("ALTURA");
@@ -5242,7 +5242,7 @@ require('mudaNick.lua')
     obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit21:setParent(obj.layout59);
     obj.edit21:setLeft(100);
-    obj.edit21:setTop(40);
+    obj.edit21:setTop(38);
     obj.edit21:setWidth(200);
     obj.edit21:setHeight(25);
     obj.edit21:setField("caracteristicas.altura");
@@ -5300,7 +5300,7 @@ require('mudaNick.lua')
     obj.label28 = GUI.fromHandle(_obj_newObject("label"));
     obj.label28:setParent(obj.layout59);
     obj.label28:setLeft(310);
-    obj.label28:setTop(40);
+    obj.label28:setTop(38);
     obj.label28:setWidth(90);
     obj.label28:setHeight(20);
     obj.label28:setText("SEXO");
@@ -5311,7 +5311,7 @@ require('mudaNick.lua')
     obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit24:setParent(obj.layout59);
     obj.edit24:setLeft(410);
-    obj.edit24:setTop(40);
+    obj.edit24:setTop(38);
     obj.edit24:setWidth(200);
     obj.edit24:setHeight(25);
     obj.edit24:setField("caracteristicas.sexo");
@@ -5369,7 +5369,7 @@ require('mudaNick.lua')
     obj.label31 = GUI.fromHandle(_obj_newObject("label"));
     obj.label31:setParent(obj.layout59);
     obj.label31:setLeft(610);
-    obj.label31:setTop(40);
+    obj.label31:setTop(38);
     obj.label31:setWidth(90);
     obj.label31:setHeight(20);
     obj.label31:setText("PELE");
@@ -5380,7 +5380,7 @@ require('mudaNick.lua')
     obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit27:setParent(obj.layout59);
     obj.edit27:setLeft(700);
-    obj.edit27:setTop(40);
+    obj.edit27:setTop(38);
     obj.edit27:setWidth(200);
     obj.edit27:setHeight(25);
     obj.edit27:setField("caracteristicas.pele");
@@ -5438,7 +5438,7 @@ require('mudaNick.lua')
     obj.label34 = GUI.fromHandle(_obj_newObject("label"));
     obj.label34:setParent(obj.layout59);
     obj.label34:setLeft(900);
-    obj.label34:setTop(40);
+    obj.label34:setTop(38);
     obj.label34:setWidth(90);
     obj.label34:setHeight(20);
     obj.label34:setText("REGIÃO");
@@ -5449,7 +5449,7 @@ require('mudaNick.lua')
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout59);
     obj.edit30:setLeft(980);
-    obj.edit30:setTop(40);
+    obj.edit30:setTop(38);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
     obj.edit30:setField("caracteristicas.regiao");
