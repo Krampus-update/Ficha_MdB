@@ -5522,7 +5522,6 @@ require('mudaNick.lua')
     obj.label37:setAlign("bottom");
     obj.label37:setAutoSize(true);
     obj.label37:setText("APARENCIA");
-    obj.label37:setFontSize(20);
     obj.label37:setVertTextAlign("center");
     obj.label37:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label37, "fontStyle",  "bold");
@@ -5580,15 +5579,6 @@ require('mudaNick.lua')
     obj.label39:setText("HISTORIA");
     obj.label39:setName("label39");
     obj.label39:setFontColor("white");
-
-    obj.button48 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button48:setParent(obj.layout60);
-    obj.button48:setLeft(720);
-    obj.button48:setTop(1);
-    obj.button48:setWidth(100);
-    obj.button48:setHeight(20);
-    obj.button48:setText("Copiar Antigo");
-    obj.button48:setName("button48");
 
     obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
     obj.richEdit1:setParent(obj.layout60);
@@ -5686,11 +5676,11 @@ require('mudaNick.lua')
     obj.rclEquips:setHitTest(true);
     obj.rclEquips:setMargins({top=5, bottom=5});
 
-    obj.button49 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button49:setParent(obj.layEquipAttackLeft);
-    obj.button49:setAlign("bottom");
-    obj.button49:setText("Novo Item");
-    obj.button49:setName("button49");
+    obj.button48 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button48:setParent(obj.layEquipAttackLeft);
+    obj.button48:setAlign("bottom");
+    obj.button48:setText("Novo Item");
+    obj.button48:setName("button48");
 
     obj.dataEquipAttackDetails = GUI.fromHandle(_obj_newObject("dataScopeBox"));
     obj.dataEquipAttackDetails:setParent(obj.layout61);
@@ -5746,11 +5736,11 @@ require('mudaNick.lua')
     obj.rclProps:setField("listaPropriedades");
     obj.rclProps:setTemplateForm("frmText");
 
-    obj.button50 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button50:setParent(obj.layEquipPropriedades);
-    obj.button50:setAlign("bottom");
-    obj.button50:setText("Adicionar Propriedade");
-    obj.button50:setName("button50");
+    obj.button49 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button49:setParent(obj.layEquipPropriedades);
+    obj.button49:setAlign("bottom");
+    obj.button49:setText("Adicionar Propriedade");
+    obj.button49:setName("button49");
 
     obj.dataLink119 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink119:setParent(obj.layEquipPropriedades);
@@ -6151,12 +6141,12 @@ require('mudaNick.lua')
     obj.rclOptsAttack:setField("optsAttack");
     obj.rclOptsAttack:setTemplateForm("frmOptAtaque");
 
-    obj.button51 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button51:setParent(obj.layPrincipal);
-    obj.button51:setAlign("bottom");
-    obj.button51:setText("Add Attack Option");
-    obj.button51:setMargins({left=200, right=200});
-    obj.button51:setName("button51");
+    obj.button50 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button50:setParent(obj.layPrincipal);
+    obj.button50:setAlign("bottom");
+    obj.button50:setText("Add Attack Option");
+    obj.button50:setMargins({left=200, right=200});
+    obj.button50:setName("button50");
 
     obj.dataLink121 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink121:setParent(obj.layPrincipal);
@@ -7900,12 +7890,12 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label80:setName("label80");
     obj.label80:setFontColor("white");
 
-    obj.button52 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button52:setParent(obj.layout72);
-    obj.button52:setAlign("right");
-    obj.button52:setWidth(140);
-    obj.button52:setText("+ Adicionar Fórmula");
-    obj.button52:setName("button52");
+    obj.button51 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button51:setParent(obj.layout72);
+    obj.button51:setAlign("right");
+    obj.button51:setWidth(140);
+    obj.button51:setText("+ Adicionar Fórmula");
+    obj.button51:setName("button51");
 
     obj.popupEditDanoLegenda = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.popupEditDanoLegenda:setParent(obj.popupEditDanoRect);
@@ -8031,12 +8021,12 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label84:setName("label84");
     obj.label84:setFontColor("white");
 
-    obj.button53 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button53:setParent(obj.layout73);
-    obj.button53:setAlign("right");
-    obj.button53:setWidth(140);
-    obj.button53:setText("+ Adicionar Fórmula");
-    obj.button53:setName("button53");
+    obj.button52 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button52:setParent(obj.layout73);
+    obj.button52:setAlign("right");
+    obj.button52:setWidth(140);
+    obj.button52:setText("+ Adicionar Fórmula");
+    obj.button52:setName("button52");
 
     obj.popupEditFormulaLegenda = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.popupEditFormulaLegenda:setParent(obj.popupEditFormulaRect);
@@ -8381,14 +8371,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink134:setFields({'importSourcePath', 'importLevel', 'importClass'});
     obj.dataLink134:setName("dataLink134");
 
-    obj.button54 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button54:setParent(obj.scrollBox5);
-    obj.button54:setText("Importar");
-    obj.button54:setName("button54");
-    obj.button54:setAlign("top");
-    obj.button54:setFontSize(16.0);
-    obj.button54:setHeight(30);
-    lfm_setPropAsString(obj.button54, "fontStyle",  "bold");
+    obj.button53 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button53:setParent(obj.scrollBox5);
+    obj.button53:setText("Importar");
+    obj.button53:setName("button53");
+    obj.button53:setAlign("top");
+    obj.button53:setFontSize(16.0);
+    obj.button53:setHeight(30);
+    lfm_setPropAsString(obj.button53, "fontStyle",  "bold");
 
     obj.dataLink135 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink135:setParent(obj.rectangle5);
@@ -8418,17 +8408,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.scrollBox6:setAlign("client");
     obj.scrollBox6:setName("scrollBox6");
 
+    obj.button54 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button54:setParent(obj.scrollBox6);
+    obj.button54:setText("Add");
+    obj.button54:setAlign("top");
+    obj.button54:setName("button54");
+
     obj.button55 = GUI.fromHandle(_obj_newObject("button"));
     obj.button55:setParent(obj.scrollBox6);
-    obj.button55:setText("Add");
+    obj.button55:setText("Import from Macro");
     obj.button55:setAlign("top");
     obj.button55:setName("button55");
-
-    obj.button56 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button56:setParent(obj.scrollBox6);
-    obj.button56:setText("Import from Macro");
-    obj.button56:setAlign("top");
-    obj.button56:setName("button56");
 
     obj.rclContadores = GUI.fromHandle(_obj_newObject("recordList"));
     obj.rclContadores:setParent(obj.scrollBox6);
@@ -8466,17 +8456,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rclFichaPropriedades:setField("propriedades.rcl");
     obj.rclFichaPropriedades:setTemplateForm("frmFichaPropriedade");
 
+    obj.button56 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button56:setParent(obj.rectangle25);
+    obj.button56:setAlign("bottom");
+    obj.button56:setText("Resetar Propriedades");
+    obj.button56:setName("button56");
+
     obj.button57 = GUI.fromHandle(_obj_newObject("button"));
     obj.button57:setParent(obj.rectangle25);
     obj.button57:setAlign("bottom");
-    obj.button57:setText("Resetar Propriedades");
+    obj.button57:setText("Adicionar Propriedade");
     obj.button57:setName("button57");
-
-    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button58:setParent(obj.rectangle25);
-    obj.button58:setAlign("bottom");
-    obj.button58:setText("Adicionar Propriedade");
-    obj.button58:setName("button58");
 
     obj.tab10 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab10:setParent(obj.pgcPrincipal);
@@ -10695,15 +10685,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout76:setHeight(25);
     obj.layout76:setName("layout76");
 
-    obj.button59 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button59:setParent(obj.layout76);
-    obj.button59:setLeft(10);
-    obj.button59:setTop(0);
-    obj.button59:setWidth(25);
-    obj.button59:setHeight(25);
-    obj.button59:setText("+");
-    obj.button59:setHint("Novo");
-    obj.button59:setName("button59");
+    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button58:setParent(obj.layout76);
+    obj.button58:setLeft(10);
+    obj.button58:setTop(0);
+    obj.button58:setWidth(25);
+    obj.button58:setHeight(25);
+    obj.button58:setText("+");
+    obj.button58:setHint("Novo");
+    obj.button58:setName("button58");
 
     obj.label125 = GUI.fromHandle(_obj_newObject("label"));
     obj.label125:setParent(obj.layout76);
@@ -10821,15 +10811,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout78:setHeight(25);
     obj.layout78:setName("layout78");
 
-    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button60:setParent(obj.layout78);
-    obj.button60:setLeft(10);
-    obj.button60:setTop(0);
-    obj.button60:setWidth(25);
-    obj.button60:setHeight(25);
-    obj.button60:setText("+");
-    obj.button60:setHint("Novo");
-    obj.button60:setName("button60");
+    obj.button59 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button59:setParent(obj.layout78);
+    obj.button59:setLeft(10);
+    obj.button59:setTop(0);
+    obj.button59:setWidth(25);
+    obj.button59:setHeight(25);
+    obj.button59:setText("+");
+    obj.button59:setHint("Novo");
+    obj.button59:setName("button59");
 
     obj.label130 = GUI.fromHandle(_obj_newObject("label"));
     obj.label130:setParent(obj.layout78);
@@ -10915,15 +10905,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout80:setHeight(25);
     obj.layout80:setName("layout80");
 
-    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button61:setParent(obj.layout80);
-    obj.button61:setLeft(10);
-    obj.button61:setTop(0);
-    obj.button61:setWidth(25);
-    obj.button61:setHeight(25);
-    obj.button61:setText("+");
-    obj.button61:setHint("Novo");
-    obj.button61:setName("button61");
+    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button60:setParent(obj.layout80);
+    obj.button60:setLeft(10);
+    obj.button60:setTop(0);
+    obj.button60:setWidth(25);
+    obj.button60:setHeight(25);
+    obj.button60:setText("+");
+    obj.button60:setHint("Novo");
+    obj.button60:setName("button60");
 
     obj.celestialBt = GUI.fromHandle(_obj_newObject("button"));
     obj.celestialBt:setParent(obj.layout80);
@@ -11009,15 +10999,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout82:setHeight(25);
     obj.layout82:setName("layout82");
 
-    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button62:setParent(obj.layout82);
-    obj.button62:setLeft(10);
-    obj.button62:setTop(0);
-    obj.button62:setWidth(25);
-    obj.button62:setHeight(25);
-    obj.button62:setText("+");
-    obj.button62:setHint("Novo");
-    obj.button62:setName("button62");
+    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button61:setParent(obj.layout82);
+    obj.button61:setLeft(10);
+    obj.button61:setTop(0);
+    obj.button61:setWidth(25);
+    obj.button61:setHeight(25);
+    obj.button61:setText("+");
+    obj.button61:setHint("Novo");
+    obj.button61:setName("button61");
 
     obj.label138 = GUI.fromHandle(_obj_newObject("label"));
     obj.label138:setParent(obj.layout82);
@@ -11190,15 +11180,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit111:setFontSize(15);
     obj.edit111:setFontColor("white");
 
-    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button63:setParent(obj.layout83);
-    obj.button63:setLeft(40);
-    obj.button63:setTop(55);
-    obj.button63:setWidth(100);
-    obj.button63:setHeight(25);
-    obj.button63:setText("Avançar");
-    obj.button63:setHint("Avança X dias no Calandario.");
-    obj.button63:setName("button63");
+    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button62:setParent(obj.layout83);
+    obj.button62:setLeft(40);
+    obj.button62:setTop(55);
+    obj.button62:setWidth(100);
+    obj.button62:setHeight(25);
+    obj.button62:setText("Avançar");
+    obj.button62:setHint("Avança X dias no Calandario.");
+    obj.button62:setName("button62");
 
     obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit112:setParent(obj.layout83);
@@ -12085,13 +12075,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout86:setFrameRegion("titulo");
     obj.layout86:setName("layout86");
 
-    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button64:setParent(obj.layout86);
-    obj.button64:setAlign("client");
-    obj.button64:setText("FORÇA");
-    obj.button64:setVertTextAlign("center");
-    obj.button64:setHorzTextAlign("center");
-    obj.button64:setName("button64");
+    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button63:setParent(obj.layout86);
+    obj.button63:setAlign("client");
+    obj.button63:setText("FORÇA");
+    obj.button63:setVertTextAlign("center");
+    obj.button63:setHorzTextAlign("center");
+    obj.button63:setName("button63");
 
     obj.flowLayout34 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout34:setParent(obj.flowPart234);
@@ -12189,13 +12179,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine39:setAlign("bottom");
     obj.horzLine39:setName("horzLine39");
 
-    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button65:setParent(obj.flowPart235);
-    obj.button65:setAlign("left");
-    obj.button65:setText("Resistência");
-    obj.button65:setWidth(122);
-    obj.button65:setMargins({left=2});
-    obj.button65:setName("button65");
+    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button64:setParent(obj.flowPart235);
+    obj.button64:setAlign("left");
+    obj.button64:setText("Resistência");
+    obj.button64:setWidth(122);
+    obj.button64:setMargins({left=2});
+    obj.button64:setName("button64");
 
     obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink152:setParent(obj.flowLayout34);
@@ -12288,13 +12278,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine40:setAlign("bottom");
     obj.horzLine40:setName("horzLine40");
 
-    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button66:setParent(obj.flowPart236);
-    obj.button66:setAlign("left");
-    obj.button66:setText("Atletismo");
-    obj.button66:setWidth(122);
-    obj.button66:setMargins({left=2});
-    obj.button66:setName("button66");
+    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button65:setParent(obj.flowPart236);
+    obj.button65:setAlign("left");
+    obj.button65:setText("Atletismo");
+    obj.button65:setWidth(122);
+    obj.button65:setMargins({left=2});
+    obj.button65:setName("button65");
 
     obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink155:setParent(obj.flowLayout34);
@@ -12357,13 +12347,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout90:setFrameRegion("titulo");
     obj.layout90:setName("layout90");
 
-    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button67:setParent(obj.layout90);
-    obj.button67:setAlign("client");
-    obj.button67:setText("DESTREZA");
-    obj.button67:setVertTextAlign("center");
-    obj.button67:setHorzTextAlign("center");
-    obj.button67:setName("button67");
+    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button66:setParent(obj.layout90);
+    obj.button66:setAlign("client");
+    obj.button66:setText("DESTREZA");
+    obj.button66:setVertTextAlign("center");
+    obj.button66:setHorzTextAlign("center");
+    obj.button66:setName("button66");
 
     obj.flowLayout35 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout35:setParent(obj.flowPart237);
@@ -12461,13 +12451,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine41:setAlign("bottom");
     obj.horzLine41:setName("horzLine41");
 
-    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button68:setParent(obj.flowPart238);
-    obj.button68:setAlign("left");
-    obj.button68:setText("Resistência");
-    obj.button68:setWidth(122);
-    obj.button68:setMargins({left=2});
-    obj.button68:setName("button68");
+    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button67:setParent(obj.flowPart238);
+    obj.button67:setAlign("left");
+    obj.button67:setText("Resistência");
+    obj.button67:setWidth(122);
+    obj.button67:setMargins({left=2});
+    obj.button67:setName("button67");
 
     obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink159:setParent(obj.flowLayout35);
@@ -12560,13 +12550,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine42:setAlign("bottom");
     obj.horzLine42:setName("horzLine42");
 
-    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button69:setParent(obj.flowPart239);
-    obj.button69:setAlign("left");
-    obj.button69:setText("Acrobacia");
-    obj.button69:setWidth(122);
-    obj.button69:setMargins({left=2});
-    obj.button69:setName("button69");
+    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button68:setParent(obj.flowPart239);
+    obj.button68:setAlign("left");
+    obj.button68:setText("Acrobacia");
+    obj.button68:setWidth(122);
+    obj.button68:setMargins({left=2});
+    obj.button68:setName("button68");
 
     obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink162:setParent(obj.flowLayout35);
@@ -12659,13 +12649,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine43:setAlign("bottom");
     obj.horzLine43:setName("horzLine43");
 
-    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button70:setParent(obj.flowPart240);
-    obj.button70:setAlign("left");
-    obj.button70:setText("Furtividade");
-    obj.button70:setWidth(122);
-    obj.button70:setMargins({left=2});
-    obj.button70:setName("button70");
+    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button69:setParent(obj.flowPart240);
+    obj.button69:setAlign("left");
+    obj.button69:setText("Furtividade");
+    obj.button69:setWidth(122);
+    obj.button69:setMargins({left=2});
+    obj.button69:setName("button69");
 
     obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink165:setParent(obj.flowLayout35);
@@ -12758,13 +12748,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine44:setAlign("bottom");
     obj.horzLine44:setName("horzLine44");
 
-    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button71:setParent(obj.flowPart241);
-    obj.button71:setAlign("left");
-    obj.button71:setText("Prestidigitação");
-    obj.button71:setWidth(122);
-    obj.button71:setMargins({left=2});
-    obj.button71:setName("button71");
+    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button70:setParent(obj.flowPart241);
+    obj.button70:setAlign("left");
+    obj.button70:setText("Prestidigitação");
+    obj.button70:setWidth(122);
+    obj.button70:setMargins({left=2});
+    obj.button70:setName("button70");
 
     obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink168:setParent(obj.flowLayout35);
@@ -12827,13 +12817,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout96:setFrameRegion("titulo");
     obj.layout96:setName("layout96");
 
-    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button72:setParent(obj.layout96);
-    obj.button72:setAlign("client");
-    obj.button72:setText("CONSTITUIÇÃO");
-    obj.button72:setVertTextAlign("center");
-    obj.button72:setHorzTextAlign("center");
-    obj.button72:setName("button72");
+    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button71:setParent(obj.layout96);
+    obj.button71:setAlign("client");
+    obj.button71:setText("CONSTITUIÇÃO");
+    obj.button71:setVertTextAlign("center");
+    obj.button71:setHorzTextAlign("center");
+    obj.button71:setName("button71");
 
     obj.flowLayout36 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout36:setParent(obj.flowPart242);
@@ -12931,13 +12921,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine45:setAlign("bottom");
     obj.horzLine45:setName("horzLine45");
 
-    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button73:setParent(obj.flowPart243);
-    obj.button73:setAlign("left");
-    obj.button73:setText("Resistência");
-    obj.button73:setWidth(122);
-    obj.button73:setMargins({left=2});
-    obj.button73:setName("button73");
+    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button72:setParent(obj.flowPart243);
+    obj.button72:setAlign("left");
+    obj.button72:setText("Resistência");
+    obj.button72:setWidth(122);
+    obj.button72:setMargins({left=2});
+    obj.button72:setName("button72");
 
     obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink172:setParent(obj.flowLayout36);
@@ -13030,13 +13020,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine46:setAlign("bottom");
     obj.horzLine46:setName("horzLine46");
 
-    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button74:setParent(obj.flowPart244);
-    obj.button74:setAlign("left");
-    obj.button74:setText("Concentração");
-    obj.button74:setWidth(122);
-    obj.button74:setMargins({left=2});
-    obj.button74:setName("button74");
+    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button73:setParent(obj.flowPart244);
+    obj.button73:setAlign("left");
+    obj.button73:setText("Concentração");
+    obj.button73:setWidth(122);
+    obj.button73:setMargins({left=2});
+    obj.button73:setName("button73");
 
     obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink175:setParent(obj.flowLayout36);
@@ -13129,13 +13119,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine47:setAlign("bottom");
     obj.horzLine47:setName("horzLine47");
 
-    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button75:setParent(obj.flowPart245);
-    obj.button75:setAlign("left");
-    obj.button75:setText("Tolerancia");
-    obj.button75:setWidth(122);
-    obj.button75:setMargins({left=2});
-    obj.button75:setName("button75");
+    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button74:setParent(obj.flowPart245);
+    obj.button74:setAlign("left");
+    obj.button74:setText("Tolerancia");
+    obj.button74:setWidth(122);
+    obj.button74:setMargins({left=2});
+    obj.button74:setName("button74");
 
     obj.dataLink178 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink178:setParent(obj.flowLayout36);
@@ -13198,13 +13188,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout101:setFrameRegion("titulo");
     obj.layout101:setName("layout101");
 
-    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button76:setParent(obj.layout101);
-    obj.button76:setAlign("client");
-    obj.button76:setText("INTELIGÊNCIA");
-    obj.button76:setVertTextAlign("center");
-    obj.button76:setHorzTextAlign("center");
-    obj.button76:setName("button76");
+    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button75:setParent(obj.layout101);
+    obj.button75:setAlign("client");
+    obj.button75:setText("INTELIGÊNCIA");
+    obj.button75:setVertTextAlign("center");
+    obj.button75:setHorzTextAlign("center");
+    obj.button75:setName("button75");
 
     obj.flowLayout37 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout37:setParent(obj.flowPart246);
@@ -13302,13 +13292,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine48:setAlign("bottom");
     obj.horzLine48:setName("horzLine48");
 
-    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button77:setParent(obj.flowPart247);
-    obj.button77:setAlign("left");
-    obj.button77:setText("Resistência");
-    obj.button77:setWidth(122);
-    obj.button77:setMargins({left=2});
-    obj.button77:setName("button77");
+    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button76:setParent(obj.flowPart247);
+    obj.button76:setAlign("left");
+    obj.button76:setText("Resistência");
+    obj.button76:setWidth(122);
+    obj.button76:setMargins({left=2});
+    obj.button76:setName("button76");
 
     obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink182:setParent(obj.flowLayout37);
@@ -13401,13 +13391,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine49:setAlign("bottom");
     obj.horzLine49:setName("horzLine49");
 
-    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button78:setParent(obj.flowPart248);
-    obj.button78:setAlign("left");
-    obj.button78:setText("Arcanismo");
-    obj.button78:setWidth(122);
-    obj.button78:setMargins({left=2});
-    obj.button78:setName("button78");
+    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button77:setParent(obj.flowPart248);
+    obj.button77:setAlign("left");
+    obj.button77:setText("Arcanismo");
+    obj.button77:setWidth(122);
+    obj.button77:setMargins({left=2});
+    obj.button77:setName("button77");
 
     obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink185:setParent(obj.flowLayout37);
@@ -13500,13 +13490,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine50:setAlign("bottom");
     obj.horzLine50:setName("horzLine50");
 
-    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button79:setParent(obj.flowPart249);
-    obj.button79:setAlign("left");
-    obj.button79:setText("História");
-    obj.button79:setWidth(122);
-    obj.button79:setMargins({left=2});
-    obj.button79:setName("button79");
+    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button78:setParent(obj.flowPart249);
+    obj.button78:setAlign("left");
+    obj.button78:setText("História");
+    obj.button78:setWidth(122);
+    obj.button78:setMargins({left=2});
+    obj.button78:setName("button78");
 
     obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink188:setParent(obj.flowLayout37);
@@ -13599,13 +13589,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine51:setAlign("bottom");
     obj.horzLine51:setName("horzLine51");
 
-    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button80:setParent(obj.flowPart250);
-    obj.button80:setAlign("left");
-    obj.button80:setText("Investigação");
-    obj.button80:setWidth(122);
-    obj.button80:setMargins({left=2});
-    obj.button80:setName("button80");
+    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button79:setParent(obj.flowPart250);
+    obj.button79:setAlign("left");
+    obj.button79:setText("Investigação");
+    obj.button79:setWidth(122);
+    obj.button79:setMargins({left=2});
+    obj.button79:setName("button79");
 
     obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink191:setParent(obj.flowLayout37);
@@ -13698,13 +13688,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine52:setAlign("bottom");
     obj.horzLine52:setName("horzLine52");
 
-    obj.button81 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button81:setParent(obj.flowPart251);
-    obj.button81:setAlign("left");
-    obj.button81:setText("Natureza");
-    obj.button81:setWidth(122);
-    obj.button81:setMargins({left=2});
-    obj.button81:setName("button81");
+    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button80:setParent(obj.flowPart251);
+    obj.button80:setAlign("left");
+    obj.button80:setText("Natureza");
+    obj.button80:setWidth(122);
+    obj.button80:setMargins({left=2});
+    obj.button80:setName("button80");
 
     obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink194:setParent(obj.flowLayout37);
@@ -13797,13 +13787,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine53:setAlign("bottom");
     obj.horzLine53:setName("horzLine53");
 
-    obj.button82 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button82:setParent(obj.flowPart252);
-    obj.button82:setAlign("left");
-    obj.button82:setText("Religião");
-    obj.button82:setWidth(122);
-    obj.button82:setMargins({left=2});
-    obj.button82:setName("button82");
+    obj.button81 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button81:setParent(obj.flowPart252);
+    obj.button81:setAlign("left");
+    obj.button81:setText("Religião");
+    obj.button81:setWidth(122);
+    obj.button81:setMargins({left=2});
+    obj.button81:setName("button81");
 
     obj.dataLink197 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink197:setParent(obj.flowLayout37);
@@ -13866,13 +13856,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout109:setFrameRegion("titulo");
     obj.layout109:setName("layout109");
 
-    obj.button83 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button83:setParent(obj.layout109);
-    obj.button83:setAlign("client");
-    obj.button83:setText("SABEDORIA");
-    obj.button83:setVertTextAlign("center");
-    obj.button83:setHorzTextAlign("center");
-    obj.button83:setName("button83");
+    obj.button82 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button82:setParent(obj.layout109);
+    obj.button82:setAlign("client");
+    obj.button82:setText("SABEDORIA");
+    obj.button82:setVertTextAlign("center");
+    obj.button82:setHorzTextAlign("center");
+    obj.button82:setName("button82");
 
     obj.flowLayout38 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout38:setParent(obj.flowPart253);
@@ -13970,13 +13960,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine54:setAlign("bottom");
     obj.horzLine54:setName("horzLine54");
 
-    obj.button84 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button84:setParent(obj.flowPart254);
-    obj.button84:setAlign("left");
-    obj.button84:setText("Resistência");
-    obj.button84:setWidth(122);
-    obj.button84:setMargins({left=2});
-    obj.button84:setName("button84");
+    obj.button83 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button83:setParent(obj.flowPart254);
+    obj.button83:setAlign("left");
+    obj.button83:setText("Resistência");
+    obj.button83:setWidth(122);
+    obj.button83:setMargins({left=2});
+    obj.button83:setName("button83");
 
     obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink201:setParent(obj.flowLayout38);
@@ -14069,13 +14059,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine55:setAlign("bottom");
     obj.horzLine55:setName("horzLine55");
 
-    obj.button85 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button85:setParent(obj.flowPart255);
-    obj.button85:setAlign("left");
-    obj.button85:setText("Adestrar Animais");
-    obj.button85:setWidth(122);
-    obj.button85:setMargins({left=2});
-    obj.button85:setName("button85");
+    obj.button84 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button84:setParent(obj.flowPart255);
+    obj.button84:setAlign("left");
+    obj.button84:setText("Adestrar Animais");
+    obj.button84:setWidth(122);
+    obj.button84:setMargins({left=2});
+    obj.button84:setName("button84");
 
     obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink204:setParent(obj.flowLayout38);
@@ -14168,13 +14158,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine56:setAlign("bottom");
     obj.horzLine56:setName("horzLine56");
 
-    obj.button86 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button86:setParent(obj.flowPart256);
-    obj.button86:setAlign("left");
-    obj.button86:setText("Intuição");
-    obj.button86:setWidth(122);
-    obj.button86:setMargins({left=2});
-    obj.button86:setName("button86");
+    obj.button85 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button85:setParent(obj.flowPart256);
+    obj.button85:setAlign("left");
+    obj.button85:setText("Intuição");
+    obj.button85:setWidth(122);
+    obj.button85:setMargins({left=2});
+    obj.button85:setName("button85");
 
     obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink207:setParent(obj.flowLayout38);
@@ -14267,13 +14257,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine57:setAlign("bottom");
     obj.horzLine57:setName("horzLine57");
 
-    obj.button87 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button87:setParent(obj.flowPart257);
-    obj.button87:setAlign("left");
-    obj.button87:setText("Medicina");
-    obj.button87:setWidth(122);
-    obj.button87:setMargins({left=2});
-    obj.button87:setName("button87");
+    obj.button86 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button86:setParent(obj.flowPart257);
+    obj.button86:setAlign("left");
+    obj.button86:setText("Medicina");
+    obj.button86:setWidth(122);
+    obj.button86:setMargins({left=2});
+    obj.button86:setName("button86");
 
     obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink210:setParent(obj.flowLayout38);
@@ -14366,13 +14356,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine58:setAlign("bottom");
     obj.horzLine58:setName("horzLine58");
 
-    obj.button88 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button88:setParent(obj.flowPart258);
-    obj.button88:setAlign("left");
-    obj.button88:setText("Percepção");
-    obj.button88:setWidth(122);
-    obj.button88:setMargins({left=2});
-    obj.button88:setName("button88");
+    obj.button87 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button87:setParent(obj.flowPart258);
+    obj.button87:setAlign("left");
+    obj.button87:setText("Percepção");
+    obj.button87:setWidth(122);
+    obj.button87:setMargins({left=2});
+    obj.button87:setName("button87");
 
     obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink213:setParent(obj.flowLayout38);
@@ -14465,13 +14455,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine59:setAlign("bottom");
     obj.horzLine59:setName("horzLine59");
 
-    obj.button89 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button89:setParent(obj.flowPart259);
-    obj.button89:setAlign("left");
-    obj.button89:setText("Sobrevivência");
-    obj.button89:setWidth(122);
-    obj.button89:setMargins({left=2});
-    obj.button89:setName("button89");
+    obj.button88 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button88:setParent(obj.flowPart259);
+    obj.button88:setAlign("left");
+    obj.button88:setText("Sobrevivência");
+    obj.button88:setWidth(122);
+    obj.button88:setMargins({left=2});
+    obj.button88:setName("button88");
 
     obj.dataLink216 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink216:setParent(obj.flowLayout38);
@@ -14534,13 +14524,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layout117:setFrameRegion("titulo");
     obj.layout117:setName("layout117");
 
-    obj.button90 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button90:setParent(obj.layout117);
-    obj.button90:setAlign("client");
-    obj.button90:setText("CARISMA");
-    obj.button90:setVertTextAlign("center");
-    obj.button90:setHorzTextAlign("center");
-    obj.button90:setName("button90");
+    obj.button89 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button89:setParent(obj.layout117);
+    obj.button89:setAlign("client");
+    obj.button89:setText("CARISMA");
+    obj.button89:setVertTextAlign("center");
+    obj.button89:setHorzTextAlign("center");
+    obj.button89:setName("button89");
 
     obj.flowLayout39 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout39:setParent(obj.flowPart260);
@@ -14638,13 +14628,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine60:setAlign("bottom");
     obj.horzLine60:setName("horzLine60");
 
-    obj.button91 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button91:setParent(obj.flowPart261);
-    obj.button91:setAlign("left");
-    obj.button91:setText("Resistência");
-    obj.button91:setWidth(122);
-    obj.button91:setMargins({left=2});
-    obj.button91:setName("button91");
+    obj.button90 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button90:setParent(obj.flowPart261);
+    obj.button90:setAlign("left");
+    obj.button90:setText("Resistência");
+    obj.button90:setWidth(122);
+    obj.button90:setMargins({left=2});
+    obj.button90:setName("button90");
 
     obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink220:setParent(obj.flowLayout39);
@@ -14737,13 +14727,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine61:setAlign("bottom");
     obj.horzLine61:setName("horzLine61");
 
-    obj.button92 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button92:setParent(obj.flowPart262);
-    obj.button92:setAlign("left");
-    obj.button92:setText("Atuação");
-    obj.button92:setWidth(122);
-    obj.button92:setMargins({left=2});
-    obj.button92:setName("button92");
+    obj.button91 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button91:setParent(obj.flowPart262);
+    obj.button91:setAlign("left");
+    obj.button91:setText("Atuação");
+    obj.button91:setWidth(122);
+    obj.button91:setMargins({left=2});
+    obj.button91:setName("button91");
 
     obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink223:setParent(obj.flowLayout39);
@@ -14836,13 +14826,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine62:setAlign("bottom");
     obj.horzLine62:setName("horzLine62");
 
-    obj.button93 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button93:setParent(obj.flowPart263);
-    obj.button93:setAlign("left");
-    obj.button93:setText("Enganação");
-    obj.button93:setWidth(122);
-    obj.button93:setMargins({left=2});
-    obj.button93:setName("button93");
+    obj.button92 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button92:setParent(obj.flowPart263);
+    obj.button92:setAlign("left");
+    obj.button92:setText("Enganação");
+    obj.button92:setWidth(122);
+    obj.button92:setMargins({left=2});
+    obj.button92:setName("button92");
 
     obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink226:setParent(obj.flowLayout39);
@@ -14935,13 +14925,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine63:setAlign("bottom");
     obj.horzLine63:setName("horzLine63");
 
-    obj.button94 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button94:setParent(obj.flowPart264);
-    obj.button94:setAlign("left");
-    obj.button94:setText("Intimidação");
-    obj.button94:setWidth(122);
-    obj.button94:setMargins({left=2});
-    obj.button94:setName("button94");
+    obj.button93 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button93:setParent(obj.flowPart264);
+    obj.button93:setAlign("left");
+    obj.button93:setText("Intimidação");
+    obj.button93:setWidth(122);
+    obj.button93:setMargins({left=2});
+    obj.button93:setName("button93");
 
     obj.dataLink229 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink229:setParent(obj.flowLayout39);
@@ -15034,13 +15024,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.horzLine64:setAlign("bottom");
     obj.horzLine64:setName("horzLine64");
 
-    obj.button95 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button95:setParent(obj.flowPart265);
-    obj.button95:setAlign("left");
-    obj.button95:setText("Persuasão");
-    obj.button95:setWidth(122);
-    obj.button95:setMargins({left=2});
-    obj.button95:setName("button95");
+    obj.button94 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button94:setParent(obj.flowPart265);
+    obj.button94:setAlign("left");
+    obj.button94:setText("Persuasão");
+    obj.button94:setWidth(122);
+    obj.button94:setMargins({left=2});
+    obj.button94:setName("button94");
 
     obj.dataLink232 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink232:setParent(obj.flowLayout39);
@@ -15081,17 +15071,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowPart266:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowPart266:setVertAlign("leading");
 
-    obj.button96 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button96:setParent(obj.flowPart266);
-    obj.button96:setAlign("top");
-    obj.button96:setText("INICIATIVA");
-    obj.button96:setHeight(20);
-    obj.button96:setFontSize(9);
-    obj.button96:setWordWrap(true);
-    obj.button96:setHorzTextAlign("center");
-    obj.button96:setMargins({left=5, right=5});
-    obj.button96:setTextTrimming("none");
-    obj.button96:setName("button96");
+    obj.button95 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button95:setParent(obj.flowPart266);
+    obj.button95:setAlign("top");
+    obj.button95:setText("INICIATIVA");
+    obj.button95:setHeight(20);
+    obj.button95:setFontSize(9);
+    obj.button95:setWordWrap(true);
+    obj.button95:setHorzTextAlign("center");
+    obj.button95:setMargins({left=5, right=5});
+    obj.button95:setTextTrimming("none");
+    obj.button95:setName("button95");
 
     obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit121:setParent(obj.flowPart266);
@@ -15238,23 +15228,23 @@ self.upperGridMagicBox3._RecalcSize();
  require("descanso.lua"); 
 
 
+    obj.button96 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button96:setParent(obj.flowLayout42);
+    obj.button96:setText("Short Rest");
+    obj.button96:setWidth(75);
+    obj.button96:setName("button96");
+
     obj.button97 = GUI.fromHandle(_obj_newObject("button"));
     obj.button97:setParent(obj.flowLayout42);
-    obj.button97:setText("Short Rest");
+    obj.button97:setText("Long Rest");
     obj.button97:setWidth(75);
     obj.button97:setName("button97");
 
     obj.button98 = GUI.fromHandle(_obj_newObject("button"));
     obj.button98:setParent(obj.flowLayout42);
-    obj.button98:setText("Long Rest");
-    obj.button98:setWidth(75);
+    obj.button98:setText("Dano");
+    obj.button98:setWidth(50);
     obj.button98:setName("button98");
-
-    obj.button99 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button99:setParent(obj.flowLayout42);
-    obj.button99:setText("Dano");
-    obj.button99:setWidth(50);
-    obj.button99:setName("button99");
 
     obj.colorComboBox2 = GUI.fromHandle(_obj_newObject("colorComboBox"));
     obj.colorComboBox2:setParent(obj.flowLayout42);
@@ -15604,14 +15594,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox12:setHeight(20);
     obj.imageCheckBox12:setVisible(true);
 
-    obj.button100 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button100:setParent(obj.flowPart272);
-    obj.button100:setAlign("bottom");
-    obj.button100:setText("TESTE CONTRA MORTE");
-    obj.button100:setFontSize(11);
-    obj.button100:setVertTextAlign("center");
-    obj.button100:setHorzTextAlign("center");
-    obj.button100:setName("button100");
+    obj.button99 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button99:setParent(obj.flowPart272);
+    obj.button99:setAlign("bottom");
+    obj.button99:setText("TESTE CONTRA MORTE");
+    obj.button99:setFontSize(11);
+    obj.button99:setVertTextAlign("center");
+    obj.button99:setHorzTextAlign("center");
+    obj.button99:setName("button99");
 
     obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab13:setParent(obj.pgcPrincipal);
@@ -16096,47 +16086,47 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label183:setName("label183");
     obj.label183:setFontColor("white");
 
+    obj.button100 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button100:setParent(obj.layout134);
+    obj.button100:setLeft(20);
+    obj.button100:setTop(70);
+    obj.button100:setWidth(80);
+    obj.button100:setText("Atualizar");
+    obj.button100:setName("button100");
+
     obj.button101 = GUI.fromHandle(_obj_newObject("button"));
     obj.button101:setParent(obj.layout134);
     obj.button101:setLeft(20);
-    obj.button101:setTop(70);
+    obj.button101:setTop(100);
     obj.button101:setWidth(80);
-    obj.button101:setText("Atualizar");
+    obj.button101:setText("Discord");
     obj.button101:setName("button101");
 
     obj.button102 = GUI.fromHandle(_obj_newObject("button"));
     obj.button102:setParent(obj.layout134);
     obj.button102:setLeft(20);
-    obj.button102:setTop(100);
+    obj.button102:setTop(130);
     obj.button102:setWidth(80);
-    obj.button102:setText("Discord");
+    obj.button102:setText("Zap (Mesa)");
     obj.button102:setName("button102");
 
     obj.button103 = GUI.fromHandle(_obj_newObject("button"));
     obj.button103:setParent(obj.layout134);
-    obj.button103:setLeft(20);
-    obj.button103:setTop(130);
+    obj.button103:setLeft(100);
+    obj.button103:setTop(70);
     obj.button103:setWidth(80);
-    obj.button103:setText("Zap (Mesa)");
+    obj.button103:setHeight(20);
+    obj.button103:setText("Exportar");
     obj.button103:setName("button103");
 
     obj.button104 = GUI.fromHandle(_obj_newObject("button"));
     obj.button104:setParent(obj.layout134);
     obj.button104:setLeft(100);
-    obj.button104:setTop(70);
+    obj.button104:setTop(100);
     obj.button104:setWidth(80);
     obj.button104:setHeight(20);
-    obj.button104:setText("Exportar");
+    obj.button104:setText("Importar");
     obj.button104:setName("button104");
-
-    obj.button105 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button105:setParent(obj.layout134);
-    obj.button105:setLeft(100);
-    obj.button105:setTop(100);
-    obj.button105:setWidth(80);
-    obj.button105:setHeight(20);
-    obj.button105:setText("Importar");
-    obj.button105:setName("button105");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -18766,12 +18756,7 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event367 = obj.button48:addEventListener("onClick",
-        function (_)
-            System.setClipboardText(sheet.historia);
-        end, obj);
-
-    obj._e_event368 = obj.rclEquips:addEventListener("onSelect",
+    obj._e_event367 = obj.rclEquips:addEventListener("onSelect",
         function (_)
             local node = self.rclEquips.selectedNode;
             								self.dataEquipAttackDetails.node = node;
@@ -18782,23 +18767,23 @@ self.upperGridMagicBox3._RecalcSize();
             								self.rclEquips.lastSelectedForm = self.rclEquips.selectedForm;
         end, obj);
 
-    obj._e_event369 = obj.button49:addEventListener("onClick",
+    obj._e_event368 = obj.button48:addEventListener("onClick",
         function (_)
             self.rclEquips.selectedNode = self.rclEquips:append(); self.rclEquips.selectedForm.editName:setFocus();
         end, obj);
 
-    obj._e_event370 = obj.dataEquipAttackDetails:addEventListener("onNodeReady",
+    obj._e_event369 = obj.dataEquipAttackDetails:addEventListener("onNodeReady",
         function (_)
             self.imgEquipAttackImg:setVisible(false);
             							self.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
         end, obj);
 
-    obj._e_event371 = obj.dataEquipAttackDetails:addEventListener("onNodeUnready",
+    obj._e_event370 = obj.dataEquipAttackDetails:addEventListener("onNodeUnready",
         function (_)
             self.imgEquipAttackImg:setVisible(true);
         end, obj);
 
-    obj._e_event372 = obj.rclProps:addEventListener("onItemRemoved",
+    obj._e_event371 = obj.rclProps:addEventListener("onItemRemoved",
         function (_, node, form)
             local equip = self.dataEquipAttackDetails.node;
             									if equip ~= nil then
@@ -18809,7 +18794,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event373 = obj.button50:addEventListener("onClick",
+    obj._e_event372 = obj.button49:addEventListener("onClick",
         function (_)
             local equip = self.dataEquipAttackDetails.node;
             								if equip ~= nil then
@@ -18834,7 +18819,7 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event374 = obj.dataLink119:addEventListener("onChange",
+    obj._e_event373 = obj.dataLink119:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local equip = self.dataEquipAttackDetails.node;
             								if equip ~= nil and equip.propriedades ~= nil then
@@ -18854,29 +18839,29 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event375 = obj.dataLink120:addEventListener("onChange",
+    obj._e_event374 = obj.dataLink120:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet and sheet.contadoresMudaram then
             							self.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
             						end;
         end, obj);
 
-    obj._e_event376 = obj.btnApagar:addEventListener("onClick",
+    obj._e_event375 = obj.btnApagar:addEventListener("onClick",
         function (_)
             common.askForDelete(self.sheet);
         end, obj);
 
-    obj._e_event377 = obj.rclOptsAttack:addEventListener("onItemAdded",
+    obj._e_event376 = obj.rclOptsAttack:addEventListener("onItemAdded",
         function (_, node, form)
             form.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
         end, obj);
 
-    obj._e_event378 = obj.button51:addEventListener("onClick",
+    obj._e_event377 = obj.button50:addEventListener("onClick",
         function (_)
             self.rclOptsAttack:append();
         end, obj);
 
-    obj._e_event379 = obj.dataLink121:addEventListener("onChange",
+    obj._e_event378 = obj.dataLink121:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet ~= nil and self ~= nil and sheet.contadoresMudaram then
             									local equip = self.dataEquipAttackDetails.node;
@@ -18890,22 +18875,22 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event380 = obj.labEquipDefense:addEventListener("onResize",
+    obj._e_event379 = obj.labEquipDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event381 = obj.rclEquipsDefense:addEventListener("onResize",
+    obj._e_event380 = obj.rclEquipsDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event382 = obj.btnEquipDefenseNew:addEventListener("onClick",
+    obj._e_event381 = obj.btnEquipDefenseNew:addEventListener("onClick",
         function (_)
             self.rclEquipsDefense:append();
         end, obj);
 
-    obj._e_event383 = obj.checkBox3:addEventListener("onChange",
+    obj._e_event382 = obj.checkBox3:addEventListener("onChange",
         function (_)
             if sheet then
             								self.editorFancy:setVisible(sheet.equipamento.outros_melhorado);
@@ -18913,12 +18898,12 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event384 = obj.label55:addEventListener("onResize",
+    obj._e_event383 = obj.label55:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event385 = obj.dataLink122:addEventListener("onChange",
+    obj._e_event384 = obj.dataLink122:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.magias = sheet.magias or {};
             			local niveis = NDB.getChildNodes(sheet.magias.niveis);
@@ -18929,106 +18914,106 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event386 = obj.labupperGridMagicBox1:addEventListener("onResize",
+    obj._e_event385 = obj.labupperGridMagicBox1:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox1._RecalcSize();
         end, obj);
 
-    obj._e_event387 = obj.labupperGridMagicBox2:addEventListener("onResize",
+    obj._e_event386 = obj.labupperGridMagicBox2:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox2._RecalcSize();
         end, obj);
 
-    obj._e_event388 = obj.labupperGridMagicBox3:addEventListener("onResize",
+    obj._e_event387 = obj.labupperGridMagicBox3:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
-    obj._e_event389 = obj.popupEdit:addEventListener("onClose",
+    obj._e_event388 = obj.popupEdit:addEventListener("onClose",
         function (_, canceled)
             sheet.magias.selecionada = nil;
         end, obj);
 
-    obj._e_event390 = obj.popupEdit:addEventListener("onNodeUnready",
+    obj._e_event389 = obj.popupEdit:addEventListener("onNodeUnready",
         function (_)
             sheet.magias.selecionada = nil;
         end, obj);
 
-    obj._e_event391 = obj.popupEdit:addEventListener("onNodeReady",
+    obj._e_event390 = obj.popupEdit:addEventListener("onNodeReady",
         function (_)
             self.popupEdit:getNodeObject().cdResistenciaTipo = nil;
         end, obj);
 
-    obj._e_event392 = obj.editPENome:addEventListener("onKeyDown",
+    obj._e_event391 = obj.editPENome:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event393 = obj.editPENome:addEventListener("onKeyUp",
+    obj._e_event392 = obj.editPENome:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event394 = obj.editPENome:addEventListener("onClick",
+    obj._e_event393 = obj.editPENome:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.eventFunc, {tag = 'editPENome', node = sheet, form = self, event='onClick', contexto = ''}, nil, false);
         end, obj);
 
-    obj._e_event395 = obj.editPENome:addEventListener("onMenu",
+    obj._e_event394 = obj.editPENome:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.eventFunc, {tag = 'editPENome', node = sheet, form = self, event='onMenu', contexto = ''}, nil, true);
         end, obj);
 
-    obj._e_event396 = obj.labelFieldPENivel:addEventListener("onKeyDown",
+    obj._e_event395 = obj.labelFieldPENivel:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event397 = obj.labelFieldPENivel:addEventListener("onKeyUp",
+    obj._e_event396 = obj.labelFieldPENivel:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event398 = obj.labelFieldPEEscola:addEventListener("onKeyDown",
+    obj._e_event397 = obj.labelFieldPEEscola:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event399 = obj.labelFieldPEEscola:addEventListener("onKeyUp",
+    obj._e_event398 = obj.labelFieldPEEscola:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event400 = obj.labelFieldPETempo:addEventListener("onKeyDown",
+    obj._e_event399 = obj.labelFieldPETempo:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event401 = obj.labelFieldPETempo:addEventListener("onKeyUp",
+    obj._e_event400 = obj.labelFieldPETempo:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event402 = obj.dataLink123:addEventListener("onChange",
+    obj._e_event401 = obj.dataLink123:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									self.popupEditCompM:setEnabled(node.componentesM or false);
         end, obj);
 
-    obj._e_event403 = obj.dataLink124:addEventListener("onChange",
+    obj._e_event402 = obj.dataLink124:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             								self.layPrepValor:setVisible(node.preparadoTipo == 'Preparada' or node.preparadoTipo == 'Sempre Preparada');
             								self.layPrepValor:setEnabled(node.preparadoTipo == 'Preparada');
         end, obj);
 
-    obj._e_event404 = obj.dataLink125:addEventListener("onChange",
+    obj._e_event403 = obj.dataLink125:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									self.popupEditCondAtiv:setEnabled(node.tempoConjuracaoUnidade == 'Reação');
         end, obj);
 
-    obj._e_event405 = obj.dataLink126:addEventListener("onChange",
+    obj._e_event404 = obj.dataLink126:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if node.alcanceUnidade == 'Nenhum' or node.alcanceUnidade == 'Pessoal' or node.alcanceUnidade == 'Toque' then
@@ -19040,7 +19025,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event406 = obj.dataLink127:addEventListener("onChange",
+    obj._e_event405 = obj.dataLink127:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if node.duracaoUnidade == 'Instantânea' or node.duracaoUnidade == 'Permanente' then
@@ -19050,7 +19035,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event407 = obj.dataLink128:addEventListener("onChange",
+    obj._e_event406 = obj.dataLink128:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									local contador = common.getContador(node, node.contadorNome or '');
@@ -19061,19 +19046,19 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event408 = obj.dataLink129:addEventListener("onChange",
+    obj._e_event407 = obj.dataLink129:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							self.popupEditAtaqueAtrib:setEnabled(node.ataqueTipo ~= 'Sem Ataque');	
             							self.popupEditAtaqueBonus:setEnabled(node.ataqueTipo ~= 'Sem Ataque');
         end, obj);
 
-    obj._e_event409 = obj.button52:addEventListener("onClick",
+    obj._e_event408 = obj.button51:addEventListener("onClick",
         function (_)
             self.popupEditDanoRL:append();
         end, obj);
 
-    obj._e_event410 = obj.popupEditDanoRL:addEventListener("onEndEnumeration",
+    obj._e_event409 = obj.popupEditDanoRL:addEventListener("onEndEnumeration",
         function (_)
             local node = self.popupEdit:getNodeObject();
             								local h = 30 + self.popupEditDanoRect.margins.top + self.popupEditDanoRect.margins.bottom;
@@ -19087,13 +19072,13 @@ self.upperGridMagicBox3._RecalcSize();
             								self.popupEditDanoRect:setHeight(h);
         end, obj);
 
-    obj._e_event411 = obj.button53:addEventListener("onClick",
+    obj._e_event410 = obj.button52:addEventListener("onClick",
         function (_)
             local formula = self.popupEditFormulaRL:append();
             									if formula then formula.tipoDano = "não"; end;
         end, obj);
 
-    obj._e_event412 = obj.popupEditFormulaRL:addEventListener("onEndEnumeration",
+    obj._e_event411 = obj.popupEditFormulaRL:addEventListener("onEndEnumeration",
         function (_)
             local node = self.popupEdit:getNodeObject();
             								local h = 30 + self.popupEditFormulaRect.margins.top + self.popupEditFormulaRect.margins.bottom;
@@ -19107,7 +19092,7 @@ self.upperGridMagicBox3._RecalcSize();
             								self.popupEditFormulaRect:setHeight(h);
         end, obj);
 
-    obj._e_event413 = obj.dataLink130:addEventListener("onChange",
+    obj._e_event412 = obj.dataLink130:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if not node.cdResistenciaTipo then
@@ -19129,31 +19114,31 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event414 = obj.dataLink131:addEventListener("onChange",
+    obj._e_event413 = obj.dataLink131:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.getSourcePath(self, "spells", node.importSourceName, function(path) node.importSourcePath = path; end);
         end, obj);
 
-    obj._e_event415 = obj.dataLink133:addEventListener("onChange",
+    obj._e_event414 = obj.dataLink133:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.spellGetClasses(self, node.importSourcePath, node.importLevel, function(items) self.comboBoxImportClass:setItems(items); end);
         end, obj);
 
-    obj._e_event416 = obj.dataLink134:addEventListener("onChange",
+    obj._e_event415 = obj.dataLink134:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.spellGetNames(self, node.importSourcePath, node.importLevel, node.importClass, function(items) self.comboBoxImportMagia:setItems(items); end);
         end, obj);
 
-    obj._e_event417 = obj.button54:addEventListener("onClick",
+    obj._e_event416 = obj.button53:addEventListener("onClick",
         function (_)
             local node = self.popupEdit:getNodeObject();
             						dload.spellImport(self, node.importSourcePath, node.importName, node);
         end, obj);
 
-    obj._e_event418 = obj.dataLink135:addEventListener("onChange",
+    obj._e_event417 = obj.dataLink135:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local hab;
             			local bonusProficiencia;
@@ -19245,7 +19230,7 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event419 = obj.dataLink136:addEventListener("onChange",
+    obj._e_event418 = obj.dataLink136:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.magias and sheet.magias.selecionada then
             			local node;
@@ -19268,12 +19253,12 @@ self.upperGridMagicBox3._RecalcSize();
             		end;
         end, obj);
 
-    obj._e_event420 = obj.button55:addEventListener("onClick",
+    obj._e_event419 = obj.button54:addEventListener("onClick",
         function (_)
             self.rclContadores:append()
         end, obj);
 
-    obj._e_event421 = obj.button56:addEventListener("onClick",
+    obj._e_event420 = obj.button55:addEventListener("onClick",
         function (_)
             for key,_ in pairs(sheet.macroSavedSkills) do
             					val = sheet.macroSavedSkills[key];
@@ -19289,12 +19274,12 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event422 = obj.rclContadores:addEventListener("onCompare",
+    obj._e_event421 = obj.rclContadores:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             return Utils.compareStringPtBr(nodeA.name, nodeB.name);
         end, obj);
 
-    obj._e_event423 = obj.rclContadores:addEventListener("onItemAdded",
+    obj._e_event422 = obj.rclContadores:addEventListener("onItemAdded",
         function (_, node, form)
             if sheet ~= nil then
             					sheet.contadoresMudaram = true;
@@ -19302,7 +19287,7 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event424 = obj.rclContadores:addEventListener("onItemRemoved",
+    obj._e_event423 = obj.rclContadores:addEventListener("onItemRemoved",
         function (_, node, form)
             if sheet ~= nil then
             					sheet.contadoresMudaram = true;
@@ -19310,7 +19295,7 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event425 = obj.dataLink137:addEventListener("onChange",
+    obj._e_event424 = obj.dataLink137:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local contadores = NDB.getChildNodes(sheet.contadores);
             			for i=1,#contadores,1 do
@@ -19319,12 +19304,12 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event426 = obj.button57:addEventListener("onClick",
+    obj._e_event425 = obj.button56:addEventListener("onClick",
         function (_)
             Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?', function(confirmado) if confirmado then sheet.propriedades = {}; end; end);
         end, obj);
 
-    obj._e_event427 = obj.button58:addEventListener("onClick",
+    obj._e_event426 = obj.button57:addEventListener("onClick",
         function (_)
             if not sheet.propriedades then sheet.propriedades = {}; end;
             
@@ -19359,7 +19344,7 @@ self.upperGridMagicBox3._RecalcSize();
             		end);
         end, obj);
 
-    obj._e_event428 = obj.checkBox9:addEventListener("onChange",
+    obj._e_event427 = obj.checkBox9:addEventListener("onChange",
         function (_)
             if sheet then
             								self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
@@ -19367,7 +19352,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event429 = obj.dataLink138:addEventListener("onChange",
+    obj._e_event428 = obj.dataLink138:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						local type = sheet.sobrentural;
@@ -19384,7 +19369,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event430 = obj.dataLink139:addEventListener("onChange",
+    obj._e_event429 = obj.dataLink139:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19402,7 +19387,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event431 = obj.dataLink140:addEventListener("onChange",
+    obj._e_event430 = obj.dataLink140:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19420,7 +19405,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event432 = obj.dataLink141:addEventListener("onChange",
+    obj._e_event431 = obj.dataLink141:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19438,7 +19423,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event433 = obj.dataLink142:addEventListener("onChange",
+    obj._e_event432 = obj.dataLink142:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19456,7 +19441,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event434 = obj.dataLink143:addEventListener("onChange",
+    obj._e_event433 = obj.dataLink143:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19474,7 +19459,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event435 = obj.dataLink144:addEventListener("onChange",
+    obj._e_event434 = obj.dataLink144:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19492,7 +19477,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event436 = obj.dataLink145:addEventListener("onChange",
+    obj._e_event435 = obj.dataLink145:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19510,7 +19495,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event437 = obj.button59:addEventListener("onClick",
+    obj._e_event436 = obj.button58:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local meses = NDB.getChildNodes(sheet.listaMeses);
@@ -19527,7 +19512,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event438 = obj.rclMeses:addEventListener("onCompare",
+    obj._e_event437 = obj.rclMeses:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                    return -1;
@@ -19538,7 +19523,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event439 = obj.dataLink146:addEventListener("onChange",
+    obj._e_event438 = obj.dataLink146:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet~= nil then
             							if sheet.dias ~= sheet.duracaoEstacao then
@@ -19549,7 +19534,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event440 = obj.button60:addEventListener("onClick",
+    obj._e_event439 = obj.button59:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local semana = NDB.getChildNodes(sheet.listaSemana);
@@ -19565,7 +19550,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event441 = obj.rclSemana:addEventListener("onCompare",
+    obj._e_event440 = obj.rclSemana:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                        return -1;
@@ -19576,7 +19561,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event442 = obj.button61:addEventListener("onClick",
+    obj._e_event441 = obj.button60:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local node = self.rclLuas:append();
@@ -19590,7 +19575,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event443 = obj.celestialBt:addEventListener("onClick",
+    obj._e_event442 = obj.celestialBt:addEventListener("onClick",
         function (_)
             local pop = self:findControlByName("popCelestial");
             							
@@ -19602,7 +19587,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event444 = obj.button62:addEventListener("onClick",
+    obj._e_event443 = obj.button61:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local estacao = NDB.getChildNodes(sheet.listaEstacoes);
@@ -19619,7 +19604,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event445 = obj.rclEstacoes:addEventListener("onCompare",
+    obj._e_event444 = obj.rclEstacoes:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                    return -1;
@@ -19630,7 +19615,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event446 = obj.button63:addEventListener("onClick",
+    obj._e_event445 = obj.button62:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             							local tempo = tonumber(sheet.tempo) or 1;
@@ -19669,7 +19654,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event447 = obj.dataLink148:addEventListener("onChange",
+    obj._e_event446 = obj.dataLink148:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet~= nil then
             							-- Reading sheet
@@ -20208,7 +20193,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event448 = obj.dataLink149:addEventListener("onChange",
+    obj._e_event447 = obj.dataLink149:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20238,27 +20223,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event449 = obj.button64:addEventListener("onKeyDown",
+    obj._e_event448 = obj.button63:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event450 = obj.button64:addEventListener("onKeyUp",
+    obj._e_event449 = obj.button63:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event451 = obj.button64:addEventListener("onClick",
+    obj._e_event450 = obj.button63:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event452 = obj.button64:addEventListener("onMenu",
+    obj._e_event451 = obj.button63:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event453 = obj.cbProfcompanionforca:addEventListener("onMenu",
+    obj._e_event452 = obj.cbProfcompanionforca:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionforca"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionforca', true);
@@ -20266,42 +20251,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event454 = obj.cbProfcompanionforca:addEventListener("onClick",
+    obj._e_event453 = obj.cbProfcompanionforca:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionforca', false);
         end, obj);
 
-    obj._e_event455 = obj.dataLink150:addEventListener("onChange",
+    obj._e_event454 = obj.dataLink150:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionforca");
         end, obj);
 
-    obj._e_event456 = obj.dataLink151:addEventListener("onChange",
+    obj._e_event455 = obj.dataLink151:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionforca'] then updateCbVisibility('companionforca'); end;
         end, obj);
 
-    obj._e_event457 = obj.button65:addEventListener("onKeyDown",
+    obj._e_event456 = obj.button64:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event458 = obj.button65:addEventListener("onKeyUp",
+    obj._e_event457 = obj.button64:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event459 = obj.button65:addEventListener("onClick",
+    obj._e_event458 = obj.button64:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event460 = obj.button65:addEventListener("onMenu",
+    obj._e_event459 = obj.button64:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event461 = obj.dataLink152:addEventListener("onChange",
+    obj._e_event460 = obj.dataLink152:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionforca');
             
@@ -20317,7 +20302,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionforca:setHint(hint);
         end, obj);
 
-    obj._e_event462 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
+    obj._e_event461 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatletismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatletismo', true);
@@ -20325,42 +20310,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event463 = obj.cbProfcompanionatletismo:addEventListener("onClick",
+    obj._e_event462 = obj.cbProfcompanionatletismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatletismo', false);
         end, obj);
 
-    obj._e_event464 = obj.dataLink153:addEventListener("onChange",
+    obj._e_event463 = obj.dataLink153:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatletismo");
         end, obj);
 
-    obj._e_event465 = obj.dataLink154:addEventListener("onChange",
+    obj._e_event464 = obj.dataLink154:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatletismo'] then updateCbVisibility('companionatletismo'); end;
         end, obj);
 
-    obj._e_event466 = obj.button66:addEventListener("onKeyDown",
+    obj._e_event465 = obj.button65:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event467 = obj.button66:addEventListener("onKeyUp",
+    obj._e_event466 = obj.button65:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event468 = obj.button66:addEventListener("onClick",
+    obj._e_event467 = obj.button65:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, false);
         end, obj);
 
-    obj._e_event469 = obj.button66:addEventListener("onMenu",
+    obj._e_event468 = obj.button65:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, true);
         end, obj);
 
-    obj._e_event470 = obj.dataLink155:addEventListener("onChange",
+    obj._e_event469 = obj.dataLink155:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionforca', 'companionatletismo');
             
@@ -20376,7 +20361,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatletismo:setHint(hint);
         end, obj);
 
-    obj._e_event471 = obj.dataLink156:addEventListener("onChange",
+    obj._e_event470 = obj.dataLink156:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20406,27 +20391,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event472 = obj.button67:addEventListener("onKeyDown",
+    obj._e_event471 = obj.button66:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event473 = obj.button67:addEventListener("onKeyUp",
+    obj._e_event472 = obj.button66:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event474 = obj.button67:addEventListener("onClick",
+    obj._e_event473 = obj.button66:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event475 = obj.button67:addEventListener("onMenu",
+    obj._e_event474 = obj.button66:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event476 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
+    obj._e_event475 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiondestreza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiondestreza', true);
@@ -20434,42 +20419,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event477 = obj.cbProfcompaniondestreza:addEventListener("onClick",
+    obj._e_event476 = obj.cbProfcompaniondestreza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiondestreza', false);
         end, obj);
 
-    obj._e_event478 = obj.dataLink157:addEventListener("onChange",
+    obj._e_event477 = obj.dataLink157:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiondestreza");
         end, obj);
 
-    obj._e_event479 = obj.dataLink158:addEventListener("onChange",
+    obj._e_event478 = obj.dataLink158:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiondestreza'] then updateCbVisibility('companiondestreza'); end;
         end, obj);
 
-    obj._e_event480 = obj.button68:addEventListener("onKeyDown",
+    obj._e_event479 = obj.button67:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event481 = obj.button68:addEventListener("onKeyUp",
+    obj._e_event480 = obj.button67:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event482 = obj.button68:addEventListener("onClick",
+    obj._e_event481 = obj.button67:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event483 = obj.button68:addEventListener("onMenu",
+    obj._e_event482 = obj.button67:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event484 = obj.dataLink159:addEventListener("onChange",
+    obj._e_event483 = obj.dataLink159:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companiondestreza');
             
@@ -20485,7 +20470,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompaniondestreza:setHint(hint);
         end, obj);
 
-    obj._e_event485 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
+    obj._e_event484 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionacrobacia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionacrobacia', true);
@@ -20493,42 +20478,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event486 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
+    obj._e_event485 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionacrobacia', false);
         end, obj);
 
-    obj._e_event487 = obj.dataLink160:addEventListener("onChange",
+    obj._e_event486 = obj.dataLink160:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionacrobacia");
         end, obj);
 
-    obj._e_event488 = obj.dataLink161:addEventListener("onChange",
+    obj._e_event487 = obj.dataLink161:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionacrobacia'] then updateCbVisibility('companionacrobacia'); end;
         end, obj);
 
-    obj._e_event489 = obj.button69:addEventListener("onKeyDown",
+    obj._e_event488 = obj.button68:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event490 = obj.button69:addEventListener("onKeyUp",
+    obj._e_event489 = obj.button68:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event491 = obj.button69:addEventListener("onClick",
+    obj._e_event490 = obj.button68:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, false);
         end, obj);
 
-    obj._e_event492 = obj.button69:addEventListener("onMenu",
+    obj._e_event491 = obj.button68:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, true);
         end, obj);
 
-    obj._e_event493 = obj.dataLink162:addEventListener("onChange",
+    obj._e_event492 = obj.dataLink162:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionacrobacia');
             
@@ -20544,7 +20529,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionacrobacia:setHint(hint);
         end, obj);
 
-    obj._e_event494 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
+    obj._e_event493 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionfurtividade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionfurtividade', true);
@@ -20552,42 +20537,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event495 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
+    obj._e_event494 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionfurtividade', false);
         end, obj);
 
-    obj._e_event496 = obj.dataLink163:addEventListener("onChange",
+    obj._e_event495 = obj.dataLink163:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionfurtividade");
         end, obj);
 
-    obj._e_event497 = obj.dataLink164:addEventListener("onChange",
+    obj._e_event496 = obj.dataLink164:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionfurtividade'] then updateCbVisibility('companionfurtividade'); end;
         end, obj);
 
-    obj._e_event498 = obj.button70:addEventListener("onKeyDown",
+    obj._e_event497 = obj.button69:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event499 = obj.button70:addEventListener("onKeyUp",
+    obj._e_event498 = obj.button69:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event500 = obj.button70:addEventListener("onClick",
+    obj._e_event499 = obj.button69:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, false);
         end, obj);
 
-    obj._e_event501 = obj.button70:addEventListener("onMenu",
+    obj._e_event500 = obj.button69:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, true);
         end, obj);
 
-    obj._e_event502 = obj.dataLink165:addEventListener("onChange",
+    obj._e_event501 = obj.dataLink165:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionfurtividade');
             
@@ -20603,7 +20588,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionfurtividade:setHint(hint);
         end, obj);
 
-    obj._e_event503 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
+    obj._e_event502 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionprestidigitacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', true);
@@ -20611,42 +20596,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event504 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
+    obj._e_event503 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', false);
         end, obj);
 
-    obj._e_event505 = obj.dataLink166:addEventListener("onChange",
+    obj._e_event504 = obj.dataLink166:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionprestidigitacao");
         end, obj);
 
-    obj._e_event506 = obj.dataLink167:addEventListener("onChange",
+    obj._e_event505 = obj.dataLink167:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionprestidigitacao'] then updateCbVisibility('companionprestidigitacao'); end;
         end, obj);
 
-    obj._e_event507 = obj.button71:addEventListener("onKeyDown",
+    obj._e_event506 = obj.button70:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event508 = obj.button71:addEventListener("onKeyUp",
+    obj._e_event507 = obj.button70:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event509 = obj.button71:addEventListener("onClick",
+    obj._e_event508 = obj.button70:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, false);
         end, obj);
 
-    obj._e_event510 = obj.button71:addEventListener("onMenu",
+    obj._e_event509 = obj.button70:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, true);
         end, obj);
 
-    obj._e_event511 = obj.dataLink168:addEventListener("onChange",
+    obj._e_event510 = obj.dataLink168:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionprestidigitacao');
             
@@ -20662,7 +20647,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionprestidigitacao:setHint(hint);
         end, obj);
 
-    obj._e_event512 = obj.dataLink169:addEventListener("onChange",
+    obj._e_event511 = obj.dataLink169:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20692,27 +20677,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event513 = obj.button72:addEventListener("onKeyDown",
+    obj._e_event512 = obj.button71:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event514 = obj.button72:addEventListener("onKeyUp",
+    obj._e_event513 = obj.button71:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event515 = obj.button72:addEventListener("onClick",
+    obj._e_event514 = obj.button71:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event516 = obj.button72:addEventListener("onMenu",
+    obj._e_event515 = obj.button71:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event517 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
+    obj._e_event516 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconstituicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconstituicao', true);
@@ -20720,42 +20705,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event518 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
+    obj._e_event517 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconstituicao', false);
         end, obj);
 
-    obj._e_event519 = obj.dataLink170:addEventListener("onChange",
+    obj._e_event518 = obj.dataLink170:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconstituicao");
         end, obj);
 
-    obj._e_event520 = obj.dataLink171:addEventListener("onChange",
+    obj._e_event519 = obj.dataLink171:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconstituicao'] then updateCbVisibility('companionconstituicao'); end;
         end, obj);
 
-    obj._e_event521 = obj.button73:addEventListener("onKeyDown",
+    obj._e_event520 = obj.button72:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event522 = obj.button73:addEventListener("onKeyUp",
+    obj._e_event521 = obj.button72:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event523 = obj.button73:addEventListener("onClick",
+    obj._e_event522 = obj.button72:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event524 = obj.button73:addEventListener("onMenu",
+    obj._e_event523 = obj.button72:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event525 = obj.dataLink172:addEventListener("onChange",
+    obj._e_event524 = obj.dataLink172:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionconstituicao');
             
@@ -20771,7 +20756,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionconstituicao:setHint(hint);
         end, obj);
 
-    obj._e_event526 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
+    obj._e_event525 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconcentracao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconcentracao', true);
@@ -20779,42 +20764,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event527 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
+    obj._e_event526 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconcentracao', false);
         end, obj);
 
-    obj._e_event528 = obj.dataLink173:addEventListener("onChange",
+    obj._e_event527 = obj.dataLink173:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconcentracao");
         end, obj);
 
-    obj._e_event529 = obj.dataLink174:addEventListener("onChange",
+    obj._e_event528 = obj.dataLink174:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconcentracao'] then updateCbVisibility('companionconcentracao'); end;
         end, obj);
 
-    obj._e_event530 = obj.button74:addEventListener("onKeyDown",
+    obj._e_event529 = obj.button73:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event531 = obj.button74:addEventListener("onKeyUp",
+    obj._e_event530 = obj.button73:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event532 = obj.button74:addEventListener("onClick",
+    obj._e_event531 = obj.button73:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, false);
         end, obj);
 
-    obj._e_event533 = obj.button74:addEventListener("onMenu",
+    obj._e_event532 = obj.button73:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, true);
         end, obj);
 
-    obj._e_event534 = obj.dataLink175:addEventListener("onChange",
+    obj._e_event533 = obj.dataLink175:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companionconcentracao');
             
@@ -20830,7 +20815,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionconcentracao:setHint(hint);
         end, obj);
 
-    obj._e_event535 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
+    obj._e_event534 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiontolerancia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiontolerancia', true);
@@ -20838,42 +20823,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event536 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
+    obj._e_event535 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiontolerancia', false);
         end, obj);
 
-    obj._e_event537 = obj.dataLink176:addEventListener("onChange",
+    obj._e_event536 = obj.dataLink176:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiontolerancia");
         end, obj);
 
-    obj._e_event538 = obj.dataLink177:addEventListener("onChange",
+    obj._e_event537 = obj.dataLink177:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiontolerancia'] then updateCbVisibility('companiontolerancia'); end;
         end, obj);
 
-    obj._e_event539 = obj.button75:addEventListener("onKeyDown",
+    obj._e_event538 = obj.button74:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event540 = obj.button75:addEventListener("onKeyUp",
+    obj._e_event539 = obj.button74:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event541 = obj.button75:addEventListener("onClick",
+    obj._e_event540 = obj.button74:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, false);
         end, obj);
 
-    obj._e_event542 = obj.button75:addEventListener("onMenu",
+    obj._e_event541 = obj.button74:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, true);
         end, obj);
 
-    obj._e_event543 = obj.dataLink178:addEventListener("onChange",
+    obj._e_event542 = obj.dataLink178:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companiontolerancia');
             
@@ -20889,7 +20874,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompaniontolerancia:setHint(hint);
         end, obj);
 
-    obj._e_event544 = obj.dataLink179:addEventListener("onChange",
+    obj._e_event543 = obj.dataLink179:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20919,27 +20904,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event545 = obj.button76:addEventListener("onKeyDown",
+    obj._e_event544 = obj.button75:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event546 = obj.button76:addEventListener("onKeyUp",
+    obj._e_event545 = obj.button75:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event547 = obj.button76:addEventListener("onClick",
+    obj._e_event546 = obj.button75:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event548 = obj.button76:addEventListener("onMenu",
+    obj._e_event547 = obj.button75:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event549 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
+    obj._e_event548 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninteligencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninteligencia', true);
@@ -20947,42 +20932,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event550 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
+    obj._e_event549 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninteligencia', false);
         end, obj);
 
-    obj._e_event551 = obj.dataLink180:addEventListener("onChange",
+    obj._e_event550 = obj.dataLink180:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninteligencia");
         end, obj);
 
-    obj._e_event552 = obj.dataLink181:addEventListener("onChange",
+    obj._e_event551 = obj.dataLink181:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninteligencia'] then updateCbVisibility('companioninteligencia'); end;
         end, obj);
 
-    obj._e_event553 = obj.button77:addEventListener("onKeyDown",
+    obj._e_event552 = obj.button76:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event554 = obj.button77:addEventListener("onKeyUp",
+    obj._e_event553 = obj.button76:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event555 = obj.button77:addEventListener("onClick",
+    obj._e_event554 = obj.button76:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event556 = obj.button77:addEventListener("onMenu",
+    obj._e_event555 = obj.button76:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event557 = obj.dataLink182:addEventListener("onChange",
+    obj._e_event556 = obj.dataLink182:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioninteligencia');
             
@@ -20998,7 +20983,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioninteligencia:setHint(hint);
         end, obj);
 
-    obj._e_event558 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
+    obj._e_event557 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionarcanismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionarcanismo', true);
@@ -21006,42 +20991,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event559 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
+    obj._e_event558 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionarcanismo', false);
         end, obj);
 
-    obj._e_event560 = obj.dataLink183:addEventListener("onChange",
+    obj._e_event559 = obj.dataLink183:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionarcanismo");
         end, obj);
 
-    obj._e_event561 = obj.dataLink184:addEventListener("onChange",
+    obj._e_event560 = obj.dataLink184:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionarcanismo'] then updateCbVisibility('companionarcanismo'); end;
         end, obj);
 
-    obj._e_event562 = obj.button78:addEventListener("onKeyDown",
+    obj._e_event561 = obj.button77:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event563 = obj.button78:addEventListener("onKeyUp",
+    obj._e_event562 = obj.button77:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event564 = obj.button78:addEventListener("onClick",
+    obj._e_event563 = obj.button77:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, false);
         end, obj);
 
-    obj._e_event565 = obj.button78:addEventListener("onMenu",
+    obj._e_event564 = obj.button77:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, true);
         end, obj);
 
-    obj._e_event566 = obj.dataLink185:addEventListener("onChange",
+    obj._e_event565 = obj.dataLink185:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionarcanismo');
             
@@ -21057,7 +21042,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionarcanismo:setHint(hint);
         end, obj);
 
-    obj._e_event567 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
+    obj._e_event566 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionhistoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionhistoria', true);
@@ -21065,42 +21050,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event568 = obj.cbProfcompanionhistoria:addEventListener("onClick",
+    obj._e_event567 = obj.cbProfcompanionhistoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionhistoria', false);
         end, obj);
 
-    obj._e_event569 = obj.dataLink186:addEventListener("onChange",
+    obj._e_event568 = obj.dataLink186:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionhistoria");
         end, obj);
 
-    obj._e_event570 = obj.dataLink187:addEventListener("onChange",
+    obj._e_event569 = obj.dataLink187:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionhistoria'] then updateCbVisibility('companionhistoria'); end;
         end, obj);
 
-    obj._e_event571 = obj.button79:addEventListener("onKeyDown",
+    obj._e_event570 = obj.button78:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event572 = obj.button79:addEventListener("onKeyUp",
+    obj._e_event571 = obj.button78:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event573 = obj.button79:addEventListener("onClick",
+    obj._e_event572 = obj.button78:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, false);
         end, obj);
 
-    obj._e_event574 = obj.button79:addEventListener("onMenu",
+    obj._e_event573 = obj.button78:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, true);
         end, obj);
 
-    obj._e_event575 = obj.dataLink188:addEventListener("onChange",
+    obj._e_event574 = obj.dataLink188:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionhistoria');
             
@@ -21116,7 +21101,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionhistoria:setHint(hint);
         end, obj);
 
-    obj._e_event576 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
+    obj._e_event575 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninvestigacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninvestigacao', true);
@@ -21124,42 +21109,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event577 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
+    obj._e_event576 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninvestigacao', false);
         end, obj);
 
-    obj._e_event578 = obj.dataLink189:addEventListener("onChange",
+    obj._e_event577 = obj.dataLink189:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninvestigacao");
         end, obj);
 
-    obj._e_event579 = obj.dataLink190:addEventListener("onChange",
+    obj._e_event578 = obj.dataLink190:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninvestigacao'] then updateCbVisibility('companioninvestigacao'); end;
         end, obj);
 
-    obj._e_event580 = obj.button80:addEventListener("onKeyDown",
+    obj._e_event579 = obj.button79:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event581 = obj.button80:addEventListener("onKeyUp",
+    obj._e_event580 = obj.button79:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event582 = obj.button80:addEventListener("onClick",
+    obj._e_event581 = obj.button79:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, false);
         end, obj);
 
-    obj._e_event583 = obj.button80:addEventListener("onMenu",
+    obj._e_event582 = obj.button79:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, true);
         end, obj);
 
-    obj._e_event584 = obj.dataLink191:addEventListener("onChange",
+    obj._e_event583 = obj.dataLink191:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companioninvestigacao');
             
@@ -21175,7 +21160,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanioninvestigacao:setHint(hint);
         end, obj);
 
-    obj._e_event585 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
+    obj._e_event584 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionnatureza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionnatureza', true);
@@ -21183,42 +21168,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event586 = obj.cbProfcompanionnatureza:addEventListener("onClick",
+    obj._e_event585 = obj.cbProfcompanionnatureza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionnatureza', false);
         end, obj);
 
-    obj._e_event587 = obj.dataLink192:addEventListener("onChange",
+    obj._e_event586 = obj.dataLink192:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionnatureza");
         end, obj);
 
-    obj._e_event588 = obj.dataLink193:addEventListener("onChange",
+    obj._e_event587 = obj.dataLink193:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionnatureza'] then updateCbVisibility('companionnatureza'); end;
         end, obj);
 
-    obj._e_event589 = obj.button81:addEventListener("onKeyDown",
+    obj._e_event588 = obj.button80:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event590 = obj.button81:addEventListener("onKeyUp",
+    obj._e_event589 = obj.button80:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event591 = obj.button81:addEventListener("onClick",
+    obj._e_event590 = obj.button80:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, false);
         end, obj);
 
-    obj._e_event592 = obj.button81:addEventListener("onMenu",
+    obj._e_event591 = obj.button80:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, true);
         end, obj);
 
-    obj._e_event593 = obj.dataLink194:addEventListener("onChange",
+    obj._e_event592 = obj.dataLink194:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionnatureza');
             
@@ -21234,7 +21219,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionnatureza:setHint(hint);
         end, obj);
 
-    obj._e_event594 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
+    obj._e_event593 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionreligiao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionreligiao', true);
@@ -21242,42 +21227,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event595 = obj.cbProfcompanionreligiao:addEventListener("onClick",
+    obj._e_event594 = obj.cbProfcompanionreligiao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionreligiao', false);
         end, obj);
 
-    obj._e_event596 = obj.dataLink195:addEventListener("onChange",
+    obj._e_event595 = obj.dataLink195:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionreligiao");
         end, obj);
 
-    obj._e_event597 = obj.dataLink196:addEventListener("onChange",
+    obj._e_event596 = obj.dataLink196:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionreligiao'] then updateCbVisibility('companionreligiao'); end;
         end, obj);
 
-    obj._e_event598 = obj.button82:addEventListener("onKeyDown",
+    obj._e_event597 = obj.button81:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event599 = obj.button82:addEventListener("onKeyUp",
+    obj._e_event598 = obj.button81:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event600 = obj.button82:addEventListener("onClick",
+    obj._e_event599 = obj.button81:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, false);
         end, obj);
 
-    obj._e_event601 = obj.button82:addEventListener("onMenu",
+    obj._e_event600 = obj.button81:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, true);
         end, obj);
 
-    obj._e_event602 = obj.dataLink197:addEventListener("onChange",
+    obj._e_event601 = obj.dataLink197:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionreligiao');
             
@@ -21293,7 +21278,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionreligiao:setHint(hint);
         end, obj);
 
-    obj._e_event603 = obj.dataLink198:addEventListener("onChange",
+    obj._e_event602 = obj.dataLink198:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21323,27 +21308,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event604 = obj.button83:addEventListener("onKeyDown",
+    obj._e_event603 = obj.button82:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event605 = obj.button83:addEventListener("onKeyUp",
+    obj._e_event604 = obj.button82:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event606 = obj.button83:addEventListener("onClick",
+    obj._e_event605 = obj.button82:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event607 = obj.button83:addEventListener("onMenu",
+    obj._e_event606 = obj.button82:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event608 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
+    obj._e_event607 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsabedoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsabedoria', true);
@@ -21351,42 +21336,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event609 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
+    obj._e_event608 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsabedoria', false);
         end, obj);
 
-    obj._e_event610 = obj.dataLink199:addEventListener("onChange",
+    obj._e_event609 = obj.dataLink199:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsabedoria");
         end, obj);
 
-    obj._e_event611 = obj.dataLink200:addEventListener("onChange",
+    obj._e_event610 = obj.dataLink200:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsabedoria'] then updateCbVisibility('companionsabedoria'); end;
         end, obj);
 
-    obj._e_event612 = obj.button84:addEventListener("onKeyDown",
+    obj._e_event611 = obj.button83:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event613 = obj.button84:addEventListener("onKeyUp",
+    obj._e_event612 = obj.button83:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event614 = obj.button84:addEventListener("onClick",
+    obj._e_event613 = obj.button83:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event615 = obj.button84:addEventListener("onMenu",
+    obj._e_event614 = obj.button83:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event616 = obj.dataLink201:addEventListener("onChange",
+    obj._e_event615 = obj.dataLink201:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionsabedoria');
             
@@ -21402,7 +21387,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionsabedoria:setHint(hint);
         end, obj);
 
-    obj._e_event617 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
+    obj._e_event616 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionadestrarAnimais"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', true);
@@ -21410,42 +21395,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event618 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
+    obj._e_event617 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', false);
         end, obj);
 
-    obj._e_event619 = obj.dataLink202:addEventListener("onChange",
+    obj._e_event618 = obj.dataLink202:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionadestrarAnimais");
         end, obj);
 
-    obj._e_event620 = obj.dataLink203:addEventListener("onChange",
+    obj._e_event619 = obj.dataLink203:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionadestrarAnimais'] then updateCbVisibility('companionadestrarAnimais'); end;
         end, obj);
 
-    obj._e_event621 = obj.button85:addEventListener("onKeyDown",
+    obj._e_event620 = obj.button84:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event622 = obj.button85:addEventListener("onKeyUp",
+    obj._e_event621 = obj.button84:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event623 = obj.button85:addEventListener("onClick",
+    obj._e_event622 = obj.button84:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, false);
         end, obj);
 
-    obj._e_event624 = obj.button85:addEventListener("onMenu",
+    obj._e_event623 = obj.button84:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, true);
         end, obj);
 
-    obj._e_event625 = obj.dataLink204:addEventListener("onChange",
+    obj._e_event624 = obj.dataLink204:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionadestrarAnimais');
             
@@ -21461,7 +21446,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionadestrarAnimais:setHint(hint);
         end, obj);
 
-    obj._e_event626 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
+    obj._e_event625 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintuicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintuicao', true);
@@ -21469,42 +21454,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event627 = obj.cbProfcompanionintuicao:addEventListener("onClick",
+    obj._e_event626 = obj.cbProfcompanionintuicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintuicao', false);
         end, obj);
 
-    obj._e_event628 = obj.dataLink205:addEventListener("onChange",
+    obj._e_event627 = obj.dataLink205:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintuicao");
         end, obj);
 
-    obj._e_event629 = obj.dataLink206:addEventListener("onChange",
+    obj._e_event628 = obj.dataLink206:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintuicao'] then updateCbVisibility('companionintuicao'); end;
         end, obj);
 
-    obj._e_event630 = obj.button86:addEventListener("onKeyDown",
+    obj._e_event629 = obj.button85:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event631 = obj.button86:addEventListener("onKeyUp",
+    obj._e_event630 = obj.button85:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event632 = obj.button86:addEventListener("onClick",
+    obj._e_event631 = obj.button85:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, false);
         end, obj);
 
-    obj._e_event633 = obj.button86:addEventListener("onMenu",
+    obj._e_event632 = obj.button85:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, true);
         end, obj);
 
-    obj._e_event634 = obj.dataLink207:addEventListener("onChange",
+    obj._e_event633 = obj.dataLink207:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionintuicao');
             
@@ -21520,7 +21505,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintuicao:setHint(hint);
         end, obj);
 
-    obj._e_event635 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
+    obj._e_event634 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionmedicina"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionmedicina', true);
@@ -21528,42 +21513,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event636 = obj.cbProfcompanionmedicina:addEventListener("onClick",
+    obj._e_event635 = obj.cbProfcompanionmedicina:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionmedicina', false);
         end, obj);
 
-    obj._e_event637 = obj.dataLink208:addEventListener("onChange",
+    obj._e_event636 = obj.dataLink208:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionmedicina");
         end, obj);
 
-    obj._e_event638 = obj.dataLink209:addEventListener("onChange",
+    obj._e_event637 = obj.dataLink209:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionmedicina'] then updateCbVisibility('companionmedicina'); end;
         end, obj);
 
-    obj._e_event639 = obj.button87:addEventListener("onKeyDown",
+    obj._e_event638 = obj.button86:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event640 = obj.button87:addEventListener("onKeyUp",
+    obj._e_event639 = obj.button86:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event641 = obj.button87:addEventListener("onClick",
+    obj._e_event640 = obj.button86:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, false);
         end, obj);
 
-    obj._e_event642 = obj.button87:addEventListener("onMenu",
+    obj._e_event641 = obj.button86:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, true);
         end, obj);
 
-    obj._e_event643 = obj.dataLink210:addEventListener("onChange",
+    obj._e_event642 = obj.dataLink210:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionmedicina');
             
@@ -21579,7 +21564,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionmedicina:setHint(hint);
         end, obj);
 
-    obj._e_event644 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
+    obj._e_event643 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpercepcao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpercepcao', true);
@@ -21587,42 +21572,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event645 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
+    obj._e_event644 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpercepcao', false);
         end, obj);
 
-    obj._e_event646 = obj.dataLink211:addEventListener("onChange",
+    obj._e_event645 = obj.dataLink211:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpercepcao");
         end, obj);
 
-    obj._e_event647 = obj.dataLink212:addEventListener("onChange",
+    obj._e_event646 = obj.dataLink212:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpercepcao'] then updateCbVisibility('companionpercepcao'); end;
         end, obj);
 
-    obj._e_event648 = obj.button88:addEventListener("onKeyDown",
+    obj._e_event647 = obj.button87:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event649 = obj.button88:addEventListener("onKeyUp",
+    obj._e_event648 = obj.button87:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event650 = obj.button88:addEventListener("onClick",
+    obj._e_event649 = obj.button87:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, false);
         end, obj);
 
-    obj._e_event651 = obj.button88:addEventListener("onMenu",
+    obj._e_event650 = obj.button87:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, true);
         end, obj);
 
-    obj._e_event652 = obj.dataLink213:addEventListener("onChange",
+    obj._e_event651 = obj.dataLink213:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionpercepcao');
             
@@ -21638,7 +21623,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpercepcao:setHint(hint);
         end, obj);
 
-    obj._e_event653 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
+    obj._e_event652 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsobrevivencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', true);
@@ -21646,42 +21631,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event654 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
+    obj._e_event653 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', false);
         end, obj);
 
-    obj._e_event655 = obj.dataLink214:addEventListener("onChange",
+    obj._e_event654 = obj.dataLink214:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsobrevivencia");
         end, obj);
 
-    obj._e_event656 = obj.dataLink215:addEventListener("onChange",
+    obj._e_event655 = obj.dataLink215:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsobrevivencia'] then updateCbVisibility('companionsobrevivencia'); end;
         end, obj);
 
-    obj._e_event657 = obj.button89:addEventListener("onKeyDown",
+    obj._e_event656 = obj.button88:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event658 = obj.button89:addEventListener("onKeyUp",
+    obj._e_event657 = obj.button88:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event659 = obj.button89:addEventListener("onClick",
+    obj._e_event658 = obj.button88:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, false);
         end, obj);
 
-    obj._e_event660 = obj.button89:addEventListener("onMenu",
+    obj._e_event659 = obj.button88:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, true);
         end, obj);
 
-    obj._e_event661 = obj.dataLink216:addEventListener("onChange",
+    obj._e_event660 = obj.dataLink216:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionsobrevivencia');
             
@@ -21697,7 +21682,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionsobrevivencia:setHint(hint);
         end, obj);
 
-    obj._e_event662 = obj.dataLink217:addEventListener("onChange",
+    obj._e_event661 = obj.dataLink217:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21727,27 +21712,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event663 = obj.button90:addEventListener("onKeyDown",
+    obj._e_event662 = obj.button89:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event664 = obj.button90:addEventListener("onKeyUp",
+    obj._e_event663 = obj.button89:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event665 = obj.button90:addEventListener("onClick",
+    obj._e_event664 = obj.button89:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event666 = obj.button90:addEventListener("onMenu",
+    obj._e_event665 = obj.button89:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event667 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
+    obj._e_event666 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioncarisma"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioncarisma', true);
@@ -21755,42 +21740,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event668 = obj.cbProfcompanioncarisma:addEventListener("onClick",
+    obj._e_event667 = obj.cbProfcompanioncarisma:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioncarisma', false);
         end, obj);
 
-    obj._e_event669 = obj.dataLink218:addEventListener("onChange",
+    obj._e_event668 = obj.dataLink218:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioncarisma");
         end, obj);
 
-    obj._e_event670 = obj.dataLink219:addEventListener("onChange",
+    obj._e_event669 = obj.dataLink219:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioncarisma'] then updateCbVisibility('companioncarisma'); end;
         end, obj);
 
-    obj._e_event671 = obj.button91:addEventListener("onKeyDown",
+    obj._e_event670 = obj.button90:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event672 = obj.button91:addEventListener("onKeyUp",
+    obj._e_event671 = obj.button90:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event673 = obj.button91:addEventListener("onClick",
+    obj._e_event672 = obj.button90:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event674 = obj.button91:addEventListener("onMenu",
+    obj._e_event673 = obj.button90:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event675 = obj.dataLink220:addEventListener("onChange",
+    obj._e_event674 = obj.dataLink220:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioncarisma');
             
@@ -21806,7 +21791,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioncarisma:setHint(hint);
         end, obj);
 
-    obj._e_event676 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
+    obj._e_event675 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatuacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatuacao', true);
@@ -21814,42 +21799,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event677 = obj.cbProfcompanionatuacao:addEventListener("onClick",
+    obj._e_event676 = obj.cbProfcompanionatuacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatuacao', false);
         end, obj);
 
-    obj._e_event678 = obj.dataLink221:addEventListener("onChange",
+    obj._e_event677 = obj.dataLink221:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatuacao");
         end, obj);
 
-    obj._e_event679 = obj.dataLink222:addEventListener("onChange",
+    obj._e_event678 = obj.dataLink222:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatuacao'] then updateCbVisibility('companionatuacao'); end;
         end, obj);
 
-    obj._e_event680 = obj.button92:addEventListener("onKeyDown",
+    obj._e_event679 = obj.button91:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event681 = obj.button92:addEventListener("onKeyUp",
+    obj._e_event680 = obj.button91:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event682 = obj.button92:addEventListener("onClick",
+    obj._e_event681 = obj.button91:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, false);
         end, obj);
 
-    obj._e_event683 = obj.button92:addEventListener("onMenu",
+    obj._e_event682 = obj.button91:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, true);
         end, obj);
 
-    obj._e_event684 = obj.dataLink223:addEventListener("onChange",
+    obj._e_event683 = obj.dataLink223:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionatuacao');
             
@@ -21865,7 +21850,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatuacao:setHint(hint);
         end, obj);
 
-    obj._e_event685 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
+    obj._e_event684 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionenganacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionenganacao', true);
@@ -21873,42 +21858,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event686 = obj.cbProfcompanionenganacao:addEventListener("onClick",
+    obj._e_event685 = obj.cbProfcompanionenganacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionenganacao', false);
         end, obj);
 
-    obj._e_event687 = obj.dataLink224:addEventListener("onChange",
+    obj._e_event686 = obj.dataLink224:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionenganacao");
         end, obj);
 
-    obj._e_event688 = obj.dataLink225:addEventListener("onChange",
+    obj._e_event687 = obj.dataLink225:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionenganacao'] then updateCbVisibility('companionenganacao'); end;
         end, obj);
 
-    obj._e_event689 = obj.button93:addEventListener("onKeyDown",
+    obj._e_event688 = obj.button92:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event690 = obj.button93:addEventListener("onKeyUp",
+    obj._e_event689 = obj.button92:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event691 = obj.button93:addEventListener("onClick",
+    obj._e_event690 = obj.button92:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, false);
         end, obj);
 
-    obj._e_event692 = obj.button93:addEventListener("onMenu",
+    obj._e_event691 = obj.button92:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, true);
         end, obj);
 
-    obj._e_event693 = obj.dataLink226:addEventListener("onChange",
+    obj._e_event692 = obj.dataLink226:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionenganacao');
             
@@ -21924,7 +21909,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionenganacao:setHint(hint);
         end, obj);
 
-    obj._e_event694 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
+    obj._e_event693 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintimidacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintimidacao', true);
@@ -21932,42 +21917,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event695 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
+    obj._e_event694 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintimidacao', false);
         end, obj);
 
-    obj._e_event696 = obj.dataLink227:addEventListener("onChange",
+    obj._e_event695 = obj.dataLink227:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintimidacao");
         end, obj);
 
-    obj._e_event697 = obj.dataLink228:addEventListener("onChange",
+    obj._e_event696 = obj.dataLink228:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintimidacao'] then updateCbVisibility('companionintimidacao'); end;
         end, obj);
 
-    obj._e_event698 = obj.button94:addEventListener("onKeyDown",
+    obj._e_event697 = obj.button93:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event699 = obj.button94:addEventListener("onKeyUp",
+    obj._e_event698 = obj.button93:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event700 = obj.button94:addEventListener("onClick",
+    obj._e_event699 = obj.button93:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, false);
         end, obj);
 
-    obj._e_event701 = obj.button94:addEventListener("onMenu",
+    obj._e_event700 = obj.button93:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, true);
         end, obj);
 
-    obj._e_event702 = obj.dataLink229:addEventListener("onChange",
+    obj._e_event701 = obj.dataLink229:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionintimidacao');
             
@@ -21983,7 +21968,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintimidacao:setHint(hint);
         end, obj);
 
-    obj._e_event703 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
+    obj._e_event702 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpersuasao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpersuasao', true);
@@ -21991,42 +21976,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event704 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
+    obj._e_event703 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpersuasao', false);
         end, obj);
 
-    obj._e_event705 = obj.dataLink230:addEventListener("onChange",
+    obj._e_event704 = obj.dataLink230:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpersuasao");
         end, obj);
 
-    obj._e_event706 = obj.dataLink231:addEventListener("onChange",
+    obj._e_event705 = obj.dataLink231:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpersuasao'] then updateCbVisibility('companionpersuasao'); end;
         end, obj);
 
-    obj._e_event707 = obj.button95:addEventListener("onKeyDown",
+    obj._e_event706 = obj.button94:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event708 = obj.button95:addEventListener("onKeyUp",
+    obj._e_event707 = obj.button94:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event709 = obj.button95:addEventListener("onClick",
+    obj._e_event708 = obj.button94:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, false);
         end, obj);
 
-    obj._e_event710 = obj.button95:addEventListener("onMenu",
+    obj._e_event709 = obj.button94:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, true);
         end, obj);
 
-    obj._e_event711 = obj.dataLink232:addEventListener("onChange",
+    obj._e_event710 = obj.dataLink232:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionpersuasao');
             
@@ -22042,78 +22027,78 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpersuasao:setHint(hint);
         end, obj);
 
-    obj._e_event712 = obj.button96:addEventListener("onKeyDown",
+    obj._e_event711 = obj.button95:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event713 = obj.button96:addEventListener("onKeyUp",
+    obj._e_event712 = obj.button95:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event714 = obj.button96:addEventListener("onClick",
+    obj._e_event713 = obj.button95:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, false);
         end, obj);
 
-    obj._e_event715 = obj.button96:addEventListener("onMenu",
+    obj._e_event714 = obj.button95:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, true);
         end, obj);
 
-    obj._e_event716 = obj.button97:addEventListener("onClick",
+    obj._e_event715 = obj.button96:addEventListener("onClick",
         function (_)
             descanso.curto(sheet);
         end, obj);
 
-    obj._e_event717 = obj.button98:addEventListener("onClick",
+    obj._e_event716 = obj.button97:addEventListener("onClick",
         function (_)
             descanso.longo(sheet);
         end, obj);
 
-    obj._e_event718 = obj.button99:addEventListener("onClick",
+    obj._e_event717 = obj.button98:addEventListener("onClick",
         function (_)
             levarDano(sheet);
         end, obj);
 
-    obj._e_event719 = obj.dataLink233:addEventListener("onChange",
+    obj._e_event718 = obj.dataLink233:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             self.progBar2:setColor(sheet.barColor2);
         end, obj);
 
-    obj._e_event720 = obj.dataLink234:addEventListener("onChange",
+    obj._e_event719 = obj.dataLink234:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local jogador = Firecast.getPersonagemDe(sheet).dono;
             										if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(1, sheet.PV2, sheet.PVmax2); end;
         end, obj);
 
-    obj._e_event721 = obj.dataLink235:addEventListener("onChange",
+    obj._e_event720 = obj.dataLink235:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.descansoLongo then sheet.PV2 = sheet.PVmax2; end;
         end, obj);
 
-    obj._e_event722 = obj.button100:addEventListener("onKeyDown",
+    obj._e_event721 = obj.button99:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event723 = obj.button100:addEventListener("onKeyUp",
+    obj._e_event722 = obj.button99:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event724 = obj.button100:addEventListener("onClick",
+    obj._e_event723 = obj.button99:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.deathSave, nil, nil, false);
         end, obj);
 
-    obj._e_event725 = obj.button100:addEventListener("onMenu",
+    obj._e_event724 = obj.button99:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.deathSave, nil, nil, true);
         end, obj);
 
-    obj._e_event726 = obj.checkBox10:addEventListener("onChange",
+    obj._e_event725 = obj.checkBox10:addEventListener("onChange",
         function (_)
             if sheet then
             							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
@@ -22121,7 +22106,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event727 = obj.checkBox11:addEventListener("onChange",
+    obj._e_event726 = obj.checkBox11:addEventListener("onChange",
         function (_)
             if sheet then
             							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
@@ -22129,7 +22114,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event728 = obj.dataLink236:addEventListener("onChange",
+    obj._e_event727 = obj.dataLink236:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             					local theme = sheet.theme;
@@ -22146,7 +22131,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event729 = obj.dataLink237:addEventListener("onChange",
+    obj._e_event728 = obj.dataLink237:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local color = sheet.colorBackground or "#505050";
@@ -22158,7 +22143,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event730 = obj.dataLink238:addEventListener("onChange",
+    obj._e_event729 = obj.dataLink238:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local strokeColor = sheet.colorStroke or "#FFFFFF";
@@ -22174,7 +22159,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event731 = obj.dataLink239:addEventListener("onChange",
+    obj._e_event730 = obj.dataLink239:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local fontColor = sheet.colorFont or "#FFFFFF";
@@ -22212,22 +22197,22 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event732 = obj.button101:addEventListener("onClick",
+    obj._e_event731 = obj.button100:addEventListener("onClick",
         function (_)
             GUI.openInBrowser(' ')
         end, obj);
 
-    obj._e_event733 = obj.button102:addEventListener("onClick",
+    obj._e_event732 = obj.button101:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');
         end, obj);
 
-    obj._e_event734 = obj.button103:addEventListener("onClick",
+    obj._e_event733 = obj.button102:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');
         end, obj);
 
-    obj._e_event735 = obj.button104:addEventListener("onClick",
+    obj._e_event734 = obj.button103:addEventListener("onClick",
         function (_)
             local xml = NDB.exportXML(sheet);
             
@@ -22244,7 +22229,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end);
         end, obj);
 
-    obj._e_event736 = obj.button105:addEventListener("onClick",
+    obj._e_event735 = obj.button104:addEventListener("onClick",
         function (_)
             Dialogs.openFile("Importar Ficha", "application/xml", false, 
             						function(arquivos)
@@ -22260,7 +22245,6 @@ self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event736);
         __o_rrpgObjs.removeEventListenerById(self._e_event735);
         __o_rrpgObjs.removeEventListenerById(self._e_event734);
         __o_rrpgObjs.removeEventListenerById(self._e_event733);
@@ -23964,7 +23948,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button74 ~= nil then self.button74:destroy(); self.button74 = nil; end;
         if self.popupEditFormulaRL ~= nil then self.popupEditFormulaRL:destroy(); self.popupEditFormulaRL = nil; end;
         if self.edit127 ~= nil then self.edit127:destroy(); self.edit127 = nil; end;
-        if self.button105 ~= nil then self.button105:destroy(); self.button105 = nil; end;
         if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.flowPart35 ~= nil then self.flowPart35:destroy(); self.flowPart35 = nil; end;
         if self.flowLayout7 ~= nil then self.flowLayout7:destroy(); self.flowLayout7 = nil; end;
