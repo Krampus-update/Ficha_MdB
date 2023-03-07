@@ -20,31 +20,13 @@
 		
 			<label left="10" top="25" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
 			<comboBox left="100" top="25" width="100" field="tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
-			<checkBox left="200" top="25" width="100" field="quadrupede" text="Quadrúpede" />
-
-			<label left="40" top="5" width="30" height="25" text="Dia" horzTextAlign="center" />
-			<edit left="40" top="30" width="30" height="25" field="dia" type="number"/>
-		
-			<upperGridCampo left1="10" left2="100" top="50" text="ALTURA" field="altura"/>
-			<upperGridCampo left1="10" left2="100" top="75" text="PESO" field="peso"/>
-			
-			<upperGridCampo left1="310" left2="400" top="25" text="IDADE" field="idade"/>
-			<upperGridCampo left1="310" left2="400" top="50" text="SEXO" field="sexo"/>
-			<upperGridCampo left1="310" left2="400" top="75" text="OUTROS" field="aparenciaOutros"/>
-			<!--
-				
-				tenta ai
-				
-				
-				
-			 -->
-			<upperGridCampo left1="610" left2="700" top="25" text="OLHOS" field="aparenciaOlhos"/>
-			<upperGridCampo left1="610" left2="700" top="50" text="PELE" field="pele"/>
-			<upperGridCampo left1="610" left2="700" top="75" text="CABELO" field="cabelo"/>
-			
-			<upperGridCampo left1="910" left2="1000" top="25" text="PLANO" field="plano"/>
-			<upperGridCampo left1="910" left2="1000" top="50" text="REGIÃO" field="regiao"/>
-			<upperGridCampo left1="910" left2="1000" top="75" text="REINO" field="reino"/>
+			<checkBox left="200" top="25" width="100" field="quadrupede" text="Quadrúpede" />		
+			<upperGridCampo field="caracteristicas.idade" minWidth="100" titulo="@@DnD5e.features.age"/>
+			<upperGridCampo field="caracteristicas.altura" titulo="@@DnD5e.features.height"/>
+			<upperGridCampo field="caracteristicas.peso" titulo="@@DnD5e.features.weight"/>									
+			<upperGridCampo field="caracteristicas.olhos" minWidth="100" titulo="@@DnD5e.features.eyes"/>
+			<upperGridCampo field="caracteristicas.pele" titulo="@@DnD5e.features.skin"/>
+			<upperGridCampo field="caracteristicas.cabelo" titulo="@@DnD5e.features.hair"/>
 		</rectangle>
 
 		<dataLink fields="{'tamanho', 'quadrupede', 'efetFor'}">
