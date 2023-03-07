@@ -5542,9 +5542,9 @@ require('mudaNick.lua')
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout60);
     obj.textEditor1:setLeft(10);
-    obj.textEditor1:setTop(25);
-    obj.textEditor1:setWidth(355);
-    obj.textEditor1:setHeight(220);
+    obj.textEditor1:setTop(30);
+    obj.textEditor1:setWidth(345);
+    obj.textEditor1:setHeight(195);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
 
@@ -5604,8 +5604,8 @@ require('mudaNick.lua')
     obj.textEditor2:setParent(obj.layout62);
     obj.textEditor2:setLeft(10);
     obj.textEditor2:setTop(20);
-    obj.textEditor2:setWidth(370);
-    obj.textEditor2:setHeight(245);
+    obj.textEditor2:setWidth(355);
+    obj.textEditor2:setHeight(195);
     obj.textEditor2:setField("idiomas");
     obj.textEditor2:setName("textEditor2");
 
