@@ -32,7 +32,7 @@
 		</flowPart>
 
 		<layout left="0" top="355" width="375" height="250" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
-			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="CARACTERISTICAS"/>
+			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
 			<textEditor left="10" top="25" width="355" height="220" field="caracteristicas.caracteristicasETracoes"/>
 		</layout>
 
