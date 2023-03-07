@@ -240,7 +240,7 @@ local function constructNew_frmContador()
     obj.cbBarChoose:setAlign("top");
     obj.cbBarChoose:setHeight(60);
     obj.cbBarChoose:setItems({'','Barra 2', 'Barra 3', 'Barra 4'});
-    obj.cbBarChoose:setValues({nil,'2','3','4'});
+    obj.cbBarChoose:setValues({nil,'1','2','3'});
     obj.cbBarChoose:setField("barChoose");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
