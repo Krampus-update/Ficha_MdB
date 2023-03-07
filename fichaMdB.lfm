@@ -20,6 +20,10 @@
 				<import file="2_caracteristicas.xml"/>
 			</tab>
 
+	</tabControl>		
+
+	<tabControl  align = "client">
+
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
 			</tab>
@@ -93,6 +97,8 @@
 				<import file="13_creditos.xml"/>
 			</tab>
 
+
+			</tabControl>
 		</tabControl>
 
 </form>
