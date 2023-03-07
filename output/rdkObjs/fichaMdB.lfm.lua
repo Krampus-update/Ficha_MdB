@@ -5543,8 +5543,9 @@ require('mudaNick.lua')
     obj.richEdit1:setLeft(10);
     obj.richEdit1:setTop(20);
     obj.richEdit1:setWidth(805);
-    obj.richEdit1:setHeight(455);
+    obj.richEdit1:setHeight(450);
     obj.richEdit1:setField("background");
+    lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#333333");
     lfm_setPropAsString(obj.richEdit1, "defaultFontSize",  "12");
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
     obj.richEdit1:setName("richEdit1");
@@ -5575,7 +5576,7 @@ require('mudaNick.lua')
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
     obj.textEditor1:setWidth(355);
-    obj.textEditor1:setHeight(195);
+    obj.textEditor1:setHeight(360);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
     obj.textEditor1:setTransparent(true);
