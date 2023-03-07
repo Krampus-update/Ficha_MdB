@@ -245,7 +245,7 @@ local function constructNew_frmContador()
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink7:setParent(obj.layout10);
-    obj.dataLink7:setFields({'barChoose','valMax','valCur'});
+    obj.dataLink7:setFields({'valMax','valCur'});
     obj.dataLink7:setName("dataLink7");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
@@ -317,7 +317,11 @@ local function constructNew_frmContador()
             							return;
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;
-            							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(tonumber(sheet.barChoose), sheet.valCur, sheet.valMax); end;
+            							local bar = tonumber(sheet.barChoose)
+            							sheet.barChoose = bar
+            							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
+            								jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax); 
+            							end;
             						end;
         end, obj);
 

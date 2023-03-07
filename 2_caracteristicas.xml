@@ -62,10 +62,10 @@
 					</flowPart>	
 					
 					<flowPart name ="prtFaccao" class="halfTile" stepSizes="{260, 310}" maxScaledWidth="310" avoidScale="true" height="350" frameStyle="frames/panel4transp/frame.xml" margins="{left=4, right=4, bottom=4, top=4}">
-						<label align="top" horzTextAlign="leading" text="@@DnD5e.features.faction" fontSize="11" fontColor="gray" margins="{left=4, right=4}"/>
-						<edit align="top" field="aliados.faccao.nome" margins="{left=4, right=4}"/>
-						<image align="client" field="aliados.faccao.simbolo" editable="true" style="autoFit" margins="{left=4, right=4}"/>
-						<label align="bottom" autoSize="true" text="@@DnD5e.features.factionSymbol" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+						<label align="top" horzTextAlign="leading" text="FACÇÂO" fontSize="11" fontColor="gray" margins="{left=4, right=4}"/>
+						<edit align="top" field="ALIADOS" margins="{left=4, right=4}"/>
+						<image align="client" field="SIMBOLO" editable="true" style="autoFit" margins="{left=4, right=4}"/>
+						<label align="bottom" autoSize="true" text="SIMBOLO DA FACÇÂO" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 					</flowPart>
 					<flowLineBreak/>
 					
