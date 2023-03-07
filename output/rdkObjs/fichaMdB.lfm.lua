@@ -5611,7 +5611,7 @@ require('mudaNick.lua')
 
     obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout63:setParent(obj.scrollBox2);
-    obj.layout63:setLeft(255);
+    obj.layout63:setLeft(380);
     obj.layout63:setTop(610);
     obj.layout63:setWidth(375);
     obj.layout63:setHeight(123);
@@ -18762,15 +18762,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event378 = obj.dataLink121:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet ~= nil and self ~= nil and sheet.contadoresMudaram then
-            									local equip = self.dataEquipAttackDetails.node;
-            									if equip ~= nil then
-            										local optsAttack = NDB.getChildNodes(equip.optsAttack);
-            										for i=1,#optsAttack,1 do
-            											optsAttack[i].contadoresMudaram = true;
-            											optsAttack[i].contadoresMudaram = false;
+            										local equip = self.dataEquipAttackDetails.node;
+            										if equip ~= nil then
+            											local optsAttack = NDB.getChildNodes(equip.optsAttack);
+            											for i=1,#optsAttack,1 do
+            												optsAttack[i].contadoresMudaram = true;
+            												optsAttack[i].contadoresMudaram = false;
+            											end;
             										end;
             									end;
-            								end;
         end, obj);
 
     obj._e_event379 = obj.labEquipDefense:addEventListener("onResize",
