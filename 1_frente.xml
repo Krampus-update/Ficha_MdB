@@ -198,10 +198,11 @@
 						</frame>
 
 						<!-- PONTOS DE VIDA TEMPORARIOS -->
-						<frame align="bottom" height="70" frameStyle="frames/panel5/bottomPanel.xml" margins="{left = 4, right = 4}">
-							<edit align="client" field="PVTemporario" class="transparente" margins="{top=2}" horzTextAlign="center" vertTextAlign="center" fontSize="36" fontStyle="bold" type="number"/>
-							<label align="bottom" autoSize="true" text="PONTOS DE VIDA TEMPORÁRIOS" fontSize="11" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+						<frame left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+							<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 						</frame>
+
 					</flowPart>
 
 					<!-- TESTES DE VIDA -->
