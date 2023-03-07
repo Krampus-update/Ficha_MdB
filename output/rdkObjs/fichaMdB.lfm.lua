@@ -5198,7 +5198,7 @@ require('mudaNick.lua')
     obj.layout59:setTop(0);
     obj.layout59:setWidth(1205);
     obj.layout59:setHeight(105);
-    obj.layout59:setFrameStyle("frames/panel5/frame.xml");
+    obj.layout59:setFrameStyle("frames/panel4transp/frame.xml");
     obj.layout59:setName("layout59");
 
     obj.label24 = GUI.fromHandle(_obj_newObject("label"));
@@ -5543,7 +5543,7 @@ require('mudaNick.lua')
     obj.textEditor1:setParent(obj.layout60);
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
-    obj.textEditor1:setWidth(345);
+    obj.textEditor1:setWidth(355);
     obj.textEditor1:setHeight(195);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
