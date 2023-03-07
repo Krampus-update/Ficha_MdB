@@ -5520,56 +5520,26 @@ require('mudaNick.lua')
 
     obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout60:setParent(obj.scrollBox2);
-    obj.layout60:setLeft(0);
-    obj.layout60:setTop(355);
-    obj.layout60:setWidth(375);
-    obj.layout60:setHeight(250);
+    obj.layout60:setLeft(380);
+    obj.layout60:setTop(110);
+    obj.layout60:setWidth(825);
+    obj.layout60:setHeight(495);
     obj.layout60:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout60:setMargins({left = 4, right = 4});
     obj.layout60:setName("layout60");
 
     obj.label37 = GUI.fromHandle(_obj_newObject("label"));
     obj.label37:setParent(obj.layout60);
-    obj.label37:setAlign("top");
+    obj.label37:setAlign("bottom");
     obj.label37:setAutoSize(true);
     obj.label37:setVertTextAlign("center");
     obj.label37:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label37, "fontStyle",  "bold");
-    obj.label37:setText("TRAÇOS");
+    obj.label37:setText("HISTORIA");
     obj.label37:setName("label37");
     obj.label37:setFontColor("white");
 
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout60);
-    obj.textEditor1:setLeft(10);
-    obj.textEditor1:setTop(30);
-    obj.textEditor1:setWidth(355);
-    obj.textEditor1:setHeight(195);
-    obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
-    obj.textEditor1:setName("textEditor1");
-
-    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout61:setParent(obj.scrollBox2);
-    obj.layout61:setLeft(380);
-    obj.layout61:setTop(110);
-    obj.layout61:setWidth(825);
-    obj.layout61:setHeight(495);
-    obj.layout61:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout61:setName("layout61");
-
-    obj.label38 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label38:setParent(obj.layout61);
-    obj.label38:setAlign("bottom");
-    obj.label38:setAutoSize(true);
-    obj.label38:setVertTextAlign("center");
-    obj.label38:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label38, "fontStyle",  "bold");
-    obj.label38:setText("HISTORIA");
-    obj.label38:setName("label38");
-    obj.label38:setFontColor("white");
-
     obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit1:setParent(obj.layout61);
+    obj.richEdit1:setParent(obj.layout60);
     obj.richEdit1:setLeft(10);
     obj.richEdit1:setTop(20);
     obj.richEdit1:setWidth(805);
@@ -5580,12 +5550,42 @@ require('mudaNick.lua')
     lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
     obj.richEdit1:setName("richEdit1");
 
+    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout61:setParent(obj.scrollBox2);
+    obj.layout61:setLeft(0);
+    obj.layout61:setTop(355);
+    obj.layout61:setWidth(375);
+    obj.layout61:setHeight(375);
+    obj.layout61:setFrameStyle("frames/panel5/frame.xml");
+    obj.layout61:setMargins({left = 4, right = 4});
+    obj.layout61:setName("layout61");
+
+    obj.label38 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label38:setParent(obj.layout61);
+    obj.label38:setAlign("top");
+    obj.label38:setAutoSize(true);
+    obj.label38:setVertTextAlign("center");
+    obj.label38:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label38, "fontStyle",  "bold");
+    obj.label38:setText("TRAÇOS");
+    obj.label38:setName("label38");
+    obj.label38:setFontColor("white");
+
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.layout61);
+    obj.textEditor1:setLeft(10);
+    obj.textEditor1:setTop(30);
+    obj.textEditor1:setWidth(355);
+    obj.textEditor1:setHeight(195);
+    obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
+    obj.textEditor1:setName("textEditor1");
+
     obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout62:setParent(obj.scrollBox2);
     obj.layout62:setLeft(0);
-    obj.layout62:setTop(610);
+    obj.layout62:setTop(735);
     obj.layout62:setWidth(375);
-    obj.layout62:setHeight(250);
+    obj.layout62:setHeight(123);
     obj.layout62:setFrameStyle("frames/panel5/frame.xml");
     obj.layout62:setName("layout62");
 
