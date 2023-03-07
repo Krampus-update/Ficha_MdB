@@ -5640,8 +5640,8 @@ require('mudaNick.lua')
 
     obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout64:setParent(obj.scrollBox2);
-    obj.layout64:setLeft(503);
-    obj.layout64:setTop(725);
+    obj.layout64:setLeft(380);
+    obj.layout64:setTop(730);
     obj.layout64:setWidth(375);
     obj.layout64:setHeight(123);
     obj.layout64:setFrameStyle("frames/panel5/frame.xml");
@@ -5669,10 +5669,10 @@ require('mudaNick.lua')
 
     obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout65:setParent(obj.scrollBox2);
-    obj.layout65:setLeft(380);
+    obj.layout65:setLeft(760);
     obj.layout65:setTop(610);
     obj.layout65:setWidth(375);
-    obj.layout65:setHeight(123);
+    obj.layout65:setHeight(125);
     obj.layout65:setFrameStyle("frames/panel5/frame.xml");
     obj.layout65:setName("layout65");
 
@@ -5698,10 +5698,10 @@ require('mudaNick.lua')
 
     obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout66:setParent(obj.scrollBox2);
-    obj.layout66:setLeft(503);
-    obj.layout66:setTop(725);
+    obj.layout66:setLeft(760);
+    obj.layout66:setTop(730);
     obj.layout66:setWidth(375);
-    obj.layout66:setHeight(123);
+    obj.layout66:setHeight(125);
     obj.layout66:setFrameStyle("frames/panel5/frame.xml");
     obj.layout66:setName("layout66");
 
