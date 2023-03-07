@@ -42,7 +42,7 @@ local function constructNew_frmMdB()
 
     obj.tabControl1 = GUI.fromHandle(_obj_newObject("tabControl"));
     obj.tabControl1:setParent(obj);
-    obj.tabControl1:setAlign("top");
+    obj.tabControl1:setAlign("client");
     obj.tabControl1:setName("tabControl1");
 
     obj.pgcPrincipal = GUI.fromHandle(_obj_newObject("tabControl"));

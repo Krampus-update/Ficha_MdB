@@ -7,7 +7,7 @@
 	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
-	<tabControl  align = "top">
+	<tabControl  align = "client">
 
 		<tabControl align="client" name="pgcPrincipal">
 
@@ -21,7 +21,7 @@
 
 	</tabControl>		
 
-	<tabControl  align = "top">
+	<tabControl  align = "client">
 
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
