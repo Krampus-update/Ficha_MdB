@@ -28,7 +28,11 @@
 			<import file="contadores.xml"/>
 		</tab>
 
-		<tab title="Historia">
+		<tab title="PROPRIEDADES">
+			<import file="historia.xml"/>
+		</tab>
+
+		<tab title="CALENDARIO">
 			<import file="historia.xml"/>
 		</tab>
 
