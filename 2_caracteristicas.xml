@@ -21,9 +21,9 @@
 			<Descricao left1="610" left2="700" top="50" text="PELE" field="pele"/>
 			<Descricao left1="610" left2="700" top="75" text="CABELO" field="cabelo"/>
 			
-			<Descricao left1="910" left2="1000" top="25" text="PLANO" field="plano"/>
-			<Descricao left1="910" left2="1000" top="50" text="REGIÃO" field="regiao"/>
-			<Descricao left1="910" left2="1000" top="75" text="REINO" field="reino"/>
+			<Descricao left1="810" left2="910" top="25" text="PLANO" field="plano"/>
+			<Descricao left1="810" left2="910" top="50" text="REGIÃO" field="regiao"/>
+			<Descricao left1="810" left2="910" top="75" text="REINO" field="reino"/>
 		</layout >
 
 		<dataLink fields="{'tamanho', 'quadrupede', 'efetFor'}">
