@@ -492,7 +492,7 @@
 					</button>
 				</layout>
 
-				<label left="0" top="50" width="110" height="25" text="Nome" horzTextAlign="center"/>
+				<label left="0" top="50" width="55" height="25" text="Nome" horzTextAlign="center"/>
 				<label left="100" top="50" width="55" height="25" text="Ciclo" horzTextAlign="center" hitTest="true" hint="Quantos dias leva o ciclo lunar?"/>
 				<label left="135" top="50" width="55" height="25" text="Desvio" horzTextAlign="center" hitTest="true" hint="No ano 1 em que dia começa o ciclo lunar (lua cheia)?"/>
 
