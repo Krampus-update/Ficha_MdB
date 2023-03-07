@@ -5564,7 +5564,7 @@ require('mudaNick.lua')
 
     obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout60:setParent(obj.scrollBox2);
-    obj.layout60:setLeft(500);
+    obj.layout60:setLeft(380);
     obj.layout60:setTop(110);
     obj.layout60:setWidth(825);
     obj.layout60:setHeight(495);
@@ -5573,7 +5573,7 @@ require('mudaNick.lua')
 
     obj.label39 = GUI.fromHandle(_obj_newObject("label"));
     obj.label39:setParent(obj.layout60);
-    obj.label39:setLeft(5);
+    obj.label39:setLeft(415);
     obj.label39:setTop(1);
     obj.label39:setWidth(100);
     obj.label39:setHeight(20);
