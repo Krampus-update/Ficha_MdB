@@ -21,22 +21,22 @@
 		</tab>
 
 		<tab title="MAGICA">
-			<import file="magias2.xml"/>
+			<import file="4_magias2.xml"/>
 		</tab>
 
 		<tab title="CONTADORES">
-			<import file="contadores.xml"/>
+			<import file="5_contadores.xml"/>
 		</tab>
 
 		<tab title="PROPRIEDADES">
-			<import file="historia.xml"/>
+			<import file="6_propriedades.xml"/>
 		</tab>
 
 		<tab title="CALENDARIO">
-			<import file="historia.xml"/>
+			<import file="calendario.xml"/>
 		</tab>
 
-		<tab title="Díario de campanha">
+		<tab title="DÍARIO DE CAMPANHA">
 			<rectangle class="fundo">
 				<checkBox align="right" width="15" field="outros.diariodecampanha">
 					<event name="onChange">
@@ -64,6 +64,25 @@
 				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
+		</tab>
+
+		<tab title="Díario de campanha">
+			<rectangle class="fundo">
+				<checkBox align="right" width="15" field="outros.diariodecampanha">
+					<event name="onChange">
+						if sheet then
+							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
+							self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
+						end;
+					</event>
+				</checkBox>
+				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
+				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
+			</rectangle>
+		</tab>
+
+		<tab title="COMPANION">
+			<import file="companion.lfm"/>
 		</tab>
 
 		<tab title="Díario de campanha">
