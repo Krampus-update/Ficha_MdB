@@ -1,11 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rectangle class='fundo'>
 	<recordList name='rclFichaPropriedades' align='client' field='propriedades.rcl' templateForm='frmFichaPropriedade'/>
-	<button align='bottom' text='Resetar Propriedades'><event name='onClick'>
-		Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?', function(confirmado) if confirmado then sheet.propriedades = {}; end; end);
-	</event></button>
+	<button align='bottom' text='Resetar Propriedades'>
+		<event name='onClick'>
+			Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?',
+			function(confirmado)
+				if confirmado then
+					sheet.propriedades = {}; 
+				end;
+			end);
+		</event>
+	</button>
 	<button align='bottom' text='Adicionar Propriedade'><event name='onClick'>
-		if not sheet.propriedades then sheet.propriedades = {}; end;
+		if not sheet.propriedades then
+			sheet.propriedades = {};
+		end;
 
 		local choices = {};
 		for key,val in pairs(common.ficha_propriedades) do
