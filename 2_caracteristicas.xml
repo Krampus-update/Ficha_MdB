@@ -6,7 +6,7 @@
 			<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
 		</template>
 		
-		<rectangle left="0" top="0" width="1205" height="105" color="black">
+		<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel5/frame.xml">
 			<label left="3" top="1" width="100" height="20" text="DESCRIÇÃO"/>
 		
 			<label left="10" top="25" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
@@ -26,7 +26,7 @@
 			<Descricao left1="910" left2="1000" top="25" text="PLANO" field="plano"/>
 			<Descricao left1="910" left2="1000" top="50" text="REGIÃO" field="regiao"/>
 			<Descricao left1="910" left2="1000" top="75" text="REINO" field="reino"/>
-		</rectangle>
+		</layout >
 
 		<dataLink fields="{'tamanho', 'quadrupede', 'efetFor'}">
 			<event name="onChange">
