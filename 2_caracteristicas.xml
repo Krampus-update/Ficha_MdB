@@ -138,21 +138,100 @@
 			</event>	
 		</dataLink>
 		
-		<layout left="0" top="110" width="375" height="240">
-			<rectangle align="client" color="black"/>
-			<label left="5" top="1" width="100" height="20" text="APARÊNCIA"/>
-			<textEditor left="5" top="25" width="365" height="210" field="aparencia"/>
-		</layout>
-		<layout left="0" top="355" width="375" height="250">
-			<rectangle align="client" color="black"/>
-			<label left="5" top="1" width="100" height="20" text="PERSONALIDADE"/>
-			<textEditor left="5" top="25" width="365" height="220" field="personalidade"/>
-		</layout>
-		<layout left="380" top="110" width="825" height="495">
-			<rectangle align="client" color="black"/>
-			<label left="5" top="1" width="100" height="20" text="HISTORIA"/>
-			<button left="720" top="1" width="100" height="20" text="Copiar Antigo" onClick="System.setClipboardText(sheet.historia);"/>
-			<richEdit left="5" top="25" width="815" height="465" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
-		</layout>
+		<!-- SEGUNDA LINHA -->		
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
+				<!-- PRIMEIRA COLUNA -->
+				<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
+					<!-- IMAGEM -->
+					<flowPart class="tileCarac" height="390" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+						<image align="client" style="autoFit" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.appearance" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>		
+					
+					<!-- IDIOMAS -->			
+					<flowPart class="tileCarac" height="115" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 0}">
+						<textEditor align="client" field="idiomas" class="transparente" margins="{top=2}" fontSize="16"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.languages" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>		
+				</flowLayout>
+			
+				<!-- TRACOS DE PERSONALIDADE, IDEAIS, VINCULOS, FRAQUEZAS -->					
+				<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left=4, right=4}">
+				
+					<!-- TRAÇOS DE PERSONALIDADE -->				
+					<flowPart class="tileCarac" height="140" frameStyle="frames/panel5/topPanel.xml" margins="{left = 4, right = 4}">
+						<textEditor align="client" field="caracteristicas.tracosPersonalidade" class="transparente" margins="{top=2}" fontSize="16"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.personalityTraits" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>	
+					
+					<!-- IDEAIS -->				
+					<flowPart class="tileCarac" height="115" frameStyle="frames/panel5/centerPanel.xml" margins="{left = 4, right = 4}">
+						<textEditor align="client" field="caracteristicas.ideais" class="transparente" margins="{top=2}" fontSize="16"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.ideals" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>					
+					
+					<!-- IDEAIS -->				
+					<flowPart class="tileCarac" height="115" frameStyle="frames/panel5/centerPanel.xml" margins="{left = 4, right = 4}">
+						<textEditor align="client" field="caracteristicas.vinculos" class="transparente" margins="{top=2}" fontSize="16"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.bonds" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>			
+
+									
+					<!-- FRAQUEZAS -->				
+					<flowPart class="tileCarac" height="115" frameStyle="frames/panel5/bottomPanel.xml" margins="{left = 4, right = 4}">
+						<textEditor align="client" field="caracteristicas.fraquezas" class="transparente" margins="{top=2}" fontSize="16"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.weaknesses" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>						
+				</flowLayout>		
+
+				<!-- CARACTERISTICAS E TRACOS -->			
+				<flowPart class="tileCarac" height="515" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
+					<textEditor align="client" field="caracteristicas.caracteristicasETracoes" class="transparente" margins="{top=2}" fontSize="16"/>
+					<label align="bottom" autoSize="true" text="@@DnD5e.features.featurestraits" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+				</flowPart>			
+			</flowLayout>
+			
+			<flowLineBreak/>
+			
+			<!-- TERCEIRA LINHA -->		
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10" margins="{top=5}">
+				<!-- ALIADOS E ORGANIZAÇÕES -->					
+				<flowLayout name="fraAliadosOrganizacoes" class="tile" autoHeight="true" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" horzAlign="center">
+					<event name="onBeforeLayoutCalc">
+						<![CDATA[
+								if self.fraAliadosOrganizacoes:getWidth() <= 500 then
+									self.prtAliados:setHeight(200);
+									self.prtFaccao:setHeight(200);									
+								else
+									self.prtAliados:setHeight(420);
+									self.prtFaccao:setHeight(350);
+								end;
+						]]>
+					</event>				
+				
+					<flowPart name="prtAliados" minWidth="300" maxWidth="1600" minScaledWidth="290" height="420" avoidScale="true">
+						<textEditor align="client" field="aliados.aliadosEOrganizacoes" class="transparente" margins="{top=2, left=4, right=4}" fontSize="16"/>
+					</flowPart>	
+					
+					<flowPart name ="prtFaccao" class="halfTile" stepSizes="{260, 310}" maxScaledWidth="310" avoidScale="true" height="350" frameStyle="frames/panel4transp/frame.xml" margins="{left=4, right=4, bottom=4, top=4}">
+						<label align="top" horzTextAlign="leading" text="@@DnD5e.features.faction" fontSize="11" fontColor="gray" margins="{left=4, right=4}"/>
+						<edit align="top" field="aliados.faccao.nome" margins="{left=4, right=4}"/>
+						<image align="client" field="aliados.faccao.simbolo" editable="true" style="autoFit" margins="{left=4, right=4}"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.factionSymbol" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>
+					
+					<flowLineBreak/>
+					
+					<flowPart minWidth="200" maxWidth="1800" height="16">
+						<label align="client" autoSize="true" text="@@DnD5e.features.alliesOrganizations" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>
+				</flowLayout>				
+				
+				<!-- HISTÓRIA DO PERSONAGEM -->		
+				<flowPart class="tile" height="515" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
+					<textEditor align="client" field="historia.texto" class="transparente" margins="{top=2}" fontSize="16"/>
+					<label align="bottom" autoSize="true" text="@@DnD5e.features.characterStory" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+				</flowPart>	
+			</flowLayout>
 	</scrollBox>
 </form>
