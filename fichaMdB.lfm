@@ -3,24 +3,26 @@
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
 
-
 	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
+	<tabControl  align = "client">
 
-	<tabControl align="client" name="pgcPrincipal">
+		<tabControl align="client" name="pgcPrincipal">
 
-		<tab title="FRENTE">
-			<import file="1_frente.xml"/>
-		</tab>
+			<tab title="FRENTE">
+				<import file="1_frente.xml"/>
+			</tab>
 
-		<tab title="CARACTERISTICAS">
-			<import file="2_caracteristicas.xml"/>
-		</tab>
+			<tab title="CARACTERISTICAS">
+				<import file="2_caracteristicas.xml"/>
+			</tab>
 
-		<tab title="EQUIPAMENTOS">
-			<import file="3_equipamento2.xml"/>
-		</tab>
+			<tab title="EQUIPAMENTOS">
+				<import file="3_equipamento2.xml"/>
+			</tab>
+
+		</tabControl>
 
 		<tab title="MAGIA">
 			<import file="4_magias2.xml"/>
@@ -34,7 +36,7 @@
 			<import file="6_propriedades.xml"/>
 		</tab>
 
-				<tab title="DIARIO DE CAMPANHA">
+		<tab title="DIARIO DE CAMPANHA">
 			<rectangle class="fundo">
 					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
 						<event name="onChange">
@@ -85,10 +87,6 @@
 				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
-		</tab>
-
-		<tab title="Mapa Mundi">
-			<import file="12_mapa.xml"/>
 		</tab>
 
 		<tab title="CREDITOS">
