@@ -100,7 +100,7 @@
 	<layout align="right" width="333">
 		<layout align="left" width="184">
 			<layout align="left" width="152" margins="{left=2}">
-				<comboBox name="cbBarChoose" align="top" height="60" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{nil,'2','3','4'}" field="barChoose"/>
+				<comboBox name="cbBarChoose" align="top" height="60" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{nil,'1','2','3'}" field="barChoose"/>
 				<dataLink fields="{'valMax','valCur'}">
 					<event name="onChange">
 						if sheet.barChoose == nil then
