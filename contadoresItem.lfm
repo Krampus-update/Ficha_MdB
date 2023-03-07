@@ -107,7 +107,7 @@
 										end;
 									 end);
 					</event>
-				</datalink>
+				</dataLink>
 			</layout>
 		</layout>
 	</layout>
