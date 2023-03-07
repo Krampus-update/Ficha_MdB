@@ -4391,7 +4391,7 @@ require('mudaNick.lua')
     obj.button41 = GUI.fromHandle(_obj_newObject("button"));
     obj.button41:setParent(obj.layout49);
     obj.button41:setAlign("client");
-    obj.button41:setText("HONRA");
+    obj.button41:setText(" ");
     obj.button41:setVertTextAlign("center");
     obj.button41:setHorzTextAlign("center");
     obj.button41:setName("button41");

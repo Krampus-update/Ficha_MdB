@@ -110,7 +110,7 @@
 						{{"Não Listada", "periciasanidade"}}
 					</boxAtributo>
 
-					<boxAtributo titulo="HONRA" field="honra">
+					<boxAtributo titulo=" " field="honra">
 						{{"Não Listada", "periciahonra"}}
 					</boxAtributo>
 
