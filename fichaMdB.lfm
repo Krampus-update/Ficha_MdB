@@ -18,8 +18,11 @@
 				</tab>
 			</tabControl>
 		</tab>
+	</tabControl>
 
-	<tabControl  align = "client">
+	<tabControl align="client">
+		<tab title="OUTROS">
+			<tabControl align="client">
 
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
@@ -94,8 +97,7 @@
 				<import file="13_creditos.xml"/>
 			</tab>
 
-
-			</tabControl>
 		</tabControl>
-
+		</tab>
+	</tabControl>
 </form>

@@ -47,7 +47,7 @@ local function constructNew_frmMdB()
 
     obj.tab1 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab1:setParent(obj.tabControl1);
-    obj.tab1:setTitle("Allei");
+    obj.tab1:setTitle("PERSONAGEM");
     obj.tab1:setName("tab1");
 
     obj.tabControl2 = GUI.fromHandle(_obj_newObject("tabControl"));
@@ -5629,17 +5629,27 @@ local function constructNew_frmMdB()
     obj.label33:setFontColor("white");
 
     obj.tabControl3 = GUI.fromHandle(_obj_newObject("tabControl"));
-    obj.tabControl3:setParent(obj.tabControl1);
+    obj.tabControl3:setParent(obj);
     obj.tabControl3:setAlign("client");
     obj.tabControl3:setName("tabControl3");
 
     obj.tab4 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab4:setParent(obj.tabControl3);
-    obj.tab4:setTitle("EQUIPAMENTOS");
+    obj.tab4:setTitle("OUTROS");
     obj.tab4:setName("tab4");
 
+    obj.tabControl4 = GUI.fromHandle(_obj_newObject("tabControl"));
+    obj.tabControl4:setParent(obj.tab4);
+    obj.tabControl4:setAlign("client");
+    obj.tabControl4:setName("tabControl4");
+
+    obj.tab5 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab5:setParent(obj.tabControl4);
+    obj.tab5:setTitle("EQUIPAMENTOS");
+    obj.tab5:setName("tab5");
+
     obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle3:setParent(obj.tab4);
+    obj.rectangle3:setParent(obj.tab5);
     obj.rectangle3:setName("rectangle3");
     obj.rectangle3:setAlign("client");
     obj.rectangle3:setColor("#40000000");
@@ -6474,13 +6484,13 @@ local function constructNew_frmMdB()
     obj.label49:setName("label49");
     obj.label49:setFontColor("white");
 
-    obj.tab5 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab5:setParent(obj.tabControl3);
-    obj.tab5:setTitle("MAGIA");
-    obj.tab5:setName("tab5");
+    obj.tab6 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab6:setParent(obj.tabControl4);
+    obj.tab6:setTitle("MAGIA");
+    obj.tab6:setName("tab6");
 
     obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle4:setParent(obj.tab5);
+    obj.rectangle4:setParent(obj.tab6);
     obj.rectangle4:setName("rectangle4");
     obj.rectangle4:setAlign("client");
     obj.rectangle4:setColor("#40000000");
@@ -6868,13 +6878,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tcPopupEdit:setAlign("client");
     obj.tcPopupEdit:setName("tcPopupEdit");
 
-    obj.tab6 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab6:setParent(obj.tcPopupEdit);
-    obj.tab6:setTitle("Descrição");
-    obj.tab6:setName("tab6");
+    obj.tab7 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab7:setParent(obj.tcPopupEdit);
+    obj.tab7:setTitle("Descrição");
+    obj.tab7:setName("tab7");
 
     obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout62:setParent(obj.tab6);
+    obj.layout62:setParent(obj.tab7);
     obj.layout62:setAlign("client");
     obj.layout62:setMargins({top=5, bottom=5, left=5, right=5});
     obj.layout62:setName("layout62");
@@ -6895,13 +6905,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.textEditor7:setField("descricao");
     obj.textEditor7:setName("textEditor7");
 
-    obj.tab7 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab7:setParent(obj.tcPopupEdit);
-    obj.tab7:setTitle("Detalhes");
-    obj.tab7:setName("tab7");
+    obj.tab8 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab8:setParent(obj.tcPopupEdit);
+    obj.tab8:setTitle("Detalhes");
+    obj.tab8:setName("tab8");
 
     obj.scrollBox4 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox4:setParent(obj.tab7);
+    obj.scrollBox4:setParent(obj.tab8);
     obj.scrollBox4:setAlign("client");
     obj.scrollBox4:setPadding({top=5, bottom=5, left=5, right=5});
     obj.scrollBox4:setName("scrollBox4");
@@ -8298,16 +8308,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit35:setFontSize(15);
     obj.edit35:setFontColor("white");
 
-    obj.tab8 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab8:setParent(obj.tcPopupEdit);
-    obj.tab8:setTitle("Importar");
-    obj.tab8:setName("tab8");
+    obj.tab9 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab9:setParent(obj.tcPopupEdit);
+    obj.tab9:setTitle("Importar");
+    obj.tab9:setName("tab9");
 
  require("import5etools.lua"); 
 
 
     obj.scrollBox5 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox5:setParent(obj.tab8);
+    obj.scrollBox5:setParent(obj.tab9);
     obj.scrollBox5:setAlign("client");
     obj.scrollBox5:setPadding({top=5, bottom=5, left=5, right=5});
     obj.scrollBox5:setName("scrollBox5");
@@ -8431,13 +8441,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink135:setField("magias.selecionada");
     obj.dataLink135:setName("dataLink135");
 
-    obj.tab9 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab9:setParent(obj.tabControl3);
-    obj.tab9:setTitle("CONTADORES");
-    obj.tab9:setName("tab9");
+    obj.tab10 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab10:setParent(obj.tabControl4);
+    obj.tab10:setTitle("CONTADORES");
+    obj.tab10:setName("tab10");
 
     obj.rectangle23 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle23:setParent(obj.tab9);
+    obj.rectangle23:setParent(obj.tab10);
     obj.rectangle23:setName("rectangle23");
     obj.rectangle23:setAlign("client");
     obj.rectangle23:setColor("#40000000");
@@ -8477,13 +8487,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink136:setFields({'descansoLongo', 'descansoCurto'});
     obj.dataLink136:setName("dataLink136");
 
-    obj.tab10 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab10:setParent(obj.tabControl3);
-    obj.tab10:setTitle("PROPRIEDADES");
-    obj.tab10:setName("tab10");
+    obj.tab11 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab11:setParent(obj.tabControl4);
+    obj.tab11:setTitle("PROPRIEDADES");
+    obj.tab11:setName("tab11");
 
     obj.rectangle24 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle24:setParent(obj.tab10);
+    obj.rectangle24:setParent(obj.tab11);
     obj.rectangle24:setName("rectangle24");
     obj.rectangle24:setAlign("client");
     obj.rectangle24:setColor("#40000000");
@@ -8509,13 +8519,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button57:setText("Adicionar Propriedade");
     obj.button57:setName("button57");
 
-    obj.tab11 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab11:setParent(obj.tabControl3);
-    obj.tab11:setTitle("DIARIO DE CAMPANHA");
-    obj.tab11:setName("tab11");
+    obj.tab12 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab12:setParent(obj.tabControl4);
+    obj.tab12:setTitle("DIARIO DE CAMPANHA");
+    obj.tab12:setName("tab12");
 
     obj.rectangle25 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle25:setParent(obj.tab11);
+    obj.rectangle25:setParent(obj.tab12);
     obj.rectangle25:setName("rectangle25");
     obj.rectangle25:setAlign("client");
     obj.rectangle25:setColor("#40000000");
@@ -8553,13 +8563,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.historiaMerda:setVisible(true);
     obj.historiaMerda:setTransparent(true);
 
-    obj.tab12 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab12:setParent(obj.tabControl3);
-    obj.tab12:setTitle("CALENDARIO");
-    obj.tab12:setName("tab12");
+    obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab13:setParent(obj.tabControl4);
+    obj.tab13:setTitle("CALENDARIO");
+    obj.tab13:setName("tab13");
 
     obj.frmGerenciador02 = GUI.fromHandle(_obj_newObject("form"));
-    obj.frmGerenciador02:setParent(obj.tab12);
+    obj.frmGerenciador02:setParent(obj.tab13);
     obj.frmGerenciador02:setName("frmGerenciador02");
     obj.frmGerenciador02:setAlign("client");
     obj.frmGerenciador02:setTheme("dark");
@@ -11455,13 +11465,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLineBreak22:setParent(obj.flowLayout33);
     obj.flowLineBreak22:setName("flowLineBreak22");
 
-    obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab13:setParent(obj.tabControl3);
-    obj.tab13:setTitle("COMPANHEIRO");
-    obj.tab13:setName("tab13");
+    obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab14:setParent(obj.tabControl4);
+    obj.tab14:setTitle("COMPANHEIRO");
+    obj.tab14:setName("tab14");
 
     obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle28:setParent(obj.tab13);
+    obj.rectangle28:setParent(obj.tab14);
     obj.rectangle28:setName("rectangle28");
     obj.rectangle28:setAlign("client");
     obj.rectangle28:setColor("#40000000");
@@ -15644,13 +15654,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button99:setHorzTextAlign("center");
     obj.button99:setName("button99");
 
-    obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab14:setParent(obj.tabControl3);
-    obj.tab14:setTitle("COMPANHEIRO ANOTAÇÕES");
-    obj.tab14:setName("tab14");
+    obj.tab15 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab15:setParent(obj.tabControl4);
+    obj.tab15:setTitle("COMPANHEIRO ANOTAÇÕES");
+    obj.tab15:setName("tab15");
 
     obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle29:setParent(obj.tab14);
+    obj.rectangle29:setParent(obj.tab15);
     obj.rectangle29:setName("rectangle29");
     obj.rectangle29:setAlign("client");
     obj.rectangle29:setColor("#40000000");
@@ -15686,13 +15696,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.companionanotacoesMerda:setVisible(true);
     obj.companionanotacoesMerda:setTransparent(true);
 
-    obj.tab15 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab15:setParent(obj.tabControl3);
-    obj.tab15:setTitle("ANOTAÇÕES EXTRAS");
-    obj.tab15:setName("tab15");
+    obj.tab16 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab16:setParent(obj.tabControl4);
+    obj.tab16:setTitle("ANOTAÇÕES EXTRAS");
+    obj.tab16:setName("tab16");
 
     obj.rectangle30 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle30:setParent(obj.tab15);
+    obj.rectangle30:setParent(obj.tab16);
     obj.rectangle30:setName("rectangle30");
     obj.rectangle30:setAlign("client");
     obj.rectangle30:setColor("#40000000");
@@ -15728,13 +15738,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.anotacoesMerda:setVisible(true);
     obj.anotacoesMerda:setTransparent(true);
 
-    obj.tab16 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab16:setParent(obj.tabControl3);
-    obj.tab16:setTitle("CREDITOS");
-    obj.tab16:setName("tab16");
+    obj.tab17 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab17:setParent(obj.tabControl4);
+    obj.tab17:setTitle("CREDITOS");
+    obj.tab17:setName("tab17");
 
     obj.MultiVerso_MdB = GUI.fromHandle(_obj_newObject("form"));
-    obj.MultiVerso_MdB:setParent(obj.tab16);
+    obj.MultiVerso_MdB:setParent(obj.tab17);
     obj.MultiVerso_MdB:setName("MultiVerso_MdB");
     obj.MultiVerso_MdB:setAlign("client");
     obj.MultiVerso_MdB:setTheme("dark");
@@ -23215,6 +23225,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowLineBreak15 ~= nil then self.flowLineBreak15:destroy(); self.flowLineBreak15 = nil; end;
         if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
         if self.flowLayout40 ~= nil then self.flowLayout40:destroy(); self.flowLayout40 = nil; end;
+        if self.tabControl4 ~= nil then self.tabControl4:destroy(); self.tabControl4 = nil; end;
         if self.flowPart26 ~= nil then self.flowPart26:destroy(); self.flowPart26 = nil; end;
         if self.dataLink181 ~= nil then self.dataLink181:destroy(); self.dataLink181 = nil; end;
         if self.dataLink145 ~= nil then self.dataLink145:destroy(); self.dataLink145 = nil; end;
@@ -23406,6 +23417,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.dataLink114 ~= nil then self.dataLink114:destroy(); self.dataLink114 = nil; end;
         if self.imgEquipAttackImg ~= nil then self.imgEquipAttackImg:destroy(); self.imgEquipAttackImg = nil; end;
+        if self.tab17 ~= nil then self.tab17:destroy(); self.tab17 = nil; end;
         if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
         if self.flowPart59 ~= nil then self.flowPart59:destroy(); self.flowPart59 = nil; end;
         if self.dataLink148 ~= nil then self.dataLink148:destroy(); self.dataLink148 = nil; end;
@@ -23556,10 +23568,10 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink143 ~= nil then self.dataLink143:destroy(); self.dataLink143 = nil; end;
         if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
         if self.edit112 ~= nil then self.edit112:destroy(); self.edit112 = nil; end;
-        if self.edit34 ~= nil then self.edit34:destroy(); self.edit34 = nil; end;
+        if self.tab8 ~= nil then self.tab8:destroy(); self.tab8 = nil; end;
         if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
-        if self.tab8 ~= nil then self.tab8:destroy(); self.tab8 = nil; end;
+        if self.edit34 ~= nil then self.edit34:destroy(); self.edit34 = nil; end;
         if self.dataLink195 ~= nil then self.dataLink195:destroy(); self.dataLink195 = nil; end;
         if self.flowPart52 ~= nil then self.flowPart52:destroy(); self.flowPart52 = nil; end;
         if self.flowPart170 ~= nil then self.flowPart170:destroy(); self.flowPart170 = nil; end;
