@@ -69,7 +69,6 @@
 	</event></dataLink>
 	<dataLink field="valMaxPrev" defaultValue="100"/>
 
-
 	<layout align="right" width="25">
 		<button align="top" height="30" text="+" onClick="sheet.valCur = math.min(sheet.valCur+1, sheet.valMax);"/>
 		<button align="top" height="30" text="-" onClick="sheet.valCur = math.max(sheet.valCur-1, 0);"/>
@@ -83,13 +82,13 @@
 
 
 	<layout align="right" width="300">
-		<layout align="left" width="175">
-			<label align="top" text="Descrição"/>
-			<textEditor align="client" field="descricao" fontSize="16"/>
-		</layout>
 		<layout align="left" width="100">
 			<label align="top" text="Rolagem"/>
 			<edit align="client" field="rolagem"/>
+		</layout>
+		<layout align="left" width="175">
+			<label align="top" text="Descrição"/>
+			<textEditor align="client" field="descricao" fontSize="16"/>
 		</layout>
 		<button align="left" height="30" text="i"  onMenu="common.getMesa(sheet).chat:enviarMensagem('\n'..sheet.descricao);"/>
 	</layout>
