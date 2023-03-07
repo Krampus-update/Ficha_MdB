@@ -156,7 +156,7 @@
 					</flowLayout>
 
 					<!-- PONTOS DE VIDA -->
-					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="415" margins="{left=2, right=2, top=4, bottom=8}">
+					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="175" margins="{left=2, right=2, top=4, bottom=8}">
 
 						<!-- PONTOS DE VIDA REAIS -->
 						<frame align="client" frameStyle="frames/panel5/topPanel.xml" margins="{left = 4, right = 4, bottom=4}">
@@ -196,8 +196,10 @@
 								</dataLink>
 							</layout>
 						</frame>
+					</flowPart>
 
-						<!-- PONTOS DE VIDA TEMPORARIOS -->
+					<!-- PONTOS DE VIDA TEMPORARIOS -->
+					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="175" margins="{left=2, right=2, top=4, bottom=8}">						
 						<frame  width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
 							<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>

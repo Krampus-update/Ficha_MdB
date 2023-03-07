@@ -4770,7 +4770,7 @@ require('mudaNick.lua')
     obj.flowPart51:setMinWidth(235);
     obj.flowPart51:setMaxWidth(475);
     obj.flowPart51:setMinScaledWidth(200);
-    obj.flowPart51:setHeight(175);
+    obj.flowPart51:setHeight(415);
     obj.flowPart51:setMargins({left=2, right=2, top=4, bottom=8});
     obj.flowPart51:setName("flowPart51");
     obj.flowPart51:setVertAlign("leading");
@@ -4924,8 +4924,6 @@ require('mudaNick.lua')
 
     obj.frame2 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame2:setParent(obj.flowPart51);
-    obj.frame2:setLeft(0);
-    obj.frame2:setTop(110);
     obj.frame2:setWidth(375);
     obj.frame2:setHeight(240);
     obj.frame2:setFrameStyle("frames/panel5/frame.xml");
