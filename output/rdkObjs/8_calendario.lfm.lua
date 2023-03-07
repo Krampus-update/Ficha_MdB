@@ -2149,7 +2149,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label42 = GUI.fromHandle(_obj_newObject("label"));
     obj.label42:setParent(obj.layout6);
-    obj.label42:setLeft(130);
+    obj.label42:setLeft(100);
     obj.label42:setTop(50);
     obj.label42:setWidth(55);
     obj.label42:setHeight(25);
@@ -2161,7 +2161,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label43 = GUI.fromHandle(_obj_newObject("label"));
     obj.label43:setParent(obj.layout6);
-    obj.label43:setLeft(170);
+    obj.label43:setLeft(135);
     obj.label43:setTop(50);
     obj.label43:setWidth(55);
     obj.label43:setHeight(25);
