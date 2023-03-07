@@ -138,15 +138,11 @@
 			</event>	
 		</dataLink>
 		
-					<flowPart class="tileCarac" height="390" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
 
-					</flowPart>	
+		<layout left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml">
 
-		<layout left="0" top="110" width="375" height="240">
-			<rectangle align="client" color="black"/>
-						<image align="client" style="autoFit" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
-						<label align="bottom" autoSize="true" text="@@DnD5e.features.appearance" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 		</layout>
+		
 		<layout left="0" top="355" width="375" height="250">
 			<rectangle align="client" color="black"/>
 			<label left="5" top="1" width="100" height="20" text="PERSONALIDADE"/>
