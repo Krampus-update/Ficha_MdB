@@ -15,7 +15,12 @@
 		
 				<!-- GRID DE INFORMACOES SUPERIORES DA FRENTE -->
 				<flowLayout class="tile"  minWidth="320" maxWidth="1600" name="fraUpperGridCaracteristicas" avoidScale="true" frameStyle="frames/upperInfoGrid/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">								
-
+						<upperGridCampo field="caracteristicas.idade" minWidth="100" titulo="@@DnD5e.features.age"/>
+						<upperGridCampo field="caracteristicas.altura" titulo="@@DnD5e.features.height"/>
+						<upperGridCampo field="caracteristicas.peso" titulo="@@DnD5e.features.weight"/>									
+						<upperGridCampo field="caracteristicas.olhos" minWidth="100" titulo="@@DnD5e.features.eyes"/>
+						<upperGridCampo field="caracteristicas.pele" titulo="@@DnD5e.features.skin"/>
+						<upperGridCampo field="caracteristicas.cabelo" titulo="@@DnD5e.features.hair"/>
 				</flowLayout>	
 			</flowLayout>			
 	
