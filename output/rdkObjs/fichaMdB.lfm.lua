@@ -5245,7 +5245,7 @@ require('mudaNick.lua')
     obj.edit21:setTop(50);
     obj.edit21:setWidth(200);
     obj.edit21:setHeight(25);
-    obj.edit21:setField("altura");
+    obj.edit21:setField("caracteristicas.altura");
     obj.edit21:setVertTextAlign("center");
     obj.edit21:setName("edit21");
     obj.edit21:setFontSize(15);
@@ -5268,7 +5268,7 @@ require('mudaNick.lua')
     obj.edit22:setTop(75);
     obj.edit22:setWidth(200);
     obj.edit22:setHeight(25);
-    obj.edit22:setField("peso");
+    obj.edit22:setField("caracteristicas.peso");
     obj.edit22:setVertTextAlign("center");
     obj.edit22:setName("edit22");
     obj.edit22:setFontSize(15);
@@ -5291,7 +5291,7 @@ require('mudaNick.lua')
     obj.edit23:setTop(25);
     obj.edit23:setWidth(200);
     obj.edit23:setHeight(25);
-    obj.edit23:setField("idade");
+    obj.edit23:setField("caracteristicas.idade");
     obj.edit23:setVertTextAlign("center");
     obj.edit23:setName("edit23");
     obj.edit23:setFontSize(15);
@@ -5314,7 +5314,7 @@ require('mudaNick.lua')
     obj.edit24:setTop(50);
     obj.edit24:setWidth(200);
     obj.edit24:setHeight(25);
-    obj.edit24:setField("sexo");
+    obj.edit24:setField("caracteristicas.sexo");
     obj.edit24:setVertTextAlign("center");
     obj.edit24:setName("edit24");
     obj.edit24:setFontSize(15);
@@ -5337,7 +5337,7 @@ require('mudaNick.lua')
     obj.edit25:setTop(75);
     obj.edit25:setWidth(200);
     obj.edit25:setHeight(25);
-    obj.edit25:setField("aparenciaOutros");
+    obj.edit25:setField("caracteristicas.aparenciaOutros");
     obj.edit25:setVertTextAlign("center");
     obj.edit25:setName("edit25");
     obj.edit25:setFontSize(15);
@@ -5360,7 +5360,7 @@ require('mudaNick.lua')
     obj.edit26:setTop(25);
     obj.edit26:setWidth(200);
     obj.edit26:setHeight(25);
-    obj.edit26:setField("aparenciaOlhos");
+    obj.edit26:setField("caracteristicas.aparenciaOlhos");
     obj.edit26:setVertTextAlign("center");
     obj.edit26:setName("edit26");
     obj.edit26:setFontSize(15);
@@ -5383,7 +5383,7 @@ require('mudaNick.lua')
     obj.edit27:setTop(50);
     obj.edit27:setWidth(200);
     obj.edit27:setHeight(25);
-    obj.edit27:setField("pele");
+    obj.edit27:setField("caracteristicas.pele");
     obj.edit27:setVertTextAlign("center");
     obj.edit27:setName("edit27");
     obj.edit27:setFontSize(15);
@@ -5406,7 +5406,7 @@ require('mudaNick.lua')
     obj.edit28:setTop(75);
     obj.edit28:setWidth(200);
     obj.edit28:setHeight(25);
-    obj.edit28:setField("cabelo");
+    obj.edit28:setField("caracteristicas.cabelo");
     obj.edit28:setVertTextAlign("center");
     obj.edit28:setName("edit28");
     obj.edit28:setFontSize(15);
@@ -5452,7 +5452,7 @@ require('mudaNick.lua')
     obj.edit30:setTop(50);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
-    obj.edit30:setField("regiao");
+    obj.edit30:setField("caracteristicas.regiao");
     obj.edit30:setVertTextAlign("center");
     obj.edit30:setName("edit30");
     obj.edit30:setFontSize(15);
@@ -5475,7 +5475,7 @@ require('mudaNick.lua')
     obj.edit31:setTop(75);
     obj.edit31:setWidth(200);
     obj.edit31:setHeight(25);
-    obj.edit31:setField("reino");
+    obj.edit31:setField("caracteristicas.reino");
     obj.edit31:setVertTextAlign("center");
     obj.edit31:setName("edit31");
     obj.edit31:setFontSize(15);
