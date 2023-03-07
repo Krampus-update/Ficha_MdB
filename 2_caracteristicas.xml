@@ -24,9 +24,7 @@
 				</flowLayout>	
 			</flowLayout>			
 			<flowLineBreak/>
-			
-			<!-- Primeira Linha -->
-			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
+
 				<!-- PRIMEIRA COLUNA -->
 				<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
 
@@ -123,7 +121,6 @@
 					<textEditor name="caracteristicasMerda" align="client" field="caracteristicas.caracteristicasETracoes" class="transparente" margins="{top=2}" fontSize="16" visible="true"/>
 					<label align="bottom" autoSize="true" text="CARACTERÍSTICAS E TRAÇOS" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 				</flowPart>
-			</flowLayout>
 		</flowLayout>
 	</scrollBox>
 </rectangle>
