@@ -9,7 +9,7 @@
 				end;
 			</event>
 		</edit>
-		<edit left="30" top="0" width="130" height="25" field="mes"/>
+		<edit left="30" top="0" width="100" height="25" field="mes"/>
 		<edit left="160" top="0" width="35" height="25" field="dias" type="number"/>
 
 		<button left="195" top="0" width="25" height="25" text="X">

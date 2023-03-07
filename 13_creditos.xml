@@ -195,11 +195,11 @@
 		</layout>
 
 		<layout left="525" top="420" width="200" height="190" frameStyle="frames/panel3transp/frame.xml">
-			<label left="10" top="0" width="200" height="20" text="CONHEÇA A MESA:" fontSize="11"/>
-			<button left="640" top="500" width="80" text="Atualizar" onClick="GUI.openInBrowser(' ')"/>
-			<button left="640" top="530" width="80" text="Discord" onClick="GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');"/>
-			<button left="640" top="560" width="80" text="Zap (Mesa)" onClick="GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');"/>
-			<button left="730" top="500" width="80" height="20" text="Exportar">
+			<label left="50" top="30" width="200" height="20" text="CONHEÇA A MESA:" fontSize="11"/>
+			<button left="20" top="70" width="80" text="Atualizar" onClick="GUI.openInBrowser(' ')"/>
+			<button left="20" top="100" width="80" text="Discord" onClick="GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');"/>
+			<button left="20" top="130" width="80" text="Zap (Mesa)" onClick="GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');"/>
+			<button left="100" top="70" width="80" height="20" text="Exportar">
 				<event name="onClick">
 					local xml = NDB.exportXML(sheet);
 
@@ -216,7 +216,7 @@
 						end);
 				</event>
 			</button>
-			<button left="630" top="530" width="80" height="20" text="Importar">
+			<button left="100" top="100" width="80" height="20" text="Importar">
 				<event name="onClick">
 					Dialogs.openFile("Importar Ficha", "application/xml", false, 
 						function(arquivos)

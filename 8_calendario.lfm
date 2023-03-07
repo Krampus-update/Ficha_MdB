@@ -385,8 +385,8 @@
 						</event>
 	    			</button>
 	    			<label left="150" top="0" width="35" height="25" text="Total" hitTest="true" hint="Quantos dias dura o ano."/>
-	    			<rectangle left="180" top="0" width="35" height="25" color="black" strokeColor="white" strokeSize="1"/>
-					<label left="180" top="0" width="35" height="25" field="dias" horzTextAlign="center" fontSize="12" name="dias" hitTest="true" hint="Se estiver vermelho a duração do ano e das estações está dessincronizada. "/>
+	    			<rectangle left="185" top="0" width="35" height="25" color="black" strokeColor="white" strokeSize="1"/>
+					<label left="185" top="0" width="35" height="25" field="dias" horzTextAlign="center" fontSize="12" name="dias" hitTest="true" hint="Se estiver vermelho a duração do ano e das estações está dessincronizada. "/>
 				</layout>
 
 				<label left="16" top="50" width="30" height="25" text="Nº" horzTextAlign="center" hitTest="true" hint="Qual a ordem dos meses?"/>
@@ -420,8 +420,8 @@
     		</layout>
 
 			<!-- DIAS DA SEMANA -->
-    		<layout align="left" width="270" margins="{right=5}" frameStyle="frames/panel3transp/frame.xml">
-    			<label width="260" top="10" height="20" text="DIAS DA SEMANA" horzTextAlign="center"/>
+    		<layout align="left" width="220" margins="{right=5}" frameStyle="frames/panel3transp/frame.xml">
+    			<label width="210" top="10" height="20" text="DIAS DA SEMANA" horzTextAlign="center"/>
     			<layout left="10" top="25" width="220" height="25">
 	    			<button left="10" top="0" width="25" height="25" text="+" hint="Novo">
 	    				<event name="onClick">
@@ -439,14 +439,14 @@
 							end;
 						</event>
 	    			</button>
-	    			<label left="155" top="0" width="40" height="25" text="Desvio" hitTest="true" hint="O ano 1 começa em quem dia da semana?"/>
-					<edit left="195" top="0" width="20" height="25" field="desvioSemana" type="number"/>
+	    			<label left="105" top="0" width="40" height="25" text="Desvio" hitTest="true" hint="O ano 1 começa em quem dia da semana?"/>
+					<edit left="145" top="0" width="20" height="25" field="desvioSemana" type="number"/>
 				</layout>
 
 				<label left="16" top="50" width="30" height="25" text="Nº" horzTextAlign="center" hitTest="true" hint="Qual a ordem dos dias da semana?"/>
 				<label left="45" top="50" width="165" height="25" text="Nome" horzTextAlign="center"/>
 
-    			<recordList left="15" top="80" width="240" height="260" name="rclSemana" field="listaSemana" templateForm="frmGerenciador02_SEMANA" layout="vertical">
+    			<recordList left="15" top="80" width="210" height="260" name="rclSemana" field="listaSemana" templateForm="frmGerenciador02_SEMANA" layout="vertical">
 					<event name="onCompare"><![CDATA[               
 		                if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
 		                        return -1;
@@ -461,9 +461,9 @@
     		</layout>
 
 			<!-- LUAS -->
-    		<layout align="left" width="270" margins="{right=5}" frameStyle="frames/panel3transp/frame.xml">
-    			<label width="265" top="10" height="20" text="LUAS" horzTextAlign="center"/>
-    			<layout left="10" top="25" width="220" height="25">
+    		<layout align="left" width="200" frameStyle="frames/panel3transp/frame.xml">
+    			<label width="200" top="10" height="20" text="LUAS" horzTextAlign="center"/>
+    			<layout left="10" top="25" width="200" height="25">
 	    			<button left="10" top="0" width="25" height="25" text="+" hint="Novo">
 	    				<event name="onClick">
 							if sheet~=nil then
@@ -478,7 +478,7 @@
 							end;
 						</event>
 	    			</button>
-	    			<button left="190" top="0" width="25" height="25" text="i" name="celestialBt" hint="Eventos Celestiais">
+	    			<button left="150" top="0" width="25" height="25" text="i" name="celestialBt" hint="Eventos Celestiais">
 						<event name="onClick">
 							local pop = self:findControlByName("popCelestial");
 							
@@ -492,11 +492,11 @@
 					</button>
 				</layout>
 
-				<label left="25" top="50" width="110" height="25" text="Nome" horzTextAlign="center"/>
+				<label left="0" top="50" width="110" height="25" text="Nome" horzTextAlign="center"/>
 				<label left="130" top="50" width="55" height="25" text="Ciclo" horzTextAlign="center" hitTest="true" hint="Quantos dias leva o ciclo lunar?"/>
-				<label left="165" top="50" width="55" height="25" text="Desvio" horzTextAlign="center" hitTest="true" hint="No ano 1 em que dia começa o ciclo lunar (lua cheia)?"/>
+				<label left="170" top="50" width="55" height="25" text="Desvio" horzTextAlign="center" hitTest="true" hint="No ano 1 em que dia começa o ciclo lunar (lua cheia)?"/>
 
-    			<recordList left="15" top="80" width="240" height="260" name="rclLuas" field="listaLuas" templateForm="frmGerenciador02_LUA" layout="vertical"/>
+    			<recordList left="15" top="80" width="200" height="260" name="rclLuas" field="listaLuas" templateForm="frmGerenciador02_LUA" layout="vertical"/>
     		</layout>
 
 			<!-- ESTAÇÕES -->
@@ -1157,6 +1157,31 @@
 				</dataLink>
 			</layout>
 		</layout>
+
+<rectangle class="fundo">
+	<scrollBox align="client">
+		<flowLayout class="tile" align="top" height="400" margins="{left=0, top=10}" autoHeight="true" horzAlign="justify" lineSpacing="3" name="fraMapa2Layout">
+			<flowLineBreak/>
+
+<!-- SEGUNDA LINHA -->
+<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="500" horzAlign="center" lineSpacing="10" margins="{top=5}">
+			
+<!-- PRIMEIRA COLUNA -->
+	<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
+		<!-- IMAGEM -->
+			<flowPart class="tileCarac" height="400" frameStyle="frames/panel3transp/frame.xml" margins="{left = 0, right = 4}">
+				<image align="client" style="proportional" field="imagens.mapa" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+				<label align="bottom" autoSize="true" text="MAPA MUNDI" fontSize="20" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+			</flowPart>
+
+		</flowLayout>
+		<flowLineBreak/>
+	</flowLayout>
+
+		</flowLayout>
+	</scrollBox>
+</rectangle>
+
 
     </scrollBox>
 </form>

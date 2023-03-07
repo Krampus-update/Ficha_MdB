@@ -52,7 +52,7 @@ local function constructNew_frmGerenciador02_SEMANA()
     obj.edit2:setParent(obj.rectangle1);
     obj.edit2:setLeft(30);
     obj.edit2:setTop(0);
-    obj.edit2:setWidth(165);
+    obj.edit2:setWidth(100);
     obj.edit2:setHeight(25);
     obj.edit2:setField("dia");
     obj.edit2:setName("edit2");

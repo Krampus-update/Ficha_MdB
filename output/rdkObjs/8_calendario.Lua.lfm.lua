@@ -42,7 +42,7 @@ local function constructNew_frmGerenciador02_LUA()
     obj.edit1:setParent(obj.rectangle1);
     obj.edit1:setLeft(0);
     obj.edit1:setTop(0);
-    obj.edit1:setWidth(130);
+    obj.edit1:setWidth(100);
     obj.edit1:setHeight(25);
     obj.edit1:setField("luas");
     obj.edit1:setName("edit1");

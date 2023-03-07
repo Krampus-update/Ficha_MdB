@@ -3,7 +3,6 @@
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
 
-
 	<script>
 		local function mudaNick(nome)
 			if not nome then return; end;
@@ -22,7 +21,6 @@
 		end;
 	</script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome); </event></dataLink>
-
 
 	<tabControl align="client" name="pgcPrincipal">
 
@@ -50,7 +48,7 @@
 			<import file="6_propriedades.xml"/>
 		</tab>
 
-				<tab title="DIARIO DE CAMPANHA">
+		<tab title="DIARIO DE CAMPANHA">
 			<rectangle class="fundo">
 					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
 						<event name="onChange">
@@ -101,10 +99,6 @@
 				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
-		</tab>
-
-		<tab title="Mapa Mundi">
-			<import file="12_mapa.xml"/>
 		</tab>
 
 		<tab title="CREDITOS">

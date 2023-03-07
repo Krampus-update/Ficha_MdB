@@ -1932,7 +1932,7 @@ local function constructNew_frmGerenciador02()
 
     obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.layout3);
-    obj.rectangle1:setLeft(180);
+    obj.rectangle1:setLeft(185);
     obj.rectangle1:setTop(0);
     obj.rectangle1:setWidth(35);
     obj.rectangle1:setHeight(25);
@@ -1943,7 +1943,7 @@ local function constructNew_frmGerenciador02()
 
     obj.dias = GUI.fromHandle(_obj_newObject("label"));
     obj.dias:setParent(obj.layout3);
-    obj.dias:setLeft(180);
+    obj.dias:setLeft(185);
     obj.dias:setTop(0);
     obj.dias:setWidth(35);
     obj.dias:setHeight(25);
@@ -2007,14 +2007,14 @@ local function constructNew_frmGerenciador02()
     obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout4:setParent(obj.layout1);
     obj.layout4:setAlign("left");
-    obj.layout4:setWidth(270);
+    obj.layout4:setWidth(220);
     obj.layout4:setMargins({right=5});
     obj.layout4:setFrameStyle("frames/panel3transp/frame.xml");
     obj.layout4:setName("layout4");
 
     obj.label36 = GUI.fromHandle(_obj_newObject("label"));
     obj.label36:setParent(obj.layout4);
-    obj.label36:setWidth(260);
+    obj.label36:setWidth(210);
     obj.label36:setTop(10);
     obj.label36:setHeight(20);
     obj.label36:setText("DIAS DA SEMANA");
@@ -2041,7 +2041,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label37 = GUI.fromHandle(_obj_newObject("label"));
     obj.label37:setParent(obj.layout5);
-    obj.label37:setLeft(155);
+    obj.label37:setLeft(105);
     obj.label37:setTop(0);
     obj.label37:setWidth(40);
     obj.label37:setHeight(25);
@@ -2052,7 +2052,7 @@ local function constructNew_frmGerenciador02()
 
     obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit60:setParent(obj.layout5);
-    obj.edit60:setLeft(195);
+    obj.edit60:setLeft(145);
     obj.edit60:setTop(0);
     obj.edit60:setWidth(20);
     obj.edit60:setHeight(25);
@@ -2086,7 +2086,7 @@ local function constructNew_frmGerenciador02()
     obj.rclSemana:setParent(obj.layout4);
     obj.rclSemana:setLeft(15);
     obj.rclSemana:setTop(80);
-    obj.rclSemana:setWidth(240);
+    obj.rclSemana:setWidth(210);
     obj.rclSemana:setHeight(260);
     obj.rclSemana:setName("rclSemana");
     obj.rclSemana:setField("listaSemana");
@@ -2096,14 +2096,13 @@ local function constructNew_frmGerenciador02()
     obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout6:setParent(obj.layout1);
     obj.layout6:setAlign("left");
-    obj.layout6:setWidth(270);
-    obj.layout6:setMargins({right=5});
+    obj.layout6:setWidth(200);
     obj.layout6:setFrameStyle("frames/panel3transp/frame.xml");
     obj.layout6:setName("layout6");
 
     obj.label40 = GUI.fromHandle(_obj_newObject("label"));
     obj.label40:setParent(obj.layout6);
-    obj.label40:setWidth(265);
+    obj.label40:setWidth(200);
     obj.label40:setTop(10);
     obj.label40:setHeight(20);
     obj.label40:setText("LUAS");
@@ -2114,7 +2113,7 @@ local function constructNew_frmGerenciador02()
     obj.layout7:setParent(obj.layout6);
     obj.layout7:setLeft(10);
     obj.layout7:setTop(25);
-    obj.layout7:setWidth(220);
+    obj.layout7:setWidth(200);
     obj.layout7:setHeight(25);
     obj.layout7:setName("layout7");
 
@@ -2130,7 +2129,7 @@ local function constructNew_frmGerenciador02()
 
     obj.celestialBt = GUI.fromHandle(_obj_newObject("button"));
     obj.celestialBt:setParent(obj.layout7);
-    obj.celestialBt:setLeft(190);
+    obj.celestialBt:setLeft(150);
     obj.celestialBt:setTop(0);
     obj.celestialBt:setWidth(25);
     obj.celestialBt:setHeight(25);
@@ -2140,7 +2139,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label41 = GUI.fromHandle(_obj_newObject("label"));
     obj.label41:setParent(obj.layout6);
-    obj.label41:setLeft(25);
+    obj.label41:setLeft(0);
     obj.label41:setTop(50);
     obj.label41:setWidth(110);
     obj.label41:setHeight(25);
@@ -2162,7 +2161,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label43 = GUI.fromHandle(_obj_newObject("label"));
     obj.label43:setParent(obj.layout6);
-    obj.label43:setLeft(165);
+    obj.label43:setLeft(170);
     obj.label43:setTop(50);
     obj.label43:setWidth(55);
     obj.label43:setHeight(25);
@@ -2176,7 +2175,7 @@ local function constructNew_frmGerenciador02()
     obj.rclLuas:setParent(obj.layout6);
     obj.rclLuas:setLeft(15);
     obj.rclLuas:setTop(80);
-    obj.rclLuas:setWidth(240);
+    obj.rclLuas:setWidth(200);
     obj.rclLuas:setHeight(260);
     obj.rclLuas:setName("rclLuas");
     obj.rclLuas:setField("listaLuas");
@@ -2502,6 +2501,78 @@ local function constructNew_frmGerenciador02()
     obj.dataLink11:setParent(obj.layout10);
     obj.dataLink11:setFields({'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'});
     obj.dataLink11:setName("dataLink11");
+
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2:setParent(obj.scrollBox1);
+    obj.rectangle2:setName("rectangle2");
+
+    obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox2:setParent(obj.rectangle2);
+    obj.scrollBox2:setAlign("client");
+    obj.scrollBox2:setName("scrollBox2");
+
+    obj.fraMapa2Layout = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.fraMapa2Layout:setParent(obj.scrollBox2);
+    obj.fraMapa2Layout:setAlign("top");
+    obj.fraMapa2Layout:setHeight(400);
+    obj.fraMapa2Layout:setMargins({left=0, top=10});
+    obj.fraMapa2Layout:setAutoHeight(true);
+    obj.fraMapa2Layout:setHorzAlign("justify");
+    obj.fraMapa2Layout:setLineSpacing(3);
+    obj.fraMapa2Layout:setName("fraMapa2Layout");
+
+    obj.flowLineBreak12 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak12:setParent(obj.fraMapa2Layout);
+    obj.flowLineBreak12:setName("flowLineBreak12");
+
+    obj.flowLayout4 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout4:setParent(obj.fraMapa2Layout);
+    obj.flowLayout4:setAutoHeight(true);
+    obj.flowLayout4:setMinScaledWidth(500);
+    obj.flowLayout4:setHorzAlign("center");
+    obj.flowLayout4:setLineSpacing(10);
+    obj.flowLayout4:setMargins({top=5});
+    obj.flowLayout4:setName("flowLayout4");
+
+    obj.flowLayout5 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout5:setParent(obj.flowLayout4);
+    obj.flowLayout5:setMaxControlsPerLine(1);
+    obj.flowLayout5:setAutoHeight(true);
+    obj.flowLayout5:setLineSpacing(10);
+    obj.flowLayout5:setMargins({left = 4, right = 4});
+    obj.flowLayout5:setName("flowLayout5");
+
+    obj.flowPart102 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart102:setParent(obj.flowLayout5);
+    obj.flowPart102:setHeight(400);
+    obj.flowPart102:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.flowPart102:setMargins({left = 0, right = 4});
+    obj.flowPart102:setName("flowPart102");
+
+    obj.image1 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image1:setParent(obj.flowPart102);
+    obj.image1:setAlign("client");
+    obj.image1:setStyle("proportional");
+    obj.image1:setField("imagens.mapa");
+    obj.image1:setMargins({top=2});
+    obj.image1:setEditable(true);
+    lfm_setPropAsString(obj.image1, "animate",  "true");
+    obj.image1:setName("image1");
+
+    obj.label54 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label54:setParent(obj.flowPart102);
+    obj.label54:setAlign("bottom");
+    obj.label54:setAutoSize(true);
+    obj.label54:setText("MAPA MUNDI");
+    obj.label54:setFontSize(20);
+    obj.label54:setVertTextAlign("center");
+    obj.label54:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label54, "fontStyle",  "bold");
+    obj.label54:setName("label54");
+
+    obj.flowLineBreak13 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak13:setParent(obj.flowLayout4);
+    obj.flowLineBreak13:setName("flowLineBreak13");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -3405,6 +3476,7 @@ local function constructNew_frmGerenciador02()
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.rclSemana ~= nil then self.rclSemana:destroy(); self.rclSemana = nil; end;
+        if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
@@ -3430,6 +3502,7 @@ local function constructNew_frmGerenciador02()
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
         if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
+        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
         if self.flowPart52 ~= nil then self.flowPart52:destroy(); self.flowPart52 = nil; end;
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
@@ -3445,8 +3518,10 @@ local function constructNew_frmGerenciador02()
         if self.rclMeses ~= nil then self.rclMeses:destroy(); self.rclMeses = nil; end;
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.flowPart68 ~= nil then self.flowPart68:destroy(); self.flowPart68 = nil; end;
+        if self.scrollBox2 ~= nil then self.scrollBox2:destroy(); self.scrollBox2 = nil; end;
         if self.flowLineBreak6 ~= nil then self.flowLineBreak6:destroy(); self.flowLineBreak6 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
+        if self.fraMapa2Layout ~= nil then self.fraMapa2Layout:destroy(); self.fraMapa2Layout = nil; end;
         if self.flowPart34 ~= nil then self.flowPart34:destroy(); self.flowPart34 = nil; end;
         if self.flowPart54 ~= nil then self.flowPart54:destroy(); self.flowPart54 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
@@ -3486,6 +3561,7 @@ local function constructNew_frmGerenciador02()
         if self.flowPart78 ~= nil then self.flowPart78:destroy(); self.flowPart78 = nil; end;
         if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
         if self.flowPart6 ~= nil then self.flowPart6:destroy(); self.flowPart6 = nil; end;
@@ -3501,12 +3577,14 @@ local function constructNew_frmGerenciador02()
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
         if self.flowPart23 ~= nil then self.flowPart23:destroy(); self.flowPart23 = nil; end;
         if self.ventoLabel ~= nil then self.ventoLabel:destroy(); self.ventoLabel = nil; end;
+        if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.flowPart60 ~= nil then self.flowPart60:destroy(); self.flowPart60 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.flowPart28 ~= nil then self.flowPart28:destroy(); self.flowPart28 = nil; end;
         if self.flowPart41 ~= nil then self.flowPart41:destroy(); self.flowPart41 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
+        if self.flowLineBreak12 ~= nil then self.flowLineBreak12:destroy(); self.flowLineBreak12 = nil; end;
         if self.flowPart30 ~= nil then self.flowPart30:destroy(); self.flowPart30 = nil; end;
         if self.flowPart87 ~= nil then self.flowPart87:destroy(); self.flowPart87 = nil; end;
         if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
@@ -3574,6 +3652,7 @@ local function constructNew_frmGerenciador02()
         if self.edit59 ~= nil then self.edit59:destroy(); self.edit59 = nil; end;
         if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
+        if self.flowPart102 ~= nil then self.flowPart102:destroy(); self.flowPart102 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.edit44 ~= nil then self.edit44:destroy(); self.edit44 = nil; end;
@@ -3601,6 +3680,7 @@ local function constructNew_frmGerenciador02()
         if self.comboBox7 ~= nil then self.comboBox7:destroy(); self.comboBox7 = nil; end;
         if self.flowLineBreak1 ~= nil then self.flowLineBreak1:destroy(); self.flowLineBreak1 = nil; end;
         if self.flowPart81 ~= nil then self.flowPart81:destroy(); self.flowPart81 = nil; end;
+        if self.flowLineBreak13 ~= nil then self.flowLineBreak13:destroy(); self.flowLineBreak13 = nil; end;
         if self.edit30 ~= nil then self.edit30:destroy(); self.edit30 = nil; end;
         if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
         if self.edit56 ~= nil then self.edit56:destroy(); self.edit56 = nil; end;
@@ -3621,6 +3701,7 @@ local function constructNew_frmGerenciador02()
         if self.rclLuas ~= nil then self.rclLuas:destroy(); self.rclLuas = nil; end;
         if self.flowPart11 ~= nil then self.flowPart11:destroy(); self.flowPart11 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.flowLayout4 ~= nil then self.flowLayout4:destroy(); self.flowLayout4 = nil; end;
         if self.flowPart36 ~= nil then self.flowPart36:destroy(); self.flowPart36 = nil; end;
         if self.comboBox9 ~= nil then self.comboBox9:destroy(); self.comboBox9 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
