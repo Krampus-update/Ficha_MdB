@@ -5564,7 +5564,7 @@ require('mudaNick.lua')
 
     obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout60:setParent(obj.scrollBox2);
-    obj.layout60:setLeft(380);
+    obj.layout60:setLeft(500);
     obj.layout60:setTop(110);
     obj.layout60:setWidth(825);
     obj.layout60:setHeight(495);
@@ -5593,7 +5593,7 @@ require('mudaNick.lua')
     obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
     obj.richEdit1:setParent(obj.layout60);
     obj.richEdit1:setLeft(10);
-    obj.richEdit1:setTop(25);
+    obj.richEdit1:setTop(20);
     obj.richEdit1:setWidth(805);
     obj.richEdit1:setHeight(455);
     obj.richEdit1:setField("background");
