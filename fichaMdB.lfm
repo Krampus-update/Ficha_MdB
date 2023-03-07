@@ -8,17 +8,9 @@
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
 	<tabControl align="client">
-		<tab title="PERSONAGEM">
-			<tabControl align="client">
-				<tab title="FRENTE Básicos">
-					<import file="1_frente.xml"/>
-				</tab>
-				<tab title="CARACTERISTICAS">
-					<import file="2_caracteristicas.xml"/>
-				</tab>
-			</tabControl>
+		<tab title="CALENDARIO">
+			<import file="8_calendario.lfm"/>
 		</tab>
-	</tabControl>
 
 	<tabControl align="client">
 		<tab title="OUTROS">
