@@ -6,22 +6,22 @@
 		<layout left="0" top="0" width="960" height="70">
 			<rectangle align="client" color="black" xradius="5" yradius="5" cornerType="round"/>
 			<layout left="5" top="5" width="310" height="25" >
-				<Alleis field="nome" nome="Nome"/>
+				<label field="nome" nome="Nome"/>
 			</layout>
 			<layout left="5" top="35" width="310" height="25" >
-				<Alleis field="familia" nome="Família"/>
+				<label field="familia" nome="Família"/>
 			</layout>
 			<layout left="320" top="5" width="310" height="25" >
-				<Alleis field="sexo" nome="Sexo"/>
+				<label field="sexo" nome="Sexo"/>
 			</layout>
 			<layout left="320" top="35" width="310" height="25" >
-				<Alleis field="idade" nome="Idade"/>
+				<label field="idade" nome="Idade"/>
 			</layout>
 			<layout left="585" top="5" width="310" height="25" >
-				<Alleis field="altura" nome="Altura"/>
+				<label field="altura" nome="Altura"/>
 			</layout>
 			<layout left="585" top="35" width="310" height="25" >
-				<Alleis field="peso" nome="Peso"/>
+				<label field="peso" nome="Peso"/>
 			</layout>
 		</layout>
 
