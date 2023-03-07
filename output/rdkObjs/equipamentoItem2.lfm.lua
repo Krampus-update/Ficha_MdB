@@ -29,10 +29,6 @@ local function constructNew_frmEquipamentoItem2()
     obj:setName("frmEquipamentoItem2");
     obj:setHeight(40);
 
- 
-		
-
-
 
 		require("common.lua");
 		local function askForDelete()
@@ -44,10 +40,6 @@ local function constructNew_frmEquipamentoItem2()
 								 end);
 		end;
 		
-
-
-
-	
 
 
     obj.layItem = GUI.fromHandle(_obj_newObject("layout"));

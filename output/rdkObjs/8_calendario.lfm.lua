@@ -2129,7 +2129,7 @@ local function constructNew_frmGerenciador02()
     obj.label41:setParent(obj.layout6);
     obj.label41:setLeft(0);
     obj.label41:setTop(50);
-    obj.label41:setWidth(110);
+    obj.label41:setWidth(55);
     obj.label41:setHeight(25);
     obj.label41:setText("Nome");
     obj.label41:setHorzTextAlign("center");

@@ -28,10 +28,6 @@ local function constructNew_frmEquipamentoItem()
     obj:beginUpdate();
     obj:setName("frmEquipamentoItem");
 
- 
-			
-
-
 
 			require("common.lua");
 			local function atualizarDesiredHeight()
@@ -108,10 +104,6 @@ local function constructNew_frmEquipamentoItem()
 			end;
 
 			
-
-
-
-		
 
 
     obj.layMenu = GUI.fromHandle(_obj_newObject("layout"));
