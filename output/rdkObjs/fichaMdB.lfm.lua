@@ -50,16 +50,14 @@ local function constructNew_frmMdB()
     obj.tab1:setTitle("PERSONAGEM");
     obj.tab1:setName("tab1");
 
-    obj.frmMdB = GUI.fromHandle(_obj_newObject("form"));
-    obj.frmMdB:setParent(obj.tab1);
-    obj.frmMdB:setDataType("MultiVerso_MdBe");
-    obj.frmMdB:setFormType("sheetTemplate");
-    obj.frmMdB:setTitle("Ficha Mesa do Bolo");
-    obj.frmMdB:setName("frmMdB");
-    obj.frmMdB:setTheme("dark");
+    obj.frmPersonagem = GUI.fromHandle(_obj_newObject("form"));
+    obj.frmPersonagem:setParent(obj.tab1);
+    obj.frmPersonagem:setName("frmPersonagem");
+    obj.frmPersonagem:setAlign("client");
+    obj.frmPersonagem:setTheme("dark");
 
     obj.tabControl2 = GUI.fromHandle(_obj_newObject("tabControl"));
-    obj.tabControl2:setParent(obj.frmMdB);
+    obj.tabControl2:setParent(obj.frmPersonagem);
     obj.tabControl2:setAlign("client");
     obj.tabControl2:setName("tabControl2");
 
@@ -24018,7 +24016,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.edit79 ~= nil then self.edit79:destroy(); self.edit79 = nil; end;
         if self.label101 ~= nil then self.label101:destroy(); self.label101 = nil; end;
         if self.flowPart263 ~= nil then self.flowPart263:destroy(); self.flowPart263 = nil; end;
-        if self.frmMdB ~= nil then self.frmMdB:destroy(); self.frmMdB = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.edit101 ~= nil then self.edit101:destroy(); self.edit101 = nil; end;
         if self.cbProfcompanioninteligencia ~= nil then self.cbProfcompanioninteligencia:destroy(); self.cbProfcompanioninteligencia = nil; end;
@@ -24170,6 +24167,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowLayout47 ~= nil then self.flowLayout47:destroy(); self.flowLayout47 = nil; end;
         if self.dataLink215 ~= nil then self.dataLink215:destroy(); self.dataLink215 = nil; end;
         if self.label148 ~= nil then self.label148:destroy(); self.label148 = nil; end;
+        if self.frmPersonagem ~= nil then self.frmPersonagem:destroy(); self.frmPersonagem = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
