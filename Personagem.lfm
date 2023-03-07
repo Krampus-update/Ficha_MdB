@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form name="frmPersonagem" align="client" theme="dark">
+
+			<tabControl align="client">
+				<tab title="FRENTE Básicos">
+					<import file="1_frente.xml"/>
+				</tab>
+				<tab title="CARACTERISTICAS">
+					<import file="2_caracteristicas.xml"/>
+				</tab>
+			</tabControl>
+
+</form>

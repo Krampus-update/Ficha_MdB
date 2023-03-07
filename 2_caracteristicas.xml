@@ -3,6 +3,28 @@
 	<scrollBox align="client">
 		<flowLayout class="tile" align="top" height="400" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
 
+		<layout left="0" top="0" width="960" height="70">
+			<rectangle align="client" color="black" xradius="5" yradius="5" cornerType="round"/>
+			<layout left="5" top="5" width="310" height="25" >
+				<Alleis field="nome" nome="Nome"/>
+			</layout>
+			<layout left="5" top="35" width="310" height="25" >
+				<Alleis field="familia" nome="Família"/>
+			</layout>
+			<layout left="320" top="5" width="310" height="25" >
+				<Alleis field="sexo" nome="Sexo"/>
+			</layout>
+			<layout left="320" top="35" width="310" height="25" >
+				<Alleis field="idade" nome="Idade"/>
+			</layout>
+			<layout left="585" top="5" width="310" height="25" >
+				<Alleis field="altura" nome="Altura"/>
+			</layout>
+			<layout left="585" top="35" width="310" height="25" >
+				<Alleis field="peso" nome="Peso"/>
+			</layout>
+		</layout>
+
 			<flowLineBreak/>
 			<!-- Primeira Linha -->
 			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">

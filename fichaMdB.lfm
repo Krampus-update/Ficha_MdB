@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <form dataType="MultiVerso_MdBe" formType="sheetTemplate" title="Ficha Mesa do Bolo" name="frmMdB" theme="dark">
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
@@ -7,8 +6,9 @@
 	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
+	<tabControl  align = " cliente ">
 
-		<tabControl align="top" name="pgcPrincipal">
+		<tabControl align="client" name="pgcPrincipal">
 
 			<tab title="FRENTE">
 				<import file="1_frente.xml"/>
@@ -17,108 +17,80 @@
 			<tab title="CARACTERISTICAS">
 				<import file="2_caracteristicas.xml"/>
 			</tab>
-	<tabControl align="client">
-		<tab title="Allei">
-			<tabControl align="client">
-				<tab title="FRENTE Básicos">
-					<import file="1_frente.xml"/>
-				</tab>
-				<tab title="CARACTERISTICAS">
-					<import file="2_caracteristicas.xml"/>
-				</tab>
-				<tab title="Peculiaridade Única">
-					<import file="FichaAMZ.1.3.lfm"/>
-				</tab>
-				<tab title="Inventario">
-					<import file="FichaAMZ.1.4.lfm"/>
-				</tab>
-			</tabControl>
-		</tab>
-
-				<tab title="CARACTERISTICAS">
-					<import file="2_caracteristicas.xml"/>
-				</aba>
-			</tabControl>
-			</aba>		
-
-	<tabControl  align = "client">
 
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
 			</tab>
 		</tabControl>
 
-			<tab title="MAGIA">
-				<import file="4_magias2.xml"/>
-			</tab>
+		<tab title="MAGIA">
+			<import file="4_magias2.xml"/>
+		</tab>
 
-			<tab title="CONTADORES">
-				<import file="5_contadores.xml"/>
-			</tab>
+		<tab title="CONTADORES">
+			<import file="5_contadores.xml"/>
+		</tab>
 
-			<tab title="PROPRIEDADES">
-				<import file="6_propriedades.xml"/>
-			</tab>
+		<tab title="PROPRIEDADES">
+			<import file="6_propriedades.xml"/>
+		</tab>
 
-			<tab title="DIARIO DE CAMPANHA">
-				<rectangle class="fundo">
-						<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
-							<event name="onChange">
-								if sheet then
-									self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
-									self.historiaMerda:setVisible(not (sheet.historia.usarEditorFancy));
-								end;
-							</event>
-						</checkBox>
-						<richEdit name="historiaFancy" align="client" field="historia.texto2" class="transparente" backgroundColor="#333333" defaultFontColor="white" hideSelection="false" defaultFontSize="16" animateImages="true" margins="{top=2}" visible="false"/>
-						<textEditor name="historiaMerda" align="client" field="historia.texto" class="transparente" margins="{top=2}" fontSize="16" visible="true"/>
-				</rectangle>
-			</tab>
-
-			<tab title="CALENDARIO">
-				<import file="8_calendario.lfm"/>
-			</tab>
-
-			<tab title="COMPANHEIRO">
-				<import file="10_companion.xml"/>
-			</tab>
-
-			<tab title="COMPANHEIRO ANOTAÇÕES">
-				<rectangle class="fundo">
-					<checkBox align="right" width="15" field="companion.anotacoes_melhorado">
+		<tab title="DIARIO DE CAMPANHA">
+			<rectangle class="fundo">
+					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
 						<event name="onChange">
 							if sheet then
-								self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
-								self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
+								self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
+								self.historiaMerda:setVisible(not (sheet.historia.usarEditorFancy));
 							end;
 						</event>
 					</checkBox>
-					<richEdit name="companionanotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
-					<textEditor name="companionanotacoesMerda" align="client" field="companion.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
-				</rectangle>
-			</tab>
+					<richEdit name="historiaFancy" align="client" field="historia.texto2" class="transparente" backgroundColor="#333333" defaultFontColor="white" hideSelection="false" defaultFontSize="16" animateImages="true" margins="{top=2}" visible="false"/>
+					<textEditor name="historiaMerda" align="client" field="historia.texto" class="transparente" margins="{top=2}" fontSize="16" visible="true"/>
+			</rectangle>
+		</tab>
 
-			<tab title="ANOTAÇÕES EXTRAS">
-				<rectangle class="fundo">
-					<checkBox align="right" width="15" field="outros.anotacoes_melhorado">
-						<event name="onChange">
-							if sheet then
-								self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
-								self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
-							end;
-						</event>
-					</checkBox>
-					<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
-					<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
-				</rectangle>
-			</tab>
+		<tab title="CALENDARIO">
+			<import file="8_calendario.lfm"/>
+		</tab>
 
-			<tab title="CREDITOS">
-				<import file="13_creditos.xml"/>
-			</tab>
+		<tab title="COMPANHEIRO">
+			<import file="10_companion.xml"/>
+		</tab>
 
+		<tab title="COMPANHEIRO ANOTAÇÕES">
+			<rectangle class="fundo">
+				<checkBox align="right" width="15" field="companion.anotacoes_melhorado">
+					<event name="onChange">
+						if sheet then
+							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
+							self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
+						end;
+					</event>
+				</checkBox>
+				<richEdit name="companionanotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
+				<textEditor name="companionanotacoesMerda" align="client" field="companion.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
+			</rectangle>
+		</tab>
 
-			</tabControl>
-		</tabControl>
+		<tab title="ANOTAÇÕES EXTRAS">
+			<rectangle class="fundo">
+				<checkBox align="right" width="15" field="outros.anotacoes_melhorado">
+					<event name="onChange">
+						if sheet then
+							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
+							self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
+						end;
+					</event>
+				</checkBox>
+				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
+				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
+			</rectangle>
+		</tab>
 
+		<tab title="CREDITOS">
+			<import file="13_creditos.xml"/>
+		</tab>
+
+	</tabControl>
 </form>
