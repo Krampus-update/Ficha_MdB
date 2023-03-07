@@ -42,9 +42,9 @@
 		</layout>
 
 	<!-- TERCEIRA LINHA -->		
-	<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10" margins="{top=5}">
+	<Layout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10" margins="{top=5}">
 			<!-- ALIADOS E ORGANIZAÇÕES -->					
-				<flowLayout name="fraAliadosOrganizacoes" class="tile" autoHeight="true" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" horzAlign="center">
+				<Layout name="fraAliadosOrganizacoes" class="tile" autoHeight="true" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" horzAlign="center">
 					<event name="onBeforeLayoutCalc">
 						<![CDATA[
 								if self.fraAliadosOrganizacoes:getWidth() <= 500 then
@@ -72,7 +72,7 @@
 					<flowPart minWidth="200" maxWidth="1800" height="16">
 						<label align="client" autoSize="true" text="@@DnD5e.features.alliesOrganizations" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 					</flowPart>
-				</flowLayout>		
-
+				</Layout>		
+		</Layout>	
 	</scrollBox>
 </form>
