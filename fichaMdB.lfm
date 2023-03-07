@@ -91,18 +91,6 @@
 			<import file="4_magias2.xml"/>
 		</tab>
 
-		<tab title="CONTADORES">
-			<import file="5_contadores.xml"/>
-		</tab>
-
-		<tab title="PROPRIEDADES">
-			<import file="6_propriedades.xml"/>
-		</tab>
-
-		<tab title="CALENDARIO">
-			<import file="calendario.xml"/>
-		</tab>
-
 		<tab title="DÍARIO DE CAMPANHA">
 			<rectangle class="fundo">
 				<checkBox align="right" width="15" field="outros.diariodecampanha">
@@ -116,6 +104,10 @@
 				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
+		</tab>
+
+		<tab title="CALENDARIO">
+			<import file="calendario.xml"/>
 		</tab>
 
 		<tab title="COMPANION">
@@ -150,6 +142,14 @@
 				<richEdit name="anotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
+		</tab>
+
+		<tab title="CONTADORES">
+			<import file="5_contadores.xml"/>
+		</tab>
+
+		<tab title="PROPRIEDADES">
+			<import file="6_propriedades.xml"/>
 		</tab>
 
 		<tab title="CREDITOS">
