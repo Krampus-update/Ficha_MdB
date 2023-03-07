@@ -9,15 +9,12 @@
 	<tabControl align="client">
 
 		<tabControl align="client" name="pgcPrincipal">
-
 			<tab title="FRENTE">
 				<import file="1_frente.xml"/>
 			</tab>
-
 			<tab title="CARACTERISTICAS">
 				<import file="2_caracteristicas.xml"/>
 			</tab>
-
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
 			</tab>
