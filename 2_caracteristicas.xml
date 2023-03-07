@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rectangle class="fundo">
 	<scrollBox align="client">
-		<flowLayout class="tile" align="top" height="400" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
-
+		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
+			
+			<!-- Primeira Linha -->
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center">
+				<!-- NOME DO PERSONAGEM -->													
+				<flowPart class="tile" minWidth="320" maxWidth="1600" frameStyle="frames/banner/heroGroup.xml" height="175" vertAlign="center" avoidScale="true">							
+					<layout align="client">
+							<edit field="nome" class="transparente vcenter" fontSize="17" align="client"/>
+							<label align="bottom" text="@@DnD5e.features.nameCharacter" class="tituloCampo" autoSize="true" margins="{left=3}"/>
+					</layout>
+				</flowPart>				
+		
 				<!-- GRID DE INFORMACOES SUPERIORES DA FRENTE -->
 				<flowLayout class="tile"  minWidth="320" maxWidth="1600" name="fraUpperGridCaracteristicas" avoidScale="true" frameStyle="frames/upperInfoGrid/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">								
 						<upperGridCampo field="caracteristicas.idade" minWidth="100" titulo="@@DnD5e.features.age"/>
@@ -12,109 +22,8 @@
 						<upperGridCampo field="caracteristicas.pele" titulo="@@DnD5e.features.skin"/>
 						<upperGridCampo field="caracteristicas.cabelo" titulo="@@DnD5e.features.hair"/>
 				</flowLayout>	
-
-		<dataLink fields="{'tamanho', 'quadrupede', 'efetFor'}">
-			<event name="onChange">
-				<![CDATA[
-				if sheet~=nil then
-					local str = tonumber(sheet.efetFor) or 1;
-					local size = tonumber(sheet.tamanho) or 0;
-					local quad = sheet.quadrupede;
-					local mult = 1;
-					local mod1 = 0;
-					local mod2 = 0;
-					if size == -4 then
-						if quad then
-							mult = 1 / 4;
-						else
-							mult = 1 / 8;
-						end;
-						mod1 = 8;
-						mod2 = 16;
-					elseif size == -3 then
-						if quad then
-							mult = 1 / 2;
-						else
-							mult = 1 / 4;
-						end;
-						mod1 = 4;
-						mod2 = 12;
-					elseif size == -2 then
-						if quad then
-							mult = 3 / 4;
-						else
-							mult = 1 / 2;
-						end;
-						mod1 = 2;
-						mod2 = 8;
-					elseif size == -1 then
-						if quad then
-							mult = 1;
-						else
-							mult = 3 / 4;
-						end;
-						mod1 = 1;
-						mod2 = 4;
-					elseif size == 0 then
-						if quad then
-							mult = 1.5;
-						else
-							mult = 1;
-						end;
-					elseif size == 1 then
-						if quad then
-							mult = 3;
-						else
-							mult = 2;
-						end;
-						mod1 = -1;
-						mod2 = -4;
-					elseif size == 2 then
-						if quad then
-							mult = 6;
-						else
-							mult = 4;
-						end;
-						mod1 = -2;
-						mod2 = -8;
-					elseif size == 3 then
-						if quad then
-							mult = 12;
-						else
-							mult = 8;
-						end;
-						mod1 = -4;
-						mod2 = -12;
-					elseif size == 4 then
-						if quad then
-							mult = 24;
-						else
-							mult = 16;
-						end;
-						mod1 = -8;
-						mod2 = -16;
-					end;
-					while str > 29 do
-						mult = mult * 4;
-						str = str - 10;
-					end;
-					if str < 1 then
-						str = 1;
-					end;
-					local load = ndb.load("loads.xml");
-					local light = (load.light[str] * mult);
-					local medium = (load.medium[str] * mult);
-					local heavy = (load.heavy[str] * mult);
-					sheet.cargaLeve = light .. "Kg";
-					sheet.cargaMedia = medium .. "Kg";
-					sheet.cargaPesada = heavy .. "Kg";
-					sheet.agarrarTam = 0 - mod2;
-					sheet.tamanhoCa = mod1;
-				end;
-				]]>
-			</event>	
-		</dataLink>
-
+			</flowLayout>			
+	
 			<flowLineBreak/>
 			<!-- Primeira Linha -->
 			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
