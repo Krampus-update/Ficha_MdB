@@ -5584,8 +5584,8 @@ require('mudaNick.lua')
     obj.layout62:setParent(obj.scrollBox2);
     obj.layout62:setLeft(0);
     obj.layout62:setTop(610);
-    obj.layout62:setWidth(825);
-    obj.layout62:setHeight(495);
+    obj.layout62:setWidth(375);
+    obj.layout62:setHeight(250);
     obj.layout62:setFrameStyle("frames/panel5/frame.xml");
     obj.layout62:setName("layout62");
 
@@ -5600,17 +5600,14 @@ require('mudaNick.lua')
     obj.label39:setName("label39");
     obj.label39:setFontColor("white");
 
-    obj.richEdit2 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit2:setParent(obj.layout62);
-    obj.richEdit2:setLeft(10);
-    obj.richEdit2:setTop(20);
-    obj.richEdit2:setWidth(805);
-    obj.richEdit2:setHeight(455);
-    obj.richEdit2:setField("idiomas");
-    lfm_setPropAsString(obj.richEdit2, "backgroundColor",  "#333333");
-    lfm_setPropAsString(obj.richEdit2, "defaultFontSize",  "12");
-    lfm_setPropAsString(obj.richEdit2, "defaultFontColor",  "white");
-    obj.richEdit2:setName("richEdit2");
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2:setParent(obj.layout62);
+    obj.textEditor2:setLeft(10);
+    obj.textEditor2:setTop(20);
+    obj.textEditor2:setWidth(370);
+    obj.textEditor2:setHeight(245);
+    obj.textEditor2:setField("idiomas");
+    obj.textEditor2:setName("textEditor2");
 
     obj.tab3 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab3:setParent(obj.pgcPrincipal);
@@ -6420,17 +6417,17 @@ require('mudaNick.lua')
     obj.editorFancy:setColor("black");
     obj.editorFancy:setVisible(false);
 
-    obj.richEdit3 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit3:setParent(obj.editorFancy);
-    obj.richEdit3:setAlign("client");
-    obj.richEdit3:setMargins({left=0.1, right=0.1, top=0.1, bottom=0.1});
-    obj.richEdit3:setField("equipamento.outros2");
-    lfm_setPropAsString(obj.richEdit3, "backgroundColor",  "#333333");
-    lfm_setPropAsString(obj.richEdit3, "defaultFontColor",  "white");
-    lfm_setPropAsString(obj.richEdit3, "hideSelection",  "false");
-    lfm_setPropAsString(obj.richEdit3, "defaultFontSize",  "15");
-    lfm_setPropAsString(obj.richEdit3, "animateImages",  "true");
-    obj.richEdit3:setName("richEdit3");
+    obj.richEdit2 = GUI.fromHandle(_obj_newObject("richEdit"));
+    obj.richEdit2:setParent(obj.editorFancy);
+    obj.richEdit2:setAlign("client");
+    obj.richEdit2:setMargins({left=0.1, right=0.1, top=0.1, bottom=0.1});
+    obj.richEdit2:setField("equipamento.outros2");
+    lfm_setPropAsString(obj.richEdit2, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.richEdit2, "defaultFontColor",  "white");
+    lfm_setPropAsString(obj.richEdit2, "hideSelection",  "false");
+    lfm_setPropAsString(obj.richEdit2, "defaultFontSize",  "15");
+    lfm_setPropAsString(obj.richEdit2, "animateImages",  "true");
+    obj.richEdit2:setName("richEdit2");
 
     obj.editorMerda = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.editorMerda:setParent(obj.flowPart71);
@@ -6868,11 +6865,11 @@ self.upperGridMagicBox3._RecalcSize();
     lfm_setPropAsString(obj.label56, "fontStyle",  "bold");
     obj.label56:setFontColor("white");
 
-    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.layout66);
-    obj.textEditor2:setAlign("client");
-    obj.textEditor2:setField("descricao");
-    obj.textEditor2:setName("textEditor2");
+    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor3:setParent(obj.layout66);
+    obj.textEditor3:setAlign("client");
+    obj.textEditor3:setField("descricao");
+    obj.textEditor3:setName("textEditor3");
 
     obj.tab6 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab6:setParent(obj.tcPopupEdit);
@@ -11237,14 +11234,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink147:setDefaultValue("1");
     obj.dataLink147:setName("dataLink147");
 
-    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor3:setParent(obj.layout85);
-    obj.textEditor3:setLeft(40);
-    obj.textEditor3:setTop(80);
-    obj.textEditor3:setWidth(200);
-    obj.textEditor3:setHeight(100);
-    obj.textEditor3:setField("data");
-    obj.textEditor3:setName("textEditor3");
+    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor4:setParent(obj.layout85);
+    obj.textEditor4:setLeft(40);
+    obj.textEditor4:setTop(80);
+    obj.textEditor4:setWidth(200);
+    obj.textEditor4:setHeight(100);
+    obj.textEditor4:setField("data");
+    obj.textEditor4:setName("textEditor4");
 
     obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout86:setParent(obj.layout85);
@@ -15942,14 +15939,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label182:setName("label182");
     obj.label182:setFontColor("white");
 
-    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.layout135);
-    obj.textEditor4:setLeft(30);
-    obj.textEditor4:setTop(20);
-    obj.textEditor4:setWidth(440);
-    obj.textEditor4:setHeight(530);
-    obj.textEditor4:setField("anotacoes_do_mestre");
-    obj.textEditor4:setName("textEditor4");
+    obj.textEditor5 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor5:setParent(obj.layout135);
+    obj.textEditor5:setLeft(30);
+    obj.textEditor5:setTop(20);
+    obj.textEditor5:setWidth(440);
+    obj.textEditor5:setHeight(530);
+    obj.textEditor5:setField("anotacoes_do_mestre");
+    obj.textEditor5:setName("textEditor5");
 
     obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout136:setParent(obj.scrollBox10);
@@ -23679,7 +23676,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
         if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
         if self.cbProfcompanionenganacao ~= nil then self.cbProfcompanionenganacao:destroy(); self.cbProfcompanionenganacao = nil; end;
-        if self.richEdit3 ~= nil then self.richEdit3:destroy(); self.richEdit3 = nil; end;
         if self.linUpperGridCampo4 ~= nil then self.linUpperGridCampo4:destroy(); self.linUpperGridCampo4 = nil; end;
         if self.flowPart145 ~= nil then self.flowPart145:destroy(); self.flowPart145 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
@@ -23826,6 +23822,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.edit72 ~= nil then self.edit72:destroy(); self.edit72 = nil; end;
         if self.linUpperGridCampo5 ~= nil then self.linUpperGridCampo5:destroy(); self.linUpperGridCampo5 = nil; end;
         if self.layout92 ~= nil then self.layout92:destroy(); self.layout92 = nil; end;
+        if self.textEditor5 ~= nil then self.textEditor5:destroy(); self.textEditor5 = nil; end;
         if self.label131 ~= nil then self.label131:destroy(); self.label131 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
         if self.horzLine44 ~= nil then self.horzLine44:destroy(); self.horzLine44 = nil; end;
