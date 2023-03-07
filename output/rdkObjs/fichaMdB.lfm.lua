@@ -5263,6 +5263,276 @@ require('mudaNick.lua')
     obj.fraUpperGridCaracteristicas:setMinScaledWidth(300);
     obj.fraUpperGridCaracteristicas:setMargins({left=1, right=1, top=2, bottom=2});
 
+    obj.UpperGridCampo7 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo7:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo7:setHeight(50);
+    obj.UpperGridCampo7:setMinScaledWidth(100);
+    obj.UpperGridCampo7:setMinWidth(100);
+    obj.UpperGridCampo7:setMaxWidth(233);
+    obj.UpperGridCampo7:setMaxScaledWidth(233);
+    obj.UpperGridCampo7:setAvoidScale(true);
+    obj.UpperGridCampo7:setName("UpperGridCampo7");
+    obj.UpperGridCampo7:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo7:setVertAlign("leading");
+
+    obj.edtUpperGridCampo7 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo7:setParent(obj.UpperGridCampo7);
+    obj.edtUpperGridCampo7:setName("edtUpperGridCampo7");
+    obj.edtUpperGridCampo7:setAlign("top");
+    obj.edtUpperGridCampo7:setField("caracteristicas.idade");
+    obj.edtUpperGridCampo7:setFontSize(13);
+    obj.edtUpperGridCampo7:setHeight(30);
+    obj.edtUpperGridCampo7:setTransparent(true);
+    obj.edtUpperGridCampo7:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo7:setWidth(195);
+    obj.edtUpperGridCampo7:setFontColor("white");
+
+    obj.linUpperGridCampo7 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo7:setParent(obj.UpperGridCampo7);
+    obj.linUpperGridCampo7:setName("linUpperGridCampo7");
+    obj.linUpperGridCampo7:setAlign("top");
+    obj.linUpperGridCampo7:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo7:setStrokeSize(1);
+
+    obj.labUpperGridCampo7 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo7:setParent(obj.UpperGridCampo7);
+    obj.labUpperGridCampo7:setName("labUpperGridCampo7");
+    obj.labUpperGridCampo7:setAlign("top");
+    obj.labUpperGridCampo7:setText(lang("DnD5e.features.age"));
+    obj.labUpperGridCampo7:setVertTextAlign("leading");
+    obj.labUpperGridCampo7:setWordWrap(true);
+    obj.labUpperGridCampo7:setTextTrimming("none");
+    obj.labUpperGridCampo7:setFontSize(12);
+    obj.labUpperGridCampo7:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo7:setHeight(self.edtUpperGridCampo7:getHeight() + self.labUpperGridCampo7:getHeight() + self.linUpperGridCampo7:getHeight());
+
+
+    obj.UpperGridCampo8 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo8:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo8:setHeight(50);
+    obj.UpperGridCampo8:setMinScaledWidth(100);
+    obj.UpperGridCampo8:setMinWidth(100);
+    obj.UpperGridCampo8:setMaxWidth(233);
+    obj.UpperGridCampo8:setMaxScaledWidth(233);
+    obj.UpperGridCampo8:setAvoidScale(true);
+    obj.UpperGridCampo8:setName("UpperGridCampo8");
+    obj.UpperGridCampo8:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo8:setVertAlign("leading");
+
+    obj.edtUpperGridCampo8 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo8:setParent(obj.UpperGridCampo8);
+    obj.edtUpperGridCampo8:setName("edtUpperGridCampo8");
+    obj.edtUpperGridCampo8:setAlign("top");
+    obj.edtUpperGridCampo8:setField("caracteristicas.altura");
+    obj.edtUpperGridCampo8:setFontSize(13);
+    obj.edtUpperGridCampo8:setHeight(30);
+    obj.edtUpperGridCampo8:setTransparent(true);
+    obj.edtUpperGridCampo8:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo8:setWidth(195);
+    obj.edtUpperGridCampo8:setFontColor("white");
+
+    obj.linUpperGridCampo8 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo8:setParent(obj.UpperGridCampo8);
+    obj.linUpperGridCampo8:setName("linUpperGridCampo8");
+    obj.linUpperGridCampo8:setAlign("top");
+    obj.linUpperGridCampo8:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo8:setStrokeSize(1);
+
+    obj.labUpperGridCampo8 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo8:setParent(obj.UpperGridCampo8);
+    obj.labUpperGridCampo8:setName("labUpperGridCampo8");
+    obj.labUpperGridCampo8:setAlign("top");
+    obj.labUpperGridCampo8:setText(lang("DnD5e.features.height"));
+    obj.labUpperGridCampo8:setVertTextAlign("leading");
+    obj.labUpperGridCampo8:setWordWrap(true);
+    obj.labUpperGridCampo8:setTextTrimming("none");
+    obj.labUpperGridCampo8:setFontSize(12);
+    obj.labUpperGridCampo8:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo8:setHeight(self.edtUpperGridCampo8:getHeight() + self.labUpperGridCampo8:getHeight() + self.linUpperGridCampo8:getHeight());
+
+
+    obj.UpperGridCampo9 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo9:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo9:setHeight(50);
+    obj.UpperGridCampo9:setMinScaledWidth(100);
+    obj.UpperGridCampo9:setMinWidth(100);
+    obj.UpperGridCampo9:setMaxWidth(233);
+    obj.UpperGridCampo9:setMaxScaledWidth(233);
+    obj.UpperGridCampo9:setAvoidScale(true);
+    obj.UpperGridCampo9:setName("UpperGridCampo9");
+    obj.UpperGridCampo9:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo9:setVertAlign("leading");
+
+    obj.edtUpperGridCampo9 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo9:setParent(obj.UpperGridCampo9);
+    obj.edtUpperGridCampo9:setName("edtUpperGridCampo9");
+    obj.edtUpperGridCampo9:setAlign("top");
+    obj.edtUpperGridCampo9:setField("caracteristicas.peso");
+    obj.edtUpperGridCampo9:setFontSize(13);
+    obj.edtUpperGridCampo9:setHeight(30);
+    obj.edtUpperGridCampo9:setTransparent(true);
+    obj.edtUpperGridCampo9:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo9:setWidth(195);
+    obj.edtUpperGridCampo9:setFontColor("white");
+
+    obj.linUpperGridCampo9 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo9:setParent(obj.UpperGridCampo9);
+    obj.linUpperGridCampo9:setName("linUpperGridCampo9");
+    obj.linUpperGridCampo9:setAlign("top");
+    obj.linUpperGridCampo9:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo9:setStrokeSize(1);
+
+    obj.labUpperGridCampo9 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo9:setParent(obj.UpperGridCampo9);
+    obj.labUpperGridCampo9:setName("labUpperGridCampo9");
+    obj.labUpperGridCampo9:setAlign("top");
+    obj.labUpperGridCampo9:setText(lang("DnD5e.features.weight"));
+    obj.labUpperGridCampo9:setVertTextAlign("leading");
+    obj.labUpperGridCampo9:setWordWrap(true);
+    obj.labUpperGridCampo9:setTextTrimming("none");
+    obj.labUpperGridCampo9:setFontSize(12);
+    obj.labUpperGridCampo9:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo9:setHeight(self.edtUpperGridCampo9:getHeight() + self.labUpperGridCampo9:getHeight() + self.linUpperGridCampo9:getHeight());
+
+
+    obj.UpperGridCampo10 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo10:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo10:setHeight(50);
+    obj.UpperGridCampo10:setMinScaledWidth(100);
+    obj.UpperGridCampo10:setMinWidth(100);
+    obj.UpperGridCampo10:setMaxWidth(233);
+    obj.UpperGridCampo10:setMaxScaledWidth(233);
+    obj.UpperGridCampo10:setAvoidScale(true);
+    obj.UpperGridCampo10:setName("UpperGridCampo10");
+    obj.UpperGridCampo10:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo10:setVertAlign("leading");
+
+    obj.edtUpperGridCampo10 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo10:setParent(obj.UpperGridCampo10);
+    obj.edtUpperGridCampo10:setName("edtUpperGridCampo10");
+    obj.edtUpperGridCampo10:setAlign("top");
+    obj.edtUpperGridCampo10:setField("caracteristicas.olhos");
+    obj.edtUpperGridCampo10:setFontSize(13);
+    obj.edtUpperGridCampo10:setHeight(30);
+    obj.edtUpperGridCampo10:setTransparent(true);
+    obj.edtUpperGridCampo10:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo10:setWidth(195);
+    obj.edtUpperGridCampo10:setFontColor("white");
+
+    obj.linUpperGridCampo10 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo10:setParent(obj.UpperGridCampo10);
+    obj.linUpperGridCampo10:setName("linUpperGridCampo10");
+    obj.linUpperGridCampo10:setAlign("top");
+    obj.linUpperGridCampo10:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo10:setStrokeSize(1);
+
+    obj.labUpperGridCampo10 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo10:setParent(obj.UpperGridCampo10);
+    obj.labUpperGridCampo10:setName("labUpperGridCampo10");
+    obj.labUpperGridCampo10:setAlign("top");
+    obj.labUpperGridCampo10:setText(lang("DnD5e.features.eyes"));
+    obj.labUpperGridCampo10:setVertTextAlign("leading");
+    obj.labUpperGridCampo10:setWordWrap(true);
+    obj.labUpperGridCampo10:setTextTrimming("none");
+    obj.labUpperGridCampo10:setFontSize(12);
+    obj.labUpperGridCampo10:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo10:setHeight(self.edtUpperGridCampo10:getHeight() + self.labUpperGridCampo10:getHeight() + self.linUpperGridCampo10:getHeight());
+
+
+    obj.UpperGridCampo11 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo11:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo11:setHeight(50);
+    obj.UpperGridCampo11:setMinScaledWidth(100);
+    obj.UpperGridCampo11:setMinWidth(100);
+    obj.UpperGridCampo11:setMaxWidth(233);
+    obj.UpperGridCampo11:setMaxScaledWidth(233);
+    obj.UpperGridCampo11:setAvoidScale(true);
+    obj.UpperGridCampo11:setName("UpperGridCampo11");
+    obj.UpperGridCampo11:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo11:setVertAlign("leading");
+
+    obj.edtUpperGridCampo11 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo11:setParent(obj.UpperGridCampo11);
+    obj.edtUpperGridCampo11:setName("edtUpperGridCampo11");
+    obj.edtUpperGridCampo11:setAlign("top");
+    obj.edtUpperGridCampo11:setField("caracteristicas.pele");
+    obj.edtUpperGridCampo11:setFontSize(13);
+    obj.edtUpperGridCampo11:setHeight(30);
+    obj.edtUpperGridCampo11:setTransparent(true);
+    obj.edtUpperGridCampo11:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo11:setWidth(195);
+    obj.edtUpperGridCampo11:setFontColor("white");
+
+    obj.linUpperGridCampo11 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo11:setParent(obj.UpperGridCampo11);
+    obj.linUpperGridCampo11:setName("linUpperGridCampo11");
+    obj.linUpperGridCampo11:setAlign("top");
+    obj.linUpperGridCampo11:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo11:setStrokeSize(1);
+
+    obj.labUpperGridCampo11 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo11:setParent(obj.UpperGridCampo11);
+    obj.labUpperGridCampo11:setName("labUpperGridCampo11");
+    obj.labUpperGridCampo11:setAlign("top");
+    obj.labUpperGridCampo11:setText(lang("DnD5e.features.skin"));
+    obj.labUpperGridCampo11:setVertTextAlign("leading");
+    obj.labUpperGridCampo11:setWordWrap(true);
+    obj.labUpperGridCampo11:setTextTrimming("none");
+    obj.labUpperGridCampo11:setFontSize(12);
+    obj.labUpperGridCampo11:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo11:setHeight(self.edtUpperGridCampo11:getHeight() + self.labUpperGridCampo11:getHeight() + self.linUpperGridCampo11:getHeight());
+
+
+    obj.UpperGridCampo12 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo12:setParent(obj.fraUpperGridCaracteristicas);
+    obj.UpperGridCampo12:setHeight(50);
+    obj.UpperGridCampo12:setMinScaledWidth(100);
+    obj.UpperGridCampo12:setMinWidth(100);
+    obj.UpperGridCampo12:setMaxWidth(233);
+    obj.UpperGridCampo12:setMaxScaledWidth(233);
+    obj.UpperGridCampo12:setAvoidScale(true);
+    obj.UpperGridCampo12:setName("UpperGridCampo12");
+    obj.UpperGridCampo12:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo12:setVertAlign("leading");
+
+    obj.edtUpperGridCampo12 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo12:setParent(obj.UpperGridCampo12);
+    obj.edtUpperGridCampo12:setName("edtUpperGridCampo12");
+    obj.edtUpperGridCampo12:setAlign("top");
+    obj.edtUpperGridCampo12:setField("caracteristicas.cabelo");
+    obj.edtUpperGridCampo12:setFontSize(13);
+    obj.edtUpperGridCampo12:setHeight(30);
+    obj.edtUpperGridCampo12:setTransparent(true);
+    obj.edtUpperGridCampo12:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo12:setWidth(195);
+    obj.edtUpperGridCampo12:setFontColor("white");
+
+    obj.linUpperGridCampo12 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo12:setParent(obj.UpperGridCampo12);
+    obj.linUpperGridCampo12:setName("linUpperGridCampo12");
+    obj.linUpperGridCampo12:setAlign("top");
+    obj.linUpperGridCampo12:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo12:setStrokeSize(1);
+
+    obj.labUpperGridCampo12 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo12:setParent(obj.UpperGridCampo12);
+    obj.labUpperGridCampo12:setName("labUpperGridCampo12");
+    obj.labUpperGridCampo12:setAlign("top");
+    obj.labUpperGridCampo12:setText(lang("DnD5e.features.hair"));
+    obj.labUpperGridCampo12:setVertTextAlign("leading");
+    obj.labUpperGridCampo12:setWordWrap(true);
+    obj.labUpperGridCampo12:setTextTrimming("none");
+    obj.labUpperGridCampo12:setFontSize(12);
+    obj.labUpperGridCampo12:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo12:setHeight(self.edtUpperGridCampo12:getHeight() + self.labUpperGridCampo12:getHeight() + self.linUpperGridCampo12:getHeight());
+
+
     obj.flowLineBreak3 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
     obj.flowLineBreak3:setParent(obj.fraCaracteristicasLayout);
     obj.flowLineBreak3:setName("flowLineBreak3");
@@ -11605,276 +11875,6 @@ self.upperGridMagicBox3._RecalcSize();
     obj.fraUpperGridCompanion:setMaxControlsPerLine(3);
     obj.fraUpperGridCompanion:setMargins({left=1, right=1, top=2, bottom=2});
 
-    obj.UpperGridCampo7 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo7:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo7:setHeight(50);
-    obj.UpperGridCampo7:setMinScaledWidth(100);
-    obj.UpperGridCampo7:setMinWidth(100);
-    obj.UpperGridCampo7:setMaxWidth(233);
-    obj.UpperGridCampo7:setMaxScaledWidth(233);
-    obj.UpperGridCampo7:setAvoidScale(true);
-    obj.UpperGridCampo7:setName("UpperGridCampo7");
-    obj.UpperGridCampo7:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo7:setVertAlign("leading");
-
-    obj.edtUpperGridCampo7 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo7:setParent(obj.UpperGridCampo7);
-    obj.edtUpperGridCampo7:setName("edtUpperGridCampo7");
-    obj.edtUpperGridCampo7:setAlign("top");
-    obj.edtUpperGridCampo7:setField("classeCompanion");
-    obj.edtUpperGridCampo7:setFontSize(13);
-    obj.edtUpperGridCampo7:setHeight(30);
-    obj.edtUpperGridCampo7:setTransparent(true);
-    obj.edtUpperGridCampo7:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo7:setWidth(195);
-    obj.edtUpperGridCampo7:setFontColor("white");
-
-    obj.linUpperGridCampo7 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo7:setParent(obj.UpperGridCampo7);
-    obj.linUpperGridCampo7:setName("linUpperGridCampo7");
-    obj.linUpperGridCampo7:setAlign("top");
-    obj.linUpperGridCampo7:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo7:setStrokeSize(1);
-
-    obj.labUpperGridCampo7 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo7:setParent(obj.UpperGridCampo7);
-    obj.labUpperGridCampo7:setName("labUpperGridCampo7");
-    obj.labUpperGridCampo7:setAlign("top");
-    obj.labUpperGridCampo7:setText("CLASSES");
-    obj.labUpperGridCampo7:setVertTextAlign("leading");
-    obj.labUpperGridCampo7:setWordWrap(true);
-    obj.labUpperGridCampo7:setTextTrimming("none");
-    obj.labUpperGridCampo7:setFontSize(12);
-    obj.labUpperGridCampo7:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo7:setHeight(self.edtUpperGridCampo7:getHeight() + self.labUpperGridCampo7:getHeight() + self.linUpperGridCampo7:getHeight());
-
-
-    obj.UpperGridCampo8 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo8:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo8:setHeight(50);
-    obj.UpperGridCampo8:setMinScaledWidth(100);
-    obj.UpperGridCampo8:setMinWidth(100);
-    obj.UpperGridCampo8:setMaxWidth(233);
-    obj.UpperGridCampo8:setMaxScaledWidth(233);
-    obj.UpperGridCampo8:setAvoidScale(true);
-    obj.UpperGridCampo8:setName("UpperGridCampo8");
-    obj.UpperGridCampo8:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo8:setVertAlign("leading");
-
-    obj.edtUpperGridCampo8 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo8:setParent(obj.UpperGridCampo8);
-    obj.edtUpperGridCampo8:setName("edtUpperGridCampo8");
-    obj.edtUpperGridCampo8:setAlign("top");
-    obj.edtUpperGridCampo8:setField("niveisCompanion");
-    obj.edtUpperGridCampo8:setFontSize(13);
-    obj.edtUpperGridCampo8:setHeight(30);
-    obj.edtUpperGridCampo8:setTransparent(true);
-    obj.edtUpperGridCampo8:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo8:setWidth(195);
-    obj.edtUpperGridCampo8:setFontColor("white");
-
-    obj.linUpperGridCampo8 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo8:setParent(obj.UpperGridCampo8);
-    obj.linUpperGridCampo8:setName("linUpperGridCampo8");
-    obj.linUpperGridCampo8:setAlign("top");
-    obj.linUpperGridCampo8:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo8:setStrokeSize(1);
-
-    obj.labUpperGridCampo8 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo8:setParent(obj.UpperGridCampo8);
-    obj.labUpperGridCampo8:setName("labUpperGridCampo8");
-    obj.labUpperGridCampo8:setAlign("top");
-    obj.labUpperGridCampo8:setText("NIVEIS");
-    obj.labUpperGridCampo8:setVertTextAlign("leading");
-    obj.labUpperGridCampo8:setWordWrap(true);
-    obj.labUpperGridCampo8:setTextTrimming("none");
-    obj.labUpperGridCampo8:setFontSize(12);
-    obj.labUpperGridCampo8:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo8:setHeight(self.edtUpperGridCampo8:getHeight() + self.labUpperGridCampo8:getHeight() + self.linUpperGridCampo8:getHeight());
-
-
-    obj.UpperGridCampo9 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo9:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo9:setHeight(50);
-    obj.UpperGridCampo9:setMinScaledWidth(100);
-    obj.UpperGridCampo9:setMinWidth(100);
-    obj.UpperGridCampo9:setMaxWidth(233);
-    obj.UpperGridCampo9:setMaxScaledWidth(233);
-    obj.UpperGridCampo9:setAvoidScale(true);
-    obj.UpperGridCampo9:setName("UpperGridCampo9");
-    obj.UpperGridCampo9:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo9:setVertAlign("leading");
-
-    obj.edtUpperGridCampo9 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo9:setParent(obj.UpperGridCampo9);
-    obj.edtUpperGridCampo9:setName("edtUpperGridCampo9");
-    obj.edtUpperGridCampo9:setAlign("top");
-    obj.edtUpperGridCampo9:setField("experiencia");
-    obj.edtUpperGridCampo9:setFontSize(13);
-    obj.edtUpperGridCampo9:setHeight(30);
-    obj.edtUpperGridCampo9:setTransparent(true);
-    obj.edtUpperGridCampo9:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo9:setWidth(195);
-    obj.edtUpperGridCampo9:setFontColor("white");
-
-    obj.linUpperGridCampo9 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo9:setParent(obj.UpperGridCampo9);
-    obj.linUpperGridCampo9:setName("linUpperGridCampo9");
-    obj.linUpperGridCampo9:setAlign("top");
-    obj.linUpperGridCampo9:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo9:setStrokeSize(1);
-
-    obj.labUpperGridCampo9 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo9:setParent(obj.UpperGridCampo9);
-    obj.labUpperGridCampo9:setName("labUpperGridCampo9");
-    obj.labUpperGridCampo9:setAlign("top");
-    obj.labUpperGridCampo9:setText("SESSÕES");
-    obj.labUpperGridCampo9:setVertTextAlign("leading");
-    obj.labUpperGridCampo9:setWordWrap(true);
-    obj.labUpperGridCampo9:setTextTrimming("none");
-    obj.labUpperGridCampo9:setFontSize(12);
-    obj.labUpperGridCampo9:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo9:setHeight(self.edtUpperGridCampo9:getHeight() + self.labUpperGridCampo9:getHeight() + self.linUpperGridCampo9:getHeight());
-
-
-    obj.UpperGridCampo10 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo10:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo10:setHeight(50);
-    obj.UpperGridCampo10:setMinScaledWidth(100);
-    obj.UpperGridCampo10:setMinWidth(100);
-    obj.UpperGridCampo10:setMaxWidth(233);
-    obj.UpperGridCampo10:setMaxScaledWidth(233);
-    obj.UpperGridCampo10:setAvoidScale(true);
-    obj.UpperGridCampo10:setName("UpperGridCampo10");
-    obj.UpperGridCampo10:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo10:setVertAlign("leading");
-
-    obj.edtUpperGridCampo10 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo10:setParent(obj.UpperGridCampo10);
-    obj.edtUpperGridCampo10:setName("edtUpperGridCampo10");
-    obj.edtUpperGridCampo10:setAlign("top");
-    obj.edtUpperGridCampo10:setField("origemCompanion");
-    obj.edtUpperGridCampo10:setFontSize(13);
-    obj.edtUpperGridCampo10:setHeight(30);
-    obj.edtUpperGridCampo10:setTransparent(true);
-    obj.edtUpperGridCampo10:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo10:setWidth(195);
-    obj.edtUpperGridCampo10:setFontColor("white");
-
-    obj.linUpperGridCampo10 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo10:setParent(obj.UpperGridCampo10);
-    obj.linUpperGridCampo10:setName("linUpperGridCampo10");
-    obj.linUpperGridCampo10:setAlign("top");
-    obj.linUpperGridCampo10:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo10:setStrokeSize(1);
-
-    obj.labUpperGridCampo10 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo10:setParent(obj.UpperGridCampo10);
-    obj.labUpperGridCampo10:setName("labUpperGridCampo10");
-    obj.labUpperGridCampo10:setAlign("top");
-    obj.labUpperGridCampo10:setText("ORIGEM");
-    obj.labUpperGridCampo10:setVertTextAlign("leading");
-    obj.labUpperGridCampo10:setWordWrap(true);
-    obj.labUpperGridCampo10:setTextTrimming("none");
-    obj.labUpperGridCampo10:setFontSize(12);
-    obj.labUpperGridCampo10:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo10:setHeight(self.edtUpperGridCampo10:getHeight() + self.labUpperGridCampo10:getHeight() + self.linUpperGridCampo10:getHeight());
-
-
-    obj.UpperGridCampo11 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo11:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo11:setHeight(50);
-    obj.UpperGridCampo11:setMinScaledWidth(100);
-    obj.UpperGridCampo11:setMinWidth(100);
-    obj.UpperGridCampo11:setMaxWidth(233);
-    obj.UpperGridCampo11:setMaxScaledWidth(233);
-    obj.UpperGridCampo11:setAvoidScale(true);
-    obj.UpperGridCampo11:setName("UpperGridCampo11");
-    obj.UpperGridCampo11:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo11:setVertAlign("leading");
-
-    obj.edtUpperGridCampo11 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo11:setParent(obj.UpperGridCampo11);
-    obj.edtUpperGridCampo11:setName("edtUpperGridCampo11");
-    obj.edtUpperGridCampo11:setAlign("top");
-    obj.edtUpperGridCampo11:setField("regiaoCompanion");
-    obj.edtUpperGridCampo11:setFontSize(13);
-    obj.edtUpperGridCampo11:setHeight(30);
-    obj.edtUpperGridCampo11:setTransparent(true);
-    obj.edtUpperGridCampo11:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo11:setWidth(195);
-    obj.edtUpperGridCampo11:setFontColor("white");
-
-    obj.linUpperGridCampo11 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo11:setParent(obj.UpperGridCampo11);
-    obj.linUpperGridCampo11:setName("linUpperGridCampo11");
-    obj.linUpperGridCampo11:setAlign("top");
-    obj.linUpperGridCampo11:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo11:setStrokeSize(1);
-
-    obj.labUpperGridCampo11 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo11:setParent(obj.UpperGridCampo11);
-    obj.labUpperGridCampo11:setName("labUpperGridCampo11");
-    obj.labUpperGridCampo11:setAlign("top");
-    obj.labUpperGridCampo11:setText("REGIÃO");
-    obj.labUpperGridCampo11:setVertTextAlign("leading");
-    obj.labUpperGridCampo11:setWordWrap(true);
-    obj.labUpperGridCampo11:setTextTrimming("none");
-    obj.labUpperGridCampo11:setFontSize(12);
-    obj.labUpperGridCampo11:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo11:setHeight(self.edtUpperGridCampo11:getHeight() + self.labUpperGridCampo11:getHeight() + self.linUpperGridCampo11:getHeight());
-
-
-    obj.UpperGridCampo12 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.UpperGridCampo12:setParent(obj.fraUpperGridCompanion);
-    obj.UpperGridCampo12:setHeight(50);
-    obj.UpperGridCampo12:setMinScaledWidth(100);
-    obj.UpperGridCampo12:setMinWidth(100);
-    obj.UpperGridCampo12:setMaxWidth(233);
-    obj.UpperGridCampo12:setMaxScaledWidth(233);
-    obj.UpperGridCampo12:setAvoidScale(true);
-    obj.UpperGridCampo12:setName("UpperGridCampo12");
-    obj.UpperGridCampo12:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.UpperGridCampo12:setVertAlign("leading");
-
-    obj.edtUpperGridCampo12 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edtUpperGridCampo12:setParent(obj.UpperGridCampo12);
-    obj.edtUpperGridCampo12:setName("edtUpperGridCampo12");
-    obj.edtUpperGridCampo12:setAlign("top");
-    obj.edtUpperGridCampo12:setField("antecedenteCompanion");
-    obj.edtUpperGridCampo12:setFontSize(13);
-    obj.edtUpperGridCampo12:setHeight(30);
-    obj.edtUpperGridCampo12:setTransparent(true);
-    obj.edtUpperGridCampo12:setVertTextAlign("trailing");
-    obj.edtUpperGridCampo12:setWidth(195);
-    obj.edtUpperGridCampo12:setFontColor("white");
-
-    obj.linUpperGridCampo12 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.linUpperGridCampo12:setParent(obj.UpperGridCampo12);
-    obj.linUpperGridCampo12:setName("linUpperGridCampo12");
-    obj.linUpperGridCampo12:setAlign("top");
-    obj.linUpperGridCampo12:setStrokeColor("#FFFFFF50");
-    obj.linUpperGridCampo12:setStrokeSize(1);
-
-    obj.labUpperGridCampo12 = GUI.fromHandle(_obj_newObject("label"));
-    obj.labUpperGridCampo12:setParent(obj.UpperGridCampo12);
-    obj.labUpperGridCampo12:setName("labUpperGridCampo12");
-    obj.labUpperGridCampo12:setAlign("top");
-    obj.labUpperGridCampo12:setText("PASSADO");
-    obj.labUpperGridCampo12:setVertTextAlign("leading");
-    obj.labUpperGridCampo12:setWordWrap(true);
-    obj.labUpperGridCampo12:setTextTrimming("none");
-    obj.labUpperGridCampo12:setFontSize(12);
-    obj.labUpperGridCampo12:setFontColor("#D0D0D0");
-
-    self.UpperGridCampo12:setHeight(self.edtUpperGridCampo12:getHeight() + self.labUpperGridCampo12:getHeight() + self.linUpperGridCampo12:getHeight());
-
-
     obj.UpperGridCampo13 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.UpperGridCampo13:setParent(obj.fraUpperGridCompanion);
     obj.UpperGridCampo13:setHeight(50);
@@ -11891,7 +11891,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edtUpperGridCampo13:setParent(obj.UpperGridCampo13);
     obj.edtUpperGridCampo13:setName("edtUpperGridCampo13");
     obj.edtUpperGridCampo13:setAlign("top");
-    obj.edtUpperGridCampo13:setField("alinhamentoCompanion");
+    obj.edtUpperGridCampo13:setField("classeCompanion");
     obj.edtUpperGridCampo13:setFontSize(13);
     obj.edtUpperGridCampo13:setHeight(30);
     obj.edtUpperGridCampo13:setTransparent(true);
@@ -11910,7 +11910,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labUpperGridCampo13:setParent(obj.UpperGridCampo13);
     obj.labUpperGridCampo13:setName("labUpperGridCampo13");
     obj.labUpperGridCampo13:setAlign("top");
-    obj.labUpperGridCampo13:setText("ALINHAMENTO");
+    obj.labUpperGridCampo13:setText("CLASSES");
     obj.labUpperGridCampo13:setVertTextAlign("leading");
     obj.labUpperGridCampo13:setWordWrap(true);
     obj.labUpperGridCampo13:setTextTrimming("none");
@@ -11936,7 +11936,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edtUpperGridCampo14:setParent(obj.UpperGridCampo14);
     obj.edtUpperGridCampo14:setName("edtUpperGridCampo14");
     obj.edtUpperGridCampo14:setAlign("top");
-    obj.edtUpperGridCampo14:setField("devocoesCompanion");
+    obj.edtUpperGridCampo14:setField("niveisCompanion");
     obj.edtUpperGridCampo14:setFontSize(13);
     obj.edtUpperGridCampo14:setHeight(30);
     obj.edtUpperGridCampo14:setTransparent(true);
@@ -11955,7 +11955,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labUpperGridCampo14:setParent(obj.UpperGridCampo14);
     obj.labUpperGridCampo14:setName("labUpperGridCampo14");
     obj.labUpperGridCampo14:setAlign("top");
-    obj.labUpperGridCampo14:setText("DEVOÇÕES");
+    obj.labUpperGridCampo14:setText("NIVEIS");
     obj.labUpperGridCampo14:setVertTextAlign("leading");
     obj.labUpperGridCampo14:setWordWrap(true);
     obj.labUpperGridCampo14:setTextTrimming("none");
@@ -11981,7 +11981,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edtUpperGridCampo15:setParent(obj.UpperGridCampo15);
     obj.edtUpperGridCampo15:setName("edtUpperGridCampo15");
     obj.edtUpperGridCampo15:setAlign("top");
-    obj.edtUpperGridCampo15:setField("nomeDoJogador");
+    obj.edtUpperGridCampo15:setField("experiencia");
     obj.edtUpperGridCampo15:setFontSize(13);
     obj.edtUpperGridCampo15:setHeight(30);
     obj.edtUpperGridCampo15:setTransparent(true);
@@ -12000,7 +12000,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labUpperGridCampo15:setParent(obj.UpperGridCampo15);
     obj.labUpperGridCampo15:setName("labUpperGridCampo15");
     obj.labUpperGridCampo15:setAlign("top");
-    obj.labUpperGridCampo15:setText("JOGADOR");
+    obj.labUpperGridCampo15:setText("SESSÕES");
     obj.labUpperGridCampo15:setVertTextAlign("leading");
     obj.labUpperGridCampo15:setWordWrap(true);
     obj.labUpperGridCampo15:setTextTrimming("none");
@@ -12008,6 +12008,276 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labUpperGridCampo15:setFontColor("#D0D0D0");
 
     self.UpperGridCampo15:setHeight(self.edtUpperGridCampo15:getHeight() + self.labUpperGridCampo15:getHeight() + self.linUpperGridCampo15:getHeight());
+
+
+    obj.UpperGridCampo16 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo16:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo16:setHeight(50);
+    obj.UpperGridCampo16:setMinScaledWidth(100);
+    obj.UpperGridCampo16:setMinWidth(100);
+    obj.UpperGridCampo16:setMaxWidth(233);
+    obj.UpperGridCampo16:setMaxScaledWidth(233);
+    obj.UpperGridCampo16:setAvoidScale(true);
+    obj.UpperGridCampo16:setName("UpperGridCampo16");
+    obj.UpperGridCampo16:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo16:setVertAlign("leading");
+
+    obj.edtUpperGridCampo16 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo16:setParent(obj.UpperGridCampo16);
+    obj.edtUpperGridCampo16:setName("edtUpperGridCampo16");
+    obj.edtUpperGridCampo16:setAlign("top");
+    obj.edtUpperGridCampo16:setField("origemCompanion");
+    obj.edtUpperGridCampo16:setFontSize(13);
+    obj.edtUpperGridCampo16:setHeight(30);
+    obj.edtUpperGridCampo16:setTransparent(true);
+    obj.edtUpperGridCampo16:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo16:setWidth(195);
+    obj.edtUpperGridCampo16:setFontColor("white");
+
+    obj.linUpperGridCampo16 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo16:setParent(obj.UpperGridCampo16);
+    obj.linUpperGridCampo16:setName("linUpperGridCampo16");
+    obj.linUpperGridCampo16:setAlign("top");
+    obj.linUpperGridCampo16:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo16:setStrokeSize(1);
+
+    obj.labUpperGridCampo16 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo16:setParent(obj.UpperGridCampo16);
+    obj.labUpperGridCampo16:setName("labUpperGridCampo16");
+    obj.labUpperGridCampo16:setAlign("top");
+    obj.labUpperGridCampo16:setText("ORIGEM");
+    obj.labUpperGridCampo16:setVertTextAlign("leading");
+    obj.labUpperGridCampo16:setWordWrap(true);
+    obj.labUpperGridCampo16:setTextTrimming("none");
+    obj.labUpperGridCampo16:setFontSize(12);
+    obj.labUpperGridCampo16:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo16:setHeight(self.edtUpperGridCampo16:getHeight() + self.labUpperGridCampo16:getHeight() + self.linUpperGridCampo16:getHeight());
+
+
+    obj.UpperGridCampo17 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo17:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo17:setHeight(50);
+    obj.UpperGridCampo17:setMinScaledWidth(100);
+    obj.UpperGridCampo17:setMinWidth(100);
+    obj.UpperGridCampo17:setMaxWidth(233);
+    obj.UpperGridCampo17:setMaxScaledWidth(233);
+    obj.UpperGridCampo17:setAvoidScale(true);
+    obj.UpperGridCampo17:setName("UpperGridCampo17");
+    obj.UpperGridCampo17:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo17:setVertAlign("leading");
+
+    obj.edtUpperGridCampo17 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo17:setParent(obj.UpperGridCampo17);
+    obj.edtUpperGridCampo17:setName("edtUpperGridCampo17");
+    obj.edtUpperGridCampo17:setAlign("top");
+    obj.edtUpperGridCampo17:setField("regiaoCompanion");
+    obj.edtUpperGridCampo17:setFontSize(13);
+    obj.edtUpperGridCampo17:setHeight(30);
+    obj.edtUpperGridCampo17:setTransparent(true);
+    obj.edtUpperGridCampo17:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo17:setWidth(195);
+    obj.edtUpperGridCampo17:setFontColor("white");
+
+    obj.linUpperGridCampo17 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo17:setParent(obj.UpperGridCampo17);
+    obj.linUpperGridCampo17:setName("linUpperGridCampo17");
+    obj.linUpperGridCampo17:setAlign("top");
+    obj.linUpperGridCampo17:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo17:setStrokeSize(1);
+
+    obj.labUpperGridCampo17 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo17:setParent(obj.UpperGridCampo17);
+    obj.labUpperGridCampo17:setName("labUpperGridCampo17");
+    obj.labUpperGridCampo17:setAlign("top");
+    obj.labUpperGridCampo17:setText("REGIÃO");
+    obj.labUpperGridCampo17:setVertTextAlign("leading");
+    obj.labUpperGridCampo17:setWordWrap(true);
+    obj.labUpperGridCampo17:setTextTrimming("none");
+    obj.labUpperGridCampo17:setFontSize(12);
+    obj.labUpperGridCampo17:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo17:setHeight(self.edtUpperGridCampo17:getHeight() + self.labUpperGridCampo17:getHeight() + self.linUpperGridCampo17:getHeight());
+
+
+    obj.UpperGridCampo18 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo18:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo18:setHeight(50);
+    obj.UpperGridCampo18:setMinScaledWidth(100);
+    obj.UpperGridCampo18:setMinWidth(100);
+    obj.UpperGridCampo18:setMaxWidth(233);
+    obj.UpperGridCampo18:setMaxScaledWidth(233);
+    obj.UpperGridCampo18:setAvoidScale(true);
+    obj.UpperGridCampo18:setName("UpperGridCampo18");
+    obj.UpperGridCampo18:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo18:setVertAlign("leading");
+
+    obj.edtUpperGridCampo18 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo18:setParent(obj.UpperGridCampo18);
+    obj.edtUpperGridCampo18:setName("edtUpperGridCampo18");
+    obj.edtUpperGridCampo18:setAlign("top");
+    obj.edtUpperGridCampo18:setField("antecedenteCompanion");
+    obj.edtUpperGridCampo18:setFontSize(13);
+    obj.edtUpperGridCampo18:setHeight(30);
+    obj.edtUpperGridCampo18:setTransparent(true);
+    obj.edtUpperGridCampo18:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo18:setWidth(195);
+    obj.edtUpperGridCampo18:setFontColor("white");
+
+    obj.linUpperGridCampo18 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo18:setParent(obj.UpperGridCampo18);
+    obj.linUpperGridCampo18:setName("linUpperGridCampo18");
+    obj.linUpperGridCampo18:setAlign("top");
+    obj.linUpperGridCampo18:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo18:setStrokeSize(1);
+
+    obj.labUpperGridCampo18 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo18:setParent(obj.UpperGridCampo18);
+    obj.labUpperGridCampo18:setName("labUpperGridCampo18");
+    obj.labUpperGridCampo18:setAlign("top");
+    obj.labUpperGridCampo18:setText("PASSADO");
+    obj.labUpperGridCampo18:setVertTextAlign("leading");
+    obj.labUpperGridCampo18:setWordWrap(true);
+    obj.labUpperGridCampo18:setTextTrimming("none");
+    obj.labUpperGridCampo18:setFontSize(12);
+    obj.labUpperGridCampo18:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo18:setHeight(self.edtUpperGridCampo18:getHeight() + self.labUpperGridCampo18:getHeight() + self.linUpperGridCampo18:getHeight());
+
+
+    obj.UpperGridCampo19 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo19:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo19:setHeight(50);
+    obj.UpperGridCampo19:setMinScaledWidth(100);
+    obj.UpperGridCampo19:setMinWidth(100);
+    obj.UpperGridCampo19:setMaxWidth(233);
+    obj.UpperGridCampo19:setMaxScaledWidth(233);
+    obj.UpperGridCampo19:setAvoidScale(true);
+    obj.UpperGridCampo19:setName("UpperGridCampo19");
+    obj.UpperGridCampo19:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo19:setVertAlign("leading");
+
+    obj.edtUpperGridCampo19 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo19:setParent(obj.UpperGridCampo19);
+    obj.edtUpperGridCampo19:setName("edtUpperGridCampo19");
+    obj.edtUpperGridCampo19:setAlign("top");
+    obj.edtUpperGridCampo19:setField("alinhamentoCompanion");
+    obj.edtUpperGridCampo19:setFontSize(13);
+    obj.edtUpperGridCampo19:setHeight(30);
+    obj.edtUpperGridCampo19:setTransparent(true);
+    obj.edtUpperGridCampo19:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo19:setWidth(195);
+    obj.edtUpperGridCampo19:setFontColor("white");
+
+    obj.linUpperGridCampo19 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo19:setParent(obj.UpperGridCampo19);
+    obj.linUpperGridCampo19:setName("linUpperGridCampo19");
+    obj.linUpperGridCampo19:setAlign("top");
+    obj.linUpperGridCampo19:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo19:setStrokeSize(1);
+
+    obj.labUpperGridCampo19 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo19:setParent(obj.UpperGridCampo19);
+    obj.labUpperGridCampo19:setName("labUpperGridCampo19");
+    obj.labUpperGridCampo19:setAlign("top");
+    obj.labUpperGridCampo19:setText("ALINHAMENTO");
+    obj.labUpperGridCampo19:setVertTextAlign("leading");
+    obj.labUpperGridCampo19:setWordWrap(true);
+    obj.labUpperGridCampo19:setTextTrimming("none");
+    obj.labUpperGridCampo19:setFontSize(12);
+    obj.labUpperGridCampo19:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo19:setHeight(self.edtUpperGridCampo19:getHeight() + self.labUpperGridCampo19:getHeight() + self.linUpperGridCampo19:getHeight());
+
+
+    obj.UpperGridCampo20 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo20:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo20:setHeight(50);
+    obj.UpperGridCampo20:setMinScaledWidth(100);
+    obj.UpperGridCampo20:setMinWidth(100);
+    obj.UpperGridCampo20:setMaxWidth(233);
+    obj.UpperGridCampo20:setMaxScaledWidth(233);
+    obj.UpperGridCampo20:setAvoidScale(true);
+    obj.UpperGridCampo20:setName("UpperGridCampo20");
+    obj.UpperGridCampo20:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo20:setVertAlign("leading");
+
+    obj.edtUpperGridCampo20 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo20:setParent(obj.UpperGridCampo20);
+    obj.edtUpperGridCampo20:setName("edtUpperGridCampo20");
+    obj.edtUpperGridCampo20:setAlign("top");
+    obj.edtUpperGridCampo20:setField("devocoesCompanion");
+    obj.edtUpperGridCampo20:setFontSize(13);
+    obj.edtUpperGridCampo20:setHeight(30);
+    obj.edtUpperGridCampo20:setTransparent(true);
+    obj.edtUpperGridCampo20:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo20:setWidth(195);
+    obj.edtUpperGridCampo20:setFontColor("white");
+
+    obj.linUpperGridCampo20 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo20:setParent(obj.UpperGridCampo20);
+    obj.linUpperGridCampo20:setName("linUpperGridCampo20");
+    obj.linUpperGridCampo20:setAlign("top");
+    obj.linUpperGridCampo20:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo20:setStrokeSize(1);
+
+    obj.labUpperGridCampo20 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo20:setParent(obj.UpperGridCampo20);
+    obj.labUpperGridCampo20:setName("labUpperGridCampo20");
+    obj.labUpperGridCampo20:setAlign("top");
+    obj.labUpperGridCampo20:setText("DEVOÇÕES");
+    obj.labUpperGridCampo20:setVertTextAlign("leading");
+    obj.labUpperGridCampo20:setWordWrap(true);
+    obj.labUpperGridCampo20:setTextTrimming("none");
+    obj.labUpperGridCampo20:setFontSize(12);
+    obj.labUpperGridCampo20:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo20:setHeight(self.edtUpperGridCampo20:getHeight() + self.labUpperGridCampo20:getHeight() + self.linUpperGridCampo20:getHeight());
+
+
+    obj.UpperGridCampo21 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.UpperGridCampo21:setParent(obj.fraUpperGridCompanion);
+    obj.UpperGridCampo21:setHeight(50);
+    obj.UpperGridCampo21:setMinScaledWidth(100);
+    obj.UpperGridCampo21:setMinWidth(100);
+    obj.UpperGridCampo21:setMaxWidth(233);
+    obj.UpperGridCampo21:setMaxScaledWidth(233);
+    obj.UpperGridCampo21:setAvoidScale(true);
+    obj.UpperGridCampo21:setName("UpperGridCampo21");
+    obj.UpperGridCampo21:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.UpperGridCampo21:setVertAlign("leading");
+
+    obj.edtUpperGridCampo21 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edtUpperGridCampo21:setParent(obj.UpperGridCampo21);
+    obj.edtUpperGridCampo21:setName("edtUpperGridCampo21");
+    obj.edtUpperGridCampo21:setAlign("top");
+    obj.edtUpperGridCampo21:setField("nomeDoJogador");
+    obj.edtUpperGridCampo21:setFontSize(13);
+    obj.edtUpperGridCampo21:setHeight(30);
+    obj.edtUpperGridCampo21:setTransparent(true);
+    obj.edtUpperGridCampo21:setVertTextAlign("trailing");
+    obj.edtUpperGridCampo21:setWidth(195);
+    obj.edtUpperGridCampo21:setFontColor("white");
+
+    obj.linUpperGridCampo21 = GUI.fromHandle(_obj_newObject("horzLine"));
+    obj.linUpperGridCampo21:setParent(obj.UpperGridCampo21);
+    obj.linUpperGridCampo21:setName("linUpperGridCampo21");
+    obj.linUpperGridCampo21:setAlign("top");
+    obj.linUpperGridCampo21:setStrokeColor("#FFFFFF50");
+    obj.linUpperGridCampo21:setStrokeSize(1);
+
+    obj.labUpperGridCampo21 = GUI.fromHandle(_obj_newObject("label"));
+    obj.labUpperGridCampo21:setParent(obj.UpperGridCampo21);
+    obj.labUpperGridCampo21:setName("labUpperGridCampo21");
+    obj.labUpperGridCampo21:setAlign("top");
+    obj.labUpperGridCampo21:setText("JOGADOR");
+    obj.labUpperGridCampo21:setVertTextAlign("leading");
+    obj.labUpperGridCampo21:setWordWrap(true);
+    obj.labUpperGridCampo21:setTextTrimming("none");
+    obj.labUpperGridCampo21:setFontSize(12);
+    obj.labUpperGridCampo21:setFontColor("#D0D0D0");
+
+    self.UpperGridCampo21:setHeight(self.edtUpperGridCampo21:getHeight() + self.labUpperGridCampo21:getHeight() + self.linUpperGridCampo21:getHeight());
 
 
     obj.flowLineBreak23 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
@@ -22999,6 +23269,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink142 ~= nil then self.dataLink142:destroy(); self.dataLink142 = nil; end;
         if self.labProfpericiaforca ~= nil then self.labProfpericiaforca:destroy(); self.labProfpericiaforca = nil; end;
         if self.label119 ~= nil then self.label119:destroy(); self.label119 = nil; end;
+        if self.linUpperGridCampo20 ~= nil then self.linUpperGridCampo20:destroy(); self.linUpperGridCampo20 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.horzLine7 ~= nil then self.horzLine7:destroy(); self.horzLine7 = nil; end;
@@ -23028,6 +23299,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label125 ~= nil then self.label125:destroy(); self.label125 = nil; end;
         if self.dataLink174 ~= nil then self.dataLink174:destroy(); self.dataLink174 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
+        if self.UpperGridCampo21 ~= nil then self.UpperGridCampo21:destroy(); self.UpperGridCampo21 = nil; end;
         if self.flowLayout44 ~= nil then self.flowLayout44:destroy(); self.flowLayout44 = nil; end;
         if self.rclMagiasNiveis ~= nil then self.rclMagiasNiveis:destroy(); self.rclMagiasNiveis = nil; end;
         if self.flowPart94 ~= nil then self.flowPart94:destroy(); self.flowPart94 = nil; end;
@@ -23065,6 +23337,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
         if self.tab10 ~= nil then self.tab10:destroy(); self.tab10 = nil; end;
         if self.horzLine54 ~= nil then self.horzLine54:destroy(); self.horzLine54 = nil; end;
+        if self.UpperGridCampo16 ~= nil then self.UpperGridCampo16:destroy(); self.UpperGridCampo16 = nil; end;
         if self.flowPart6 ~= nil then self.flowPart6:destroy(); self.flowPart6 = nil; end;
         if self.dataLink227 ~= nil then self.dataLink227:destroy(); self.dataLink227 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
@@ -23087,6 +23360,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label142 ~= nil then self.label142:destroy(); self.label142 = nil; end;
         if self.cbProfpersuasao ~= nil then self.cbProfpersuasao:destroy(); self.cbProfpersuasao = nil; end;
         if self.UpperGridCampo10 ~= nil then self.UpperGridCampo10:destroy(); self.UpperGridCampo10 = nil; end;
+        if self.labUpperGridCampo17 ~= nil then self.labUpperGridCampo17:destroy(); self.labUpperGridCampo17 = nil; end;
         if self.button68 ~= nil then self.button68:destroy(); self.button68 = nil; end;
         if self.textEditor9 ~= nil then self.textEditor9:destroy(); self.textEditor9 = nil; end;
         if self.labUpperGridCampo12 ~= nil then self.labUpperGridCampo12:destroy(); self.labUpperGridCampo12 = nil; end;
@@ -23095,9 +23369,9 @@ self.upperGridMagicBox3._RecalcSize();
         if self.layout59 ~= nil then self.layout59:destroy(); self.layout59 = nil; end;
         if self.flowLayout18 ~= nil then self.flowLayout18:destroy(); self.flowLayout18 = nil; end;
         if self.flowPart40 ~= nil then self.flowPart40:destroy(); self.flowPart40 = nil; end;
-        if self.flowPart144 ~= nil then self.flowPart144:destroy(); self.flowPart144 = nil; end;
-        if self.labProfsobrevivencia ~= nil then self.labProfsobrevivencia:destroy(); self.labProfsobrevivencia = nil; end;
         if self.edtUpperGridCampo8 ~= nil then self.edtUpperGridCampo8:destroy(); self.edtUpperGridCampo8 = nil; end;
+        if self.labProfsobrevivencia ~= nil then self.labProfsobrevivencia:destroy(); self.labProfsobrevivencia = nil; end;
+        if self.flowPart144 ~= nil then self.flowPart144:destroy(); self.flowPart144 = nil; end;
         if self.dataLink201 ~= nil then self.dataLink201:destroy(); self.dataLink201 = nil; end;
         if self.horzLine38 ~= nil then self.horzLine38:destroy(); self.horzLine38 = nil; end;
         if self.comboBox6 ~= nil then self.comboBox6:destroy(); self.comboBox6 = nil; end;
@@ -23203,6 +23477,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.layout114 ~= nil then self.layout114:destroy(); self.layout114 = nil; end;
         if self.dataLink73 ~= nil then self.dataLink73:destroy(); self.dataLink73 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
+        if self.labUpperGridCampo16 ~= nil then self.labUpperGridCampo16:destroy(); self.labUpperGridCampo16 = nil; end;
         if self.flowPart42 ~= nil then self.flowPart42:destroy(); self.flowPart42 = nil; end;
         if self.button47 ~= nil then self.button47:destroy(); self.button47 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
@@ -23230,6 +23505,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.dataLink93 ~= nil then self.dataLink93:destroy(); self.dataLink93 = nil; end;
+        if self.UpperGridCampo20 ~= nil then self.UpperGridCampo20:destroy(); self.UpperGridCampo20 = nil; end;
         if self.label145 ~= nil then self.label145:destroy(); self.label145 = nil; end;
         if self.labUpperGridCampo14 ~= nil then self.labUpperGridCampo14:destroy(); self.labUpperGridCampo14 = nil; end;
         if self.horzLine40 ~= nil then self.horzLine40:destroy(); self.horzLine40 = nil; end;
@@ -23331,6 +23607,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.fraAliadosOrganizacoes ~= nil then self.fraAliadosOrganizacoes:destroy(); self.fraAliadosOrganizacoes = nil; end;
         if self.cbProfcompanionpercepcao ~= nil then self.cbProfcompanionpercepcao:destroy(); self.cbProfcompanionpercepcao = nil; end;
         if self.cbProfcompanionconstituicao ~= nil then self.cbProfcompanionconstituicao:destroy(); self.cbProfcompanionconstituicao = nil; end;
+        if self.labUpperGridCampo20 ~= nil then self.labUpperGridCampo20:destroy(); self.labUpperGridCampo20 = nil; end;
         if self.dataLink101 ~= nil then self.dataLink101:destroy(); self.dataLink101 = nil; end;
         if self.flowPart64 ~= nil then self.flowPart64:destroy(); self.flowPart64 = nil; end;
         if self.button22 ~= nil then self.button22:destroy(); self.button22 = nil; end;
@@ -23392,6 +23669,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink86 ~= nil then self.dataLink86:destroy(); self.dataLink86 = nil; end;
         if self.flowLayout24 ~= nil then self.flowLayout24:destroy(); self.flowLayout24 = nil; end;
         if self.edit64 ~= nil then self.edit64:destroy(); self.edit64 = nil; end;
+        if self.labUpperGridCampo19 ~= nil then self.labUpperGridCampo19:destroy(); self.labUpperGridCampo19 = nil; end;
         if self.dataLink149 ~= nil then self.dataLink149:destroy(); self.dataLink149 = nil; end;
         if self.edit41 ~= nil then self.edit41:destroy(); self.edit41 = nil; end;
         if self.flowPart121 ~= nil then self.flowPart121:destroy(); self.flowPart121 = nil; end;
@@ -23477,6 +23755,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink81 ~= nil then self.dataLink81:destroy(); self.dataLink81 = nil; end;
         if self.flowPart87 ~= nil then self.flowPart87:destroy(); self.flowPart87 = nil; end;
         if self.layEquipAttackImg ~= nil then self.layEquipAttackImg:destroy(); self.layEquipAttackImg = nil; end;
+        if self.linUpperGridCampo18 ~= nil then self.linUpperGridCampo18:destroy(); self.linUpperGridCampo18 = nil; end;
         if self.dataLink138 ~= nil then self.dataLink138:destroy(); self.dataLink138 = nil; end;
         if self.label159 ~= nil then self.label159:destroy(); self.label159 = nil; end;
         if self.dataLink153 ~= nil then self.dataLink153:destroy(); self.dataLink153 = nil; end;
@@ -23490,6 +23769,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart104 ~= nil then self.flowPart104:destroy(); self.flowPart104 = nil; end;
         if self.label170 ~= nil then self.label170:destroy(); self.label170 = nil; end;
         if self.layout132 ~= nil then self.layout132:destroy(); self.layout132 = nil; end;
+        if self.edtUpperGridCampo18 ~= nil then self.edtUpperGridCampo18:destroy(); self.edtUpperGridCampo18 = nil; end;
         if self.labupperGridMagicBox1 ~= nil then self.labupperGridMagicBox1:destroy(); self.labupperGridMagicBox1 = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.dataLink55 ~= nil then self.dataLink55:destroy(); self.dataLink55 = nil; end;
@@ -23516,6 +23796,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink204 ~= nil then self.dataLink204:destroy(); self.dataLink204 = nil; end;
         if self.labelFieldPENivel ~= nil then self.labelFieldPENivel:destroy(); self.labelFieldPENivel = nil; end;
         if self.textEditor11 ~= nil then self.textEditor11:destroy(); self.textEditor11 = nil; end;
+        if self.linUpperGridCampo21 ~= nil then self.linUpperGridCampo21:destroy(); self.linUpperGridCampo21 = nil; end;
         if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
         if self.dataLink45 ~= nil then self.dataLink45:destroy(); self.dataLink45 = nil; end;
@@ -23559,6 +23840,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart149 ~= nil then self.flowPart149:destroy(); self.flowPart149 = nil; end;
         if self.layout113 ~= nil then self.layout113:destroy(); self.layout113 = nil; end;
         if self.flowPart270 ~= nil then self.flowPart270:destroy(); self.flowPart270 = nil; end;
+        if self.linUpperGridCampo17 ~= nil then self.linUpperGridCampo17:destroy(); self.linUpperGridCampo17 = nil; end;
         if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
         if self.flowPart239 ~= nil then self.flowPart239:destroy(); self.flowPart239 = nil; end;
         if self.UpperGridCampo2 ~= nil then self.UpperGridCampo2:destroy(); self.UpperGridCampo2 = nil; end;
@@ -23615,9 +23897,11 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink195 ~= nil then self.dataLink195:destroy(); self.dataLink195 = nil; end;
         if self.flowPart52 ~= nil then self.flowPart52:destroy(); self.flowPart52 = nil; end;
         if self.flowPart170 ~= nil then self.flowPart170:destroy(); self.flowPart170 = nil; end;
+        if self.UpperGridCampo18 ~= nil then self.UpperGridCampo18:destroy(); self.UpperGridCampo18 = nil; end;
         if self.layout127 ~= nil then self.layout127:destroy(); self.layout127 = nil; end;
         if self.label72 ~= nil then self.label72:destroy(); self.label72 = nil; end;
         if self.dataLink134 ~= nil then self.dataLink134:destroy(); self.dataLink134 = nil; end;
+        if self.linUpperGridCampo16 ~= nil then self.linUpperGridCampo16:destroy(); self.linUpperGridCampo16 = nil; end;
         if self.flowPart267 ~= nil then self.flowPart267:destroy(); self.flowPart267 = nil; end;
         if self.cbProftolerancia ~= nil then self.cbProftolerancia:destroy(); self.cbProftolerancia = nil; end;
         if self.fraMapa2Layout ~= nil then self.fraMapa2Layout:destroy(); self.fraMapa2Layout = nil; end;
@@ -23635,14 +23919,15 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.frame6 ~= nil then self.frame6:destroy(); self.frame6 = nil; end;
+        if self.UpperGridCampo19 ~= nil then self.UpperGridCampo19:destroy(); self.UpperGridCampo19 = nil; end;
         if self.button59 ~= nil then self.button59:destroy(); self.button59 = nil; end;
         if self.button80 ~= nil then self.button80:destroy(); self.button80 = nil; end;
         if self.label167 ~= nil then self.label167:destroy(); self.label167 = nil; end;
         if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.labProfcompanionpersuasao ~= nil then self.labProfcompanionpersuasao:destroy(); self.labProfcompanionpersuasao = nil; end;
-        if self.flowLayout35 ~= nil then self.flowLayout35:destroy(); self.flowLayout35 = nil; end;
-        if self.label135 ~= nil then self.label135:destroy(); self.label135 = nil; end;
         if self.edtUpperGridCampo9 ~= nil then self.edtUpperGridCampo9:destroy(); self.edtUpperGridCampo9 = nil; end;
+        if self.label135 ~= nil then self.label135:destroy(); self.label135 = nil; end;
+        if self.flowLayout35 ~= nil then self.flowLayout35:destroy(); self.flowLayout35 = nil; end;
         if self.edtUpperGridCampo3 ~= nil then self.edtUpperGridCampo3:destroy(); self.edtUpperGridCampo3 = nil; end;
         if self.layout133 ~= nil then self.layout133:destroy(); self.layout133 = nil; end;
         if self.tab7 ~= nil then self.tab7:destroy(); self.tab7 = nil; end;
@@ -23674,6 +23959,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
         if self.horzLine49 ~= nil then self.horzLine49:destroy(); self.horzLine49 = nil; end;
+        if self.labUpperGridCampo18 ~= nil then self.labUpperGridCampo18:destroy(); self.labUpperGridCampo18 = nil; end;
         if self.MultiVerso_MdB ~= nil then self.MultiVerso_MdB:destroy(); self.MultiVerso_MdB = nil; end;
         if self.dataLink56 ~= nil then self.dataLink56:destroy(); self.dataLink56 = nil; end;
         if self.dataLink129 ~= nil then self.dataLink129:destroy(); self.dataLink129 = nil; end;
@@ -23727,6 +24013,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart221 ~= nil then self.flowPart221:destroy(); self.flowPart221 = nil; end;
         if self.label121 ~= nil then self.label121:destroy(); self.label121 = nil; end;
         if self.rectangle22 ~= nil then self.rectangle22:destroy(); self.rectangle22 = nil; end;
+        if self.edtUpperGridCampo21 ~= nil then self.edtUpperGridCampo21:destroy(); self.edtUpperGridCampo21 = nil; end;
         if self.layout99 ~= nil then self.layout99:destroy(); self.layout99 = nil; end;
         if self.dataLink221 ~= nil then self.dataLink221:destroy(); self.dataLink221 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
@@ -23735,8 +24022,8 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart31 ~= nil then self.flowPart31:destroy(); self.flowPart31 = nil; end;
         if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
         if self.flowPart265 ~= nil then self.flowPart265:destroy(); self.flowPart265 = nil; end;
-        if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
         if self.labUpperGridCampo8 ~= nil then self.labUpperGridCampo8:destroy(); self.labUpperGridCampo8 = nil; end;
+        if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
         if self.dataLink125 ~= nil then self.dataLink125:destroy(); self.dataLink125 = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
@@ -23823,6 +24110,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink33 ~= nil then self.dataLink33:destroy(); self.dataLink33 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.flowPart129 ~= nil then self.flowPart129:destroy(); self.flowPart129 = nil; end;
+        if self.edtUpperGridCampo16 ~= nil then self.edtUpperGridCampo16:destroy(); self.edtUpperGridCampo16 = nil; end;
         if self.button67 ~= nil then self.button67:destroy(); self.button67 = nil; end;
         if self.label77 ~= nil then self.label77:destroy(); self.label77 = nil; end;
         if self.dataLink92 ~= nil then self.dataLink92:destroy(); self.dataLink92 = nil; end;
@@ -23850,9 +24138,9 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart51 ~= nil then self.flowPart51:destroy(); self.flowPart51 = nil; end;
         if self.flowLayout16 ~= nil then self.flowLayout16:destroy(); self.flowLayout16 = nil; end;
         if self.cbProfreligiao ~= nil then self.cbProfreligiao:destroy(); self.cbProfreligiao = nil; end;
-        if self.flowPart107 ~= nil then self.flowPart107:destroy(); self.flowPart107 = nil; end;
-        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
         if self.linUpperGridCampo7 ~= nil then self.linUpperGridCampo7:destroy(); self.linUpperGridCampo7 = nil; end;
+        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.flowPart107 ~= nil then self.flowPart107:destroy(); self.flowPart107 = nil; end;
         if self.layout88 ~= nil then self.layout88:destroy(); self.layout88 = nil; end;
         if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
         if self.labUpperGridCampo11 ~= nil then self.labUpperGridCampo11:destroy(); self.labUpperGridCampo11 = nil; end;
@@ -24142,6 +24430,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.labProfcompanionenganacao ~= nil then self.labProfcompanionenganacao:destroy(); self.labProfcompanionenganacao = nil; end;
         if self.UpperGridCampo7 ~= nil then self.UpperGridCampo7:destroy(); self.UpperGridCampo7 = nil; end;
         if self.dataLink229 ~= nil then self.dataLink229:destroy(); self.dataLink229 = nil; end;
+        if self.linUpperGridCampo19 ~= nil then self.linUpperGridCampo19:destroy(); self.linUpperGridCampo19 = nil; end;
         if self.cbProfmedicina ~= nil then self.cbProfmedicina:destroy(); self.cbProfmedicina = nil; end;
         if self.flowPart148 ~= nil then self.flowPart148:destroy(); self.flowPart148 = nil; end;
         if self.label172 ~= nil then self.label172:destroy(); self.label172 = nil; end;
@@ -24252,6 +24541,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink63 ~= nil then self.dataLink63:destroy(); self.dataLink63 = nil; end;
         if self.flowPart53 ~= nil then self.flowPart53:destroy(); self.flowPart53 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
+        if self.UpperGridCampo17 ~= nil then self.UpperGridCampo17:destroy(); self.UpperGridCampo17 = nil; end;
         if self.edit116 ~= nil then self.edit116:destroy(); self.edit116 = nil; end;
         if self.labProfadestrarAnimais ~= nil then self.labProfadestrarAnimais:destroy(); self.labProfadestrarAnimais = nil; end;
         if self.optAtaquePadrao ~= nil then self.optAtaquePadrao:destroy(); self.optAtaquePadrao = nil; end;
@@ -24331,8 +24621,10 @@ self.upperGridMagicBox3._RecalcSize();
         if self.edit84 ~= nil then self.edit84:destroy(); self.edit84 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
         if self.layout111 ~= nil then self.layout111:destroy(); self.layout111 = nil; end;
+        if self.edtUpperGridCampo20 ~= nil then self.edtUpperGridCampo20:destroy(); self.edtUpperGridCampo20 = nil; end;
         if self.labelFieldPETempo ~= nil then self.labelFieldPETempo:destroy(); self.labelFieldPETempo = nil; end;
         if self.flowLineBreak20 ~= nil then self.flowLineBreak20:destroy(); self.flowLineBreak20 = nil; end;
+        if self.edtUpperGridCampo17 ~= nil then self.edtUpperGridCampo17:destroy(); self.edtUpperGridCampo17 = nil; end;
         if self.flowLayout20 ~= nil then self.flowLayout20:destroy(); self.flowLayout20 = nil; end;
         if self.layout116 ~= nil then self.layout116:destroy(); self.layout116 = nil; end;
         if self.flwPartEquipAttack ~= nil then self.flwPartEquipAttack:destroy(); self.flwPartEquipAttack = nil; end;
@@ -24350,11 +24642,12 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button91 ~= nil then self.button91:destroy(); self.button91 = nil; end;
         if self.flowPart147 ~= nil then self.flowPart147:destroy(); self.flowPart147 = nil; end;
         if self.flowLineBreak16 ~= nil then self.flowLineBreak16:destroy(); self.flowLineBreak16 = nil; end;
-        if self.dataLink226 ~= nil then self.dataLink226:destroy(); self.dataLink226 = nil; end;
+        if self.labUpperGridCampo21 ~= nil then self.labUpperGridCampo21:destroy(); self.labUpperGridCampo21 = nil; end;
         if self.popupEditContadorNome ~= nil then self.popupEditContadorNome:destroy(); self.popupEditContadorNome = nil; end;
         if self.popupEditDanoRL ~= nil then self.popupEditDanoRL:destroy(); self.popupEditDanoRL = nil; end;
         if self.fraLayAtributosCompanion ~= nil then self.fraLayAtributosCompanion:destroy(); self.fraLayAtributosCompanion = nil; end;
         if self.flowPart93 ~= nil then self.flowPart93:destroy(); self.flowPart93 = nil; end;
+        if self.dataLink226 ~= nil then self.dataLink226:destroy(); self.dataLink226 = nil; end;
         if self.edit96 ~= nil then self.edit96:destroy(); self.edit96 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.flowPart158 ~= nil then self.flowPart158:destroy(); self.flowPart158 = nil; end;
@@ -24390,6 +24683,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
         if self.horzLine58 ~= nil then self.horzLine58:destroy(); self.horzLine58 = nil; end;
         if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
+        if self.edtUpperGridCampo19 ~= nil then self.edtUpperGridCampo19:destroy(); self.edtUpperGridCampo19 = nil; end;
         if self.edit37 ~= nil then self.edit37:destroy(); self.edit37 = nil; end;
         if self.edtUpperGridCampo15 ~= nil then self.edtUpperGridCampo15:destroy(); self.edtUpperGridCampo15 = nil; end;
         if self.labProfhonra ~= nil then self.labProfhonra:destroy(); self.labProfhonra = nil; end;
