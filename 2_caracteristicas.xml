@@ -8,9 +8,9 @@
 		
 		<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
 			<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
-			<comboBox left="100" top="10" width="100" field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
+			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
 			<checkBox left="200" top="10" width="100" field="caracteristicas.quadrupede" text="Quadrúpede" />
-			<upperGridCampo titulo="ALTURA" field="caracteristicas.altura"/>
+			<Descricao left1="10" left2="100" top="38" text="ALTURA" field="caracteristicas.altura"/>
 			<Descricao left1="10" left2="100" top="65" text="PESO" field="caracteristicas.peso"/>
 			
 			<Descricao left1="310" left2="410" top="10" text="IDADE" field="caracteristicas.idade"/>
@@ -38,32 +38,32 @@
 
 		<layout left="0" top="355" width="375" height="375" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
 			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
-			<textEditor left="10" top="30" width="355" height="195" field="caracteristicas.caracteristicasETracoes"/>
+			<textEditor left="10" top="30" width="355" height="195" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes"/>
 		</layout>
 
 		<layout left="0" top="735" width="375" height="123" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="IDIOMAS"/>
-			<textEditor left="10" top="20" width="355" height="61" field="idiomas"/>
+			<textEditor left="10" top="20" width="355" height="61" class="transparente vcenter" field="idiomas"/>
 		</layout>
 
 		<layout left="380" top="610" width="412" height="123" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE"/>
-			<textEditor left="10" top="20" width="392" height="61" field="personalidade"/>
+			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="personalidade"/>
 		</layout>
 
 		<layout left="380" top="730" width="412" height="123" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="IDEAIS"/>
-			<textEditor left="10" top="20" width="392" height="61" field="ideais"/>
+			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="ideais"/>
 		</layout>
 
 		<layout left="792" top="610" width="412" height="125" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="VÍCULOS"/>
-			<textEditor left="10" top="20" width="392" height="61" field="vinculos"/>
+			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="vinculos"/>
 		</layout>
 
 		<layout left="792" top="730" width="412" height="125" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="FRAQUEZAS"/>
-			<textEditor left="10" top="20" width="392" height="61" field="fraquezas"/>
+			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="fraquezas"/>
 		</layout>
 
 	</scrollBox>

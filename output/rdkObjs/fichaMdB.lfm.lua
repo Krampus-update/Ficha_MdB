@@ -5579,6 +5579,7 @@ require('mudaNick.lua')
     obj.textEditor1:setHeight(195);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
+    obj.textEditor1:setTransparent(true);
 
     obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout62:setParent(obj.scrollBox2);
@@ -5605,9 +5606,10 @@ require('mudaNick.lua')
     obj.textEditor2:setLeft(10);
     obj.textEditor2:setTop(20);
     obj.textEditor2:setWidth(355);
-    obj.textEditor2:setHeight(195);
+    obj.textEditor2:setHeight(61);
     obj.textEditor2:setField("idiomas");
     obj.textEditor2:setName("textEditor2");
+    obj.textEditor2:setTransparent(true);
 
     obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout63:setParent(obj.scrollBox2);
@@ -5637,6 +5639,7 @@ require('mudaNick.lua')
     obj.textEditor3:setHeight(61);
     obj.textEditor3:setField("personalidade");
     obj.textEditor3:setName("textEditor3");
+    obj.textEditor3:setTransparent(true);
 
     obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout64:setParent(obj.scrollBox2);
@@ -5666,6 +5669,7 @@ require('mudaNick.lua')
     obj.textEditor4:setHeight(61);
     obj.textEditor4:setField("ideais");
     obj.textEditor4:setName("textEditor4");
+    obj.textEditor4:setTransparent(true);
 
     obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout65:setParent(obj.scrollBox2);
@@ -5695,6 +5699,7 @@ require('mudaNick.lua')
     obj.textEditor5:setHeight(61);
     obj.textEditor5:setField("vinculos");
     obj.textEditor5:setName("textEditor5");
+    obj.textEditor5:setTransparent(true);
 
     obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout66:setParent(obj.scrollBox2);
@@ -5724,6 +5729,7 @@ require('mudaNick.lua')
     obj.textEditor6:setHeight(61);
     obj.textEditor6:setField("fraquezas");
     obj.textEditor6:setName("textEditor6");
+    obj.textEditor6:setTransparent(true);
 
     obj.tab3 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab3:setParent(obj.pgcPrincipal);
