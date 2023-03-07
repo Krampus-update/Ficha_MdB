@@ -3,30 +3,9 @@
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
 
-<<<<<<< HEAD
-	<script>
-		local function mudaNick(nome)
-			if not nome then return; end;
-			if not sheet then return; end;
-
-			if not common.isMainChar(sheet) then return; end;
-			if not common.isMyChar(sheet) then return; end;
-
-			local mesa = common.getMesa(sheet);
-			if not mesa then return; end;
-
-			if not mesa.meuJogador.isJogador then return; end;
-			if not (mesa.meuJogador.nick ~= nome) then return; end;
-
-			mesa.chat:enviarMensagem("/nick " .. nome);
-		end;
-	</script>
-	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome); </event></dataLink>
-=======
 
 	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
->>>>>>> ff09999da496f0eda885b2fc02565e4e14400a73
 
 
 
