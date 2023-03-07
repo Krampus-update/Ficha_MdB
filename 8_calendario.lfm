@@ -1143,7 +1143,6 @@
 				</dataLink>
 			</layout>
 		</layout>
-<<<<<<< HEAD
 
 <rectangle class="fundo">
 	<scrollBox align="client">
@@ -1169,8 +1168,5 @@
 	</scrollBox>
 </rectangle>
 
-
-=======
->>>>>>> ff09999da496f0eda885b2fc02565e4e14400a73
     </scrollBox>
 </form>
