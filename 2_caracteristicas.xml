@@ -7,8 +7,6 @@
 		</template>
 		
 		<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel5/frame.xml">
-			<label left="3" top="1" width="100" height="20" text="DESCRIÇÃO"/>
-		
 			<label left="10" top="25" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
 			<comboBox left="100" top="25" width="100" field="tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
 			<checkBox left="200" top="25" width="100" field="quadrupede" text="Quadrúpede" />
