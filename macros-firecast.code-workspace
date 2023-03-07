@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Coding/macros-firecast"
+		},
+		{
+			"path": "../../../../Coding/minecraft_ficha_rpg"
+		},
+		{
+			"path": "../../../../Coding/Ultimate DND5e"
+		},
+		{
+			"path": "../../Documents/projeto"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"livePreview.defaultPreviewPath": "c:\\Coding\\projeto_criador_de_ficha\\main.html",
+		"liveServer.settings.multiRootWorkspaceName": "projeto_criador_de_ficha",
+		"gitdoc.enabled": false
+	}
+}

@@ -21,6 +21,7 @@
 			<tab title="EQUIPAMENTOS">
 				<import file="3_equipamento2.xml"/>
 			</tab>
+		</tabControl>
 
 		<tab title="MAGIA">
 			<import file="4_magias2.xml"/>
