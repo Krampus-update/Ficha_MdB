@@ -202,7 +202,6 @@
 							<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 						</frame>
-
 					</flowPart>
 
 					<!-- TESTES DE VIDA -->
