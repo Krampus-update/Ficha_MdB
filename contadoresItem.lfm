@@ -107,7 +107,9 @@
 							return;
 						else
 							local jogador = Firecast.getPersonagemDe(sheet).dono;
-							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(tonumber(sheet.barChoose), sheet.valCur, sheet.valMax); end;
+							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
+								jogador:requestSetBarValue(tonumber(sheet.barChoose), sheet.valCur, sheet.valMax); 
+							end;
 						end;
 					</event>
 				</dataLink>
