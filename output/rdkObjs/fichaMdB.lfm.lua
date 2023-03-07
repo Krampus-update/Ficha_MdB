@@ -40,13 +40,8 @@ require('mudaNick.lua')
     obj.dataLink1:setField("nome");
     obj.dataLink1:setName("dataLink1");
 
-    obj.tabControl1 = GUI.fromHandle(_obj_newObject("tabControl"));
-    obj.tabControl1:setParent(obj);
-    obj.tabControl1:setAlign("client");
-    obj.tabControl1:setName("tabControl1");
-
     obj.pgcPrincipal = GUI.fromHandle(_obj_newObject("tabControl"));
-    obj.pgcPrincipal:setParent(obj.tabControl1);
+    obj.pgcPrincipal:setParent(obj);
     obj.pgcPrincipal:setAlign("client");
     obj.pgcPrincipal:setName("pgcPrincipal");
 
@@ -23404,7 +23399,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.layEquipPropriedades ~= nil then self.layEquipPropriedades:destroy(); self.layEquipPropriedades = nil; end;
         if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
         if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
-        if self.tabControl1 ~= nil then self.tabControl1:destroy(); self.tabControl1 = nil; end;
         if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
         if self.button43 ~= nil then self.button43:destroy(); self.button43 = nil; end;
         if self.horzLine62 ~= nil then self.horzLine62:destroy(); self.horzLine62 = nil; end;
