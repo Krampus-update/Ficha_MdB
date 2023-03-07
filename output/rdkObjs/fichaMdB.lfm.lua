@@ -5633,7 +5633,7 @@ require('mudaNick.lua')
     obj.textEditor3:setParent(obj.layout63);
     obj.textEditor3:setLeft(10);
     obj.textEditor3:setTop(20);
-    obj.textEditor3:setWidth(355);
+    obj.textEditor3:setWidth(392);
     obj.textEditor3:setHeight(61);
     obj.textEditor3:setField("personalidade");
     obj.textEditor3:setName("textEditor3");
@@ -5662,14 +5662,14 @@ require('mudaNick.lua')
     obj.textEditor4:setParent(obj.layout64);
     obj.textEditor4:setLeft(10);
     obj.textEditor4:setTop(20);
-    obj.textEditor4:setWidth(355);
+    obj.textEditor4:setWidth(392);
     obj.textEditor4:setHeight(61);
     obj.textEditor4:setField("ideais");
     obj.textEditor4:setName("textEditor4");
 
     obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout65:setParent(obj.scrollBox2);
-    obj.layout65:setLeft(760);
+    obj.layout65:setLeft(792);
     obj.layout65:setTop(610);
     obj.layout65:setWidth(412);
     obj.layout65:setHeight(125);
@@ -5691,14 +5691,14 @@ require('mudaNick.lua')
     obj.textEditor5:setParent(obj.layout65);
     obj.textEditor5:setLeft(10);
     obj.textEditor5:setTop(20);
-    obj.textEditor5:setWidth(355);
+    obj.textEditor5:setWidth(392);
     obj.textEditor5:setHeight(61);
     obj.textEditor5:setField("vinculos");
     obj.textEditor5:setName("textEditor5");
 
     obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout66:setParent(obj.scrollBox2);
-    obj.layout66:setLeft(760);
+    obj.layout66:setLeft(792);
     obj.layout66:setTop(730);
     obj.layout66:setWidth(412);
     obj.layout66:setHeight(125);
@@ -5720,7 +5720,7 @@ require('mudaNick.lua')
     obj.textEditor6:setParent(obj.layout66);
     obj.textEditor6:setLeft(10);
     obj.textEditor6:setTop(20);
-    obj.textEditor6:setWidth(355);
+    obj.textEditor6:setWidth(392);
     obj.textEditor6:setHeight(61);
     obj.textEditor6:setField("fraquezas");
     obj.textEditor6:setName("textEditor6");
