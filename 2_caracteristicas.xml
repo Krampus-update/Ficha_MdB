@@ -31,6 +31,12 @@
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 		</flowPart>
 		
+		<!-- CARACTERISTICAS E TRACOS -->			
+		<flowPart left="0" top="355" width="375" height="250" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
+			<textEditor align="client" field="caracteristicas.caracteristicasETracoes" class="transparente" margins="{top=2}" fontSize="16"/>
+			<label align="bottom" autoSize="true" text="@@DnD5e.features.featurestraits" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+		</flowPart>	
+
 		<layout left="0" top="355" width="375" height="250" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE"/>
 			<textEditor left="5" top="25" width="365" height="220" field="personalidade"/>
