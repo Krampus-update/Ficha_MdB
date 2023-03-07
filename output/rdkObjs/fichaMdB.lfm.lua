@@ -5414,7 +5414,7 @@ require('mudaNick.lua')
 
     obj.label33 = GUI.fromHandle(_obj_newObject("label"));
     obj.label33:setParent(obj.layout59);
-    obj.label33:setLeft(860);
+    obj.label33:setLeft(900);
     obj.label33:setTop(25);
     obj.label33:setWidth(90);
     obj.label33:setHeight(20);
@@ -5425,7 +5425,7 @@ require('mudaNick.lua')
 
     obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout59);
-    obj.edit29:setLeft(900);
+    obj.edit29:setLeft(1000);
     obj.edit29:setTop(25);
     obj.edit29:setWidth(200);
     obj.edit29:setHeight(25);
@@ -5437,7 +5437,7 @@ require('mudaNick.lua')
 
     obj.label34 = GUI.fromHandle(_obj_newObject("label"));
     obj.label34:setParent(obj.layout59);
-    obj.label34:setLeft(860);
+    obj.label34:setLeft(900);
     obj.label34:setTop(50);
     obj.label34:setWidth(90);
     obj.label34:setHeight(20);
@@ -5448,7 +5448,7 @@ require('mudaNick.lua')
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout59);
-    obj.edit30:setLeft(900);
+    obj.edit30:setLeft(1000);
     obj.edit30:setTop(50);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
@@ -5460,7 +5460,7 @@ require('mudaNick.lua')
 
     obj.label35 = GUI.fromHandle(_obj_newObject("label"));
     obj.label35:setParent(obj.layout59);
-    obj.label35:setLeft(860);
+    obj.label35:setLeft(900);
     obj.label35:setTop(75);
     obj.label35:setWidth(90);
     obj.label35:setHeight(20);
@@ -5471,7 +5471,7 @@ require('mudaNick.lua')
 
     obj.edit31 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit31:setParent(obj.layout59);
-    obj.edit31:setLeft(900);
+    obj.edit31:setLeft(1000);
     obj.edit31:setTop(75);
     obj.edit31:setWidth(200);
     obj.edit31:setHeight(25);

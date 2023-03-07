@@ -8,8 +8,8 @@
 		
 		<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel5/frame.xml">
 			<label left="10" top="25" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
-			<comboBox left="100" top="25" width="100" field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
-			<checkBox left="200" top="25" width="100" field="caracteristicas.quadrupede" text="Quadrúpede" />
+			<comboBox left="90" top="25" width="100" field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
+			<checkBox left="180" top="25" width="100" field="caracteristicas.quadrupede" text="Quadrúpede" />
 			<Descricao left1="10" left2="100" top="50" text="ALTURA" field="caracteristicas.altura"/>
 			<Descricao left1="10" left2="100" top="75" text="PESO" field="caracteristicas.peso"/>
 			
@@ -21,9 +21,9 @@
 			<Descricao left1="610" left2="700" top="50" text="PELE" field="caracteristicas.pele"/>
 			<Descricao left1="610" left2="700" top="75" text="CABELO" field="caracteristicas.cabelo"/>
 			
-			<Descricao left1="860" left2="900" top="25" text="PLANO" field="caracteristicas.plano"/>
-			<Descricao left1="860" left2="900" top="50" text="REGIÃO" field="caracteristicas.regiao"/>
-			<Descricao left1="860" left2="900" top="75" text="REINO" field="caracteristicas.reino"/>
+			<Descricao left1="900" left2="1000" top="25" text="PLANO" field="caracteristicas.plano"/>
+			<Descricao left1="900" left2="1000" top="50" text="REGIÃO" field="caracteristicas.regiao"/>
+			<Descricao left1="900" left2="1000" top="75" text="REINO" field="caracteristicas.reino"/>
 		</layout >
 
 		<dataLink fields="{'caracteristicas.tamanho', 'caracteristicas.quadrupede', 'efetFor'}">
