@@ -3,6 +3,7 @@
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
 
+<<<<<<< HEAD
 	<script>
 		local function mudaNick(nome)
 			if not nome then return; end;
@@ -21,6 +22,11 @@
 		end;
 	</script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome); </event></dataLink>
+=======
+
+	<script> require('mudaNick.lua') </script>
+	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
+>>>>>>> ff09999da496f0eda885b2fc02565e4e14400a73
 
 
 

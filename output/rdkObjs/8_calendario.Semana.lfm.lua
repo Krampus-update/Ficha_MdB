@@ -76,10 +76,10 @@ local function constructNew_frmGerenciador02_SEMANA()
 
     obj._e_event1 = obj.button1:addEventListener("onClick",
         function (_)
-            dialogs.confirmOkCancel("Tem certeza que quer apagar esse dia da semana?",
+            Dialogs.confirmOkCancel("Tem certeza que quer apagar esse dia da semana?",
             					function (confirmado)
             						if confirmado then
-            							ndb.deleteNode(sheet);
+            							NDB.deleteNode(sheet);
             						end;
             				end);
         end, obj);
