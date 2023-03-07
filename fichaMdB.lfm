@@ -8,6 +8,7 @@
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
 	<tabControl  align = "client">
+		<título da aba  = "PERSONAGEM">
 
 		<tabControl align="client" name="pgcPrincipal">
 
