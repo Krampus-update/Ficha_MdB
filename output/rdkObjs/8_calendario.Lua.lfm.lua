@@ -49,7 +49,7 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.rectangle1);
-    obj.edit2:setLeft(130);
+    obj.edit2:setLeft(100);
     obj.edit2:setTop(0);
     obj.edit2:setWidth(35);
     obj.edit2:setHeight(25);
@@ -59,7 +59,7 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.rectangle1);
-    obj.edit3:setLeft(165);
+    obj.edit3:setLeft(135);
     obj.edit3:setTop(0);
     obj.edit3:setWidth(30);
     obj.edit3:setHeight(25);

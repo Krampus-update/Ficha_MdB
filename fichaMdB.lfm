@@ -22,19 +22,23 @@
 	</script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome); </event></dataLink>
 
-	<tabControl align="client" name="pgcPrincipal">
 
-		<tab title="FRENTE">
-			<import file="1_frente.xml"/>
-		</tab>
 
-		<tab title="CARACTERISTICAS">
-			<import file="2_caracteristicas.xml"/>
-		</tab>
+	<tabControl  align = " cliente ">
 
-		<tab title="EQUIPAMENTOS">
-			<import file="3_equipamento2.xml"/>
-		</tab>
+		<tabControl align="client" name="pgcPrincipal">
+
+			<tab title="FRENTE">
+				<import file="1_frente.xml"/>
+			</tab>
+
+			<tab title="CARACTERISTICAS">
+				<import file="2_caracteristicas.xml"/>
+			</tab>
+
+			<tab title="EQUIPAMENTOS">
+				<import file="3_equipamento2.xml"/>
+			</tab>
 
 		<tab title="MAGIA">
 			<import file="4_magias2.xml"/>

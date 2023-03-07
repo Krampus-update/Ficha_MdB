@@ -2,8 +2,8 @@
 <form name="frmGerenciador02_LUA" width="110" height="25" theme="dark" margins="{top=1}">
 	<rectangle align="client" color="#212121">
 		<edit left="0" top="0" width="100" height="25" field="luas"/>
-		<edit left="130" top="0" width="35" height="25" field="ciclo" type="number"/>
-		<edit left="165" top="0" width="30" height="25" field="desvio" type="number"/>
+		<edit left="100" top="0" width="35" height="25" field="ciclo" type="number"/>
+		<edit left="135" top="0" width="30" height="25" field="desvio" type="number"/>
 
 		<dataLink fields="{'lua_cheia','lua_minguante_convexo','lua_quarto_minguante','lua_minguante_concavo','lua_lua_nova','lua_crescente_concavo','lua_quarto_crescente','lua_crescente_convexo'}" defaultValues="{'Cheia','Minguante Convexo','Quarto Minguante','Minguante Concavo','Lua Nova','Crescente Concavo','Quarto Crescente','Crescente Convexo'}"/>
 
