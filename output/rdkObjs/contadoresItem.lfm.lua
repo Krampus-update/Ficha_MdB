@@ -238,7 +238,7 @@ local function constructNew_frmContador()
     obj.cbBarChoose:setParent(obj.layout10);
     obj.cbBarChoose:setName("cbBarChoose");
     obj.cbBarChoose:setAlign("top");
-    obj.cbBarChoose:setHeight(30);
+    obj.cbBarChoose:setHeight(60);
     obj.cbBarChoose:setItems({'','Barra 2', 'Barra 3', 'Barra 4'});
     obj.cbBarChoose:setValues({nil,'2','3','4'});
     obj.cbBarChoose:setField("barChoose");
@@ -318,7 +318,6 @@ local function constructNew_frmContador()
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;
             							local bar = tonumber(sheet.barChoose)
-            							sheet.barChoose = bar
             							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
             								jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax); 
             							end;
