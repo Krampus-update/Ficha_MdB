@@ -36,7 +36,7 @@
 					<event name='onChange'>
 						local jogador = Firecast.getPersonagemDe(sheet).dono;
 						jogador:requestSetEditableLine(1, sheet.classeENivel)
-						jogador:requestSetEditableLine(2, "CA"..sheet.CA.." | INI"..sheet.iniciativa.." | PP"..sheet.percepicaoPassiva)
+						jogador:requestSetEditableLine(2, "CA "..sheet.CA.." | INI "..sheet.iniciativa.." | PP "..sheet.percepicaoPassiva)
 					</event>
 				</dataLink>
 
