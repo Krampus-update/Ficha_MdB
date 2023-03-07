@@ -98,14 +98,14 @@
 	<layout align="right" width="333">
 		<layout align="left" width="184">
 			<layout align="left" width="152" margins="{left=2}">
-				<comboBox name="cbBarChoose" align="top" height="30" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{nil,'2','3','4'}" field="BarChoose"/>
-				<dataLink fields="{'BarChoose','valMax','valCur'}">
+				<comboBox name="cbBarChoose" align="top" height="30" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{nil,'2','3','4'}" field="barChoose"/>
+				<dataLink fields="{'barChoose','valMax','valCur'}">
 					<event name="onChange">
-						if sheet.cbBarChoose == nil then
+						if sheet.barChoose == nil then
 							return;
 						else
 							local jogador = Firecast.getPersonagemDe(sheet).dono;
-							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(sheet.BarChoose, sheet.valCur, sheet.valMax); end;
+							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(sheet.barChoose, sheet.valCur, sheet.valMax); end;
 						end;
 					</event>
 				</dataLink>
