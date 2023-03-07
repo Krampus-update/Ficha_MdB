@@ -115,18 +115,20 @@
 								<event name="onItemAdded"> form.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""})); </event>
 							</recordList>
 							<button align="bottom" text="Add Attack Option" onClick="self.rclOptsAttack:append();" margins="{left=200, right=200}"/>
-							<dataLink field="contadoresMudaram"><event name="onChange">
-								if sheet ~= nil and self ~= nil and sheet.contadoresMudaram then
-									local equip = self.dataEquipAttackDetails.node;
-									if equip ~= nil then
-										local optsAttack = NDB.getChildNodes(equip.optsAttack);
-										for i=1,#optsAttack,1 do
-											optsAttack[i].contadoresMudaram = true;
-											optsAttack[i].contadoresMudaram = false;
+							<dataLink field="contadoresMudaram">
+								<event name="onChange">
+									if sheet ~= nil and self ~= nil and sheet.contadoresMudaram then
+										local equip = self.dataEquipAttackDetails.node;
+										if equip ~= nil then
+											local optsAttack = NDB.getChildNodes(equip.optsAttack);
+											for i=1,#optsAttack,1 do
+												optsAttack[i].contadoresMudaram = true;
+												optsAttack[i].contadoresMudaram = false;
+											end;
 										end;
 									end;
-								end;
-							</event></dataLink>
+								</event>
+							</dataLink>
 						</layout>
 					</dataScopeBox>
 				</layout>
