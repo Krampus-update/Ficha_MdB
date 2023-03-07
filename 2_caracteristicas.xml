@@ -148,10 +148,10 @@
 			<label left="5" top="1" width="100" height="20" text="PERSONALIDADE"/>
 			<textEditor left="5" top="25" width="365" height="220" field="personalidade"/>
 		</layout>
-		<layout left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
+		<layout left="500" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
 			<label left="5" top="1" width="100" height="20" text="HISTORIA"/>
 			<button left="720" top="1" width="100" height="20" text="Copiar Antigo" onClick="System.setClipboardText(sheet.historia);"/>
-			<richEdit left="10" top="25" width="805" height="455" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
+			<richEdit left="10" top="20" width="805" height="455" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</layout>
 	</scrollBox>
 </form>
