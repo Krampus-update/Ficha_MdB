@@ -265,19 +265,19 @@ local function constructNew_frmContador()
     obj._e_event1 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.valCur == nil then sheet.valCur = 0; end;
-            			if sheet.valPrev == nil then sheet.valPrev = sheet.valCur; end;
+            				if sheet.valPrev == nil then sheet.valPrev = sheet.valCur; end;
             
-            			if sheet.valCur < 0 then sheet.valCur = sheet.valCur + sheet.valPrev; end;
+            				if sheet.valCur < 0 then sheet.valCur = sheet.valCur + sheet.valPrev; end;
             
-            			if sheet.valCur > sheet.valPrev then
-            				common.getMesa(sheet).chat:enviarAcao("recuperou " .. sheet.valCur-sheet.valPrev .. " uso(s) de '" .. sheet.name .. "' (" .. sheet.valCur .. "/" .. sheet.valMax .. ")");
-            			elseif sheet.valCur < sheet.valPrev then
-            				common.getMesa(sheet).chat:enviarAcao("gastou " .. sheet.valPrev-sheet.valCur .. " uso(s) de '" .. sheet.name .. "' (" .. sheet.valCur .. "/" .. sheet.valMax .. ")");
-            				if sheet.rolagem then
-            					common.getMesa(sheet).chat:rolarDados(common.interpreta(sheet, sheet.rolagem), sheet.name);
+            				if sheet.valCur > sheet.valPrev then
+            					common.getMesa(sheet).chat:enviarAcao("recuperou " .. sheet.valCur-sheet.valPrev .. " uso(s) de '" .. sheet.name .. "' (" .. sheet.valCur .. "/" .. sheet.valMax .. ")");
+            				elseif sheet.valCur < sheet.valPrev then
+            					common.getMesa(sheet).chat:enviarAcao("gastou " .. sheet.valPrev-sheet.valCur .. " uso(s) de '" .. sheet.name .. "' (" .. sheet.valCur .. "/" .. sheet.valMax .. ")");
+            					if sheet.rolagem then
+            						common.getMesa(sheet).chat:rolarDados(common.interpreta(sheet, sheet.rolagem), sheet.name);
+            					end;
             				end;
-            			end;
-            			sheet.valPrev = sheet.valCur;
+            				sheet.valPrev = sheet.valCur;
         end, obj);
 
     obj._e_event2 = obj.dataLink4:addEventListener("onChange",
@@ -317,7 +317,7 @@ local function constructNew_frmContador()
             							return;
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;
-            							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(sheet.barChoose, sheet.valCur, sheet.valMax); end;
+            							if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(tonumber(sheet.barChoose), sheet.valCur, sheet.valMax); end;
             						end;
         end, obj);
 
