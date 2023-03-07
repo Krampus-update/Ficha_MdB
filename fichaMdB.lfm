@@ -40,7 +40,7 @@
 		</tab>
 
 		<tab title="CALENDARIO">
-			<import file="8_calendario.xml"/>
+			<import file="8_calendario.lfm"/>
 		</tab>
 
 		<tab title="COMPANION">
