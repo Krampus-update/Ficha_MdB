@@ -5572,11 +5572,12 @@ require('mudaNick.lua')
 
     obj.label39 = GUI.fromHandle(_obj_newObject("label"));
     obj.label39:setParent(obj.layout60);
-    obj.label39:setLeft(415);
+    obj.label39:setLeft(315);
     obj.label39:setTop(1);
     obj.label39:setWidth(100);
     obj.label39:setHeight(20);
     obj.label39:setText("HISTORIA");
+    lfm_setPropAsString(obj.label39, "fontStyle",  "bold");
     obj.label39:setName("label39");
     obj.label39:setFontColor("white");
 
