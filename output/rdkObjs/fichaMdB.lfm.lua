@@ -4770,7 +4770,7 @@ require('mudaNick.lua')
     obj.flowPart51:setMinWidth(235);
     obj.flowPart51:setMaxWidth(475);
     obj.flowPart51:setMinScaledWidth(200);
-    obj.flowPart51:setHeight(175);
+    obj.flowPart51:setHeight(105);
     obj.flowPart51:setMargins({left=2, right=2, top=4, bottom=8});
     obj.flowPart51:setName("flowPart51");
     obj.flowPart51:setVertAlign("leading");

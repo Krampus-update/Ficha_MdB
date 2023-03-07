@@ -32,7 +32,7 @@
 			<import file="6_propriedades.xml"/>
 		</tab>
 
-		<tab title="DIARIO DE CAMPANHA">
+		<tab title="DIARIO">
 			<rectangle class="fundo">
 					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
 						<event name="onChange">
