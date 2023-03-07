@@ -3,8 +3,28 @@
 	<scrollBox align="client">
 		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
 
-
+			<!-- Primeira Linha -->
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center">
+				<!-- NOME DO PERSONAGEM -->													
+				<flowPart class="tile" minWidth="320" maxWidth="1600" frameStyle="frames/banner/heroGroup.xml" height="175" vertAlign="center" avoidScale="true">							
+					<layout align="client">
+							<edit field="nome" class="transparente vcenter" fontSize="17" align="client"/>
+							<label align="bottom" text="@@DnD5e.features.nameCharacter" class="tituloCampo" autoSize="true" margins="{left=3}"/>
+					</layout>
+				</flowPart>				
+		
+				<!-- GRID DE INFORMACOES SUPERIORES DA FRENTE -->
+				<flowLayout class="tile"  minWidth="320" maxWidth="1600" name="fraUpperGridCaracteristicas" avoidScale="true" frameStyle="frames/upperInfoGrid/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">								
+						<upperGridCampo field="caracteristicas.idade" minWidth="100" titulo="@@DnD5e.features.age"/>
+						<upperGridCampo field="caracteristicas.altura" titulo="@@DnD5e.features.height"/>
+						<upperGridCampo field="caracteristicas.peso" titulo="@@DnD5e.features.weight"/>									
+						<upperGridCampo field="caracteristicas.olhos" minWidth="100" titulo="@@DnD5e.features.eyes"/>
+						<upperGridCampo field="caracteristicas.pele" titulo="@@DnD5e.features.skin"/>
+						<upperGridCampo field="caracteristicas.cabelo" titulo="@@DnD5e.features.hair"/>
+				</flowLayout>	
+			</flowLayout>			
 			<flowLineBreak/>
+			
 			<!-- Primeira Linha -->
 			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
 				<!-- PRIMEIRA COLUNA -->
