@@ -321,8 +321,6 @@ local function constructNew_frmContador()
             							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
             								jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax); 
             								local curBar, maxBar = jogador:getBarValue(index);
-            								sheet.valCur = curBar;
-            								sheet.valMax = maxBar;
             							end;
             						end;
         end, obj);
