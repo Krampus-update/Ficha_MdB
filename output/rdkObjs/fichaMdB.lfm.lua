@@ -5212,7 +5212,7 @@ require('mudaNick.lua')
     obj.comboBox1:setLeft(100);
     obj.comboBox1:setTop(25);
     obj.comboBox1:setWidth(100);
-    obj.comboBox1:setField("tamanho");
+    obj.comboBox1:setField("caracteristicas.tamanho");
     obj.comboBox1:setFontColor("white");
     obj.comboBox1:setItems({'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'});
     obj.comboBox1:setValues({'-4','-3','-2','-1','0','1','2','3','4'});
@@ -5224,7 +5224,7 @@ require('mudaNick.lua')
     obj.checkBox1:setLeft(200);
     obj.checkBox1:setTop(25);
     obj.checkBox1:setWidth(100);
-    obj.checkBox1:setField("quadrupede");
+    obj.checkBox1:setField("caracteristicas.quadrupede");
     obj.checkBox1:setText("Quadrúpede");
     obj.checkBox1:setName("checkBox1");
 
@@ -5414,7 +5414,7 @@ require('mudaNick.lua')
 
     obj.label33 = GUI.fromHandle(_obj_newObject("label"));
     obj.label33:setParent(obj.layout59);
-    obj.label33:setLeft(810);
+    obj.label33:setLeft(860);
     obj.label33:setTop(25);
     obj.label33:setWidth(90);
     obj.label33:setHeight(20);
@@ -5425,11 +5425,11 @@ require('mudaNick.lua')
 
     obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout59);
-    obj.edit29:setLeft(910);
+    obj.edit29:setLeft(960);
     obj.edit29:setTop(25);
     obj.edit29:setWidth(200);
     obj.edit29:setHeight(25);
-    obj.edit29:setField("plano");
+    obj.edit29:setField("caracteristicas.plano");
     obj.edit29:setVertTextAlign("center");
     obj.edit29:setName("edit29");
     obj.edit29:setFontSize(15);
@@ -5437,7 +5437,7 @@ require('mudaNick.lua')
 
     obj.label34 = GUI.fromHandle(_obj_newObject("label"));
     obj.label34:setParent(obj.layout59);
-    obj.label34:setLeft(810);
+    obj.label34:setLeft(860);
     obj.label34:setTop(50);
     obj.label34:setWidth(90);
     obj.label34:setHeight(20);
@@ -5448,7 +5448,7 @@ require('mudaNick.lua')
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout59);
-    obj.edit30:setLeft(910);
+    obj.edit30:setLeft(960);
     obj.edit30:setTop(50);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
@@ -5460,7 +5460,7 @@ require('mudaNick.lua')
 
     obj.label35 = GUI.fromHandle(_obj_newObject("label"));
     obj.label35:setParent(obj.layout59);
-    obj.label35:setLeft(810);
+    obj.label35:setLeft(860);
     obj.label35:setTop(75);
     obj.label35:setWidth(90);
     obj.label35:setHeight(20);
@@ -5471,7 +5471,7 @@ require('mudaNick.lua')
 
     obj.edit31 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit31:setParent(obj.layout59);
-    obj.edit31:setLeft(910);
+    obj.edit31:setLeft(960);
     obj.edit31:setTop(75);
     obj.edit31:setWidth(200);
     obj.edit31:setHeight(25);
@@ -5483,7 +5483,7 @@ require('mudaNick.lua')
 
     obj.dataLink118 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink118:setParent(obj.scrollBox2);
-    obj.dataLink118:setFields({'tamanho', 'quadrupede', 'efetFor'});
+    obj.dataLink118:setFields({'caracteristicas.tamanho', 'caracteristicas.quadrupede', 'efetFor'});
     obj.dataLink118:setName("dataLink118");
 
     obj.flowPart54 = GUI.fromHandle(_obj_newObject("flowPart"));
