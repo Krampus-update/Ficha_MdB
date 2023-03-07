@@ -138,10 +138,10 @@
 			</event>	
 		</dataLink>
 		
-
-		<layout left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml">
-
-		</layout>
+		<flowPart left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+			<label align="bottom" autoSize="true" text="@@DnD5e.features.appearance" fontSize="20" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+		</flowPart>
 		
 		<layout left="0" top="355" width="375" height="250">
 			<rectangle align="client" color="black"/>
