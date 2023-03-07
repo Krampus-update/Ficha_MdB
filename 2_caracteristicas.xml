@@ -21,9 +21,9 @@
 			<Descricao left1="610" left2="700" top="50" text="PELE" field="caracteristicas.pele"/>
 			<Descricao left1="610" left2="700" top="75" text="CABELO" field="caracteristicas.cabelo"/>
 			
-			<Descricao left1="900" left2="990" top="25" text="PLANO" field="caracteristicas.plano"/>
-			<Descricao left1="900" left2="990" top="50" text="REGIÃO" field="caracteristicas.regiao"/>
-			<Descricao left1="900" left2="990" top="75" text="REINO" field="caracteristicas.reino"/>
+			<Descricao left1="900" left2="980" top="25" text="PLANO" field="caracteristicas.plano"/>
+			<Descricao left1="900" left2="980" top="50" text="REGIÃO" field="caracteristicas.regiao"/>
+			<Descricao left1="900" left2="980" top="75" text="REINO" field="caracteristicas.reino"/>
 		</layout >
 		
 		<flowPart left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
