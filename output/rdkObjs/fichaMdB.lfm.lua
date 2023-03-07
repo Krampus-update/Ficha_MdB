@@ -411,6 +411,11 @@ require('mudaNick.lua')
     obj.flowLineBreak1:setParent(obj.fraFrenteLayout);
     obj.flowLineBreak1:setName("flowLineBreak1");
 
+    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink2:setParent(obj.fraFrenteLayout);
+    obj.dataLink2:setFields({'classeENivel', 'CA','iniciativa','percepicaoPassiva'});
+    obj.dataLink2:setName("dataLink2");
+
     obj.flowLayout2 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout2:setParent(obj.fraFrenteLayout);
     obj.flowLayout2:setHorzAlign("justify");
@@ -547,10 +552,10 @@ require('mudaNick.lua')
     obj.fraLayAtributos:setAvoidScale(true);
     obj.fraLayAtributos:setStepSizes({310, 420, 640, 760, 1150});
 
-    obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink2:setParent(obj.fraLayAtributos);
-    obj.dataLink2:setField("atributos.forca");
-    obj.dataLink2:setName("dataLink2");
+    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink3:setParent(obj.fraLayAtributos);
+    obj.dataLink3:setField("atributos.forca");
+    obj.dataLink3:setName("dataLink3");
 
     obj.flowPart4 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart4:setParent(obj.fraLayAtributos);
@@ -673,15 +678,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink3:setParent(obj.flowPart5);
-    obj.dataLink3:setField("macroExpertise.forca");
-    obj.dataLink3:setName("dataLink3");
-
     obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink4:setParent(obj.flowPart5);
-    obj.dataLink4:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink4:setField("macroExpertise.forca");
     obj.dataLink4:setName("dataLink4");
+
+    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink5:setParent(obj.flowPart5);
+    obj.dataLink5:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink5:setName("dataLink5");
 
     obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout3:setParent(obj.flowPart5);
@@ -715,10 +720,10 @@ require('mudaNick.lua')
     obj.button2:setMargins({left=2});
     obj.button2:setName("button2");
 
-    obj.dataLink5 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink5:setParent(obj.flowLayout4);
-    obj.dataLink5:setFields({'atributos.modforca', 'bonusProficiencia', 'resistencias.forca', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink5:setName("dataLink5");
+    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink6:setParent(obj.flowLayout4);
+    obj.dataLink6:setFields({'atributos.modforca', 'bonusProficiencia', 'resistencias.forca', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink6:setName("dataLink6");
 
     obj.flowPart6 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart6:setParent(obj.flowLayout4);
@@ -772,15 +777,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink6 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink6:setParent(obj.flowPart6);
-    obj.dataLink6:setField("macroExpertise.atletismo");
-    obj.dataLink6:setName("dataLink6");
-
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink7:setParent(obj.flowPart6);
-    obj.dataLink7:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink7:setField("macroExpertise.atletismo");
     obj.dataLink7:setName("dataLink7");
+
+    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink8:setParent(obj.flowPart6);
+    obj.dataLink8:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink8:setName("dataLink8");
 
     obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout4:setParent(obj.flowPart6);
@@ -814,10 +819,10 @@ require('mudaNick.lua')
     obj.button3:setMargins({left=2});
     obj.button3:setName("button3");
 
-    obj.dataLink8 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink8:setParent(obj.flowLayout4);
-    obj.dataLink8:setFields({'atributos.modforca', 'bonusProficiencia', 'pericias.atletismo', 'macroExpertise.atletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink8:setName("dataLink8");
+    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink9:setParent(obj.flowLayout4);
+    obj.dataLink9:setFields({'atributos.modforca', 'bonusProficiencia', 'pericias.atletismo', 'macroExpertise.atletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink9:setName("dataLink9");
 
     obj.flowPart7 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart7:setParent(obj.flowLayout4);
@@ -871,15 +876,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink9:setParent(obj.flowPart7);
-    obj.dataLink9:setField("macroExpertise.periciaforca");
-    obj.dataLink9:setName("dataLink9");
-
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink10:setParent(obj.flowPart7);
-    obj.dataLink10:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink10:setField("macroExpertise.periciaforca");
     obj.dataLink10:setName("dataLink10");
+
+    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink11:setParent(obj.flowPart7);
+    obj.dataLink11:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink11:setName("dataLink11");
 
     obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout5:setParent(obj.flowPart7);
@@ -913,15 +918,15 @@ require('mudaNick.lua')
     obj.button4:setMargins({left=2});
     obj.button4:setName("button4");
 
-    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink11:setParent(obj.flowLayout4);
-    obj.dataLink11:setFields({'atributos.modforca', 'bonusProficiencia', 'pericias.periciaforca', 'macroExpertise.periciaforca', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink11:setName("dataLink11");
-
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink12:setParent(obj.fraLayAtributos);
-    obj.dataLink12:setField("atributos.destreza");
+    obj.dataLink12:setParent(obj.flowLayout4);
+    obj.dataLink12:setFields({'atributos.modforca', 'bonusProficiencia', 'pericias.periciaforca', 'macroExpertise.periciaforca', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink12:setName("dataLink12");
+
+    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink13:setParent(obj.fraLayAtributos);
+    obj.dataLink13:setField("atributos.destreza");
+    obj.dataLink13:setName("dataLink13");
 
     obj.flowPart8 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart8:setParent(obj.fraLayAtributos);
@@ -1044,15 +1049,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink13:setParent(obj.flowPart9);
-    obj.dataLink13:setField("macroExpertise.destreza");
-    obj.dataLink13:setName("dataLink13");
-
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink14:setParent(obj.flowPart9);
-    obj.dataLink14:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink14:setField("macroExpertise.destreza");
     obj.dataLink14:setName("dataLink14");
+
+    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink15:setParent(obj.flowPart9);
+    obj.dataLink15:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink15:setName("dataLink15");
 
     obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.flowPart9);
@@ -1086,10 +1091,10 @@ require('mudaNick.lua')
     obj.button6:setMargins({left=2});
     obj.button6:setName("button6");
 
-    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink15:setParent(obj.flowLayout5);
-    obj.dataLink15:setFields({'atributos.moddestreza', 'bonusProficiencia', 'resistencias.destreza', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink15:setName("dataLink15");
+    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink16:setParent(obj.flowLayout5);
+    obj.dataLink16:setFields({'atributos.moddestreza', 'bonusProficiencia', 'resistencias.destreza', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink16:setName("dataLink16");
 
     obj.flowPart10 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart10:setParent(obj.flowLayout5);
@@ -1143,15 +1148,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj.flowPart10);
-    obj.dataLink16:setField("macroExpertise.acrobacia");
-    obj.dataLink16:setName("dataLink16");
-
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink17:setParent(obj.flowPart10);
-    obj.dataLink17:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink17:setField("macroExpertise.acrobacia");
     obj.dataLink17:setName("dataLink17");
+
+    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink18:setParent(obj.flowPart10);
+    obj.dataLink18:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink18:setName("dataLink18");
 
     obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout9:setParent(obj.flowPart10);
@@ -1185,10 +1190,10 @@ require('mudaNick.lua')
     obj.button7:setMargins({left=2});
     obj.button7:setName("button7");
 
-    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink18:setParent(obj.flowLayout5);
-    obj.dataLink18:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.acrobacia', 'macroExpertise.acrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink18:setName("dataLink18");
+    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink19:setParent(obj.flowLayout5);
+    obj.dataLink19:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.acrobacia', 'macroExpertise.acrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink19:setName("dataLink19");
 
     obj.flowPart11 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart11:setParent(obj.flowLayout5);
@@ -1242,15 +1247,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink19:setParent(obj.flowPart11);
-    obj.dataLink19:setField("macroExpertise.furtividade");
-    obj.dataLink19:setName("dataLink19");
-
     obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink20:setParent(obj.flowPart11);
-    obj.dataLink20:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink20:setField("macroExpertise.furtividade");
     obj.dataLink20:setName("dataLink20");
+
+    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink21:setParent(obj.flowPart11);
+    obj.dataLink21:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink21:setName("dataLink21");
 
     obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout10:setParent(obj.flowPart11);
@@ -1284,10 +1289,10 @@ require('mudaNick.lua')
     obj.button8:setMargins({left=2});
     obj.button8:setName("button8");
 
-    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink21:setParent(obj.flowLayout5);
-    obj.dataLink21:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.furtividade', 'macroExpertise.furtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink21:setName("dataLink21");
+    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink22:setParent(obj.flowLayout5);
+    obj.dataLink22:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.furtividade', 'macroExpertise.furtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink22:setName("dataLink22");
 
     obj.flowPart12 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart12:setParent(obj.flowLayout5);
@@ -1341,15 +1346,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink22:setParent(obj.flowPart12);
-    obj.dataLink22:setField("macroExpertise.iniciativa");
-    obj.dataLink22:setName("dataLink22");
-
     obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink23:setParent(obj.flowPart12);
-    obj.dataLink23:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink23:setField("macroExpertise.iniciativa");
     obj.dataLink23:setName("dataLink23");
+
+    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink24:setParent(obj.flowPart12);
+    obj.dataLink24:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink24:setName("dataLink24");
 
     obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.flowPart12);
@@ -1383,10 +1388,10 @@ require('mudaNick.lua')
     obj.button9:setMargins({left=2});
     obj.button9:setName("button9");
 
-    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink24:setParent(obj.flowLayout5);
-    obj.dataLink24:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.iniciativa', 'macroExpertise.iniciativa', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink24:setName("dataLink24");
+    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink25:setParent(obj.flowLayout5);
+    obj.dataLink25:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.iniciativa', 'macroExpertise.iniciativa', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink25:setName("dataLink25");
 
     obj.flowPart13 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart13:setParent(obj.flowLayout5);
@@ -1440,15 +1445,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink25:setParent(obj.flowPart13);
-    obj.dataLink25:setField("macroExpertise.prestidigitacao");
-    obj.dataLink25:setName("dataLink25");
-
     obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink26:setParent(obj.flowPart13);
-    obj.dataLink26:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink26:setField("macroExpertise.prestidigitacao");
     obj.dataLink26:setName("dataLink26");
+
+    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink27:setParent(obj.flowPart13);
+    obj.dataLink27:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink27:setName("dataLink27");
 
     obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout12:setParent(obj.flowPart13);
@@ -1482,10 +1487,10 @@ require('mudaNick.lua')
     obj.button10:setMargins({left=2});
     obj.button10:setName("button10");
 
-    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink27:setParent(obj.flowLayout5);
-    obj.dataLink27:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.prestidigitacao', 'macroExpertise.prestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink27:setName("dataLink27");
+    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink28:setParent(obj.flowLayout5);
+    obj.dataLink28:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.prestidigitacao', 'macroExpertise.prestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink28:setName("dataLink28");
 
     obj.flowPart14 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart14:setParent(obj.flowLayout5);
@@ -1539,15 +1544,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink28:setParent(obj.flowPart14);
-    obj.dataLink28:setField("macroExpertise.periciadestreza");
-    obj.dataLink28:setName("dataLink28");
-
     obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink29:setParent(obj.flowPart14);
-    obj.dataLink29:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink29:setField("macroExpertise.periciadestreza");
     obj.dataLink29:setName("dataLink29");
+
+    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink30:setParent(obj.flowPart14);
+    obj.dataLink30:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink30:setName("dataLink30");
 
     obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.flowPart14);
@@ -1581,15 +1586,15 @@ require('mudaNick.lua')
     obj.button11:setMargins({left=2});
     obj.button11:setName("button11");
 
-    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink30:setParent(obj.flowLayout5);
-    obj.dataLink30:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.periciadestreza', 'macroExpertise.periciadestreza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink30:setName("dataLink30");
-
     obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink31:setParent(obj.fraLayAtributos);
-    obj.dataLink31:setField("atributos.constituicao");
+    obj.dataLink31:setParent(obj.flowLayout5);
+    obj.dataLink31:setFields({'atributos.moddestreza', 'bonusProficiencia', 'pericias.periciadestreza', 'macroExpertise.periciadestreza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink31:setName("dataLink31");
+
+    obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink32:setParent(obj.fraLayAtributos);
+    obj.dataLink32:setField("atributos.constituicao");
+    obj.dataLink32:setName("dataLink32");
 
     obj.flowPart15 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart15:setParent(obj.fraLayAtributos);
@@ -1712,15 +1717,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink32:setParent(obj.flowPart16);
-    obj.dataLink32:setField("macroExpertise.constituicao");
-    obj.dataLink32:setName("dataLink32");
-
     obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink33:setParent(obj.flowPart16);
-    obj.dataLink33:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink33:setField("macroExpertise.constituicao");
     obj.dataLink33:setName("dataLink33");
+
+    obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink34:setParent(obj.flowPart16);
+    obj.dataLink34:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink34:setName("dataLink34");
 
     obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout16:setParent(obj.flowPart16);
@@ -1754,10 +1759,10 @@ require('mudaNick.lua')
     obj.button13:setMargins({left=2});
     obj.button13:setName("button13");
 
-    obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink34:setParent(obj.flowLayout6);
-    obj.dataLink34:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'resistencias.constituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink34:setName("dataLink34");
+    obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink35:setParent(obj.flowLayout6);
+    obj.dataLink35:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'resistencias.constituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink35:setName("dataLink35");
 
     obj.flowPart17 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart17:setParent(obj.flowLayout6);
@@ -1811,15 +1816,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink35:setParent(obj.flowPart17);
-    obj.dataLink35:setField("macroExpertise.concentracao");
-    obj.dataLink35:setName("dataLink35");
-
     obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink36:setParent(obj.flowPart17);
-    obj.dataLink36:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink36:setField("macroExpertise.concentracao");
     obj.dataLink36:setName("dataLink36");
+
+    obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink37:setParent(obj.flowPart17);
+    obj.dataLink37:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink37:setName("dataLink37");
 
     obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout17:setParent(obj.flowPart17);
@@ -1853,10 +1858,10 @@ require('mudaNick.lua')
     obj.button14:setMargins({left=2});
     obj.button14:setName("button14");
 
-    obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink37:setParent(obj.flowLayout6);
-    obj.dataLink37:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.concentracao', 'macroExpertise.concentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink37:setName("dataLink37");
+    obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink38:setParent(obj.flowLayout6);
+    obj.dataLink38:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.concentracao', 'macroExpertise.concentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink38:setName("dataLink38");
 
     obj.flowPart18 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart18:setParent(obj.flowLayout6);
@@ -1910,15 +1915,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink38:setParent(obj.flowPart18);
-    obj.dataLink38:setField("macroExpertise.tolerancia");
-    obj.dataLink38:setName("dataLink38");
-
     obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink39:setParent(obj.flowPart18);
-    obj.dataLink39:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink39:setField("macroExpertise.tolerancia");
     obj.dataLink39:setName("dataLink39");
+
+    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink40:setParent(obj.flowPart18);
+    obj.dataLink40:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink40:setName("dataLink40");
 
     obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout18:setParent(obj.flowPart18);
@@ -1952,10 +1957,10 @@ require('mudaNick.lua')
     obj.button15:setMargins({left=2});
     obj.button15:setName("button15");
 
-    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink40:setParent(obj.flowLayout6);
-    obj.dataLink40:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.tolerancia', 'macroExpertise.tolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink40:setName("dataLink40");
+    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink41:setParent(obj.flowLayout6);
+    obj.dataLink41:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.tolerancia', 'macroExpertise.tolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink41:setName("dataLink41");
 
     obj.flowPart19 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart19:setParent(obj.flowLayout6);
@@ -2009,15 +2014,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink41:setParent(obj.flowPart19);
-    obj.dataLink41:setField("macroExpertise.periciaconstituicao");
-    obj.dataLink41:setName("dataLink41");
-
     obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink42:setParent(obj.flowPart19);
-    obj.dataLink42:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink42:setField("macroExpertise.periciaconstituicao");
     obj.dataLink42:setName("dataLink42");
+
+    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink43:setParent(obj.flowPart19);
+    obj.dataLink43:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink43:setName("dataLink43");
 
     obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout19:setParent(obj.flowPart19);
@@ -2051,15 +2056,15 @@ require('mudaNick.lua')
     obj.button16:setMargins({left=2});
     obj.button16:setName("button16");
 
-    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink43:setParent(obj.flowLayout6);
-    obj.dataLink43:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.periciaconstituicao', 'macroExpertise.periciaconstituicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink43:setName("dataLink43");
-
     obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink44:setParent(obj.fraLayAtributos);
-    obj.dataLink44:setField("atributos.inteligencia");
+    obj.dataLink44:setParent(obj.flowLayout6);
+    obj.dataLink44:setFields({'atributos.modconstituicao', 'bonusProficiencia', 'pericias.periciaconstituicao', 'macroExpertise.periciaconstituicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink44:setName("dataLink44");
+
+    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink45:setParent(obj.fraLayAtributos);
+    obj.dataLink45:setField("atributos.inteligencia");
+    obj.dataLink45:setName("dataLink45");
 
     obj.flowPart20 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart20:setParent(obj.fraLayAtributos);
@@ -2182,15 +2187,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink45:setParent(obj.flowPart21);
-    obj.dataLink45:setField("macroExpertise.inteligencia");
-    obj.dataLink45:setName("dataLink45");
-
     obj.dataLink46 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink46:setParent(obj.flowPart21);
-    obj.dataLink46:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink46:setField("macroExpertise.inteligencia");
     obj.dataLink46:setName("dataLink46");
+
+    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink47:setParent(obj.flowPart21);
+    obj.dataLink47:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink47:setName("dataLink47");
 
     obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout22:setParent(obj.flowPart21);
@@ -2224,10 +2229,10 @@ require('mudaNick.lua')
     obj.button18:setMargins({left=2});
     obj.button18:setName("button18");
 
-    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink47:setParent(obj.flowLayout7);
-    obj.dataLink47:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'resistencias.inteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink47:setName("dataLink47");
+    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink48:setParent(obj.flowLayout7);
+    obj.dataLink48:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'resistencias.inteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink48:setName("dataLink48");
 
     obj.flowPart22 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart22:setParent(obj.flowLayout7);
@@ -2281,15 +2286,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink48:setParent(obj.flowPart22);
-    obj.dataLink48:setField("macroExpertise.arcanismo");
-    obj.dataLink48:setName("dataLink48");
-
     obj.dataLink49 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink49:setParent(obj.flowPart22);
-    obj.dataLink49:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink49:setField("macroExpertise.arcanismo");
     obj.dataLink49:setName("dataLink49");
+
+    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink50:setParent(obj.flowPart22);
+    obj.dataLink50:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink50:setName("dataLink50");
 
     obj.layout23 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout23:setParent(obj.flowPart22);
@@ -2323,10 +2328,10 @@ require('mudaNick.lua')
     obj.button19:setMargins({left=2});
     obj.button19:setName("button19");
 
-    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink50:setParent(obj.flowLayout7);
-    obj.dataLink50:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.arcanismo', 'macroExpertise.arcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink50:setName("dataLink50");
+    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink51:setParent(obj.flowLayout7);
+    obj.dataLink51:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.arcanismo', 'macroExpertise.arcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink51:setName("dataLink51");
 
     obj.flowPart23 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart23:setParent(obj.flowLayout7);
@@ -2380,15 +2385,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink51:setParent(obj.flowPart23);
-    obj.dataLink51:setField("macroExpertise.historia");
-    obj.dataLink51:setName("dataLink51");
-
     obj.dataLink52 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink52:setParent(obj.flowPart23);
-    obj.dataLink52:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink52:setField("macroExpertise.historia");
     obj.dataLink52:setName("dataLink52");
+
+    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink53:setParent(obj.flowPart23);
+    obj.dataLink53:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink53:setName("dataLink53");
 
     obj.layout24 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout24:setParent(obj.flowPart23);
@@ -2422,10 +2427,10 @@ require('mudaNick.lua')
     obj.button20:setMargins({left=2});
     obj.button20:setName("button20");
 
-    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink53:setParent(obj.flowLayout7);
-    obj.dataLink53:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.historia', 'macroExpertise.historia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink53:setName("dataLink53");
+    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink54:setParent(obj.flowLayout7);
+    obj.dataLink54:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.historia', 'macroExpertise.historia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink54:setName("dataLink54");
 
     obj.flowPart24 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart24:setParent(obj.flowLayout7);
@@ -2479,15 +2484,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink54:setParent(obj.flowPart24);
-    obj.dataLink54:setField("macroExpertise.natureza");
-    obj.dataLink54:setName("dataLink54");
-
     obj.dataLink55 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink55:setParent(obj.flowPart24);
-    obj.dataLink55:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink55:setField("macroExpertise.natureza");
     obj.dataLink55:setName("dataLink55");
+
+    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink56:setParent(obj.flowPart24);
+    obj.dataLink56:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink56:setName("dataLink56");
 
     obj.layout25 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout25:setParent(obj.flowPart24);
@@ -2521,10 +2526,10 @@ require('mudaNick.lua')
     obj.button21:setMargins({left=2});
     obj.button21:setName("button21");
 
-    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink56:setParent(obj.flowLayout7);
-    obj.dataLink56:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.natureza', 'macroExpertise.natureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink56:setName("dataLink56");
+    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink57:setParent(obj.flowLayout7);
+    obj.dataLink57:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.natureza', 'macroExpertise.natureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink57:setName("dataLink57");
 
     obj.flowPart25 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart25:setParent(obj.flowLayout7);
@@ -2578,15 +2583,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink57:setParent(obj.flowPart25);
-    obj.dataLink57:setField("macroExpertise.religiao");
-    obj.dataLink57:setName("dataLink57");
-
     obj.dataLink58 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink58:setParent(obj.flowPart25);
-    obj.dataLink58:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink58:setField("macroExpertise.religiao");
     obj.dataLink58:setName("dataLink58");
+
+    obj.dataLink59 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink59:setParent(obj.flowPart25);
+    obj.dataLink59:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink59:setName("dataLink59");
 
     obj.layout26 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout26:setParent(obj.flowPart25);
@@ -2620,10 +2625,10 @@ require('mudaNick.lua')
     obj.button22:setMargins({left=2});
     obj.button22:setName("button22");
 
-    obj.dataLink59 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink59:setParent(obj.flowLayout7);
-    obj.dataLink59:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.religiao', 'macroExpertise.religiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink59:setName("dataLink59");
+    obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink60:setParent(obj.flowLayout7);
+    obj.dataLink60:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.religiao', 'macroExpertise.religiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink60:setName("dataLink60");
 
     obj.flowPart26 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart26:setParent(obj.flowLayout7);
@@ -2677,15 +2682,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink60:setParent(obj.flowPart26);
-    obj.dataLink60:setField("macroExpertise.periciainteligencia");
-    obj.dataLink60:setName("dataLink60");
-
     obj.dataLink61 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink61:setParent(obj.flowPart26);
-    obj.dataLink61:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink61:setField("macroExpertise.periciainteligencia");
     obj.dataLink61:setName("dataLink61");
+
+    obj.dataLink62 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink62:setParent(obj.flowPart26);
+    obj.dataLink62:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink62:setName("dataLink62");
 
     obj.layout27 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout27:setParent(obj.flowPart26);
@@ -2719,15 +2724,15 @@ require('mudaNick.lua')
     obj.button23:setMargins({left=2});
     obj.button23:setName("button23");
 
-    obj.dataLink62 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink62:setParent(obj.flowLayout7);
-    obj.dataLink62:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.periciainteligencia', 'macroExpertise.periciainteligencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink62:setName("dataLink62");
-
     obj.dataLink63 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink63:setParent(obj.fraLayAtributos);
-    obj.dataLink63:setField("atributos.sabedoria");
+    obj.dataLink63:setParent(obj.flowLayout7);
+    obj.dataLink63:setFields({'atributos.modinteligencia', 'bonusProficiencia', 'pericias.periciainteligencia', 'macroExpertise.periciainteligencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink63:setName("dataLink63");
+
+    obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink64:setParent(obj.fraLayAtributos);
+    obj.dataLink64:setField("atributos.sabedoria");
+    obj.dataLink64:setName("dataLink64");
 
     obj.flowPart27 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart27:setParent(obj.fraLayAtributos);
@@ -2850,15 +2855,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink64:setParent(obj.flowPart28);
-    obj.dataLink64:setField("macroExpertise.sabedoria");
-    obj.dataLink64:setName("dataLink64");
-
     obj.dataLink65 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink65:setParent(obj.flowPart28);
-    obj.dataLink65:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink65:setField("macroExpertise.sabedoria");
     obj.dataLink65:setName("dataLink65");
+
+    obj.dataLink66 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink66:setParent(obj.flowPart28);
+    obj.dataLink66:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink66:setName("dataLink66");
 
     obj.layout30 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout30:setParent(obj.flowPart28);
@@ -2892,10 +2897,10 @@ require('mudaNick.lua')
     obj.button25:setMargins({left=2});
     obj.button25:setName("button25");
 
-    obj.dataLink66 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink66:setParent(obj.flowLayout8);
-    obj.dataLink66:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'resistencias.sabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink66:setName("dataLink66");
+    obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink67:setParent(obj.flowLayout8);
+    obj.dataLink67:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'resistencias.sabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink67:setName("dataLink67");
 
     obj.flowPart29 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart29:setParent(obj.flowLayout8);
@@ -2949,15 +2954,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink67:setParent(obj.flowPart29);
-    obj.dataLink67:setField("macroExpertise.adestrarAnimais");
-    obj.dataLink67:setName("dataLink67");
-
     obj.dataLink68 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink68:setParent(obj.flowPart29);
-    obj.dataLink68:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink68:setField("macroExpertise.adestrarAnimais");
     obj.dataLink68:setName("dataLink68");
+
+    obj.dataLink69 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink69:setParent(obj.flowPart29);
+    obj.dataLink69:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink69:setName("dataLink69");
 
     obj.layout31 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout31:setParent(obj.flowPart29);
@@ -2991,10 +2996,10 @@ require('mudaNick.lua')
     obj.button26:setMargins({left=2});
     obj.button26:setName("button26");
 
-    obj.dataLink69 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink69:setParent(obj.flowLayout8);
-    obj.dataLink69:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.adestrarAnimais', 'macroExpertise.adestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink69:setName("dataLink69");
+    obj.dataLink70 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink70:setParent(obj.flowLayout8);
+    obj.dataLink70:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.adestrarAnimais', 'macroExpertise.adestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink70:setName("dataLink70");
 
     obj.flowPart30 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart30:setParent(obj.flowLayout8);
@@ -3048,15 +3053,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink70 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink70:setParent(obj.flowPart30);
-    obj.dataLink70:setField("macroExpertise.medicina");
-    obj.dataLink70:setName("dataLink70");
-
     obj.dataLink71 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink71:setParent(obj.flowPart30);
-    obj.dataLink71:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink71:setField("macroExpertise.medicina");
     obj.dataLink71:setName("dataLink71");
+
+    obj.dataLink72 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink72:setParent(obj.flowPart30);
+    obj.dataLink72:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink72:setName("dataLink72");
 
     obj.layout32 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout32:setParent(obj.flowPart30);
@@ -3090,10 +3095,10 @@ require('mudaNick.lua')
     obj.button27:setMargins({left=2});
     obj.button27:setName("button27");
 
-    obj.dataLink72 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink72:setParent(obj.flowLayout8);
-    obj.dataLink72:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.medicina', 'macroExpertise.medicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink72:setName("dataLink72");
+    obj.dataLink73 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink73:setParent(obj.flowLayout8);
+    obj.dataLink73:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.medicina', 'macroExpertise.medicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink73:setName("dataLink73");
 
     obj.flowPart31 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart31:setParent(obj.flowLayout8);
@@ -3147,15 +3152,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink73 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink73:setParent(obj.flowPart31);
-    obj.dataLink73:setField("macroExpertise.percepcao");
-    obj.dataLink73:setName("dataLink73");
-
     obj.dataLink74 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink74:setParent(obj.flowPart31);
-    obj.dataLink74:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink74:setField("macroExpertise.percepcao");
     obj.dataLink74:setName("dataLink74");
+
+    obj.dataLink75 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink75:setParent(obj.flowPart31);
+    obj.dataLink75:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink75:setName("dataLink75");
 
     obj.layout33 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout33:setParent(obj.flowPart31);
@@ -3189,10 +3194,10 @@ require('mudaNick.lua')
     obj.button28:setMargins({left=2});
     obj.button28:setName("button28");
 
-    obj.dataLink75 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink75:setParent(obj.flowLayout8);
-    obj.dataLink75:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.percepcao', 'macroExpertise.percepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink75:setName("dataLink75");
+    obj.dataLink76 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink76:setParent(obj.flowLayout8);
+    obj.dataLink76:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.percepcao', 'macroExpertise.percepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink76:setName("dataLink76");
 
     obj.flowPart32 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart32:setParent(obj.flowLayout8);
@@ -3246,15 +3251,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink76 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink76:setParent(obj.flowPart32);
-    obj.dataLink76:setField("macroExpertise.sobrevivencia");
-    obj.dataLink76:setName("dataLink76");
-
     obj.dataLink77 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink77:setParent(obj.flowPart32);
-    obj.dataLink77:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink77:setField("macroExpertise.sobrevivencia");
     obj.dataLink77:setName("dataLink77");
+
+    obj.dataLink78 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink78:setParent(obj.flowPart32);
+    obj.dataLink78:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink78:setName("dataLink78");
 
     obj.layout34 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout34:setParent(obj.flowPart32);
@@ -3288,10 +3293,10 @@ require('mudaNick.lua')
     obj.button29:setMargins({left=2});
     obj.button29:setName("button29");
 
-    obj.dataLink78 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink78:setParent(obj.flowLayout8);
-    obj.dataLink78:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.sobrevivencia', 'macroExpertise.sobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink78:setName("dataLink78");
+    obj.dataLink79 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink79:setParent(obj.flowLayout8);
+    obj.dataLink79:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.sobrevivencia', 'macroExpertise.sobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink79:setName("dataLink79");
 
     obj.flowPart33 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart33:setParent(obj.flowLayout8);
@@ -3345,15 +3350,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink79 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink79:setParent(obj.flowPart33);
-    obj.dataLink79:setField("macroExpertise.bedoria");
-    obj.dataLink79:setName("dataLink79");
-
     obj.dataLink80 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink80:setParent(obj.flowPart33);
-    obj.dataLink80:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink80:setField("macroExpertise.bedoria");
     obj.dataLink80:setName("dataLink80");
+
+    obj.dataLink81 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink81:setParent(obj.flowPart33);
+    obj.dataLink81:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink81:setName("dataLink81");
 
     obj.layout35 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout35:setParent(obj.flowPart33);
@@ -3387,15 +3392,15 @@ require('mudaNick.lua')
     obj.button30:setMargins({left=2});
     obj.button30:setName("button30");
 
-    obj.dataLink81 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink81:setParent(obj.flowLayout8);
-    obj.dataLink81:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.periciasabedoria', 'macroExpertise.periciasabedoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink81:setName("dataLink81");
-
     obj.dataLink82 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink82:setParent(obj.fraLayAtributos);
-    obj.dataLink82:setField("atributos.carisma");
+    obj.dataLink82:setParent(obj.flowLayout8);
+    obj.dataLink82:setFields({'atributos.modsabedoria', 'bonusProficiencia', 'pericias.periciasabedoria', 'macroExpertise.periciasabedoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink82:setName("dataLink82");
+
+    obj.dataLink83 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink83:setParent(obj.fraLayAtributos);
+    obj.dataLink83:setField("atributos.carisma");
+    obj.dataLink83:setName("dataLink83");
 
     obj.flowPart34 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart34:setParent(obj.fraLayAtributos);
@@ -3518,15 +3523,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink83 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink83:setParent(obj.flowPart35);
-    obj.dataLink83:setField("macroExpertise.carisma");
-    obj.dataLink83:setName("dataLink83");
-
     obj.dataLink84 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink84:setParent(obj.flowPart35);
-    obj.dataLink84:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink84:setField("macroExpertise.carisma");
     obj.dataLink84:setName("dataLink84");
+
+    obj.dataLink85 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink85:setParent(obj.flowPart35);
+    obj.dataLink85:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink85:setName("dataLink85");
 
     obj.layout38 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout38:setParent(obj.flowPart35);
@@ -3560,10 +3565,10 @@ require('mudaNick.lua')
     obj.button32:setMargins({left=2});
     obj.button32:setName("button32");
 
-    obj.dataLink85 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink85:setParent(obj.flowLayout9);
-    obj.dataLink85:setFields({'atributos.modcarisma', 'bonusProficiencia', 'resistencias.carisma', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink85:setName("dataLink85");
+    obj.dataLink86 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink86:setParent(obj.flowLayout9);
+    obj.dataLink86:setFields({'atributos.modcarisma', 'bonusProficiencia', 'resistencias.carisma', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink86:setName("dataLink86");
 
     obj.flowPart36 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart36:setParent(obj.flowLayout9);
@@ -3617,15 +3622,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink86 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink86:setParent(obj.flowPart36);
-    obj.dataLink86:setField("macroExpertise.atuacao");
-    obj.dataLink86:setName("dataLink86");
-
     obj.dataLink87 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink87:setParent(obj.flowPart36);
-    obj.dataLink87:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink87:setField("macroExpertise.atuacao");
     obj.dataLink87:setName("dataLink87");
+
+    obj.dataLink88 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink88:setParent(obj.flowPart36);
+    obj.dataLink88:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink88:setName("dataLink88");
 
     obj.layout39 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout39:setParent(obj.flowPart36);
@@ -3659,10 +3664,10 @@ require('mudaNick.lua')
     obj.button33:setMargins({left=2});
     obj.button33:setName("button33");
 
-    obj.dataLink88 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink88:setParent(obj.flowLayout9);
-    obj.dataLink88:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.atuacao', 'macroExpertise.atuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink88:setName("dataLink88");
+    obj.dataLink89 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink89:setParent(obj.flowLayout9);
+    obj.dataLink89:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.atuacao', 'macroExpertise.atuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink89:setName("dataLink89");
 
     obj.flowPart37 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart37:setParent(obj.flowLayout9);
@@ -3716,15 +3721,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink89 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink89:setParent(obj.flowPart37);
-    obj.dataLink89:setField("macroExpertise.enganacao");
-    obj.dataLink89:setName("dataLink89");
-
     obj.dataLink90 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink90:setParent(obj.flowPart37);
-    obj.dataLink90:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink90:setField("macroExpertise.enganacao");
     obj.dataLink90:setName("dataLink90");
+
+    obj.dataLink91 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink91:setParent(obj.flowPart37);
+    obj.dataLink91:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink91:setName("dataLink91");
 
     obj.layout40 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout40:setParent(obj.flowPart37);
@@ -3758,10 +3763,10 @@ require('mudaNick.lua')
     obj.button34:setMargins({left=2});
     obj.button34:setName("button34");
 
-    obj.dataLink91 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink91:setParent(obj.flowLayout9);
-    obj.dataLink91:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.enganacao', 'macroExpertise.enganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink91:setName("dataLink91");
+    obj.dataLink92 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink92:setParent(obj.flowLayout9);
+    obj.dataLink92:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.enganacao', 'macroExpertise.enganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink92:setName("dataLink92");
 
     obj.flowPart38 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart38:setParent(obj.flowLayout9);
@@ -3815,15 +3820,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink92 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink92:setParent(obj.flowPart38);
-    obj.dataLink92:setField("macroExpertise.intimidacao");
-    obj.dataLink92:setName("dataLink92");
-
     obj.dataLink93 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink93:setParent(obj.flowPart38);
-    obj.dataLink93:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink93:setField("macroExpertise.intimidacao");
     obj.dataLink93:setName("dataLink93");
+
+    obj.dataLink94 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink94:setParent(obj.flowPart38);
+    obj.dataLink94:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink94:setName("dataLink94");
 
     obj.layout41 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout41:setParent(obj.flowPart38);
@@ -3857,10 +3862,10 @@ require('mudaNick.lua')
     obj.button35:setMargins({left=2});
     obj.button35:setName("button35");
 
-    obj.dataLink94 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink94:setParent(obj.flowLayout9);
-    obj.dataLink94:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.intimidacao', 'macroExpertise.intimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink94:setName("dataLink94");
+    obj.dataLink95 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink95:setParent(obj.flowLayout9);
+    obj.dataLink95:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.intimidacao', 'macroExpertise.intimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink95:setName("dataLink95");
 
     obj.flowPart39 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart39:setParent(obj.flowLayout9);
@@ -3914,15 +3919,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink95 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink95:setParent(obj.flowPart39);
-    obj.dataLink95:setField("macroExpertise.persuasao");
-    obj.dataLink95:setName("dataLink95");
-
     obj.dataLink96 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink96:setParent(obj.flowPart39);
-    obj.dataLink96:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink96:setField("macroExpertise.persuasao");
     obj.dataLink96:setName("dataLink96");
+
+    obj.dataLink97 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink97:setParent(obj.flowPart39);
+    obj.dataLink97:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink97:setName("dataLink97");
 
     obj.layout42 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout42:setParent(obj.flowPart39);
@@ -3956,10 +3961,10 @@ require('mudaNick.lua')
     obj.button36:setMargins({left=2});
     obj.button36:setName("button36");
 
-    obj.dataLink97 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink97:setParent(obj.flowLayout9);
-    obj.dataLink97:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.persuasao', 'macroExpertise.persuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink97:setName("dataLink97");
+    obj.dataLink98 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink98:setParent(obj.flowLayout9);
+    obj.dataLink98:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.persuasao', 'macroExpertise.persuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink98:setName("dataLink98");
 
     obj.flowPart40 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart40:setParent(obj.flowLayout9);
@@ -4013,15 +4018,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink98 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink98:setParent(obj.flowPart40);
-    obj.dataLink98:setField("macroExpertise.periciacarisma");
-    obj.dataLink98:setName("dataLink98");
-
     obj.dataLink99 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink99:setParent(obj.flowPart40);
-    obj.dataLink99:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink99:setField("macroExpertise.periciacarisma");
     obj.dataLink99:setName("dataLink99");
+
+    obj.dataLink100 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink100:setParent(obj.flowPart40);
+    obj.dataLink100:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink100:setName("dataLink100");
 
     obj.layout43 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout43:setParent(obj.flowPart40);
@@ -4055,15 +4060,15 @@ require('mudaNick.lua')
     obj.button37:setMargins({left=2});
     obj.button37:setName("button37");
 
-    obj.dataLink100 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink100:setParent(obj.flowLayout9);
-    obj.dataLink100:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.periciacarisma', 'macroExpertise.periciacarisma', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink100:setName("dataLink100");
-
     obj.dataLink101 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink101:setParent(obj.fraLayAtributos);
-    obj.dataLink101:setField("atributos.sanidade");
+    obj.dataLink101:setParent(obj.flowLayout9);
+    obj.dataLink101:setFields({'atributos.modcarisma', 'bonusProficiencia', 'pericias.periciacarisma', 'macroExpertise.periciacarisma', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink101:setName("dataLink101");
+
+    obj.dataLink102 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink102:setParent(obj.fraLayAtributos);
+    obj.dataLink102:setField("atributos.sanidade");
+    obj.dataLink102:setName("dataLink102");
 
     obj.flowPart41 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart41:setParent(obj.fraLayAtributos);
@@ -4186,15 +4191,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink102 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink102:setParent(obj.flowPart42);
-    obj.dataLink102:setField("macroExpertise.sanidade");
-    obj.dataLink102:setName("dataLink102");
-
     obj.dataLink103 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink103:setParent(obj.flowPart42);
-    obj.dataLink103:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink103:setField("macroExpertise.sanidade");
     obj.dataLink103:setName("dataLink103");
+
+    obj.dataLink104 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink104:setParent(obj.flowPart42);
+    obj.dataLink104:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink104:setName("dataLink104");
 
     obj.layout46 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout46:setParent(obj.flowPart42);
@@ -4228,10 +4233,10 @@ require('mudaNick.lua')
     obj.button39:setMargins({left=2});
     obj.button39:setName("button39");
 
-    obj.dataLink104 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink104:setParent(obj.flowLayout10);
-    obj.dataLink104:setFields({'atributos.modsanidade', 'bonusProficiencia', 'resistencias.sanidade', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink104:setName("dataLink104");
+    obj.dataLink105 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink105:setParent(obj.flowLayout10);
+    obj.dataLink105:setFields({'atributos.modsanidade', 'bonusProficiencia', 'resistencias.sanidade', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink105:setName("dataLink105");
 
     obj.flowPart43 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart43:setParent(obj.flowLayout10);
@@ -4285,15 +4290,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink105 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink105:setParent(obj.flowPart43);
-    obj.dataLink105:setField("macroExpertise.nidade");
-    obj.dataLink105:setName("dataLink105");
-
     obj.dataLink106 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink106:setParent(obj.flowPart43);
-    obj.dataLink106:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink106:setField("macroExpertise.nidade");
     obj.dataLink106:setName("dataLink106");
+
+    obj.dataLink107 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink107:setParent(obj.flowPart43);
+    obj.dataLink107:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink107:setName("dataLink107");
 
     obj.layout47 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout47:setParent(obj.flowPart43);
@@ -4327,15 +4332,15 @@ require('mudaNick.lua')
     obj.button40:setMargins({left=2});
     obj.button40:setName("button40");
 
-    obj.dataLink107 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink107:setParent(obj.flowLayout10);
-    obj.dataLink107:setFields({'atributos.modsanidade', 'bonusProficiencia', 'pericias.periciasanidade', 'macroExpertise.periciasanidade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink107:setName("dataLink107");
-
     obj.dataLink108 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink108:setParent(obj.fraLayAtributos);
-    obj.dataLink108:setField("atributos.honra");
+    obj.dataLink108:setParent(obj.flowLayout10);
+    obj.dataLink108:setFields({'atributos.modsanidade', 'bonusProficiencia', 'pericias.periciasanidade', 'macroExpertise.periciasanidade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink108:setName("dataLink108");
+
+    obj.dataLink109 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink109:setParent(obj.fraLayAtributos);
+    obj.dataLink109:setField("atributos.honra");
+    obj.dataLink109:setName("dataLink109");
 
     obj.flowPart44 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart44:setParent(obj.fraLayAtributos);
@@ -4458,15 +4463,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink109 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink109:setParent(obj.flowPart45);
-    obj.dataLink109:setField("macroExpertise.honra");
-    obj.dataLink109:setName("dataLink109");
-
     obj.dataLink110 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink110:setParent(obj.flowPart45);
-    obj.dataLink110:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink110:setField("macroExpertise.honra");
     obj.dataLink110:setName("dataLink110");
+
+    obj.dataLink111 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink111:setParent(obj.flowPart45);
+    obj.dataLink111:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink111:setName("dataLink111");
 
     obj.layout50 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout50:setParent(obj.flowPart45);
@@ -4500,10 +4505,10 @@ require('mudaNick.lua')
     obj.button42:setMargins({left=2});
     obj.button42:setName("button42");
 
-    obj.dataLink111 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink111:setParent(obj.flowLayout11);
-    obj.dataLink111:setFields({'atributos.modhonra', 'bonusProficiencia', 'resistencias.honra', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink111:setName("dataLink111");
+    obj.dataLink112 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink112:setParent(obj.flowLayout11);
+    obj.dataLink112:setFields({'atributos.modhonra', 'bonusProficiencia', 'resistencias.honra', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink112:setName("dataLink112");
 
     obj.flowPart46 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart46:setParent(obj.flowLayout11);
@@ -4557,15 +4562,15 @@ require('mudaNick.lua')
 				
 
 
-    obj.dataLink112 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink112:setParent(obj.flowPart46);
-    obj.dataLink112:setField("macroExpertise.periciahonra");
-    obj.dataLink112:setName("dataLink112");
-
     obj.dataLink113 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink113:setParent(obj.flowPart46);
-    obj.dataLink113:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink113:setField("macroExpertise.periciahonra");
     obj.dataLink113:setName("dataLink113");
+
+    obj.dataLink114 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink114:setParent(obj.flowPart46);
+    obj.dataLink114:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink114:setName("dataLink114");
 
     obj.layout51 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout51:setParent(obj.flowPart46);
@@ -4599,10 +4604,10 @@ require('mudaNick.lua')
     obj.button43:setMargins({left=2});
     obj.button43:setName("button43");
 
-    obj.dataLink114 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink114:setParent(obj.flowLayout11);
-    obj.dataLink114:setFields({'atributos.modhonra', 'bonusProficiencia', 'pericias.periciahonra', 'macroExpertise.periciahonra', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink114:setName("dataLink114");
+    obj.dataLink115 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink115:setParent(obj.flowLayout11);
+    obj.dataLink115:setFields({'atributos.modhonra', 'bonusProficiencia', 'pericias.periciahonra', 'macroExpertise.periciahonra', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink115:setName("dataLink115");
 
     obj.flowLayout12 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout12:setParent(obj.flowLayout3);
@@ -4822,11 +4827,11 @@ require('mudaNick.lua')
     obj.colorComboBox1:setUseAlpha(false);
     obj.colorComboBox1:setName("colorComboBox1");
 
-    obj.dataLink115 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink115:setParent(obj.flowLayout14);
-    obj.dataLink115:setField("barColor");
-    obj.dataLink115:setDefaultValue("Red");
-    obj.dataLink115:setName("dataLink115");
+    obj.dataLink116 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink116:setParent(obj.flowLayout14);
+    obj.dataLink116:setField("barColor");
+    obj.dataLink116:setDefaultValue("Red");
+    obj.dataLink116:setName("dataLink116");
 
     obj.layout53 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout53:setParent(obj.layout52);
@@ -4907,15 +4912,15 @@ require('mudaNick.lua')
     obj.label18:setName("label18");
     obj.label18:setFontColor("white");
 
-    obj.dataLink116 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink116:setParent(obj.layout53);
-    obj.dataLink116:setFields({'PV', 'PVmax'});
-    obj.dataLink116:setName("dataLink116");
-
     obj.dataLink117 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink117:setParent(obj.layout52);
-    obj.dataLink117:setField("descansoLongo");
+    obj.dataLink117:setParent(obj.layout53);
+    obj.dataLink117:setFields({'PV', 'PVmax'});
     obj.dataLink117:setName("dataLink117");
+
+    obj.dataLink118 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink118:setParent(obj.layout52);
+    obj.dataLink118:setField("descansoLongo");
+    obj.dataLink118:setName("dataLink118");
 
     obj.frame2 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame2:setParent(obj.flowPart51);
@@ -5725,10 +5730,10 @@ require('mudaNick.lua')
     obj.button49:setText("Adicionar Propriedade");
     obj.button49:setName("button49");
 
-    obj.dataLink118 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink118:setParent(obj.layEquipPropriedades);
-    obj.dataLink118:setField("propriedades");
-    obj.dataLink118:setName("dataLink118");
+    obj.dataLink119 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink119:setParent(obj.layEquipPropriedades);
+    obj.dataLink119:setField("propriedades");
+    obj.dataLink119:setName("dataLink119");
 
     obj.horzLine37 = GUI.fromHandle(_obj_newObject("horzLine"));
     obj.horzLine37:setParent(obj.dataEquipAttackDetails);
@@ -6065,10 +6070,10 @@ require('mudaNick.lua')
     obj.cbOptAtaqueMunicao:setField("municao");
     obj.cbOptAtaqueMunicao:setHint("Qual 'contador' deve ser gasto");
 
-    obj.dataLink119 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink119:setParent(obj.flowPart68);
-    obj.dataLink119:setField("contadoresMudaram");
-    obj.dataLink119:setName("dataLink119");
+    obj.dataLink120 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink120:setParent(obj.flowPart68);
+    obj.dataLink120:setField("contadoresMudaram");
+    obj.dataLink120:setName("dataLink120");
 
     obj.flowPart69 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart69:setParent(obj.optAtaquePadrao);
@@ -6131,10 +6136,10 @@ require('mudaNick.lua')
     obj.button50:setMargins({left=200, right=200});
     obj.button50:setName("button50");
 
-    obj.dataLink120 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink120:setParent(obj.layPrincipal);
-    obj.dataLink120:setField("contadoresMudaram");
-    obj.dataLink120:setName("dataLink120");
+    obj.dataLink121 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink121:setParent(obj.layPrincipal);
+    obj.dataLink121:setField("contadoresMudaram");
+    obj.dataLink121:setName("dataLink121");
 
     obj.flowLineBreak3 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
     obj.flowLineBreak3:setParent(obj.fraEquipamentoLayout);
@@ -6436,10 +6441,10 @@ require('mudaNick.lua')
     obj.rclMagiasNiveis:setTemplateForm("frmNivelDeMagia");
     obj.rclMagiasNiveis:setAlign("client");
 
-    obj.dataLink121 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink121:setParent(obj.rectangle3);
-    obj.dataLink121:setFields({'descansoLongo', 'descansoCurto'});
-    obj.dataLink121:setName("dataLink121");
+    obj.dataLink122 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink122:setParent(obj.rectangle3);
+    obj.dataLink122:setFields({'descansoLongo', 'descansoCurto'});
+    obj.dataLink122:setName("dataLink122");
 
     obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout16:setParent(obj.rectangle3);
@@ -7011,10 +7016,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditCompM:setFontSize(15);
     obj.popupEditCompM:setFontColor("white");
 
-    obj.dataLink122 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink122:setParent(obj.layout66);
-    obj.dataLink122:setField("componentesM");
-    obj.dataLink122:setName("dataLink122");
+    obj.dataLink123 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink123:setParent(obj.layout66);
+    obj.dataLink123:setField("componentesM");
+    obj.dataLink123:setName("dataLink123");
 
     obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout70:setParent(obj.rectangle9);
@@ -7131,10 +7136,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox4:setItems({'Preparada', 'Sempre Preparada', 'Conhecida', 'A vontade', 'Inata'});
     obj.comboBox4:setName("comboBox4");
 
-    obj.dataLink123 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink123:setParent(obj.rectangle10);
-    obj.dataLink123:setField("preparadoTipo");
-    obj.dataLink123:setName("dataLink123");
+    obj.dataLink124 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink124:setParent(obj.rectangle10);
+    obj.dataLink124:setField("preparadoTipo");
+    obj.dataLink124:setName("dataLink124");
 
     obj.label66 = GUI.fromHandle(_obj_newObject("label"));
     obj.label66:setParent(obj.scrollBox4);
@@ -7292,10 +7297,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditCondAtiv:setFontSize(15);
     obj.popupEditCondAtiv:setFontColor("white");
 
-    obj.dataLink124 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink124:setParent(obj.flowLayout20);
-    obj.dataLink124:setField("tempoConjuracaoUnidade");
-    obj.dataLink124:setName("dataLink124");
+    obj.dataLink125 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink125:setParent(obj.flowLayout20);
+    obj.dataLink125:setField("tempoConjuracaoUnidade");
+    obj.dataLink125:setName("dataLink125");
 
     obj.rectangle13 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle13:setParent(obj.scrollBox4);
@@ -7529,10 +7534,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox8:setItems({'', 'Nenhum', 'Pessoal', 'Toque', 'Especial', 'Qualquer', 'Pés', 'Milhas', 'Metros', 'Kilômetros'});
     obj.comboBox8:setName("comboBox8");
 
-    obj.dataLink125 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink125:setParent(obj.flowLayout22);
-    obj.dataLink125:setField("alcanceUnidade");
-    obj.dataLink125:setName("dataLink125");
+    obj.dataLink126 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink126:setParent(obj.flowLayout22);
+    obj.dataLink126:setField("alcanceUnidade");
+    obj.dataLink126:setName("dataLink126");
 
     obj.rectangle15 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle15:setParent(obj.scrollBox4);
@@ -7620,10 +7625,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox9:setItems({'', 'Dias', 'Horas', 'Instantânea', 'Minutos', 'Meses', 'Permanente', 'Rodadas', 'Especial', 'Turnos', 'Anos'});
     obj.comboBox9:setName("comboBox9");
 
-    obj.dataLink126 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink126:setParent(obj.flowLayout23);
-    obj.dataLink126:setField("duracaoUnidade");
-    obj.dataLink126:setName("dataLink126");
+    obj.dataLink127 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink127:setParent(obj.flowLayout23);
+    obj.dataLink127:setField("duracaoUnidade");
+    obj.dataLink127:setName("dataLink127");
 
     obj.rectangle16 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle16:setParent(obj.scrollBox4);
@@ -7745,10 +7750,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditContadorNome:setAlign("client");
     obj.popupEditContadorNome:setField("contadorNome");
 
-    obj.dataLink127 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink127:setParent(obj.flowLayout24);
-    obj.dataLink127:setField("contadorNome");
-    obj.dataLink127:setName("dataLink127");
+    obj.dataLink128 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink128:setParent(obj.flowLayout24);
+    obj.dataLink128:setField("contadorNome");
+    obj.dataLink128:setName("dataLink128");
 
     obj.label75 = GUI.fromHandle(_obj_newObject("label"));
     obj.label75:setParent(obj.scrollBox4);
@@ -7843,10 +7848,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditAtaqueBonus:setFontSize(15);
     obj.popupEditAtaqueBonus:setFontColor("white");
 
-    obj.dataLink128 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink128:setParent(obj.scrollBox4);
-    obj.dataLink128:setField("ataqueTipo");
-    obj.dataLink128:setName("dataLink128");
+    obj.dataLink129 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink129:setParent(obj.scrollBox4);
+    obj.dataLink129:setField("ataqueTipo");
+    obj.dataLink129:setName("dataLink129");
 
     obj.popupEditDanoRect = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.popupEditDanoRect:setParent(obj.scrollBox4);
@@ -8207,10 +8212,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox12:setValues({'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'fixo'});
     obj.comboBox12:setName("comboBox12");
 
-    obj.dataLink129 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink129:setParent(obj.flowLayout25);
-    obj.dataLink129:setField("cdResistenciaTipo");
-    obj.dataLink129:setName("dataLink129");
+    obj.dataLink130 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink130:setParent(obj.flowLayout25);
+    obj.dataLink130:setField("cdResistenciaTipo");
+    obj.dataLink130:setName("dataLink130");
 
     obj.rectangle21 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle21:setParent(obj.scrollBox4);
@@ -8273,11 +8278,11 @@ self.upperGridMagicBox3._RecalcSize();
  dload.getSourceNames(self, "spells", function(items) self.comboBoxImportSource:setItems(items); end); 
 
 
-    obj.dataLink130 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink130:setParent(obj.scrollBox5);
-    obj.dataLink130:setField("importSourceName");
-    obj.dataLink130:setDefaultValue("PHB");
-    obj.dataLink130:setName("dataLink130");
+    obj.dataLink131 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink131:setParent(obj.scrollBox5);
+    obj.dataLink131:setField("importSourceName");
+    obj.dataLink131:setDefaultValue("PHB");
+    obj.dataLink131:setName("dataLink131");
 
     obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit46:setParent(obj.scrollBox5);
@@ -8306,11 +8311,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBoxImportLevel:setItems({'Qualquer', 'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', '10º nível'});
     obj.comboBoxImportLevel:setValues({'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'});
 
-    obj.dataLink131 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink131:setParent(obj.scrollBox5);
-    obj.dataLink131:setField("importLevel");
-    obj.dataLink131:setDefaultValue("0");
-    obj.dataLink131:setName("dataLink131");
+    obj.dataLink132 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink132:setParent(obj.scrollBox5);
+    obj.dataLink132:setField("importLevel");
+    obj.dataLink132:setDefaultValue("0");
+    obj.dataLink132:setName("dataLink132");
 
     obj.label91 = GUI.fromHandle(_obj_newObject("label"));
     obj.label91:setParent(obj.scrollBox5);
@@ -8328,10 +8333,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBoxImportClass:setAlign("top");
     obj.comboBoxImportClass:setField("importClass");
 
-    obj.dataLink132 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink132:setParent(obj.scrollBox5);
-    obj.dataLink132:setFields({'importSourcePath', 'importLevel'});
-    obj.dataLink132:setName("dataLink132");
+    obj.dataLink133 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink133:setParent(obj.scrollBox5);
+    obj.dataLink133:setFields({'importSourcePath', 'importLevel'});
+    obj.dataLink133:setName("dataLink133");
 
     obj.label92 = GUI.fromHandle(_obj_newObject("label"));
     obj.label92:setParent(obj.scrollBox5);
@@ -8349,10 +8354,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBoxImportMagia:setAlign("top");
     obj.comboBoxImportMagia:setField("importName");
 
-    obj.dataLink133 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink133:setParent(obj.scrollBox5);
-    obj.dataLink133:setFields({'importSourcePath', 'importLevel', 'importClass'});
-    obj.dataLink133:setName("dataLink133");
+    obj.dataLink134 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink134:setParent(obj.scrollBox5);
+    obj.dataLink134:setFields({'importSourcePath', 'importLevel', 'importClass'});
+    obj.dataLink134:setName("dataLink134");
 
     obj.button53 = GUI.fromHandle(_obj_newObject("button"));
     obj.button53:setParent(obj.scrollBox5);
@@ -8363,15 +8368,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button53:setHeight(30);
     lfm_setPropAsString(obj.button53, "fontStyle",  "bold");
 
-    obj.dataLink134 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink134:setParent(obj.rectangle3);
-    obj.dataLink134:setFields({'magias.habilidadeDeConjuracao', 'atributos.modForca', 'atributos.modDestreza', 'atributos.modConstituicao', 'atributos.modInteligencia', 'atributos.modSabedoria', 'atributos.modCarisma', 'bonusProficiencia'});
-    obj.dataLink134:setName("dataLink134");
-
     obj.dataLink135 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink135:setParent(obj.rectangle3);
-    obj.dataLink135:setField("magias.selecionada");
+    obj.dataLink135:setFields({'magias.habilidadeDeConjuracao', 'atributos.modForca', 'atributos.modDestreza', 'atributos.modConstituicao', 'atributos.modInteligencia', 'atributos.modSabedoria', 'atributos.modCarisma', 'bonusProficiencia'});
     obj.dataLink135:setName("dataLink135");
+
+    obj.dataLink136 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink136:setParent(obj.rectangle3);
+    obj.dataLink136:setField("magias.selecionada");
+    obj.dataLink136:setName("dataLink136");
 
     obj.tab8 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab8:setParent(obj.pgcPrincipal);
@@ -8414,10 +8419,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rclContadores:setHitTest(false);
     obj.rclContadores:setMargins({top=10, bottom=10, left=10, right=10});
 
-    obj.dataLink136 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink136:setParent(obj.rectangle22);
-    obj.dataLink136:setFields({'descansoLongo', 'descansoCurto'});
-    obj.dataLink136:setName("dataLink136");
+    obj.dataLink137 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink137:setParent(obj.rectangle22);
+    obj.dataLink137:setFields({'descansoLongo', 'descansoCurto'});
+    obj.dataLink137:setName("dataLink137");
 
     obj.tab9 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab9:setParent(obj.pgcPrincipal);
@@ -9653,10 +9658,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit82:setName("edit82");
     obj.edit82:setFontColor("white");
 
-    obj.dataLink137 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink137:setParent(obj.flowLayout27);
-    obj.dataLink137:setField("sobrentural");
-    obj.dataLink137:setName("dataLink137");
+    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink138:setParent(obj.flowLayout27);
+    obj.dataLink138:setField("sobrentural");
+    obj.dataLink138:setName("dataLink138");
 
     obj.flowPart183 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart183:setParent(obj.flowLayout27);
@@ -9716,10 +9721,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit83:setName("edit83");
     obj.edit83:setFontColor("white");
 
-    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink138:setParent(obj.flowLayout27);
-    obj.dataLink138:setField("auroras");
-    obj.dataLink138:setName("dataLink138");
+    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink139:setParent(obj.flowLayout27);
+    obj.dataLink139:setField("auroras");
+    obj.dataLink139:setName("dataLink139");
 
     obj.flowPart186 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart186:setParent(obj.flowLayout27);
@@ -9779,10 +9784,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit84:setName("edit84");
     obj.edit84:setFontColor("white");
 
-    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink139:setParent(obj.flowLayout27);
-    obj.dataLink139:setField("cometas");
-    obj.dataLink139:setName("dataLink139");
+    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink140:setParent(obj.flowLayout27);
+    obj.dataLink140:setField("cometas");
+    obj.dataLink140:setName("dataLink140");
 
     obj.flowPart189 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart189:setParent(obj.flowLayout27);
@@ -9842,10 +9847,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit85:setName("edit85");
     obj.edit85:setFontColor("white");
 
-    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink140:setParent(obj.flowLayout27);
-    obj.dataLink140:setField("cadentes");
-    obj.dataLink140:setName("dataLink140");
+    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink141:setParent(obj.flowLayout27);
+    obj.dataLink141:setField("cadentes");
+    obj.dataLink141:setName("dataLink141");
 
     obj.flowPart192 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart192:setParent(obj.flowLayout27);
@@ -9905,10 +9910,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit86:setName("edit86");
     obj.edit86:setFontColor("white");
 
-    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink141:setParent(obj.flowLayout27);
-    obj.dataLink141:setField("lunar");
-    obj.dataLink141:setName("dataLink141");
+    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink142:setParent(obj.flowLayout27);
+    obj.dataLink142:setField("lunar");
+    obj.dataLink142:setName("dataLink142");
 
     obj.flowPart195 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart195:setParent(obj.flowLayout27);
@@ -9968,10 +9973,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit87:setName("edit87");
     obj.edit87:setFontColor("white");
 
-    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink142:setParent(obj.flowLayout27);
-    obj.dataLink142:setField("solar");
-    obj.dataLink142:setName("dataLink142");
+    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink143:setParent(obj.flowLayout27);
+    obj.dataLink143:setField("solar");
+    obj.dataLink143:setName("dataLink143");
 
     obj.flowPart198 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart198:setParent(obj.flowLayout27);
@@ -10031,10 +10036,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit88:setName("edit88");
     obj.edit88:setFontColor("white");
 
-    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink143:setParent(obj.flowLayout27);
-    obj.dataLink143:setField("meteoros");
-    obj.dataLink143:setName("dataLink143");
+    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink144:setParent(obj.flowLayout27);
+    obj.dataLink144:setField("meteoros");
+    obj.dataLink144:setName("dataLink144");
 
     obj.flowPart201 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart201:setParent(obj.flowLayout27);
@@ -10094,10 +10099,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit89:setName("edit89");
     obj.edit89:setFontColor("white");
 
-    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink144:setParent(obj.flowLayout27);
-    obj.dataLink144:setField("terremotos");
-    obj.dataLink144:setName("dataLink144");
+    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink145:setParent(obj.flowLayout27);
+    obj.dataLink145:setField("terremotos");
+    obj.dataLink145:setName("dataLink145");
 
     obj.popMoon = GUI.fromHandle(_obj_newObject("popup"));
     obj.popMoon:setParent(obj.scrollBox7);
@@ -10763,10 +10768,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rclMeses:setTemplateForm("frmGerenciador02_MES");
     obj.rclMeses:setLayout("vertical");
 
-    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink145:setParent(obj.layout76);
-    obj.dataLink145:setFields({'duracaoEstacao', 'dias'});
-    obj.dataLink145:setName("dataLink145");
+    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink146:setParent(obj.layout76);
+    obj.dataLink146:setFields({'duracaoEstacao', 'dias'});
+    obj.dataLink146:setName("dataLink146");
 
     obj.layout78 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout78:setParent(obj.layout75);
@@ -11194,11 +11199,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label145:setName("label145");
     obj.label145:setFontColor("white");
 
-    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink146:setParent(obj.layout84);
-    obj.dataLink146:setField("add");
-    obj.dataLink146:setDefaultValue("1");
-    obj.dataLink146:setName("dataLink146");
+    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink147:setParent(obj.layout84);
+    obj.dataLink147:setField("add");
+    obj.dataLink147:setDefaultValue("1");
+    obj.dataLink147:setName("dataLink147");
 
     obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor3:setParent(obj.layout84);
@@ -11300,10 +11305,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.eventosLabel:setHitTest(true);
     obj.eventosLabel:setFontColor("white");
 
-    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink147:setParent(obj.layout84);
-    obj.dataLink147:setFields({'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'});
-    obj.dataLink147:setName("dataLink147");
+    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink148:setParent(obj.layout84);
+    obj.dataLink148:setFields({'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'});
+    obj.dataLink148:setName("dataLink148");
 
     obj.rectangle26 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle26:setParent(obj.scrollBox7);
@@ -11867,10 +11872,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.fraLayAtributosCompanion:setAvoidScale(true);
     obj.fraLayAtributosCompanion:setStepSizes({310, 420, 640, 760, 1150});
 
-    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink148:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink148:setField("atributos.companionforca");
-    obj.dataLink148:setName("dataLink148");
+    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink149:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink149:setField("atributos.companionforca");
+    obj.dataLink149:setName("dataLink149");
 
     obj.flowPart234 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart234:setParent(obj.fraLayAtributosCompanion);
@@ -11993,15 +11998,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink149:setParent(obj.flowPart235);
-    obj.dataLink149:setField("macroExpertise.companionforca");
-    obj.dataLink149:setName("dataLink149");
-
     obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink150:setParent(obj.flowPart235);
-    obj.dataLink150:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink150:setField("macroExpertise.companionforca");
     obj.dataLink150:setName("dataLink150");
+
+    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink151:setParent(obj.flowPart235);
+    obj.dataLink151:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink151:setName("dataLink151");
 
     obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout88:setParent(obj.flowPart235);
@@ -12035,10 +12040,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button64:setMargins({left=2});
     obj.button64:setName("button64");
 
-    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink151:setParent(obj.flowLayout34);
-    obj.dataLink151:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'resistencias.companionforca', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink151:setName("dataLink151");
+    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink152:setParent(obj.flowLayout34);
+    obj.dataLink152:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'resistencias.companionforca', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink152:setName("dataLink152");
 
     obj.flowPart236 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart236:setParent(obj.flowLayout34);
@@ -12092,15 +12097,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink152:setParent(obj.flowPart236);
-    obj.dataLink152:setField("macroExpertise.companionatletismo");
-    obj.dataLink152:setName("dataLink152");
-
     obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink153:setParent(obj.flowPart236);
-    obj.dataLink153:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink153:setField("macroExpertise.companionatletismo");
     obj.dataLink153:setName("dataLink153");
+
+    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink154:setParent(obj.flowPart236);
+    obj.dataLink154:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink154:setName("dataLink154");
 
     obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout89:setParent(obj.flowPart236);
@@ -12134,15 +12139,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button65:setMargins({left=2});
     obj.button65:setName("button65");
 
-    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink154:setParent(obj.flowLayout34);
-    obj.dataLink154:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'pericias.companionatletismo', 'macroExpertise.companionatletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink154:setName("dataLink154");
-
     obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink155:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink155:setField("atributos.companiondestreza");
+    obj.dataLink155:setParent(obj.flowLayout34);
+    obj.dataLink155:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'pericias.companionatletismo', 'macroExpertise.companionatletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink155:setName("dataLink155");
+
+    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink156:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink156:setField("atributos.companiondestreza");
+    obj.dataLink156:setName("dataLink156");
 
     obj.flowPart237 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart237:setParent(obj.fraLayAtributosCompanion);
@@ -12265,15 +12270,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink156:setParent(obj.flowPart238);
-    obj.dataLink156:setField("macroExpertise.companiondestreza");
-    obj.dataLink156:setName("dataLink156");
-
     obj.dataLink157 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink157:setParent(obj.flowPart238);
-    obj.dataLink157:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink157:setField("macroExpertise.companiondestreza");
     obj.dataLink157:setName("dataLink157");
+
+    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink158:setParent(obj.flowPart238);
+    obj.dataLink158:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink158:setName("dataLink158");
 
     obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout92:setParent(obj.flowPart238);
@@ -12307,10 +12312,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button67:setMargins({left=2});
     obj.button67:setName("button67");
 
-    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink158:setParent(obj.flowLayout35);
-    obj.dataLink158:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'resistencias.companiondestreza', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink158:setName("dataLink158");
+    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink159:setParent(obj.flowLayout35);
+    obj.dataLink159:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'resistencias.companiondestreza', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink159:setName("dataLink159");
 
     obj.flowPart239 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart239:setParent(obj.flowLayout35);
@@ -12364,15 +12369,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink159:setParent(obj.flowPart239);
-    obj.dataLink159:setField("macroExpertise.companionacrobacia");
-    obj.dataLink159:setName("dataLink159");
-
     obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink160:setParent(obj.flowPart239);
-    obj.dataLink160:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink160:setField("macroExpertise.companionacrobacia");
     obj.dataLink160:setName("dataLink160");
+
+    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink161:setParent(obj.flowPart239);
+    obj.dataLink161:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink161:setName("dataLink161");
 
     obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout93:setParent(obj.flowPart239);
@@ -12406,10 +12411,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button68:setMargins({left=2});
     obj.button68:setName("button68");
 
-    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink161:setParent(obj.flowLayout35);
-    obj.dataLink161:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionacrobacia', 'macroExpertise.companionacrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink161:setName("dataLink161");
+    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink162:setParent(obj.flowLayout35);
+    obj.dataLink162:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionacrobacia', 'macroExpertise.companionacrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink162:setName("dataLink162");
 
     obj.flowPart240 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart240:setParent(obj.flowLayout35);
@@ -12463,15 +12468,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink162:setParent(obj.flowPart240);
-    obj.dataLink162:setField("macroExpertise.companionfurtividade");
-    obj.dataLink162:setName("dataLink162");
-
     obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink163:setParent(obj.flowPart240);
-    obj.dataLink163:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink163:setField("macroExpertise.companionfurtividade");
     obj.dataLink163:setName("dataLink163");
+
+    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink164:setParent(obj.flowPart240);
+    obj.dataLink164:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink164:setName("dataLink164");
 
     obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout94:setParent(obj.flowPart240);
@@ -12505,10 +12510,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button69:setMargins({left=2});
     obj.button69:setName("button69");
 
-    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink164:setParent(obj.flowLayout35);
-    obj.dataLink164:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionfurtividade', 'macroExpertise.companionfurtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink164:setName("dataLink164");
+    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink165:setParent(obj.flowLayout35);
+    obj.dataLink165:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionfurtividade', 'macroExpertise.companionfurtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink165:setName("dataLink165");
 
     obj.flowPart241 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart241:setParent(obj.flowLayout35);
@@ -12562,15 +12567,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink165:setParent(obj.flowPart241);
-    obj.dataLink165:setField("macroExpertise.companionprestidigitacao");
-    obj.dataLink165:setName("dataLink165");
-
     obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink166:setParent(obj.flowPart241);
-    obj.dataLink166:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink166:setField("macroExpertise.companionprestidigitacao");
     obj.dataLink166:setName("dataLink166");
+
+    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink167:setParent(obj.flowPart241);
+    obj.dataLink167:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink167:setName("dataLink167");
 
     obj.layout95 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout95:setParent(obj.flowPart241);
@@ -12604,15 +12609,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button70:setMargins({left=2});
     obj.button70:setName("button70");
 
-    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink167:setParent(obj.flowLayout35);
-    obj.dataLink167:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionprestidigitacao', 'macroExpertise.companionprestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink167:setName("dataLink167");
-
     obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink168:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink168:setField("atributos.companionconstituicao");
+    obj.dataLink168:setParent(obj.flowLayout35);
+    obj.dataLink168:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionprestidigitacao', 'macroExpertise.companionprestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink168:setName("dataLink168");
+
+    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink169:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink169:setField("atributos.companionconstituicao");
+    obj.dataLink169:setName("dataLink169");
 
     obj.flowPart242 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart242:setParent(obj.fraLayAtributosCompanion);
@@ -12735,15 +12740,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink169:setParent(obj.flowPart243);
-    obj.dataLink169:setField("macroExpertise.companionconstituicao");
-    obj.dataLink169:setName("dataLink169");
-
     obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink170:setParent(obj.flowPart243);
-    obj.dataLink170:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink170:setField("macroExpertise.companionconstituicao");
     obj.dataLink170:setName("dataLink170");
+
+    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink171:setParent(obj.flowPart243);
+    obj.dataLink171:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink171:setName("dataLink171");
 
     obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout98:setParent(obj.flowPart243);
@@ -12777,10 +12782,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button72:setMargins({left=2});
     obj.button72:setName("button72");
 
-    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink171:setParent(obj.flowLayout36);
-    obj.dataLink171:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'resistencias.companionconstituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink171:setName("dataLink171");
+    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink172:setParent(obj.flowLayout36);
+    obj.dataLink172:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'resistencias.companionconstituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink172:setName("dataLink172");
 
     obj.flowPart244 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart244:setParent(obj.flowLayout36);
@@ -12834,15 +12839,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink172:setParent(obj.flowPart244);
-    obj.dataLink172:setField("macroExpertise.companionconcentracao");
-    obj.dataLink172:setName("dataLink172");
-
     obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink173:setParent(obj.flowPart244);
-    obj.dataLink173:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink173:setField("macroExpertise.companionconcentracao");
     obj.dataLink173:setName("dataLink173");
+
+    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink174:setParent(obj.flowPart244);
+    obj.dataLink174:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink174:setName("dataLink174");
 
     obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout99:setParent(obj.flowPart244);
@@ -12876,10 +12881,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button73:setMargins({left=2});
     obj.button73:setName("button73");
 
-    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink174:setParent(obj.flowLayout36);
-    obj.dataLink174:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companionconcentracao', 'macroExpertise.companionconcentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink174:setName("dataLink174");
+    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink175:setParent(obj.flowLayout36);
+    obj.dataLink175:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companionconcentracao', 'macroExpertise.companionconcentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink175:setName("dataLink175");
 
     obj.flowPart245 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart245:setParent(obj.flowLayout36);
@@ -12933,15 +12938,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink175:setParent(obj.flowPart245);
-    obj.dataLink175:setField("macroExpertise.companiontolerancia");
-    obj.dataLink175:setName("dataLink175");
-
     obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink176:setParent(obj.flowPart245);
-    obj.dataLink176:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink176:setField("macroExpertise.companiontolerancia");
     obj.dataLink176:setName("dataLink176");
+
+    obj.dataLink177 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink177:setParent(obj.flowPart245);
+    obj.dataLink177:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink177:setName("dataLink177");
 
     obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout100:setParent(obj.flowPart245);
@@ -12975,15 +12980,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button74:setMargins({left=2});
     obj.button74:setName("button74");
 
-    obj.dataLink177 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink177:setParent(obj.flowLayout36);
-    obj.dataLink177:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companiontolerancia', 'macroExpertise.companiontolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink177:setName("dataLink177");
-
     obj.dataLink178 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink178:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink178:setField("atributos.companioninteligencia");
+    obj.dataLink178:setParent(obj.flowLayout36);
+    obj.dataLink178:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companiontolerancia', 'macroExpertise.companiontolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink178:setName("dataLink178");
+
+    obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink179:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink179:setField("atributos.companioninteligencia");
+    obj.dataLink179:setName("dataLink179");
 
     obj.flowPart246 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart246:setParent(obj.fraLayAtributosCompanion);
@@ -13106,15 +13111,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink179:setParent(obj.flowPart247);
-    obj.dataLink179:setField("macroExpertise.companioninteligencia");
-    obj.dataLink179:setName("dataLink179");
-
     obj.dataLink180 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink180:setParent(obj.flowPart247);
-    obj.dataLink180:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink180:setField("macroExpertise.companioninteligencia");
     obj.dataLink180:setName("dataLink180");
+
+    obj.dataLink181 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink181:setParent(obj.flowPart247);
+    obj.dataLink181:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink181:setName("dataLink181");
 
     obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout103:setParent(obj.flowPart247);
@@ -13148,10 +13153,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button76:setMargins({left=2});
     obj.button76:setName("button76");
 
-    obj.dataLink181 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink181:setParent(obj.flowLayout37);
-    obj.dataLink181:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'resistencias.companioninteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink181:setName("dataLink181");
+    obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink182:setParent(obj.flowLayout37);
+    obj.dataLink182:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'resistencias.companioninteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink182:setName("dataLink182");
 
     obj.flowPart248 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart248:setParent(obj.flowLayout37);
@@ -13205,15 +13210,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink182:setParent(obj.flowPart248);
-    obj.dataLink182:setField("macroExpertise.companionarcanismo");
-    obj.dataLink182:setName("dataLink182");
-
     obj.dataLink183 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink183:setParent(obj.flowPart248);
-    obj.dataLink183:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink183:setField("macroExpertise.companionarcanismo");
     obj.dataLink183:setName("dataLink183");
+
+    obj.dataLink184 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink184:setParent(obj.flowPart248);
+    obj.dataLink184:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink184:setName("dataLink184");
 
     obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout104:setParent(obj.flowPart248);
@@ -13247,10 +13252,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button77:setMargins({left=2});
     obj.button77:setName("button77");
 
-    obj.dataLink184 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink184:setParent(obj.flowLayout37);
-    obj.dataLink184:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionarcanismo', 'macroExpertise.companionarcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink184:setName("dataLink184");
+    obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink185:setParent(obj.flowLayout37);
+    obj.dataLink185:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionarcanismo', 'macroExpertise.companionarcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink185:setName("dataLink185");
 
     obj.flowPart249 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart249:setParent(obj.flowLayout37);
@@ -13304,15 +13309,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink185:setParent(obj.flowPart249);
-    obj.dataLink185:setField("macroExpertise.companionhistoria");
-    obj.dataLink185:setName("dataLink185");
-
     obj.dataLink186 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink186:setParent(obj.flowPart249);
-    obj.dataLink186:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink186:setField("macroExpertise.companionhistoria");
     obj.dataLink186:setName("dataLink186");
+
+    obj.dataLink187 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink187:setParent(obj.flowPart249);
+    obj.dataLink187:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink187:setName("dataLink187");
 
     obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout105:setParent(obj.flowPart249);
@@ -13346,10 +13351,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button78:setMargins({left=2});
     obj.button78:setName("button78");
 
-    obj.dataLink187 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink187:setParent(obj.flowLayout37);
-    obj.dataLink187:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionhistoria', 'macroExpertise.companionhistoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink187:setName("dataLink187");
+    obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink188:setParent(obj.flowLayout37);
+    obj.dataLink188:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionhistoria', 'macroExpertise.companionhistoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink188:setName("dataLink188");
 
     obj.flowPart250 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart250:setParent(obj.flowLayout37);
@@ -13403,15 +13408,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink188:setParent(obj.flowPart250);
-    obj.dataLink188:setField("macroExpertise.companioninvestigacao");
-    obj.dataLink188:setName("dataLink188");
-
     obj.dataLink189 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink189:setParent(obj.flowPart250);
-    obj.dataLink189:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink189:setField("macroExpertise.companioninvestigacao");
     obj.dataLink189:setName("dataLink189");
+
+    obj.dataLink190 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink190:setParent(obj.flowPart250);
+    obj.dataLink190:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink190:setName("dataLink190");
 
     obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout106:setParent(obj.flowPart250);
@@ -13445,10 +13450,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button79:setMargins({left=2});
     obj.button79:setName("button79");
 
-    obj.dataLink190 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink190:setParent(obj.flowLayout37);
-    obj.dataLink190:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companioninvestigacao', 'macroExpertise.companioninvestigacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink190:setName("dataLink190");
+    obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink191:setParent(obj.flowLayout37);
+    obj.dataLink191:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companioninvestigacao', 'macroExpertise.companioninvestigacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink191:setName("dataLink191");
 
     obj.flowPart251 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart251:setParent(obj.flowLayout37);
@@ -13502,15 +13507,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink191:setParent(obj.flowPart251);
-    obj.dataLink191:setField("macroExpertise.companionnatureza");
-    obj.dataLink191:setName("dataLink191");
-
     obj.dataLink192 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink192:setParent(obj.flowPart251);
-    obj.dataLink192:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink192:setField("macroExpertise.companionnatureza");
     obj.dataLink192:setName("dataLink192");
+
+    obj.dataLink193 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink193:setParent(obj.flowPart251);
+    obj.dataLink193:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink193:setName("dataLink193");
 
     obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout107:setParent(obj.flowPart251);
@@ -13544,10 +13549,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button80:setMargins({left=2});
     obj.button80:setName("button80");
 
-    obj.dataLink193 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink193:setParent(obj.flowLayout37);
-    obj.dataLink193:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionnatureza', 'macroExpertise.companionnatureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink193:setName("dataLink193");
+    obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink194:setParent(obj.flowLayout37);
+    obj.dataLink194:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionnatureza', 'macroExpertise.companionnatureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink194:setName("dataLink194");
 
     obj.flowPart252 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart252:setParent(obj.flowLayout37);
@@ -13601,15 +13606,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink194:setParent(obj.flowPart252);
-    obj.dataLink194:setField("macroExpertise.companionreligiao");
-    obj.dataLink194:setName("dataLink194");
-
     obj.dataLink195 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink195:setParent(obj.flowPart252);
-    obj.dataLink195:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink195:setField("macroExpertise.companionreligiao");
     obj.dataLink195:setName("dataLink195");
+
+    obj.dataLink196 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink196:setParent(obj.flowPart252);
+    obj.dataLink196:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink196:setName("dataLink196");
 
     obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout108:setParent(obj.flowPart252);
@@ -13643,15 +13648,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button81:setMargins({left=2});
     obj.button81:setName("button81");
 
-    obj.dataLink196 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink196:setParent(obj.flowLayout37);
-    obj.dataLink196:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionreligiao', 'macroExpertise.companionreligiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink196:setName("dataLink196");
-
     obj.dataLink197 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink197:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink197:setField("atributos.companionsabedoria");
+    obj.dataLink197:setParent(obj.flowLayout37);
+    obj.dataLink197:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionreligiao', 'macroExpertise.companionreligiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink197:setName("dataLink197");
+
+    obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink198:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink198:setField("atributos.companionsabedoria");
+    obj.dataLink198:setName("dataLink198");
 
     obj.flowPart253 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart253:setParent(obj.fraLayAtributosCompanion);
@@ -13774,15 +13779,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink198:setParent(obj.flowPart254);
-    obj.dataLink198:setField("macroExpertise.companionsabedoria");
-    obj.dataLink198:setName("dataLink198");
-
     obj.dataLink199 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink199:setParent(obj.flowPart254);
-    obj.dataLink199:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink199:setField("macroExpertise.companionsabedoria");
     obj.dataLink199:setName("dataLink199");
+
+    obj.dataLink200 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink200:setParent(obj.flowPart254);
+    obj.dataLink200:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink200:setName("dataLink200");
 
     obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout111:setParent(obj.flowPart254);
@@ -13816,10 +13821,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button83:setMargins({left=2});
     obj.button83:setName("button83");
 
-    obj.dataLink200 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink200:setParent(obj.flowLayout38);
-    obj.dataLink200:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'resistencias.companionsabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink200:setName("dataLink200");
+    obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink201:setParent(obj.flowLayout38);
+    obj.dataLink201:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'resistencias.companionsabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink201:setName("dataLink201");
 
     obj.flowPart255 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart255:setParent(obj.flowLayout38);
@@ -13873,15 +13878,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink201:setParent(obj.flowPart255);
-    obj.dataLink201:setField("macroExpertise.companionadestrarAnimais");
-    obj.dataLink201:setName("dataLink201");
-
     obj.dataLink202 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink202:setParent(obj.flowPart255);
-    obj.dataLink202:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink202:setField("macroExpertise.companionadestrarAnimais");
     obj.dataLink202:setName("dataLink202");
+
+    obj.dataLink203 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink203:setParent(obj.flowPart255);
+    obj.dataLink203:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink203:setName("dataLink203");
 
     obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout112:setParent(obj.flowPart255);
@@ -13915,10 +13920,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button84:setMargins({left=2});
     obj.button84:setName("button84");
 
-    obj.dataLink203 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink203:setParent(obj.flowLayout38);
-    obj.dataLink203:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionadestrarAnimais', 'macroExpertise.companionadestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink203:setName("dataLink203");
+    obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink204:setParent(obj.flowLayout38);
+    obj.dataLink204:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionadestrarAnimais', 'macroExpertise.companionadestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink204:setName("dataLink204");
 
     obj.flowPart256 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart256:setParent(obj.flowLayout38);
@@ -13972,15 +13977,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink204:setParent(obj.flowPart256);
-    obj.dataLink204:setField("macroExpertise.companionintuicao");
-    obj.dataLink204:setName("dataLink204");
-
     obj.dataLink205 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink205:setParent(obj.flowPart256);
-    obj.dataLink205:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink205:setField("macroExpertise.companionintuicao");
     obj.dataLink205:setName("dataLink205");
+
+    obj.dataLink206 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink206:setParent(obj.flowPart256);
+    obj.dataLink206:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink206:setName("dataLink206");
 
     obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout113:setParent(obj.flowPart256);
@@ -14014,10 +14019,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button85:setMargins({left=2});
     obj.button85:setName("button85");
 
-    obj.dataLink206 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink206:setParent(obj.flowLayout38);
-    obj.dataLink206:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionintuicao', 'macroExpertise.companionintuicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink206:setName("dataLink206");
+    obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink207:setParent(obj.flowLayout38);
+    obj.dataLink207:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionintuicao', 'macroExpertise.companionintuicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink207:setName("dataLink207");
 
     obj.flowPart257 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart257:setParent(obj.flowLayout38);
@@ -14071,15 +14076,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink207:setParent(obj.flowPart257);
-    obj.dataLink207:setField("macroExpertise.companionmedicina");
-    obj.dataLink207:setName("dataLink207");
-
     obj.dataLink208 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink208:setParent(obj.flowPart257);
-    obj.dataLink208:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink208:setField("macroExpertise.companionmedicina");
     obj.dataLink208:setName("dataLink208");
+
+    obj.dataLink209 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink209:setParent(obj.flowPart257);
+    obj.dataLink209:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink209:setName("dataLink209");
 
     obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout114:setParent(obj.flowPart257);
@@ -14113,10 +14118,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button86:setMargins({left=2});
     obj.button86:setName("button86");
 
-    obj.dataLink209 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink209:setParent(obj.flowLayout38);
-    obj.dataLink209:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionmedicina', 'macroExpertise.companionmedicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink209:setName("dataLink209");
+    obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink210:setParent(obj.flowLayout38);
+    obj.dataLink210:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionmedicina', 'macroExpertise.companionmedicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink210:setName("dataLink210");
 
     obj.flowPart258 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart258:setParent(obj.flowLayout38);
@@ -14170,15 +14175,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink210:setParent(obj.flowPart258);
-    obj.dataLink210:setField("macroExpertise.companionpercepcao");
-    obj.dataLink210:setName("dataLink210");
-
     obj.dataLink211 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink211:setParent(obj.flowPart258);
-    obj.dataLink211:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink211:setField("macroExpertise.companionpercepcao");
     obj.dataLink211:setName("dataLink211");
+
+    obj.dataLink212 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink212:setParent(obj.flowPart258);
+    obj.dataLink212:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink212:setName("dataLink212");
 
     obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout115:setParent(obj.flowPart258);
@@ -14212,10 +14217,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button87:setMargins({left=2});
     obj.button87:setName("button87");
 
-    obj.dataLink212 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink212:setParent(obj.flowLayout38);
-    obj.dataLink212:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionpercepcao', 'macroExpertise.companionpercepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink212:setName("dataLink212");
+    obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink213:setParent(obj.flowLayout38);
+    obj.dataLink213:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionpercepcao', 'macroExpertise.companionpercepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink213:setName("dataLink213");
 
     obj.flowPart259 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart259:setParent(obj.flowLayout38);
@@ -14269,15 +14274,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink213:setParent(obj.flowPart259);
-    obj.dataLink213:setField("macroExpertise.companionsobrevivencia");
-    obj.dataLink213:setName("dataLink213");
-
     obj.dataLink214 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink214:setParent(obj.flowPart259);
-    obj.dataLink214:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink214:setField("macroExpertise.companionsobrevivencia");
     obj.dataLink214:setName("dataLink214");
+
+    obj.dataLink215 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink215:setParent(obj.flowPart259);
+    obj.dataLink215:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink215:setName("dataLink215");
 
     obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout116:setParent(obj.flowPart259);
@@ -14311,15 +14316,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button88:setMargins({left=2});
     obj.button88:setName("button88");
 
-    obj.dataLink215 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink215:setParent(obj.flowLayout38);
-    obj.dataLink215:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionsobrevivencia', 'macroExpertise.companionsobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink215:setName("dataLink215");
-
     obj.dataLink216 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink216:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink216:setField("atributos.companioncarisma");
+    obj.dataLink216:setParent(obj.flowLayout38);
+    obj.dataLink216:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionsobrevivencia', 'macroExpertise.companionsobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink216:setName("dataLink216");
+
+    obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink217:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink217:setField("atributos.companioncarisma");
+    obj.dataLink217:setName("dataLink217");
 
     obj.flowPart260 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart260:setParent(obj.fraLayAtributosCompanion);
@@ -14442,15 +14447,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink217:setParent(obj.flowPart261);
-    obj.dataLink217:setField("macroExpertise.companioncarisma");
-    obj.dataLink217:setName("dataLink217");
-
     obj.dataLink218 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink218:setParent(obj.flowPart261);
-    obj.dataLink218:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink218:setField("macroExpertise.companioncarisma");
     obj.dataLink218:setName("dataLink218");
+
+    obj.dataLink219 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink219:setParent(obj.flowPart261);
+    obj.dataLink219:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink219:setName("dataLink219");
 
     obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout119:setParent(obj.flowPart261);
@@ -14484,10 +14489,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button90:setMargins({left=2});
     obj.button90:setName("button90");
 
-    obj.dataLink219 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink219:setParent(obj.flowLayout39);
-    obj.dataLink219:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'resistencias.companioncarisma', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink219:setName("dataLink219");
+    obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink220:setParent(obj.flowLayout39);
+    obj.dataLink220:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'resistencias.companioncarisma', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink220:setName("dataLink220");
 
     obj.flowPart262 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart262:setParent(obj.flowLayout39);
@@ -14541,15 +14546,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink220:setParent(obj.flowPart262);
-    obj.dataLink220:setField("macroExpertise.companionatuacao");
-    obj.dataLink220:setName("dataLink220");
-
     obj.dataLink221 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink221:setParent(obj.flowPart262);
-    obj.dataLink221:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink221:setField("macroExpertise.companionatuacao");
     obj.dataLink221:setName("dataLink221");
+
+    obj.dataLink222 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink222:setParent(obj.flowPart262);
+    obj.dataLink222:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink222:setName("dataLink222");
 
     obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout120:setParent(obj.flowPart262);
@@ -14583,10 +14588,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button91:setMargins({left=2});
     obj.button91:setName("button91");
 
-    obj.dataLink222 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink222:setParent(obj.flowLayout39);
-    obj.dataLink222:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionatuacao', 'macroExpertise.companionatuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink222:setName("dataLink222");
+    obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink223:setParent(obj.flowLayout39);
+    obj.dataLink223:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionatuacao', 'macroExpertise.companionatuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink223:setName("dataLink223");
 
     obj.flowPart263 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart263:setParent(obj.flowLayout39);
@@ -14640,15 +14645,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink223:setParent(obj.flowPart263);
-    obj.dataLink223:setField("macroExpertise.companionenganacao");
-    obj.dataLink223:setName("dataLink223");
-
     obj.dataLink224 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink224:setParent(obj.flowPart263);
-    obj.dataLink224:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink224:setField("macroExpertise.companionenganacao");
     obj.dataLink224:setName("dataLink224");
+
+    obj.dataLink225 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink225:setParent(obj.flowPart263);
+    obj.dataLink225:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink225:setName("dataLink225");
 
     obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout121:setParent(obj.flowPart263);
@@ -14682,10 +14687,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button92:setMargins({left=2});
     obj.button92:setName("button92");
 
-    obj.dataLink225 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink225:setParent(obj.flowLayout39);
-    obj.dataLink225:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionenganacao', 'macroExpertise.companionenganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink225:setName("dataLink225");
+    obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink226:setParent(obj.flowLayout39);
+    obj.dataLink226:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionenganacao', 'macroExpertise.companionenganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink226:setName("dataLink226");
 
     obj.flowPart264 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart264:setParent(obj.flowLayout39);
@@ -14739,15 +14744,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink226:setParent(obj.flowPart264);
-    obj.dataLink226:setField("macroExpertise.companionintimidacao");
-    obj.dataLink226:setName("dataLink226");
-
     obj.dataLink227 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink227:setParent(obj.flowPart264);
-    obj.dataLink227:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink227:setField("macroExpertise.companionintimidacao");
     obj.dataLink227:setName("dataLink227");
+
+    obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink228:setParent(obj.flowPart264);
+    obj.dataLink228:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink228:setName("dataLink228");
 
     obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout122:setParent(obj.flowPart264);
@@ -14781,10 +14786,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button93:setMargins({left=2});
     obj.button93:setName("button93");
 
-    obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink228:setParent(obj.flowLayout39);
-    obj.dataLink228:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionintimidacao', 'macroExpertise.companionintimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink228:setName("dataLink228");
+    obj.dataLink229 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink229:setParent(obj.flowLayout39);
+    obj.dataLink229:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionintimidacao', 'macroExpertise.companionintimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink229:setName("dataLink229");
 
     obj.flowPart265 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart265:setParent(obj.flowLayout39);
@@ -14838,15 +14843,15 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink229 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink229:setParent(obj.flowPart265);
-    obj.dataLink229:setField("macroExpertise.companionpersuasao");
-    obj.dataLink229:setName("dataLink229");
-
     obj.dataLink230 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink230:setParent(obj.flowPart265);
-    obj.dataLink230:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink230:setField("macroExpertise.companionpersuasao");
     obj.dataLink230:setName("dataLink230");
+
+    obj.dataLink231 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink231:setParent(obj.flowPart265);
+    obj.dataLink231:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink231:setName("dataLink231");
 
     obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout123:setParent(obj.flowPart265);
@@ -14880,10 +14885,10 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button94:setMargins({left=2});
     obj.button94:setName("button94");
 
-    obj.dataLink231 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink231:setParent(obj.flowLayout39);
-    obj.dataLink231:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionpersuasao', 'macroExpertise.companionpersuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink231:setName("dataLink231");
+    obj.dataLink232 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink232:setParent(obj.flowLayout39);
+    obj.dataLink232:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionpersuasao', 'macroExpertise.companionpersuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink232:setName("dataLink232");
 
     obj.flowLayout40 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout40:setParent(obj.flowLayout33);
@@ -15103,11 +15108,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.colorComboBox2:setUseAlpha(false);
     obj.colorComboBox2:setName("colorComboBox2");
 
-    obj.dataLink232 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink232:setParent(obj.flowLayout42);
-    obj.dataLink232:setField("barColor2");
-    obj.dataLink232:setDefaultValue("Red");
-    obj.dataLink232:setName("dataLink232");
+    obj.dataLink233 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink233:setParent(obj.flowLayout42);
+    obj.dataLink233:setField("barColor2");
+    obj.dataLink233:setDefaultValue("Red");
+    obj.dataLink233:setName("dataLink233");
 
     obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout125:setParent(obj.layout124);
@@ -15188,15 +15193,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label160:setName("label160");
     obj.label160:setFontColor("white");
 
-    obj.dataLink233 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink233:setParent(obj.layout125);
-    obj.dataLink233:setFields({'PV2', 'PVmax2'});
-    obj.dataLink233:setName("dataLink233");
-
     obj.dataLink234 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink234:setParent(obj.layout124);
-    obj.dataLink234:setField("descansoLongo");
+    obj.dataLink234:setParent(obj.layout125);
+    obj.dataLink234:setFields({'PV2', 'PVmax2'});
     obj.dataLink234:setName("dataLink234");
+
+    obj.dataLink235 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink235:setParent(obj.layout124);
+    obj.dataLink235:setField("descansoLongo");
+    obj.dataLink235:setName("dataLink235");
 
     obj.frame9 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame9:setParent(obj.flowPart270);
@@ -15787,11 +15792,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox25:setHorzTextAlign("center");
     obj.comboBox25:setName("comboBox25");
 
-    obj.dataLink235 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink235:setParent(obj.layout133);
-    obj.dataLink235:setField("theme");
-    obj.dataLink235:setDefaultValue("Escuro");
-    obj.dataLink235:setName("dataLink235");
+    obj.dataLink236 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink236:setParent(obj.layout133);
+    obj.dataLink236:setField("theme");
+    obj.dataLink236:setDefaultValue("Escuro");
+    obj.dataLink236:setName("dataLink236");
 
     obj.label177 = GUI.fromHandle(_obj_newObject("label"));
     obj.label177:setParent(obj.layout133);
@@ -15825,11 +15830,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox26:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
     obj.comboBox26:setName("comboBox26");
 
-    obj.dataLink236 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink236:setParent(obj.layout133);
-    obj.dataLink236:setField("colorBackground");
-    obj.dataLink236:setDefaultValue("#505050");
-    obj.dataLink236:setName("dataLink236");
+    obj.dataLink237 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink237:setParent(obj.layout133);
+    obj.dataLink237:setField("colorBackground");
+    obj.dataLink237:setDefaultValue("#505050");
+    obj.dataLink237:setName("dataLink237");
 
     obj.label179 = GUI.fromHandle(_obj_newObject("label"));
     obj.label179:setParent(obj.layout133);
@@ -15852,11 +15857,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox27:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
     obj.comboBox27:setName("comboBox27");
 
-    obj.dataLink237 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink237:setParent(obj.layout133);
-    obj.dataLink237:setField("colorStroke");
-    obj.dataLink237:setDefaultValue("#FFFFFF");
-    obj.dataLink237:setName("dataLink237");
+    obj.dataLink238 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink238:setParent(obj.layout133);
+    obj.dataLink238:setField("colorStroke");
+    obj.dataLink238:setDefaultValue("#FFFFFF");
+    obj.dataLink238:setName("dataLink238");
 
     obj.label180 = GUI.fromHandle(_obj_newObject("label"));
     obj.label180:setParent(obj.layout133);
@@ -15879,11 +15884,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox28:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
     obj.comboBox28:setName("comboBox28");
 
-    obj.dataLink238 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink238:setParent(obj.layout133);
-    obj.dataLink238:setField("colorFont");
-    obj.dataLink238:setDefaultValue("#FFFFFF");
-    obj.dataLink238:setName("dataLink238");
+    obj.dataLink239 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink239:setParent(obj.layout133);
+    obj.dataLink239:setField("colorFont");
+    obj.dataLink239:setDefaultValue("#FFFFFF");
+    obj.dataLink239:setName("dataLink239");
 
     obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout134:setParent(obj.scrollBox10);
@@ -15983,6 +15988,13 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj._e_event1 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
+            local jogador = Firecast.getPersonagemDe(sheet).dono;
+            						jogador:requestSetEditableLine(1, sheet.classeENivel)
+            						jogador:requestSetEditableLine(2, "CA"..sheet.CA.." | INI"..sheet.iniciativa.." | PP"..sheet.percepicaoPassiva)
+        end, obj);
+
+    obj._e_event2 = obj.dataLink3:addEventListener("onChange",
+        function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
             
@@ -16011,27 +16023,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event2 = obj.button1:addEventListener("onKeyDown",
+    obj._e_event3 = obj.button1:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event3 = obj.button1:addEventListener("onKeyUp",
+    obj._e_event4 = obj.button1:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event4 = obj.button1:addEventListener("onClick",
+    obj._e_event5 = obj.button1:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'forca'}, nil, false);
         end, obj);
 
-    obj._e_event5 = obj.button1:addEventListener("onMenu",
+    obj._e_event6 = obj.button1:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'forca'}, nil, true);
         end, obj);
 
-    obj._e_event6 = obj.cbProfforca:addEventListener("onMenu",
+    obj._e_event7 = obj.cbProfforca:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["forca"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'forca', true);
@@ -16039,42 +16051,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event7 = obj.cbProfforca:addEventListener("onClick",
+    obj._e_event8 = obj.cbProfforca:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'forca', false);
         end, obj);
 
-    obj._e_event8 = obj.dataLink3:addEventListener("onChange",
+    obj._e_event9 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("forca");
         end, obj);
 
-    obj._e_event9 = obj.dataLink4:addEventListener("onChange",
+    obj._e_event10 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['forca'] then updateCbVisibility('forca'); end;
         end, obj);
 
-    obj._e_event10 = obj.button2:addEventListener("onKeyDown",
+    obj._e_event11 = obj.button2:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event11 = obj.button2:addEventListener("onKeyUp",
+    obj._e_event12 = obj.button2:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event12 = obj.button2:addEventListener("onClick",
+    obj._e_event13 = obj.button2:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.forca'}, nil, false);
         end, obj);
 
-    obj._e_event13 = obj.button2:addEventListener("onMenu",
+    obj._e_event14 = obj.button2:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.forca'}, nil, true);
         end, obj);
 
-    obj._e_event14 = obj.dataLink5:addEventListener("onChange",
+    obj._e_event15 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'forca');
             
@@ -16090,7 +16102,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfforca:setHint(hint);
         end, obj);
 
-    obj._e_event15 = obj.cbProfatletismo:addEventListener("onMenu",
+    obj._e_event16 = obj.cbProfatletismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["atletismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'atletismo', true);
@@ -16098,42 +16110,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event16 = obj.cbProfatletismo:addEventListener("onClick",
+    obj._e_event17 = obj.cbProfatletismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'atletismo', false);
         end, obj);
 
-    obj._e_event17 = obj.dataLink6:addEventListener("onChange",
+    obj._e_event18 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("atletismo");
         end, obj);
 
-    obj._e_event18 = obj.dataLink7:addEventListener("onChange",
+    obj._e_event19 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['atletismo'] then updateCbVisibility('atletismo'); end;
         end, obj);
 
-    obj._e_event19 = obj.button3:addEventListener("onKeyDown",
+    obj._e_event20 = obj.button3:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event20 = obj.button3:addEventListener("onKeyUp",
+    obj._e_event21 = obj.button3:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event21 = obj.button3:addEventListener("onClick",
+    obj._e_event22 = obj.button3:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.atletismo'}, nil, false);
         end, obj);
 
-    obj._e_event22 = obj.button3:addEventListener("onMenu",
+    obj._e_event23 = obj.button3:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.atletismo'}, nil, true);
         end, obj);
 
-    obj._e_event23 = obj.dataLink8:addEventListener("onChange",
+    obj._e_event24 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'forca', 'atletismo');
             
@@ -16149,7 +16161,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfatletismo:setHint(hint);
         end, obj);
 
-    obj._e_event24 = obj.cbProfpericiaforca:addEventListener("onMenu",
+    obj._e_event25 = obj.cbProfpericiaforca:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciaforca"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciaforca', true);
@@ -16157,42 +16169,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event25 = obj.cbProfpericiaforca:addEventListener("onClick",
+    obj._e_event26 = obj.cbProfpericiaforca:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciaforca', false);
         end, obj);
 
-    obj._e_event26 = obj.dataLink9:addEventListener("onChange",
+    obj._e_event27 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciaforca");
         end, obj);
 
-    obj._e_event27 = obj.dataLink10:addEventListener("onChange",
+    obj._e_event28 = obj.dataLink11:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciaforca'] then updateCbVisibility('periciaforca'); end;
         end, obj);
 
-    obj._e_event28 = obj.button4:addEventListener("onKeyDown",
+    obj._e_event29 = obj.button4:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event29 = obj.button4:addEventListener("onKeyUp",
+    obj._e_event30 = obj.button4:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event30 = obj.button4:addEventListener("onClick",
+    obj._e_event31 = obj.button4:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciaforca'}, nil, false);
         end, obj);
 
-    obj._e_event31 = obj.button4:addEventListener("onMenu",
+    obj._e_event32 = obj.button4:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciaforca'}, nil, true);
         end, obj);
 
-    obj._e_event32 = obj.dataLink11:addEventListener("onChange",
+    obj._e_event33 = obj.dataLink12:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'forca', 'periciaforca');
             
@@ -16208,7 +16220,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiaforca:setHint(hint);
         end, obj);
 
-    obj._e_event33 = obj.dataLink12:addEventListener("onChange",
+    obj._e_event34 = obj.dataLink13:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -16238,27 +16250,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event34 = obj.button5:addEventListener("onKeyDown",
+    obj._e_event35 = obj.button5:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event35 = obj.button5:addEventListener("onKeyUp",
+    obj._e_event36 = obj.button5:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event36 = obj.button5:addEventListener("onClick",
+    obj._e_event37 = obj.button5:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'destreza'}, nil, false);
         end, obj);
 
-    obj._e_event37 = obj.button5:addEventListener("onMenu",
+    obj._e_event38 = obj.button5:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'destreza'}, nil, true);
         end, obj);
 
-    obj._e_event38 = obj.cbProfdestreza:addEventListener("onMenu",
+    obj._e_event39 = obj.cbProfdestreza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["destreza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'destreza', true);
@@ -16266,42 +16278,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event39 = obj.cbProfdestreza:addEventListener("onClick",
+    obj._e_event40 = obj.cbProfdestreza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'destreza', false);
         end, obj);
 
-    obj._e_event40 = obj.dataLink13:addEventListener("onChange",
+    obj._e_event41 = obj.dataLink14:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("destreza");
         end, obj);
 
-    obj._e_event41 = obj.dataLink14:addEventListener("onChange",
+    obj._e_event42 = obj.dataLink15:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['destreza'] then updateCbVisibility('destreza'); end;
         end, obj);
 
-    obj._e_event42 = obj.button6:addEventListener("onKeyDown",
+    obj._e_event43 = obj.button6:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event43 = obj.button6:addEventListener("onKeyUp",
+    obj._e_event44 = obj.button6:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event44 = obj.button6:addEventListener("onClick",
+    obj._e_event45 = obj.button6:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.destreza'}, nil, false);
         end, obj);
 
-    obj._e_event45 = obj.button6:addEventListener("onMenu",
+    obj._e_event46 = obj.button6:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.destreza'}, nil, true);
         end, obj);
 
-    obj._e_event46 = obj.dataLink15:addEventListener("onChange",
+    obj._e_event47 = obj.dataLink16:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'destreza');
             
@@ -16317,7 +16329,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfdestreza:setHint(hint);
         end, obj);
 
-    obj._e_event47 = obj.cbProfacrobacia:addEventListener("onMenu",
+    obj._e_event48 = obj.cbProfacrobacia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["acrobacia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'acrobacia', true);
@@ -16325,42 +16337,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event48 = obj.cbProfacrobacia:addEventListener("onClick",
+    obj._e_event49 = obj.cbProfacrobacia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'acrobacia', false);
         end, obj);
 
-    obj._e_event49 = obj.dataLink16:addEventListener("onChange",
+    obj._e_event50 = obj.dataLink17:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("acrobacia");
         end, obj);
 
-    obj._e_event50 = obj.dataLink17:addEventListener("onChange",
+    obj._e_event51 = obj.dataLink18:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['acrobacia'] then updateCbVisibility('acrobacia'); end;
         end, obj);
 
-    obj._e_event51 = obj.button7:addEventListener("onKeyDown",
+    obj._e_event52 = obj.button7:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event52 = obj.button7:addEventListener("onKeyUp",
+    obj._e_event53 = obj.button7:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event53 = obj.button7:addEventListener("onClick",
+    obj._e_event54 = obj.button7:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.acrobacia'}, nil, false);
         end, obj);
 
-    obj._e_event54 = obj.button7:addEventListener("onMenu",
+    obj._e_event55 = obj.button7:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.acrobacia'}, nil, true);
         end, obj);
 
-    obj._e_event55 = obj.dataLink18:addEventListener("onChange",
+    obj._e_event56 = obj.dataLink19:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'destreza', 'acrobacia');
             
@@ -16376,7 +16388,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfacrobacia:setHint(hint);
         end, obj);
 
-    obj._e_event56 = obj.cbProffurtividade:addEventListener("onMenu",
+    obj._e_event57 = obj.cbProffurtividade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["furtividade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'furtividade', true);
@@ -16384,42 +16396,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event57 = obj.cbProffurtividade:addEventListener("onClick",
+    obj._e_event58 = obj.cbProffurtividade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'furtividade', false);
         end, obj);
 
-    obj._e_event58 = obj.dataLink19:addEventListener("onChange",
+    obj._e_event59 = obj.dataLink20:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("furtividade");
         end, obj);
 
-    obj._e_event59 = obj.dataLink20:addEventListener("onChange",
+    obj._e_event60 = obj.dataLink21:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['furtividade'] then updateCbVisibility('furtividade'); end;
         end, obj);
 
-    obj._e_event60 = obj.button8:addEventListener("onKeyDown",
+    obj._e_event61 = obj.button8:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event61 = obj.button8:addEventListener("onKeyUp",
+    obj._e_event62 = obj.button8:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event62 = obj.button8:addEventListener("onClick",
+    obj._e_event63 = obj.button8:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.furtividade'}, nil, false);
         end, obj);
 
-    obj._e_event63 = obj.button8:addEventListener("onMenu",
+    obj._e_event64 = obj.button8:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.furtividade'}, nil, true);
         end, obj);
 
-    obj._e_event64 = obj.dataLink21:addEventListener("onChange",
+    obj._e_event65 = obj.dataLink22:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'destreza', 'furtividade');
             
@@ -16435,7 +16447,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProffurtividade:setHint(hint);
         end, obj);
 
-    obj._e_event65 = obj.cbProfiniciativa:addEventListener("onMenu",
+    obj._e_event66 = obj.cbProfiniciativa:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["iniciativa"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'iniciativa', true);
@@ -16443,42 +16455,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event66 = obj.cbProfiniciativa:addEventListener("onClick",
+    obj._e_event67 = obj.cbProfiniciativa:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'iniciativa', false);
         end, obj);
 
-    obj._e_event67 = obj.dataLink22:addEventListener("onChange",
+    obj._e_event68 = obj.dataLink23:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("iniciativa");
         end, obj);
 
-    obj._e_event68 = obj.dataLink23:addEventListener("onChange",
+    obj._e_event69 = obj.dataLink24:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['iniciativa'] then updateCbVisibility('iniciativa'); end;
         end, obj);
 
-    obj._e_event69 = obj.button9:addEventListener("onKeyDown",
+    obj._e_event70 = obj.button9:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event70 = obj.button9:addEventListener("onKeyUp",
+    obj._e_event71 = obj.button9:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event71 = obj.button9:addEventListener("onClick",
+    obj._e_event72 = obj.button9:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.iniciativa'}, nil, false);
         end, obj);
 
-    obj._e_event72 = obj.button9:addEventListener("onMenu",
+    obj._e_event73 = obj.button9:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.iniciativa'}, nil, true);
         end, obj);
 
-    obj._e_event73 = obj.dataLink24:addEventListener("onChange",
+    obj._e_event74 = obj.dataLink25:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'destreza', 'iniciativa');
             
@@ -16494,7 +16506,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfiniciativa:setHint(hint);
         end, obj);
 
-    obj._e_event74 = obj.cbProfprestidigitacao:addEventListener("onMenu",
+    obj._e_event75 = obj.cbProfprestidigitacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["prestidigitacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'prestidigitacao', true);
@@ -16502,42 +16514,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event75 = obj.cbProfprestidigitacao:addEventListener("onClick",
+    obj._e_event76 = obj.cbProfprestidigitacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'prestidigitacao', false);
         end, obj);
 
-    obj._e_event76 = obj.dataLink25:addEventListener("onChange",
+    obj._e_event77 = obj.dataLink26:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("prestidigitacao");
         end, obj);
 
-    obj._e_event77 = obj.dataLink26:addEventListener("onChange",
+    obj._e_event78 = obj.dataLink27:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['prestidigitacao'] then updateCbVisibility('prestidigitacao'); end;
         end, obj);
 
-    obj._e_event78 = obj.button10:addEventListener("onKeyDown",
+    obj._e_event79 = obj.button10:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event79 = obj.button10:addEventListener("onKeyUp",
+    obj._e_event80 = obj.button10:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event80 = obj.button10:addEventListener("onClick",
+    obj._e_event81 = obj.button10:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.prestidigitacao'}, nil, false);
         end, obj);
 
-    obj._e_event81 = obj.button10:addEventListener("onMenu",
+    obj._e_event82 = obj.button10:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.prestidigitacao'}, nil, true);
         end, obj);
 
-    obj._e_event82 = obj.dataLink27:addEventListener("onChange",
+    obj._e_event83 = obj.dataLink28:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'destreza', 'prestidigitacao');
             
@@ -16553,7 +16565,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfprestidigitacao:setHint(hint);
         end, obj);
 
-    obj._e_event83 = obj.cbProfpericiadestreza:addEventListener("onMenu",
+    obj._e_event84 = obj.cbProfpericiadestreza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciadestreza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciadestreza', true);
@@ -16561,42 +16573,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event84 = obj.cbProfpericiadestreza:addEventListener("onClick",
+    obj._e_event85 = obj.cbProfpericiadestreza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciadestreza', false);
         end, obj);
 
-    obj._e_event85 = obj.dataLink28:addEventListener("onChange",
+    obj._e_event86 = obj.dataLink29:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciadestreza");
         end, obj);
 
-    obj._e_event86 = obj.dataLink29:addEventListener("onChange",
+    obj._e_event87 = obj.dataLink30:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciadestreza'] then updateCbVisibility('periciadestreza'); end;
         end, obj);
 
-    obj._e_event87 = obj.button11:addEventListener("onKeyDown",
+    obj._e_event88 = obj.button11:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event88 = obj.button11:addEventListener("onKeyUp",
+    obj._e_event89 = obj.button11:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event89 = obj.button11:addEventListener("onClick",
+    obj._e_event90 = obj.button11:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciadestreza'}, nil, false);
         end, obj);
 
-    obj._e_event90 = obj.button11:addEventListener("onMenu",
+    obj._e_event91 = obj.button11:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciadestreza'}, nil, true);
         end, obj);
 
-    obj._e_event91 = obj.dataLink30:addEventListener("onChange",
+    obj._e_event92 = obj.dataLink31:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'destreza', 'periciadestreza');
             
@@ -16612,7 +16624,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiadestreza:setHint(hint);
         end, obj);
 
-    obj._e_event92 = obj.dataLink31:addEventListener("onChange",
+    obj._e_event93 = obj.dataLink32:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -16642,27 +16654,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event93 = obj.button12:addEventListener("onKeyDown",
+    obj._e_event94 = obj.button12:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event94 = obj.button12:addEventListener("onKeyUp",
+    obj._e_event95 = obj.button12:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event95 = obj.button12:addEventListener("onClick",
+    obj._e_event96 = obj.button12:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'constituicao'}, nil, false);
         end, obj);
 
-    obj._e_event96 = obj.button12:addEventListener("onMenu",
+    obj._e_event97 = obj.button12:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'constituicao'}, nil, true);
         end, obj);
 
-    obj._e_event97 = obj.cbProfconstituicao:addEventListener("onMenu",
+    obj._e_event98 = obj.cbProfconstituicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["constituicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'constituicao', true);
@@ -16670,42 +16682,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event98 = obj.cbProfconstituicao:addEventListener("onClick",
+    obj._e_event99 = obj.cbProfconstituicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'constituicao', false);
         end, obj);
 
-    obj._e_event99 = obj.dataLink32:addEventListener("onChange",
+    obj._e_event100 = obj.dataLink33:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("constituicao");
         end, obj);
 
-    obj._e_event100 = obj.dataLink33:addEventListener("onChange",
+    obj._e_event101 = obj.dataLink34:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['constituicao'] then updateCbVisibility('constituicao'); end;
         end, obj);
 
-    obj._e_event101 = obj.button13:addEventListener("onKeyDown",
+    obj._e_event102 = obj.button13:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event102 = obj.button13:addEventListener("onKeyUp",
+    obj._e_event103 = obj.button13:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event103 = obj.button13:addEventListener("onClick",
+    obj._e_event104 = obj.button13:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.constituicao'}, nil, false);
         end, obj);
 
-    obj._e_event104 = obj.button13:addEventListener("onMenu",
+    obj._e_event105 = obj.button13:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.constituicao'}, nil, true);
         end, obj);
 
-    obj._e_event105 = obj.dataLink34:addEventListener("onChange",
+    obj._e_event106 = obj.dataLink35:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'constituicao');
             
@@ -16721,7 +16733,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfconstituicao:setHint(hint);
         end, obj);
 
-    obj._e_event106 = obj.cbProfconcentracao:addEventListener("onMenu",
+    obj._e_event107 = obj.cbProfconcentracao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["concentracao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'concentracao', true);
@@ -16729,42 +16741,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event107 = obj.cbProfconcentracao:addEventListener("onClick",
+    obj._e_event108 = obj.cbProfconcentracao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'concentracao', false);
         end, obj);
 
-    obj._e_event108 = obj.dataLink35:addEventListener("onChange",
+    obj._e_event109 = obj.dataLink36:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("concentracao");
         end, obj);
 
-    obj._e_event109 = obj.dataLink36:addEventListener("onChange",
+    obj._e_event110 = obj.dataLink37:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['concentracao'] then updateCbVisibility('concentracao'); end;
         end, obj);
 
-    obj._e_event110 = obj.button14:addEventListener("onKeyDown",
+    obj._e_event111 = obj.button14:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event111 = obj.button14:addEventListener("onKeyUp",
+    obj._e_event112 = obj.button14:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event112 = obj.button14:addEventListener("onClick",
+    obj._e_event113 = obj.button14:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.concentracao'}, nil, false);
         end, obj);
 
-    obj._e_event113 = obj.button14:addEventListener("onMenu",
+    obj._e_event114 = obj.button14:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.concentracao'}, nil, true);
         end, obj);
 
-    obj._e_event114 = obj.dataLink37:addEventListener("onChange",
+    obj._e_event115 = obj.dataLink38:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'constituicao', 'concentracao');
             
@@ -16780,7 +16792,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfconcentracao:setHint(hint);
         end, obj);
 
-    obj._e_event115 = obj.cbProftolerancia:addEventListener("onMenu",
+    obj._e_event116 = obj.cbProftolerancia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["tolerancia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'tolerancia', true);
@@ -16788,42 +16800,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event116 = obj.cbProftolerancia:addEventListener("onClick",
+    obj._e_event117 = obj.cbProftolerancia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'tolerancia', false);
         end, obj);
 
-    obj._e_event117 = obj.dataLink38:addEventListener("onChange",
+    obj._e_event118 = obj.dataLink39:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("tolerancia");
         end, obj);
 
-    obj._e_event118 = obj.dataLink39:addEventListener("onChange",
+    obj._e_event119 = obj.dataLink40:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['tolerancia'] then updateCbVisibility('tolerancia'); end;
         end, obj);
 
-    obj._e_event119 = obj.button15:addEventListener("onKeyDown",
+    obj._e_event120 = obj.button15:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event120 = obj.button15:addEventListener("onKeyUp",
+    obj._e_event121 = obj.button15:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event121 = obj.button15:addEventListener("onClick",
+    obj._e_event122 = obj.button15:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.tolerancia'}, nil, false);
         end, obj);
 
-    obj._e_event122 = obj.button15:addEventListener("onMenu",
+    obj._e_event123 = obj.button15:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.tolerancia'}, nil, true);
         end, obj);
 
-    obj._e_event123 = obj.dataLink40:addEventListener("onChange",
+    obj._e_event124 = obj.dataLink41:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'constituicao', 'tolerancia');
             
@@ -16839,7 +16851,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProftolerancia:setHint(hint);
         end, obj);
 
-    obj._e_event124 = obj.cbProfpericiaconstituicao:addEventListener("onMenu",
+    obj._e_event125 = obj.cbProfpericiaconstituicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciaconstituicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciaconstituicao', true);
@@ -16847,42 +16859,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event125 = obj.cbProfpericiaconstituicao:addEventListener("onClick",
+    obj._e_event126 = obj.cbProfpericiaconstituicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciaconstituicao', false);
         end, obj);
 
-    obj._e_event126 = obj.dataLink41:addEventListener("onChange",
+    obj._e_event127 = obj.dataLink42:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciaconstituicao");
         end, obj);
 
-    obj._e_event127 = obj.dataLink42:addEventListener("onChange",
+    obj._e_event128 = obj.dataLink43:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciaconstituicao'] then updateCbVisibility('periciaconstituicao'); end;
         end, obj);
 
-    obj._e_event128 = obj.button16:addEventListener("onKeyDown",
+    obj._e_event129 = obj.button16:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event129 = obj.button16:addEventListener("onKeyUp",
+    obj._e_event130 = obj.button16:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event130 = obj.button16:addEventListener("onClick",
+    obj._e_event131 = obj.button16:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciaconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event131 = obj.button16:addEventListener("onMenu",
+    obj._e_event132 = obj.button16:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciaconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event132 = obj.dataLink43:addEventListener("onChange",
+    obj._e_event133 = obj.dataLink44:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'constituicao', 'periciaconstituicao');
             
@@ -16898,7 +16910,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiaconstituicao:setHint(hint);
         end, obj);
 
-    obj._e_event133 = obj.dataLink44:addEventListener("onChange",
+    obj._e_event134 = obj.dataLink45:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -16928,27 +16940,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event134 = obj.button17:addEventListener("onKeyDown",
+    obj._e_event135 = obj.button17:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event135 = obj.button17:addEventListener("onKeyUp",
+    obj._e_event136 = obj.button17:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event136 = obj.button17:addEventListener("onClick",
+    obj._e_event137 = obj.button17:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'inteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event137 = obj.button17:addEventListener("onMenu",
+    obj._e_event138 = obj.button17:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'inteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event138 = obj.cbProfinteligencia:addEventListener("onMenu",
+    obj._e_event139 = obj.cbProfinteligencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["inteligencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'inteligencia', true);
@@ -16956,42 +16968,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event139 = obj.cbProfinteligencia:addEventListener("onClick",
+    obj._e_event140 = obj.cbProfinteligencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'inteligencia', false);
         end, obj);
 
-    obj._e_event140 = obj.dataLink45:addEventListener("onChange",
+    obj._e_event141 = obj.dataLink46:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("inteligencia");
         end, obj);
 
-    obj._e_event141 = obj.dataLink46:addEventListener("onChange",
+    obj._e_event142 = obj.dataLink47:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['inteligencia'] then updateCbVisibility('inteligencia'); end;
         end, obj);
 
-    obj._e_event142 = obj.button18:addEventListener("onKeyDown",
+    obj._e_event143 = obj.button18:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event143 = obj.button18:addEventListener("onKeyUp",
+    obj._e_event144 = obj.button18:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event144 = obj.button18:addEventListener("onClick",
+    obj._e_event145 = obj.button18:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.inteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event145 = obj.button18:addEventListener("onMenu",
+    obj._e_event146 = obj.button18:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.inteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event146 = obj.dataLink47:addEventListener("onChange",
+    obj._e_event147 = obj.dataLink48:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'inteligencia');
             
@@ -17007,7 +17019,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfinteligencia:setHint(hint);
         end, obj);
 
-    obj._e_event147 = obj.cbProfarcanismo:addEventListener("onMenu",
+    obj._e_event148 = obj.cbProfarcanismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["arcanismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'arcanismo', true);
@@ -17015,42 +17027,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event148 = obj.cbProfarcanismo:addEventListener("onClick",
+    obj._e_event149 = obj.cbProfarcanismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'arcanismo', false);
         end, obj);
 
-    obj._e_event149 = obj.dataLink48:addEventListener("onChange",
+    obj._e_event150 = obj.dataLink49:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("arcanismo");
         end, obj);
 
-    obj._e_event150 = obj.dataLink49:addEventListener("onChange",
+    obj._e_event151 = obj.dataLink50:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['arcanismo'] then updateCbVisibility('arcanismo'); end;
         end, obj);
 
-    obj._e_event151 = obj.button19:addEventListener("onKeyDown",
+    obj._e_event152 = obj.button19:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event152 = obj.button19:addEventListener("onKeyUp",
+    obj._e_event153 = obj.button19:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event153 = obj.button19:addEventListener("onClick",
+    obj._e_event154 = obj.button19:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.arcanismo'}, nil, false);
         end, obj);
 
-    obj._e_event154 = obj.button19:addEventListener("onMenu",
+    obj._e_event155 = obj.button19:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.arcanismo'}, nil, true);
         end, obj);
 
-    obj._e_event155 = obj.dataLink50:addEventListener("onChange",
+    obj._e_event156 = obj.dataLink51:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'inteligencia', 'arcanismo');
             
@@ -17066,7 +17078,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfarcanismo:setHint(hint);
         end, obj);
 
-    obj._e_event156 = obj.cbProfhistoria:addEventListener("onMenu",
+    obj._e_event157 = obj.cbProfhistoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["historia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'historia', true);
@@ -17074,42 +17086,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event157 = obj.cbProfhistoria:addEventListener("onClick",
+    obj._e_event158 = obj.cbProfhistoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'historia', false);
         end, obj);
 
-    obj._e_event158 = obj.dataLink51:addEventListener("onChange",
+    obj._e_event159 = obj.dataLink52:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("historia");
         end, obj);
 
-    obj._e_event159 = obj.dataLink52:addEventListener("onChange",
+    obj._e_event160 = obj.dataLink53:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['historia'] then updateCbVisibility('historia'); end;
         end, obj);
 
-    obj._e_event160 = obj.button20:addEventListener("onKeyDown",
+    obj._e_event161 = obj.button20:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event161 = obj.button20:addEventListener("onKeyUp",
+    obj._e_event162 = obj.button20:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event162 = obj.button20:addEventListener("onClick",
+    obj._e_event163 = obj.button20:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.historia'}, nil, false);
         end, obj);
 
-    obj._e_event163 = obj.button20:addEventListener("onMenu",
+    obj._e_event164 = obj.button20:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.historia'}, nil, true);
         end, obj);
 
-    obj._e_event164 = obj.dataLink53:addEventListener("onChange",
+    obj._e_event165 = obj.dataLink54:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'inteligencia', 'historia');
             
@@ -17125,7 +17137,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfhistoria:setHint(hint);
         end, obj);
 
-    obj._e_event165 = obj.cbProfnatureza:addEventListener("onMenu",
+    obj._e_event166 = obj.cbProfnatureza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["natureza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'natureza', true);
@@ -17133,42 +17145,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event166 = obj.cbProfnatureza:addEventListener("onClick",
+    obj._e_event167 = obj.cbProfnatureza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'natureza', false);
         end, obj);
 
-    obj._e_event167 = obj.dataLink54:addEventListener("onChange",
+    obj._e_event168 = obj.dataLink55:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("natureza");
         end, obj);
 
-    obj._e_event168 = obj.dataLink55:addEventListener("onChange",
+    obj._e_event169 = obj.dataLink56:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['natureza'] then updateCbVisibility('natureza'); end;
         end, obj);
 
-    obj._e_event169 = obj.button21:addEventListener("onKeyDown",
+    obj._e_event170 = obj.button21:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event170 = obj.button21:addEventListener("onKeyUp",
+    obj._e_event171 = obj.button21:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event171 = obj.button21:addEventListener("onClick",
+    obj._e_event172 = obj.button21:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.natureza'}, nil, false);
         end, obj);
 
-    obj._e_event172 = obj.button21:addEventListener("onMenu",
+    obj._e_event173 = obj.button21:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.natureza'}, nil, true);
         end, obj);
 
-    obj._e_event173 = obj.dataLink56:addEventListener("onChange",
+    obj._e_event174 = obj.dataLink57:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'inteligencia', 'natureza');
             
@@ -17184,7 +17196,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfnatureza:setHint(hint);
         end, obj);
 
-    obj._e_event174 = obj.cbProfreligiao:addEventListener("onMenu",
+    obj._e_event175 = obj.cbProfreligiao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["religiao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'religiao', true);
@@ -17192,42 +17204,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event175 = obj.cbProfreligiao:addEventListener("onClick",
+    obj._e_event176 = obj.cbProfreligiao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'religiao', false);
         end, obj);
 
-    obj._e_event176 = obj.dataLink57:addEventListener("onChange",
+    obj._e_event177 = obj.dataLink58:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("religiao");
         end, obj);
 
-    obj._e_event177 = obj.dataLink58:addEventListener("onChange",
+    obj._e_event178 = obj.dataLink59:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['religiao'] then updateCbVisibility('religiao'); end;
         end, obj);
 
-    obj._e_event178 = obj.button22:addEventListener("onKeyDown",
+    obj._e_event179 = obj.button22:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event179 = obj.button22:addEventListener("onKeyUp",
+    obj._e_event180 = obj.button22:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event180 = obj.button22:addEventListener("onClick",
+    obj._e_event181 = obj.button22:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.religiao'}, nil, false);
         end, obj);
 
-    obj._e_event181 = obj.button22:addEventListener("onMenu",
+    obj._e_event182 = obj.button22:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.religiao'}, nil, true);
         end, obj);
 
-    obj._e_event182 = obj.dataLink59:addEventListener("onChange",
+    obj._e_event183 = obj.dataLink60:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'inteligencia', 'religiao');
             
@@ -17243,7 +17255,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfreligiao:setHint(hint);
         end, obj);
 
-    obj._e_event183 = obj.cbProfpericiainteligencia:addEventListener("onMenu",
+    obj._e_event184 = obj.cbProfpericiainteligencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciainteligencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciainteligencia', true);
@@ -17251,42 +17263,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event184 = obj.cbProfpericiainteligencia:addEventListener("onClick",
+    obj._e_event185 = obj.cbProfpericiainteligencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciainteligencia', false);
         end, obj);
 
-    obj._e_event185 = obj.dataLink60:addEventListener("onChange",
+    obj._e_event186 = obj.dataLink61:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciainteligencia");
         end, obj);
 
-    obj._e_event186 = obj.dataLink61:addEventListener("onChange",
+    obj._e_event187 = obj.dataLink62:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciainteligencia'] then updateCbVisibility('periciainteligencia'); end;
         end, obj);
 
-    obj._e_event187 = obj.button23:addEventListener("onKeyDown",
+    obj._e_event188 = obj.button23:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event188 = obj.button23:addEventListener("onKeyUp",
+    obj._e_event189 = obj.button23:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event189 = obj.button23:addEventListener("onClick",
+    obj._e_event190 = obj.button23:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciainteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event190 = obj.button23:addEventListener("onMenu",
+    obj._e_event191 = obj.button23:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciainteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event191 = obj.dataLink62:addEventListener("onChange",
+    obj._e_event192 = obj.dataLink63:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'inteligencia', 'periciainteligencia');
             
@@ -17302,7 +17314,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiainteligencia:setHint(hint);
         end, obj);
 
-    obj._e_event192 = obj.dataLink63:addEventListener("onChange",
+    obj._e_event193 = obj.dataLink64:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -17332,27 +17344,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event193 = obj.button24:addEventListener("onKeyDown",
+    obj._e_event194 = obj.button24:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event194 = obj.button24:addEventListener("onKeyUp",
+    obj._e_event195 = obj.button24:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event195 = obj.button24:addEventListener("onClick",
+    obj._e_event196 = obj.button24:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'sabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event196 = obj.button24:addEventListener("onMenu",
+    obj._e_event197 = obj.button24:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'sabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event197 = obj.cbProfsabedoria:addEventListener("onMenu",
+    obj._e_event198 = obj.cbProfsabedoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["sabedoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'sabedoria', true);
@@ -17360,42 +17372,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event198 = obj.cbProfsabedoria:addEventListener("onClick",
+    obj._e_event199 = obj.cbProfsabedoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'sabedoria', false);
         end, obj);
 
-    obj._e_event199 = obj.dataLink64:addEventListener("onChange",
+    obj._e_event200 = obj.dataLink65:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("sabedoria");
         end, obj);
 
-    obj._e_event200 = obj.dataLink65:addEventListener("onChange",
+    obj._e_event201 = obj.dataLink66:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['sabedoria'] then updateCbVisibility('sabedoria'); end;
         end, obj);
 
-    obj._e_event201 = obj.button25:addEventListener("onKeyDown",
+    obj._e_event202 = obj.button25:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event202 = obj.button25:addEventListener("onKeyUp",
+    obj._e_event203 = obj.button25:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event203 = obj.button25:addEventListener("onClick",
+    obj._e_event204 = obj.button25:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.sabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event204 = obj.button25:addEventListener("onMenu",
+    obj._e_event205 = obj.button25:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.sabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event205 = obj.dataLink66:addEventListener("onChange",
+    obj._e_event206 = obj.dataLink67:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'sabedoria');
             
@@ -17411,7 +17423,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfsabedoria:setHint(hint);
         end, obj);
 
-    obj._e_event206 = obj.cbProfadestrarAnimais:addEventListener("onMenu",
+    obj._e_event207 = obj.cbProfadestrarAnimais:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["adestrarAnimais"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'adestrarAnimais', true);
@@ -17419,42 +17431,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event207 = obj.cbProfadestrarAnimais:addEventListener("onClick",
+    obj._e_event208 = obj.cbProfadestrarAnimais:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'adestrarAnimais', false);
         end, obj);
 
-    obj._e_event208 = obj.dataLink67:addEventListener("onChange",
+    obj._e_event209 = obj.dataLink68:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("adestrarAnimais");
         end, obj);
 
-    obj._e_event209 = obj.dataLink68:addEventListener("onChange",
+    obj._e_event210 = obj.dataLink69:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['adestrarAnimais'] then updateCbVisibility('adestrarAnimais'); end;
         end, obj);
 
-    obj._e_event210 = obj.button26:addEventListener("onKeyDown",
+    obj._e_event211 = obj.button26:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event211 = obj.button26:addEventListener("onKeyUp",
+    obj._e_event212 = obj.button26:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event212 = obj.button26:addEventListener("onClick",
+    obj._e_event213 = obj.button26:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.adestrarAnimais'}, nil, false);
         end, obj);
 
-    obj._e_event213 = obj.button26:addEventListener("onMenu",
+    obj._e_event214 = obj.button26:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.adestrarAnimais'}, nil, true);
         end, obj);
 
-    obj._e_event214 = obj.dataLink69:addEventListener("onChange",
+    obj._e_event215 = obj.dataLink70:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sabedoria', 'adestrarAnimais');
             
@@ -17470,7 +17482,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfadestrarAnimais:setHint(hint);
         end, obj);
 
-    obj._e_event215 = obj.cbProfmedicina:addEventListener("onMenu",
+    obj._e_event216 = obj.cbProfmedicina:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["medicina"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'medicina', true);
@@ -17478,42 +17490,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event216 = obj.cbProfmedicina:addEventListener("onClick",
+    obj._e_event217 = obj.cbProfmedicina:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'medicina', false);
         end, obj);
 
-    obj._e_event217 = obj.dataLink70:addEventListener("onChange",
+    obj._e_event218 = obj.dataLink71:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("medicina");
         end, obj);
 
-    obj._e_event218 = obj.dataLink71:addEventListener("onChange",
+    obj._e_event219 = obj.dataLink72:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['medicina'] then updateCbVisibility('medicina'); end;
         end, obj);
 
-    obj._e_event219 = obj.button27:addEventListener("onKeyDown",
+    obj._e_event220 = obj.button27:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event220 = obj.button27:addEventListener("onKeyUp",
+    obj._e_event221 = obj.button27:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event221 = obj.button27:addEventListener("onClick",
+    obj._e_event222 = obj.button27:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.medicina'}, nil, false);
         end, obj);
 
-    obj._e_event222 = obj.button27:addEventListener("onMenu",
+    obj._e_event223 = obj.button27:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.medicina'}, nil, true);
         end, obj);
 
-    obj._e_event223 = obj.dataLink72:addEventListener("onChange",
+    obj._e_event224 = obj.dataLink73:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sabedoria', 'medicina');
             
@@ -17529,7 +17541,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfmedicina:setHint(hint);
         end, obj);
 
-    obj._e_event224 = obj.cbProfpercepcao:addEventListener("onMenu",
+    obj._e_event225 = obj.cbProfpercepcao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["percepcao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'percepcao', true);
@@ -17537,42 +17549,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event225 = obj.cbProfpercepcao:addEventListener("onClick",
+    obj._e_event226 = obj.cbProfpercepcao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'percepcao', false);
         end, obj);
 
-    obj._e_event226 = obj.dataLink73:addEventListener("onChange",
+    obj._e_event227 = obj.dataLink74:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("percepcao");
         end, obj);
 
-    obj._e_event227 = obj.dataLink74:addEventListener("onChange",
+    obj._e_event228 = obj.dataLink75:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['percepcao'] then updateCbVisibility('percepcao'); end;
         end, obj);
 
-    obj._e_event228 = obj.button28:addEventListener("onKeyDown",
+    obj._e_event229 = obj.button28:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event229 = obj.button28:addEventListener("onKeyUp",
+    obj._e_event230 = obj.button28:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event230 = obj.button28:addEventListener("onClick",
+    obj._e_event231 = obj.button28:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.percepcao'}, nil, false);
         end, obj);
 
-    obj._e_event231 = obj.button28:addEventListener("onMenu",
+    obj._e_event232 = obj.button28:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.percepcao'}, nil, true);
         end, obj);
 
-    obj._e_event232 = obj.dataLink75:addEventListener("onChange",
+    obj._e_event233 = obj.dataLink76:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sabedoria', 'percepcao');
             
@@ -17588,7 +17600,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpercepcao:setHint(hint);
         end, obj);
 
-    obj._e_event233 = obj.cbProfsobrevivencia:addEventListener("onMenu",
+    obj._e_event234 = obj.cbProfsobrevivencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["sobrevivencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'sobrevivencia', true);
@@ -17596,42 +17608,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event234 = obj.cbProfsobrevivencia:addEventListener("onClick",
+    obj._e_event235 = obj.cbProfsobrevivencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'sobrevivencia', false);
         end, obj);
 
-    obj._e_event235 = obj.dataLink76:addEventListener("onChange",
+    obj._e_event236 = obj.dataLink77:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("sobrevivencia");
         end, obj);
 
-    obj._e_event236 = obj.dataLink77:addEventListener("onChange",
+    obj._e_event237 = obj.dataLink78:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['sobrevivencia'] then updateCbVisibility('sobrevivencia'); end;
         end, obj);
 
-    obj._e_event237 = obj.button29:addEventListener("onKeyDown",
+    obj._e_event238 = obj.button29:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event238 = obj.button29:addEventListener("onKeyUp",
+    obj._e_event239 = obj.button29:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event239 = obj.button29:addEventListener("onClick",
+    obj._e_event240 = obj.button29:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.sobrevivencia'}, nil, false);
         end, obj);
 
-    obj._e_event240 = obj.button29:addEventListener("onMenu",
+    obj._e_event241 = obj.button29:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.sobrevivencia'}, nil, true);
         end, obj);
 
-    obj._e_event241 = obj.dataLink78:addEventListener("onChange",
+    obj._e_event242 = obj.dataLink79:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sabedoria', 'sobrevivencia');
             
@@ -17647,7 +17659,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfsobrevivencia:setHint(hint);
         end, obj);
 
-    obj._e_event242 = obj.cbProfbedoria:addEventListener("onMenu",
+    obj._e_event243 = obj.cbProfbedoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["bedoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'bedoria', true);
@@ -17655,42 +17667,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event243 = obj.cbProfbedoria:addEventListener("onClick",
+    obj._e_event244 = obj.cbProfbedoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'bedoria', false);
         end, obj);
 
-    obj._e_event244 = obj.dataLink79:addEventListener("onChange",
+    obj._e_event245 = obj.dataLink80:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("bedoria");
         end, obj);
 
-    obj._e_event245 = obj.dataLink80:addEventListener("onChange",
+    obj._e_event246 = obj.dataLink81:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['bedoria'] then updateCbVisibility('bedoria'); end;
         end, obj);
 
-    obj._e_event246 = obj.button30:addEventListener("onKeyDown",
+    obj._e_event247 = obj.button30:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event247 = obj.button30:addEventListener("onKeyUp",
+    obj._e_event248 = obj.button30:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event248 = obj.button30:addEventListener("onClick",
+    obj._e_event249 = obj.button30:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciasabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event249 = obj.button30:addEventListener("onMenu",
+    obj._e_event250 = obj.button30:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciasabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event250 = obj.dataLink81:addEventListener("onChange",
+    obj._e_event251 = obj.dataLink82:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sabedoria', 'periciasabedoria');
             
@@ -17706,7 +17718,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiasabedoria:setHint(hint);
         end, obj);
 
-    obj._e_event251 = obj.dataLink82:addEventListener("onChange",
+    obj._e_event252 = obj.dataLink83:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -17736,27 +17748,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event252 = obj.button31:addEventListener("onKeyDown",
+    obj._e_event253 = obj.button31:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event253 = obj.button31:addEventListener("onKeyUp",
+    obj._e_event254 = obj.button31:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event254 = obj.button31:addEventListener("onClick",
+    obj._e_event255 = obj.button31:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'carisma'}, nil, false);
         end, obj);
 
-    obj._e_event255 = obj.button31:addEventListener("onMenu",
+    obj._e_event256 = obj.button31:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'carisma'}, nil, true);
         end, obj);
 
-    obj._e_event256 = obj.cbProfcarisma:addEventListener("onMenu",
+    obj._e_event257 = obj.cbProfcarisma:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["carisma"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'carisma', true);
@@ -17764,42 +17776,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event257 = obj.cbProfcarisma:addEventListener("onClick",
+    obj._e_event258 = obj.cbProfcarisma:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'carisma', false);
         end, obj);
 
-    obj._e_event258 = obj.dataLink83:addEventListener("onChange",
+    obj._e_event259 = obj.dataLink84:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("carisma");
         end, obj);
 
-    obj._e_event259 = obj.dataLink84:addEventListener("onChange",
+    obj._e_event260 = obj.dataLink85:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['carisma'] then updateCbVisibility('carisma'); end;
         end, obj);
 
-    obj._e_event260 = obj.button32:addEventListener("onKeyDown",
+    obj._e_event261 = obj.button32:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event261 = obj.button32:addEventListener("onKeyUp",
+    obj._e_event262 = obj.button32:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event262 = obj.button32:addEventListener("onClick",
+    obj._e_event263 = obj.button32:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.carisma'}, nil, false);
         end, obj);
 
-    obj._e_event263 = obj.button32:addEventListener("onMenu",
+    obj._e_event264 = obj.button32:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.carisma'}, nil, true);
         end, obj);
 
-    obj._e_event264 = obj.dataLink85:addEventListener("onChange",
+    obj._e_event265 = obj.dataLink86:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'carisma');
             
@@ -17815,7 +17827,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcarisma:setHint(hint);
         end, obj);
 
-    obj._e_event265 = obj.cbProfatuacao:addEventListener("onMenu",
+    obj._e_event266 = obj.cbProfatuacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["atuacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'atuacao', true);
@@ -17823,42 +17835,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event266 = obj.cbProfatuacao:addEventListener("onClick",
+    obj._e_event267 = obj.cbProfatuacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'atuacao', false);
         end, obj);
 
-    obj._e_event267 = obj.dataLink86:addEventListener("onChange",
+    obj._e_event268 = obj.dataLink87:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("atuacao");
         end, obj);
 
-    obj._e_event268 = obj.dataLink87:addEventListener("onChange",
+    obj._e_event269 = obj.dataLink88:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['atuacao'] then updateCbVisibility('atuacao'); end;
         end, obj);
 
-    obj._e_event269 = obj.button33:addEventListener("onKeyDown",
+    obj._e_event270 = obj.button33:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event270 = obj.button33:addEventListener("onKeyUp",
+    obj._e_event271 = obj.button33:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event271 = obj.button33:addEventListener("onClick",
+    obj._e_event272 = obj.button33:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.atuacao'}, nil, false);
         end, obj);
 
-    obj._e_event272 = obj.button33:addEventListener("onMenu",
+    obj._e_event273 = obj.button33:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.atuacao'}, nil, true);
         end, obj);
 
-    obj._e_event273 = obj.dataLink88:addEventListener("onChange",
+    obj._e_event274 = obj.dataLink89:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'carisma', 'atuacao');
             
@@ -17874,7 +17886,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfatuacao:setHint(hint);
         end, obj);
 
-    obj._e_event274 = obj.cbProfenganacao:addEventListener("onMenu",
+    obj._e_event275 = obj.cbProfenganacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["enganacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'enganacao', true);
@@ -17882,42 +17894,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event275 = obj.cbProfenganacao:addEventListener("onClick",
+    obj._e_event276 = obj.cbProfenganacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'enganacao', false);
         end, obj);
 
-    obj._e_event276 = obj.dataLink89:addEventListener("onChange",
+    obj._e_event277 = obj.dataLink90:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("enganacao");
         end, obj);
 
-    obj._e_event277 = obj.dataLink90:addEventListener("onChange",
+    obj._e_event278 = obj.dataLink91:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['enganacao'] then updateCbVisibility('enganacao'); end;
         end, obj);
 
-    obj._e_event278 = obj.button34:addEventListener("onKeyDown",
+    obj._e_event279 = obj.button34:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event279 = obj.button34:addEventListener("onKeyUp",
+    obj._e_event280 = obj.button34:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event280 = obj.button34:addEventListener("onClick",
+    obj._e_event281 = obj.button34:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.enganacao'}, nil, false);
         end, obj);
 
-    obj._e_event281 = obj.button34:addEventListener("onMenu",
+    obj._e_event282 = obj.button34:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.enganacao'}, nil, true);
         end, obj);
 
-    obj._e_event282 = obj.dataLink91:addEventListener("onChange",
+    obj._e_event283 = obj.dataLink92:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'carisma', 'enganacao');
             
@@ -17933,7 +17945,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfenganacao:setHint(hint);
         end, obj);
 
-    obj._e_event283 = obj.cbProfintimidacao:addEventListener("onMenu",
+    obj._e_event284 = obj.cbProfintimidacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["intimidacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'intimidacao', true);
@@ -17941,42 +17953,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event284 = obj.cbProfintimidacao:addEventListener("onClick",
+    obj._e_event285 = obj.cbProfintimidacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'intimidacao', false);
         end, obj);
 
-    obj._e_event285 = obj.dataLink92:addEventListener("onChange",
+    obj._e_event286 = obj.dataLink93:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("intimidacao");
         end, obj);
 
-    obj._e_event286 = obj.dataLink93:addEventListener("onChange",
+    obj._e_event287 = obj.dataLink94:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['intimidacao'] then updateCbVisibility('intimidacao'); end;
         end, obj);
 
-    obj._e_event287 = obj.button35:addEventListener("onKeyDown",
+    obj._e_event288 = obj.button35:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event288 = obj.button35:addEventListener("onKeyUp",
+    obj._e_event289 = obj.button35:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event289 = obj.button35:addEventListener("onClick",
+    obj._e_event290 = obj.button35:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.intimidacao'}, nil, false);
         end, obj);
 
-    obj._e_event290 = obj.button35:addEventListener("onMenu",
+    obj._e_event291 = obj.button35:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.intimidacao'}, nil, true);
         end, obj);
 
-    obj._e_event291 = obj.dataLink94:addEventListener("onChange",
+    obj._e_event292 = obj.dataLink95:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'carisma', 'intimidacao');
             
@@ -17992,7 +18004,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfintimidacao:setHint(hint);
         end, obj);
 
-    obj._e_event292 = obj.cbProfpersuasao:addEventListener("onMenu",
+    obj._e_event293 = obj.cbProfpersuasao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["persuasao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'persuasao', true);
@@ -18000,42 +18012,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event293 = obj.cbProfpersuasao:addEventListener("onClick",
+    obj._e_event294 = obj.cbProfpersuasao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'persuasao', false);
         end, obj);
 
-    obj._e_event294 = obj.dataLink95:addEventListener("onChange",
+    obj._e_event295 = obj.dataLink96:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("persuasao");
         end, obj);
 
-    obj._e_event295 = obj.dataLink96:addEventListener("onChange",
+    obj._e_event296 = obj.dataLink97:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['persuasao'] then updateCbVisibility('persuasao'); end;
         end, obj);
 
-    obj._e_event296 = obj.button36:addEventListener("onKeyDown",
+    obj._e_event297 = obj.button36:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event297 = obj.button36:addEventListener("onKeyUp",
+    obj._e_event298 = obj.button36:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event298 = obj.button36:addEventListener("onClick",
+    obj._e_event299 = obj.button36:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.persuasao'}, nil, false);
         end, obj);
 
-    obj._e_event299 = obj.button36:addEventListener("onMenu",
+    obj._e_event300 = obj.button36:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.persuasao'}, nil, true);
         end, obj);
 
-    obj._e_event300 = obj.dataLink97:addEventListener("onChange",
+    obj._e_event301 = obj.dataLink98:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'carisma', 'persuasao');
             
@@ -18051,7 +18063,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpersuasao:setHint(hint);
         end, obj);
 
-    obj._e_event301 = obj.cbProfpericiacarisma:addEventListener("onMenu",
+    obj._e_event302 = obj.cbProfpericiacarisma:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciacarisma"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciacarisma', true);
@@ -18059,42 +18071,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event302 = obj.cbProfpericiacarisma:addEventListener("onClick",
+    obj._e_event303 = obj.cbProfpericiacarisma:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciacarisma', false);
         end, obj);
 
-    obj._e_event303 = obj.dataLink98:addEventListener("onChange",
+    obj._e_event304 = obj.dataLink99:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciacarisma");
         end, obj);
 
-    obj._e_event304 = obj.dataLink99:addEventListener("onChange",
+    obj._e_event305 = obj.dataLink100:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciacarisma'] then updateCbVisibility('periciacarisma'); end;
         end, obj);
 
-    obj._e_event305 = obj.button37:addEventListener("onKeyDown",
+    obj._e_event306 = obj.button37:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event306 = obj.button37:addEventListener("onKeyUp",
+    obj._e_event307 = obj.button37:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event307 = obj.button37:addEventListener("onClick",
+    obj._e_event308 = obj.button37:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciacarisma'}, nil, false);
         end, obj);
 
-    obj._e_event308 = obj.button37:addEventListener("onMenu",
+    obj._e_event309 = obj.button37:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciacarisma'}, nil, true);
         end, obj);
 
-    obj._e_event309 = obj.dataLink100:addEventListener("onChange",
+    obj._e_event310 = obj.dataLink101:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'carisma', 'periciacarisma');
             
@@ -18110,7 +18122,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiacarisma:setHint(hint);
         end, obj);
 
-    obj._e_event310 = obj.dataLink101:addEventListener("onChange",
+    obj._e_event311 = obj.dataLink102:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -18140,27 +18152,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event311 = obj.button38:addEventListener("onKeyDown",
+    obj._e_event312 = obj.button38:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event312 = obj.button38:addEventListener("onKeyUp",
+    obj._e_event313 = obj.button38:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event313 = obj.button38:addEventListener("onClick",
+    obj._e_event314 = obj.button38:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'sanidade'}, nil, false);
         end, obj);
 
-    obj._e_event314 = obj.button38:addEventListener("onMenu",
+    obj._e_event315 = obj.button38:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'sanidade'}, nil, true);
         end, obj);
 
-    obj._e_event315 = obj.cbProfsanidade:addEventListener("onMenu",
+    obj._e_event316 = obj.cbProfsanidade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["sanidade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'sanidade', true);
@@ -18168,42 +18180,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event316 = obj.cbProfsanidade:addEventListener("onClick",
+    obj._e_event317 = obj.cbProfsanidade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'sanidade', false);
         end, obj);
 
-    obj._e_event317 = obj.dataLink102:addEventListener("onChange",
+    obj._e_event318 = obj.dataLink103:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("sanidade");
         end, obj);
 
-    obj._e_event318 = obj.dataLink103:addEventListener("onChange",
+    obj._e_event319 = obj.dataLink104:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['sanidade'] then updateCbVisibility('sanidade'); end;
         end, obj);
 
-    obj._e_event319 = obj.button39:addEventListener("onKeyDown",
+    obj._e_event320 = obj.button39:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event320 = obj.button39:addEventListener("onKeyUp",
+    obj._e_event321 = obj.button39:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event321 = obj.button39:addEventListener("onClick",
+    obj._e_event322 = obj.button39:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.sanidade'}, nil, false);
         end, obj);
 
-    obj._e_event322 = obj.button39:addEventListener("onMenu",
+    obj._e_event323 = obj.button39:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.sanidade'}, nil, true);
         end, obj);
 
-    obj._e_event323 = obj.dataLink104:addEventListener("onChange",
+    obj._e_event324 = obj.dataLink105:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'sanidade');
             
@@ -18219,7 +18231,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfsanidade:setHint(hint);
         end, obj);
 
-    obj._e_event324 = obj.cbProfnidade:addEventListener("onMenu",
+    obj._e_event325 = obj.cbProfnidade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["nidade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'nidade', true);
@@ -18227,42 +18239,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event325 = obj.cbProfnidade:addEventListener("onClick",
+    obj._e_event326 = obj.cbProfnidade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'nidade', false);
         end, obj);
 
-    obj._e_event326 = obj.dataLink105:addEventListener("onChange",
+    obj._e_event327 = obj.dataLink106:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("nidade");
         end, obj);
 
-    obj._e_event327 = obj.dataLink106:addEventListener("onChange",
+    obj._e_event328 = obj.dataLink107:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['nidade'] then updateCbVisibility('nidade'); end;
         end, obj);
 
-    obj._e_event328 = obj.button40:addEventListener("onKeyDown",
+    obj._e_event329 = obj.button40:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event329 = obj.button40:addEventListener("onKeyUp",
+    obj._e_event330 = obj.button40:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event330 = obj.button40:addEventListener("onClick",
+    obj._e_event331 = obj.button40:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciasanidade'}, nil, false);
         end, obj);
 
-    obj._e_event331 = obj.button40:addEventListener("onMenu",
+    obj._e_event332 = obj.button40:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciasanidade'}, nil, true);
         end, obj);
 
-    obj._e_event332 = obj.dataLink107:addEventListener("onChange",
+    obj._e_event333 = obj.dataLink108:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'sanidade', 'periciasanidade');
             
@@ -18278,7 +18290,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiasanidade:setHint(hint);
         end, obj);
 
-    obj._e_event333 = obj.dataLink108:addEventListener("onChange",
+    obj._e_event334 = obj.dataLink109:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -18308,27 +18320,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event334 = obj.button41:addEventListener("onKeyDown",
+    obj._e_event335 = obj.button41:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event335 = obj.button41:addEventListener("onKeyUp",
+    obj._e_event336 = obj.button41:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event336 = obj.button41:addEventListener("onClick",
+    obj._e_event337 = obj.button41:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'honra'}, nil, false);
         end, obj);
 
-    obj._e_event337 = obj.button41:addEventListener("onMenu",
+    obj._e_event338 = obj.button41:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'honra'}, nil, true);
         end, obj);
 
-    obj._e_event338 = obj.cbProfhonra:addEventListener("onMenu",
+    obj._e_event339 = obj.cbProfhonra:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["honra"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'honra', true);
@@ -18336,42 +18348,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event339 = obj.cbProfhonra:addEventListener("onClick",
+    obj._e_event340 = obj.cbProfhonra:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'honra', false);
         end, obj);
 
-    obj._e_event340 = obj.dataLink109:addEventListener("onChange",
+    obj._e_event341 = obj.dataLink110:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("honra");
         end, obj);
 
-    obj._e_event341 = obj.dataLink110:addEventListener("onChange",
+    obj._e_event342 = obj.dataLink111:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['honra'] then updateCbVisibility('honra'); end;
         end, obj);
 
-    obj._e_event342 = obj.button42:addEventListener("onKeyDown",
+    obj._e_event343 = obj.button42:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event343 = obj.button42:addEventListener("onKeyUp",
+    obj._e_event344 = obj.button42:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event344 = obj.button42:addEventListener("onClick",
+    obj._e_event345 = obj.button42:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.honra'}, nil, false);
         end, obj);
 
-    obj._e_event345 = obj.button42:addEventListener("onMenu",
+    obj._e_event346 = obj.button42:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.honra'}, nil, true);
         end, obj);
 
-    obj._e_event346 = obj.dataLink111:addEventListener("onChange",
+    obj._e_event347 = obj.dataLink112:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'honra');
             
@@ -18387,7 +18399,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfhonra:setHint(hint);
         end, obj);
 
-    obj._e_event347 = obj.cbProfpericiahonra:addEventListener("onMenu",
+    obj._e_event348 = obj.cbProfpericiahonra:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["periciahonra"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'periciahonra', true);
@@ -18395,42 +18407,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event348 = obj.cbProfpericiahonra:addEventListener("onClick",
+    obj._e_event349 = obj.cbProfpericiahonra:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'periciahonra', false);
         end, obj);
 
-    obj._e_event349 = obj.dataLink112:addEventListener("onChange",
+    obj._e_event350 = obj.dataLink113:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("periciahonra");
         end, obj);
 
-    obj._e_event350 = obj.dataLink113:addEventListener("onChange",
+    obj._e_event351 = obj.dataLink114:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['periciahonra'] then updateCbVisibility('periciahonra'); end;
         end, obj);
 
-    obj._e_event351 = obj.button43:addEventListener("onKeyDown",
+    obj._e_event352 = obj.button43:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event352 = obj.button43:addEventListener("onKeyUp",
+    obj._e_event353 = obj.button43:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event353 = obj.button43:addEventListener("onClick",
+    obj._e_event354 = obj.button43:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciahonra'}, nil, false);
         end, obj);
 
-    obj._e_event354 = obj.button43:addEventListener("onMenu",
+    obj._e_event355 = obj.button43:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.periciahonra'}, nil, true);
         end, obj);
 
-    obj._e_event355 = obj.dataLink114:addEventListener("onChange",
+    obj._e_event356 = obj.dataLink115:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'honra', 'periciahonra');
             
@@ -18446,58 +18458,58 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfpericiahonra:setHint(hint);
         end, obj);
 
-    obj._e_event356 = obj.button44:addEventListener("onClick",
+    obj._e_event357 = obj.button44:addEventListener("onClick",
         function (_)
             descanso.curto(sheet);
         end, obj);
 
-    obj._e_event357 = obj.button45:addEventListener("onClick",
+    obj._e_event358 = obj.button45:addEventListener("onClick",
         function (_)
             descanso.longo(sheet);
         end, obj);
 
-    obj._e_event358 = obj.button46:addEventListener("onClick",
+    obj._e_event359 = obj.button46:addEventListener("onClick",
         function (_)
             levarDano(sheet);
         end, obj);
 
-    obj._e_event359 = obj.dataLink115:addEventListener("onChange",
+    obj._e_event360 = obj.dataLink116:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             self.progBar:setColor(sheet.barColor);
         end, obj);
 
-    obj._e_event360 = obj.dataLink116:addEventListener("onChange",
+    obj._e_event361 = obj.dataLink117:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local jogador = Firecast.getPersonagemDe(sheet).dono;
             										if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(1, sheet.PV, sheet.PVmax); end;
         end, obj);
 
-    obj._e_event361 = obj.dataLink117:addEventListener("onChange",
+    obj._e_event362 = obj.dataLink118:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.descansoLongo then sheet.PV = sheet.PVmax; end;
         end, obj);
 
-    obj._e_event362 = obj.button47:addEventListener("onKeyDown",
+    obj._e_event363 = obj.button47:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event363 = obj.button47:addEventListener("onKeyUp",
+    obj._e_event364 = obj.button47:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event364 = obj.button47:addEventListener("onClick",
+    obj._e_event365 = obj.button47:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.deathSave, nil, nil, false);
         end, obj);
 
-    obj._e_event365 = obj.button47:addEventListener("onMenu",
+    obj._e_event366 = obj.button47:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.deathSave, nil, nil, true);
         end, obj);
 
-    obj._e_event366 = obj.rclEquips:addEventListener("onSelect",
+    obj._e_event367 = obj.rclEquips:addEventListener("onSelect",
         function (_)
             local node = self.rclEquips.selectedNode;
             								self.dataEquipAttackDetails.node = node;
@@ -18508,23 +18520,23 @@ self.upperGridMagicBox3._RecalcSize();
             								self.rclEquips.lastSelectedForm = self.rclEquips.selectedForm;
         end, obj);
 
-    obj._e_event367 = obj.button48:addEventListener("onClick",
+    obj._e_event368 = obj.button48:addEventListener("onClick",
         function (_)
             self.rclEquips.selectedNode = self.rclEquips:append(); self.rclEquips.selectedForm.editName:setFocus();
         end, obj);
 
-    obj._e_event368 = obj.dataEquipAttackDetails:addEventListener("onNodeReady",
+    obj._e_event369 = obj.dataEquipAttackDetails:addEventListener("onNodeReady",
         function (_)
             self.imgEquipAttackImg:setVisible(false);
             							self.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
         end, obj);
 
-    obj._e_event369 = obj.dataEquipAttackDetails:addEventListener("onNodeUnready",
+    obj._e_event370 = obj.dataEquipAttackDetails:addEventListener("onNodeUnready",
         function (_)
             self.imgEquipAttackImg:setVisible(true);
         end, obj);
 
-    obj._e_event370 = obj.rclProps:addEventListener("onItemRemoved",
+    obj._e_event371 = obj.rclProps:addEventListener("onItemRemoved",
         function (_, node, form)
             local equip = self.dataEquipAttackDetails.node;
             									if equip ~= nil then
@@ -18535,7 +18547,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event371 = obj.button49:addEventListener("onClick",
+    obj._e_event372 = obj.button49:addEventListener("onClick",
         function (_)
             local equip = self.dataEquipAttackDetails.node;
             								if equip ~= nil then
@@ -18560,7 +18572,7 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event372 = obj.dataLink118:addEventListener("onChange",
+    obj._e_event373 = obj.dataLink119:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local equip = self.dataEquipAttackDetails.node;
             								if equip ~= nil and equip.propriedades ~= nil then
@@ -18580,29 +18592,29 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event373 = obj.dataLink119:addEventListener("onChange",
+    obj._e_event374 = obj.dataLink120:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet and sheet.contadoresMudaram then
             							self.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
             						end;
         end, obj);
 
-    obj._e_event374 = obj.btnApagar:addEventListener("onClick",
+    obj._e_event375 = obj.btnApagar:addEventListener("onClick",
         function (_)
             common.askForDelete(self.sheet);
         end, obj);
 
-    obj._e_event375 = obj.rclOptsAttack:addEventListener("onItemAdded",
+    obj._e_event376 = obj.rclOptsAttack:addEventListener("onItemAdded",
         function (_, node, form)
             form.cbOptAtaqueMunicao:setItems(common.getNomeContadores(sheet, {""}));
         end, obj);
 
-    obj._e_event376 = obj.button50:addEventListener("onClick",
+    obj._e_event377 = obj.button50:addEventListener("onClick",
         function (_)
             self.rclOptsAttack:append();
         end, obj);
 
-    obj._e_event377 = obj.dataLink120:addEventListener("onChange",
+    obj._e_event378 = obj.dataLink121:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet ~= nil and self ~= nil and sheet.contadoresMudaram then
             									local equip = self.dataEquipAttackDetails.node;
@@ -18616,22 +18628,22 @@ self.upperGridMagicBox3._RecalcSize();
             								end;
         end, obj);
 
-    obj._e_event378 = obj.labEquipDefense:addEventListener("onResize",
+    obj._e_event379 = obj.labEquipDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event379 = obj.rclEquipsDefense:addEventListener("onResize",
+    obj._e_event380 = obj.rclEquipsDefense:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event380 = obj.btnEquipDefenseNew:addEventListener("onClick",
+    obj._e_event381 = obj.btnEquipDefenseNew:addEventListener("onClick",
         function (_)
             self.rclEquipsDefense:append();
         end, obj);
 
-    obj._e_event381 = obj.checkBox3:addEventListener("onChange",
+    obj._e_event382 = obj.checkBox3:addEventListener("onChange",
         function (_)
             if sheet then
             								self.editorFancy:setVisible(sheet.equipamento.outros_melhorado);
@@ -18639,12 +18651,12 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event382 = obj.label54:addEventListener("onResize",
+    obj._e_event383 = obj.label54:addEventListener("onResize",
         function (_)
             recalcularTamanhoEquipsDefesa();
         end, obj);
 
-    obj._e_event383 = obj.dataLink121:addEventListener("onChange",
+    obj._e_event384 = obj.dataLink122:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.magias = sheet.magias or {};
             			local niveis = NDB.getChildNodes(sheet.magias.niveis);
@@ -18655,106 +18667,106 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event384 = obj.labupperGridMagicBox1:addEventListener("onResize",
+    obj._e_event385 = obj.labupperGridMagicBox1:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox1._RecalcSize();
         end, obj);
 
-    obj._e_event385 = obj.labupperGridMagicBox2:addEventListener("onResize",
+    obj._e_event386 = obj.labupperGridMagicBox2:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox2._RecalcSize();
         end, obj);
 
-    obj._e_event386 = obj.labupperGridMagicBox3:addEventListener("onResize",
+    obj._e_event387 = obj.labupperGridMagicBox3:addEventListener("onResize",
         function (_)
             self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
-    obj._e_event387 = obj.popupEdit:addEventListener("onClose",
+    obj._e_event388 = obj.popupEdit:addEventListener("onClose",
         function (_, canceled)
             sheet.magias.selecionada = nil;
         end, obj);
 
-    obj._e_event388 = obj.popupEdit:addEventListener("onNodeUnready",
+    obj._e_event389 = obj.popupEdit:addEventListener("onNodeUnready",
         function (_)
             sheet.magias.selecionada = nil;
         end, obj);
 
-    obj._e_event389 = obj.popupEdit:addEventListener("onNodeReady",
+    obj._e_event390 = obj.popupEdit:addEventListener("onNodeReady",
         function (_)
             self.popupEdit:getNodeObject().cdResistenciaTipo = nil;
         end, obj);
 
-    obj._e_event390 = obj.editPENome:addEventListener("onKeyDown",
+    obj._e_event391 = obj.editPENome:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event391 = obj.editPENome:addEventListener("onKeyUp",
+    obj._e_event392 = obj.editPENome:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event392 = obj.editPENome:addEventListener("onClick",
+    obj._e_event393 = obj.editPENome:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.eventFunc, {tag = 'editPENome', node = sheet, form = self, event='onClick', contexto = ''}, nil, false);
         end, obj);
 
-    obj._e_event393 = obj.editPENome:addEventListener("onMenu",
+    obj._e_event394 = obj.editPENome:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.eventFunc, {tag = 'editPENome', node = sheet, form = self, event='onMenu', contexto = ''}, nil, true);
         end, obj);
 
-    obj._e_event394 = obj.labelFieldPENivel:addEventListener("onKeyDown",
+    obj._e_event395 = obj.labelFieldPENivel:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event395 = obj.labelFieldPENivel:addEventListener("onKeyUp",
+    obj._e_event396 = obj.labelFieldPENivel:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event396 = obj.labelFieldPEEscola:addEventListener("onKeyDown",
+    obj._e_event397 = obj.labelFieldPEEscola:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event397 = obj.labelFieldPEEscola:addEventListener("onKeyUp",
+    obj._e_event398 = obj.labelFieldPEEscola:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event398 = obj.labelFieldPETempo:addEventListener("onKeyDown",
+    obj._e_event399 = obj.labelFieldPETempo:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event399 = obj.labelFieldPETempo:addEventListener("onKeyUp",
+    obj._e_event400 = obj.labelFieldPETempo:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event400 = obj.dataLink122:addEventListener("onChange",
+    obj._e_event401 = obj.dataLink123:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									self.popupEditCompM:setEnabled(node.componentesM or false);
         end, obj);
 
-    obj._e_event401 = obj.dataLink123:addEventListener("onChange",
+    obj._e_event402 = obj.dataLink124:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             								self.layPrepValor:setVisible(node.preparadoTipo == 'Preparada' or node.preparadoTipo == 'Sempre Preparada');
             								self.layPrepValor:setEnabled(node.preparadoTipo == 'Preparada');
         end, obj);
 
-    obj._e_event402 = obj.dataLink124:addEventListener("onChange",
+    obj._e_event403 = obj.dataLink125:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									self.popupEditCondAtiv:setEnabled(node.tempoConjuracaoUnidade == 'Reação');
         end, obj);
 
-    obj._e_event403 = obj.dataLink125:addEventListener("onChange",
+    obj._e_event404 = obj.dataLink126:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if node.alcanceUnidade == 'Nenhum' or node.alcanceUnidade == 'Pessoal' or node.alcanceUnidade == 'Toque' then
@@ -18766,7 +18778,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event404 = obj.dataLink126:addEventListener("onChange",
+    obj._e_event405 = obj.dataLink127:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if node.duracaoUnidade == 'Instantânea' or node.duracaoUnidade == 'Permanente' then
@@ -18776,7 +18788,7 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event405 = obj.dataLink127:addEventListener("onChange",
+    obj._e_event406 = obj.dataLink128:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									local contador = common.getContador(node, node.contadorNome or '');
@@ -18787,19 +18799,19 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event406 = obj.dataLink128:addEventListener("onChange",
+    obj._e_event407 = obj.dataLink129:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							self.popupEditAtaqueAtrib:setEnabled(node.ataqueTipo ~= 'Sem Ataque');	
             							self.popupEditAtaqueBonus:setEnabled(node.ataqueTipo ~= 'Sem Ataque');
         end, obj);
 
-    obj._e_event407 = obj.button51:addEventListener("onClick",
+    obj._e_event408 = obj.button51:addEventListener("onClick",
         function (_)
             self.popupEditDanoRL:append();
         end, obj);
 
-    obj._e_event408 = obj.popupEditDanoRL:addEventListener("onEndEnumeration",
+    obj._e_event409 = obj.popupEditDanoRL:addEventListener("onEndEnumeration",
         function (_)
             local node = self.popupEdit:getNodeObject();
             								local h = 30 + self.popupEditDanoRect.margins.top + self.popupEditDanoRect.margins.bottom;
@@ -18813,13 +18825,13 @@ self.upperGridMagicBox3._RecalcSize();
             								self.popupEditDanoRect:setHeight(h);
         end, obj);
 
-    obj._e_event409 = obj.button52:addEventListener("onClick",
+    obj._e_event410 = obj.button52:addEventListener("onClick",
         function (_)
             local formula = self.popupEditFormulaRL:append();
             									if formula then formula.tipoDano = "não"; end;
         end, obj);
 
-    obj._e_event410 = obj.popupEditFormulaRL:addEventListener("onEndEnumeration",
+    obj._e_event411 = obj.popupEditFormulaRL:addEventListener("onEndEnumeration",
         function (_)
             local node = self.popupEdit:getNodeObject();
             								local h = 30 + self.popupEditFormulaRect.margins.top + self.popupEditFormulaRect.margins.bottom;
@@ -18833,7 +18845,7 @@ self.upperGridMagicBox3._RecalcSize();
             								self.popupEditFormulaRect:setHeight(h);
         end, obj);
 
-    obj._e_event411 = obj.dataLink129:addEventListener("onChange",
+    obj._e_event412 = obj.dataLink130:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             									if not node.cdResistenciaTipo then
@@ -18855,31 +18867,31 @@ self.upperGridMagicBox3._RecalcSize();
             									end;
         end, obj);
 
-    obj._e_event412 = obj.dataLink130:addEventListener("onChange",
+    obj._e_event413 = obj.dataLink131:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.getSourcePath(self, "spells", node.importSourceName, function(path) node.importSourcePath = path; end);
         end, obj);
 
-    obj._e_event413 = obj.dataLink132:addEventListener("onChange",
+    obj._e_event414 = obj.dataLink133:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.spellGetClasses(self, node.importSourcePath, node.importLevel, function(items) self.comboBoxImportClass:setItems(items); end);
         end, obj);
 
-    obj._e_event414 = obj.dataLink133:addEventListener("onChange",
+    obj._e_event415 = obj.dataLink134:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local node = self.popupEdit:getNodeObject();
             							dload.spellGetNames(self, node.importSourcePath, node.importLevel, node.importClass, function(items) self.comboBoxImportMagia:setItems(items); end);
         end, obj);
 
-    obj._e_event415 = obj.button53:addEventListener("onClick",
+    obj._e_event416 = obj.button53:addEventListener("onClick",
         function (_)
             local node = self.popupEdit:getNodeObject();
             						dload.spellImport(self, node.importSourcePath, node.importName, node);
         end, obj);
 
-    obj._e_event416 = obj.dataLink134:addEventListener("onChange",
+    obj._e_event417 = obj.dataLink135:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local hab;
             			local bonusProficiencia;
@@ -18971,7 +18983,7 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event417 = obj.dataLink135:addEventListener("onChange",
+    obj._e_event418 = obj.dataLink136:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.magias and sheet.magias.selecionada then
             			local node;
@@ -18994,12 +19006,12 @@ self.upperGridMagicBox3._RecalcSize();
             		end;
         end, obj);
 
-    obj._e_event418 = obj.button54:addEventListener("onClick",
+    obj._e_event419 = obj.button54:addEventListener("onClick",
         function (_)
             self.rclContadores:append()
         end, obj);
 
-    obj._e_event419 = obj.button55:addEventListener("onClick",
+    obj._e_event420 = obj.button55:addEventListener("onClick",
         function (_)
             for key,_ in pairs(sheet.macroSavedSkills) do
             					val = sheet.macroSavedSkills[key];
@@ -19015,12 +19027,12 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event420 = obj.rclContadores:addEventListener("onCompare",
+    obj._e_event421 = obj.rclContadores:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             return Utils.compareStringPtBr(nodeA.name, nodeB.name);
         end, obj);
 
-    obj._e_event421 = obj.rclContadores:addEventListener("onItemAdded",
+    obj._e_event422 = obj.rclContadores:addEventListener("onItemAdded",
         function (_, node, form)
             if sheet ~= nil then
             					sheet.contadoresMudaram = true;
@@ -19028,7 +19040,7 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event422 = obj.rclContadores:addEventListener("onItemRemoved",
+    obj._e_event423 = obj.rclContadores:addEventListener("onItemRemoved",
         function (_, node, form)
             if sheet ~= nil then
             					sheet.contadoresMudaram = true;
@@ -19036,7 +19048,7 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event423 = obj.dataLink136:addEventListener("onChange",
+    obj._e_event424 = obj.dataLink137:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local contadores = NDB.getChildNodes(sheet.contadores);
             			for i=1,#contadores,1 do
@@ -19045,12 +19057,12 @@ self.upperGridMagicBox3._RecalcSize();
             			end;
         end, obj);
 
-    obj._e_event424 = obj.button56:addEventListener("onClick",
+    obj._e_event425 = obj.button56:addEventListener("onClick",
         function (_)
             Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?', function(confirmado) if confirmado then sheet.propriedades = {}; end; end);
         end, obj);
 
-    obj._e_event425 = obj.button57:addEventListener("onClick",
+    obj._e_event426 = obj.button57:addEventListener("onClick",
         function (_)
             if not sheet.propriedades then sheet.propriedades = {}; end;
             
@@ -19085,7 +19097,7 @@ self.upperGridMagicBox3._RecalcSize();
             		end);
         end, obj);
 
-    obj._e_event426 = obj.checkBox9:addEventListener("onChange",
+    obj._e_event427 = obj.checkBox9:addEventListener("onChange",
         function (_)
             if sheet then
             								self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
@@ -19093,7 +19105,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event427 = obj.dataLink137:addEventListener("onChange",
+    obj._e_event428 = obj.dataLink138:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						local type = sheet.sobrentural;
@@ -19110,7 +19122,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event428 = obj.dataLink138:addEventListener("onChange",
+    obj._e_event429 = obj.dataLink139:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19128,7 +19140,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event429 = obj.dataLink139:addEventListener("onChange",
+    obj._e_event430 = obj.dataLink140:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19146,7 +19158,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event430 = obj.dataLink140:addEventListener("onChange",
+    obj._e_event431 = obj.dataLink141:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19164,7 +19176,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event431 = obj.dataLink141:addEventListener("onChange",
+    obj._e_event432 = obj.dataLink142:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19182,7 +19194,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event432 = obj.dataLink142:addEventListener("onChange",
+    obj._e_event433 = obj.dataLink143:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19200,7 +19212,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event433 = obj.dataLink143:addEventListener("onChange",
+    obj._e_event434 = obj.dataLink144:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19218,7 +19230,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event434 = obj.dataLink144:addEventListener("onChange",
+    obj._e_event435 = obj.dataLink145:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             						
@@ -19236,7 +19248,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event435 = obj.button58:addEventListener("onClick",
+    obj._e_event436 = obj.button58:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local meses = NDB.getChildNodes(sheet.listaMeses);
@@ -19253,7 +19265,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event436 = obj.rclMeses:addEventListener("onCompare",
+    obj._e_event437 = obj.rclMeses:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                    return -1;
@@ -19264,7 +19276,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event437 = obj.dataLink145:addEventListener("onChange",
+    obj._e_event438 = obj.dataLink146:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet~= nil then
             							if sheet.dias ~= sheet.duracaoEstacao then
@@ -19275,7 +19287,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event438 = obj.button59:addEventListener("onClick",
+    obj._e_event439 = obj.button59:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local semana = NDB.getChildNodes(sheet.listaSemana);
@@ -19291,7 +19303,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event439 = obj.rclSemana:addEventListener("onCompare",
+    obj._e_event440 = obj.rclSemana:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                        return -1;
@@ -19302,7 +19314,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event440 = obj.button60:addEventListener("onClick",
+    obj._e_event441 = obj.button60:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local node = self.rclLuas:append();
@@ -19316,7 +19328,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event441 = obj.celestialBt:addEventListener("onClick",
+    obj._e_event442 = obj.celestialBt:addEventListener("onClick",
         function (_)
             local pop = self:findControlByName("popCelestial");
             							
@@ -19328,7 +19340,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event442 = obj.button61:addEventListener("onClick",
+    obj._e_event443 = obj.button61:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             								local estacao = NDB.getChildNodes(sheet.listaEstacoes);
@@ -19345,7 +19357,7 @@ self.upperGridMagicBox3._RecalcSize();
             							end;
         end, obj);
 
-    obj._e_event443 = obj.rclEstacoes:addEventListener("onCompare",
+    obj._e_event444 = obj.rclEstacoes:addEventListener("onCompare",
         function (_, nodeA, nodeB)
             if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
             		                    return -1;
@@ -19356,7 +19368,7 @@ self.upperGridMagicBox3._RecalcSize();
             		                end;
         end, obj);
 
-    obj._e_event444 = obj.button62:addEventListener("onClick",
+    obj._e_event445 = obj.button62:addEventListener("onClick",
         function (_)
             if sheet~=nil then
             							local tempo = tonumber(sheet.tempo) or 1;
@@ -19395,7 +19407,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event445 = obj.dataLink147:addEventListener("onChange",
+    obj._e_event446 = obj.dataLink148:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet~= nil then
             							-- Reading sheet
@@ -19934,7 +19946,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event446 = obj.dataLink148:addEventListener("onChange",
+    obj._e_event447 = obj.dataLink149:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -19964,27 +19976,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event447 = obj.button63:addEventListener("onKeyDown",
+    obj._e_event448 = obj.button63:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event448 = obj.button63:addEventListener("onKeyUp",
+    obj._e_event449 = obj.button63:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event449 = obj.button63:addEventListener("onClick",
+    obj._e_event450 = obj.button63:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event450 = obj.button63:addEventListener("onMenu",
+    obj._e_event451 = obj.button63:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event451 = obj.cbProfcompanionforca:addEventListener("onMenu",
+    obj._e_event452 = obj.cbProfcompanionforca:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionforca"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionforca', true);
@@ -19992,42 +20004,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event452 = obj.cbProfcompanionforca:addEventListener("onClick",
+    obj._e_event453 = obj.cbProfcompanionforca:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionforca', false);
         end, obj);
 
-    obj._e_event453 = obj.dataLink149:addEventListener("onChange",
+    obj._e_event454 = obj.dataLink150:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionforca");
         end, obj);
 
-    obj._e_event454 = obj.dataLink150:addEventListener("onChange",
+    obj._e_event455 = obj.dataLink151:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionforca'] then updateCbVisibility('companionforca'); end;
         end, obj);
 
-    obj._e_event455 = obj.button64:addEventListener("onKeyDown",
+    obj._e_event456 = obj.button64:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event456 = obj.button64:addEventListener("onKeyUp",
+    obj._e_event457 = obj.button64:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event457 = obj.button64:addEventListener("onClick",
+    obj._e_event458 = obj.button64:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event458 = obj.button64:addEventListener("onMenu",
+    obj._e_event459 = obj.button64:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event459 = obj.dataLink151:addEventListener("onChange",
+    obj._e_event460 = obj.dataLink152:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionforca');
             
@@ -20043,7 +20055,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionforca:setHint(hint);
         end, obj);
 
-    obj._e_event460 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
+    obj._e_event461 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatletismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatletismo', true);
@@ -20051,42 +20063,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event461 = obj.cbProfcompanionatletismo:addEventListener("onClick",
+    obj._e_event462 = obj.cbProfcompanionatletismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatletismo', false);
         end, obj);
 
-    obj._e_event462 = obj.dataLink152:addEventListener("onChange",
+    obj._e_event463 = obj.dataLink153:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatletismo");
         end, obj);
 
-    obj._e_event463 = obj.dataLink153:addEventListener("onChange",
+    obj._e_event464 = obj.dataLink154:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatletismo'] then updateCbVisibility('companionatletismo'); end;
         end, obj);
 
-    obj._e_event464 = obj.button65:addEventListener("onKeyDown",
+    obj._e_event465 = obj.button65:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event465 = obj.button65:addEventListener("onKeyUp",
+    obj._e_event466 = obj.button65:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event466 = obj.button65:addEventListener("onClick",
+    obj._e_event467 = obj.button65:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, false);
         end, obj);
 
-    obj._e_event467 = obj.button65:addEventListener("onMenu",
+    obj._e_event468 = obj.button65:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, true);
         end, obj);
 
-    obj._e_event468 = obj.dataLink154:addEventListener("onChange",
+    obj._e_event469 = obj.dataLink155:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionforca', 'companionatletismo');
             
@@ -20102,7 +20114,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatletismo:setHint(hint);
         end, obj);
 
-    obj._e_event469 = obj.dataLink155:addEventListener("onChange",
+    obj._e_event470 = obj.dataLink156:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20132,27 +20144,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event470 = obj.button66:addEventListener("onKeyDown",
+    obj._e_event471 = obj.button66:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event471 = obj.button66:addEventListener("onKeyUp",
+    obj._e_event472 = obj.button66:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event472 = obj.button66:addEventListener("onClick",
+    obj._e_event473 = obj.button66:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event473 = obj.button66:addEventListener("onMenu",
+    obj._e_event474 = obj.button66:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event474 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
+    obj._e_event475 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiondestreza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiondestreza', true);
@@ -20160,42 +20172,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event475 = obj.cbProfcompaniondestreza:addEventListener("onClick",
+    obj._e_event476 = obj.cbProfcompaniondestreza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiondestreza', false);
         end, obj);
 
-    obj._e_event476 = obj.dataLink156:addEventListener("onChange",
+    obj._e_event477 = obj.dataLink157:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiondestreza");
         end, obj);
 
-    obj._e_event477 = obj.dataLink157:addEventListener("onChange",
+    obj._e_event478 = obj.dataLink158:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiondestreza'] then updateCbVisibility('companiondestreza'); end;
         end, obj);
 
-    obj._e_event478 = obj.button67:addEventListener("onKeyDown",
+    obj._e_event479 = obj.button67:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event479 = obj.button67:addEventListener("onKeyUp",
+    obj._e_event480 = obj.button67:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event480 = obj.button67:addEventListener("onClick",
+    obj._e_event481 = obj.button67:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event481 = obj.button67:addEventListener("onMenu",
+    obj._e_event482 = obj.button67:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event482 = obj.dataLink158:addEventListener("onChange",
+    obj._e_event483 = obj.dataLink159:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companiondestreza');
             
@@ -20211,7 +20223,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompaniondestreza:setHint(hint);
         end, obj);
 
-    obj._e_event483 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
+    obj._e_event484 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionacrobacia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionacrobacia', true);
@@ -20219,42 +20231,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event484 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
+    obj._e_event485 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionacrobacia', false);
         end, obj);
 
-    obj._e_event485 = obj.dataLink159:addEventListener("onChange",
+    obj._e_event486 = obj.dataLink160:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionacrobacia");
         end, obj);
 
-    obj._e_event486 = obj.dataLink160:addEventListener("onChange",
+    obj._e_event487 = obj.dataLink161:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionacrobacia'] then updateCbVisibility('companionacrobacia'); end;
         end, obj);
 
-    obj._e_event487 = obj.button68:addEventListener("onKeyDown",
+    obj._e_event488 = obj.button68:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event488 = obj.button68:addEventListener("onKeyUp",
+    obj._e_event489 = obj.button68:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event489 = obj.button68:addEventListener("onClick",
+    obj._e_event490 = obj.button68:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, false);
         end, obj);
 
-    obj._e_event490 = obj.button68:addEventListener("onMenu",
+    obj._e_event491 = obj.button68:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, true);
         end, obj);
 
-    obj._e_event491 = obj.dataLink161:addEventListener("onChange",
+    obj._e_event492 = obj.dataLink162:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionacrobacia');
             
@@ -20270,7 +20282,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionacrobacia:setHint(hint);
         end, obj);
 
-    obj._e_event492 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
+    obj._e_event493 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionfurtividade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionfurtividade', true);
@@ -20278,42 +20290,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event493 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
+    obj._e_event494 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionfurtividade', false);
         end, obj);
 
-    obj._e_event494 = obj.dataLink162:addEventListener("onChange",
+    obj._e_event495 = obj.dataLink163:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionfurtividade");
         end, obj);
 
-    obj._e_event495 = obj.dataLink163:addEventListener("onChange",
+    obj._e_event496 = obj.dataLink164:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionfurtividade'] then updateCbVisibility('companionfurtividade'); end;
         end, obj);
 
-    obj._e_event496 = obj.button69:addEventListener("onKeyDown",
+    obj._e_event497 = obj.button69:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event497 = obj.button69:addEventListener("onKeyUp",
+    obj._e_event498 = obj.button69:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event498 = obj.button69:addEventListener("onClick",
+    obj._e_event499 = obj.button69:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, false);
         end, obj);
 
-    obj._e_event499 = obj.button69:addEventListener("onMenu",
+    obj._e_event500 = obj.button69:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, true);
         end, obj);
 
-    obj._e_event500 = obj.dataLink164:addEventListener("onChange",
+    obj._e_event501 = obj.dataLink165:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionfurtividade');
             
@@ -20329,7 +20341,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionfurtividade:setHint(hint);
         end, obj);
 
-    obj._e_event501 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
+    obj._e_event502 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionprestidigitacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', true);
@@ -20337,42 +20349,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event502 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
+    obj._e_event503 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', false);
         end, obj);
 
-    obj._e_event503 = obj.dataLink165:addEventListener("onChange",
+    obj._e_event504 = obj.dataLink166:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionprestidigitacao");
         end, obj);
 
-    obj._e_event504 = obj.dataLink166:addEventListener("onChange",
+    obj._e_event505 = obj.dataLink167:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionprestidigitacao'] then updateCbVisibility('companionprestidigitacao'); end;
         end, obj);
 
-    obj._e_event505 = obj.button70:addEventListener("onKeyDown",
+    obj._e_event506 = obj.button70:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event506 = obj.button70:addEventListener("onKeyUp",
+    obj._e_event507 = obj.button70:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event507 = obj.button70:addEventListener("onClick",
+    obj._e_event508 = obj.button70:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, false);
         end, obj);
 
-    obj._e_event508 = obj.button70:addEventListener("onMenu",
+    obj._e_event509 = obj.button70:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, true);
         end, obj);
 
-    obj._e_event509 = obj.dataLink167:addEventListener("onChange",
+    obj._e_event510 = obj.dataLink168:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionprestidigitacao');
             
@@ -20388,7 +20400,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionprestidigitacao:setHint(hint);
         end, obj);
 
-    obj._e_event510 = obj.dataLink168:addEventListener("onChange",
+    obj._e_event511 = obj.dataLink169:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20418,27 +20430,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event511 = obj.button71:addEventListener("onKeyDown",
+    obj._e_event512 = obj.button71:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event512 = obj.button71:addEventListener("onKeyUp",
+    obj._e_event513 = obj.button71:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event513 = obj.button71:addEventListener("onClick",
+    obj._e_event514 = obj.button71:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event514 = obj.button71:addEventListener("onMenu",
+    obj._e_event515 = obj.button71:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event515 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
+    obj._e_event516 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconstituicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconstituicao', true);
@@ -20446,42 +20458,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event516 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
+    obj._e_event517 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconstituicao', false);
         end, obj);
 
-    obj._e_event517 = obj.dataLink169:addEventListener("onChange",
+    obj._e_event518 = obj.dataLink170:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconstituicao");
         end, obj);
 
-    obj._e_event518 = obj.dataLink170:addEventListener("onChange",
+    obj._e_event519 = obj.dataLink171:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconstituicao'] then updateCbVisibility('companionconstituicao'); end;
         end, obj);
 
-    obj._e_event519 = obj.button72:addEventListener("onKeyDown",
+    obj._e_event520 = obj.button72:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event520 = obj.button72:addEventListener("onKeyUp",
+    obj._e_event521 = obj.button72:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event521 = obj.button72:addEventListener("onClick",
+    obj._e_event522 = obj.button72:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event522 = obj.button72:addEventListener("onMenu",
+    obj._e_event523 = obj.button72:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event523 = obj.dataLink171:addEventListener("onChange",
+    obj._e_event524 = obj.dataLink172:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionconstituicao');
             
@@ -20497,7 +20509,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionconstituicao:setHint(hint);
         end, obj);
 
-    obj._e_event524 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
+    obj._e_event525 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconcentracao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconcentracao', true);
@@ -20505,42 +20517,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event525 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
+    obj._e_event526 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconcentracao', false);
         end, obj);
 
-    obj._e_event526 = obj.dataLink172:addEventListener("onChange",
+    obj._e_event527 = obj.dataLink173:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconcentracao");
         end, obj);
 
-    obj._e_event527 = obj.dataLink173:addEventListener("onChange",
+    obj._e_event528 = obj.dataLink174:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconcentracao'] then updateCbVisibility('companionconcentracao'); end;
         end, obj);
 
-    obj._e_event528 = obj.button73:addEventListener("onKeyDown",
+    obj._e_event529 = obj.button73:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event529 = obj.button73:addEventListener("onKeyUp",
+    obj._e_event530 = obj.button73:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event530 = obj.button73:addEventListener("onClick",
+    obj._e_event531 = obj.button73:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, false);
         end, obj);
 
-    obj._e_event531 = obj.button73:addEventListener("onMenu",
+    obj._e_event532 = obj.button73:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, true);
         end, obj);
 
-    obj._e_event532 = obj.dataLink174:addEventListener("onChange",
+    obj._e_event533 = obj.dataLink175:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companionconcentracao');
             
@@ -20556,7 +20568,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionconcentracao:setHint(hint);
         end, obj);
 
-    obj._e_event533 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
+    obj._e_event534 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiontolerancia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiontolerancia', true);
@@ -20564,42 +20576,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event534 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
+    obj._e_event535 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiontolerancia', false);
         end, obj);
 
-    obj._e_event535 = obj.dataLink175:addEventListener("onChange",
+    obj._e_event536 = obj.dataLink176:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiontolerancia");
         end, obj);
 
-    obj._e_event536 = obj.dataLink176:addEventListener("onChange",
+    obj._e_event537 = obj.dataLink177:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiontolerancia'] then updateCbVisibility('companiontolerancia'); end;
         end, obj);
 
-    obj._e_event537 = obj.button74:addEventListener("onKeyDown",
+    obj._e_event538 = obj.button74:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event538 = obj.button74:addEventListener("onKeyUp",
+    obj._e_event539 = obj.button74:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event539 = obj.button74:addEventListener("onClick",
+    obj._e_event540 = obj.button74:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, false);
         end, obj);
 
-    obj._e_event540 = obj.button74:addEventListener("onMenu",
+    obj._e_event541 = obj.button74:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, true);
         end, obj);
 
-    obj._e_event541 = obj.dataLink177:addEventListener("onChange",
+    obj._e_event542 = obj.dataLink178:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companiontolerancia');
             
@@ -20615,7 +20627,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompaniontolerancia:setHint(hint);
         end, obj);
 
-    obj._e_event542 = obj.dataLink178:addEventListener("onChange",
+    obj._e_event543 = obj.dataLink179:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20645,27 +20657,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event543 = obj.button75:addEventListener("onKeyDown",
+    obj._e_event544 = obj.button75:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event544 = obj.button75:addEventListener("onKeyUp",
+    obj._e_event545 = obj.button75:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event545 = obj.button75:addEventListener("onClick",
+    obj._e_event546 = obj.button75:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event546 = obj.button75:addEventListener("onMenu",
+    obj._e_event547 = obj.button75:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event547 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
+    obj._e_event548 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninteligencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninteligencia', true);
@@ -20673,42 +20685,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event548 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
+    obj._e_event549 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninteligencia', false);
         end, obj);
 
-    obj._e_event549 = obj.dataLink179:addEventListener("onChange",
+    obj._e_event550 = obj.dataLink180:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninteligencia");
         end, obj);
 
-    obj._e_event550 = obj.dataLink180:addEventListener("onChange",
+    obj._e_event551 = obj.dataLink181:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninteligencia'] then updateCbVisibility('companioninteligencia'); end;
         end, obj);
 
-    obj._e_event551 = obj.button76:addEventListener("onKeyDown",
+    obj._e_event552 = obj.button76:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event552 = obj.button76:addEventListener("onKeyUp",
+    obj._e_event553 = obj.button76:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event553 = obj.button76:addEventListener("onClick",
+    obj._e_event554 = obj.button76:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event554 = obj.button76:addEventListener("onMenu",
+    obj._e_event555 = obj.button76:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event555 = obj.dataLink181:addEventListener("onChange",
+    obj._e_event556 = obj.dataLink182:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioninteligencia');
             
@@ -20724,7 +20736,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioninteligencia:setHint(hint);
         end, obj);
 
-    obj._e_event556 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
+    obj._e_event557 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionarcanismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionarcanismo', true);
@@ -20732,42 +20744,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event557 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
+    obj._e_event558 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionarcanismo', false);
         end, obj);
 
-    obj._e_event558 = obj.dataLink182:addEventListener("onChange",
+    obj._e_event559 = obj.dataLink183:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionarcanismo");
         end, obj);
 
-    obj._e_event559 = obj.dataLink183:addEventListener("onChange",
+    obj._e_event560 = obj.dataLink184:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionarcanismo'] then updateCbVisibility('companionarcanismo'); end;
         end, obj);
 
-    obj._e_event560 = obj.button77:addEventListener("onKeyDown",
+    obj._e_event561 = obj.button77:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event561 = obj.button77:addEventListener("onKeyUp",
+    obj._e_event562 = obj.button77:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event562 = obj.button77:addEventListener("onClick",
+    obj._e_event563 = obj.button77:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, false);
         end, obj);
 
-    obj._e_event563 = obj.button77:addEventListener("onMenu",
+    obj._e_event564 = obj.button77:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, true);
         end, obj);
 
-    obj._e_event564 = obj.dataLink184:addEventListener("onChange",
+    obj._e_event565 = obj.dataLink185:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionarcanismo');
             
@@ -20783,7 +20795,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionarcanismo:setHint(hint);
         end, obj);
 
-    obj._e_event565 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
+    obj._e_event566 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionhistoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionhistoria', true);
@@ -20791,42 +20803,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event566 = obj.cbProfcompanionhistoria:addEventListener("onClick",
+    obj._e_event567 = obj.cbProfcompanionhistoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionhistoria', false);
         end, obj);
 
-    obj._e_event567 = obj.dataLink185:addEventListener("onChange",
+    obj._e_event568 = obj.dataLink186:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionhistoria");
         end, obj);
 
-    obj._e_event568 = obj.dataLink186:addEventListener("onChange",
+    obj._e_event569 = obj.dataLink187:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionhistoria'] then updateCbVisibility('companionhistoria'); end;
         end, obj);
 
-    obj._e_event569 = obj.button78:addEventListener("onKeyDown",
+    obj._e_event570 = obj.button78:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event570 = obj.button78:addEventListener("onKeyUp",
+    obj._e_event571 = obj.button78:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event571 = obj.button78:addEventListener("onClick",
+    obj._e_event572 = obj.button78:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, false);
         end, obj);
 
-    obj._e_event572 = obj.button78:addEventListener("onMenu",
+    obj._e_event573 = obj.button78:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, true);
         end, obj);
 
-    obj._e_event573 = obj.dataLink187:addEventListener("onChange",
+    obj._e_event574 = obj.dataLink188:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionhistoria');
             
@@ -20842,7 +20854,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionhistoria:setHint(hint);
         end, obj);
 
-    obj._e_event574 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
+    obj._e_event575 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninvestigacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninvestigacao', true);
@@ -20850,42 +20862,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event575 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
+    obj._e_event576 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninvestigacao', false);
         end, obj);
 
-    obj._e_event576 = obj.dataLink188:addEventListener("onChange",
+    obj._e_event577 = obj.dataLink189:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninvestigacao");
         end, obj);
 
-    obj._e_event577 = obj.dataLink189:addEventListener("onChange",
+    obj._e_event578 = obj.dataLink190:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninvestigacao'] then updateCbVisibility('companioninvestigacao'); end;
         end, obj);
 
-    obj._e_event578 = obj.button79:addEventListener("onKeyDown",
+    obj._e_event579 = obj.button79:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event579 = obj.button79:addEventListener("onKeyUp",
+    obj._e_event580 = obj.button79:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event580 = obj.button79:addEventListener("onClick",
+    obj._e_event581 = obj.button79:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, false);
         end, obj);
 
-    obj._e_event581 = obj.button79:addEventListener("onMenu",
+    obj._e_event582 = obj.button79:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, true);
         end, obj);
 
-    obj._e_event582 = obj.dataLink190:addEventListener("onChange",
+    obj._e_event583 = obj.dataLink191:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companioninvestigacao');
             
@@ -20901,7 +20913,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanioninvestigacao:setHint(hint);
         end, obj);
 
-    obj._e_event583 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
+    obj._e_event584 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionnatureza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionnatureza', true);
@@ -20909,42 +20921,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event584 = obj.cbProfcompanionnatureza:addEventListener("onClick",
+    obj._e_event585 = obj.cbProfcompanionnatureza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionnatureza', false);
         end, obj);
 
-    obj._e_event585 = obj.dataLink191:addEventListener("onChange",
+    obj._e_event586 = obj.dataLink192:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionnatureza");
         end, obj);
 
-    obj._e_event586 = obj.dataLink192:addEventListener("onChange",
+    obj._e_event587 = obj.dataLink193:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionnatureza'] then updateCbVisibility('companionnatureza'); end;
         end, obj);
 
-    obj._e_event587 = obj.button80:addEventListener("onKeyDown",
+    obj._e_event588 = obj.button80:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event588 = obj.button80:addEventListener("onKeyUp",
+    obj._e_event589 = obj.button80:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event589 = obj.button80:addEventListener("onClick",
+    obj._e_event590 = obj.button80:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, false);
         end, obj);
 
-    obj._e_event590 = obj.button80:addEventListener("onMenu",
+    obj._e_event591 = obj.button80:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, true);
         end, obj);
 
-    obj._e_event591 = obj.dataLink193:addEventListener("onChange",
+    obj._e_event592 = obj.dataLink194:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionnatureza');
             
@@ -20960,7 +20972,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionnatureza:setHint(hint);
         end, obj);
 
-    obj._e_event592 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
+    obj._e_event593 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionreligiao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionreligiao', true);
@@ -20968,42 +20980,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event593 = obj.cbProfcompanionreligiao:addEventListener("onClick",
+    obj._e_event594 = obj.cbProfcompanionreligiao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionreligiao', false);
         end, obj);
 
-    obj._e_event594 = obj.dataLink194:addEventListener("onChange",
+    obj._e_event595 = obj.dataLink195:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionreligiao");
         end, obj);
 
-    obj._e_event595 = obj.dataLink195:addEventListener("onChange",
+    obj._e_event596 = obj.dataLink196:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionreligiao'] then updateCbVisibility('companionreligiao'); end;
         end, obj);
 
-    obj._e_event596 = obj.button81:addEventListener("onKeyDown",
+    obj._e_event597 = obj.button81:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event597 = obj.button81:addEventListener("onKeyUp",
+    obj._e_event598 = obj.button81:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event598 = obj.button81:addEventListener("onClick",
+    obj._e_event599 = obj.button81:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, false);
         end, obj);
 
-    obj._e_event599 = obj.button81:addEventListener("onMenu",
+    obj._e_event600 = obj.button81:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, true);
         end, obj);
 
-    obj._e_event600 = obj.dataLink196:addEventListener("onChange",
+    obj._e_event601 = obj.dataLink197:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionreligiao');
             
@@ -21019,7 +21031,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionreligiao:setHint(hint);
         end, obj);
 
-    obj._e_event601 = obj.dataLink197:addEventListener("onChange",
+    obj._e_event602 = obj.dataLink198:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21049,27 +21061,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event602 = obj.button82:addEventListener("onKeyDown",
+    obj._e_event603 = obj.button82:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event603 = obj.button82:addEventListener("onKeyUp",
+    obj._e_event604 = obj.button82:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event604 = obj.button82:addEventListener("onClick",
+    obj._e_event605 = obj.button82:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event605 = obj.button82:addEventListener("onMenu",
+    obj._e_event606 = obj.button82:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event606 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
+    obj._e_event607 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsabedoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsabedoria', true);
@@ -21077,42 +21089,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event607 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
+    obj._e_event608 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsabedoria', false);
         end, obj);
 
-    obj._e_event608 = obj.dataLink198:addEventListener("onChange",
+    obj._e_event609 = obj.dataLink199:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsabedoria");
         end, obj);
 
-    obj._e_event609 = obj.dataLink199:addEventListener("onChange",
+    obj._e_event610 = obj.dataLink200:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsabedoria'] then updateCbVisibility('companionsabedoria'); end;
         end, obj);
 
-    obj._e_event610 = obj.button83:addEventListener("onKeyDown",
+    obj._e_event611 = obj.button83:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event611 = obj.button83:addEventListener("onKeyUp",
+    obj._e_event612 = obj.button83:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event612 = obj.button83:addEventListener("onClick",
+    obj._e_event613 = obj.button83:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event613 = obj.button83:addEventListener("onMenu",
+    obj._e_event614 = obj.button83:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event614 = obj.dataLink200:addEventListener("onChange",
+    obj._e_event615 = obj.dataLink201:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionsabedoria');
             
@@ -21128,7 +21140,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionsabedoria:setHint(hint);
         end, obj);
 
-    obj._e_event615 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
+    obj._e_event616 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionadestrarAnimais"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', true);
@@ -21136,42 +21148,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event616 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
+    obj._e_event617 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', false);
         end, obj);
 
-    obj._e_event617 = obj.dataLink201:addEventListener("onChange",
+    obj._e_event618 = obj.dataLink202:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionadestrarAnimais");
         end, obj);
 
-    obj._e_event618 = obj.dataLink202:addEventListener("onChange",
+    obj._e_event619 = obj.dataLink203:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionadestrarAnimais'] then updateCbVisibility('companionadestrarAnimais'); end;
         end, obj);
 
-    obj._e_event619 = obj.button84:addEventListener("onKeyDown",
+    obj._e_event620 = obj.button84:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event620 = obj.button84:addEventListener("onKeyUp",
+    obj._e_event621 = obj.button84:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event621 = obj.button84:addEventListener("onClick",
+    obj._e_event622 = obj.button84:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, false);
         end, obj);
 
-    obj._e_event622 = obj.button84:addEventListener("onMenu",
+    obj._e_event623 = obj.button84:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, true);
         end, obj);
 
-    obj._e_event623 = obj.dataLink203:addEventListener("onChange",
+    obj._e_event624 = obj.dataLink204:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionadestrarAnimais');
             
@@ -21187,7 +21199,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionadestrarAnimais:setHint(hint);
         end, obj);
 
-    obj._e_event624 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
+    obj._e_event625 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintuicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintuicao', true);
@@ -21195,42 +21207,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event625 = obj.cbProfcompanionintuicao:addEventListener("onClick",
+    obj._e_event626 = obj.cbProfcompanionintuicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintuicao', false);
         end, obj);
 
-    obj._e_event626 = obj.dataLink204:addEventListener("onChange",
+    obj._e_event627 = obj.dataLink205:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintuicao");
         end, obj);
 
-    obj._e_event627 = obj.dataLink205:addEventListener("onChange",
+    obj._e_event628 = obj.dataLink206:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintuicao'] then updateCbVisibility('companionintuicao'); end;
         end, obj);
 
-    obj._e_event628 = obj.button85:addEventListener("onKeyDown",
+    obj._e_event629 = obj.button85:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event629 = obj.button85:addEventListener("onKeyUp",
+    obj._e_event630 = obj.button85:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event630 = obj.button85:addEventListener("onClick",
+    obj._e_event631 = obj.button85:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, false);
         end, obj);
 
-    obj._e_event631 = obj.button85:addEventListener("onMenu",
+    obj._e_event632 = obj.button85:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, true);
         end, obj);
 
-    obj._e_event632 = obj.dataLink206:addEventListener("onChange",
+    obj._e_event633 = obj.dataLink207:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionintuicao');
             
@@ -21246,7 +21258,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintuicao:setHint(hint);
         end, obj);
 
-    obj._e_event633 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
+    obj._e_event634 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionmedicina"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionmedicina', true);
@@ -21254,42 +21266,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event634 = obj.cbProfcompanionmedicina:addEventListener("onClick",
+    obj._e_event635 = obj.cbProfcompanionmedicina:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionmedicina', false);
         end, obj);
 
-    obj._e_event635 = obj.dataLink207:addEventListener("onChange",
+    obj._e_event636 = obj.dataLink208:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionmedicina");
         end, obj);
 
-    obj._e_event636 = obj.dataLink208:addEventListener("onChange",
+    obj._e_event637 = obj.dataLink209:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionmedicina'] then updateCbVisibility('companionmedicina'); end;
         end, obj);
 
-    obj._e_event637 = obj.button86:addEventListener("onKeyDown",
+    obj._e_event638 = obj.button86:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event638 = obj.button86:addEventListener("onKeyUp",
+    obj._e_event639 = obj.button86:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event639 = obj.button86:addEventListener("onClick",
+    obj._e_event640 = obj.button86:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, false);
         end, obj);
 
-    obj._e_event640 = obj.button86:addEventListener("onMenu",
+    obj._e_event641 = obj.button86:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, true);
         end, obj);
 
-    obj._e_event641 = obj.dataLink209:addEventListener("onChange",
+    obj._e_event642 = obj.dataLink210:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionmedicina');
             
@@ -21305,7 +21317,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionmedicina:setHint(hint);
         end, obj);
 
-    obj._e_event642 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
+    obj._e_event643 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpercepcao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpercepcao', true);
@@ -21313,42 +21325,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event643 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
+    obj._e_event644 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpercepcao', false);
         end, obj);
 
-    obj._e_event644 = obj.dataLink210:addEventListener("onChange",
+    obj._e_event645 = obj.dataLink211:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpercepcao");
         end, obj);
 
-    obj._e_event645 = obj.dataLink211:addEventListener("onChange",
+    obj._e_event646 = obj.dataLink212:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpercepcao'] then updateCbVisibility('companionpercepcao'); end;
         end, obj);
 
-    obj._e_event646 = obj.button87:addEventListener("onKeyDown",
+    obj._e_event647 = obj.button87:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event647 = obj.button87:addEventListener("onKeyUp",
+    obj._e_event648 = obj.button87:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event648 = obj.button87:addEventListener("onClick",
+    obj._e_event649 = obj.button87:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, false);
         end, obj);
 
-    obj._e_event649 = obj.button87:addEventListener("onMenu",
+    obj._e_event650 = obj.button87:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, true);
         end, obj);
 
-    obj._e_event650 = obj.dataLink212:addEventListener("onChange",
+    obj._e_event651 = obj.dataLink213:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionpercepcao');
             
@@ -21364,7 +21376,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpercepcao:setHint(hint);
         end, obj);
 
-    obj._e_event651 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
+    obj._e_event652 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsobrevivencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', true);
@@ -21372,42 +21384,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event652 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
+    obj._e_event653 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', false);
         end, obj);
 
-    obj._e_event653 = obj.dataLink213:addEventListener("onChange",
+    obj._e_event654 = obj.dataLink214:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsobrevivencia");
         end, obj);
 
-    obj._e_event654 = obj.dataLink214:addEventListener("onChange",
+    obj._e_event655 = obj.dataLink215:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsobrevivencia'] then updateCbVisibility('companionsobrevivencia'); end;
         end, obj);
 
-    obj._e_event655 = obj.button88:addEventListener("onKeyDown",
+    obj._e_event656 = obj.button88:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event656 = obj.button88:addEventListener("onKeyUp",
+    obj._e_event657 = obj.button88:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event657 = obj.button88:addEventListener("onClick",
+    obj._e_event658 = obj.button88:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, false);
         end, obj);
 
-    obj._e_event658 = obj.button88:addEventListener("onMenu",
+    obj._e_event659 = obj.button88:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, true);
         end, obj);
 
-    obj._e_event659 = obj.dataLink215:addEventListener("onChange",
+    obj._e_event660 = obj.dataLink216:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionsobrevivencia');
             
@@ -21423,7 +21435,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionsobrevivencia:setHint(hint);
         end, obj);
 
-    obj._e_event660 = obj.dataLink216:addEventListener("onChange",
+    obj._e_event661 = obj.dataLink217:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21453,27 +21465,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event661 = obj.button89:addEventListener("onKeyDown",
+    obj._e_event662 = obj.button89:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event662 = obj.button89:addEventListener("onKeyUp",
+    obj._e_event663 = obj.button89:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event663 = obj.button89:addEventListener("onClick",
+    obj._e_event664 = obj.button89:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event664 = obj.button89:addEventListener("onMenu",
+    obj._e_event665 = obj.button89:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event665 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
+    obj._e_event666 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioncarisma"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioncarisma', true);
@@ -21481,42 +21493,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event666 = obj.cbProfcompanioncarisma:addEventListener("onClick",
+    obj._e_event667 = obj.cbProfcompanioncarisma:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioncarisma', false);
         end, obj);
 
-    obj._e_event667 = obj.dataLink217:addEventListener("onChange",
+    obj._e_event668 = obj.dataLink218:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioncarisma");
         end, obj);
 
-    obj._e_event668 = obj.dataLink218:addEventListener("onChange",
+    obj._e_event669 = obj.dataLink219:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioncarisma'] then updateCbVisibility('companioncarisma'); end;
         end, obj);
 
-    obj._e_event669 = obj.button90:addEventListener("onKeyDown",
+    obj._e_event670 = obj.button90:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event670 = obj.button90:addEventListener("onKeyUp",
+    obj._e_event671 = obj.button90:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event671 = obj.button90:addEventListener("onClick",
+    obj._e_event672 = obj.button90:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event672 = obj.button90:addEventListener("onMenu",
+    obj._e_event673 = obj.button90:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event673 = obj.dataLink219:addEventListener("onChange",
+    obj._e_event674 = obj.dataLink220:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioncarisma');
             
@@ -21532,7 +21544,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioncarisma:setHint(hint);
         end, obj);
 
-    obj._e_event674 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
+    obj._e_event675 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatuacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatuacao', true);
@@ -21540,42 +21552,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event675 = obj.cbProfcompanionatuacao:addEventListener("onClick",
+    obj._e_event676 = obj.cbProfcompanionatuacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatuacao', false);
         end, obj);
 
-    obj._e_event676 = obj.dataLink220:addEventListener("onChange",
+    obj._e_event677 = obj.dataLink221:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatuacao");
         end, obj);
 
-    obj._e_event677 = obj.dataLink221:addEventListener("onChange",
+    obj._e_event678 = obj.dataLink222:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatuacao'] then updateCbVisibility('companionatuacao'); end;
         end, obj);
 
-    obj._e_event678 = obj.button91:addEventListener("onKeyDown",
+    obj._e_event679 = obj.button91:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event679 = obj.button91:addEventListener("onKeyUp",
+    obj._e_event680 = obj.button91:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event680 = obj.button91:addEventListener("onClick",
+    obj._e_event681 = obj.button91:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, false);
         end, obj);
 
-    obj._e_event681 = obj.button91:addEventListener("onMenu",
+    obj._e_event682 = obj.button91:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, true);
         end, obj);
 
-    obj._e_event682 = obj.dataLink222:addEventListener("onChange",
+    obj._e_event683 = obj.dataLink223:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionatuacao');
             
@@ -21591,7 +21603,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatuacao:setHint(hint);
         end, obj);
 
-    obj._e_event683 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
+    obj._e_event684 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionenganacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionenganacao', true);
@@ -21599,42 +21611,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event684 = obj.cbProfcompanionenganacao:addEventListener("onClick",
+    obj._e_event685 = obj.cbProfcompanionenganacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionenganacao', false);
         end, obj);
 
-    obj._e_event685 = obj.dataLink223:addEventListener("onChange",
+    obj._e_event686 = obj.dataLink224:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionenganacao");
         end, obj);
 
-    obj._e_event686 = obj.dataLink224:addEventListener("onChange",
+    obj._e_event687 = obj.dataLink225:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionenganacao'] then updateCbVisibility('companionenganacao'); end;
         end, obj);
 
-    obj._e_event687 = obj.button92:addEventListener("onKeyDown",
+    obj._e_event688 = obj.button92:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event688 = obj.button92:addEventListener("onKeyUp",
+    obj._e_event689 = obj.button92:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event689 = obj.button92:addEventListener("onClick",
+    obj._e_event690 = obj.button92:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, false);
         end, obj);
 
-    obj._e_event690 = obj.button92:addEventListener("onMenu",
+    obj._e_event691 = obj.button92:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, true);
         end, obj);
 
-    obj._e_event691 = obj.dataLink225:addEventListener("onChange",
+    obj._e_event692 = obj.dataLink226:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionenganacao');
             
@@ -21650,7 +21662,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionenganacao:setHint(hint);
         end, obj);
 
-    obj._e_event692 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
+    obj._e_event693 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintimidacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintimidacao', true);
@@ -21658,42 +21670,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event693 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
+    obj._e_event694 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintimidacao', false);
         end, obj);
 
-    obj._e_event694 = obj.dataLink226:addEventListener("onChange",
+    obj._e_event695 = obj.dataLink227:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintimidacao");
         end, obj);
 
-    obj._e_event695 = obj.dataLink227:addEventListener("onChange",
+    obj._e_event696 = obj.dataLink228:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintimidacao'] then updateCbVisibility('companionintimidacao'); end;
         end, obj);
 
-    obj._e_event696 = obj.button93:addEventListener("onKeyDown",
+    obj._e_event697 = obj.button93:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event697 = obj.button93:addEventListener("onKeyUp",
+    obj._e_event698 = obj.button93:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event698 = obj.button93:addEventListener("onClick",
+    obj._e_event699 = obj.button93:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, false);
         end, obj);
 
-    obj._e_event699 = obj.button93:addEventListener("onMenu",
+    obj._e_event700 = obj.button93:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, true);
         end, obj);
 
-    obj._e_event700 = obj.dataLink228:addEventListener("onChange",
+    obj._e_event701 = obj.dataLink229:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionintimidacao');
             
@@ -21709,7 +21721,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintimidacao:setHint(hint);
         end, obj);
 
-    obj._e_event701 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
+    obj._e_event702 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpersuasao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpersuasao', true);
@@ -21717,42 +21729,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event702 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
+    obj._e_event703 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpersuasao', false);
         end, obj);
 
-    obj._e_event703 = obj.dataLink229:addEventListener("onChange",
+    obj._e_event704 = obj.dataLink230:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpersuasao");
         end, obj);
 
-    obj._e_event704 = obj.dataLink230:addEventListener("onChange",
+    obj._e_event705 = obj.dataLink231:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpersuasao'] then updateCbVisibility('companionpersuasao'); end;
         end, obj);
 
-    obj._e_event705 = obj.button94:addEventListener("onKeyDown",
+    obj._e_event706 = obj.button94:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event706 = obj.button94:addEventListener("onKeyUp",
+    obj._e_event707 = obj.button94:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event707 = obj.button94:addEventListener("onClick",
+    obj._e_event708 = obj.button94:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, false);
         end, obj);
 
-    obj._e_event708 = obj.button94:addEventListener("onMenu",
+    obj._e_event709 = obj.button94:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, true);
         end, obj);
 
-    obj._e_event709 = obj.dataLink231:addEventListener("onChange",
+    obj._e_event710 = obj.dataLink232:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionpersuasao');
             
@@ -21768,78 +21780,78 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpersuasao:setHint(hint);
         end, obj);
 
-    obj._e_event710 = obj.button95:addEventListener("onKeyDown",
+    obj._e_event711 = obj.button95:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event711 = obj.button95:addEventListener("onKeyUp",
+    obj._e_event712 = obj.button95:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event712 = obj.button95:addEventListener("onClick",
+    obj._e_event713 = obj.button95:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, false);
         end, obj);
 
-    obj._e_event713 = obj.button95:addEventListener("onMenu",
+    obj._e_event714 = obj.button95:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, true);
         end, obj);
 
-    obj._e_event714 = obj.button96:addEventListener("onClick",
+    obj._e_event715 = obj.button96:addEventListener("onClick",
         function (_)
             descanso.curto(sheet);
         end, obj);
 
-    obj._e_event715 = obj.button97:addEventListener("onClick",
+    obj._e_event716 = obj.button97:addEventListener("onClick",
         function (_)
             descanso.longo(sheet);
         end, obj);
 
-    obj._e_event716 = obj.button98:addEventListener("onClick",
+    obj._e_event717 = obj.button98:addEventListener("onClick",
         function (_)
             levarDano(sheet);
         end, obj);
 
-    obj._e_event717 = obj.dataLink232:addEventListener("onChange",
+    obj._e_event718 = obj.dataLink233:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             self.progBar2:setColor(sheet.barColor2);
         end, obj);
 
-    obj._e_event718 = obj.dataLink233:addEventListener("onChange",
+    obj._e_event719 = obj.dataLink234:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local jogador = Firecast.getPersonagemDe(sheet).dono;
             										if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(1, sheet.PV2, sheet.PVmax2); end;
         end, obj);
 
-    obj._e_event719 = obj.dataLink234:addEventListener("onChange",
+    obj._e_event720 = obj.dataLink235:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.descansoLongo then sheet.PV2 = sheet.PVmax2; end;
         end, obj);
 
-    obj._e_event720 = obj.button99:addEventListener("onKeyDown",
+    obj._e_event721 = obj.button99:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event721 = obj.button99:addEventListener("onKeyUp",
+    obj._e_event722 = obj.button99:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event722 = obj.button99:addEventListener("onClick",
+    obj._e_event723 = obj.button99:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.deathSave, nil, nil, false);
         end, obj);
 
-    obj._e_event723 = obj.button99:addEventListener("onMenu",
+    obj._e_event724 = obj.button99:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.deathSave, nil, nil, true);
         end, obj);
 
-    obj._e_event724 = obj.checkBox10:addEventListener("onChange",
+    obj._e_event725 = obj.checkBox10:addEventListener("onChange",
         function (_)
             if sheet then
             							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
@@ -21847,7 +21859,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event725 = obj.checkBox11:addEventListener("onChange",
+    obj._e_event726 = obj.checkBox11:addEventListener("onChange",
         function (_)
             if sheet then
             							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
@@ -21855,7 +21867,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event726 = obj.dataLink235:addEventListener("onChange",
+    obj._e_event727 = obj.dataLink236:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             					local theme = sheet.theme;
@@ -21872,7 +21884,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event727 = obj.dataLink236:addEventListener("onChange",
+    obj._e_event728 = obj.dataLink237:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local color = sheet.colorBackground or "#505050";
@@ -21884,7 +21896,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event728 = obj.dataLink237:addEventListener("onChange",
+    obj._e_event729 = obj.dataLink238:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local strokeColor = sheet.colorStroke or "#FFFFFF";
@@ -21900,7 +21912,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event729 = obj.dataLink238:addEventListener("onChange",
+    obj._e_event730 = obj.dataLink239:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local fontColor = sheet.colorFont or "#FFFFFF";
@@ -21938,22 +21950,22 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event730 = obj.button100:addEventListener("onClick",
+    obj._e_event731 = obj.button100:addEventListener("onClick",
         function (_)
             GUI.openInBrowser(' ')
         end, obj);
 
-    obj._e_event731 = obj.button101:addEventListener("onClick",
+    obj._e_event732 = obj.button101:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');
         end, obj);
 
-    obj._e_event732 = obj.button102:addEventListener("onClick",
+    obj._e_event733 = obj.button102:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');
         end, obj);
 
-    obj._e_event733 = obj.button103:addEventListener("onClick",
+    obj._e_event734 = obj.button103:addEventListener("onClick",
         function (_)
             local xml = NDB.exportXML(sheet);
             
@@ -21970,7 +21982,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end);
         end, obj);
 
-    obj._e_event734 = obj.button104:addEventListener("onClick",
+    obj._e_event735 = obj.button104:addEventListener("onClick",
         function (_)
             Dialogs.openFile("Importar Ficha", "application/xml", false, 
             						function(arquivos)
@@ -21986,6 +21998,7 @@ self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event735);
         __o_rrpgObjs.removeEventListenerById(self._e_event734);
         __o_rrpgObjs.removeEventListenerById(self._e_event733);
         __o_rrpgObjs.removeEventListenerById(self._e_event732);
@@ -22835,6 +22848,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.labProfsobrevivencia ~= nil then self.labProfsobrevivencia:destroy(); self.labProfsobrevivencia = nil; end;
         if self.edtUpperGridCampo8 ~= nil then self.edtUpperGridCampo8:destroy(); self.edtUpperGridCampo8 = nil; end;
         if self.dataLink201 ~= nil then self.dataLink201:destroy(); self.dataLink201 = nil; end;
+        if self.dataLink239 ~= nil then self.dataLink239:destroy(); self.dataLink239 = nil; end;
         if self.horzLine38 ~= nil then self.horzLine38:destroy(); self.horzLine38 = nil; end;
         if self.comboBox6 ~= nil then self.comboBox6:destroy(); self.comboBox6 = nil; end;
         if self.flowPart18 ~= nil then self.flowPart18:destroy(); self.flowPart18 = nil; end;

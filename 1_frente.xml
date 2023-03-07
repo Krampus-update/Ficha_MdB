@@ -32,6 +32,13 @@
 				</flowLayout>
 			</flowLayout>
 			<flowLineBreak/>
+				<dataLink fields="{'classeENivel', 'CA','iniciativa','percepicaoPassiva'}">
+					<event name='onChange'>
+						local jogador = Firecast.getPersonagemDe(sheet).dono;
+						jogador:requestSetEditableLine(1, sheet.classeENivel)
+						jogador:requestSetEditableLine(2, "CA"..sheet.CA.." | INI"..sheet.iniciativa.." | PP"..sheet.percepicaoPassiva)
+					</event>
+				</dataLink>
 
 			<!-- SEGUNDA PARTE -->
 			<flowLayout class="oneLineTile" horzAlign="justify" autoHeight="true" avoidScale="true">
