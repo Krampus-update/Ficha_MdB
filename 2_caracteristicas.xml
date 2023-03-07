@@ -143,9 +143,8 @@
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 		</flowPart>
 		
-		<layout left="0" top="355" width="375" height="250">
-			<rectangle align="client" color="black"/>
-			<label left="5" top="1" width="100" height="20" text="PERSONALIDADE"/>
+		<layout left="0" top="355" width="375" height="250" frameStyle="frames/panel5/frame.xml">
+			<label left="275" top="1" width="100" height="20" text="PERSONALIDADE"/>
 			<textEditor left="5" top="25" width="365" height="220" field="personalidade"/>
 		</layout>
 
