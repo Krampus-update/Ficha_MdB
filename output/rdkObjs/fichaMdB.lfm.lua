@@ -5611,7 +5611,7 @@ require('mudaNick.lua')
 
     obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout63:setParent(obj.scrollBox2);
-    obj.layout63:setLeft(0);
+    obj.layout63:setLeft(255);
     obj.layout63:setTop(610);
     obj.layout63:setWidth(375);
     obj.layout63:setHeight(123);
@@ -5634,13 +5634,13 @@ require('mudaNick.lua')
     obj.textEditor3:setLeft(10);
     obj.textEditor3:setTop(20);
     obj.textEditor3:setWidth(355);
-    obj.textEditor3:setHeight(195);
+    obj.textEditor3:setHeight(61);
     obj.textEditor3:setField("personalidade");
     obj.textEditor3:setName("textEditor3");
 
     obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout64:setParent(obj.scrollBox2);
-    obj.layout64:setLeft(0);
+    obj.layout64:setLeft(378);
     obj.layout64:setTop(723);
     obj.layout64:setWidth(375);
     obj.layout64:setHeight(123);
@@ -5663,14 +5663,14 @@ require('mudaNick.lua')
     obj.textEditor4:setLeft(10);
     obj.textEditor4:setTop(20);
     obj.textEditor4:setWidth(355);
-    obj.textEditor4:setHeight(195);
+    obj.textEditor4:setHeight(61);
     obj.textEditor4:setField("ideais");
     obj.textEditor4:setName("textEditor4");
 
     obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout65:setParent(obj.scrollBox2);
-    obj.layout65:setLeft(0);
-    obj.layout65:setTop(836);
+    obj.layout65:setLeft(255);
+    obj.layout65:setTop(610);
     obj.layout65:setWidth(375);
     obj.layout65:setHeight(123);
     obj.layout65:setFrameStyle("frames/panel5/frame.xml");
@@ -5692,14 +5692,14 @@ require('mudaNick.lua')
     obj.textEditor5:setLeft(10);
     obj.textEditor5:setTop(20);
     obj.textEditor5:setWidth(355);
-    obj.textEditor5:setHeight(195);
+    obj.textEditor5:setHeight(61);
     obj.textEditor5:setField("vinculos");
     obj.textEditor5:setName("textEditor5");
 
     obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout66:setParent(obj.scrollBox2);
-    obj.layout66:setLeft(0);
-    obj.layout66:setTop(949);
+    obj.layout66:setLeft(378);
+    obj.layout66:setTop(723);
     obj.layout66:setWidth(375);
     obj.layout66:setHeight(123);
     obj.layout66:setFrameStyle("frames/panel5/frame.xml");
@@ -5721,7 +5721,7 @@ require('mudaNick.lua')
     obj.textEditor6:setLeft(10);
     obj.textEditor6:setTop(20);
     obj.textEditor6:setWidth(355);
-    obj.textEditor6:setHeight(195);
+    obj.textEditor6:setHeight(61);
     obj.textEditor6:setField("fraquezas");
     obj.textEditor6:setName("textEditor6");
 
@@ -19204,12 +19204,19 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj._e_event425 = obj.button56:addEventListener("onClick",
         function (_)
-            Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?', function(confirmado) if confirmado then sheet.propriedades = {}; end; end);
+            Dialogs.confirmYesNo('Você tem certeza que deseja resetar as propriedades da ficha?',
+            			function(confirmado)
+            				if confirmado then
+            					sheet.propriedades = {}; 
+            				end;
+            			end);
         end, obj);
 
     obj._e_event426 = obj.button57:addEventListener("onClick",
         function (_)
-            if not sheet.propriedades then sheet.propriedades = {}; end;
+            if not sheet.propriedades then
+            			sheet.propriedades = {};
+            		end;
             
             		local choices = {};
             		for key,val in pairs(common.ficha_propriedades) do

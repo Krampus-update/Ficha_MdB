@@ -258,13 +258,16 @@ local function constructNew_frmFichaPropriedade()
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
-            Dialogs.confirmYesNo('Você tem certeza que deseja remover essa propriedade?', function(confirmado) if confirmado then
-            			local ficha = common.getTopNode(sheet);
-            			ficha.propriedades[sheet.id] = nil;
-            			ficha.propriedades.alterou = sheet.id;
-            			ficha.propriedades.alterou = nil;
-            			NDB.deleteNode(self.sheet);
-            		end; end);
+            Dialogs.confirmYesNo('Você tem certeza que deseja remover essa propriedade?', 
+            			function(confirmado) 
+            				if confirmado then
+            					local ficha = common.getTopNode(sheet);
+            					ficha.propriedades[sheet.id] = nil;
+            					ficha.propriedades.alterou = sheet.id;
+            					ficha.propriedades.alterou = nil;
+            					NDB.deleteNode(self.sheet);
+            				end;
+            			end);
         end, obj);
 
     obj._e_event1 = obj.dataLink2:addEventListener("onChange",
