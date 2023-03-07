@@ -40,5 +40,39 @@
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
 			<richEdit left="10" top="20" width="805" height="455" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</layout>
+
+	<!-- TERCEIRA LINHA -->		
+	<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10" margins="{top=5}">
+			<!-- ALIADOS E ORGANIZAÇÕES -->					
+				<flowLayout name="fraAliadosOrganizacoes" class="tile" autoHeight="true" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" horzAlign="center">
+					<event name="onBeforeLayoutCalc">
+						<![CDATA[
+								if self.fraAliadosOrganizacoes:getWidth() <= 500 then
+									self.prtAliados:setHeight(200);
+									self.prtFaccao:setHeight(200);									
+								else
+									self.prtAliados:setHeight(420);
+									self.prtFaccao:setHeight(350);
+								end;
+						]]>
+					</event>				
+				
+					<flowPart name="prtAliados" minWidth="300" maxWidth="1600" minScaledWidth="290" height="420" avoidScale="true">
+						<textEditor align="client" field="aliados.aliadosEOrganizacoes" class="transparente" margins="{top=2, left=4, right=4}" fontSize="16"/>
+					</flowPart>	
+					
+					<flowPart name ="prtFaccao" class="halfTile" stepSizes="{260, 310}" maxScaledWidth="310" avoidScale="true" height="350" frameStyle="frames/panel4transp/frame.xml" margins="{left=4, right=4, bottom=4, top=4}">
+						<label align="top" horzTextAlign="leading" text="@@DnD5e.features.faction" fontSize="11" fontColor="gray" margins="{left=4, right=4}"/>
+						<edit align="top" field="aliados.faccao.nome" margins="{left=4, right=4}"/>
+						<image align="client" field="aliados.faccao.simbolo" editable="true" style="autoFit" margins="{left=4, right=4}"/>
+						<label align="bottom" autoSize="true" text="@@DnD5e.features.factionSymbol" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>
+					<flowLineBreak/>
+					
+					<flowPart minWidth="200" maxWidth="1800" height="16">
+						<label align="client" autoSize="true" text="@@DnD5e.features.alliesOrganizations" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+					</flowPart>
+				</flowLayout>		
+
 	</scrollBox>
 </form>
