@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<form dataType="MultiVerso_MdBe" formType="sheetTemplate" title="Ficha Mesa do Bolo" name="frmMdB" theme="dark"/>
+<form dataType="MultiVerso_MdBe" formType="sheetTemplate" title="Ficha Mesa do Bolo" name="frmMdB" theme="dark">
 	<import file="styles.xml"/>
 	<import file="templates.xml"/>
 
 	<script> require('mudaNick.lua') </script>
 	<dataLink field="nome"><event name="onChange"> mudaNick(sheet.nome,sheet); </event></dataLink>
 
-	<tabControl  align = " cliente ">
+	<tabControl  align = "client">
 
 		<tabControl align="client" name="pgcPrincipal">
 
