@@ -6299,7 +6299,7 @@ require('mudaNick.lua')
     obj.flwPartEquipDefense = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flwPartEquipDefense:setParent(obj.fraEquipamentoLayout);
     obj.flwPartEquipDefense:setName("flwPartEquipDefense");
-    obj.flwPartEquipDefense:setHeight(500);
+    obj.flwPartEquipDefense:setHeight(700);
     obj.flwPartEquipDefense:setFrameStyle("frames/panel5/frame.xml");
     obj.flwPartEquipDefense:setMinScaledWidth(290);
     obj.flwPartEquipDefense:setStepSizes({310, 420, 640, 760, 1150});

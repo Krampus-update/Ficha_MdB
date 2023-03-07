@@ -137,7 +137,7 @@
 			<flowLineBreak/>
 
 			<!-- Equipamentos de Defesa -->
-			<flowPart name="flwPartEquipDefense" class="tile" height="500" frameStyle="frames/panel5/frame.xml" minScaledWidth="290">
+			<flowPart name="flwPartEquipDefense" class="tile" height="700" frameStyle="frames/panel5/frame.xml" minScaledWidth="290">
 		<script>
 			local function getNumber(text)
 				local mod = "0";
