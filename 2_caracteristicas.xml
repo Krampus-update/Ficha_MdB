@@ -144,12 +144,12 @@
 		</flowPart>
 		
 		<layout left="0" top="355" width="375" height="250" frameStyle="frames/panel5/frame.xml">
-			<label left="275" top="1" width="100" height="20" text="PERSONALIDADE"/>
+			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE"/>
 			<textEditor left="5" top="25" width="365" height="220" field="personalidade"/>
 		</layout>
 
 		<layout left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
-			<label left="315" top="1" width="100" height="20" text="HISTORIA" fontStyle="bold"/>
+			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
 			<richEdit left="10" top="20" width="805" height="455" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</layout>
 	</scrollBox>
