@@ -182,39 +182,39 @@ local function constructNew_frmContador()
     obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout6:setParent(obj.layout5);
     obj.layout6:setAlign("left");
-    obj.layout6:setWidth(175);
+    obj.layout6:setWidth(100);
     obj.layout6:setName("layout6");
 
     obj.label2 = GUI.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.layout6);
     obj.label2:setAlign("top");
-    obj.label2:setText("Descrição");
+    obj.label2:setText("Rolagem");
     obj.label2:setName("label2");
 
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout6);
-    obj.textEditor1:setAlign("client");
-    obj.textEditor1:setField("descricao");
-    obj.textEditor1:setFontSize(16);
-    obj.textEditor1:setName("textEditor1");
+    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit1:setParent(obj.layout6);
+    obj.edit1:setAlign("client");
+    obj.edit1:setField("rolagem");
+    obj.edit1:setName("edit1");
 
     obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout7:setParent(obj.layout5);
     obj.layout7:setAlign("left");
-    obj.layout7:setWidth(100);
+    obj.layout7:setWidth(175);
     obj.layout7:setName("layout7");
 
     obj.label3 = GUI.fromHandle(_obj_newObject("label"));
     obj.label3:setParent(obj.layout7);
     obj.label3:setAlign("top");
-    obj.label3:setText("Rolagem");
+    obj.label3:setText("Descrição");
     obj.label3:setName("label3");
 
-    obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit1:setParent(obj.layout7);
-    obj.edit1:setAlign("client");
-    obj.edit1:setField("rolagem");
-    obj.edit1:setName("edit1");
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.layout7);
+    obj.textEditor1:setAlign("client");
+    obj.textEditor1:setField("descricao");
+    obj.textEditor1:setFontSize(16);
+    obj.textEditor1:setName("textEditor1");
 
     obj.button3 = GUI.fromHandle(_obj_newObject("button"));
     obj.button3:setParent(obj.layout5);

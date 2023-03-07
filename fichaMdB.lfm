@@ -32,7 +32,7 @@
 
 	<tabControl  align = " cliente ">
 
-		<tabControl align="client" name="pgcPrincipal">
+		<tabControl align="top" name="pgcPrincipal">
 
 			<tab title="FRENTE">
 				<import file="1_frente.xml"/>
