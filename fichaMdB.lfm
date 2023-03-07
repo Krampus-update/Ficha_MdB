@@ -9,16 +9,16 @@
 
 	<tabControl  align = "client">
 
-		<tabControl align="client" name="pgcPrincipal">
+		<título da aba  = "PERSONAGEM">
+			<tabControl  align = "cliente">
+				<tab title="FRENTE">
+					<import file="1_frente.xml"/>
+				</tab>
 
-			<tab title="FRENTE">
-				<import file="1_frente.xml"/>
-			</tab>
-
-			<tab title="CARACTERISTICAS">
-				<import file="2_caracteristicas.xml"/>
-			</tab>
-
+				<tab title="CARACTERISTICAS">
+					<import file="2_caracteristicas.xml"/>
+				</tab>
+			</tabControl>	
 	</tabControl>		
 
 	<tabControl  align = "client">
