@@ -21,20 +21,20 @@
 			<label left="10" top="25" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
 			<comboBox left="100" top="25" width="100" field="tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
 			<checkBox left="200" top="25" width="100" field="quadrupede" text="Quadrúpede" />
-			<Descricao left1="10" left2="100" top="50" text="ALTURA" field="altura"/>
-			<Descricao left1="10" left2="100" top="75" text="PESO" field="peso"/>
+			<upperGridCamp left1="10" left2="100" top="50" text="ALTURA" field="altura"/>
+			<upperGridCamp left1="10" left2="100" top="75" text="PESO" field="peso"/>
+			p
+			<upperGridCamp left1="310" left2="400" top="25" text="IDADE" field="idade"/>
+			<upperGridCamp left1="310" left2="400" top="50" text="SEXO" field="sexo"/>
+			<upperGridCamp left1="310" left2="400" top="75" text="OUTROS" field="aparenciaOutros"/>
 			
-			<Descricao left1="310" left2="400" top="25" text="IDADE" field="idade"/>
-			<Descricao left1="310" left2="400" top="50" text="SEXO" field="sexo"/>
-			<Descricao left1="310" left2="400" top="75" text="OUTROS" field="aparenciaOutros"/>
+			<upperGridCamp left1="610" left2="700" top="25" text="OLHOS" field="aparenciaOlhos"/>
+			<upperGridCamp left1="610" left2="700" top="50" text="PELE" field="pele"/>
+			<upperGridCamp left1="610" left2="700" top="75" text="CABELO" field="cabelo"/>
 			
-			<Descricao left1="610" left2="700" top="25" text="OLHOS" field="aparenciaOlhos"/>
-			<Descricao left1="610" left2="700" top="50" text="PELE" field="pele"/>
-			<Descricao left1="610" left2="700" top="75" text="CABELO" field="cabelo"/>
-			
-			<Descricao left1="910" left2="1000" top="25" text="PLANO" field="plano"/>
-			<Descricao left1="910" left2="1000" top="50" text="REGIÃO" field="regiao"/>
-			<Descricao left1="910" left2="1000" top="75" text="REINO" field="reino"/>
+			<upperGridCamp left1="910" left2="1000" top="25" text="PLANO" field="plano"/>
+			<upperGridCamp left1="910" left2="1000" top="50" text="REGIÃO" field="regiao"/>
+			<upperGridCamp left1="910" left2="1000" top="75" text="REINO" field="reino"/>
 		</rectangle>
 
 		<dataLink fields="{'tamanho', 'quadrupede', 'efetFor'}">
@@ -97,7 +97,7 @@
 						if quad then
 							mult = 6;
 						else
-							mult = 4;
+							mult = 4; 
 						end;
 						mod1 = -2;
 						mod2 = -8;
