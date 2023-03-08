@@ -5613,7 +5613,7 @@ require('mudaNick.lua')
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
     obj.textEditor1:setWidth(355);
-    obj.textEditor1:setHeight(275);
+    obj.textEditor1:setHeight(265);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
     obj.textEditor1:setTransparent(true);
