@@ -4934,7 +4934,7 @@ require('mudaNick.lua')
 
     obj.frame2 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame2:setParent(obj.flowPart52);
-    obj.frame2:setWidth(375);
+    obj.frame2:setWidth(235);
     obj.frame2:setHeight(211);
     obj.frame2:setFrameStyle("frames/panel4transp/frame.xml");
     obj.frame2:setMargins({left = 0, right = 4});
