@@ -42,14 +42,14 @@ local function constructNew_frmGerenciador02_LUA()
     obj.edit1:setParent(obj.rectangle1);
     obj.edit1:setLeft(0);
     obj.edit1:setTop(0);
-    obj.edit1:setWidth(100);
+    obj.edit1:setWidth(80);
     obj.edit1:setHeight(25);
     obj.edit1:setField("luas");
     obj.edit1:setName("edit1");
 
     obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.rectangle1);
-    obj.edit2:setLeft(100);
+    obj.edit2:setLeft(80);
     obj.edit2:setTop(0);
     obj.edit2:setWidth(35);
     obj.edit2:setHeight(25);
@@ -59,7 +59,7 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.rectangle1);
-    obj.edit3:setLeft(135);
+    obj.edit3:setLeft(115);
     obj.edit3:setTop(0);
     obj.edit3:setWidth(30);
     obj.edit3:setHeight(25);
@@ -75,7 +75,7 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.rectangle1);
-    obj.button1:setLeft(195);
+    obj.button1:setLeft(145);
     obj.button1:setTop(0);
     obj.button1:setWidth(25);
     obj.button1:setHeight(25);
@@ -84,7 +84,7 @@ local function constructNew_frmGerenciador02_LUA()
 
     obj.button2 = GUI.fromHandle(_obj_newObject("button"));
     obj.button2:setParent(obj.rectangle1);
-    obj.button2:setLeft(220);
+    obj.button2:setLeft(170);
     obj.button2:setTop(0);
     obj.button2:setWidth(25);
     obj.button2:setHeight(25);

@@ -19,7 +19,7 @@
 				end;
 			</event>
 		</button>
-		<button left="220" top="0" width="25" height="25" text="X">
+		<button left="170" top="0" width="25" height="25" text="X">
 			<event name="onClick">
 				Dialogs.confirmOkCancel("Tem certeza que quer apagar esse mês?",
 					function (confirmado)
