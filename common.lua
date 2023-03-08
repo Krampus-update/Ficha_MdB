@@ -8,7 +8,7 @@ common.atributos = {
 	sabedoria				= 'Sabedoria',
 	carisma					= 'Carisma',
 	sanidade				= 'Sanidade',
-	honra					= ' ',
+	honra					= '  ',
 
 	companionforca			= 'Força do Companion',
 	companiondestreza		= 'Destreza do Companion',
