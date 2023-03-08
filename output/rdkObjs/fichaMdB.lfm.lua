@@ -5612,8 +5612,8 @@ require('mudaNick.lua')
     obj.textEditor1:setParent(obj.layout61);
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
-    obj.textEditor1:setWidth(330);
-    obj.textEditor1:setHeight(330);
+    obj.textEditor1:setWidth(355);
+    obj.textEditor1:setHeight(320);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
     obj.textEditor1:setTransparent(true);
