@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="MultiVerso_MdB" align="client" theme="dark">
+
+<!-- trocar Form por isso e ajustar os campos
+
+<rectangle class="fundo">
+	<scrollBox align="client">
+		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraXLayout">
+
+		</flowLayout>
+	</scrollBox>
+</rectangle>
+
+ -->
+
 	<script>
 		<![CDATA[
 			local function recursiveFindControls(node, controlsList)
