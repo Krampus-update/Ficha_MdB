@@ -11112,7 +11112,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rclLuas:setParent(obj.layout84);
     obj.rclLuas:setLeft(15);
     obj.rclLuas:setTop(80);
-    obj.rclLuas:setWidth(110);
+    obj.rclLuas:setWidth(190);
     obj.rclLuas:setHeight(260);
     obj.rclLuas:setName("rclLuas");
     obj.rclLuas:setField("listaLuas");
