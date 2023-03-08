@@ -4778,7 +4778,7 @@ require('mudaNick.lua')
     obj.frame1 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame1:setParent(obj.flowPart51);
     obj.frame1:setAlign("client");
-    obj.frame1:setFrameStyle("frames/panel5/topPanel.xml");
+    obj.frame1:setFrameStyle("frames/panel4transp/frame.xml");
     obj.frame1:setMargins({left = 4, right = 4, bottom=4});
     obj.frame1:setName("frame1");
 
@@ -4936,7 +4936,7 @@ require('mudaNick.lua')
     obj.frame2:setParent(obj.flowPart52);
     obj.frame2:setWidth(375);
     obj.frame2:setHeight(240);
-    obj.frame2:setFrameStyle("frames/panel5/frame.xml");
+    obj.frame2:setFrameStyle("frames/panel4transp/frame.xml");
     obj.frame2:setMargins({left = 0, right = 4});
     obj.frame2:setName("frame2");
 
@@ -10638,7 +10638,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.tab10 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab10:setParent(obj.pgcPrincipal);
-    obj.tab10:setTitle("DIARIO DE CAMPANHA");
+    obj.tab10:setTitle("DIARIO");
     obj.tab10:setName("tab10");
 
     obj.rectangle38 = GUI.fromHandle(_obj_newObject("rectangle"));

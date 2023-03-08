@@ -159,7 +159,7 @@
 					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="105" margins="{left=2, right=2, top=4, bottom=8}">
 
 						<!-- PONTOS DE VIDA REAIS -->
-						<frame align="client" frameStyle="frames/panel5/topPanel.xml" margins="{left = 4, right = 4, bottom=4}">
+						<frame align="client" frameStyle="frames/panel4transp/frame.xml" margins="{left = 4, right = 4, bottom=4}">
 							<layout align="client" margins="{left=5,right=5,bottom=5,top=5}">
 								<flowLayout align="top" horzAlign="center" height="30" margins="{bottom=5}">
 									<script> require("descanso.lua"); </script>
@@ -200,7 +200,7 @@
 
 					<!-- APARENCIA -->
 					<flowPart minWidth="375" maxWidth="475" minScaledWidth="375" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
-						<frame  width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+						<frame  width="375" height="240" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
 							<image align="client" style="proportional" field="imagens.aparencia.frente" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 						</frame>
