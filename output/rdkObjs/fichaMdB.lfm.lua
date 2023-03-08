@@ -5527,8 +5527,8 @@ require('mudaNick.lua')
     obj.flowPart55:setParent(obj.scrollBox2);
     obj.flowPart55:setLeft(0);
     obj.flowPart55:setTop(110);
-    obj.flowPart55:setWidth(320);
-    obj.flowPart55:setHeight(180);
+    obj.flowPart55:setWidth(375);
+    obj.flowPart55:setHeight(211);
     obj.flowPart55:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart55:setMargins({left = 0, right = 4});
     obj.flowPart55:setName("flowPart55");
@@ -5558,9 +5558,9 @@ require('mudaNick.lua')
     obj.flowPart56 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart56:setParent(obj.scrollBox2);
     obj.flowPart56:setLeft(0);
-    obj.flowPart56:setTop(110);
-    obj.flowPart56:setWidth(320);
-    obj.flowPart56:setHeight(180);
+    obj.flowPart56:setTop(325);
+    obj.flowPart56:setWidth(375);
+    obj.flowPart56:setHeight(211);
     obj.flowPart56:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart56:setMargins({left = 0, right = 4});
     obj.flowPart56:setName("flowPart56");
@@ -5623,7 +5623,7 @@ require('mudaNick.lua')
     obj.layout62:setLeft(0);
     obj.layout62:setTop(910);
     obj.layout62:setWidth(375);
-    obj.layout62:setHeight(123);
+    obj.layout62:setHeight(61);
     obj.layout62:setFrameStyle("frames/panel5/frame.xml");
     obj.layout62:setName("layout62");
 
@@ -5643,7 +5643,7 @@ require('mudaNick.lua')
     obj.textEditor2:setLeft(10);
     obj.textEditor2:setTop(20);
     obj.textEditor2:setWidth(355);
-    obj.textEditor2:setHeight(61);
+    obj.textEditor2:setHeight(50);
     obj.textEditor2:setField("idiomas");
     obj.textEditor2:setName("textEditor2");
     obj.textEditor2:setTransparent(true);
