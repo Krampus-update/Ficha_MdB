@@ -484,7 +484,7 @@
 				<label left="100" top="50" width="55" height="25" text="Ciclo" horzTextAlign="center" hitTest="true" hint="Quantos dias leva o ciclo lunar?"/>
 				<label left="135" top="50" width="55" height="25" text="Desvio" horzTextAlign="center" hitTest="true" hint="No ano 1 em que dia começa o ciclo lunar (lua cheia)?"/>
 
-    			<recordList left="15" top="80" width="110" height="260" name="rclLuas" field="listaLuas" templateForm="frmGerenciador02_LUA" layout="vertical"/>
+    			<recordList left="15" top="80" width="190" height="260" name="rclLuas" field="listaLuas" templateForm="frmGerenciador02_LUA" layout="vertical"/>
     		</layout>
 
 			<!-- ESTAÇÕES -->
