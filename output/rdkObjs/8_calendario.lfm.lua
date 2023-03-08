@@ -2394,9 +2394,9 @@ local function constructNew_frmGerenciador02()
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout10);
-    obj.textEditor1:setLeft(10);
+    obj.textEditor1:setLeft(15);
     obj.textEditor1:setTop(80);
-    obj.textEditor1:setWidth(250);
+    obj.textEditor1:setWidth(240);
     obj.textEditor1:setHeight(200);
     obj.textEditor1:setField("data");
     obj.textEditor1:setName("textEditor1");

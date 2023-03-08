@@ -11365,9 +11365,9 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor7:setParent(obj.layout88);
-    obj.textEditor7:setLeft(10);
+    obj.textEditor7:setLeft(15);
     obj.textEditor7:setTop(80);
-    obj.textEditor7:setWidth(250);
+    obj.textEditor7:setWidth(240);
     obj.textEditor7:setHeight(200);
     obj.textEditor7:setField("data");
     obj.textEditor7:setName("textEditor7");
