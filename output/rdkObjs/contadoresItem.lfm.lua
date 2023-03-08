@@ -248,6 +248,20 @@ local function constructNew_frmContador()
     obj.dataLink7:setFields({'valMax','valCur'});
     obj.dataLink7:setName("dataLink7");
 
+    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout11:setParent(obj);
+    obj.layout11:setAlign("right");
+    obj.layout11:setWidth(30);
+    obj.layout11:setName("layout11");
+
+    obj.btnDelete = GUI.fromHandle(_obj_newObject("button"));
+    obj.btnDelete:setParent(obj.layout11);
+    obj.btnDelete:setName("btnDelete");
+    obj.btnDelete:setAlign("right");
+    obj.btnDelete:setMargins({left=2});
+    obj.btnDelete:setWidth(25);
+    obj.btnDelete:setText("✖");
+
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local contadores = NDB.getChildNodes(NDB.getParent(sheet));
@@ -325,7 +339,19 @@ local function constructNew_frmContador()
             						end;
         end, obj);
 
+    obj._e_event8 = obj.btnDelete:addEventListener("onClick",
+        function (_)
+            askForDelete();
+        end, obj);
+
+    obj._e_event9 = obj.btnDelete:addEventListener("onMenu",
+        function (_, x, y)
+            NDB.deleteNode(sheet)
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
         __o_rrpgObjs.removeEventListenerById(self._e_event7);
         __o_rrpgObjs.removeEventListenerById(self._e_event6);
         __o_rrpgObjs.removeEventListenerById(self._e_event5);
@@ -349,6 +375,7 @@ local function constructNew_frmContador()
         if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
+        if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
@@ -360,6 +387,7 @@ local function constructNew_frmContador()
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.btnDelete ~= nil then self.btnDelete:destroy(); self.btnDelete = nil; end;
         if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.progBar ~= nil then self.progBar:destroy(); self.progBar = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
