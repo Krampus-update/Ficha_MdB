@@ -248,6 +248,14 @@ local function constructNew_frmContador()
     obj.dataLink7:setFields({'valMax','valCur'});
     obj.dataLink7:setName("dataLink7");
 
+    obj.btnDelete = GUI.fromHandle(_obj_newObject("button"));
+    obj.btnDelete:setParent(obj.layout10);
+    obj.btnDelete:setName("btnDelete");
+    obj.btnDelete:setAlign("left");
+    obj.btnDelete:setMargins({left=2});
+    obj.btnDelete:setWidth(25);
+    obj.btnDelete:setText("✖");
+
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local contadores = NDB.getChildNodes(NDB.getParent(sheet));
@@ -325,7 +333,19 @@ local function constructNew_frmContador()
             						end;
         end, obj);
 
+    obj._e_event8 = obj.btnDelete:addEventListener("onClick",
+        function (_)
+            askForDelete();
+        end, obj);
+
+    obj._e_event9 = obj.btnDelete:addEventListener("onMenu",
+        function (_, x, y)
+            NDB.deleteNode(sheet)
+        end, obj);
+
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event9);
+        __o_rrpgObjs.removeEventListenerById(self._e_event8);
         __o_rrpgObjs.removeEventListenerById(self._e_event7);
         __o_rrpgObjs.removeEventListenerById(self._e_event6);
         __o_rrpgObjs.removeEventListenerById(self._e_event5);
@@ -360,6 +380,7 @@ local function constructNew_frmContador()
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.btnDelete ~= nil then self.btnDelete:destroy(); self.btnDelete = nil; end;
         if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.progBar ~= nil then self.progBar:destroy(); self.progBar = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;

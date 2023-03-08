@@ -17638,7 +17638,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab13:setParent(obj.pgcPrincipal);
-    obj.tab13:setTitle("COMPANHEIRO ANOTAÇÕES");
+    obj.tab13:setTitle("C.ANOTAÇÕES");
     obj.tab13:setName("tab13");
 
     obj.rectangle42 = GUI.fromHandle(_obj_newObject("rectangle"));
@@ -17680,7 +17680,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab14:setParent(obj.pgcPrincipal);
-    obj.tab14:setTitle("ANOTAÇÕES EXTRAS");
+    obj.tab14:setTitle("ANOTAÇÕES");
     obj.tab14:setName("tab14");
 
     obj.rectangle43 = GUI.fromHandle(_obj_newObject("rectangle"));
