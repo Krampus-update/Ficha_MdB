@@ -152,7 +152,7 @@
 			<flowLineBreak/>
 
 			<!-- Outros Equipamentos e DINHEIRO -->
-			<flowPart class="tile" height="420" frameStyle="frames/panel4transp/frame.xml" minScaledWidth="290">
+			<flowPart class="tile" height="400" frameStyle="frames/panel4transp/frame.xml" minScaledWidth="290">
 				<layout align="left" width="250" margins="{left=-20}">
 					<boxDinheiro align="top" text="1" field="equipamento.dinheiro.1"/>
 					<boxDinheiro align="top" text="2" field="equipamento.dinheiro.2"/>
