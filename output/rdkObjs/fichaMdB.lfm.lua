@@ -11237,7 +11237,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.label146 = GUI.fromHandle(_obj_newObject("label"));
     obj.label146:setParent(obj.layout88);
-    obj.label146:setLeft(40);
+    obj.label146:setLeft(10);
     obj.label146:setTop(5);
     obj.label146:setWidth(30);
     obj.label146:setHeight(25);
@@ -11248,7 +11248,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit107:setParent(obj.layout88);
-    obj.edit107:setLeft(40);
+    obj.edit107:setLeft(10);
     obj.edit107:setTop(30);
     obj.edit107:setWidth(30);
     obj.edit107:setHeight(25);
@@ -11260,7 +11260,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.label147 = GUI.fromHandle(_obj_newObject("label"));
     obj.label147:setParent(obj.layout88);
-    obj.label147:setLeft(70);
+    obj.label147:setLeft(40);
     obj.label147:setTop(5);
     obj.label147:setWidth(30);
     obj.label147:setHeight(25);
@@ -11271,7 +11271,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit108:setParent(obj.layout88);
-    obj.edit108:setLeft(70);
+    obj.edit108:setLeft(40);
     obj.edit108:setTop(30);
     obj.edit108:setWidth(30);
     obj.edit108:setHeight(25);
@@ -11283,7 +11283,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.label148 = GUI.fromHandle(_obj_newObject("label"));
     obj.label148:setParent(obj.layout88);
-    obj.label148:setLeft(100);
+    obj.label148:setLeft(70);
     obj.label148:setTop(5);
     obj.label148:setWidth(40);
     obj.label148:setHeight(25);
@@ -11294,7 +11294,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit109:setParent(obj.layout88);
-    obj.edit109:setLeft(100);
+    obj.edit109:setLeft(70);
     obj.edit109:setTop(30);
     obj.edit109:setWidth(40);
     obj.edit109:setHeight(25);
@@ -11306,9 +11306,9 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.label149 = GUI.fromHandle(_obj_newObject("label"));
     obj.label149:setParent(obj.layout88);
-    obj.label149:setLeft(130);
+    obj.label149:setLeft(110);
     obj.label149:setTop(5);
-    obj.label149:setWidth(100);
+    obj.label149:setWidth(150);
     obj.label149:setHeight(25);
     obj.label149:setText("Era");
     obj.label149:setHorzTextAlign("center");
@@ -11317,9 +11317,9 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit110:setParent(obj.layout88);
-    obj.edit110:setLeft(130);
+    obj.edit110:setLeft(110);
     obj.edit110:setTop(30);
-    obj.edit110:setWidth(100);
+    obj.edit110:setWidth(150);
     obj.edit110:setHeight(25);
     obj.edit110:setField("era");
     obj.edit110:setName("edit110");

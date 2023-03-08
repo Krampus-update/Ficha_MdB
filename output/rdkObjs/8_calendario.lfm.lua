@@ -2281,7 +2281,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label49 = GUI.fromHandle(_obj_newObject("label"));
     obj.label49:setParent(obj.layout10);
-    obj.label49:setLeft(40);
+    obj.label49:setLeft(10);
     obj.label49:setTop(5);
     obj.label49:setWidth(30);
     obj.label49:setHeight(25);
@@ -2291,7 +2291,7 @@ local function constructNew_frmGerenciador02()
 
     obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit62:setParent(obj.layout10);
-    obj.edit62:setLeft(40);
+    obj.edit62:setLeft(10);
     obj.edit62:setTop(30);
     obj.edit62:setWidth(30);
     obj.edit62:setHeight(25);
@@ -2301,7 +2301,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label50 = GUI.fromHandle(_obj_newObject("label"));
     obj.label50:setParent(obj.layout10);
-    obj.label50:setLeft(70);
+    obj.label50:setLeft(40);
     obj.label50:setTop(5);
     obj.label50:setWidth(30);
     obj.label50:setHeight(25);
@@ -2311,7 +2311,7 @@ local function constructNew_frmGerenciador02()
 
     obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit63:setParent(obj.layout10);
-    obj.edit63:setLeft(70);
+    obj.edit63:setLeft(40);
     obj.edit63:setTop(30);
     obj.edit63:setWidth(30);
     obj.edit63:setHeight(25);
@@ -2321,7 +2321,7 @@ local function constructNew_frmGerenciador02()
 
     obj.label51 = GUI.fromHandle(_obj_newObject("label"));
     obj.label51:setParent(obj.layout10);
-    obj.label51:setLeft(100);
+    obj.label51:setLeft(70);
     obj.label51:setTop(5);
     obj.label51:setWidth(40);
     obj.label51:setHeight(25);
@@ -2331,7 +2331,7 @@ local function constructNew_frmGerenciador02()
 
     obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit64:setParent(obj.layout10);
-    obj.edit64:setLeft(100);
+    obj.edit64:setLeft(70);
     obj.edit64:setTop(30);
     obj.edit64:setWidth(40);
     obj.edit64:setHeight(25);
@@ -2341,9 +2341,9 @@ local function constructNew_frmGerenciador02()
 
     obj.label52 = GUI.fromHandle(_obj_newObject("label"));
     obj.label52:setParent(obj.layout10);
-    obj.label52:setLeft(130);
+    obj.label52:setLeft(110);
     obj.label52:setTop(5);
-    obj.label52:setWidth(100);
+    obj.label52:setWidth(150);
     obj.label52:setHeight(25);
     obj.label52:setText("Era");
     obj.label52:setHorzTextAlign("center");
@@ -2351,9 +2351,9 @@ local function constructNew_frmGerenciador02()
 
     obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit65:setParent(obj.layout10);
-    obj.edit65:setLeft(130);
+    obj.edit65:setLeft(110);
     obj.edit65:setTop(30);
-    obj.edit65:setWidth(100);
+    obj.edit65:setWidth(150);
     obj.edit65:setHeight(25);
     obj.edit65:setField("era");
     obj.edit65:setName("edit65");
