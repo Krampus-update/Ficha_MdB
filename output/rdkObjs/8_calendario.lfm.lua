@@ -2360,7 +2360,7 @@ local function constructNew_frmGerenciador02()
 
     obj.button5 = GUI.fromHandle(_obj_newObject("button"));
     obj.button5:setParent(obj.layout10);
-    obj.button5:setLeft(40);
+    obj.button5:setLeft(10);
     obj.button5:setTop(55);
     obj.button5:setWidth(100);
     obj.button5:setHeight(25);
@@ -2370,16 +2370,16 @@ local function constructNew_frmGerenciador02()
 
     obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit66:setParent(obj.layout10);
-    obj.edit66:setLeft(140);
+    obj.edit66:setLeft(115);
     obj.edit66:setTop(55);
-    obj.edit66:setWidth(30);
+    obj.edit66:setWidth(45);
     obj.edit66:setHeight(25);
     obj.edit66:setField("add");
     obj.edit66:setName("edit66");
 
     obj.label53 = GUI.fromHandle(_obj_newObject("label"));
     obj.label53:setParent(obj.layout10);
-    obj.label53:setLeft(180);
+    obj.label53:setLeft(165);
     obj.label53:setTop(55);
     obj.label53:setWidth(45);
     obj.label53:setHeight(25);
@@ -2394,18 +2394,18 @@ local function constructNew_frmGerenciador02()
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
     obj.textEditor1:setParent(obj.layout10);
-    obj.textEditor1:setLeft(40);
+    obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(80);
-    obj.textEditor1:setWidth(200);
+    obj.textEditor1:setWidth(250);
     obj.textEditor1:setHeight(100);
     obj.textEditor1:setField("data");
     obj.textEditor1:setName("textEditor1");
 
     obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.layout10);
-    obj.layout11:setLeft(40);
+    obj.layout11:setLeft(10);
     obj.layout11:setTop(180);
-    obj.layout11:setWidth(200);
+    obj.layout11:setWidth(250);
     obj.layout11:setHeight(155);
     obj.layout11:setName("layout11");
 
@@ -2413,7 +2413,7 @@ local function constructNew_frmGerenciador02()
     obj.dataLabel:setParent(obj.layout11);
     obj.dataLabel:setLeft(0);
     obj.dataLabel:setTop(0);
-    obj.dataLabel:setWidth(200);
+    obj.dataLabel:setWidth(250);
     obj.dataLabel:setHeight(20);
     obj.dataLabel:setField("dataLabel");
     obj.dataLabel:setName("dataLabel");
@@ -2423,7 +2423,7 @@ local function constructNew_frmGerenciador02()
     obj.estacaoLabel:setParent(obj.layout11);
     obj.estacaoLabel:setLeft(0);
     obj.estacaoLabel:setTop(20);
-    obj.estacaoLabel:setWidth(200);
+    obj.estacaoLabel:setWidth(250);
     obj.estacaoLabel:setHeight(20);
     obj.estacaoLabel:setField("estacaoLabel");
     obj.estacaoLabel:setName("estacaoLabel");
@@ -2433,7 +2433,7 @@ local function constructNew_frmGerenciador02()
     obj.temperaturaLabel:setParent(obj.layout11);
     obj.temperaturaLabel:setLeft(0);
     obj.temperaturaLabel:setTop(40);
-    obj.temperaturaLabel:setWidth(200);
+    obj.temperaturaLabel:setWidth(250);
     obj.temperaturaLabel:setHeight(20);
     obj.temperaturaLabel:setField("temperaturaLabel");
     obj.temperaturaLabel:setName("temperaturaLabel");
@@ -2444,7 +2444,7 @@ local function constructNew_frmGerenciador02()
     obj.precipitacaoLabel:setParent(obj.layout11);
     obj.precipitacaoLabel:setLeft(0);
     obj.precipitacaoLabel:setTop(60);
-    obj.precipitacaoLabel:setWidth(200);
+    obj.precipitacaoLabel:setWidth(250);
     obj.precipitacaoLabel:setHeight(20);
     obj.precipitacaoLabel:setField("precipitacaoLabel");
     obj.precipitacaoLabel:setName("precipitacaoLabel");
@@ -2455,7 +2455,7 @@ local function constructNew_frmGerenciador02()
     obj.ventoLabel:setParent(obj.layout11);
     obj.ventoLabel:setLeft(0);
     obj.ventoLabel:setTop(80);
-    obj.ventoLabel:setWidth(200);
+    obj.ventoLabel:setWidth(250);
     obj.ventoLabel:setHeight(20);
     obj.ventoLabel:setField("ventoLabel");
     obj.ventoLabel:setName("ventoLabel");
@@ -2466,7 +2466,7 @@ local function constructNew_frmGerenciador02()
     obj.luasLabel:setParent(obj.layout11);
     obj.luasLabel:setLeft(0);
     obj.luasLabel:setTop(100);
-    obj.luasLabel:setWidth(200);
+    obj.luasLabel:setWidth(250);
     obj.luasLabel:setHeight(35);
     obj.luasLabel:setField("luasLabel");
     obj.luasLabel:setName("luasLabel");
@@ -2478,7 +2478,7 @@ local function constructNew_frmGerenciador02()
     obj.eventosLabel:setParent(obj.layout11);
     obj.eventosLabel:setLeft(0);
     obj.eventosLabel:setTop(135);
-    obj.eventosLabel:setWidth(200);
+    obj.eventosLabel:setWidth(250);
     obj.eventosLabel:setHeight(20);
     obj.eventosLabel:setField("eventosLabel");
     obj.eventosLabel:setName("eventosLabel");
