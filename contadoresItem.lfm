@@ -112,8 +112,8 @@
 							end;
 						end;
 				</event></dataLink>
-				<button name="btnDelete" align="left" margins="{left=2}" width="25" text="✖" onClick="askForDelete();" onMenu="NDB.deleteNode(sheet)"/>
 			</layout>
 		</layout>
 	</layout>
+
 </form>
