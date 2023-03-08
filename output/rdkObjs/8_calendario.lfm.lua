@@ -2163,7 +2163,7 @@ local function constructNew_frmGerenciador02()
     obj.rclLuas:setParent(obj.layout6);
     obj.rclLuas:setLeft(15);
     obj.rclLuas:setTop(80);
-    obj.rclLuas:setWidth(200);
+    obj.rclLuas:setWidth(110);
     obj.rclLuas:setHeight(260);
     obj.rclLuas:setName("rclLuas");
     obj.rclLuas:setField("listaLuas");
