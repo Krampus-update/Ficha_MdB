@@ -199,8 +199,8 @@
 					</flowPart>
 
 					<!-- APARENCIA -->
-					<flowPart minWidth="370" maxWidth="470" minScaledWidth="370" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
-						<frame  width="375" height="200" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
+					<flowPart minWidth="370" maxWidth="420" minScaledWidth="370" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
+						<frame  width="360" height="200" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
 							<image align="client" style="proportional" field="imagens.aparencia.frente" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 						</frame>

@@ -4925,7 +4925,7 @@ require('mudaNick.lua')
     obj.flowPart52 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart52:setParent(obj.flowLayout12);
     obj.flowPart52:setMinWidth(370);
-    obj.flowPart52:setMaxWidth(470);
+    obj.flowPart52:setMaxWidth(420);
     obj.flowPart52:setMinScaledWidth(370);
     obj.flowPart52:setHeight(250);
     obj.flowPart52:setMargins({left=2, right=2, top=4, bottom=8});
@@ -4934,7 +4934,7 @@ require('mudaNick.lua')
 
     obj.frame2 = GUI.fromHandle(_obj_newObject("frame"));
     obj.frame2:setParent(obj.flowPart52);
-    obj.frame2:setWidth(375);
+    obj.frame2:setWidth(360);
     obj.frame2:setHeight(200);
     obj.frame2:setFrameStyle("frames/panel4transp/frame.xml");
     obj.frame2:setMargins({left = 0, right = 4});
