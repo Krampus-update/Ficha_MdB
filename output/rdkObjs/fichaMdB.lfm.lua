@@ -5185,20 +5185,34 @@ require('mudaNick.lua')
     obj.tab2:setTitle("CARACTERISTICAS");
     obj.tab2:setName("tab2");
 
-    obj.frmFichaRPGmeister9_svg = GUI.fromHandle(_obj_newObject("form"));
-    obj.frmFichaRPGmeister9_svg:setParent(obj.tab2);
-    obj.frmFichaRPGmeister9_svg:setName("frmFichaRPGmeister9_svg");
-    obj.frmFichaRPGmeister9_svg:setAlign("client");
-    obj.frmFichaRPGmeister9_svg:setTheme("dark");
-    obj.frmFichaRPGmeister9_svg:setMargins({top=1});
+    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle2:setParent(obj.tab2);
+    obj.rectangle2:setName("rectangle2");
+    obj.rectangle2:setAlign("client");
+    obj.rectangle2:setColor("#40000000");
+    obj.rectangle2:setXradius(10);
+    obj.rectangle2:setYradius(10);
 
     obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox2:setParent(obj.frmFichaRPGmeister9_svg);
+    obj.scrollBox2:setParent(obj.rectangle2);
     obj.scrollBox2:setAlign("client");
     obj.scrollBox2:setName("scrollBox2");
 
+    obj.fraCaracteristicasLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.fraCaracteristicasLayout:setParent(obj.scrollBox2);
+    obj.fraCaracteristicasLayout:setAlign("top");
+    obj.fraCaracteristicasLayout:setHeight(500);
+    obj.fraCaracteristicasLayout:setMargins({left=10, right=10, top=10});
+    obj.fraCaracteristicasLayout:setAutoHeight(true);
+    obj.fraCaracteristicasLayout:setHorzAlign("center");
+    obj.fraCaracteristicasLayout:setLineSpacing(2);
+    obj.fraCaracteristicasLayout:setName("fraCaracteristicasLayout");
+    obj.fraCaracteristicasLayout:setStepSizes({310, 420, 640, 760, 1150});
+    obj.fraCaracteristicasLayout:setMinScaledWidth(300);
+    obj.fraCaracteristicasLayout:setVertAlign("leading");
+
     obj.layout59 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout59:setParent(obj.scrollBox2);
+    obj.layout59:setParent(obj.fraCaracteristicasLayout);
     obj.layout59:setLeft(0);
     obj.layout59:setTop(0);
     obj.layout59:setWidth(1205);
@@ -5492,7 +5506,7 @@ require('mudaNick.lua')
     obj.edit30:setFontColor("white");
 
     obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout60:setParent(obj.scrollBox2);
+    obj.layout60:setParent(obj.fraCaracteristicasLayout);
     obj.layout60:setLeft(380);
     obj.layout60:setTop(110);
     obj.layout60:setWidth(825);
@@ -5524,7 +5538,7 @@ require('mudaNick.lua')
     obj.richEdit1:setName("richEdit1");
 
     obj.flowPart55 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart55:setParent(obj.scrollBox2);
+    obj.flowPart55:setParent(obj.fraCaracteristicasLayout);
     obj.flowPart55:setLeft(0);
     obj.flowPart55:setTop(110);
     obj.flowPart55:setWidth(375);
@@ -5556,7 +5570,7 @@ require('mudaNick.lua')
     obj.label37:setFontColor("white");
 
     obj.flowPart56 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart56:setParent(obj.scrollBox2);
+    obj.flowPart56:setParent(obj.fraCaracteristicasLayout);
     obj.flowPart56:setLeft(0);
     obj.flowPart56:setTop(325);
     obj.flowPart56:setWidth(375);
@@ -5588,7 +5602,7 @@ require('mudaNick.lua')
     obj.label38:setFontColor("white");
 
     obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout61:setParent(obj.scrollBox2);
+    obj.layout61:setParent(obj.fraCaracteristicasLayout);
     obj.layout61:setLeft(0);
     obj.layout61:setTop(540);
     obj.layout61:setWidth(375);
@@ -5619,7 +5633,7 @@ require('mudaNick.lua')
     obj.textEditor1:setTransparent(true);
 
     obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout62:setParent(obj.scrollBox2);
+    obj.layout62:setParent(obj.fraCaracteristicasLayout);
     obj.layout62:setLeft(380);
     obj.layout62:setTop(610);
     obj.layout62:setWidth(412);
@@ -5649,7 +5663,7 @@ require('mudaNick.lua')
     obj.textEditor2:setTransparent(true);
 
     obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout63:setParent(obj.scrollBox2);
+    obj.layout63:setParent(obj.fraCaracteristicasLayout);
     obj.layout63:setLeft(380);
     obj.layout63:setTop(730);
     obj.layout63:setWidth(412);
@@ -5679,7 +5693,7 @@ require('mudaNick.lua')
     obj.textEditor3:setTransparent(true);
 
     obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout64:setParent(obj.scrollBox2);
+    obj.layout64:setParent(obj.fraCaracteristicasLayout);
     obj.layout64:setLeft(792);
     obj.layout64:setTop(610);
     obj.layout64:setWidth(412);
@@ -5709,7 +5723,7 @@ require('mudaNick.lua')
     obj.textEditor4:setTransparent(true);
 
     obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout65:setParent(obj.scrollBox2);
+    obj.layout65:setParent(obj.fraCaracteristicasLayout);
     obj.layout65:setLeft(792);
     obj.layout65:setTop(730);
     obj.layout65:setWidth(412);
@@ -5743,16 +5757,16 @@ require('mudaNick.lua')
     obj.tab3:setTitle("EQUIPAMENTOS");
     obj.tab3:setName("tab3");
 
-    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle2:setParent(obj.tab3);
-    obj.rectangle2:setName("rectangle2");
-    obj.rectangle2:setAlign("client");
-    obj.rectangle2:setColor("#40000000");
-    obj.rectangle2:setXradius(10);
-    obj.rectangle2:setYradius(10);
+    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle3:setParent(obj.tab3);
+    obj.rectangle3:setName("rectangle3");
+    obj.rectangle3:setAlign("client");
+    obj.rectangle3:setColor("#40000000");
+    obj.rectangle3:setXradius(10);
+    obj.rectangle3:setYradius(10);
 
     obj.scrollBox3 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox3:setParent(obj.rectangle2);
+    obj.scrollBox3:setParent(obj.rectangle3);
     obj.scrollBox3:setAlign("client");
     obj.scrollBox3:setName("scrollBox3");
 
@@ -6584,28 +6598,28 @@ require('mudaNick.lua')
     obj.tab4:setTitle("MAGIA");
     obj.tab4:setName("tab4");
 
-    obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle3:setParent(obj.tab4);
-    obj.rectangle3:setName("rectangle3");
-    obj.rectangle3:setAlign("client");
-    obj.rectangle3:setColor("#40000000");
-    obj.rectangle3:setXradius(10);
-    obj.rectangle3:setYradius(10);
+    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle4:setParent(obj.tab4);
+    obj.rectangle4:setName("rectangle4");
+    obj.rectangle4:setAlign("client");
+    obj.rectangle4:setColor("#40000000");
+    obj.rectangle4:setXradius(10);
+    obj.rectangle4:setYradius(10);
 
     obj.rclMagiasNiveis = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclMagiasNiveis:setParent(obj.rectangle3);
+    obj.rclMagiasNiveis:setParent(obj.rectangle4);
     obj.rclMagiasNiveis:setName("rclMagiasNiveis");
     obj.rclMagiasNiveis:setField("magias.niveis");
     obj.rclMagiasNiveis:setTemplateForm("frmNivelDeMagia");
     obj.rclMagiasNiveis:setAlign("client");
 
     obj.dataLink122 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink122:setParent(obj.rectangle3);
+    obj.dataLink122:setParent(obj.rectangle4);
     obj.dataLink122:setFields({'descansoLongo', 'descansoCurto'});
     obj.dataLink122:setName("dataLink122");
 
     obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout16:setParent(obj.rectangle3);
+    obj.flowLayout16:setParent(obj.rectangle4);
     obj.flowLayout16:setAlign("bottom");
     obj.flowLayout16:setFrameStyle("frames/upperInfoGrid/frame.xml");
     obj.flowLayout16:setAutoHeight(true);
@@ -6790,7 +6804,7 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.popupEdit = GUI.fromHandle(_obj_newObject("popup"));
-    obj.popupEdit:setParent(obj.rectangle3);
+    obj.popupEdit:setParent(obj.rectangle4);
     obj.popupEdit:setName("popupEdit");
     obj.popupEdit:setVisible(false);
     obj.popupEdit:setWidth(700);
@@ -6848,12 +6862,12 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLineBreak5:setParent(obj.flowLayout17);
     obj.flowLineBreak5:setName("flowLineBreak5");
 
-    obj.rectangle4 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle4:setParent(obj.flowLayout17);
-    obj.rectangle4:setWidth(10000);
-    obj.rectangle4:setColor("grey");
-    obj.rectangle4:setHeight(1);
-    obj.rectangle4:setName("rectangle4");
+    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle5:setParent(obj.flowLayout17);
+    obj.rectangle5:setWidth(10000);
+    obj.rectangle5:setColor("grey");
+    obj.rectangle5:setHeight(1);
+    obj.rectangle5:setName("rectangle5");
 
     obj.flowLineBreak6 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
     obj.flowLineBreak6:setParent(obj.flowLayout17);
@@ -6894,11 +6908,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowPart76:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowPart76:setVertAlign("leading");
 
-    obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle5:setParent(obj.flowPart76);
-    obj.rectangle5:setAlign("client");
-    obj.rectangle5:setColor("gray");
-    obj.rectangle5:setName("rectangle5");
+    obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle6:setParent(obj.flowPart76);
+    obj.rectangle6:setAlign("client");
+    obj.rectangle6:setColor("gray");
+    obj.rectangle6:setName("rectangle6");
 
     obj.fpPEEscola = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.fpPEEscola:setParent(obj.flowLayout17);
@@ -6935,11 +6949,11 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowPart77:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowPart77:setVertAlign("leading");
 
-    obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle6:setParent(obj.flowPart77);
-    obj.rectangle6:setAlign("client");
-    obj.rectangle6:setColor("gray");
-    obj.rectangle6:setName("rectangle6");
+    obj.rectangle7 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle7:setParent(obj.flowPart77);
+    obj.rectangle7:setAlign("client");
+    obj.rectangle7:setColor("gray");
+    obj.rectangle7:setName("rectangle7");
 
     obj.fpPETempo = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.fpPETempo:setParent(obj.flowLayout17);
@@ -7021,34 +7035,6 @@ self.upperGridMagicBox3._RecalcSize();
     lfm_setPropAsString(obj.label61, "fontStyle",  "bold");
     obj.label61:setFontColor("white");
 
-    obj.rectangle7 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle7:setParent(obj.scrollBox4);
-    obj.rectangle7:setHeight(30);
-    obj.rectangle7:setName("rectangle7");
-    obj.rectangle7:setAlign("top");
-    obj.rectangle7:setColor("DimGray");
-    obj.rectangle7:setMargins({top=2, bottom=2});
-    obj.rectangle7:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle7:setXradius(2);
-    obj.rectangle7:setYradius(2);
-
-    obj.label62 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label62:setParent(obj.rectangle7);
-    obj.label62:setAlign("left");
-    lfm_setPropAsString(obj.label62, "fontStyle",  "bold");
-    obj.label62:setText("Nível da Magia");
-    obj.label62:setName("label62");
-    obj.label62:setFontColor("white");
-
-    obj.comboBox2 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox2:setParent(obj.rectangle7);
-    obj.comboBox2:setAlign("right");
-    obj.comboBox2:setWidth(115);
-    obj.comboBox2:setField("nivel");
-    obj.comboBox2:setItems({'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', 'Runas'});
-    obj.comboBox2:setValues({'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'});
-    obj.comboBox2:setName("comboBox2");
-
     obj.rectangle8 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle8:setParent(obj.scrollBox4);
     obj.rectangle8:setHeight(30);
@@ -7060,25 +7046,26 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle8:setXradius(2);
     obj.rectangle8:setYradius(2);
 
-    obj.label63 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label63:setParent(obj.rectangle8);
-    obj.label63:setAlign("left");
-    lfm_setPropAsString(obj.label63, "fontStyle",  "bold");
-    obj.label63:setText("Escola de Magia");
-    obj.label63:setName("label63");
-    obj.label63:setFontColor("white");
+    obj.label62 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label62:setParent(obj.rectangle8);
+    obj.label62:setAlign("left");
+    lfm_setPropAsString(obj.label62, "fontStyle",  "bold");
+    obj.label62:setText("Nível da Magia");
+    obj.label62:setName("label62");
+    obj.label62:setFontColor("white");
 
-    obj.comboBox3 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox3:setParent(obj.rectangle8);
-    obj.comboBox3:setAlign("right");
-    obj.comboBox3:setWidth(115);
-    obj.comboBox3:setField("escolaDeMagia");
-    obj.comboBox3:setItems({'', 'Abjuração', 'Conjuração', 'Adivinhação', 'Encantamento', 'Evocação', 'Ilusão', 'Necromância', 'Transmutação'});
-    obj.comboBox3:setName("comboBox3");
+    obj.comboBox2 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox2:setParent(obj.rectangle8);
+    obj.comboBox2:setAlign("right");
+    obj.comboBox2:setWidth(115);
+    obj.comboBox2:setField("nivel");
+    obj.comboBox2:setItems({'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', 'Runas'});
+    obj.comboBox2:setValues({'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'});
+    obj.comboBox2:setName("comboBox2");
 
     obj.rectangle9 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle9:setParent(obj.scrollBox4);
-    obj.rectangle9:setHeight(90);
+    obj.rectangle9:setHeight(30);
     obj.rectangle9:setName("rectangle9");
     obj.rectangle9:setAlign("top");
     obj.rectangle9:setColor("DimGray");
@@ -7087,8 +7074,35 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle9:setXradius(2);
     obj.rectangle9:setYradius(2);
 
+    obj.label63 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label63:setParent(obj.rectangle9);
+    obj.label63:setAlign("left");
+    lfm_setPropAsString(obj.label63, "fontStyle",  "bold");
+    obj.label63:setText("Escola de Magia");
+    obj.label63:setName("label63");
+    obj.label63:setFontColor("white");
+
+    obj.comboBox3 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox3:setParent(obj.rectangle9);
+    obj.comboBox3:setAlign("right");
+    obj.comboBox3:setWidth(115);
+    obj.comboBox3:setField("escolaDeMagia");
+    obj.comboBox3:setItems({'', 'Abjuração', 'Conjuração', 'Adivinhação', 'Encantamento', 'Evocação', 'Ilusão', 'Necromância', 'Transmutação'});
+    obj.comboBox3:setName("comboBox3");
+
+    obj.rectangle10 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle10:setParent(obj.scrollBox4);
+    obj.rectangle10:setHeight(90);
+    obj.rectangle10:setName("rectangle10");
+    obj.rectangle10:setAlign("top");
+    obj.rectangle10:setColor("DimGray");
+    obj.rectangle10:setMargins({top=2, bottom=2});
+    obj.rectangle10:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle10:setXradius(2);
+    obj.rectangle10:setYradius(2);
+
     obj.label64 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label64:setParent(obj.rectangle9);
+    obj.label64:setParent(obj.rectangle10);
     obj.label64:setAlign("top");
     lfm_setPropAsString(obj.label64, "fontStyle",  "bold");
     obj.label64:setText("Componentes da Magia");
@@ -7097,7 +7111,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label64:setFontColor("white");
 
     obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout70:setParent(obj.rectangle9);
+    obj.layout70:setParent(obj.rectangle10);
     obj.layout70:setAlign("top");
     obj.layout70:setHeight(30);
     obj.layout70:setName("layout70");
@@ -7180,7 +7194,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink123:setName("dataLink123");
 
     obj.layout74 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout74:setParent(obj.rectangle9);
+    obj.layout74:setParent(obj.rectangle10);
     obj.layout74:setAlign("top");
     obj.layout74:setHeight(30);
     obj.layout74:setName("layout74");
@@ -7227,19 +7241,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.checkBox8:setField("componentesRitual");
     obj.checkBox8:setName("checkBox8");
 
-    obj.rectangle10 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle10:setParent(obj.scrollBox4);
-    obj.rectangle10:setHeight(30);
-    obj.rectangle10:setName("rectangle10");
-    obj.rectangle10:setAlign("top");
-    obj.rectangle10:setColor("DimGray");
-    obj.rectangle10:setMargins({top=2, bottom=2});
-    obj.rectangle10:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle10:setXradius(2);
-    obj.rectangle10:setYradius(2);
+    obj.rectangle11 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle11:setParent(obj.scrollBox4);
+    obj.rectangle11:setHeight(30);
+    obj.rectangle11:setName("rectangle11");
+    obj.rectangle11:setAlign("top");
+    obj.rectangle11:setColor("DimGray");
+    obj.rectangle11:setMargins({top=2, bottom=2});
+    obj.rectangle11:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle11:setXradius(2);
+    obj.rectangle11:setYradius(2);
 
     obj.label70 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label70:setParent(obj.rectangle10);
+    obj.label70:setParent(obj.rectangle11);
     obj.label70:setAlign("left");
     lfm_setPropAsString(obj.label70, "fontStyle",  "bold");
     obj.label70:setText("Tipo de Magia");
@@ -7247,7 +7261,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label70:setFontColor("white");
 
     obj.flowLayout18 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout18:setParent(obj.rectangle10);
+    obj.flowLayout18:setParent(obj.rectangle11);
     obj.flowLayout18:setAlign("client");
     obj.flowLayout18:setHorzAlign("trailing");
     obj.flowLayout18:setName("flowLayout18");
@@ -7295,7 +7309,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox4:setName("comboBox4");
 
     obj.dataLink124 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink124:setParent(obj.rectangle10);
+    obj.dataLink124:setParent(obj.rectangle11);
     obj.dataLink124:setField("preparadoTipo");
     obj.dataLink124:setName("dataLink124");
 
@@ -7309,19 +7323,19 @@ self.upperGridMagicBox3._RecalcSize();
     lfm_setPropAsString(obj.label71, "fontStyle",  "bold");
     obj.label71:setFontColor("white");
 
-    obj.rectangle11 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle11:setParent(obj.scrollBox4);
-    obj.rectangle11:setHeight(30);
-    obj.rectangle11:setName("rectangle11");
-    obj.rectangle11:setAlign("top");
-    obj.rectangle11:setColor("DimGray");
-    obj.rectangle11:setMargins({top=2, bottom=2});
-    obj.rectangle11:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle11:setXradius(2);
-    obj.rectangle11:setYradius(2);
+    obj.rectangle12 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle12:setParent(obj.scrollBox4);
+    obj.rectangle12:setHeight(30);
+    obj.rectangle12:setName("rectangle12");
+    obj.rectangle12:setAlign("top");
+    obj.rectangle12:setColor("DimGray");
+    obj.rectangle12:setMargins({top=2, bottom=2});
+    obj.rectangle12:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle12:setXradius(2);
+    obj.rectangle12:setYradius(2);
 
     obj.flowLayout19 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout19:setParent(obj.rectangle11);
+    obj.flowLayout19:setParent(obj.rectangle12);
     obj.flowLayout19:setAlign("client");
     obj.flowLayout19:setName("flowLayout19");
     obj.flowLayout19:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7395,19 +7409,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox5:setItems({'', 'Ação', 'Ação Bônus', 'Ação de Tripulação', 'Dias', 'Horas', 'Ação Lendária', 'Minutos', 'Nada', 'Reação', 'Especial', 'Ação de Lar'});
     obj.comboBox5:setName("comboBox5");
 
-    obj.rectangle12 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle12:setParent(obj.scrollBox4);
-    obj.rectangle12:setHeight(30);
-    obj.rectangle12:setName("rectangle12");
-    obj.rectangle12:setAlign("top");
-    obj.rectangle12:setColor("DimGray");
-    obj.rectangle12:setMargins({top=2, bottom=2});
-    obj.rectangle12:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle12:setXradius(2);
-    obj.rectangle12:setYradius(2);
+    obj.rectangle13 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle13:setParent(obj.scrollBox4);
+    obj.rectangle13:setHeight(30);
+    obj.rectangle13:setName("rectangle13");
+    obj.rectangle13:setAlign("top");
+    obj.rectangle13:setColor("DimGray");
+    obj.rectangle13:setMargins({top=2, bottom=2});
+    obj.rectangle13:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle13:setXradius(2);
+    obj.rectangle13:setYradius(2);
 
     obj.flowLayout20 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout20:setParent(obj.rectangle12);
+    obj.flowLayout20:setParent(obj.rectangle13);
     obj.flowLayout20:setAlign("client");
     obj.flowLayout20:setName("flowLayout20");
     obj.flowLayout20:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7460,19 +7474,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink125:setField("tempoConjuracaoUnidade");
     obj.dataLink125:setName("dataLink125");
 
-    obj.rectangle13 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle13:setParent(obj.scrollBox4);
-    obj.rectangle13:setHeight(30);
-    obj.rectangle13:setName("rectangle13");
-    obj.rectangle13:setAlign("top");
-    obj.rectangle13:setColor("DimGray");
-    obj.rectangle13:setMargins({top=2, bottom=2});
-    obj.rectangle13:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle13:setXradius(2);
-    obj.rectangle13:setYradius(2);
+    obj.rectangle14 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle14:setParent(obj.scrollBox4);
+    obj.rectangle14:setHeight(30);
+    obj.rectangle14:setName("rectangle14");
+    obj.rectangle14:setAlign("top");
+    obj.rectangle14:setColor("DimGray");
+    obj.rectangle14:setMargins({top=2, bottom=2});
+    obj.rectangle14:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle14:setXradius(2);
+    obj.rectangle14:setYradius(2);
 
     obj.flowLayout21 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout21:setParent(obj.rectangle13);
+    obj.flowLayout21:setParent(obj.rectangle14);
     obj.flowLayout21:setAlign("client");
     obj.flowLayout21:setName("flowLayout21");
     obj.flowLayout21:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7570,19 +7584,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox7:setItems({'', 'Aliado', 'Cone', 'Criatura', 'Cubo', 'Cilindro', 'Inimigo', 'Linha', 'Nenhum', 'Objeto', 'Raio', 'Pessoal', 'Espaço', 'Esfera', 'Quadrado', 'Parede'});
     obj.comboBox7:setName("comboBox7");
 
-    obj.rectangle14 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle14:setParent(obj.scrollBox4);
-    obj.rectangle14:setHeight(30);
-    obj.rectangle14:setName("rectangle14");
-    obj.rectangle14:setAlign("top");
-    obj.rectangle14:setColor("DimGray");
-    obj.rectangle14:setMargins({top=2, bottom=2});
-    obj.rectangle14:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle14:setXradius(2);
-    obj.rectangle14:setYradius(2);
+    obj.rectangle15 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle15:setParent(obj.scrollBox4);
+    obj.rectangle15:setHeight(30);
+    obj.rectangle15:setName("rectangle15");
+    obj.rectangle15:setAlign("top");
+    obj.rectangle15:setColor("DimGray");
+    obj.rectangle15:setMargins({top=2, bottom=2});
+    obj.rectangle15:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle15:setXradius(2);
+    obj.rectangle15:setYradius(2);
 
     obj.flowLayout22 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout22:setParent(obj.rectangle14);
+    obj.flowLayout22:setParent(obj.rectangle15);
     obj.flowLayout22:setAlign("client");
     obj.flowLayout22:setName("flowLayout22");
     obj.flowLayout22:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7697,19 +7711,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink126:setField("alcanceUnidade");
     obj.dataLink126:setName("dataLink126");
 
-    obj.rectangle15 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle15:setParent(obj.scrollBox4);
-    obj.rectangle15:setHeight(30);
-    obj.rectangle15:setName("rectangle15");
-    obj.rectangle15:setAlign("top");
-    obj.rectangle15:setColor("DimGray");
-    obj.rectangle15:setMargins({top=2, bottom=2});
-    obj.rectangle15:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle15:setXradius(2);
-    obj.rectangle15:setYradius(2);
+    obj.rectangle16 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle16:setParent(obj.scrollBox4);
+    obj.rectangle16:setHeight(30);
+    obj.rectangle16:setName("rectangle16");
+    obj.rectangle16:setAlign("top");
+    obj.rectangle16:setColor("DimGray");
+    obj.rectangle16:setMargins({top=2, bottom=2});
+    obj.rectangle16:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle16:setXradius(2);
+    obj.rectangle16:setYradius(2);
 
     obj.flowLayout23 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout23:setParent(obj.rectangle15);
+    obj.flowLayout23:setParent(obj.rectangle16);
     obj.flowLayout23:setAlign("client");
     obj.flowLayout23:setName("flowLayout23");
     obj.flowLayout23:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7788,19 +7802,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink127:setField("duracaoUnidade");
     obj.dataLink127:setName("dataLink127");
 
-    obj.rectangle16 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle16:setParent(obj.scrollBox4);
-    obj.rectangle16:setHeight(30);
-    obj.rectangle16:setName("rectangle16");
-    obj.rectangle16:setAlign("top");
-    obj.rectangle16:setColor("DimGray");
-    obj.rectangle16:setMargins({top=2, bottom=2});
-    obj.rectangle16:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle16:setXradius(2);
-    obj.rectangle16:setYradius(2);
+    obj.rectangle17 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle17:setParent(obj.scrollBox4);
+    obj.rectangle17:setHeight(30);
+    obj.rectangle17:setName("rectangle17");
+    obj.rectangle17:setAlign("top");
+    obj.rectangle17:setColor("DimGray");
+    obj.rectangle17:setMargins({top=2, bottom=2});
+    obj.rectangle17:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle17:setXradius(2);
+    obj.rectangle17:setYradius(2);
 
     obj.flowLayout24 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout24:setParent(obj.rectangle16);
+    obj.flowLayout24:setParent(obj.rectangle17);
     obj.flowLayout24:setAlign("client");
     obj.flowLayout24:setName("flowLayout24");
     obj.flowLayout24:setMargins({left=1, right=1, top=2, bottom=2});
@@ -7923,33 +7937,6 @@ self.upperGridMagicBox3._RecalcSize();
     lfm_setPropAsString(obj.label80, "fontStyle",  "bold");
     obj.label80:setFontColor("white");
 
-    obj.rectangle17 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle17:setParent(obj.scrollBox4);
-    obj.rectangle17:setHeight(30);
-    obj.rectangle17:setName("rectangle17");
-    obj.rectangle17:setAlign("top");
-    obj.rectangle17:setColor("DimGray");
-    obj.rectangle17:setMargins({top=2, bottom=2});
-    obj.rectangle17:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle17:setXradius(2);
-    obj.rectangle17:setYradius(2);
-
-    obj.label81 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label81:setParent(obj.rectangle17);
-    obj.label81:setAlign("left");
-    lfm_setPropAsString(obj.label81, "fontStyle",  "bold");
-    obj.label81:setText("Tipo de Ataque");
-    obj.label81:setName("label81");
-    obj.label81:setFontColor("white");
-
-    obj.comboBox10 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox10:setParent(obj.rectangle17);
-    obj.comboBox10:setAlign("right");
-    obj.comboBox10:setWidth(230);
-    obj.comboBox10:setField("ataqueTipo");
-    obj.comboBox10:setItems({'Sem Ataque', 'Ataque com Arma Corpo-a-Corpo', 'Ataque com Arma a Distância', 'Ataque de Magia Corpo-a-Corpo', 'Ataque de Magia a Distância'});
-    obj.comboBox10:setName("comboBox10");
-
     obj.rectangle18 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle18:setParent(obj.scrollBox4);
     obj.rectangle18:setHeight(30);
@@ -7961,22 +7948,21 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle18:setXradius(2);
     obj.rectangle18:setYradius(2);
 
-    obj.label82 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label82:setParent(obj.rectangle18);
-    obj.label82:setAlign("left");
-    lfm_setPropAsString(obj.label82, "fontStyle",  "bold");
-    obj.label82:setText("Atributo de Ataque");
-    obj.label82:setName("label82");
-    obj.label82:setFontColor("white");
+    obj.label81 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label81:setParent(obj.rectangle18);
+    obj.label81:setAlign("left");
+    lfm_setPropAsString(obj.label81, "fontStyle",  "bold");
+    obj.label81:setText("Tipo de Ataque");
+    obj.label81:setName("label81");
+    obj.label81:setFontColor("white");
 
-    obj.popupEditAtaqueAtrib = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.popupEditAtaqueAtrib:setParent(obj.rectangle18);
-    obj.popupEditAtaqueAtrib:setName("popupEditAtaqueAtrib");
-    obj.popupEditAtaqueAtrib:setAlign("right");
-    obj.popupEditAtaqueAtrib:setWidth(230);
-    obj.popupEditAtaqueAtrib:setField("ataqueAtributo");
-    obj.popupEditAtaqueAtrib:setItems({'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'});
-    obj.popupEditAtaqueAtrib:setValues({'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
+    obj.comboBox10 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox10:setParent(obj.rectangle18);
+    obj.comboBox10:setAlign("right");
+    obj.comboBox10:setWidth(230);
+    obj.comboBox10:setField("ataqueTipo");
+    obj.comboBox10:setItems({'Sem Ataque', 'Ataque com Arma Corpo-a-Corpo', 'Ataque com Arma a Distância', 'Ataque de Magia Corpo-a-Corpo', 'Ataque de Magia a Distância'});
+    obj.comboBox10:setName("comboBox10");
 
     obj.rectangle19 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle19:setParent(obj.scrollBox4);
@@ -7989,8 +7975,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle19:setXradius(2);
     obj.rectangle19:setYradius(2);
 
+    obj.label82 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label82:setParent(obj.rectangle19);
+    obj.label82:setAlign("left");
+    lfm_setPropAsString(obj.label82, "fontStyle",  "bold");
+    obj.label82:setText("Atributo de Ataque");
+    obj.label82:setName("label82");
+    obj.label82:setFontColor("white");
+
+    obj.popupEditAtaqueAtrib = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.popupEditAtaqueAtrib:setParent(obj.rectangle19);
+    obj.popupEditAtaqueAtrib:setName("popupEditAtaqueAtrib");
+    obj.popupEditAtaqueAtrib:setAlign("right");
+    obj.popupEditAtaqueAtrib:setWidth(230);
+    obj.popupEditAtaqueAtrib:setField("ataqueAtributo");
+    obj.popupEditAtaqueAtrib:setItems({'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'});
+    obj.popupEditAtaqueAtrib:setValues({'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
+
+    obj.rectangle20 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle20:setParent(obj.scrollBox4);
+    obj.rectangle20:setHeight(30);
+    obj.rectangle20:setName("rectangle20");
+    obj.rectangle20:setAlign("top");
+    obj.rectangle20:setColor("DimGray");
+    obj.rectangle20:setMargins({top=2, bottom=2});
+    obj.rectangle20:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle20:setXradius(2);
+    obj.rectangle20:setYradius(2);
+
     obj.label83 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label83:setParent(obj.rectangle19);
+    obj.label83:setParent(obj.rectangle20);
     obj.label83:setAlign("left");
     lfm_setPropAsString(obj.label83, "fontStyle",  "bold");
     obj.label83:setText("Bônus de Ataque");
@@ -7998,7 +8012,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label83:setFontColor("white");
 
     obj.popupEditAtaqueBonus = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditAtaqueBonus:setParent(obj.rectangle19);
+    obj.popupEditAtaqueBonus:setParent(obj.rectangle20);
     obj.popupEditAtaqueBonus:setName("popupEditAtaqueBonus");
     obj.popupEditAtaqueBonus:setAlign("right");
     obj.popupEditAtaqueBonus:setWidth(230);
@@ -8249,19 +8263,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditFormulaRL:setTemplateForm("frmItemFormula");
     obj.popupEditFormulaRL:setField("formulas");
 
-    obj.rectangle20 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle20:setParent(obj.scrollBox4);
-    obj.rectangle20:setHeight(30);
-    obj.rectangle20:setName("rectangle20");
-    obj.rectangle20:setAlign("top");
-    obj.rectangle20:setColor("DimGray");
-    obj.rectangle20:setMargins({top=2, bottom=2});
-    obj.rectangle20:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle20:setXradius(2);
-    obj.rectangle20:setYradius(2);
+    obj.rectangle21 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle21:setParent(obj.scrollBox4);
+    obj.rectangle21:setHeight(30);
+    obj.rectangle21:setName("rectangle21");
+    obj.rectangle21:setAlign("top");
+    obj.rectangle21:setColor("DimGray");
+    obj.rectangle21:setMargins({top=2, bottom=2});
+    obj.rectangle21:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle21:setXradius(2);
+    obj.rectangle21:setYradius(2);
 
     obj.flowLayout25 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout25:setParent(obj.rectangle20);
+    obj.flowLayout25:setParent(obj.rectangle21);
     obj.flowLayout25:setAlign("client");
     obj.flowLayout25:setName("flowLayout25");
     obj.flowLayout25:setMargins({left=1, right=1, top=2, bottom=2});
@@ -8375,19 +8389,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink130:setField("cdResistenciaTipo");
     obj.dataLink130:setName("dataLink130");
 
-    obj.rectangle21 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle21:setParent(obj.scrollBox4);
-    obj.rectangle21:setHeight(60);
-    obj.rectangle21:setName("rectangle21");
-    obj.rectangle21:setAlign("top");
-    obj.rectangle21:setColor("DimGray");
-    obj.rectangle21:setMargins({top=2, bottom=2});
-    obj.rectangle21:setPadding({top=3, bottom=3, left=3, right=3});
-    obj.rectangle21:setXradius(2);
-    obj.rectangle21:setYradius(2);
+    obj.rectangle22 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle22:setParent(obj.scrollBox4);
+    obj.rectangle22:setHeight(60);
+    obj.rectangle22:setName("rectangle22");
+    obj.rectangle22:setAlign("top");
+    obj.rectangle22:setColor("DimGray");
+    obj.rectangle22:setMargins({top=2, bottom=2});
+    obj.rectangle22:setPadding({top=3, bottom=3, left=3, right=3});
+    obj.rectangle22:setXradius(2);
+    obj.rectangle22:setYradius(2);
 
     obj.label93 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label93:setParent(obj.rectangle21);
+    obj.label93:setParent(obj.rectangle22);
     obj.label93:setAlign("top");
     obj.label93:setText("Mensagem");
     obj.label93:setHeight(27);
@@ -8395,7 +8409,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label93:setFontColor("white");
 
     obj.edit44 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit44:setParent(obj.rectangle21);
+    obj.edit44:setParent(obj.rectangle22);
     obj.edit44:setAlign("top");
     obj.edit44:setField("mensagem");
     obj.edit44:setHeight(27);
@@ -8527,12 +8541,12 @@ self.upperGridMagicBox3._RecalcSize();
     lfm_setPropAsString(obj.button53, "fontStyle",  "bold");
 
     obj.dataLink135 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink135:setParent(obj.rectangle3);
+    obj.dataLink135:setParent(obj.rectangle4);
     obj.dataLink135:setFields({'magias.habilidadeDeConjuracao', 'atributos.modForca', 'atributos.modDestreza', 'atributos.modConstituicao', 'atributos.modInteligencia', 'atributos.modSabedoria', 'atributos.modCarisma', 'bonusProficiencia'});
     obj.dataLink135:setName("dataLink135");
 
     obj.dataLink136 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink136:setParent(obj.rectangle3);
+    obj.dataLink136:setParent(obj.rectangle4);
     obj.dataLink136:setField("magias.selecionada");
     obj.dataLink136:setName("dataLink136");
 
@@ -8541,16 +8555,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab8:setTitle("CONTADORES");
     obj.tab8:setName("tab8");
 
-    obj.rectangle22 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle22:setParent(obj.tab8);
-    obj.rectangle22:setName("rectangle22");
-    obj.rectangle22:setAlign("client");
-    obj.rectangle22:setColor("#40000000");
-    obj.rectangle22:setXradius(10);
-    obj.rectangle22:setYradius(10);
+    obj.rectangle23 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle23:setParent(obj.tab8);
+    obj.rectangle23:setName("rectangle23");
+    obj.rectangle23:setAlign("client");
+    obj.rectangle23:setColor("#40000000");
+    obj.rectangle23:setXradius(10);
+    obj.rectangle23:setYradius(10);
 
     obj.scrollBox6 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox6:setParent(obj.rectangle22);
+    obj.scrollBox6:setParent(obj.rectangle23);
     obj.scrollBox6:setAlign("client");
     obj.scrollBox6:setName("scrollBox6");
 
@@ -8578,7 +8592,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rclContadores:setMargins({top=10, bottom=10, left=10, right=10});
 
     obj.dataLink137 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink137:setParent(obj.rectangle22);
+    obj.dataLink137:setParent(obj.rectangle23);
     obj.dataLink137:setFields({'descansoLongo', 'descansoCurto'});
     obj.dataLink137:setName("dataLink137");
 
@@ -8587,29 +8601,29 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab9:setTitle("PROPRIEDADES");
     obj.tab9:setName("tab9");
 
-    obj.rectangle23 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle23:setParent(obj.tab9);
-    obj.rectangle23:setName("rectangle23");
-    obj.rectangle23:setAlign("client");
-    obj.rectangle23:setColor("#40000000");
-    obj.rectangle23:setXradius(10);
-    obj.rectangle23:setYradius(10);
+    obj.rectangle24 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle24:setParent(obj.tab9);
+    obj.rectangle24:setName("rectangle24");
+    obj.rectangle24:setAlign("client");
+    obj.rectangle24:setColor("#40000000");
+    obj.rectangle24:setXradius(10);
+    obj.rectangle24:setYradius(10);
 
     obj.rclFichaPropriedades = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclFichaPropriedades:setParent(obj.rectangle23);
+    obj.rclFichaPropriedades:setParent(obj.rectangle24);
     obj.rclFichaPropriedades:setName("rclFichaPropriedades");
     obj.rclFichaPropriedades:setAlign("client");
     obj.rclFichaPropriedades:setField("propriedades.rcl");
     obj.rclFichaPropriedades:setTemplateForm("frmFichaPropriedade");
 
     obj.button56 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button56:setParent(obj.rectangle23);
+    obj.button56:setParent(obj.rectangle24);
     obj.button56:setAlign("bottom");
     obj.button56:setText("Resetar Propriedades");
     obj.button56:setName("button56");
 
     obj.button57 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button57:setParent(obj.rectangle23);
+    obj.button57:setParent(obj.rectangle24);
     obj.button57:setAlign("bottom");
     obj.button57:setText("Adicionar Propriedade");
     obj.button57:setName("button57");
@@ -8619,16 +8633,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab10:setTitle("DIARIO");
     obj.tab10:setName("tab10");
 
-    obj.rectangle24 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle24:setParent(obj.tab10);
-    obj.rectangle24:setName("rectangle24");
-    obj.rectangle24:setAlign("client");
-    obj.rectangle24:setColor("#40000000");
-    obj.rectangle24:setXradius(10);
-    obj.rectangle24:setYradius(10);
+    obj.rectangle25 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle25:setParent(obj.tab10);
+    obj.rectangle25:setName("rectangle25");
+    obj.rectangle25:setAlign("client");
+    obj.rectangle25:setColor("#40000000");
+    obj.rectangle25:setXradius(10);
+    obj.rectangle25:setYradius(10);
 
     obj.checkBox9 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox9:setParent(obj.rectangle24);
+    obj.checkBox9:setParent(obj.rectangle25);
     obj.checkBox9:setAlign("right");
     obj.checkBox9:setWidth(15);
     obj.checkBox9:setField("historia.usarEditorFancy");
@@ -8636,7 +8650,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.checkBox9:setName("checkBox9");
 
     obj.historiaFancy = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.historiaFancy:setParent(obj.rectangle24);
+    obj.historiaFancy:setParent(obj.rectangle25);
     obj.historiaFancy:setName("historiaFancy");
     obj.historiaFancy:setAlign("client");
     obj.historiaFancy:setField("historia.texto2");
@@ -8649,7 +8663,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.historiaFancy:setVisible(false);
 
     obj.historiaMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.historiaMerda:setParent(obj.rectangle24);
+    obj.historiaMerda:setParent(obj.rectangle25);
     obj.historiaMerda:setName("historiaMerda");
     obj.historiaMerda:setAlign("client");
     obj.historiaMerda:setField("historia.texto");
@@ -10853,16 +10867,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label129:setName("label129");
     obj.label129:setFontColor("white");
 
-    obj.rectangle25 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle25:setParent(obj.layout81);
-    obj.rectangle25:setLeft(185);
-    obj.rectangle25:setTop(0);
-    obj.rectangle25:setWidth(35);
-    obj.rectangle25:setHeight(25);
-    obj.rectangle25:setColor("black");
-    obj.rectangle25:setStrokeColor("white");
-    obj.rectangle25:setStrokeSize(1);
-    obj.rectangle25:setName("rectangle25");
+    obj.rectangle26 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle26:setParent(obj.layout81);
+    obj.rectangle26:setLeft(185);
+    obj.rectangle26:setTop(0);
+    obj.rectangle26:setWidth(35);
+    obj.rectangle26:setHeight(25);
+    obj.rectangle26:setColor("black");
+    obj.rectangle26:setStrokeColor("white");
+    obj.rectangle26:setStrokeSize(1);
+    obj.rectangle26:setName("rectangle26");
 
     obj.dias = GUI.fromHandle(_obj_newObject("label"));
     obj.dias:setParent(obj.layout81);
@@ -11468,16 +11482,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink148:setFields({'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'});
     obj.dataLink148:setName("dataLink148");
 
-    obj.rectangle26 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle26:setParent(obj.scrollBox7);
-    obj.rectangle26:setName("rectangle26");
-    obj.rectangle26:setAlign("client");
-    obj.rectangle26:setColor("#40000000");
-    obj.rectangle26:setXradius(10);
-    obj.rectangle26:setYradius(10);
+    obj.rectangle27 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle27:setParent(obj.scrollBox7);
+    obj.rectangle27:setName("rectangle27");
+    obj.rectangle27:setAlign("client");
+    obj.rectangle27:setColor("#40000000");
+    obj.rectangle27:setXradius(10);
+    obj.rectangle27:setYradius(10);
 
     obj.scrollBox8 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox8:setParent(obj.rectangle26);
+    obj.scrollBox8:setParent(obj.rectangle27);
     obj.scrollBox8:setAlign("client");
     obj.scrollBox8:setName("scrollBox8");
 
@@ -11565,19 +11579,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab12:setTitle("COMPANHEIRO");
     obj.tab12:setName("tab12");
 
-    obj.rectangle27 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle27:setParent(obj.tab12);
-    obj.rectangle27:setName("rectangle27");
-    obj.rectangle27:setAlign("client");
-    obj.rectangle27:setColor("#40000000");
-    obj.rectangle27:setXradius(10);
-    obj.rectangle27:setYradius(10);
+    obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle28:setParent(obj.tab12);
+    obj.rectangle28:setName("rectangle28");
+    obj.rectangle28:setAlign("client");
+    obj.rectangle28:setColor("#40000000");
+    obj.rectangle28:setXradius(10);
+    obj.rectangle28:setYradius(10);
 
  require("common.lua"); 
 
 
     obj.scrollBox9 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox9:setParent(obj.rectangle27);
+    obj.scrollBox9:setParent(obj.rectangle28);
     obj.scrollBox9:setAlign("client");
     obj.scrollBox9:setName("scrollBox9");
 
@@ -15619,23 +15633,23 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab13:setTitle("C.ANOTAÇÕES");
     obj.tab13:setName("tab13");
 
-    obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle28:setParent(obj.tab13);
-    obj.rectangle28:setName("rectangle28");
-    obj.rectangle28:setAlign("client");
-    obj.rectangle28:setColor("#40000000");
-    obj.rectangle28:setXradius(10);
-    obj.rectangle28:setYradius(10);
+    obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle29:setParent(obj.tab13);
+    obj.rectangle29:setName("rectangle29");
+    obj.rectangle29:setAlign("client");
+    obj.rectangle29:setColor("#40000000");
+    obj.rectangle29:setXradius(10);
+    obj.rectangle29:setYradius(10);
 
     obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.rectangle28);
+    obj.checkBox10:setParent(obj.rectangle29);
     obj.checkBox10:setAlign("right");
     obj.checkBox10:setWidth(15);
     obj.checkBox10:setField("companion.anotacoes_melhorado");
     obj.checkBox10:setName("checkBox10");
 
     obj.companionanotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.companionanotacoesFancy:setParent(obj.rectangle28);
+    obj.companionanotacoesFancy:setParent(obj.rectangle29);
     obj.companionanotacoesFancy:setName("companionanotacoesFancy");
     obj.companionanotacoesFancy:setAlign("client");
     lfm_setPropAsString(obj.companionanotacoesFancy, "backgroundColor",  "#333333");
@@ -15648,7 +15662,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.companionanotacoesFancy:setVisible(false);
 
     obj.companionanotacoesMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.companionanotacoesMerda:setParent(obj.rectangle28);
+    obj.companionanotacoesMerda:setParent(obj.rectangle29);
     obj.companionanotacoesMerda:setName("companionanotacoesMerda");
     obj.companionanotacoesMerda:setAlign("client");
     obj.companionanotacoesMerda:setField("companion.anotacoes");
@@ -15661,23 +15675,23 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab14:setTitle("ANOTAÇÕES");
     obj.tab14:setName("tab14");
 
-    obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle29:setParent(obj.tab14);
-    obj.rectangle29:setName("rectangle29");
-    obj.rectangle29:setAlign("client");
-    obj.rectangle29:setColor("#40000000");
-    obj.rectangle29:setXradius(10);
-    obj.rectangle29:setYradius(10);
+    obj.rectangle30 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle30:setParent(obj.tab14);
+    obj.rectangle30:setName("rectangle30");
+    obj.rectangle30:setAlign("client");
+    obj.rectangle30:setColor("#40000000");
+    obj.rectangle30:setXradius(10);
+    obj.rectangle30:setYradius(10);
 
     obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.rectangle29);
+    obj.checkBox11:setParent(obj.rectangle30);
     obj.checkBox11:setAlign("right");
     obj.checkBox11:setWidth(15);
     obj.checkBox11:setField("outros.anotacoes_melhorado");
     obj.checkBox11:setName("checkBox11");
 
     obj.anotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.anotacoesFancy:setParent(obj.rectangle29);
+    obj.anotacoesFancy:setParent(obj.rectangle30);
     obj.anotacoesFancy:setName("anotacoesFancy");
     obj.anotacoesFancy:setAlign("client");
     lfm_setPropAsString(obj.anotacoesFancy, "backgroundColor",  "#333333");
@@ -15690,7 +15704,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.anotacoesFancy:setVisible(false);
 
     obj.anotacoesMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.anotacoesMerda:setParent(obj.rectangle29);
+    obj.anotacoesMerda:setParent(obj.rectangle30);
     obj.anotacoesMerda:setName("anotacoesMerda");
     obj.anotacoesMerda:setAlign("client");
     obj.anotacoesMerda:setField("outros.anotacoes");
@@ -23534,8 +23548,8 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart267 ~= nil then self.flowPart267:destroy(); self.flowPart267 = nil; end;
         if self.cbProftolerancia ~= nil then self.cbProftolerancia:destroy(); self.cbProftolerancia = nil; end;
         if self.fraMapa2Layout ~= nil then self.fraMapa2Layout:destroy(); self.fraMapa2Layout = nil; end;
-        if self.flowPart245 ~= nil then self.flowPart245:destroy(); self.flowPart245 = nil; end;
         if self.rectangle28 ~= nil then self.rectangle28:destroy(); self.rectangle28 = nil; end;
+        if self.flowPart245 ~= nil then self.flowPart245:destroy(); self.flowPart245 = nil; end;
         if self.flowPart143 ~= nil then self.flowPart143:destroy(); self.flowPart143 = nil; end;
         if self.flowPart20 ~= nil then self.flowPart20:destroy(); self.flowPart20 = nil; end;
         if self.flowPart44 ~= nil then self.flowPart44:destroy(); self.flowPart44 = nil; end;
@@ -23782,6 +23796,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.label163 ~= nil then self.label163:destroy(); self.label163 = nil; end;
         if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
+        if self.fraCaracteristicasLayout ~= nil then self.fraCaracteristicasLayout:destroy(); self.fraCaracteristicasLayout = nil; end;
         if self.horzLine37 ~= nil then self.horzLine37:destroy(); self.horzLine37 = nil; end;
         if self.upperGridMagicBox3 ~= nil then self.upperGridMagicBox3:destroy(); self.upperGridMagicBox3 = nil; end;
         if self.dataLink102 ~= nil then self.dataLink102:destroy(); self.dataLink102 = nil; end;
@@ -23838,7 +23853,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart215 ~= nil then self.flowPart215:destroy(); self.flowPart215 = nil; end;
         if self.flowPart199 ~= nil then self.flowPart199:destroy(); self.flowPart199 = nil; end;
         if self.flowPart8 ~= nil then self.flowPart8:destroy(); self.flowPart8 = nil; end;
-        if self.frmFichaRPGmeister9_svg ~= nil then self.frmFichaRPGmeister9_svg:destroy(); self.frmFichaRPGmeister9_svg = nil; end;
         if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
         if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
         if self.flowPart96 ~= nil then self.flowPart96:destroy(); self.flowPart96 = nil; end;
@@ -24314,6 +24328,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.labProfintimidacao ~= nil then self.labProfintimidacao:destroy(); self.labProfintimidacao = nil; end;
         if self.layout120 ~= nil then self.layout120:destroy(); self.layout120 = nil; end;
         if self.label175 ~= nil then self.label175:destroy(); self.label175 = nil; end;
+        if self.rectangle30 ~= nil then self.rectangle30:destroy(); self.rectangle30 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.cbProfconstituicao ~= nil then self.cbProfconstituicao:destroy(); self.cbProfconstituicao = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
