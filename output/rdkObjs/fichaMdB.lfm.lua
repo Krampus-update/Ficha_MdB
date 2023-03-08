@@ -4924,9 +4924,9 @@ require('mudaNick.lua')
 
     obj.flowPart52 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart52:setParent(obj.flowLayout12);
-    obj.flowPart52:setMinWidth(375);
+    obj.flowPart52:setMinWidth(235);
     obj.flowPart52:setMaxWidth(475);
-    obj.flowPart52:setMinScaledWidth(375);
+    obj.flowPart52:setMinScaledWidth(235);
     obj.flowPart52:setHeight(250);
     obj.flowPart52:setMargins({left=2, right=2, top=4, bottom=8});
     obj.flowPart52:setName("flowPart52");
@@ -4966,7 +4966,7 @@ require('mudaNick.lua')
     obj.flowLayout15:setAutoHeight(true);
     obj.flowLayout15:setMinWidth(235);
     obj.flowLayout15:setMaxWidth(475);
-    obj.flowLayout15:setMinScaledWidth(235);
+    obj.flowLayout15:setMinScaledWidth(105);
     obj.flowLayout15:setHorzAlign("justify");
     obj.flowLayout15:setName("flowLayout15");
     obj.flowLayout15:setMargins({left=1, right=1, top=2, bottom=2});
