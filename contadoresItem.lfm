@@ -96,13 +96,11 @@
 		<button align="left" height="30" text="i"  onMenu="common.getMesa(sheet).chat:enviarMensagem('\n'..sheet.descricao);"/>
 	</layout>
 
-
 	<layout align="right" width="333">
 		<layout align="left" width="184">
 			<layout align="left" width="152" margins="{left=2}">
 				<comboBox name="cbBarChoose" align="top" height="60" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{nil,'1','2','3'}" field="barChoose"/>
-				<dataLink fields="{'valMax','valCur'}">
-					<event name="onChange">
+				<dataLink fields="{'valMax','valCur'}">	<event name="onChange">
 						if sheet.barChoose == nil then
 							return;
 						else
@@ -113,8 +111,8 @@
 								local curBar, maxBar = jogador:getBarValue(index);
 							end;
 						end;
-					</event>
-				</dataLink>
+				</event></dataLink>
+				<button name="btnDelete" align="left" margins="{left=2}" width="25" text="✖" onClick="askForDelete();" onMenu="NDB.deleteNode(sheet)"/>
 			</layout>
 		</layout>
 	</layout>
