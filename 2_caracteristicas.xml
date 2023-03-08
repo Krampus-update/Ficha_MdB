@@ -26,15 +26,20 @@
 			<Descricao left1="900" left2="980" top="65" text="REINO" field="caracteristicas.reino"/>
 		</layout >
 		
-		<flowPart left="0" top="110" width="375" height="240" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
-			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
-			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
-		</flowPart>
-
 		<layout left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
 			<richEdit left="10" top="20" width="805" height="450" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</layout>
+
+		<flowPart left="0" top="110" width="320" height="180" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+		</flowPart>
+
+		<flowPart left="0" top="110" width="320" height="180" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+			<image align="client" style="proportional" field="imagens.aparencia2" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+		</flowPart>
 
 		<layout left="0" top="355" width="375" height="375" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
 			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
