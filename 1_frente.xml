@@ -156,7 +156,7 @@
 					</flowLayout>
 
 					<!-- PONTOS DE VIDA -->
-					<flowPart minWidth="235" maxWidth="475" minScaledWidth="200" height="105" margins="{left=2, right=2, top=4, bottom=8}">
+					<flowPart minWidth="200" maxWidth="475" minScaledWidth="200" height="105" margins="{left=2, right=2, top=4, bottom=8}">
 
 						<!-- PONTOS DE VIDA REAIS -->
 						<frame align="client" frameStyle="frames/panel4transp/frame.xml" margins="{left = 4, right = 4, bottom=4}">
@@ -199,7 +199,7 @@
 					</flowPart>
 
 					<!-- APARENCIA -->
-					<flowPart minWidth="235" maxWidth="475" minScaledWidth="235" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
+					<flowPart minWidth="200" maxWidth="475" minScaledWidth="200" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
 						<frame  width="475" height="211" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
 							<image align="client" style="proportional" field="imagens.aparencia.frente" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
