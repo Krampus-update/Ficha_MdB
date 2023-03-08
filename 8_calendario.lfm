@@ -592,13 +592,13 @@
 				<textEditor left="10" top="80" width="250" height="200" field="data"/>
 
 				<layout left="10" top="285" width="250" height="155">
-					<label left="0" top="0" width="250" height="20" field="dataLabel" name="dataLabel" fontSize="10"/>
-					<label left="0" top="20" width="250" height="20" field="estacaoLabel" name="estacaoLabel" fontSize="10"/>
-					<label left="0" top="40" width="250" height="20" field="temperaturaLabel" name="temperaturaLabel" fontSize="10" hitTest="true"/>
-					<label left="0" top="60" width="250" height="20" field="precipitacaoLabel" name="precipitacaoLabel" fontSize="10" hitTest="true"/>
-					<label left="0" top="80" width="250" height="20" field="ventoLabel" name="ventoLabel" fontSize="10" hitTest="true"/>
-					<label left="0" top="100" width="250" height="35" field="luasLabel" name="luasLabel" fontSize="10" wordWrap="true" textTrimming="none"/>
-					<label left="0" top="135" width="250" height="20" field="eventosLabel" name="eventosLabel" fontSize="10" hitTest="true"/>
+					<label left="10" top="0" width="250" height="20" field="dataLabel" name="dataLabel" fontSize="10"/>
+					<label left="10" top="20" width="250" height="20" field="estacaoLabel" name="estacaoLabel" fontSize="10"/>
+					<label left="10" top="40" width="250" height="20" field="temperaturaLabel" name="temperaturaLabel" fontSize="10" hitTest="true"/>
+					<label left="10" top="60" width="250" height="20" field="precipitacaoLabel" name="precipitacaoLabel" fontSize="10" hitTest="true"/>
+					<label left="10" top="80" width="250" height="20" field="ventoLabel" name="ventoLabel" fontSize="10" hitTest="true"/>
+					<label left="10" top="100" width="250" height="35" field="luasLabel" name="luasLabel" fontSize="10" wordWrap="true" textTrimming="none"/>
+					<label left="10" top="135" width="250" height="20" field="eventosLabel" name="eventosLabel" fontSize="10" hitTest="true"/>
 				</layout>
 
 				<dataLink fields="{'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'}">

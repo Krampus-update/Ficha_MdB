@@ -11382,7 +11382,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.dataLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.dataLabel:setParent(obj.layout89);
-    obj.dataLabel:setLeft(0);
+    obj.dataLabel:setLeft(10);
     obj.dataLabel:setTop(0);
     obj.dataLabel:setWidth(250);
     obj.dataLabel:setHeight(20);
@@ -11393,7 +11393,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.estacaoLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.estacaoLabel:setParent(obj.layout89);
-    obj.estacaoLabel:setLeft(0);
+    obj.estacaoLabel:setLeft(10);
     obj.estacaoLabel:setTop(20);
     obj.estacaoLabel:setWidth(250);
     obj.estacaoLabel:setHeight(20);
@@ -11404,7 +11404,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.temperaturaLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.temperaturaLabel:setParent(obj.layout89);
-    obj.temperaturaLabel:setLeft(0);
+    obj.temperaturaLabel:setLeft(10);
     obj.temperaturaLabel:setTop(40);
     obj.temperaturaLabel:setWidth(250);
     obj.temperaturaLabel:setHeight(20);
@@ -11416,7 +11416,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.precipitacaoLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.precipitacaoLabel:setParent(obj.layout89);
-    obj.precipitacaoLabel:setLeft(0);
+    obj.precipitacaoLabel:setLeft(10);
     obj.precipitacaoLabel:setTop(60);
     obj.precipitacaoLabel:setWidth(250);
     obj.precipitacaoLabel:setHeight(20);
@@ -11428,7 +11428,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.ventoLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.ventoLabel:setParent(obj.layout89);
-    obj.ventoLabel:setLeft(0);
+    obj.ventoLabel:setLeft(10);
     obj.ventoLabel:setTop(80);
     obj.ventoLabel:setWidth(250);
     obj.ventoLabel:setHeight(20);
@@ -11440,7 +11440,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.luasLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.luasLabel:setParent(obj.layout89);
-    obj.luasLabel:setLeft(0);
+    obj.luasLabel:setLeft(10);
     obj.luasLabel:setTop(100);
     obj.luasLabel:setWidth(250);
     obj.luasLabel:setHeight(35);
@@ -11453,7 +11453,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.eventosLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.eventosLabel:setParent(obj.layout89);
-    obj.eventosLabel:setLeft(0);
+    obj.eventosLabel:setLeft(10);
     obj.eventosLabel:setTop(135);
     obj.eventosLabel:setWidth(250);
     obj.eventosLabel:setHeight(20);
