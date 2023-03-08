@@ -5592,7 +5592,7 @@ require('mudaNick.lua')
     obj.layout61:setLeft(0);
     obj.layout61:setTop(535);
     obj.layout61:setWidth(375);
-    obj.layout61:setHeight(375);
+    obj.layout61:setHeight(334);
     obj.layout61:setFrameStyle("frames/panel5/frame.xml");
     obj.layout61:setMargins({left = 4, right = 4});
     obj.layout61:setName("layout61");
