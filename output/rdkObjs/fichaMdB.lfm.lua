@@ -6354,7 +6354,7 @@ require('mudaNick.lua')
 
     obj.flowPart72 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart72:setParent(obj.fraEquipamentoLayout);
-    obj.flowPart72:setHeight(420);
+    obj.flowPart72:setHeight(400);
     obj.flowPart72:setFrameStyle("frames/panel4transp/frame.xml");
     obj.flowPart72:setMinScaledWidth(290);
     obj.flowPart72:setName("flowPart72");

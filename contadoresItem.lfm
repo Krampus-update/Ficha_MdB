@@ -114,9 +114,6 @@
 				</event></dataLink>
 			</layout>
 		</layout>
-	</layout>
-
-	<layout align="right" width="30">
-		<button name="btnDelete" align="right" margins="{left=2}" width="25" text="✖" onClick="askForDelete();" onMenu="NDB.deleteNode(sheet)"/>
+	<button name="btnDelete" align="left" margins="{left=2}" width="25" text="✖" onClick="askForDelete();" onMenu="NDB.deleteNode(sheet)"/>
 	</layout>
 </form>

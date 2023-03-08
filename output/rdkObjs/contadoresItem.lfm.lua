@@ -248,16 +248,10 @@ local function constructNew_frmContador()
     obj.dataLink7:setFields({'valMax','valCur'});
     obj.dataLink7:setName("dataLink7");
 
-    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout11:setParent(obj);
-    obj.layout11:setAlign("right");
-    obj.layout11:setWidth(30);
-    obj.layout11:setName("layout11");
-
     obj.btnDelete = GUI.fromHandle(_obj_newObject("button"));
-    obj.btnDelete:setParent(obj.layout11);
+    obj.btnDelete:setParent(obj.layout8);
     obj.btnDelete:setName("btnDelete");
-    obj.btnDelete:setAlign("right");
+    obj.btnDelete:setAlign("left");
     obj.btnDelete:setMargins({left=2});
     obj.btnDelete:setWidth(25);
     obj.btnDelete:setText("✖");
@@ -375,7 +369,6 @@ local function constructNew_frmContador()
         if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
         if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
-        if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
