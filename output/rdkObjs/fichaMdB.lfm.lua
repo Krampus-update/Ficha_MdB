@@ -5592,7 +5592,7 @@ require('mudaNick.lua')
     obj.layout61:setLeft(0);
     obj.layout61:setTop(540);
     obj.layout61:setWidth(375);
-    obj.layout61:setHeight(310);
+    obj.layout61:setHeight(315);
     obj.layout61:setFrameStyle("frames/panel5/frame.xml");
     obj.layout61:setMargins({left = 4, right = 4});
     obj.layout61:setName("layout61");
@@ -5613,7 +5613,7 @@ require('mudaNick.lua')
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
     obj.textEditor1:setWidth(355);
-    obj.textEditor1:setHeight(290);
+    obj.textEditor1:setHeight(275);
     obj.textEditor1:setField("caracteristicas.caracteristicasETracoes");
     obj.textEditor1:setName("textEditor1");
     obj.textEditor1:setTransparent(true);
