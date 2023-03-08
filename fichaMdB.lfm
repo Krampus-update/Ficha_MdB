@@ -55,7 +55,7 @@
 			<import file="10_companion.xml"/>
 		</tab>
 
-		<tab title="COMPANHEIRO ANOTAÇÕES">
+		<tab title="C.ANOTAÇÕES">
 			<rectangle class="fundo">
 				<checkBox align="right" width="15" field="companion.anotacoes_melhorado">
 					<event name="onChange">
@@ -70,7 +70,7 @@
 			</rectangle>
 		</tab>
 
-		<tab title="ANOTAÇÕES EXTRAS">
+		<tab title="ANOTAÇÕES">
 			<rectangle class="fundo">
 				<checkBox align="right" width="15" field="outros.anotacoes_melhorado">
 					<event name="onChange">
