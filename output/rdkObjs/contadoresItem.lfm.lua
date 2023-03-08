@@ -240,12 +240,12 @@ local function constructNew_frmContador()
     obj.cbBarChoose:setAlign("top");
     obj.cbBarChoose:setHeight(60);
     obj.cbBarChoose:setItems({'','Barra 2', 'Barra 3', 'Barra 4'});
-    obj.cbBarChoose:setValues({nil,'1','2','3'});
+    obj.cbBarChoose:setValues({'nada','2','3','4'});
     obj.cbBarChoose:setField("barChoose");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink7:setParent(obj.layout10);
-    obj.dataLink7:setFields({'valMax','valCur'});
+    obj.dataLink7:setFields({'barChoose','valMax','valCur'});
     obj.dataLink7:setName("dataLink7");
 
     obj.btnDelete = GUI.fromHandle(_obj_newObject("button"));
@@ -321,7 +321,7 @@ local function constructNew_frmContador()
 
     obj._e_event7 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.barChoose == nil then
+            if sheet.barChoose == "nada" then
             							return;
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;

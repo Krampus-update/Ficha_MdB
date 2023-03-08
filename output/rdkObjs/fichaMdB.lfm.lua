@@ -5694,7 +5694,7 @@ require('mudaNick.lua')
     obj.label42:setVertTextAlign("center");
     obj.label42:setHorzTextAlign("center");
     lfm_setPropAsString(obj.label42, "fontStyle",  "bold");
-    obj.label42:setText("VÍCULOS");
+    obj.label42:setText("VÍNCULOS");
     obj.label42:setName("label42");
     obj.label42:setFontColor("white");
 
