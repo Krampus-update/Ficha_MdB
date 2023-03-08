@@ -11368,14 +11368,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.textEditor7:setLeft(10);
     obj.textEditor7:setTop(80);
     obj.textEditor7:setWidth(250);
-    obj.textEditor7:setHeight(100);
+    obj.textEditor7:setHeight(200);
     obj.textEditor7:setField("data");
     obj.textEditor7:setName("textEditor7");
 
     obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout89:setParent(obj.layout88);
     obj.layout89:setLeft(10);
-    obj.layout89:setTop(180);
+    obj.layout89:setTop(285);
     obj.layout89:setWidth(250);
     obj.layout89:setHeight(155);
     obj.layout89:setName("layout89");
