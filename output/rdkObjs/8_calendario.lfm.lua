@@ -2360,7 +2360,7 @@ local function constructNew_frmGerenciador02()
 
     obj.button5 = GUI.fromHandle(_obj_newObject("button"));
     obj.button5:setParent(obj.layout10);
-    obj.button5:setLeft(10);
+    obj.button5:setLeft(15);
     obj.button5:setTop(55);
     obj.button5:setWidth(100);
     obj.button5:setHeight(25);
@@ -2467,7 +2467,7 @@ local function constructNew_frmGerenciador02()
     obj.luasLabel:setLeft(10);
     obj.luasLabel:setTop(100);
     obj.luasLabel:setWidth(250);
-    obj.luasLabel:setHeight(35);
+    obj.luasLabel:setHeight(20);
     obj.luasLabel:setField("luasLabel");
     obj.luasLabel:setName("luasLabel");
     obj.luasLabel:setFontSize(10);
@@ -2477,7 +2477,7 @@ local function constructNew_frmGerenciador02()
     obj.eventosLabel = GUI.fromHandle(_obj_newObject("label"));
     obj.eventosLabel:setParent(obj.layout11);
     obj.eventosLabel:setLeft(10);
-    obj.eventosLabel:setTop(135);
+    obj.eventosLabel:setTop(120);
     obj.eventosLabel:setWidth(250);
     obj.eventosLabel:setHeight(20);
     obj.eventosLabel:setField("eventosLabel");
