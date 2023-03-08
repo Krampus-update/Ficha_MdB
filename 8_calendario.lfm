@@ -589,9 +589,9 @@
 				<label left="165" top="55" width="45" height="25" text="Dias" />
 				<dataLink field="add" defaultValue="1"/>
 
-				<textEditor left="10" top="80" width="250" height="100" field="data"/>
+				<textEditor left="10" top="80" width="250" height="200" field="data"/>
 
-				<layout left="10" top="180" width="250" height="155">
+				<layout left="10" top="285" width="250" height="155">
 					<label left="0" top="0" width="250" height="20" field="dataLabel" name="dataLabel" fontSize="10"/>
 					<label left="0" top="20" width="250" height="20" field="estacaoLabel" name="estacaoLabel" fontSize="10"/>
 					<label left="0" top="40" width="250" height="20" field="temperaturaLabel" name="temperaturaLabel" fontSize="10" hitTest="true"/>
