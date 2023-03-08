@@ -200,7 +200,7 @@
 
 					<!-- APARENCIA -->
 					<flowPart minWidth="235" maxWidth="475" minScaledWidth="235" height="250" margins="{left=2, right=2, top=4, bottom=8}">						
-						<frame  width="235" height="211" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
+						<frame  width="475" height="211" frameStyle="frames/panel4transp/frame.xml" margins="{left = 0, right = 4}">
 							<image align="client" style="proportional" field="imagens.aparencia.frente" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 							<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 						</frame>
