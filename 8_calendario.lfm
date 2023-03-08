@@ -597,8 +597,8 @@
 					<label left="10" top="40" width="250" height="20" field="temperaturaLabel" name="temperaturaLabel" fontSize="10" hitTest="true"/>
 					<label left="10" top="60" width="250" height="20" field="precipitacaoLabel" name="precipitacaoLabel" fontSize="10" hitTest="true"/>
 					<label left="10" top="80" width="250" height="20" field="ventoLabel" name="ventoLabel" fontSize="10" hitTest="true"/>
-					<label left="10" top="100" width="250" height="35" field="luasLabel" name="luasLabel" fontSize="10" wordWrap="true" textTrimming="none"/>
-					<label left="10" top="135" width="250" height="20" field="eventosLabel" name="eventosLabel" fontSize="10" hitTest="true"/>
+					<label left="10" top="100" width="250" height="20" field="luasLabel" name="luasLabel" fontSize="10" wordWrap="true" textTrimming="none"/>
+					<label left="10" top="120" width="250" height="20" field="eventosLabel" name="eventosLabel" fontSize="10" hitTest="true"/>
 				</layout>
 
 				<dataLink fields="{'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'}">
