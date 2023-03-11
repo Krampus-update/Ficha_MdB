@@ -17,7 +17,8 @@
 	<!-- Cabeçalho no pé da pagina -->
 	<flowLayout align="bottom" frameStyle="frames/upperInfoGrid/frame.xml" autoHeight="true" horzAlign="justify">
 		<flowPart width="1"/>
-		<upperGridMagic2ComboBox height="40" minWidth="165" field="magias.habilidadeDeConjuracao" titulo="HABILIDADE DE CONJURAÇÃO" items="{'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
+		<upperGridMagic2ComboBox height="40" minWidth="165" field="magias.habilidadeDeConjuracao" titulo="HABILIDADE DE CONJURAÇÃO" 
+		items="{'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
 		<upperGridMagic2Box      height="40" minWidth="100" field="magias.cdDaMagia"              titulo="CD DA MAGIA"/>
 		<upperGridMagic2Box      height="40" minWidth="160" field="magias.bonusAtaqueSTR"         titulo="BÔNUS DE ATAQUE DE MAGIA"/>
 		<flowPart width="1"/>
@@ -68,7 +69,8 @@
 						<!-- Nível da Magia -->
 						<rectangle class="popupEditRect" height="30">
 							<label align="left" fontStyle="bold" text="Nível da Magia"/>
-							<comboBox align="right" width="115" field="nivel" items="{'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', 'Runas'}" values="{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'}"/>
+							<comboBox align="right" width="115" field="nivel" 
+							items="{'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', 'Runas'}" values="{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'}"/>
 						</rectangle>
 						<!-- Escola de Magia -->
 						<rectangle class="popupEditRect" height="30">
@@ -141,7 +143,8 @@
 								</flowPart>
 								<flowPart minWidth="3" height="24"/>
 								<flowPart minWidth="158" maxWidth="790" height="24">
-									<comboBox align="client" field="tempoConjuracaoUnidade" items="{'', 'Ação', 'Ação Bônus', 'Ação de Tripulação', 'Dias', 'Horas', 'Ação Lendária', 'Minutos', 'Nada', 'Reação', 'Especial', 'Ação de Lar'}"/>
+									<comboBox align="client" field="tempoConjuracaoUnidade" 
+									items="{'', 'Ação', 'Ação Bônus', 'Ação de Tripulação', 'Dias', 'Horas', 'Ação Lendária', 'Minutos', 'Nada', 'Reação', 'Especial', 'Ação de Lar'}"/>
 								</flowPart>
 							</flowLayout>
 						</rectangle>
@@ -173,11 +176,13 @@
 								</flowPart>
 								<flowPart minWidth="3" height="24"/>
 								<flowPart minWidth="92" maxWidth="460" height="24">
-									<comboBox align="client" field="alvoUnidade" items="{'', 'Nenhum', 'Pessoal', 'Toque', 'Especial', 'Qualquer', 'Pés', 'Milhas', 'Metros', 'Kilômetros'}"/>
+									<comboBox align="client" field="alvoUnidade" 
+									items="{'', 'Nenhum', 'Pessoal', 'Toque', 'Especial', 'Qualquer', 'Pés', 'Milhas', 'Metros', 'Kilômetros'}"/>
 	 							</flowPart>
 								<flowPart minWidth="3" height="24"/>
 								<flowPart minWidth="91" maxWidth="455" height="24">
-									<comboBox align="client" field="alvoTipo" items="{'', 'Aliado', 'Cone', 'Criatura', 'Cubo', 'Cilindro', 'Inimigo', 'Linha', 'Nenhum', 'Objeto', 'Raio', 'Pessoal', 'Espaço', 'Esfera', 'Quadrado', 'Parede'}"/>
+									<comboBox align="client" field="alvoTipo" 
+									items="{'', 'Aliado', 'Cone', 'Criatura', 'Cubo', 'Cilindro', 'Inimigo', 'Linha', 'Nenhum', 'Objeto', 'Raio', 'Pessoal', 'Espaço', 'Esfera', 'Quadrado', 'Parede'}"/>
 								</flowPart>
 							</flowLayout>
 						</rectangle>
@@ -277,7 +282,8 @@
 						<!-- Atributo do Ataque-->
 						<rectangle class="popupEditRect" height="30">
 							<label align="left" fontStyle="bold" text="Atributo de Ataque"/>
-							<comboBox name="popupEditAtaqueAtrib" align="right" width="230" field="ataqueAtributo" items="{'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'}" values="{'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
+							<comboBox name="popupEditAtaqueAtrib" align="right" width="230" field="ataqueAtributo" 
+							items="{'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'}" values="{'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
 						</rectangle>
 						<!-- Bônus de Ataque -->
 						<rectangle class="popupEditRect" height="30">
@@ -364,7 +370,8 @@
 								</flowPart>
 								<flowPart minWidth="3" height="24"/>
 								<flowPart minWidth="106" maxWidth="530" height="24">
-									<comboBox align="client" field="cdResistenciaAtributo" items="{'', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
+									<comboBox align="client" field="cdResistenciaAtributo" 
+									items="{'', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
 								</flowPart>
 								<flowPart minWidth="61" maxWidth="305" height="24">
 									<label align="client" text="contra CD." horzTextAlign="center"/>
@@ -374,7 +381,9 @@
 								</flowPart>
 								<flowPart minWidth="3" height="24"/>
 								<flowPart minWidth="106" maxWidth="630" height="24">
-									<comboBox align="client" field="cdResistenciaTipo" items="{'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma', 'Fixo'}" values="{'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'fixo'}"/>
+									<comboBox align="client" field="cdResistenciaTipo" 
+									items="{'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma', 'Fixo'}" 
+									values="{'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma', 'fixo'}"/>
 								</flowPart>
 								<dataLink field="cdResistenciaTipo"> <event name="onChange">
 									local node = self.popupEdit:getNodeObject();
@@ -417,7 +426,9 @@
 						</event> </dataLink>
 						<edit align="top" field="importSourcePath" readOnly="true"/>
 					<label class="popupEditDetailTitle" text="Qual o nível da magia?"/>
-						<comboBox name="comboBoxImportLevel" align="top" field="importLevel" items="{'Qualquer', 'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', '10º nível'}" values="{'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'}"/>
+						<comboBox name="comboBoxImportLevel" align="top" field="importLevel" 
+						items="{'Qualquer', 'Truque', '1º nível', '2º nível', '3º nível', '4º nível', '5º nível', '6º nível', '7º nível', '8º nível', '9º nível', '10º nível'}" 
+						values="{'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'}"/>
 						<dataLink field="importLevel" defaultValue="0"/>
 					<label class="popupEditDetailTitle" text="Qual a classe da magia?"/>
 						<comboBox name="comboBoxImportClass" align="top" field="importClass"/>

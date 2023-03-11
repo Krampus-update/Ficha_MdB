@@ -21,7 +21,8 @@
 		
 		<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
 			<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
-			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
+			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" 
+			items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
 			<checkBox left="200" top="10" width="100" field="caracteristicas.quadrupede" text="Quadrúpede" />
 			<Descricao left1="10" left2="100" top="38" text="ALTURA" field="caracteristicas.altura"/>
 			<Descricao left1="10" left2="100" top="65" text="PESO" field="caracteristicas.peso"/>
