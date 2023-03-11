@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form name="MultiVerso_MdB" align="client" theme="dark">
+<rectangle class="fundo">
+	<scrollBox align="client">
+		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraXLayout">
+
 
 <!-- trocar Form por isso e ajustar os campos
 
@@ -245,5 +248,7 @@
 				</event>
 			</button>
 		</layout>
-    </scrollBox>
-</form>
+		
+		</flowLayout>
+	</scrollBox>
+</rectangle>
