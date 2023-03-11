@@ -65,7 +65,8 @@
 						end;
 					</event>
 				</checkBox>
-				<richEdit name="companionanotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
+				<richEdit name="companionanotacoesFancy" align="client" backgroundColor="#333333" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" 
+				margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="companionanotacoesMerda" align="client" field="companion.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
 		</tab>
