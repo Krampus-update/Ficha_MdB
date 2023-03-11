@@ -240,7 +240,7 @@ local function constructNew_frmContador()
     obj.cbBarChoose:setAlign("top");
     obj.cbBarChoose:setHeight(60);
     obj.cbBarChoose:setItems({'','Barra 2', 'Barra 3', 'Barra 4'});
-    obj.cbBarChoose:setValues({'nada','2','3','4'});
+    obj.cbBarChoose:setValues({'','2','3','4'});
     obj.cbBarChoose:setField("barChoose");
 
     obj.dataLink7 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -321,14 +321,19 @@ local function constructNew_frmContador()
 
     obj._e_event7 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet.barChoose == "nada" then
+            local bar = tonumber(sheet.barChoose)
+            						if bar == nil then
             							return;
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;
-            							local bar = tonumber(sheet.barChoose)
             							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
-            								jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax); 
-            								local curBar, maxBar = jogador:getBarValue(index);
+            								if sheet.valCur ~= sheet.valPrev or sheet.valCur ~= sheet.valPrev and sheet.valMax ~= sheet.valMaxPrev or sheet.valMax ~= sheet.valMaxPrev then
+            									jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax);
+            								else 
+            									local curBar, maxBar = jogador:getBarValue(bar);
+            									sheet.valCur = curBar;
+            									sheet.valMax = maxBar;
+            								end;
             							end;
             						end;
         end, obj);
