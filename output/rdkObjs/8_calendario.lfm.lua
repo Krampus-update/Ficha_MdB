@@ -28,7 +28,6 @@ local function constructNew_frmGerenciador02()
     obj:beginUpdate();
     obj:setName("frmGerenciador02");
     obj:setAlign("client");
-    obj:setTheme("dark");
     obj:setMargins({top=1});
 
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
@@ -3390,8 +3389,7 @@ local function constructNew_frmGerenciador02()
             									"Vontade CD15 por minuto ou sofrer os efeitos de confusão. ", "+4 Observar, Ouvir, Sentir motivação. Dissipa confusão, medo ou ilusões. ", 
             									"Fortitude CD15 pra evitar nível negativo. -4 Observar, Ouvir e ataques a distancia. Apaga chamas desprotegidas e 75% das chamas protegidas. Deslocamento custa o dobro. ", "Aumenta em 1 a CD de todas magias. Aumenta em 1 os níveis de todos conjuradores. ", 
             									"Qualquer criatura morta durante a nevasca volta como uma aparição 1d4 rodadas depois. ", "Vontade 18 contra a magia insanidade, dura 1d6 horas. ", 
-            									"1d6 de dano ácido por minuto. Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", 
-            									"50% de chance de incendiar objetos inflamaveis. ", "Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", ""};
+            									"1d6 de dano ácido por minuto. Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", "50% de chance de incendiar objetos inflamaveis. ", "Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", ""};
             
             									data = data .. sobrenatural[subEvent];
             									sheet.eventosLabel = "Eventos: " .. label[subEvent] .. ".";
