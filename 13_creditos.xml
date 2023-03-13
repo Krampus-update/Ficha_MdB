@@ -84,7 +84,7 @@
 
 	<template name="colorSelection">
 		<label left="0" top="$(top)" width="80" height="20" text="$(place): " horzTextAlign="center"/>
-		<comboBox left="95" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
+		<comboBox left="85" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
 	</template>
 
     <scrollBox align="client">
@@ -129,7 +129,7 @@
 				</event>
 			</dataLink>
 			<label left="0" top="35" width="80" height="20" text="Cores: " horzTextAlign="center"/>
-			<colorSelection top="60" field="colorBackground" place="Fundo: "/>
+			<colorSelection top="60" field="colorBackground" place="Fundo"/>
 			<dataLink field="colorBackground" defaultValue="#505050">
 		        <event name="onChange">
 		            if sheet==nil then return end;
@@ -143,7 +143,7 @@
 		        </event>
 			</dataLink>
 
-			<colorSelection top="85" field="colorStroke" place="Linhas: "/>
+			<colorSelection top="85" field="colorStroke" place="Linhas"/>
 			<dataLink field="colorStroke" defaultValue="#FFFFFF">
 		        <event name="onChange">
 		            if sheet==nil then return end;
@@ -161,8 +161,7 @@
 		        </event>
 		    </dataLink>
 
-			<label left="0" top="110" width="90" height="20" text="Fonte" horzTextAlign="center"/>
-			<colorSelection top="110" field="colorFont"/>
+			<colorSelection top="110" field="colorFont" place="Fonte"/>
 			<dataLink field="colorFont" defaultValue="#FFFFFF">
 		        <event name="onChange">
 		            if sheet==nil then return end;
