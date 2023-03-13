@@ -6367,7 +6367,7 @@ require('mudaNick.lua')
     obj.layout67 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout67:setParent(obj.flowPart73);
     obj.layout67:setAlign("left");
-    obj.layout67:setWidth(150);
+    obj.layout67:setWidth(200);
     obj.layout67:setMargins({left=3});
     obj.layout67:setName("layout67");
 
