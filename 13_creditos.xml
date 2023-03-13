@@ -83,7 +83,7 @@
 	</script>
 
 	<template name="colorSelection">
-		<comboBox left="95" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
+		<comboBox left="95" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
 	</template>
 
     <scrollBox align="client">
