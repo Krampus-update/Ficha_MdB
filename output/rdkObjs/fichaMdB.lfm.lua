@@ -5189,7 +5189,6 @@ require('mudaNick.lua')
     obj.frmFichaRPGmeister9_svg:setParent(obj.tab2);
     obj.frmFichaRPGmeister9_svg:setName("frmFichaRPGmeister9_svg");
     obj.frmFichaRPGmeister9_svg:setAlign("client");
-    obj.frmFichaRPGmeister9_svg:setTheme("dark");
     obj.frmFichaRPGmeister9_svg:setMargins({top=1});
 
     obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
