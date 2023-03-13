@@ -12,5 +12,4 @@ function mudaNick(nome, sheet)
     if not (mesa.meuJogador.nick ~= nome) then return; end;
 
     mesa.chat:enviarMensagem("/nick " .. nome);
-    mesa.chat:enviarMensagem("nick " .. nome);
 	end;
