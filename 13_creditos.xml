@@ -128,8 +128,7 @@
 					end;
 				</event>
 			</dataLink>
-			<label left="0" top="35" width="90" height="20" text="Cores: " horzTextAlign="center"/>
-			<label left="0" top="60" width="90" height="20" text="Fundo " horzTextAlign="center"/>
+			<label left="0" top="35" width="80" height="20" text="Cores: " horzTextAlign="center"/>
 			<colorSelection top="60" field="colorBackground" place="Fundo: "/>
 			<dataLink field="colorBackground" defaultValue="#505050">
 		        <event name="onChange">
@@ -144,7 +143,7 @@
 		        </event>
 			</dataLink>
 
-			<label left="0" top="85" width="90" height="20" text="Linhas " horzTextAlign="center"/>
+			<label left="0" top="85" width="80" height="20" text="Linhas " horzTextAlign="center"/>
 			<colorSelection top="85" field="colorStroke"/>
 			<dataLink field="colorStroke" defaultValue="#FFFFFF">
 		        <event name="onChange">
