@@ -6589,6 +6589,8 @@ require('mudaNick.lua')
 
     obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle3:setParent(obj.tab4);
+    obj.rectangle3:setStrokeColor("white");
+    obj.rectangle3:setStrokeSize(1);
     obj.rectangle3:setName("rectangle3");
     obj.rectangle3:setAlign("client");
     obj.rectangle3:setColor("#40000000");

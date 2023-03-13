@@ -216,7 +216,7 @@ local function constructNew_frmOptAtaque()
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink2:setParent(obj);
     obj.dataLink2:setField("nome");
-    obj.dataLink2:setDefaultValue("NOME");
+    obj.dataLink2:setDefaultValue("");
     obj.dataLink2:setName("dataLink2");
 
     obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));

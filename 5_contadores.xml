@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rectangle class="fundo">
+<rectangle class="fundo" strokeColor="white" strokeSize="1">
 	<scrollBox align="client">
 		<button text="Add" align="top" onClick="self.rclContadores:append()"/>
 		<button text="Import from Macro" align="top">
