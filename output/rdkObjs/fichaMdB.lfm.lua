@@ -6606,7 +6606,7 @@ require('mudaNick.lua')
     obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout16:setParent(obj.rectangle3);
     obj.flowLayout16:setAlign("bottom");
-    obj.flowLayout16:setFrameStyle("frames/upperInfoGrid/frame.xml");
+    obj.flowLayout16:setFrameStyle("frames/panel4transp/frame.xml");
     obj.flowLayout16:setAutoHeight(true);
     obj.flowLayout16:setHorzAlign("justify");
     obj.flowLayout16:setName("flowLayout16");
