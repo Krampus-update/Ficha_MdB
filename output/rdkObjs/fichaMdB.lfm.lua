@@ -5206,19 +5206,13 @@ require('mudaNick.lua')
     obj.rectangle2:setXradius(10);
     obj.rectangle2:setYradius(10);
 
-    obj.scrollBox3 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox3:setParent(obj.rectangle2);
-    obj.scrollBox3:setAlign("client");
-    obj.scrollBox3:setName("scrollBox3");
-
     obj.fraXLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraXLayout:setParent(obj.scrollBox3);
+    obj.fraXLayout:setParent(obj.rectangle2);
     obj.fraXLayout:setAlign("top");
     obj.fraXLayout:setHeight(500);
     obj.fraXLayout:setMargins({left=10, right=10, top=10});
     obj.fraXLayout:setAutoHeight(true);
     obj.fraXLayout:setHorzAlign("center");
-    obj.fraXLayout:setLineSpacing(2);
     obj.fraXLayout:setName("fraXLayout");
     obj.fraXLayout:setStepSizes({310, 420, 640, 760, 1150});
     obj.fraXLayout:setMinScaledWidth(300);
@@ -5792,13 +5786,13 @@ require('mudaNick.lua')
     obj.rectangle3:setXradius(10);
     obj.rectangle3:setYradius(10);
 
-    obj.scrollBox4 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox4:setParent(obj.rectangle3);
-    obj.scrollBox4:setAlign("client");
-    obj.scrollBox4:setName("scrollBox4");
+    obj.scrollBox3 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox3:setParent(obj.rectangle3);
+    obj.scrollBox3:setAlign("client");
+    obj.scrollBox3:setName("scrollBox3");
 
     obj.fraEquipamentoLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraEquipamentoLayout:setParent(obj.scrollBox4);
+    obj.fraEquipamentoLayout:setParent(obj.scrollBox3);
     obj.fraEquipamentoLayout:setAlign("top");
     obj.fraEquipamentoLayout:setHeight(500);
     obj.fraEquipamentoLayout:setMargins({left=10, right=10, top=10});
@@ -7048,14 +7042,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab6:setTitle("Detalhes");
     obj.tab6:setName("tab6");
 
-    obj.scrollBox5 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox5:setParent(obj.tab6);
-    obj.scrollBox5:setAlign("client");
-    obj.scrollBox5:setPadding({top=5, bottom=5, left=5, right=5});
-    obj.scrollBox5:setName("scrollBox5");
+    obj.scrollBox4 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox4:setParent(obj.tab6);
+    obj.scrollBox4:setAlign("client");
+    obj.scrollBox4:setPadding({top=5, bottom=5, left=5, right=5});
+    obj.scrollBox4:setName("scrollBox4");
 
     obj.label61 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label61:setParent(obj.scrollBox5);
+    obj.label61:setParent(obj.scrollBox4);
     obj.label61:setText("Detalhes da Magia");
     obj.label61:setName("label61");
     obj.label61:setAlign("top");
@@ -7065,7 +7059,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label61:setFontColor("white");
 
     obj.rectangle8 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle8:setParent(obj.scrollBox5);
+    obj.rectangle8:setParent(obj.scrollBox4);
     obj.rectangle8:setHeight(30);
     obj.rectangle8:setName("rectangle8");
     obj.rectangle8:setAlign("top");
@@ -7093,7 +7087,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox2:setName("comboBox2");
 
     obj.rectangle9 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle9:setParent(obj.scrollBox5);
+    obj.rectangle9:setParent(obj.scrollBox4);
     obj.rectangle9:setHeight(30);
     obj.rectangle9:setName("rectangle9");
     obj.rectangle9:setAlign("top");
@@ -7120,7 +7114,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox3:setName("comboBox3");
 
     obj.rectangle10 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle10:setParent(obj.scrollBox5);
+    obj.rectangle10:setParent(obj.scrollBox4);
     obj.rectangle10:setHeight(90);
     obj.rectangle10:setName("rectangle10");
     obj.rectangle10:setAlign("top");
@@ -7271,7 +7265,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.checkBox8:setName("checkBox8");
 
     obj.rectangle11 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle11:setParent(obj.scrollBox5);
+    obj.rectangle11:setParent(obj.scrollBox4);
     obj.rectangle11:setHeight(30);
     obj.rectangle11:setName("rectangle11");
     obj.rectangle11:setAlign("top");
@@ -7343,7 +7337,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink124:setName("dataLink124");
 
     obj.label71 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label71:setParent(obj.scrollBox5);
+    obj.label71:setParent(obj.scrollBox4);
     obj.label71:setText("Detalhes de Conjuração");
     obj.label71:setName("label71");
     obj.label71:setAlign("top");
@@ -7353,7 +7347,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label71:setFontColor("white");
 
     obj.rectangle12 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle12:setParent(obj.scrollBox5);
+    obj.rectangle12:setParent(obj.scrollBox4);
     obj.rectangle12:setHeight(30);
     obj.rectangle12:setName("rectangle12");
     obj.rectangle12:setAlign("top");
@@ -7439,7 +7433,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox5:setName("comboBox5");
 
     obj.rectangle13 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle13:setParent(obj.scrollBox5);
+    obj.rectangle13:setParent(obj.scrollBox4);
     obj.rectangle13:setHeight(30);
     obj.rectangle13:setName("rectangle13");
     obj.rectangle13:setAlign("top");
@@ -7504,7 +7498,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink125:setName("dataLink125");
 
     obj.rectangle14 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle14:setParent(obj.scrollBox5);
+    obj.rectangle14:setParent(obj.scrollBox4);
     obj.rectangle14:setHeight(30);
     obj.rectangle14:setName("rectangle14");
     obj.rectangle14:setAlign("top");
@@ -7614,7 +7608,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox7:setName("comboBox7");
 
     obj.rectangle15 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle15:setParent(obj.scrollBox5);
+    obj.rectangle15:setParent(obj.scrollBox4);
     obj.rectangle15:setHeight(30);
     obj.rectangle15:setName("rectangle15");
     obj.rectangle15:setAlign("top");
@@ -7741,7 +7735,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink126:setName("dataLink126");
 
     obj.rectangle16 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle16:setParent(obj.scrollBox5);
+    obj.rectangle16:setParent(obj.scrollBox4);
     obj.rectangle16:setHeight(30);
     obj.rectangle16:setName("rectangle16");
     obj.rectangle16:setAlign("top");
@@ -7832,7 +7826,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink127:setName("dataLink127");
 
     obj.rectangle17 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle17:setParent(obj.scrollBox5);
+    obj.rectangle17:setParent(obj.scrollBox4);
     obj.rectangle17:setHeight(30);
     obj.rectangle17:setName("rectangle17");
     obj.rectangle17:setAlign("top");
@@ -7957,7 +7951,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink128:setName("dataLink128");
 
     obj.label80 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label80:setParent(obj.scrollBox5);
+    obj.label80:setParent(obj.scrollBox4);
     obj.label80:setText("Efeitos da Magia");
     obj.label80:setName("label80");
     obj.label80:setAlign("top");
@@ -7967,7 +7961,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label80:setFontColor("white");
 
     obj.rectangle18 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle18:setParent(obj.scrollBox5);
+    obj.rectangle18:setParent(obj.scrollBox4);
     obj.rectangle18:setHeight(30);
     obj.rectangle18:setName("rectangle18");
     obj.rectangle18:setAlign("top");
@@ -7994,7 +7988,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox10:setName("comboBox10");
 
     obj.rectangle19 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle19:setParent(obj.scrollBox5);
+    obj.rectangle19:setParent(obj.scrollBox4);
     obj.rectangle19:setHeight(30);
     obj.rectangle19:setName("rectangle19");
     obj.rectangle19:setAlign("top");
@@ -8022,7 +8016,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditAtaqueAtrib:setValues({'conjuracao', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
 
     obj.rectangle20 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle20:setParent(obj.scrollBox5);
+    obj.rectangle20:setParent(obj.scrollBox4);
     obj.rectangle20:setHeight(30);
     obj.rectangle20:setName("rectangle20");
     obj.rectangle20:setAlign("top");
@@ -8050,12 +8044,12 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditAtaqueBonus:setFontColor("white");
 
     obj.dataLink129 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink129:setParent(obj.scrollBox5);
+    obj.dataLink129:setParent(obj.scrollBox4);
     obj.dataLink129:setField("ataqueTipo");
     obj.dataLink129:setName("dataLink129");
 
     obj.popupEditDanoRect = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.popupEditDanoRect:setParent(obj.scrollBox5);
+    obj.popupEditDanoRect:setParent(obj.scrollBox4);
     obj.popupEditDanoRect:setName("popupEditDanoRect");
     obj.popupEditDanoRect:setHeight(30);
     obj.popupEditDanoRect:setAlign("top");
@@ -8186,7 +8180,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditDanoRL:setField("danos");
 
     obj.popupEditFormulaRect = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.popupEditFormulaRect:setParent(obj.scrollBox5);
+    obj.popupEditFormulaRect:setParent(obj.scrollBox4);
     obj.popupEditFormulaRect:setName("popupEditFormulaRect");
     obj.popupEditFormulaRect:setHeight(30);
     obj.popupEditFormulaRect:setAlign("top");
@@ -8293,7 +8287,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditFormulaRL:setField("formulas");
 
     obj.rectangle21 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle21:setParent(obj.scrollBox5);
+    obj.rectangle21:setParent(obj.scrollBox4);
     obj.rectangle21:setHeight(30);
     obj.rectangle21:setName("rectangle21");
     obj.rectangle21:setAlign("top");
@@ -8419,7 +8413,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink130:setName("dataLink130");
 
     obj.rectangle22 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle22:setParent(obj.scrollBox5);
+    obj.rectangle22:setParent(obj.scrollBox4);
     obj.rectangle22:setHeight(60);
     obj.rectangle22:setName("rectangle22");
     obj.rectangle22:setAlign("top");
@@ -8454,14 +8448,14 @@ self.upperGridMagicBox3._RecalcSize();
  require("import5etools.lua"); 
 
 
-    obj.scrollBox6 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox6:setParent(obj.tab7);
-    obj.scrollBox6:setAlign("client");
-    obj.scrollBox6:setPadding({top=5, bottom=5, left=5, right=5});
-    obj.scrollBox6:setName("scrollBox6");
+    obj.scrollBox5 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox5:setParent(obj.tab7);
+    obj.scrollBox5:setAlign("client");
+    obj.scrollBox5:setPadding({top=5, bottom=5, left=5, right=5});
+    obj.scrollBox5:setName("scrollBox5");
 
     obj.label94 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label94:setParent(obj.scrollBox6);
+    obj.label94:setParent(obj.scrollBox5);
     obj.label94:setText("Qual a fonte da magia?");
     obj.label94:setName("label94");
     obj.label94:setAlign("top");
@@ -8471,7 +8465,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label94:setFontColor("white");
 
     obj.comboBoxImportSource = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBoxImportSource:setParent(obj.scrollBox6);
+    obj.comboBoxImportSource:setParent(obj.scrollBox5);
     obj.comboBoxImportSource:setName("comboBoxImportSource");
     obj.comboBoxImportSource:setAlign("top");
     obj.comboBoxImportSource:setField("importSourceName");
@@ -8480,13 +8474,13 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink131 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink131:setParent(obj.scrollBox6);
+    obj.dataLink131:setParent(obj.scrollBox5);
     obj.dataLink131:setField("importSourceName");
     obj.dataLink131:setDefaultValue("PHB");
     obj.dataLink131:setName("dataLink131");
 
     obj.edit45 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit45:setParent(obj.scrollBox6);
+    obj.edit45:setParent(obj.scrollBox5);
     obj.edit45:setAlign("top");
     obj.edit45:setField("importSourcePath");
     obj.edit45:setReadOnly(true);
@@ -8495,7 +8489,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit45:setFontColor("white");
 
     obj.label95 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label95:setParent(obj.scrollBox6);
+    obj.label95:setParent(obj.scrollBox5);
     obj.label95:setText("Qual o nível da magia?");
     obj.label95:setName("label95");
     obj.label95:setAlign("top");
@@ -8505,7 +8499,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label95:setFontColor("white");
 
     obj.comboBoxImportLevel = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBoxImportLevel:setParent(obj.scrollBox6);
+    obj.comboBoxImportLevel:setParent(obj.scrollBox5);
     obj.comboBoxImportLevel:setName("comboBoxImportLevel");
     obj.comboBoxImportLevel:setAlign("top");
     obj.comboBoxImportLevel:setField("importLevel");
@@ -8513,13 +8507,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBoxImportLevel:setValues({'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'});
 
     obj.dataLink132 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink132:setParent(obj.scrollBox6);
+    obj.dataLink132:setParent(obj.scrollBox5);
     obj.dataLink132:setField("importLevel");
     obj.dataLink132:setDefaultValue("0");
     obj.dataLink132:setName("dataLink132");
 
     obj.label96 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label96:setParent(obj.scrollBox6);
+    obj.label96:setParent(obj.scrollBox5);
     obj.label96:setText("Qual a classe da magia?");
     obj.label96:setName("label96");
     obj.label96:setAlign("top");
@@ -8529,18 +8523,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label96:setFontColor("white");
 
     obj.comboBoxImportClass = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBoxImportClass:setParent(obj.scrollBox6);
+    obj.comboBoxImportClass:setParent(obj.scrollBox5);
     obj.comboBoxImportClass:setName("comboBoxImportClass");
     obj.comboBoxImportClass:setAlign("top");
     obj.comboBoxImportClass:setField("importClass");
 
     obj.dataLink133 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink133:setParent(obj.scrollBox6);
+    obj.dataLink133:setParent(obj.scrollBox5);
     obj.dataLink133:setFields({'importSourcePath', 'importLevel'});
     obj.dataLink133:setName("dataLink133");
 
     obj.label97 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label97:setParent(obj.scrollBox6);
+    obj.label97:setParent(obj.scrollBox5);
     obj.label97:setText("Qual a magia?");
     obj.label97:setName("label97");
     obj.label97:setAlign("top");
@@ -8550,18 +8544,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label97:setFontColor("white");
 
     obj.comboBoxImportMagia = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBoxImportMagia:setParent(obj.scrollBox6);
+    obj.comboBoxImportMagia:setParent(obj.scrollBox5);
     obj.comboBoxImportMagia:setName("comboBoxImportMagia");
     obj.comboBoxImportMagia:setAlign("top");
     obj.comboBoxImportMagia:setField("importName");
 
     obj.dataLink134 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink134:setParent(obj.scrollBox6);
+    obj.dataLink134:setParent(obj.scrollBox5);
     obj.dataLink134:setFields({'importSourcePath', 'importLevel', 'importClass'});
     obj.dataLink134:setName("dataLink134");
 
     obj.button53 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button53:setParent(obj.scrollBox6);
+    obj.button53:setParent(obj.scrollBox5);
     obj.button53:setText("Importar");
     obj.button53:setName("button53");
     obj.button53:setAlign("top");
@@ -8594,25 +8588,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle23:setXradius(10);
     obj.rectangle23:setYradius(10);
 
-    obj.scrollBox7 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox7:setParent(obj.rectangle23);
-    obj.scrollBox7:setAlign("client");
-    obj.scrollBox7:setName("scrollBox7");
+    obj.scrollBox6 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox6:setParent(obj.rectangle23);
+    obj.scrollBox6:setAlign("client");
+    obj.scrollBox6:setName("scrollBox6");
 
     obj.button54 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button54:setParent(obj.scrollBox7);
+    obj.button54:setParent(obj.scrollBox6);
     obj.button54:setText("Add");
     obj.button54:setAlign("top");
     obj.button54:setName("button54");
 
     obj.button55 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button55:setParent(obj.scrollBox7);
+    obj.button55:setParent(obj.scrollBox6);
     obj.button55:setText("Import from Macro");
     obj.button55:setAlign("top");
     obj.button55:setName("button55");
 
     obj.rclContadores = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclContadores:setParent(obj.scrollBox7);
+    obj.rclContadores:setParent(obj.scrollBox6);
     obj.rclContadores:setName("rclContadores");
     obj.rclContadores:setAlign("top");
     obj.rclContadores:setField("contadores");
@@ -8725,13 +8719,13 @@ self.upperGridMagicBox3._RecalcSize();
  require("common.lua"); 
 
 
-    obj.scrollBox8 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox8:setParent(obj.rectangle26);
-    obj.scrollBox8:setAlign("client");
-    obj.scrollBox8:setName("scrollBox8");
+    obj.scrollBox7 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox7:setParent(obj.rectangle26);
+    obj.scrollBox7:setAlign("client");
+    obj.scrollBox7:setName("scrollBox7");
 
     obj.fraCompanionLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraCompanionLayout:setParent(obj.scrollBox8);
+    obj.fraCompanionLayout:setParent(obj.scrollBox7);
     obj.fraCompanionLayout:setAlign("top");
     obj.fraCompanionLayout:setHeight(500);
     obj.fraCompanionLayout:setMargins({left=10, right=10, top=10});
@@ -12938,13 +12932,13 @@ self.upperGridMagicBox3._RecalcSize();
 		
 
 
-    obj.scrollBox9 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox9:setParent(obj.rectangle29);
-    obj.scrollBox9:setAlign("client");
-    obj.scrollBox9:setName("scrollBox9");
+    obj.scrollBox8 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox8:setParent(obj.rectangle29);
+    obj.scrollBox8:setAlign("client");
+    obj.scrollBox8:setName("scrollBox8");
 
     obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout124:setParent(obj.scrollBox9);
+    obj.layout124:setParent(obj.scrollBox8);
     obj.layout124:setLeft(10);
     obj.layout124:setTop(10);
     obj.layout124:setWidth(500);
@@ -12964,7 +12958,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.image6:setName("image6");
 
     obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout125:setParent(obj.scrollBox9);
+    obj.layout125:setParent(obj.scrollBox8);
     obj.layout125:setLeft(525);
     obj.layout125:setTop(10);
     obj.layout125:setWidth(200);
@@ -13083,7 +13077,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label126:setFontColor("white");
 
     obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout126:setParent(obj.scrollBox9);
+    obj.layout126:setParent(obj.scrollBox8);
     obj.layout126:setLeft(525);
     obj.layout126:setTop(250);
     obj.layout126:setWidth(200);
@@ -13215,7 +13209,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink228:setName("dataLink228");
 
     obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout127:setParent(obj.scrollBox9);
+    obj.layout127:setParent(obj.scrollBox8);
     obj.layout127:setLeft(740);
     obj.layout127:setTop(10);
     obj.layout127:setWidth(500);
@@ -13245,7 +13239,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.textEditor7:setTransparent(true);
 
     obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout128:setParent(obj.scrollBox9);
+    obj.layout128:setParent(obj.scrollBox8);
     obj.layout128:setLeft(525);
     obj.layout128:setTop(420);
     obj.layout128:setWidth(200);
@@ -19917,7 +19911,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart89 ~= nil then self.flowPart89:destroy(); self.flowPart89 = nil; end;
         if self.horzLine30 ~= nil then self.horzLine30:destroy(); self.horzLine30 = nil; end;
         if self.dataLink196 ~= nil then self.dataLink196:destroy(); self.dataLink196 = nil; end;
-        if self.scrollBox9 ~= nil then self.scrollBox9:destroy(); self.scrollBox9 = nil; end;
         if self.flowPart68 ~= nil then self.flowPart68:destroy(); self.flowPart68 = nil; end;
         if self.button79 ~= nil then self.button79:destroy(); self.button79 = nil; end;
         if self.dataLink202 ~= nil then self.dataLink202:destroy(); self.dataLink202 = nil; end;
