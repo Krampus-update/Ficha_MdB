@@ -21,11 +21,4 @@
 			</image>				
 	</draw>
 	
-	<postdraw>
-			<!-- CABECA DRAGAO -->
-			<image left="14" top="0" right="181" bottom="93" overflowX="stretch" overflowY="none" zOrder="2">
-				<anchors left="true" top="true" bottom="true" right="false"/>
-				<source url="upperDragon.png" left="0" right="167" top="0" bottom="93"/>
-			</image>			
-	</postdraw>
 </frame>

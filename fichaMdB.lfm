@@ -48,10 +48,6 @@
 			</rectangle>
 		</tab>
 
-		<tab title="CALENDARIO">
-			<import file="8_calendario.lfm"/>
-		</tab>
-
 		<tab title="COMPANHEIRO">
 			<import file="10_companion.xml"/>
 		</tab>

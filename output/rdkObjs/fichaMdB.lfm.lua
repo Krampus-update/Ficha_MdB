@@ -8661,2928 +8661,27 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.tab11 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab11:setParent(obj.pgcPrincipal);
-    obj.tab11:setTitle("CALENDARIO");
+    obj.tab11:setTitle("COMPANHEIRO");
     obj.tab11:setName("tab11");
 
-    obj.frmGerenciador02 = GUI.fromHandle(_obj_newObject("form"));
-    obj.frmGerenciador02:setParent(obj.tab11);
-    obj.frmGerenciador02:setName("frmGerenciador02");
-    obj.frmGerenciador02:setAlign("client");
-    obj.frmGerenciador02:setMargins({top=1});
-
-    obj.scrollBox7 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox7:setParent(obj.frmGerenciador02);
-    obj.scrollBox7:setAlign("client");
-    obj.scrollBox7:setName("scrollBox7");
-
-    obj.popClima = GUI.fromHandle(_obj_newObject("popup"));
-    obj.popClima:setParent(obj.scrollBox7);
-    obj.popClima:setName("popClima");
-    obj.popClima:setWidth(240);
-    obj.popClima:setHeight(210);
-    obj.popClima:setBackOpacity(0.4);
-    lfm_setPropAsString(obj.popClima, "autoScopeNode",  "false");
-
-    obj.flowLayout26 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout26:setParent(obj.popClima);
-    obj.flowLayout26:setAlign("top");
-    obj.flowLayout26:setAutoHeight(true);
-    obj.flowLayout26:setMaxControlsPerLine(9);
-    obj.flowLayout26:setMargins({bottom=4});
-    obj.flowLayout26:setHorzAlign("center");
-    obj.flowLayout26:setName("flowLayout26");
-    obj.flowLayout26:setVertAlign("leading");
-
-    obj.flowPart132 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart132:setParent(obj.flowLayout26);
-    obj.flowPart132:setMinWidth(70);
-    obj.flowPart132:setMaxWidth(100);
-    obj.flowPart132:setHeight(15);
-    obj.flowPart132:setName("flowPart132");
-    obj.flowPart132:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart132:setVertAlign("leading");
-
-    obj.label98 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label98:setParent(obj.flowPart132);
-    obj.label98:setAlign("top");
-    obj.label98:setFontSize(10);
-    obj.label98:setText("Temperatura");
-    obj.label98:setHorzTextAlign("center");
-    obj.label98:setWordWrap(true);
-    obj.label98:setTextTrimming("none");
-    obj.label98:setAutoSize(true);
-    obj.label98:setHint("");
-    obj.label98:setName("label98");
-    obj.label98:setFontColor("#D0D0D0");
-
-    obj.flowPart133 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart133:setParent(obj.flowLayout26);
-    obj.flowPart133:setMinWidth(100);
-    obj.flowPart133:setMaxWidth(150);
-    obj.flowPart133:setHeight(20);
-    obj.flowPart133:setName("flowPart133");
-    obj.flowPart133:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart133:setVertAlign("leading");
-
-    obj.comboBox13 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox13:setParent(obj.flowPart133);
-    obj.comboBox13:setAlign("top");
-    obj.comboBox13:setFontSize(10);
-    obj.comboBox13:setField("temperatura");
-    obj.comboBox13:setItems({'Glacial', 'Frio', 'Temperado', 'Morno', 'Quente', 'Infernal', 'Personalizado'});
-    obj.comboBox13:setHorzTextAlign("center");
-    obj.comboBox13:setName("comboBox13");
-
-    obj.flowLineBreak7 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak7:setParent(obj.flowLayout26);
-    obj.flowLineBreak7:setName("flowLineBreak7");
-
-    obj.flowPart134 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart134:setParent(obj.flowLayout26);
-    obj.flowPart134:setMinWidth(70);
-    obj.flowPart134:setMaxWidth(100);
-    obj.flowPart134:setHeight(15);
-    obj.flowPart134:setName("flowPart134");
-    obj.flowPart134:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart134:setVertAlign("leading");
-
-    obj.label99 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label99:setParent(obj.flowPart134);
-    obj.label99:setAlign("top");
-    obj.label99:setFontSize(10);
-    obj.label99:setText("Média");
-    obj.label99:setHorzTextAlign("center");
-    obj.label99:setWordWrap(true);
-    obj.label99:setTextTrimming("none");
-    obj.label99:setAutoSize(true);
-    obj.label99:setHint("Valor base da média de temperatura.");
-    obj.label99:setName("label99");
-    obj.label99:setFontColor("#D0D0D0");
-
-    obj.flowPart135 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart135:setParent(obj.flowLayout26);
-    obj.flowPart135:setMinWidth(20);
-    obj.flowPart135:setMaxWidth(50);
-    obj.flowPart135:setHeight(20);
-    obj.flowPart135:setName("flowPart135");
-    obj.flowPart135:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart135:setVertAlign("leading");
-
-    obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit46:setParent(obj.flowPart135);
-    obj.edit46:setAlign("client");
-    obj.edit46:setFontSize(10);
-    obj.edit46:setField("temperatura_1");
-    obj.edit46:setVertTextAlign("center");
-    obj.edit46:setName("edit46");
-    obj.edit46:setFontColor("white");
-
-    obj.flowPart136 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart136:setParent(obj.flowLayout26);
-    obj.flowPart136:setMinWidth(20);
-    obj.flowPart136:setMaxWidth(50);
-    obj.flowPart136:setHeight(20);
-    obj.flowPart136:setName("flowPart136");
-    obj.flowPart136:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart136:setVertAlign("leading");
-
-    obj.edit47 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit47:setParent(obj.flowPart136);
-    obj.edit47:setAlign("client");
-    obj.edit47:setFontSize(10);
-    obj.edit47:setField("temperatura_2");
-    obj.edit47:setVertTextAlign("center");
-    obj.edit47:setName("edit47");
-    obj.edit47:setFontColor("white");
-
-    obj.flowPart137 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart137:setParent(obj.flowLayout26);
-    obj.flowPart137:setMinWidth(20);
-    obj.flowPart137:setMaxWidth(50);
-    obj.flowPart137:setHeight(20);
-    obj.flowPart137:setName("flowPart137");
-    obj.flowPart137:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart137:setVertAlign("leading");
-
-    obj.edit48 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit48:setParent(obj.flowPart137);
-    obj.edit48:setAlign("client");
-    obj.edit48:setFontSize(10);
-    obj.edit48:setField("temperatura_3");
-    obj.edit48:setVertTextAlign("center");
-    obj.edit48:setName("edit48");
-    obj.edit48:setFontColor("white");
-
-    obj.flowPart138 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart138:setParent(obj.flowLayout26);
-    obj.flowPart138:setMinWidth(20);
-    obj.flowPart138:setMaxWidth(50);
-    obj.flowPart138:setHeight(20);
-    obj.flowPart138:setName("flowPart138");
-    obj.flowPart138:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart138:setVertAlign("leading");
-
-    obj.edit49 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit49:setParent(obj.flowPart138);
-    obj.edit49:setAlign("client");
-    obj.edit49:setFontSize(10);
-    obj.edit49:setField("temperatura_4");
-    obj.edit49:setVertTextAlign("center");
-    obj.edit49:setName("edit49");
-    obj.edit49:setFontColor("white");
-
-    obj.flowPart139 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart139:setParent(obj.flowLayout26);
-    obj.flowPart139:setMinWidth(20);
-    obj.flowPart139:setMaxWidth(50);
-    obj.flowPart139:setHeight(20);
-    obj.flowPart139:setName("flowPart139");
-    obj.flowPart139:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart139:setVertAlign("leading");
-
-    obj.edit50 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit50:setParent(obj.flowPart139);
-    obj.edit50:setAlign("client");
-    obj.edit50:setFontSize(10);
-    obj.edit50:setField("temperatura_5");
-    obj.edit50:setVertTextAlign("center");
-    obj.edit50:setName("edit50");
-    obj.edit50:setFontColor("white");
-
-    obj.flowLineBreak8 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak8:setParent(obj.flowLayout26);
-    obj.flowLineBreak8:setName("flowLineBreak8");
-
-    obj.flowPart140 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart140:setParent(obj.flowLayout26);
-    obj.flowPart140:setMinWidth(70);
-    obj.flowPart140:setMaxWidth(100);
-    obj.flowPart140:setHeight(15);
-    obj.flowPart140:setName("flowPart140");
-    obj.flowPart140:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart140:setVertAlign("leading");
-
-    obj.label100 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label100:setParent(obj.flowPart140);
-    obj.label100:setAlign("top");
-    obj.label100:setFontSize(10);
-    obj.label100:setText("Variancia");
-    obj.label100:setHorzTextAlign("center");
-    obj.label100:setWordWrap(true);
-    obj.label100:setTextTrimming("none");
-    obj.label100:setAutoSize(true);
-    obj.label100:setHint("Entre 1 e N é adicionado a média do dia aleatoriamente.");
-    obj.label100:setName("label100");
-    obj.label100:setFontColor("#D0D0D0");
-
-    obj.flowPart141 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart141:setParent(obj.flowLayout26);
-    obj.flowPart141:setMinWidth(20);
-    obj.flowPart141:setMaxWidth(50);
-    obj.flowPart141:setHeight(20);
-    obj.flowPart141:setName("flowPart141");
-    obj.flowPart141:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart141:setVertAlign("leading");
-
-    obj.edit51 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit51:setParent(obj.flowPart141);
-    obj.edit51:setAlign("client");
-    obj.edit51:setFontSize(10);
-    obj.edit51:setField("temperaturaVar_1");
-    obj.edit51:setVertTextAlign("center");
-    obj.edit51:setType("number");
-    obj.edit51:setMin(1);
-    obj.edit51:setName("edit51");
-    obj.edit51:setFontColor("white");
-
-    obj.flowPart142 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart142:setParent(obj.flowLayout26);
-    obj.flowPart142:setMinWidth(20);
-    obj.flowPart142:setMaxWidth(50);
-    obj.flowPart142:setHeight(20);
-    obj.flowPart142:setName("flowPart142");
-    obj.flowPart142:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart142:setVertAlign("leading");
-
-    obj.edit52 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit52:setParent(obj.flowPart142);
-    obj.edit52:setAlign("client");
-    obj.edit52:setFontSize(10);
-    obj.edit52:setField("temperaturaVar_2");
-    obj.edit52:setVertTextAlign("center");
-    obj.edit52:setType("number");
-    obj.edit52:setMin(1);
-    obj.edit52:setName("edit52");
-    obj.edit52:setFontColor("white");
-
-    obj.flowPart143 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart143:setParent(obj.flowLayout26);
-    obj.flowPart143:setMinWidth(20);
-    obj.flowPart143:setMaxWidth(50);
-    obj.flowPart143:setHeight(20);
-    obj.flowPart143:setName("flowPart143");
-    obj.flowPart143:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart143:setVertAlign("leading");
-
-    obj.edit53 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit53:setParent(obj.flowPart143);
-    obj.edit53:setAlign("client");
-    obj.edit53:setFontSize(10);
-    obj.edit53:setField("temperaturaVar_3");
-    obj.edit53:setVertTextAlign("center");
-    obj.edit53:setType("number");
-    obj.edit53:setMin(1);
-    obj.edit53:setName("edit53");
-    obj.edit53:setFontColor("white");
-
-    obj.flowPart144 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart144:setParent(obj.flowLayout26);
-    obj.flowPart144:setMinWidth(20);
-    obj.flowPart144:setMaxWidth(50);
-    obj.flowPart144:setHeight(20);
-    obj.flowPart144:setName("flowPart144");
-    obj.flowPart144:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart144:setVertAlign("leading");
-
-    obj.edit54 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit54:setParent(obj.flowPart144);
-    obj.edit54:setAlign("client");
-    obj.edit54:setFontSize(10);
-    obj.edit54:setField("temperaturaVar_4");
-    obj.edit54:setVertTextAlign("center");
-    obj.edit54:setType("number");
-    obj.edit54:setMin(1);
-    obj.edit54:setName("edit54");
-    obj.edit54:setFontColor("white");
-
-    obj.flowPart145 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart145:setParent(obj.flowLayout26);
-    obj.flowPart145:setMinWidth(20);
-    obj.flowPart145:setMaxWidth(50);
-    obj.flowPart145:setHeight(20);
-    obj.flowPart145:setName("flowPart145");
-    obj.flowPart145:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart145:setVertAlign("leading");
-
-    obj.edit55 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit55:setParent(obj.flowPart145);
-    obj.edit55:setAlign("client");
-    obj.edit55:setFontSize(10);
-    obj.edit55:setField("temperaturaVar_5");
-    obj.edit55:setVertTextAlign("center");
-    obj.edit55:setType("number");
-    obj.edit55:setMin(1);
-    obj.edit55:setName("edit55");
-    obj.edit55:setFontColor("white");
-
-    obj.flowLineBreak9 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak9:setParent(obj.flowLayout26);
-    obj.flowLineBreak9:setName("flowLineBreak9");
-
-    obj.flowPart146 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart146:setParent(obj.flowLayout26);
-    obj.flowPart146:setMinWidth(70);
-    obj.flowPart146:setMaxWidth(100);
-    obj.flowPart146:setHeight(15);
-    obj.flowPart146:setName("flowPart146");
-    obj.flowPart146:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart146:setVertAlign("leading");
-
-    obj.label101 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label101:setParent(obj.flowPart146);
-    obj.label101:setAlign("top");
-    obj.label101:setFontSize(10);
-    obj.label101:setText("Chance");
-    obj.label101:setHorzTextAlign("center");
-    obj.label101:setWordWrap(true);
-    obj.label101:setTextTrimming("none");
-    obj.label101:setAutoSize(true);
-    obj.label101:setHint("Chance de usar essa faixa de temperatura. De mais frio que o normal a mais quente que o normal.");
-    obj.label101:setName("label101");
-    obj.label101:setFontColor("#D0D0D0");
-
-    obj.flowPart147 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart147:setParent(obj.flowLayout26);
-    obj.flowPart147:setMinWidth(20);
-    obj.flowPart147:setMaxWidth(50);
-    obj.flowPart147:setHeight(20);
-    obj.flowPart147:setName("flowPart147");
-    obj.flowPart147:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart147:setVertAlign("leading");
-
-    obj.edit56 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit56:setParent(obj.flowPart147);
-    obj.edit56:setAlign("client");
-    obj.edit56:setFontSize(10);
-    obj.edit56:setField("temperaturaChance_1");
-    obj.edit56:setVertTextAlign("center");
-    obj.edit56:setType("number");
-    obj.edit56:setMin(0);
-    obj.edit56:setName("edit56");
-    obj.edit56:setFontColor("white");
-
-    obj.flowPart148 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart148:setParent(obj.flowLayout26);
-    obj.flowPart148:setMinWidth(20);
-    obj.flowPart148:setMaxWidth(50);
-    obj.flowPart148:setHeight(20);
-    obj.flowPart148:setName("flowPart148");
-    obj.flowPart148:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart148:setVertAlign("leading");
-
-    obj.edit57 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit57:setParent(obj.flowPart148);
-    obj.edit57:setAlign("client");
-    obj.edit57:setFontSize(10);
-    obj.edit57:setField("temperaturaChance_2");
-    obj.edit57:setVertTextAlign("center");
-    obj.edit57:setType("number");
-    obj.edit57:setMin(0);
-    obj.edit57:setName("edit57");
-    obj.edit57:setFontColor("white");
-
-    obj.flowPart149 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart149:setParent(obj.flowLayout26);
-    obj.flowPart149:setMinWidth(20);
-    obj.flowPart149:setMaxWidth(50);
-    obj.flowPart149:setHeight(20);
-    obj.flowPart149:setName("flowPart149");
-    obj.flowPart149:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart149:setVertAlign("leading");
-
-    obj.edit58 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit58:setParent(obj.flowPart149);
-    obj.edit58:setAlign("client");
-    obj.edit58:setFontSize(10);
-    obj.edit58:setField("temperaturaChance_3");
-    obj.edit58:setVertTextAlign("center");
-    obj.edit58:setType("number");
-    obj.edit58:setMin(0);
-    obj.edit58:setName("edit58");
-    obj.edit58:setFontColor("white");
-
-    obj.flowPart150 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart150:setParent(obj.flowLayout26);
-    obj.flowPart150:setMinWidth(20);
-    obj.flowPart150:setMaxWidth(50);
-    obj.flowPart150:setHeight(20);
-    obj.flowPart150:setName("flowPart150");
-    obj.flowPart150:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart150:setVertAlign("leading");
-
-    obj.edit59 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit59:setParent(obj.flowPart150);
-    obj.edit59:setAlign("client");
-    obj.edit59:setFontSize(10);
-    obj.edit59:setField("temperaturaChance_4");
-    obj.edit59:setVertTextAlign("center");
-    obj.edit59:setType("number");
-    obj.edit59:setMin(0);
-    obj.edit59:setName("edit59");
-    obj.edit59:setFontColor("white");
-
-    obj.flowPart151 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart151:setParent(obj.flowLayout26);
-    obj.flowPart151:setMinWidth(20);
-    obj.flowPart151:setMaxWidth(50);
-    obj.flowPart151:setHeight(20);
-    obj.flowPart151:setName("flowPart151");
-    obj.flowPart151:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart151:setVertAlign("leading");
-
-    obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit60:setParent(obj.flowPart151);
-    obj.edit60:setAlign("client");
-    obj.edit60:setFontSize(10);
-    obj.edit60:setField("temperaturaChance_5");
-    obj.edit60:setVertTextAlign("center");
-    obj.edit60:setType("number");
-    obj.edit60:setMin(0);
-    obj.edit60:setName("edit60");
-    obj.edit60:setFontColor("white");
-
-    obj.flowLineBreak10 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak10:setParent(obj.flowLayout26);
-    obj.flowLineBreak10:setName("flowLineBreak10");
-
-    obj.flowPart152 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart152:setParent(obj.flowLayout26);
-    obj.flowPart152:setMinWidth(70);
-    obj.flowPart152:setMaxWidth(100);
-    obj.flowPart152:setHeight(15);
-    obj.flowPart152:setName("flowPart152");
-    obj.flowPart152:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart152:setVertAlign("leading");
-
-    obj.label102 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label102:setParent(obj.flowPart152);
-    obj.label102:setAlign("top");
-    obj.label102:setFontSize(10);
-    obj.label102:setText("MinMax");
-    obj.label102:setHorzTextAlign("center");
-    obj.label102:setWordWrap(true);
-    obj.label102:setTextTrimming("none");
-    obj.label102:setAutoSize(true);
-    obj.label102:setHint("Variação de temperatura ao longo do dia em relação a média. Calculando independente da Variancia, usando a Chance. ");
-    obj.label102:setName("label102");
-    obj.label102:setFontColor("#D0D0D0");
-
-    obj.flowPart153 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart153:setParent(obj.flowLayout26);
-    obj.flowPart153:setMinWidth(20);
-    obj.flowPart153:setMaxWidth(50);
-    obj.flowPart153:setHeight(20);
-    obj.flowPart153:setName("flowPart153");
-    obj.flowPart153:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart153:setVertAlign("leading");
-
-    obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.flowPart153);
-    obj.edit61:setAlign("client");
-    obj.edit61:setFontSize(10);
-    obj.edit61:setField("temperaturaMM_1");
-    obj.edit61:setVertTextAlign("center");
-    obj.edit61:setType("number");
-    obj.edit61:setMin(1);
-    obj.edit61:setName("edit61");
-    obj.edit61:setFontColor("white");
-
-    obj.flowPart154 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart154:setParent(obj.flowLayout26);
-    obj.flowPart154:setMinWidth(20);
-    obj.flowPart154:setMaxWidth(50);
-    obj.flowPart154:setHeight(20);
-    obj.flowPart154:setName("flowPart154");
-    obj.flowPart154:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart154:setVertAlign("leading");
-
-    obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.flowPart154);
-    obj.edit62:setAlign("client");
-    obj.edit62:setFontSize(10);
-    obj.edit62:setField("temperaturaMM_2");
-    obj.edit62:setVertTextAlign("center");
-    obj.edit62:setType("number");
-    obj.edit62:setMin(1);
-    obj.edit62:setName("edit62");
-    obj.edit62:setFontColor("white");
-
-    obj.flowPart155 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart155:setParent(obj.flowLayout26);
-    obj.flowPart155:setMinWidth(20);
-    obj.flowPart155:setMaxWidth(50);
-    obj.flowPart155:setHeight(20);
-    obj.flowPart155:setName("flowPart155");
-    obj.flowPart155:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart155:setVertAlign("leading");
-
-    obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.flowPart155);
-    obj.edit63:setAlign("client");
-    obj.edit63:setFontSize(10);
-    obj.edit63:setField("temperaturaMM_3");
-    obj.edit63:setVertTextAlign("center");
-    obj.edit63:setType("number");
-    obj.edit63:setMin(1);
-    obj.edit63:setName("edit63");
-    obj.edit63:setFontColor("white");
-
-    obj.flowPart156 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart156:setParent(obj.flowLayout26);
-    obj.flowPart156:setMinWidth(20);
-    obj.flowPart156:setMaxWidth(50);
-    obj.flowPart156:setHeight(20);
-    obj.flowPart156:setName("flowPart156");
-    obj.flowPart156:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart156:setVertAlign("leading");
-
-    obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.flowPart156);
-    obj.edit64:setAlign("client");
-    obj.edit64:setFontSize(10);
-    obj.edit64:setField("temperaturaMM_4");
-    obj.edit64:setVertTextAlign("center");
-    obj.edit64:setType("number");
-    obj.edit64:setMin(1);
-    obj.edit64:setName("edit64");
-    obj.edit64:setFontColor("white");
-
-    obj.flowPart157 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart157:setParent(obj.flowLayout26);
-    obj.flowPart157:setMinWidth(20);
-    obj.flowPart157:setMaxWidth(50);
-    obj.flowPart157:setHeight(20);
-    obj.flowPart157:setName("flowPart157");
-    obj.flowPart157:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart157:setVertAlign("leading");
-
-    obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.flowPart157);
-    obj.edit65:setAlign("client");
-    obj.edit65:setFontSize(10);
-    obj.edit65:setField("temperaturaMM_5");
-    obj.edit65:setVertTextAlign("center");
-    obj.edit65:setType("number");
-    obj.edit65:setMin(1);
-    obj.edit65:setName("edit65");
-    obj.edit65:setFontColor("white");
-
-    obj.flowLineBreak11 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak11:setParent(obj.flowLayout26);
-    obj.flowLineBreak11:setName("flowLineBreak11");
-
-    obj.flowPart158 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart158:setParent(obj.flowLayout26);
-    obj.flowPart158:setMinWidth(70);
-    obj.flowPart158:setMaxWidth(100);
-    obj.flowPart158:setHeight(15);
-    obj.flowPart158:setName("flowPart158");
-    obj.flowPart158:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart158:setVertAlign("leading");
-
-    obj.label103 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label103:setParent(obj.flowPart158);
-    obj.label103:setAlign("top");
-    obj.label103:setFontSize(10);
-    obj.label103:setText("Precipitação");
-    obj.label103:setHorzTextAlign("center");
-    obj.label103:setWordWrap(true);
-    obj.label103:setTextTrimming("none");
-    obj.label103:setAutoSize(true);
-    obj.label103:setHint("");
-    obj.label103:setName("label103");
-    obj.label103:setFontColor("#D0D0D0");
-
-    obj.flowPart159 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart159:setParent(obj.flowLayout26);
-    obj.flowPart159:setMinWidth(100);
-    obj.flowPart159:setMaxWidth(150);
-    obj.flowPart159:setHeight(20);
-    obj.flowPart159:setName("flowPart159");
-    obj.flowPart159:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart159:setVertAlign("leading");
-
-    obj.comboBox14 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox14:setParent(obj.flowPart159);
-    obj.comboBox14:setAlign("top");
-    obj.comboBox14:setFontSize(10);
-    obj.comboBox14:setField("chuvas");
-    obj.comboBox14:setItems({'Nenhuma', 'Pouca', 'Razoável', 'Muita', 'Constante', 'Personalizado'});
-    obj.comboBox14:setHorzTextAlign("center");
-    obj.comboBox14:setName("comboBox14");
-
-    obj.flowLineBreak12 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak12:setParent(obj.flowLayout26);
-    obj.flowLineBreak12:setName("flowLineBreak12");
-
-    obj.flowPart160 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart160:setParent(obj.flowLayout26);
-    obj.flowPart160:setMinWidth(70);
-    obj.flowPart160:setMaxWidth(100);
-    obj.flowPart160:setHeight(15);
-    obj.flowPart160:setName("flowPart160");
-    obj.flowPart160:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart160:setVertAlign("leading");
-
-    obj.label104 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label104:setParent(obj.flowPart160);
-    obj.label104:setAlign("top");
-    obj.label104:setFontSize(10);
-    obj.label104:setText("Chance");
-    obj.label104:setHorzTextAlign("center");
-    obj.label104:setWordWrap(true);
-    obj.label104:setTextTrimming("none");
-    obj.label104:setAutoSize(true);
-    obj.label104:setHint("Chance de clima ensolarado, nublado, chuviscando, chuva, temporal, tempestade.");
-    obj.label104:setName("label104");
-    obj.label104:setFontColor("#D0D0D0");
-
-    obj.flowPart161 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart161:setParent(obj.flowLayout26);
-    obj.flowPart161:setMinWidth(20);
-    obj.flowPart161:setMaxWidth(50);
-    obj.flowPart161:setHeight(20);
-    obj.flowPart161:setName("flowPart161");
-    obj.flowPart161:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart161:setVertAlign("leading");
-
-    obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.flowPart161);
-    obj.edit66:setAlign("client");
-    obj.edit66:setFontSize(10);
-    obj.edit66:setField("chuvaChance_1");
-    obj.edit66:setVertTextAlign("center");
-    obj.edit66:setType("number");
-    obj.edit66:setMin(0);
-    obj.edit66:setName("edit66");
-    obj.edit66:setFontColor("white");
-
-    obj.flowPart162 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart162:setParent(obj.flowLayout26);
-    obj.flowPart162:setMinWidth(20);
-    obj.flowPart162:setMaxWidth(50);
-    obj.flowPart162:setHeight(20);
-    obj.flowPart162:setName("flowPart162");
-    obj.flowPart162:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart162:setVertAlign("leading");
-
-    obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.flowPart162);
-    obj.edit67:setAlign("client");
-    obj.edit67:setFontSize(10);
-    obj.edit67:setField("chuvaChance_2");
-    obj.edit67:setVertTextAlign("center");
-    obj.edit67:setType("number");
-    obj.edit67:setMin(0);
-    obj.edit67:setName("edit67");
-    obj.edit67:setFontColor("white");
-
-    obj.flowPart163 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart163:setParent(obj.flowLayout26);
-    obj.flowPart163:setMinWidth(20);
-    obj.flowPart163:setMaxWidth(50);
-    obj.flowPart163:setHeight(20);
-    obj.flowPart163:setName("flowPart163");
-    obj.flowPart163:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart163:setVertAlign("leading");
-
-    obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.flowPart163);
-    obj.edit68:setAlign("client");
-    obj.edit68:setFontSize(10);
-    obj.edit68:setField("chuvaChance_3");
-    obj.edit68:setVertTextAlign("center");
-    obj.edit68:setType("number");
-    obj.edit68:setMin(0);
-    obj.edit68:setName("edit68");
-    obj.edit68:setFontColor("white");
-
-    obj.flowPart164 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart164:setParent(obj.flowLayout26);
-    obj.flowPart164:setMinWidth(20);
-    obj.flowPart164:setMaxWidth(50);
-    obj.flowPart164:setHeight(20);
-    obj.flowPart164:setName("flowPart164");
-    obj.flowPart164:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart164:setVertAlign("leading");
-
-    obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.flowPart164);
-    obj.edit69:setAlign("client");
-    obj.edit69:setFontSize(10);
-    obj.edit69:setField("chuvaChance_4");
-    obj.edit69:setVertTextAlign("center");
-    obj.edit69:setType("number");
-    obj.edit69:setMin(0);
-    obj.edit69:setName("edit69");
-    obj.edit69:setFontColor("white");
-
-    obj.flowPart165 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart165:setParent(obj.flowLayout26);
-    obj.flowPart165:setMinWidth(20);
-    obj.flowPart165:setMaxWidth(50);
-    obj.flowPart165:setHeight(20);
-    obj.flowPart165:setName("flowPart165");
-    obj.flowPart165:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart165:setVertAlign("leading");
-
-    obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.flowPart165);
-    obj.edit70:setAlign("client");
-    obj.edit70:setFontSize(10);
-    obj.edit70:setField("chuvaChance_5");
-    obj.edit70:setVertTextAlign("center");
-    obj.edit70:setType("number");
-    obj.edit70:setMin(0);
-    obj.edit70:setName("edit70");
-    obj.edit70:setFontColor("white");
-
-    obj.flowPart166 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart166:setParent(obj.flowLayout26);
-    obj.flowPart166:setMinWidth(20);
-    obj.flowPart166:setMaxWidth(50);
-    obj.flowPart166:setHeight(20);
-    obj.flowPart166:setName("flowPart166");
-    obj.flowPart166:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart166:setVertAlign("leading");
-
-    obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.flowPart166);
-    obj.edit71:setAlign("client");
-    obj.edit71:setFontSize(10);
-    obj.edit71:setField("chuvaChance_6");
-    obj.edit71:setVertTextAlign("center");
-    obj.edit71:setType("number");
-    obj.edit71:setMin(0);
-    obj.edit71:setName("edit71");
-    obj.edit71:setFontColor("white");
-
-    obj.flowLineBreak13 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak13:setParent(obj.flowLayout26);
-    obj.flowLineBreak13:setName("flowLineBreak13");
-
-    obj.flowPart167 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart167:setParent(obj.flowLayout26);
-    obj.flowPart167:setMinWidth(70);
-    obj.flowPart167:setMaxWidth(100);
-    obj.flowPart167:setHeight(15);
-    obj.flowPart167:setName("flowPart167");
-    obj.flowPart167:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart167:setVertAlign("leading");
-
-    obj.label105 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label105:setParent(obj.flowPart167);
-    obj.label105:setAlign("top");
-    obj.label105:setFontSize(10);
-    obj.label105:setText("Areia");
-    obj.label105:setHorzTextAlign("center");
-    obj.label105:setWordWrap(true);
-    obj.label105:setTextTrimming("none");
-    obj.label105:setAutoSize(true);
-    obj.label105:setHint("Força minima do vento para tempestade de areia.");
-    obj.label105:setName("label105");
-    obj.label105:setFontColor("#D0D0D0");
-
-    obj.flowPart168 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart168:setParent(obj.flowLayout26);
-    obj.flowPart168:setMinWidth(100);
-    obj.flowPart168:setMaxWidth(150);
-    obj.flowPart168:setHeight(20);
-    obj.flowPart168:setName("flowPart168");
-    obj.flowPart168:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart168:setVertAlign("leading");
-
-    obj.comboBox15 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox15:setParent(obj.flowPart168);
-    obj.comboBox15:setAlign("top");
-    obj.comboBox15:setFontSize(10);
-    obj.comboBox15:setField("areia");
-    obj.comboBox15:setItems({'Nenhuma', 'Pouca', 'Razoável', 'Muita', 'Constante', 'Personalizado'});
-    obj.comboBox15:setHorzTextAlign("center");
-    obj.comboBox15:setName("comboBox15");
-
-    obj.flowPart169 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart169:setParent(obj.flowLayout26);
-    obj.flowPart169:setMinWidth(20);
-    obj.flowPart169:setMaxWidth(50);
-    obj.flowPart169:setHeight(20);
-    obj.flowPart169:setName("flowPart169");
-    obj.flowPart169:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart169:setVertAlign("leading");
-
-    obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit72:setParent(obj.flowPart169);
-    obj.edit72:setAlign("client");
-    obj.edit72:setFontSize(10);
-    obj.edit72:setField("areiaMin");
-    obj.edit72:setVertTextAlign("center");
-    obj.edit72:setType("number");
-    obj.edit72:setMin(1);
-    obj.edit72:setName("edit72");
-    obj.edit72:setFontColor("white");
-
-    obj.flowLineBreak14 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak14:setParent(obj.flowLayout26);
-    obj.flowLineBreak14:setName("flowLineBreak14");
-
-    obj.flowPart170 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart170:setParent(obj.flowLayout26);
-    obj.flowPart170:setMinWidth(70);
-    obj.flowPart170:setMaxWidth(100);
-    obj.flowPart170:setHeight(15);
-    obj.flowPart170:setName("flowPart170");
-    obj.flowPart170:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart170:setVertAlign("leading");
-
-    obj.label106 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label106:setParent(obj.flowPart170);
-    obj.label106:setAlign("top");
-    obj.label106:setFontSize(10);
-    obj.label106:setText("Ventos");
-    obj.label106:setHorzTextAlign("center");
-    obj.label106:setWordWrap(true);
-    obj.label106:setTextTrimming("none");
-    obj.label106:setAutoSize(true);
-    obj.label106:setHint("");
-    obj.label106:setName("label106");
-    obj.label106:setFontColor("#D0D0D0");
-
-    obj.flowPart171 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart171:setParent(obj.flowLayout26);
-    obj.flowPart171:setMinWidth(100);
-    obj.flowPart171:setMaxWidth(150);
-    obj.flowPart171:setHeight(20);
-    obj.flowPart171:setName("flowPart171");
-    obj.flowPart171:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart171:setVertAlign("leading");
-
-    obj.comboBox16 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox16:setParent(obj.flowPart171);
-    obj.comboBox16:setAlign("top");
-    obj.comboBox16:setFontSize(10);
-    obj.comboBox16:setField("ventos");
-    obj.comboBox16:setItems({'Nenhum', 'Pouco', 'Razoável', 'Muito', 'Constante', 'Personalizado'});
-    obj.comboBox16:setHorzTextAlign("center");
-    obj.comboBox16:setName("comboBox16");
-
-    obj.flowLineBreak15 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak15:setParent(obj.flowLayout26);
-    obj.flowLineBreak15:setName("flowLineBreak15");
-
-    obj.flowPart172 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart172:setParent(obj.flowLayout26);
-    obj.flowPart172:setMinWidth(70);
-    obj.flowPart172:setMaxWidth(100);
-    obj.flowPart172:setHeight(15);
-    obj.flowPart172:setName("flowPart172");
-    obj.flowPart172:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart172:setVertAlign("leading");
-
-    obj.label107 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label107:setParent(obj.flowPart172);
-    obj.label107:setAlign("top");
-    obj.label107:setFontSize(10);
-    obj.label107:setText("Chance");
-    obj.label107:setHorzTextAlign("center");
-    obj.label107:setWordWrap(true);
-    obj.label107:setTextTrimming("none");
-    obj.label107:setAutoSize(true);
-    obj.label107:setHint("Chance de cada intensidade dos ventos.");
-    obj.label107:setName("label107");
-    obj.label107:setFontColor("#D0D0D0");
-
-    obj.flowPart173 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart173:setParent(obj.flowLayout26);
-    obj.flowPart173:setMinWidth(20);
-    obj.flowPart173:setMaxWidth(50);
-    obj.flowPart173:setHeight(20);
-    obj.flowPart173:setName("flowPart173");
-    obj.flowPart173:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart173:setVertAlign("leading");
-
-    obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit73:setParent(obj.flowPart173);
-    obj.edit73:setAlign("client");
-    obj.edit73:setFontSize(10);
-    obj.edit73:setField("ventosChance_1");
-    obj.edit73:setVertTextAlign("center");
-    obj.edit73:setType("number");
-    obj.edit73:setMin(0);
-    obj.edit73:setName("edit73");
-    obj.edit73:setFontColor("white");
-
-    obj.flowPart174 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart174:setParent(obj.flowLayout26);
-    obj.flowPart174:setMinWidth(20);
-    obj.flowPart174:setMaxWidth(50);
-    obj.flowPart174:setHeight(20);
-    obj.flowPart174:setName("flowPart174");
-    obj.flowPart174:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart174:setVertAlign("leading");
-
-    obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit74:setParent(obj.flowPart174);
-    obj.edit74:setAlign("client");
-    obj.edit74:setFontSize(10);
-    obj.edit74:setField("ventosChance_2");
-    obj.edit74:setVertTextAlign("center");
-    obj.edit74:setType("number");
-    obj.edit74:setMin(0);
-    obj.edit74:setName("edit74");
-    obj.edit74:setFontColor("white");
-
-    obj.flowPart175 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart175:setParent(obj.flowLayout26);
-    obj.flowPart175:setMinWidth(20);
-    obj.flowPart175:setMaxWidth(50);
-    obj.flowPart175:setHeight(20);
-    obj.flowPart175:setName("flowPart175");
-    obj.flowPart175:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart175:setVertAlign("leading");
-
-    obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit75:setParent(obj.flowPart175);
-    obj.edit75:setAlign("client");
-    obj.edit75:setFontSize(10);
-    obj.edit75:setField("ventosChance_3");
-    obj.edit75:setVertTextAlign("center");
-    obj.edit75:setType("number");
-    obj.edit75:setMin(0);
-    obj.edit75:setName("edit75");
-    obj.edit75:setFontColor("white");
-
-    obj.flowPart176 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart176:setParent(obj.flowLayout26);
-    obj.flowPart176:setMinWidth(20);
-    obj.flowPart176:setMaxWidth(50);
-    obj.flowPart176:setHeight(20);
-    obj.flowPart176:setName("flowPart176");
-    obj.flowPart176:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart176:setVertAlign("leading");
-
-    obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit76:setParent(obj.flowPart176);
-    obj.edit76:setAlign("client");
-    obj.edit76:setFontSize(10);
-    obj.edit76:setField("ventosChance_4");
-    obj.edit76:setVertTextAlign("center");
-    obj.edit76:setType("number");
-    obj.edit76:setMin(0);
-    obj.edit76:setName("edit76");
-    obj.edit76:setFontColor("white");
-
-    obj.flowPart177 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart177:setParent(obj.flowLayout26);
-    obj.flowPart177:setMinWidth(20);
-    obj.flowPart177:setMaxWidth(50);
-    obj.flowPart177:setHeight(20);
-    obj.flowPart177:setName("flowPart177");
-    obj.flowPart177:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart177:setVertAlign("leading");
-
-    obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit77:setParent(obj.flowPart177);
-    obj.edit77:setAlign("client");
-    obj.edit77:setFontSize(10);
-    obj.edit77:setField("ventosChance_5");
-    obj.edit77:setVertTextAlign("center");
-    obj.edit77:setType("number");
-    obj.edit77:setMin(0);
-    obj.edit77:setName("edit77");
-    obj.edit77:setFontColor("white");
-
-    obj.flowPart178 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart178:setParent(obj.flowLayout26);
-    obj.flowPart178:setMinWidth(20);
-    obj.flowPart178:setMaxWidth(50);
-    obj.flowPart178:setHeight(20);
-    obj.flowPart178:setName("flowPart178");
-    obj.flowPart178:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart178:setVertAlign("leading");
-
-    obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit78:setParent(obj.flowPart178);
-    obj.edit78:setAlign("client");
-    obj.edit78:setFontSize(10);
-    obj.edit78:setField("ventosChance_6");
-    obj.edit78:setVertTextAlign("center");
-    obj.edit78:setType("number");
-    obj.edit78:setMin(0);
-    obj.edit78:setName("edit78");
-    obj.edit78:setFontColor("white");
-
-    obj.flowPart179 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart179:setParent(obj.flowLayout26);
-    obj.flowPart179:setMinWidth(20);
-    obj.flowPart179:setMaxWidth(50);
-    obj.flowPart179:setHeight(20);
-    obj.flowPart179:setName("flowPart179");
-    obj.flowPart179:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart179:setVertAlign("leading");
-
-    obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit79:setParent(obj.flowPart179);
-    obj.edit79:setAlign("client");
-    obj.edit79:setFontSize(10);
-    obj.edit79:setField("ventosChance_7");
-    obj.edit79:setVertTextAlign("center");
-    obj.edit79:setType("number");
-    obj.edit79:setMin(0);
-    obj.edit79:setName("edit79");
-    obj.edit79:setFontColor("white");
-
-    obj.flowPart180 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart180:setParent(obj.flowLayout26);
-    obj.flowPart180:setMinWidth(20);
-    obj.flowPart180:setMaxWidth(50);
-    obj.flowPart180:setHeight(20);
-    obj.flowPart180:setName("flowPart180");
-    obj.flowPart180:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart180:setVertAlign("leading");
-
-    obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit80:setParent(obj.flowPart180);
-    obj.edit80:setAlign("client");
-    obj.edit80:setFontSize(10);
-    obj.edit80:setField("ventosChance_8");
-    obj.edit80:setVertTextAlign("center");
-    obj.edit80:setType("number");
-    obj.edit80:setMin(0);
-    obj.edit80:setName("edit80");
-    obj.edit80:setFontColor("white");
-
-    obj.flowLineBreak16 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak16:setParent(obj.flowLayout26);
-    obj.flowLineBreak16:setName("flowLineBreak16");
-
-    obj.popCelestial = GUI.fromHandle(_obj_newObject("popup"));
-    obj.popCelestial:setParent(obj.scrollBox7);
-    obj.popCelestial:setName("popCelestial");
-    obj.popCelestial:setWidth(220);
-    obj.popCelestial:setHeight(190);
-    obj.popCelestial:setBackOpacity(0.4);
-    lfm_setPropAsString(obj.popCelestial, "autoScopeNode",  "false");
-
-    obj.flowLayout27 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout27:setParent(obj.popCelestial);
-    obj.flowLayout27:setAlign("top");
-    obj.flowLayout27:setAutoHeight(true);
-    obj.flowLayout27:setMaxControlsPerLine(3);
-    obj.flowLayout27:setMargins({bottom=4});
-    obj.flowLayout27:setHorzAlign("center");
-    obj.flowLayout27:setName("flowLayout27");
-    obj.flowLayout27:setVertAlign("leading");
-
-    obj.flowPart181 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart181:setParent(obj.flowLayout27);
-    obj.flowPart181:setMinWidth(100);
-    obj.flowPart181:setMaxWidth(150);
-    obj.flowPart181:setHeight(15);
-    obj.flowPart181:setName("flowPart181");
-    obj.flowPart181:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart181:setVertAlign("leading");
-
-    obj.label108 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label108:setParent(obj.flowPart181);
-    obj.label108:setAlign("top");
-    obj.label108:setFontSize(10);
-    obj.label108:setText("Eventos Celestes");
-    obj.label108:setHorzTextAlign("center");
-    obj.label108:setWordWrap(true);
-    obj.label108:setTextTrimming("none");
-    obj.label108:setAutoSize(true);
-    obj.label108:setName("label108");
-    obj.label108:setFontColor("#D0D0D0");
-
-    obj.flowLineBreak17 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak17:setParent(obj.flowLayout27);
-    obj.flowLineBreak17:setName("flowLineBreak17");
-
-    obj.flowPart182 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart182:setParent(obj.flowLayout27);
-    obj.flowPart182:setMinWidth(70);
-    obj.flowPart182:setMaxWidth(100);
-    obj.flowPart182:setHeight(15);
-    obj.flowPart182:setName("flowPart182");
-    obj.flowPart182:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart182:setVertAlign("leading");
-
-    obj.label109 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label109:setParent(obj.flowPart182);
-    obj.label109:setAlign("top");
-    obj.label109:setFontSize(10);
-    obj.label109:setText("Sobrenatural");
-    obj.label109:setHorzTextAlign("center");
-    obj.label109:setWordWrap(true);
-    obj.label109:setTextTrimming("none");
-    obj.label109:setAutoSize(true);
-    obj.label109:setHint("");
-    obj.label109:setName("label109");
-    obj.label109:setFontColor("#D0D0D0");
-
-    obj.flowPart183 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart183:setParent(obj.flowLayout27);
-    obj.flowPart183:setMinWidth(100);
-    obj.flowPart183:setMaxWidth(150);
-    obj.flowPart183:setHeight(20);
-    obj.flowPart183:setName("flowPart183");
-    obj.flowPart183:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart183:setVertAlign("leading");
-
-    obj.comboBox17 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox17:setParent(obj.flowPart183);
-    obj.comboBox17:setAlign("top");
-    obj.comboBox17:setFontSize(10);
-    obj.comboBox17:setField("sobrentural");
-    obj.comboBox17:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox17:setHorzTextAlign("center");
-    obj.comboBox17:setName("comboBox17");
-
-    obj.flowPart184 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart184:setParent(obj.flowLayout27);
-    obj.flowPart184:setMinWidth(20);
-    obj.flowPart184:setMaxWidth(50);
-    obj.flowPart184:setHeight(20);
-    obj.flowPart184:setName("flowPart184");
-    obj.flowPart184:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart184:setVertAlign("leading");
-
-    obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit81:setParent(obj.flowPart184);
-    obj.edit81:setAlign("client");
-    obj.edit81:setFontSize(10);
-    obj.edit81:setField("sobrentural_chance");
-    obj.edit81:setVertTextAlign("center");
-    obj.edit81:setName("edit81");
-    obj.edit81:setFontColor("white");
-
-    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink138:setParent(obj.flowLayout27);
-    obj.dataLink138:setField("sobrentural");
-    obj.dataLink138:setName("dataLink138");
-
-    obj.flowPart185 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart185:setParent(obj.flowLayout27);
-    obj.flowPart185:setMinWidth(70);
-    obj.flowPart185:setMaxWidth(100);
-    obj.flowPart185:setHeight(15);
-    obj.flowPart185:setName("flowPart185");
-    obj.flowPart185:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart185:setVertAlign("leading");
-
-    obj.label110 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label110:setParent(obj.flowPart185);
-    obj.label110:setAlign("top");
-    obj.label110:setFontSize(10);
-    obj.label110:setText("Aurora");
-    obj.label110:setHorzTextAlign("center");
-    obj.label110:setWordWrap(true);
-    obj.label110:setTextTrimming("none");
-    obj.label110:setAutoSize(true);
-    obj.label110:setHint("");
-    obj.label110:setName("label110");
-    obj.label110:setFontColor("#D0D0D0");
-
-    obj.flowPart186 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart186:setParent(obj.flowLayout27);
-    obj.flowPart186:setMinWidth(100);
-    obj.flowPart186:setMaxWidth(150);
-    obj.flowPart186:setHeight(20);
-    obj.flowPart186:setName("flowPart186");
-    obj.flowPart186:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart186:setVertAlign("leading");
-
-    obj.comboBox18 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox18:setParent(obj.flowPart186);
-    obj.comboBox18:setAlign("top");
-    obj.comboBox18:setFontSize(10);
-    obj.comboBox18:setField("auroras");
-    obj.comboBox18:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox18:setHorzTextAlign("center");
-    obj.comboBox18:setName("comboBox18");
-
-    obj.flowPart187 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart187:setParent(obj.flowLayout27);
-    obj.flowPart187:setMinWidth(20);
-    obj.flowPart187:setMaxWidth(50);
-    obj.flowPart187:setHeight(20);
-    obj.flowPart187:setName("flowPart187");
-    obj.flowPart187:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart187:setVertAlign("leading");
-
-    obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit82:setParent(obj.flowPart187);
-    obj.edit82:setAlign("client");
-    obj.edit82:setFontSize(10);
-    obj.edit82:setField("auroras_chance");
-    obj.edit82:setVertTextAlign("center");
-    obj.edit82:setName("edit82");
-    obj.edit82:setFontColor("white");
-
-    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink139:setParent(obj.flowLayout27);
-    obj.dataLink139:setField("auroras");
-    obj.dataLink139:setName("dataLink139");
-
-    obj.flowPart188 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart188:setParent(obj.flowLayout27);
-    obj.flowPart188:setMinWidth(70);
-    obj.flowPart188:setMaxWidth(100);
-    obj.flowPart188:setHeight(15);
-    obj.flowPart188:setName("flowPart188");
-    obj.flowPart188:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart188:setVertAlign("leading");
-
-    obj.label111 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label111:setParent(obj.flowPart188);
-    obj.label111:setAlign("top");
-    obj.label111:setFontSize(10);
-    obj.label111:setText("Cometas");
-    obj.label111:setHorzTextAlign("center");
-    obj.label111:setWordWrap(true);
-    obj.label111:setTextTrimming("none");
-    obj.label111:setAutoSize(true);
-    obj.label111:setHint("");
-    obj.label111:setName("label111");
-    obj.label111:setFontColor("#D0D0D0");
-
-    obj.flowPart189 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart189:setParent(obj.flowLayout27);
-    obj.flowPart189:setMinWidth(100);
-    obj.flowPart189:setMaxWidth(150);
-    obj.flowPart189:setHeight(20);
-    obj.flowPart189:setName("flowPart189");
-    obj.flowPart189:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart189:setVertAlign("leading");
-
-    obj.comboBox19 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox19:setParent(obj.flowPart189);
-    obj.comboBox19:setAlign("top");
-    obj.comboBox19:setFontSize(10);
-    obj.comboBox19:setField("cometas");
-    obj.comboBox19:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox19:setHorzTextAlign("center");
-    obj.comboBox19:setName("comboBox19");
-
-    obj.flowPart190 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart190:setParent(obj.flowLayout27);
-    obj.flowPart190:setMinWidth(20);
-    obj.flowPart190:setMaxWidth(50);
-    obj.flowPart190:setHeight(20);
-    obj.flowPart190:setName("flowPart190");
-    obj.flowPart190:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart190:setVertAlign("leading");
-
-    obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit83:setParent(obj.flowPart190);
-    obj.edit83:setAlign("client");
-    obj.edit83:setFontSize(10);
-    obj.edit83:setField("cometas_chance");
-    obj.edit83:setVertTextAlign("center");
-    obj.edit83:setName("edit83");
-    obj.edit83:setFontColor("white");
-
-    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink140:setParent(obj.flowLayout27);
-    obj.dataLink140:setField("cometas");
-    obj.dataLink140:setName("dataLink140");
-
-    obj.flowPart191 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart191:setParent(obj.flowLayout27);
-    obj.flowPart191:setMinWidth(70);
-    obj.flowPart191:setMaxWidth(100);
-    obj.flowPart191:setHeight(15);
-    obj.flowPart191:setName("flowPart191");
-    obj.flowPart191:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart191:setVertAlign("leading");
-
-    obj.label112 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label112:setParent(obj.flowPart191);
-    obj.label112:setAlign("top");
-    obj.label112:setFontSize(10);
-    obj.label112:setText("Estrela Cadente");
-    obj.label112:setHorzTextAlign("center");
-    obj.label112:setWordWrap(true);
-    obj.label112:setTextTrimming("none");
-    obj.label112:setAutoSize(true);
-    obj.label112:setHint("");
-    obj.label112:setName("label112");
-    obj.label112:setFontColor("#D0D0D0");
-
-    obj.flowPart192 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart192:setParent(obj.flowLayout27);
-    obj.flowPart192:setMinWidth(100);
-    obj.flowPart192:setMaxWidth(150);
-    obj.flowPart192:setHeight(20);
-    obj.flowPart192:setName("flowPart192");
-    obj.flowPart192:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart192:setVertAlign("leading");
-
-    obj.comboBox20 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox20:setParent(obj.flowPart192);
-    obj.comboBox20:setAlign("top");
-    obj.comboBox20:setFontSize(10);
-    obj.comboBox20:setField("cadentes");
-    obj.comboBox20:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox20:setHorzTextAlign("center");
-    obj.comboBox20:setName("comboBox20");
-
-    obj.flowPart193 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart193:setParent(obj.flowLayout27);
-    obj.flowPart193:setMinWidth(20);
-    obj.flowPart193:setMaxWidth(50);
-    obj.flowPart193:setHeight(20);
-    obj.flowPart193:setName("flowPart193");
-    obj.flowPart193:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart193:setVertAlign("leading");
-
-    obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit84:setParent(obj.flowPart193);
-    obj.edit84:setAlign("client");
-    obj.edit84:setFontSize(10);
-    obj.edit84:setField("cadentes_chance");
-    obj.edit84:setVertTextAlign("center");
-    obj.edit84:setName("edit84");
-    obj.edit84:setFontColor("white");
-
-    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink141:setParent(obj.flowLayout27);
-    obj.dataLink141:setField("cadentes");
-    obj.dataLink141:setName("dataLink141");
-
-    obj.flowPart194 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart194:setParent(obj.flowLayout27);
-    obj.flowPart194:setMinWidth(70);
-    obj.flowPart194:setMaxWidth(100);
-    obj.flowPart194:setHeight(15);
-    obj.flowPart194:setName("flowPart194");
-    obj.flowPart194:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart194:setVertAlign("leading");
-
-    obj.label113 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label113:setParent(obj.flowPart194);
-    obj.label113:setAlign("top");
-    obj.label113:setFontSize(10);
-    obj.label113:setText("Eclipse Lunar");
-    obj.label113:setHorzTextAlign("center");
-    obj.label113:setWordWrap(true);
-    obj.label113:setTextTrimming("none");
-    obj.label113:setAutoSize(true);
-    obj.label113:setHint("");
-    obj.label113:setName("label113");
-    obj.label113:setFontColor("#D0D0D0");
-
-    obj.flowPart195 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart195:setParent(obj.flowLayout27);
-    obj.flowPart195:setMinWidth(100);
-    obj.flowPart195:setMaxWidth(150);
-    obj.flowPart195:setHeight(20);
-    obj.flowPart195:setName("flowPart195");
-    obj.flowPart195:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart195:setVertAlign("leading");
-
-    obj.comboBox21 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox21:setParent(obj.flowPart195);
-    obj.comboBox21:setAlign("top");
-    obj.comboBox21:setFontSize(10);
-    obj.comboBox21:setField("lunar");
-    obj.comboBox21:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox21:setHorzTextAlign("center");
-    obj.comboBox21:setName("comboBox21");
-
-    obj.flowPart196 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart196:setParent(obj.flowLayout27);
-    obj.flowPart196:setMinWidth(20);
-    obj.flowPart196:setMaxWidth(50);
-    obj.flowPart196:setHeight(20);
-    obj.flowPart196:setName("flowPart196");
-    obj.flowPart196:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart196:setVertAlign("leading");
-
-    obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit85:setParent(obj.flowPart196);
-    obj.edit85:setAlign("client");
-    obj.edit85:setFontSize(10);
-    obj.edit85:setField("lunar_chance");
-    obj.edit85:setVertTextAlign("center");
-    obj.edit85:setName("edit85");
-    obj.edit85:setFontColor("white");
-
-    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink142:setParent(obj.flowLayout27);
-    obj.dataLink142:setField("lunar");
-    obj.dataLink142:setName("dataLink142");
-
-    obj.flowPart197 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart197:setParent(obj.flowLayout27);
-    obj.flowPart197:setMinWidth(70);
-    obj.flowPart197:setMaxWidth(100);
-    obj.flowPart197:setHeight(15);
-    obj.flowPart197:setName("flowPart197");
-    obj.flowPart197:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart197:setVertAlign("leading");
-
-    obj.label114 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label114:setParent(obj.flowPart197);
-    obj.label114:setAlign("top");
-    obj.label114:setFontSize(10);
-    obj.label114:setText("Eclipse Solar");
-    obj.label114:setHorzTextAlign("center");
-    obj.label114:setWordWrap(true);
-    obj.label114:setTextTrimming("none");
-    obj.label114:setAutoSize(true);
-    obj.label114:setHint("");
-    obj.label114:setName("label114");
-    obj.label114:setFontColor("#D0D0D0");
-
-    obj.flowPart198 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart198:setParent(obj.flowLayout27);
-    obj.flowPart198:setMinWidth(100);
-    obj.flowPart198:setMaxWidth(150);
-    obj.flowPart198:setHeight(20);
-    obj.flowPart198:setName("flowPart198");
-    obj.flowPart198:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart198:setVertAlign("leading");
-
-    obj.comboBox22 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox22:setParent(obj.flowPart198);
-    obj.comboBox22:setAlign("top");
-    obj.comboBox22:setFontSize(10);
-    obj.comboBox22:setField("solar");
-    obj.comboBox22:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox22:setHorzTextAlign("center");
-    obj.comboBox22:setName("comboBox22");
-
-    obj.flowPart199 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart199:setParent(obj.flowLayout27);
-    obj.flowPart199:setMinWidth(20);
-    obj.flowPart199:setMaxWidth(50);
-    obj.flowPart199:setHeight(20);
-    obj.flowPart199:setName("flowPart199");
-    obj.flowPart199:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart199:setVertAlign("leading");
-
-    obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit86:setParent(obj.flowPart199);
-    obj.edit86:setAlign("client");
-    obj.edit86:setFontSize(10);
-    obj.edit86:setField("solar_chance");
-    obj.edit86:setVertTextAlign("center");
-    obj.edit86:setName("edit86");
-    obj.edit86:setFontColor("white");
-
-    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink143:setParent(obj.flowLayout27);
-    obj.dataLink143:setField("solar");
-    obj.dataLink143:setName("dataLink143");
-
-    obj.flowPart200 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart200:setParent(obj.flowLayout27);
-    obj.flowPart200:setMinWidth(70);
-    obj.flowPart200:setMaxWidth(100);
-    obj.flowPart200:setHeight(15);
-    obj.flowPart200:setName("flowPart200");
-    obj.flowPart200:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart200:setVertAlign("leading");
-
-    obj.label115 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label115:setParent(obj.flowPart200);
-    obj.label115:setAlign("top");
-    obj.label115:setFontSize(10);
-    obj.label115:setText("Meteoros");
-    obj.label115:setHorzTextAlign("center");
-    obj.label115:setWordWrap(true);
-    obj.label115:setTextTrimming("none");
-    obj.label115:setAutoSize(true);
-    obj.label115:setHint("");
-    obj.label115:setName("label115");
-    obj.label115:setFontColor("#D0D0D0");
-
-    obj.flowPart201 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart201:setParent(obj.flowLayout27);
-    obj.flowPart201:setMinWidth(100);
-    obj.flowPart201:setMaxWidth(150);
-    obj.flowPart201:setHeight(20);
-    obj.flowPart201:setName("flowPart201");
-    obj.flowPart201:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart201:setVertAlign("leading");
-
-    obj.comboBox23 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox23:setParent(obj.flowPart201);
-    obj.comboBox23:setAlign("top");
-    obj.comboBox23:setFontSize(10);
-    obj.comboBox23:setField("meteoros");
-    obj.comboBox23:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox23:setHorzTextAlign("center");
-    obj.comboBox23:setName("comboBox23");
-
-    obj.flowPart202 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart202:setParent(obj.flowLayout27);
-    obj.flowPart202:setMinWidth(20);
-    obj.flowPart202:setMaxWidth(50);
-    obj.flowPart202:setHeight(20);
-    obj.flowPart202:setName("flowPart202");
-    obj.flowPart202:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart202:setVertAlign("leading");
-
-    obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit87:setParent(obj.flowPart202);
-    obj.edit87:setAlign("client");
-    obj.edit87:setFontSize(10);
-    obj.edit87:setField("meteoros_chance");
-    obj.edit87:setVertTextAlign("center");
-    obj.edit87:setName("edit87");
-    obj.edit87:setFontColor("white");
-
-    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink144:setParent(obj.flowLayout27);
-    obj.dataLink144:setField("meteoros");
-    obj.dataLink144:setName("dataLink144");
-
-    obj.flowPart203 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart203:setParent(obj.flowLayout27);
-    obj.flowPart203:setMinWidth(70);
-    obj.flowPart203:setMaxWidth(100);
-    obj.flowPart203:setHeight(15);
-    obj.flowPart203:setName("flowPart203");
-    obj.flowPart203:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart203:setVertAlign("leading");
-
-    obj.label116 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label116:setParent(obj.flowPart203);
-    obj.label116:setAlign("top");
-    obj.label116:setFontSize(10);
-    obj.label116:setText("Terremotos");
-    obj.label116:setHorzTextAlign("center");
-    obj.label116:setWordWrap(true);
-    obj.label116:setTextTrimming("none");
-    obj.label116:setAutoSize(true);
-    obj.label116:setHint("");
-    obj.label116:setName("label116");
-    obj.label116:setFontColor("#D0D0D0");
-
-    obj.flowPart204 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart204:setParent(obj.flowLayout27);
-    obj.flowPart204:setMinWidth(100);
-    obj.flowPart204:setMaxWidth(150);
-    obj.flowPart204:setHeight(20);
-    obj.flowPart204:setName("flowPart204");
-    obj.flowPart204:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart204:setVertAlign("leading");
-
-    obj.comboBox24 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox24:setParent(obj.flowPart204);
-    obj.comboBox24:setAlign("top");
-    obj.comboBox24:setFontSize(10);
-    obj.comboBox24:setField("terremotos");
-    obj.comboBox24:setItems({'Nenhum', 'Raro', 'Incomum', 'Comum', 'Constante', 'Personalizado'});
-    obj.comboBox24:setHorzTextAlign("center");
-    obj.comboBox24:setName("comboBox24");
-
-    obj.flowPart205 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart205:setParent(obj.flowLayout27);
-    obj.flowPart205:setMinWidth(20);
-    obj.flowPart205:setMaxWidth(50);
-    obj.flowPart205:setHeight(20);
-    obj.flowPart205:setName("flowPart205");
-    obj.flowPart205:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart205:setVertAlign("leading");
-
-    obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit88:setParent(obj.flowPart205);
-    obj.edit88:setAlign("client");
-    obj.edit88:setFontSize(10);
-    obj.edit88:setField("terremotos_chance");
-    obj.edit88:setVertTextAlign("center");
-    obj.edit88:setName("edit88");
-    obj.edit88:setFontColor("white");
-
-    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink145:setParent(obj.flowLayout27);
-    obj.dataLink145:setField("terremotos");
-    obj.dataLink145:setName("dataLink145");
-
-    obj.popMoon = GUI.fromHandle(_obj_newObject("popup"));
-    obj.popMoon:setParent(obj.scrollBox7);
-    obj.popMoon:setName("popMoon");
-    obj.popMoon:setWidth(220);
-    obj.popMoon:setHeight(190);
-    obj.popMoon:setBackOpacity(0.4);
-    lfm_setPropAsString(obj.popMoon, "autoScopeNode",  "false");
-
-    obj.flowLayout28 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout28:setParent(obj.popMoon);
-    obj.flowLayout28:setAlign("top");
-    obj.flowLayout28:setAutoHeight(true);
-    obj.flowLayout28:setMaxControlsPerLine(3);
-    obj.flowLayout28:setMargins({bottom=4});
-    obj.flowLayout28:setHorzAlign("center");
-    obj.flowLayout28:setName("flowLayout28");
-    obj.flowLayout28:setVertAlign("leading");
-
-    obj.flowPart206 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart206:setParent(obj.flowLayout28);
-    obj.flowPart206:setMinWidth(100);
-    obj.flowPart206:setMaxWidth(150);
-    obj.flowPart206:setHeight(15);
-    obj.flowPart206:setName("flowPart206");
-    obj.flowPart206:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart206:setVertAlign("leading");
-
-    obj.label117 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label117:setParent(obj.flowPart206);
-    obj.label117:setAlign("top");
-    obj.label117:setFontSize(10);
-    obj.label117:setText("Fases da Lua");
-    obj.label117:setHorzTextAlign("center");
-    obj.label117:setWordWrap(true);
-    obj.label117:setTextTrimming("none");
-    obj.label117:setAutoSize(true);
-    obj.label117:setName("label117");
-    obj.label117:setFontColor("#D0D0D0");
-
-    obj.flowPart207 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart207:setParent(obj.flowLayout28);
-    obj.flowPart207:setMinWidth(100);
-    obj.flowPart207:setMaxWidth(150);
-    obj.flowPart207:setHeight(15);
-    obj.flowPart207:setName("flowPart207");
-    obj.flowPart207:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart207:setVertAlign("leading");
-
-    obj.label118 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label118:setParent(obj.flowPart207);
-    obj.label118:setAlign("top");
-    obj.label118:setFontSize(10);
-    obj.label118:setText("Nome Alternativo");
-    obj.label118:setHorzTextAlign("center");
-    obj.label118:setWordWrap(true);
-    obj.label118:setTextTrimming("none");
-    obj.label118:setAutoSize(true);
-    obj.label118:setName("label118");
-    obj.label118:setFontColor("#D0D0D0");
-
-    obj.flowPart208 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart208:setParent(obj.flowLayout28);
-    obj.flowPart208:setMinWidth(20);
-    obj.flowPart208:setMaxWidth(50);
-    obj.flowPart208:setHeight(15);
-    obj.flowPart208:setName("flowPart208");
-    obj.flowPart208:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart208:setVertAlign("leading");
-
-    obj.label119 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label119:setParent(obj.flowPart208);
-    obj.label119:setAlign("top");
-    obj.label119:setFontSize(10);
-    obj.label119:setText("Dur.");
-    obj.label119:setHorzTextAlign("center");
-    obj.label119:setWordWrap(true);
-    obj.label119:setTextTrimming("none");
-    obj.label119:setAutoSize(true);
-    obj.label119:setName("label119");
-    obj.label119:setFontColor("#D0D0D0");
-
-    obj.flowPart209 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart209:setParent(obj.flowLayout28);
-    obj.flowPart209:setMinWidth(100);
-    obj.flowPart209:setMaxWidth(150);
-    obj.flowPart209:setHeight(15);
-    obj.flowPart209:setName("flowPart209");
-    obj.flowPart209:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart209:setVertAlign("leading");
-
-    obj.label120 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label120:setParent(obj.flowPart209);
-    obj.label120:setAlign("top");
-    obj.label120:setFontSize(10);
-    obj.label120:setText("Cheia");
-    obj.label120:setHorzTextAlign("center");
-    obj.label120:setWordWrap(true);
-    obj.label120:setTextTrimming("none");
-    obj.label120:setAutoSize(true);
-    obj.label120:setName("label120");
-    obj.label120:setFontColor("#D0D0D0");
-
-    obj.flowPart210 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart210:setParent(obj.flowLayout28);
-    obj.flowPart210:setMinWidth(100);
-    obj.flowPart210:setMaxWidth(150);
-    obj.flowPart210:setHeight(20);
-    obj.flowPart210:setName("flowPart210");
-    obj.flowPart210:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart210:setVertAlign("leading");
-
-    obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit89:setParent(obj.flowPart210);
-    obj.edit89:setAlign("client");
-    obj.edit89:setFontSize(10);
-    obj.edit89:setField("lua_cheia");
-    obj.edit89:setVertTextAlign("center");
-    obj.edit89:setName("edit89");
-    obj.edit89:setFontColor("white");
-
-    obj.flowPart211 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart211:setParent(obj.flowLayout28);
-    obj.flowPart211:setMinWidth(20);
-    obj.flowPart211:setMaxWidth(50);
-    obj.flowPart211:setHeight(20);
-    obj.flowPart211:setName("flowPart211");
-    obj.flowPart211:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart211:setVertAlign("leading");
-
-    obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit90:setParent(obj.flowPart211);
-    obj.edit90:setAlign("client");
-    obj.edit90:setFontSize(10);
-    obj.edit90:setField("lua_cheia_duration");
-    obj.edit90:setVertTextAlign("center");
-    obj.edit90:setName("edit90");
-    obj.edit90:setFontColor("white");
-
-    obj.flowPart212 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart212:setParent(obj.flowLayout28);
-    obj.flowPart212:setMinWidth(100);
-    obj.flowPart212:setMaxWidth(150);
-    obj.flowPart212:setHeight(15);
-    obj.flowPart212:setName("flowPart212");
-    obj.flowPart212:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart212:setVertAlign("leading");
-
-    obj.label121 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label121:setParent(obj.flowPart212);
-    obj.label121:setAlign("top");
-    obj.label121:setFontSize(10);
-    obj.label121:setText("Minguante Convexo");
-    obj.label121:setHorzTextAlign("center");
-    obj.label121:setWordWrap(true);
-    obj.label121:setTextTrimming("none");
-    obj.label121:setAutoSize(true);
-    obj.label121:setName("label121");
-    obj.label121:setFontColor("#D0D0D0");
-
-    obj.flowPart213 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart213:setParent(obj.flowLayout28);
-    obj.flowPart213:setMinWidth(100);
-    obj.flowPart213:setMaxWidth(150);
-    obj.flowPart213:setHeight(20);
-    obj.flowPart213:setName("flowPart213");
-    obj.flowPart213:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart213:setVertAlign("leading");
-
-    obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit91:setParent(obj.flowPart213);
-    obj.edit91:setAlign("client");
-    obj.edit91:setFontSize(10);
-    obj.edit91:setField("lua_minguante_convexo");
-    obj.edit91:setVertTextAlign("center");
-    obj.edit91:setName("edit91");
-    obj.edit91:setFontColor("white");
-
-    obj.flowPart214 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart214:setParent(obj.flowLayout28);
-    obj.flowPart214:setMinWidth(20);
-    obj.flowPart214:setMaxWidth(50);
-    obj.flowPart214:setHeight(20);
-    obj.flowPart214:setName("flowPart214");
-    obj.flowPart214:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart214:setVertAlign("leading");
-
-    obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit92:setParent(obj.flowPart214);
-    obj.edit92:setAlign("client");
-    obj.edit92:setFontSize(10);
-    obj.edit92:setField("lua_minguante_convexo_duration");
-    obj.edit92:setVertTextAlign("center");
-    obj.edit92:setName("edit92");
-    obj.edit92:setFontColor("white");
-
-    obj.flowPart215 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart215:setParent(obj.flowLayout28);
-    obj.flowPart215:setMinWidth(100);
-    obj.flowPart215:setMaxWidth(150);
-    obj.flowPart215:setHeight(15);
-    obj.flowPart215:setName("flowPart215");
-    obj.flowPart215:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart215:setVertAlign("leading");
-
-    obj.label122 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label122:setParent(obj.flowPart215);
-    obj.label122:setAlign("top");
-    obj.label122:setFontSize(10);
-    obj.label122:setText("Quarto Minguante");
-    obj.label122:setHorzTextAlign("center");
-    obj.label122:setWordWrap(true);
-    obj.label122:setTextTrimming("none");
-    obj.label122:setAutoSize(true);
-    obj.label122:setName("label122");
-    obj.label122:setFontColor("#D0D0D0");
-
-    obj.flowPart216 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart216:setParent(obj.flowLayout28);
-    obj.flowPart216:setMinWidth(100);
-    obj.flowPart216:setMaxWidth(150);
-    obj.flowPart216:setHeight(20);
-    obj.flowPart216:setName("flowPart216");
-    obj.flowPart216:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart216:setVertAlign("leading");
-
-    obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit93:setParent(obj.flowPart216);
-    obj.edit93:setAlign("client");
-    obj.edit93:setFontSize(10);
-    obj.edit93:setField("lua_quarto_minguante");
-    obj.edit93:setVertTextAlign("center");
-    obj.edit93:setName("edit93");
-    obj.edit93:setFontColor("white");
-
-    obj.flowPart217 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart217:setParent(obj.flowLayout28);
-    obj.flowPart217:setMinWidth(20);
-    obj.flowPart217:setMaxWidth(50);
-    obj.flowPart217:setHeight(20);
-    obj.flowPart217:setName("flowPart217");
-    obj.flowPart217:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart217:setVertAlign("leading");
-
-    obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit94:setParent(obj.flowPart217);
-    obj.edit94:setAlign("client");
-    obj.edit94:setFontSize(10);
-    obj.edit94:setField("lua_quarto_minguante_duration");
-    obj.edit94:setVertTextAlign("center");
-    obj.edit94:setName("edit94");
-    obj.edit94:setFontColor("white");
-
-    obj.flowPart218 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart218:setParent(obj.flowLayout28);
-    obj.flowPart218:setMinWidth(100);
-    obj.flowPart218:setMaxWidth(150);
-    obj.flowPart218:setHeight(15);
-    obj.flowPart218:setName("flowPart218");
-    obj.flowPart218:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart218:setVertAlign("leading");
-
-    obj.label123 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label123:setParent(obj.flowPart218);
-    obj.label123:setAlign("top");
-    obj.label123:setFontSize(10);
-    obj.label123:setText("Minguante Concavo");
-    obj.label123:setHorzTextAlign("center");
-    obj.label123:setWordWrap(true);
-    obj.label123:setTextTrimming("none");
-    obj.label123:setAutoSize(true);
-    obj.label123:setName("label123");
-    obj.label123:setFontColor("#D0D0D0");
-
-    obj.flowPart219 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart219:setParent(obj.flowLayout28);
-    obj.flowPart219:setMinWidth(100);
-    obj.flowPart219:setMaxWidth(150);
-    obj.flowPart219:setHeight(20);
-    obj.flowPart219:setName("flowPart219");
-    obj.flowPart219:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart219:setVertAlign("leading");
-
-    obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit95:setParent(obj.flowPart219);
-    obj.edit95:setAlign("client");
-    obj.edit95:setFontSize(10);
-    obj.edit95:setField("lua_minguante_concavo");
-    obj.edit95:setVertTextAlign("center");
-    obj.edit95:setName("edit95");
-    obj.edit95:setFontColor("white");
-
-    obj.flowPart220 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart220:setParent(obj.flowLayout28);
-    obj.flowPart220:setMinWidth(20);
-    obj.flowPart220:setMaxWidth(50);
-    obj.flowPart220:setHeight(20);
-    obj.flowPart220:setName("flowPart220");
-    obj.flowPart220:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart220:setVertAlign("leading");
-
-    obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit96:setParent(obj.flowPart220);
-    obj.edit96:setAlign("client");
-    obj.edit96:setFontSize(10);
-    obj.edit96:setField("lua_minguante_concavo_duration");
-    obj.edit96:setVertTextAlign("center");
-    obj.edit96:setName("edit96");
-    obj.edit96:setFontColor("white");
-
-    obj.flowPart221 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart221:setParent(obj.flowLayout28);
-    obj.flowPart221:setMinWidth(100);
-    obj.flowPart221:setMaxWidth(150);
-    obj.flowPart221:setHeight(15);
-    obj.flowPart221:setName("flowPart221");
-    obj.flowPart221:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart221:setVertAlign("leading");
-
-    obj.label124 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label124:setParent(obj.flowPart221);
-    obj.label124:setAlign("top");
-    obj.label124:setFontSize(10);
-    obj.label124:setText("Lua Nova");
-    obj.label124:setHorzTextAlign("center");
-    obj.label124:setWordWrap(true);
-    obj.label124:setTextTrimming("none");
-    obj.label124:setAutoSize(true);
-    obj.label124:setName("label124");
-    obj.label124:setFontColor("#D0D0D0");
-
-    obj.flowPart222 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart222:setParent(obj.flowLayout28);
-    obj.flowPart222:setMinWidth(100);
-    obj.flowPart222:setMaxWidth(150);
-    obj.flowPart222:setHeight(20);
-    obj.flowPart222:setName("flowPart222");
-    obj.flowPart222:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart222:setVertAlign("leading");
-
-    obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit97:setParent(obj.flowPart222);
-    obj.edit97:setAlign("client");
-    obj.edit97:setFontSize(10);
-    obj.edit97:setField("lua_lua_nova");
-    obj.edit97:setVertTextAlign("center");
-    obj.edit97:setName("edit97");
-    obj.edit97:setFontColor("white");
-
-    obj.flowPart223 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart223:setParent(obj.flowLayout28);
-    obj.flowPart223:setMinWidth(20);
-    obj.flowPart223:setMaxWidth(50);
-    obj.flowPart223:setHeight(20);
-    obj.flowPart223:setName("flowPart223");
-    obj.flowPart223:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart223:setVertAlign("leading");
-
-    obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit98:setParent(obj.flowPart223);
-    obj.edit98:setAlign("client");
-    obj.edit98:setFontSize(10);
-    obj.edit98:setField("lua_lua_nova_duration");
-    obj.edit98:setVertTextAlign("center");
-    obj.edit98:setName("edit98");
-    obj.edit98:setFontColor("white");
-
-    obj.flowPart224 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart224:setParent(obj.flowLayout28);
-    obj.flowPart224:setMinWidth(100);
-    obj.flowPart224:setMaxWidth(150);
-    obj.flowPart224:setHeight(15);
-    obj.flowPart224:setName("flowPart224");
-    obj.flowPart224:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart224:setVertAlign("leading");
-
-    obj.label125 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label125:setParent(obj.flowPart224);
-    obj.label125:setAlign("top");
-    obj.label125:setFontSize(10);
-    obj.label125:setText("Crescente Concavo");
-    obj.label125:setHorzTextAlign("center");
-    obj.label125:setWordWrap(true);
-    obj.label125:setTextTrimming("none");
-    obj.label125:setAutoSize(true);
-    obj.label125:setName("label125");
-    obj.label125:setFontColor("#D0D0D0");
-
-    obj.flowPart225 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart225:setParent(obj.flowLayout28);
-    obj.flowPart225:setMinWidth(100);
-    obj.flowPart225:setMaxWidth(150);
-    obj.flowPart225:setHeight(20);
-    obj.flowPart225:setName("flowPart225");
-    obj.flowPart225:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart225:setVertAlign("leading");
-
-    obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit99:setParent(obj.flowPart225);
-    obj.edit99:setAlign("client");
-    obj.edit99:setFontSize(10);
-    obj.edit99:setField("lua_crescente_concavo");
-    obj.edit99:setVertTextAlign("center");
-    obj.edit99:setName("edit99");
-    obj.edit99:setFontColor("white");
-
-    obj.flowPart226 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart226:setParent(obj.flowLayout28);
-    obj.flowPart226:setMinWidth(20);
-    obj.flowPart226:setMaxWidth(50);
-    obj.flowPart226:setHeight(20);
-    obj.flowPart226:setName("flowPart226");
-    obj.flowPart226:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart226:setVertAlign("leading");
-
-    obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit100:setParent(obj.flowPart226);
-    obj.edit100:setAlign("client");
-    obj.edit100:setFontSize(10);
-    obj.edit100:setField("lua_crescente_concavo_duration");
-    obj.edit100:setVertTextAlign("center");
-    obj.edit100:setName("edit100");
-    obj.edit100:setFontColor("white");
-
-    obj.flowPart227 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart227:setParent(obj.flowLayout28);
-    obj.flowPart227:setMinWidth(100);
-    obj.flowPart227:setMaxWidth(150);
-    obj.flowPart227:setHeight(15);
-    obj.flowPart227:setName("flowPart227");
-    obj.flowPart227:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart227:setVertAlign("leading");
-
-    obj.label126 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label126:setParent(obj.flowPart227);
-    obj.label126:setAlign("top");
-    obj.label126:setFontSize(10);
-    obj.label126:setText("Quarto Crescente");
-    obj.label126:setHorzTextAlign("center");
-    obj.label126:setWordWrap(true);
-    obj.label126:setTextTrimming("none");
-    obj.label126:setAutoSize(true);
-    obj.label126:setName("label126");
-    obj.label126:setFontColor("#D0D0D0");
-
-    obj.flowPart228 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart228:setParent(obj.flowLayout28);
-    obj.flowPart228:setMinWidth(100);
-    obj.flowPart228:setMaxWidth(150);
-    obj.flowPart228:setHeight(20);
-    obj.flowPart228:setName("flowPart228");
-    obj.flowPart228:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart228:setVertAlign("leading");
-
-    obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit101:setParent(obj.flowPart228);
-    obj.edit101:setAlign("client");
-    obj.edit101:setFontSize(10);
-    obj.edit101:setField("lua_quarto_crescente");
-    obj.edit101:setVertTextAlign("center");
-    obj.edit101:setName("edit101");
-    obj.edit101:setFontColor("white");
-
-    obj.flowPart229 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart229:setParent(obj.flowLayout28);
-    obj.flowPart229:setMinWidth(20);
-    obj.flowPart229:setMaxWidth(50);
-    obj.flowPart229:setHeight(20);
-    obj.flowPart229:setName("flowPart229");
-    obj.flowPart229:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart229:setVertAlign("leading");
-
-    obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit102:setParent(obj.flowPart229);
-    obj.edit102:setAlign("client");
-    obj.edit102:setFontSize(10);
-    obj.edit102:setField("lua_quarto_crescente_duration");
-    obj.edit102:setVertTextAlign("center");
-    obj.edit102:setName("edit102");
-    obj.edit102:setFontColor("white");
-
-    obj.flowPart230 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart230:setParent(obj.flowLayout28);
-    obj.flowPart230:setMinWidth(100);
-    obj.flowPart230:setMaxWidth(150);
-    obj.flowPart230:setHeight(15);
-    obj.flowPart230:setName("flowPart230");
-    obj.flowPart230:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart230:setVertAlign("leading");
-
-    obj.label127 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label127:setParent(obj.flowPart230);
-    obj.label127:setAlign("top");
-    obj.label127:setFontSize(10);
-    obj.label127:setText("Crescente Convexo");
-    obj.label127:setHorzTextAlign("center");
-    obj.label127:setWordWrap(true);
-    obj.label127:setTextTrimming("none");
-    obj.label127:setAutoSize(true);
-    obj.label127:setName("label127");
-    obj.label127:setFontColor("#D0D0D0");
-
-    obj.flowPart231 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart231:setParent(obj.flowLayout28);
-    obj.flowPart231:setMinWidth(100);
-    obj.flowPart231:setMaxWidth(150);
-    obj.flowPart231:setHeight(20);
-    obj.flowPart231:setName("flowPart231");
-    obj.flowPart231:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart231:setVertAlign("leading");
-
-    obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit103:setParent(obj.flowPart231);
-    obj.edit103:setAlign("client");
-    obj.edit103:setFontSize(10);
-    obj.edit103:setField("lua_crescente_convexo");
-    obj.edit103:setVertTextAlign("center");
-    obj.edit103:setName("edit103");
-    obj.edit103:setFontColor("white");
-
-    obj.flowPart232 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart232:setParent(obj.flowLayout28);
-    obj.flowPart232:setMinWidth(20);
-    obj.flowPart232:setMaxWidth(50);
-    obj.flowPart232:setHeight(20);
-    obj.flowPart232:setName("flowPart232");
-    obj.flowPart232:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart232:setVertAlign("leading");
-
-    obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit104:setParent(obj.flowPart232);
-    obj.edit104:setAlign("client");
-    obj.edit104:setFontSize(10);
-    obj.edit104:setField("lua_crescente_convexo_duration");
-    obj.edit104:setVertTextAlign("center");
-    obj.edit104:setName("edit104");
-    obj.edit104:setFontColor("white");
-
-    obj.layout79 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout79:setParent(obj.scrollBox7);
-    obj.layout79:setAlign("top");
-    obj.layout79:setHeight(450);
-    obj.layout79:setName("layout79");
-
-    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout80:setParent(obj.layout79);
-    obj.layout80:setAlign("left");
-    obj.layout80:setWidth(270);
-    obj.layout80:setMargins({right=5});
-    obj.layout80:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout80:setName("layout80");
-
-    obj.label128 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label128:setParent(obj.layout80);
-    obj.label128:setWidth(260);
-    obj.label128:setTop(10);
-    obj.label128:setHeight(20);
-    obj.label128:setText("MESES");
-    obj.label128:setHorzTextAlign("center");
-    obj.label128:setName("label128");
-    obj.label128:setFontColor("white");
-
-    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout81:setParent(obj.layout80);
-    obj.layout81:setLeft(10);
-    obj.layout81:setTop(25);
-    obj.layout81:setWidth(220);
-    obj.layout81:setHeight(25);
-    obj.layout81:setName("layout81");
-
-    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button58:setParent(obj.layout81);
-    obj.button58:setLeft(10);
-    obj.button58:setTop(0);
-    obj.button58:setWidth(25);
-    obj.button58:setHeight(25);
-    obj.button58:setText("+");
-    obj.button58:setHint("Novo");
-    obj.button58:setName("button58");
-
-    obj.label129 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label129:setParent(obj.layout81);
-    obj.label129:setLeft(150);
-    obj.label129:setTop(0);
-    obj.label129:setWidth(35);
-    obj.label129:setHeight(25);
-    obj.label129:setText("Total");
-    obj.label129:setHitTest(true);
-    obj.label129:setHint("Quantos dias dura o ano.");
-    obj.label129:setName("label129");
-    obj.label129:setFontColor("white");
-
     obj.rectangle25 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle25:setParent(obj.layout81);
-    obj.rectangle25:setLeft(185);
-    obj.rectangle25:setTop(0);
-    obj.rectangle25:setWidth(35);
-    obj.rectangle25:setHeight(25);
-    obj.rectangle25:setColor("black");
-    obj.rectangle25:setStrokeColor("white");
-    obj.rectangle25:setStrokeSize(1);
+    obj.rectangle25:setParent(obj.tab11);
     obj.rectangle25:setName("rectangle25");
-
-    obj.dias = GUI.fromHandle(_obj_newObject("label"));
-    obj.dias:setParent(obj.layout81);
-    obj.dias:setLeft(185);
-    obj.dias:setTop(0);
-    obj.dias:setWidth(35);
-    obj.dias:setHeight(25);
-    obj.dias:setField("dias");
-    obj.dias:setHorzTextAlign("center");
-    obj.dias:setFontSize(12);
-    obj.dias:setName("dias");
-    obj.dias:setHitTest(true);
-    obj.dias:setHint("Se estiver vermelho a duração do ano e das estações está dessincronizada. ");
-    obj.dias:setFontColor("white");
-
-    obj.label130 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label130:setParent(obj.layout80);
-    obj.label130:setLeft(16);
-    obj.label130:setTop(50);
-    obj.label130:setWidth(30);
-    obj.label130:setHeight(25);
-    obj.label130:setText("Nº");
-    obj.label130:setHorzTextAlign("center");
-    obj.label130:setHitTest(true);
-    obj.label130:setHint("Qual a ordem dos meses?");
-    obj.label130:setName("label130");
-    obj.label130:setFontColor("white");
-
-    obj.label131 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label131:setParent(obj.layout80);
-    obj.label131:setLeft(55);
-    obj.label131:setTop(50);
-    obj.label131:setWidth(110);
-    obj.label131:setHeight(25);
-    obj.label131:setText("Nome");
-    obj.label131:setHorzTextAlign("center");
-    obj.label131:setName("label131");
-    obj.label131:setFontColor("white");
-
-    obj.label132 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label132:setParent(obj.layout80);
-    obj.label132:setLeft(165);
-    obj.label132:setTop(50);
-    obj.label132:setWidth(55);
-    obj.label132:setHeight(25);
-    obj.label132:setText("Duração");
-    obj.label132:setHorzTextAlign("center");
-    obj.label132:setHitTest(true);
-    obj.label132:setHint("Quantos dias dura esse mês.");
-    obj.label132:setName("label132");
-    obj.label132:setFontColor("white");
-
-    obj.rclMeses = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclMeses:setParent(obj.layout80);
-    obj.rclMeses:setLeft(15);
-    obj.rclMeses:setTop(80);
-    obj.rclMeses:setWidth(240);
-    obj.rclMeses:setHeight(340);
-    obj.rclMeses:setName("rclMeses");
-    obj.rclMeses:setField("listaMeses");
-    obj.rclMeses:setTemplateForm("frmGerenciador02_MES");
-    obj.rclMeses:setLayout("vertical");
-
-    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink146:setParent(obj.layout80);
-    obj.dataLink146:setFields({'duracaoEstacao', 'dias'});
-    obj.dataLink146:setName("dataLink146");
-
-    obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout82:setParent(obj.layout79);
-    obj.layout82:setAlign("left");
-    obj.layout82:setWidth(220);
-    obj.layout82:setMargins({right=5});
-    obj.layout82:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout82:setName("layout82");
-
-    obj.label133 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label133:setParent(obj.layout82);
-    obj.label133:setWidth(210);
-    obj.label133:setTop(10);
-    obj.label133:setHeight(20);
-    obj.label133:setText("DIAS DA SEMANA");
-    obj.label133:setHorzTextAlign("center");
-    obj.label133:setName("label133");
-    obj.label133:setFontColor("white");
-
-    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout83:setParent(obj.layout82);
-    obj.layout83:setLeft(10);
-    obj.layout83:setTop(25);
-    obj.layout83:setWidth(220);
-    obj.layout83:setHeight(25);
-    obj.layout83:setName("layout83");
-
-    obj.button59 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button59:setParent(obj.layout83);
-    obj.button59:setLeft(10);
-    obj.button59:setTop(0);
-    obj.button59:setWidth(25);
-    obj.button59:setHeight(25);
-    obj.button59:setText("+");
-    obj.button59:setHint("Novo");
-    obj.button59:setName("button59");
-
-    obj.label134 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label134:setParent(obj.layout83);
-    obj.label134:setLeft(105);
-    obj.label134:setTop(0);
-    obj.label134:setWidth(40);
-    obj.label134:setHeight(25);
-    obj.label134:setText("Desvio");
-    obj.label134:setHitTest(true);
-    obj.label134:setHint("O ano 1 começa em quem dia da semana?");
-    obj.label134:setName("label134");
-    obj.label134:setFontColor("white");
-
-    obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit105:setParent(obj.layout83);
-    obj.edit105:setLeft(145);
-    obj.edit105:setTop(0);
-    obj.edit105:setWidth(20);
-    obj.edit105:setHeight(25);
-    obj.edit105:setField("desvioSemana");
-    obj.edit105:setType("number");
-    obj.edit105:setName("edit105");
-    obj.edit105:setFontSize(15);
-    obj.edit105:setFontColor("white");
-
-    obj.label135 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label135:setParent(obj.layout82);
-    obj.label135:setLeft(16);
-    obj.label135:setTop(50);
-    obj.label135:setWidth(30);
-    obj.label135:setHeight(25);
-    obj.label135:setText("Nº");
-    obj.label135:setHorzTextAlign("center");
-    obj.label135:setHitTest(true);
-    obj.label135:setHint("Qual a ordem dos dias da semana?");
-    obj.label135:setName("label135");
-    obj.label135:setFontColor("white");
-
-    obj.label136 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label136:setParent(obj.layout82);
-    obj.label136:setLeft(45);
-    obj.label136:setTop(50);
-    obj.label136:setWidth(165);
-    obj.label136:setHeight(25);
-    obj.label136:setText("Nome");
-    obj.label136:setHorzTextAlign("center");
-    obj.label136:setName("label136");
-    obj.label136:setFontColor("white");
-
-    obj.rclSemana = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclSemana:setParent(obj.layout82);
-    obj.rclSemana:setLeft(15);
-    obj.rclSemana:setTop(80);
-    obj.rclSemana:setWidth(210);
-    obj.rclSemana:setHeight(260);
-    obj.rclSemana:setName("rclSemana");
-    obj.rclSemana:setField("listaSemana");
-    obj.rclSemana:setTemplateForm("frmGerenciador02_SEMANA");
-    obj.rclSemana:setLayout("vertical");
-
-    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout84:setParent(obj.layout79);
-    obj.layout84:setAlign("left");
-    obj.layout84:setWidth(200);
-    obj.layout84:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout84:setName("layout84");
-
-    obj.label137 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label137:setParent(obj.layout84);
-    obj.label137:setWidth(200);
-    obj.label137:setTop(10);
-    obj.label137:setHeight(20);
-    obj.label137:setText("LUAS");
-    obj.label137:setHorzTextAlign("center");
-    obj.label137:setName("label137");
-    obj.label137:setFontColor("white");
-
-    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout85:setParent(obj.layout84);
-    obj.layout85:setLeft(10);
-    obj.layout85:setTop(25);
-    obj.layout85:setWidth(200);
-    obj.layout85:setHeight(25);
-    obj.layout85:setName("layout85");
-
-    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button60:setParent(obj.layout85);
-    obj.button60:setLeft(10);
-    obj.button60:setTop(0);
-    obj.button60:setWidth(25);
-    obj.button60:setHeight(25);
-    obj.button60:setText("+");
-    obj.button60:setHint("Novo");
-    obj.button60:setName("button60");
-
-    obj.celestialBt = GUI.fromHandle(_obj_newObject("button"));
-    obj.celestialBt:setParent(obj.layout85);
-    obj.celestialBt:setLeft(150);
-    obj.celestialBt:setTop(0);
-    obj.celestialBt:setWidth(25);
-    obj.celestialBt:setHeight(25);
-    obj.celestialBt:setText("i");
-    obj.celestialBt:setName("celestialBt");
-    obj.celestialBt:setHint("Eventos Celestiais");
-
-    obj.label138 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label138:setParent(obj.layout84);
-    obj.label138:setLeft(0);
-    obj.label138:setTop(50);
-    obj.label138:setWidth(55);
-    obj.label138:setHeight(25);
-    obj.label138:setText("Nome");
-    obj.label138:setHorzTextAlign("center");
-    obj.label138:setName("label138");
-    obj.label138:setFontColor("white");
-
-    obj.label139 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label139:setParent(obj.layout84);
-    obj.label139:setLeft(100);
-    obj.label139:setTop(50);
-    obj.label139:setWidth(55);
-    obj.label139:setHeight(25);
-    obj.label139:setText("Ciclo");
-    obj.label139:setHorzTextAlign("center");
-    obj.label139:setHitTest(true);
-    obj.label139:setHint("Quantos dias leva o ciclo lunar?");
-    obj.label139:setName("label139");
-    obj.label139:setFontColor("white");
-
-    obj.label140 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label140:setParent(obj.layout84);
-    obj.label140:setLeft(135);
-    obj.label140:setTop(50);
-    obj.label140:setWidth(55);
-    obj.label140:setHeight(25);
-    obj.label140:setText("Desvio");
-    obj.label140:setHorzTextAlign("center");
-    obj.label140:setHitTest(true);
-    obj.label140:setHint("No ano 1 em que dia começa o ciclo lunar (lua cheia)?");
-    obj.label140:setName("label140");
-    obj.label140:setFontColor("white");
-
-    obj.rclLuas = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclLuas:setParent(obj.layout84);
-    obj.rclLuas:setLeft(15);
-    obj.rclLuas:setTop(80);
-    obj.rclLuas:setWidth(190);
-    obj.rclLuas:setHeight(260);
-    obj.rclLuas:setName("rclLuas");
-    obj.rclLuas:setField("listaLuas");
-    obj.rclLuas:setTemplateForm("frmGerenciador02_LUA");
-    obj.rclLuas:setLayout("vertical");
-
-    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout86:setParent(obj.layout79);
-    obj.layout86:setAlign("left");
-    obj.layout86:setWidth(270);
-    obj.layout86:setMargins({right=5});
-    obj.layout86:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout86:setName("layout86");
-
-    obj.label141 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label141:setParent(obj.layout86);
-    obj.label141:setWidth(260);
-    obj.label141:setTop(10);
-    obj.label141:setHeight(20);
-    obj.label141:setText("ESTAÇÕES");
-    obj.label141:setHorzTextAlign("center");
-    obj.label141:setName("label141");
-    obj.label141:setFontColor("white");
-
-    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout87:setParent(obj.layout86);
-    obj.layout87:setLeft(10);
-    obj.layout87:setTop(25);
-    obj.layout87:setWidth(220);
-    obj.layout87:setHeight(25);
-    obj.layout87:setName("layout87");
-
-    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button61:setParent(obj.layout87);
-    obj.button61:setLeft(10);
-    obj.button61:setTop(0);
-    obj.button61:setWidth(25);
-    obj.button61:setHeight(25);
-    obj.button61:setText("+");
-    obj.button61:setHint("Novo");
-    obj.button61:setName("button61");
-
-    obj.label142 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label142:setParent(obj.layout87);
-    obj.label142:setLeft(155);
-    obj.label142:setTop(0);
-    obj.label142:setWidth(40);
-    obj.label142:setHeight(25);
-    obj.label142:setText("Desvio");
-    obj.label142:setHitTest(true);
-    obj.label142:setHint("Em que dia do ano começa a primeira estação?");
-    obj.label142:setName("label142");
-    obj.label142:setFontColor("white");
-
-    obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit106:setParent(obj.layout87);
-    obj.edit106:setLeft(195);
-    obj.edit106:setTop(0);
-    obj.edit106:setWidth(20);
-    obj.edit106:setHeight(25);
-    obj.edit106:setField("desvioEstacao");
-    obj.edit106:setType("number");
-    obj.edit106:setName("edit106");
-    obj.edit106:setFontSize(15);
-    obj.edit106:setFontColor("white");
-
-    obj.label143 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label143:setParent(obj.layout86);
-    obj.label143:setLeft(16);
-    obj.label143:setTop(50);
-    obj.label143:setWidth(30);
-    obj.label143:setHeight(25);
-    obj.label143:setText("Nº");
-    obj.label143:setHorzTextAlign("center");
-    obj.label143:setHitTest(true);
-    obj.label143:setHint("Qual a ordem das estações?");
-    obj.label143:setName("label143");
-    obj.label143:setFontColor("white");
-
-    obj.label144 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label144:setParent(obj.layout86);
-    obj.label144:setLeft(55);
-    obj.label144:setTop(50);
-    obj.label144:setWidth(85);
-    obj.label144:setHeight(25);
-    obj.label144:setText("Nome");
-    obj.label144:setHorzTextAlign("center");
-    obj.label144:setName("label144");
-    obj.label144:setFontColor("white");
-
-    obj.label145 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label145:setParent(obj.layout86);
-    obj.label145:setLeft(140);
-    obj.label145:setTop(50);
-    obj.label145:setWidth(55);
-    obj.label145:setHeight(25);
-    obj.label145:setText("Duração");
-    obj.label145:setHorzTextAlign("center");
-    obj.label145:setHitTest(true);
-    obj.label145:setHint("Quantos dias dura essa estação?");
-    obj.label145:setName("label145");
-    obj.label145:setFontColor("white");
-
-    obj.rclEstacoes = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclEstacoes:setParent(obj.layout86);
-    obj.rclEstacoes:setLeft(15);
-    obj.rclEstacoes:setTop(80);
-    obj.rclEstacoes:setWidth(240);
-    obj.rclEstacoes:setHeight(260);
-    obj.rclEstacoes:setName("rclEstacoes");
-    obj.rclEstacoes:setField("listaEstacoes");
-    obj.rclEstacoes:setTemplateForm("frmGerenciador02_ESTACAO");
-    obj.rclEstacoes:setLayout("vertical");
-
-    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout88:setParent(obj.layout79);
-    obj.layout88:setAlign("left");
-    obj.layout88:setWidth(270);
-    obj.layout88:setMargins({right=5});
-    obj.layout88:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout88:setName("layout88");
-
-    obj.label146 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label146:setParent(obj.layout88);
-    obj.label146:setLeft(10);
-    obj.label146:setTop(5);
-    obj.label146:setWidth(30);
-    obj.label146:setHeight(25);
-    obj.label146:setText("Dia");
-    obj.label146:setHorzTextAlign("center");
-    obj.label146:setName("label146");
-    obj.label146:setFontColor("white");
-
-    obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit107:setParent(obj.layout88);
-    obj.edit107:setLeft(10);
-    obj.edit107:setTop(30);
-    obj.edit107:setWidth(30);
-    obj.edit107:setHeight(25);
-    obj.edit107:setField("dia");
-    obj.edit107:setType("number");
-    obj.edit107:setName("edit107");
-    obj.edit107:setFontSize(15);
-    obj.edit107:setFontColor("white");
-
-    obj.label147 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label147:setParent(obj.layout88);
-    obj.label147:setLeft(40);
-    obj.label147:setTop(5);
-    obj.label147:setWidth(30);
-    obj.label147:setHeight(25);
-    obj.label147:setText("Mês");
-    obj.label147:setHorzTextAlign("center");
-    obj.label147:setName("label147");
-    obj.label147:setFontColor("white");
-
-    obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit108:setParent(obj.layout88);
-    obj.edit108:setLeft(40);
-    obj.edit108:setTop(30);
-    obj.edit108:setWidth(30);
-    obj.edit108:setHeight(25);
-    obj.edit108:setField("mes");
-    obj.edit108:setType("number");
-    obj.edit108:setName("edit108");
-    obj.edit108:setFontSize(15);
-    obj.edit108:setFontColor("white");
-
-    obj.label148 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label148:setParent(obj.layout88);
-    obj.label148:setLeft(70);
-    obj.label148:setTop(5);
-    obj.label148:setWidth(40);
-    obj.label148:setHeight(25);
-    obj.label148:setText("Ano");
-    obj.label148:setHorzTextAlign("center");
-    obj.label148:setName("label148");
-    obj.label148:setFontColor("white");
-
-    obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit109:setParent(obj.layout88);
-    obj.edit109:setLeft(70);
-    obj.edit109:setTop(30);
-    obj.edit109:setWidth(40);
-    obj.edit109:setHeight(25);
-    obj.edit109:setField("ano");
-    obj.edit109:setType("number");
-    obj.edit109:setName("edit109");
-    obj.edit109:setFontSize(15);
-    obj.edit109:setFontColor("white");
-
-    obj.label149 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label149:setParent(obj.layout88);
-    obj.label149:setLeft(110);
-    obj.label149:setTop(5);
-    obj.label149:setWidth(150);
-    obj.label149:setHeight(25);
-    obj.label149:setText("Era");
-    obj.label149:setHorzTextAlign("center");
-    obj.label149:setName("label149");
-    obj.label149:setFontColor("white");
-
-    obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit110:setParent(obj.layout88);
-    obj.edit110:setLeft(110);
-    obj.edit110:setTop(30);
-    obj.edit110:setWidth(150);
-    obj.edit110:setHeight(25);
-    obj.edit110:setField("era");
-    obj.edit110:setName("edit110");
-    obj.edit110:setFontSize(15);
-    obj.edit110:setFontColor("white");
-
-    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button62:setParent(obj.layout88);
-    obj.button62:setLeft(15);
-    obj.button62:setTop(55);
-    obj.button62:setWidth(100);
-    obj.button62:setHeight(25);
-    obj.button62:setText("Avançar");
-    obj.button62:setHint("Avança X dias no Calandario.");
-    obj.button62:setName("button62");
-
-    obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit111:setParent(obj.layout88);
-    obj.edit111:setLeft(115);
-    obj.edit111:setTop(55);
-    obj.edit111:setWidth(45);
-    obj.edit111:setHeight(25);
-    obj.edit111:setField("add");
-    obj.edit111:setName("edit111");
-    obj.edit111:setFontSize(15);
-    obj.edit111:setFontColor("white");
-
-    obj.label150 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label150:setParent(obj.layout88);
-    obj.label150:setLeft(165);
-    obj.label150:setTop(55);
-    obj.label150:setWidth(45);
-    obj.label150:setHeight(25);
-    obj.label150:setText("Dias");
-    obj.label150:setName("label150");
-    obj.label150:setFontColor("white");
-
-    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink147:setParent(obj.layout88);
-    obj.dataLink147:setField("add");
-    obj.dataLink147:setDefaultValue("1");
-    obj.dataLink147:setName("dataLink147");
-
-    obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.layout88);
-    obj.textEditor7:setLeft(15);
-    obj.textEditor7:setTop(80);
-    obj.textEditor7:setWidth(240);
-    obj.textEditor7:setHeight(200);
-    obj.textEditor7:setField("data");
-    obj.textEditor7:setName("textEditor7");
-
-    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout89:setParent(obj.layout88);
-    obj.layout89:setLeft(10);
-    obj.layout89:setTop(285);
-    obj.layout89:setWidth(250);
-    obj.layout89:setHeight(155);
-    obj.layout89:setName("layout89");
-
-    obj.dataLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.dataLabel:setParent(obj.layout89);
-    obj.dataLabel:setLeft(10);
-    obj.dataLabel:setTop(0);
-    obj.dataLabel:setWidth(250);
-    obj.dataLabel:setHeight(20);
-    obj.dataLabel:setField("dataLabel");
-    obj.dataLabel:setName("dataLabel");
-    obj.dataLabel:setFontSize(10);
-    obj.dataLabel:setFontColor("white");
-
-    obj.estacaoLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.estacaoLabel:setParent(obj.layout89);
-    obj.estacaoLabel:setLeft(10);
-    obj.estacaoLabel:setTop(20);
-    obj.estacaoLabel:setWidth(250);
-    obj.estacaoLabel:setHeight(20);
-    obj.estacaoLabel:setField("estacaoLabel");
-    obj.estacaoLabel:setName("estacaoLabel");
-    obj.estacaoLabel:setFontSize(10);
-    obj.estacaoLabel:setFontColor("white");
-
-    obj.temperaturaLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.temperaturaLabel:setParent(obj.layout89);
-    obj.temperaturaLabel:setLeft(10);
-    obj.temperaturaLabel:setTop(40);
-    obj.temperaturaLabel:setWidth(250);
-    obj.temperaturaLabel:setHeight(20);
-    obj.temperaturaLabel:setField("temperaturaLabel");
-    obj.temperaturaLabel:setName("temperaturaLabel");
-    obj.temperaturaLabel:setFontSize(10);
-    obj.temperaturaLabel:setHitTest(true);
-    obj.temperaturaLabel:setFontColor("white");
-
-    obj.precipitacaoLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.precipitacaoLabel:setParent(obj.layout89);
-    obj.precipitacaoLabel:setLeft(10);
-    obj.precipitacaoLabel:setTop(60);
-    obj.precipitacaoLabel:setWidth(250);
-    obj.precipitacaoLabel:setHeight(20);
-    obj.precipitacaoLabel:setField("precipitacaoLabel");
-    obj.precipitacaoLabel:setName("precipitacaoLabel");
-    obj.precipitacaoLabel:setFontSize(10);
-    obj.precipitacaoLabel:setHitTest(true);
-    obj.precipitacaoLabel:setFontColor("white");
-
-    obj.ventoLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.ventoLabel:setParent(obj.layout89);
-    obj.ventoLabel:setLeft(10);
-    obj.ventoLabel:setTop(80);
-    obj.ventoLabel:setWidth(250);
-    obj.ventoLabel:setHeight(20);
-    obj.ventoLabel:setField("ventoLabel");
-    obj.ventoLabel:setName("ventoLabel");
-    obj.ventoLabel:setFontSize(10);
-    obj.ventoLabel:setHitTest(true);
-    obj.ventoLabel:setFontColor("white");
-
-    obj.luasLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.luasLabel:setParent(obj.layout89);
-    obj.luasLabel:setLeft(10);
-    obj.luasLabel:setTop(100);
-    obj.luasLabel:setWidth(250);
-    obj.luasLabel:setHeight(20);
-    obj.luasLabel:setField("luasLabel");
-    obj.luasLabel:setName("luasLabel");
-    obj.luasLabel:setFontSize(10);
-    obj.luasLabel:setWordWrap(true);
-    obj.luasLabel:setTextTrimming("none");
-    obj.luasLabel:setFontColor("white");
-
-    obj.eventosLabel = GUI.fromHandle(_obj_newObject("label"));
-    obj.eventosLabel:setParent(obj.layout89);
-    obj.eventosLabel:setLeft(10);
-    obj.eventosLabel:setTop(120);
-    obj.eventosLabel:setWidth(250);
-    obj.eventosLabel:setHeight(20);
-    obj.eventosLabel:setField("eventosLabel");
-    obj.eventosLabel:setName("eventosLabel");
-    obj.eventosLabel:setFontSize(10);
-    obj.eventosLabel:setHitTest(true);
-    obj.eventosLabel:setFontColor("white");
-
-    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink148:setParent(obj.layout88);
-    obj.dataLink148:setFields({'dia', 'mes', 'ano', 'dias', 'duracaoEstacao', 'desvioSemana', 'desvioEstacao'});
-    obj.dataLink148:setName("dataLink148");
-
-    obj.rectangle26 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle26:setParent(obj.scrollBox7);
-    obj.rectangle26:setName("rectangle26");
-    obj.rectangle26:setAlign("client");
-    obj.rectangle26:setColor("#40000000");
-    obj.rectangle26:setXradius(10);
-    obj.rectangle26:setYradius(10);
-
-    obj.scrollBox8 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox8:setParent(obj.rectangle26);
-    obj.scrollBox8:setAlign("client");
-    obj.scrollBox8:setName("scrollBox8");
-
-    obj.fraMapa2Layout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraMapa2Layout:setParent(obj.scrollBox8);
-    obj.fraMapa2Layout:setAlign("top");
-    obj.fraMapa2Layout:setHeight(400);
-    obj.fraMapa2Layout:setMargins({left=0, top=10});
-    obj.fraMapa2Layout:setAutoHeight(true);
-    obj.fraMapa2Layout:setHorzAlign("justify");
-    obj.fraMapa2Layout:setLineSpacing(3);
-    obj.fraMapa2Layout:setName("fraMapa2Layout");
-    obj.fraMapa2Layout:setStepSizes({310, 420, 640, 760, 1150});
-    obj.fraMapa2Layout:setMinScaledWidth(300);
-    obj.fraMapa2Layout:setVertAlign("leading");
-
-    obj.flowLineBreak18 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak18:setParent(obj.fraMapa2Layout);
-    obj.flowLineBreak18:setName("flowLineBreak18");
-
-    obj.flowLayout29 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout29:setParent(obj.fraMapa2Layout);
-    obj.flowLayout29:setAutoHeight(true);
-    obj.flowLayout29:setMinScaledWidth(500);
-    obj.flowLayout29:setHorzAlign("center");
-    obj.flowLayout29:setLineSpacing(10);
-    obj.flowLayout29:setMargins({top=5});
-    obj.flowLayout29:setName("flowLayout29");
-    obj.flowLayout29:setStepSizes({310, 420, 640, 760, 860, 960, 1150, 1200, 1600});
-    obj.flowLayout29:setVertAlign("leading");
-
-    obj.flowLayout30 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout30:setParent(obj.flowLayout29);
-    obj.flowLayout30:setMaxControlsPerLine(1);
-    obj.flowLayout30:setAutoHeight(true);
-    obj.flowLayout30:setLineSpacing(10);
-    obj.flowLayout30:setMargins({left = 4, right = 4});
-    obj.flowLayout30:setName("flowLayout30");
-    obj.flowLayout30:setStepSizes({});
-    obj.flowLayout30:setMinWidth(300);
-    obj.flowLayout30:setMaxWidth(1600);
-    obj.flowLayout30:setMinScaledWidth(300);
-    obj.flowLayout30:setVertAlign("leading");
-
-    obj.flowPart233 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart233:setParent(obj.flowLayout30);
-    obj.flowPart233:setHeight(400);
-    obj.flowPart233:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.flowPart233:setMargins({left = 0, right = 4});
-    obj.flowPart233:setName("flowPart233");
-    obj.flowPart233:setStepSizes({});
-    obj.flowPart233:setMinWidth(300);
-    obj.flowPart233:setMaxWidth(1600);
-    obj.flowPart233:setMinScaledWidth(300);
-    obj.flowPart233:setVertAlign("leading");
-
-    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.flowPart233);
-    obj.image6:setAlign("client");
-    obj.image6:setStyle("proportional");
-    obj.image6:setField("imagens.mapa");
-    obj.image6:setMargins({top=2});
-    obj.image6:setEditable(true);
-    lfm_setPropAsString(obj.image6, "animate",  "true");
-    obj.image6:setName("image6");
-
-    obj.label151 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label151:setParent(obj.flowPart233);
-    obj.label151:setAlign("bottom");
-    obj.label151:setAutoSize(true);
-    obj.label151:setText("MAPA MUNDI");
-    obj.label151:setFontSize(20);
-    obj.label151:setVertTextAlign("center");
-    obj.label151:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label151, "fontStyle",  "bold");
-    obj.label151:setName("label151");
-    obj.label151:setFontColor("white");
-
-    obj.flowLineBreak19 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak19:setParent(obj.flowLayout29);
-    obj.flowLineBreak19:setName("flowLineBreak19");
-
-    obj.tab12 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab12:setParent(obj.pgcPrincipal);
-    obj.tab12:setTitle("COMPANHEIRO");
-    obj.tab12:setName("tab12");
-
-    obj.rectangle27 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle27:setParent(obj.tab12);
-    obj.rectangle27:setName("rectangle27");
-    obj.rectangle27:setAlign("client");
-    obj.rectangle27:setColor("#40000000");
-    obj.rectangle27:setXradius(10);
-    obj.rectangle27:setYradius(10);
+    obj.rectangle25:setAlign("client");
+    obj.rectangle25:setColor("#40000000");
+    obj.rectangle25:setXradius(10);
+    obj.rectangle25:setYradius(10);
 
  require("common.lua"); 
 
 
-    obj.scrollBox9 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox9:setParent(obj.rectangle27);
-    obj.scrollBox9:setAlign("client");
-    obj.scrollBox9:setName("scrollBox9");
+    obj.scrollBox7 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox7:setParent(obj.rectangle25);
+    obj.scrollBox7:setAlign("client");
+    obj.scrollBox7:setName("scrollBox7");
 
     obj.fraCompanionLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraCompanionLayout:setParent(obj.scrollBox9);
+    obj.fraCompanionLayout:setParent(obj.scrollBox7);
     obj.fraCompanionLayout:setAlign("top");
     obj.fraCompanionLayout:setHeight(500);
     obj.fraCompanionLayout:setMargins({left=10, right=10, top=10});
@@ -11594,18 +8693,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.fraCompanionLayout:setMinScaledWidth(300);
     obj.fraCompanionLayout:setVertAlign("leading");
 
-    obj.flowLayout31 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout31:setParent(obj.fraCompanionLayout);
-    obj.flowLayout31:setAutoHeight(true);
-    obj.flowLayout31:setMinScaledWidth(290);
-    obj.flowLayout31:setHorzAlign("center");
-    obj.flowLayout31:setName("flowLayout31");
-    obj.flowLayout31:setStepSizes({310, 420, 640, 760, 1150});
-    obj.flowLayout31:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout31:setVertAlign("leading");
+    obj.flowLayout26 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout26:setParent(obj.fraCompanionLayout);
+    obj.flowLayout26:setAutoHeight(true);
+    obj.flowLayout26:setMinScaledWidth(290);
+    obj.flowLayout26:setHorzAlign("center");
+    obj.flowLayout26:setName("flowLayout26");
+    obj.flowLayout26:setStepSizes({310, 420, 640, 760, 1150});
+    obj.flowLayout26:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout26:setVertAlign("leading");
 
     obj.flwNomeCompanion1 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flwNomeCompanion1:setParent(obj.flowLayout31);
+    obj.flwNomeCompanion1:setParent(obj.flowLayout26);
     obj.flwNomeCompanion1:setName("flwNomeCompanion1");
     obj.flwNomeCompanion1:setMinWidth(320);
     obj.flwNomeCompanion1:setMaxWidth(1600);
@@ -11641,7 +8740,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labNomeCompanion1:setFontColor("#D0D0D0");
 
     obj.fraUpperGridCompanion = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraUpperGridCompanion:setParent(obj.flowLayout31);
+    obj.fraUpperGridCompanion:setParent(obj.flowLayout26);
     obj.fraUpperGridCompanion:setMinWidth(320);
     obj.fraUpperGridCompanion:setMaxWidth(1600);
     obj.fraUpperGridCompanion:setName("fraUpperGridCompanion");
@@ -11922,103 +9021,103 @@ self.upperGridMagicBox3._RecalcSize();
     self.UpperGridCampo12:setHeight(self.edtUpperGridCampo12:getHeight() + self.labUpperGridCampo12:getHeight() + self.linUpperGridCampo12:getHeight());
 
 
-    obj.flowLineBreak20 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak20:setParent(obj.fraCompanionLayout);
-    obj.flowLineBreak20:setName("flowLineBreak20");
+    obj.flowLineBreak7 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak7:setParent(obj.fraCompanionLayout);
+    obj.flowLineBreak7:setName("flowLineBreak7");
 
-    obj.flowLayout32 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout32:setParent(obj.fraCompanionLayout);
-    obj.flowLayout32:setHorzAlign("justify");
-    obj.flowLayout32:setAutoHeight(true);
-    obj.flowLayout32:setAvoidScale(true);
-    obj.flowLayout32:setName("flowLayout32");
-    obj.flowLayout32:setStepSizes({310, 420, 640, 760, 1150});
-    obj.flowLayout32:setMinScaledWidth(300);
-    obj.flowLayout32:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout32:setVertAlign("leading");
+    obj.flowLayout27 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout27:setParent(obj.fraCompanionLayout);
+    obj.flowLayout27:setHorzAlign("justify");
+    obj.flowLayout27:setAutoHeight(true);
+    obj.flowLayout27:setAvoidScale(true);
+    obj.flowLayout27:setName("flowLayout27");
+    obj.flowLayout27:setStepSizes({310, 420, 640, 760, 1150});
+    obj.flowLayout27:setMinScaledWidth(300);
+    obj.flowLayout27:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout27:setVertAlign("leading");
 
-    obj.flowPart234 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart234:setParent(obj.flowLayout32);
-    obj.flowPart234:setMinWidth(280);
-    obj.flowPart234:setMaxWidth(800);
-    obj.flowPart234:setHeight(64);
-    obj.flowPart234:setFrameStyle("frames/posCaptionEdit1/frame.xml");
-    obj.flowPart234:setName("flowPart234");
-    obj.flowPart234:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart234:setVertAlign("leading");
+    obj.flowPart132 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart132:setParent(obj.flowLayout27);
+    obj.flowPart132:setMinWidth(280);
+    obj.flowPart132:setMaxWidth(800);
+    obj.flowPart132:setHeight(64);
+    obj.flowPart132:setFrameStyle("frames/posCaptionEdit1/frame.xml");
+    obj.flowPart132:setName("flowPart132");
+    obj.flowPart132:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart132:setVertAlign("leading");
 
-    obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit112:setParent(obj.flowPart234);
-    obj.edit112:setAlign("left");
-    obj.edit112:setField("graudelealdade");
-    obj.edit112:setWidth(65);
-    obj.edit112:setName("edit112");
-    obj.edit112:setTransparent(true);
-    obj.edit112:setVertTextAlign("center");
-    obj.edit112:setHorzTextAlign("center");
-    obj.edit112:setFontSize(15);
-    obj.edit112:setFontColor("white");
+    obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit46:setParent(obj.flowPart132);
+    obj.edit46:setAlign("left");
+    obj.edit46:setField("graudelealdade");
+    obj.edit46:setWidth(65);
+    obj.edit46:setName("edit46");
+    obj.edit46:setTransparent(true);
+    obj.edit46:setVertTextAlign("center");
+    obj.edit46:setHorzTextAlign("center");
+    obj.edit46:setFontSize(15);
+    obj.edit46:setFontColor("white");
 
-    obj.label152 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label152:setParent(obj.flowPart234);
-    obj.label152:setAlign("client");
-    obj.label152:setText("GRAU DE LEALDADE");
-    obj.label152:setMargins({left=10});
-    obj.label152:setHorzTextAlign("center");
-    obj.label152:setName("label152");
-    obj.label152:setFontSize(12);
-    obj.label152:setFontColor("#D0D0D0");
+    obj.label98 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label98:setParent(obj.flowPart132);
+    obj.label98:setAlign("client");
+    obj.label98:setText("GRAU DE LEALDADE");
+    obj.label98:setMargins({left=10});
+    obj.label98:setHorzTextAlign("center");
+    obj.label98:setName("label98");
+    obj.label98:setFontSize(12);
+    obj.label98:setFontColor("#D0D0D0");
 
-    obj.flowPart235 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart235:setParent(obj.flowLayout32);
-    obj.flowPart235:setMinWidth(280);
-    obj.flowPart235:setMaxWidth(800);
-    obj.flowPart235:setHeight(64);
-    obj.flowPart235:setFrameStyle("frames/posCaptionEdit2/frame.xml");
-    obj.flowPart235:setName("flowPart235");
-    obj.flowPart235:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart235:setVertAlign("leading");
+    obj.flowPart133 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart133:setParent(obj.flowLayout27);
+    obj.flowPart133:setMinWidth(280);
+    obj.flowPart133:setMaxWidth(800);
+    obj.flowPart133:setHeight(64);
+    obj.flowPart133:setFrameStyle("frames/posCaptionEdit2/frame.xml");
+    obj.flowPart133:setName("flowPart133");
+    obj.flowPart133:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart133:setVertAlign("leading");
 
-    obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit113:setParent(obj.flowPart235);
-    obj.edit113:setAlign("left");
-    obj.edit113:setField("CACompanion");
-    obj.edit113:setWidth(70);
-    obj.edit113:setName("edit113");
-    obj.edit113:setTransparent(true);
-    obj.edit113:setVertTextAlign("center");
-    obj.edit113:setHorzTextAlign("center");
-    obj.edit113:setFontSize(15);
-    obj.edit113:setFontColor("white");
+    obj.edit47 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit47:setParent(obj.flowPart133);
+    obj.edit47:setAlign("left");
+    obj.edit47:setField("CACompanion");
+    obj.edit47:setWidth(70);
+    obj.edit47:setName("edit47");
+    obj.edit47:setTransparent(true);
+    obj.edit47:setVertTextAlign("center");
+    obj.edit47:setHorzTextAlign("center");
+    obj.edit47:setFontSize(15);
+    obj.edit47:setFontColor("white");
 
-    obj.label153 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label153:setParent(obj.flowPart235);
-    obj.label153:setAlign("client");
-    obj.label153:setText("CLASSE DE ARMADURA");
-    obj.label153:setTextTrimming("none");
-    obj.label153:setWordWrap(true);
-    obj.label153:setMargins({left=10});
-    obj.label153:setHorzTextAlign("center");
-    obj.label153:setName("label153");
-    obj.label153:setFontSize(12);
-    obj.label153:setFontColor("#D0D0D0");
+    obj.label99 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label99:setParent(obj.flowPart133);
+    obj.label99:setAlign("client");
+    obj.label99:setText("CLASSE DE ARMADURA");
+    obj.label99:setTextTrimming("none");
+    obj.label99:setWordWrap(true);
+    obj.label99:setMargins({left=10});
+    obj.label99:setHorzTextAlign("center");
+    obj.label99:setName("label99");
+    obj.label99:setFontSize(12);
+    obj.label99:setFontColor("#D0D0D0");
 
-    obj.flowLineBreak21 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak21:setParent(obj.fraCompanionLayout);
-    obj.flowLineBreak21:setName("flowLineBreak21");
+    obj.flowLineBreak8 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak8:setParent(obj.fraCompanionLayout);
+    obj.flowLineBreak8:setName("flowLineBreak8");
 
-    obj.flowLayout33 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout33:setParent(obj.fraCompanionLayout);
-    obj.flowLayout33:setAutoHeight(true);
-    obj.flowLayout33:setMinScaledWidth(290);
-    obj.flowLayout33:setHorzAlign("center");
-    obj.flowLayout33:setName("flowLayout33");
-    obj.flowLayout33:setStepSizes({310, 420, 640, 760, 1150});
-    obj.flowLayout33:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout33:setVertAlign("leading");
+    obj.flowLayout28 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout28:setParent(obj.fraCompanionLayout);
+    obj.flowLayout28:setAutoHeight(true);
+    obj.flowLayout28:setMinScaledWidth(290);
+    obj.flowLayout28:setHorzAlign("center");
+    obj.flowLayout28:setName("flowLayout28");
+    obj.flowLayout28:setStepSizes({310, 420, 640, 760, 1150});
+    obj.flowLayout28:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout28:setVertAlign("leading");
 
     obj.fraLayAtributosCompanion = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraLayAtributosCompanion:setParent(obj.flowLayout33);
+    obj.fraLayAtributosCompanion:setParent(obj.flowLayout28);
     obj.fraLayAtributosCompanion:setName("fraLayAtributosCompanion");
     obj.fraLayAtributosCompanion:setVertAlign("leading");
     obj.fraLayAtributosCompanion:setAutoHeight(true);
@@ -12030,91 +9129,91 @@ self.upperGridMagicBox3._RecalcSize();
     obj.fraLayAtributosCompanion:setAvoidScale(true);
     obj.fraLayAtributosCompanion:setStepSizes({310, 420, 640, 760, 1150});
 
-    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink149:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink149:setField("atributos.companionforca");
-    obj.dataLink149:setName("dataLink149");
+    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink138:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink138:setField("atributos.companionforca");
+    obj.dataLink138:setName("dataLink138");
 
-    obj.flowPart236 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart236:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart236:setHeight(140);
-    obj.flowPart236:setMinWidth(320);
-    obj.flowPart236:setMaxWidth(420);
-    obj.flowPart236:setMinScaledWidth(305);
-    obj.flowPart236:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart236:setName("flowPart236");
-    obj.flowPart236:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart236:setVertAlign("leading");
+    obj.flowPart134 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart134:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart134:setHeight(140);
+    obj.flowPart134:setMinWidth(320);
+    obj.flowPart134:setMaxWidth(420);
+    obj.flowPart134:setMinScaledWidth(305);
+    obj.flowPart134:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart134:setName("flowPart134");
+    obj.flowPart134:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart134:setVertAlign("leading");
 
-    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout90:setParent(obj.flowPart236);
-    obj.layout90:setLeft(6);
-    obj.layout90:setTop(12);
-    obj.layout90:setWidth(116);
-    obj.layout90:setHeight(115);
-    obj.layout90:setName("layout90");
+    obj.layout79 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout79:setParent(obj.flowPart134);
+    obj.layout79:setLeft(6);
+    obj.layout79:setTop(12);
+    obj.layout79:setWidth(116);
+    obj.layout79:setHeight(115);
+    obj.layout79:setName("layout79");
 
-    obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit114:setParent(obj.layout90);
-    obj.edit114:setAlign("top");
-    obj.edit114:setMargins({left=30, right=30});
-    obj.edit114:setField("atributos.companionforca");
-    obj.edit114:setHeight(30);
-    obj.edit114:setType("number");
-    obj.edit114:setMin(0);
-    obj.edit114:setMax(99);
-    obj.edit114:setName("edit114");
-    obj.edit114:setTransparent(true);
-    obj.edit114:setVertTextAlign("center");
-    obj.edit114:setHorzTextAlign("center");
-    obj.edit114:setFontSize(15);
-    obj.edit114:setFontColor("white");
+    obj.edit48 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit48:setParent(obj.layout79);
+    obj.edit48:setAlign("top");
+    obj.edit48:setMargins({left=30, right=30});
+    obj.edit48:setField("atributos.companionforca");
+    obj.edit48:setHeight(30);
+    obj.edit48:setType("number");
+    obj.edit48:setMin(0);
+    obj.edit48:setMax(99);
+    obj.edit48:setName("edit48");
+    obj.edit48:setTransparent(true);
+    obj.edit48:setVertTextAlign("center");
+    obj.edit48:setHorzTextAlign("center");
+    obj.edit48:setFontSize(15);
+    obj.edit48:setFontColor("white");
 
-    obj.label154 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label154:setParent(obj.flowPart236);
-    obj.label154:setFrameRegion("modificador");
-    obj.label154:setField("atributos.modcompanionforcastr");
-    obj.label154:setHorzTextAlign("center");
-    obj.label154:setVertTextAlign("center");
-    obj.label154:setFontSize(46);
-    lfm_setPropAsString(obj.label154, "fontStyle",  "bold");
-    obj.label154:setName("label154");
-    obj.label154:setFontColor("white");
+    obj.label100 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label100:setParent(obj.flowPart134);
+    obj.label100:setFrameRegion("modificador");
+    obj.label100:setField("atributos.modcompanionforcastr");
+    obj.label100:setHorzTextAlign("center");
+    obj.label100:setVertTextAlign("center");
+    obj.label100:setFontSize(46);
+    lfm_setPropAsString(obj.label100, "fontStyle",  "bold");
+    obj.label100:setName("label100");
+    obj.label100:setFontColor("white");
 
-    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout91:setParent(obj.flowPart236);
-    obj.layout91:setFrameRegion("titulo");
-    obj.layout91:setName("layout91");
+    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout80:setParent(obj.flowPart134);
+    obj.layout80:setFrameRegion("titulo");
+    obj.layout80:setName("layout80");
 
-    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button63:setParent(obj.layout91);
-    obj.button63:setAlign("client");
-    obj.button63:setText("FORÇA");
-    obj.button63:setVertTextAlign("center");
-    obj.button63:setHorzTextAlign("center");
-    obj.button63:setName("button63");
+    obj.button58 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button58:setParent(obj.layout80);
+    obj.button58:setAlign("client");
+    obj.button58:setText("FORÇA");
+    obj.button58:setVertTextAlign("center");
+    obj.button58:setHorzTextAlign("center");
+    obj.button58:setName("button58");
 
-    obj.flowLayout34 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout34:setParent(obj.flowPart236);
-    obj.flowLayout34:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout34:setAutoHeight(true);
-    obj.flowLayout34:setLineSpacing(0);
-    obj.flowLayout34:setHorzAlign("leading");
-    obj.flowLayout34:setName("flowLayout34");
-    obj.flowLayout34:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout34:setVertAlign("leading");
+    obj.flowLayout29 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout29:setParent(obj.flowPart134);
+    obj.flowLayout29:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout29:setAutoHeight(true);
+    obj.flowLayout29:setLineSpacing(0);
+    obj.flowLayout29:setHorzAlign("leading");
+    obj.flowLayout29:setName("flowLayout29");
+    obj.flowLayout29:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout29:setVertAlign("leading");
 
-    obj.flowPart237 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart237:setParent(obj.flowLayout34);
-    obj.flowPart237:setMinWidth(206);
-    obj.flowPart237:setMaxWidth(250);
-    obj.flowPart237:setHeight(17);
-    obj.flowPart237:setName("flowPart237");
-    obj.flowPart237:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart237:setVertAlign("leading");
+    obj.flowPart135 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart135:setParent(obj.flowLayout29);
+    obj.flowPart135:setMinWidth(206);
+    obj.flowPart135:setMaxWidth(250);
+    obj.flowPart135:setHeight(17);
+    obj.flowPart135:setName("flowPart135");
+    obj.flowPart135:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart135:setVertAlign("leading");
 
     obj.cbProfcompanionforca = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionforca:setParent(obj.flowPart237);
+    obj.cbProfcompanionforca:setParent(obj.flowPart135);
     obj.cbProfcompanionforca:setName("cbProfcompanionforca");
     obj.cbProfcompanionforca:setAlign("left");
     obj.cbProfcompanionforca:setField("resistencias.companionforca");
@@ -12156,25 +9255,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink150:setParent(obj.flowPart237);
-    obj.dataLink150:setField("macroExpertise.companionforca");
-    obj.dataLink150:setName("dataLink150");
+    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink139:setParent(obj.flowPart135);
+    obj.dataLink139:setField("macroExpertise.companionforca");
+    obj.dataLink139:setName("dataLink139");
 
-    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink151:setParent(obj.flowPart237);
-    obj.dataLink151:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink151:setName("dataLink151");
+    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink140:setParent(obj.flowPart135);
+    obj.dataLink140:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink140:setName("dataLink140");
 
-    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout92:setParent(obj.flowPart237);
-    obj.layout92:setAlign("left");
-    obj.layout92:setWidth(26);
-    obj.layout92:setMargins({left=2});
-    obj.layout92:setName("layout92");
+    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout81:setParent(obj.flowPart135);
+    obj.layout81:setAlign("left");
+    obj.layout81:setWidth(26);
+    obj.layout81:setMargins({left=2});
+    obj.layout81:setName("layout81");
 
     obj.labProfcompanionforca = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionforca:setParent(obj.layout92);
+    obj.labProfcompanionforca:setParent(obj.layout81);
     obj.labProfcompanionforca:setName("labProfcompanionforca");
     obj.labProfcompanionforca:setField("resistencias.bonuscompanionforcastr");
     obj.labProfcompanionforca:setAlign("client");
@@ -12184,36 +9283,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionforca:setFontColor("white");
 
     obj.horzLine39 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine39:setParent(obj.layout92);
+    obj.horzLine39:setParent(obj.layout81);
     obj.horzLine39:setStrokeColor("white");
     obj.horzLine39:setStrokeSize(1);
     obj.horzLine39:setAlign("bottom");
     obj.horzLine39:setName("horzLine39");
 
-    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button64:setParent(obj.flowPart237);
-    obj.button64:setAlign("left");
-    obj.button64:setText("Resistência");
-    obj.button64:setWidth(122);
-    obj.button64:setMargins({left=2});
-    obj.button64:setName("button64");
+    obj.button59 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button59:setParent(obj.flowPart135);
+    obj.button59:setAlign("left");
+    obj.button59:setText("Resistência");
+    obj.button59:setWidth(122);
+    obj.button59:setMargins({left=2});
+    obj.button59:setName("button59");
 
-    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink152:setParent(obj.flowLayout34);
-    obj.dataLink152:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'resistencias.companionforca', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink152:setName("dataLink152");
+    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink141:setParent(obj.flowLayout29);
+    obj.dataLink141:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'resistencias.companionforca', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink141:setName("dataLink141");
 
-    obj.flowPart238 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart238:setParent(obj.flowLayout34);
-    obj.flowPart238:setMinWidth(206);
-    obj.flowPart238:setMaxWidth(250);
-    obj.flowPart238:setHeight(17);
-    obj.flowPart238:setName("flowPart238");
-    obj.flowPart238:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart238:setVertAlign("leading");
+    obj.flowPart136 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart136:setParent(obj.flowLayout29);
+    obj.flowPart136:setMinWidth(206);
+    obj.flowPart136:setMaxWidth(250);
+    obj.flowPart136:setHeight(17);
+    obj.flowPart136:setName("flowPart136");
+    obj.flowPart136:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart136:setVertAlign("leading");
 
     obj.cbProfcompanionatletismo = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionatletismo:setParent(obj.flowPart238);
+    obj.cbProfcompanionatletismo:setParent(obj.flowPart136);
     obj.cbProfcompanionatletismo:setName("cbProfcompanionatletismo");
     obj.cbProfcompanionatletismo:setAlign("left");
     obj.cbProfcompanionatletismo:setField("pericias.companionatletismo");
@@ -12255,25 +9354,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink153:setParent(obj.flowPart238);
-    obj.dataLink153:setField("macroExpertise.companionatletismo");
-    obj.dataLink153:setName("dataLink153");
+    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink142:setParent(obj.flowPart136);
+    obj.dataLink142:setField("macroExpertise.companionatletismo");
+    obj.dataLink142:setName("dataLink142");
 
-    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink154:setParent(obj.flowPart238);
-    obj.dataLink154:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink154:setName("dataLink154");
+    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink143:setParent(obj.flowPart136);
+    obj.dataLink143:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink143:setName("dataLink143");
 
-    obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout93:setParent(obj.flowPart238);
-    obj.layout93:setAlign("left");
-    obj.layout93:setWidth(26);
-    obj.layout93:setMargins({left=2});
-    obj.layout93:setName("layout93");
+    obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout82:setParent(obj.flowPart136);
+    obj.layout82:setAlign("left");
+    obj.layout82:setWidth(26);
+    obj.layout82:setMargins({left=2});
+    obj.layout82:setName("layout82");
 
     obj.labProfcompanionatletismo = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionatletismo:setParent(obj.layout93);
+    obj.labProfcompanionatletismo:setParent(obj.layout82);
     obj.labProfcompanionatletismo:setName("labProfcompanionatletismo");
     obj.labProfcompanionatletismo:setField("pericias.bonuscompanionatletismostr");
     obj.labProfcompanionatletismo:setAlign("client");
@@ -12283,110 +9382,110 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionatletismo:setFontColor("white");
 
     obj.horzLine40 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine40:setParent(obj.layout93);
+    obj.horzLine40:setParent(obj.layout82);
     obj.horzLine40:setStrokeColor("white");
     obj.horzLine40:setStrokeSize(1);
     obj.horzLine40:setAlign("bottom");
     obj.horzLine40:setName("horzLine40");
 
-    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button65:setParent(obj.flowPart238);
-    obj.button65:setAlign("left");
-    obj.button65:setText("Atletismo");
-    obj.button65:setWidth(122);
-    obj.button65:setMargins({left=2});
-    obj.button65:setName("button65");
+    obj.button60 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button60:setParent(obj.flowPart136);
+    obj.button60:setAlign("left");
+    obj.button60:setText("Atletismo");
+    obj.button60:setWidth(122);
+    obj.button60:setMargins({left=2});
+    obj.button60:setName("button60");
 
-    obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink155:setParent(obj.flowLayout34);
-    obj.dataLink155:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'pericias.companionatletismo', 'macroExpertise.companionatletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink155:setName("dataLink155");
+    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink144:setParent(obj.flowLayout29);
+    obj.dataLink144:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'pericias.companionatletismo', 'macroExpertise.companionatletismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink144:setName("dataLink144");
 
-    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink156:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink156:setField("atributos.companiondestreza");
-    obj.dataLink156:setName("dataLink156");
+    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink145:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink145:setField("atributos.companiondestreza");
+    obj.dataLink145:setName("dataLink145");
 
-    obj.flowPart239 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart239:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart239:setHeight(140);
-    obj.flowPart239:setMinWidth(320);
-    obj.flowPart239:setMaxWidth(420);
-    obj.flowPart239:setMinScaledWidth(305);
-    obj.flowPart239:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart239:setName("flowPart239");
-    obj.flowPart239:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart239:setVertAlign("leading");
+    obj.flowPart137 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart137:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart137:setHeight(140);
+    obj.flowPart137:setMinWidth(320);
+    obj.flowPart137:setMaxWidth(420);
+    obj.flowPart137:setMinScaledWidth(305);
+    obj.flowPart137:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart137:setName("flowPart137");
+    obj.flowPart137:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart137:setVertAlign("leading");
 
-    obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout94:setParent(obj.flowPart239);
-    obj.layout94:setLeft(6);
-    obj.layout94:setTop(12);
-    obj.layout94:setWidth(116);
-    obj.layout94:setHeight(115);
-    obj.layout94:setName("layout94");
+    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout83:setParent(obj.flowPart137);
+    obj.layout83:setLeft(6);
+    obj.layout83:setTop(12);
+    obj.layout83:setWidth(116);
+    obj.layout83:setHeight(115);
+    obj.layout83:setName("layout83");
 
-    obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit115:setParent(obj.layout94);
-    obj.edit115:setAlign("top");
-    obj.edit115:setMargins({left=30, right=30});
-    obj.edit115:setField("atributos.companiondestreza");
-    obj.edit115:setHeight(30);
-    obj.edit115:setType("number");
-    obj.edit115:setMin(0);
-    obj.edit115:setMax(99);
-    obj.edit115:setName("edit115");
-    obj.edit115:setTransparent(true);
-    obj.edit115:setVertTextAlign("center");
-    obj.edit115:setHorzTextAlign("center");
-    obj.edit115:setFontSize(15);
-    obj.edit115:setFontColor("white");
+    obj.edit49 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit49:setParent(obj.layout83);
+    obj.edit49:setAlign("top");
+    obj.edit49:setMargins({left=30, right=30});
+    obj.edit49:setField("atributos.companiondestreza");
+    obj.edit49:setHeight(30);
+    obj.edit49:setType("number");
+    obj.edit49:setMin(0);
+    obj.edit49:setMax(99);
+    obj.edit49:setName("edit49");
+    obj.edit49:setTransparent(true);
+    obj.edit49:setVertTextAlign("center");
+    obj.edit49:setHorzTextAlign("center");
+    obj.edit49:setFontSize(15);
+    obj.edit49:setFontColor("white");
 
-    obj.label155 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label155:setParent(obj.flowPart239);
-    obj.label155:setFrameRegion("modificador");
-    obj.label155:setField("atributos.modcompaniondestrezastr");
-    obj.label155:setHorzTextAlign("center");
-    obj.label155:setVertTextAlign("center");
-    obj.label155:setFontSize(46);
-    lfm_setPropAsString(obj.label155, "fontStyle",  "bold");
-    obj.label155:setName("label155");
-    obj.label155:setFontColor("white");
+    obj.label101 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label101:setParent(obj.flowPart137);
+    obj.label101:setFrameRegion("modificador");
+    obj.label101:setField("atributos.modcompaniondestrezastr");
+    obj.label101:setHorzTextAlign("center");
+    obj.label101:setVertTextAlign("center");
+    obj.label101:setFontSize(46);
+    lfm_setPropAsString(obj.label101, "fontStyle",  "bold");
+    obj.label101:setName("label101");
+    obj.label101:setFontColor("white");
 
-    obj.layout95 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout95:setParent(obj.flowPart239);
-    obj.layout95:setFrameRegion("titulo");
-    obj.layout95:setName("layout95");
+    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout84:setParent(obj.flowPart137);
+    obj.layout84:setFrameRegion("titulo");
+    obj.layout84:setName("layout84");
 
-    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button66:setParent(obj.layout95);
-    obj.button66:setAlign("client");
-    obj.button66:setText("DESTREZA");
-    obj.button66:setVertTextAlign("center");
-    obj.button66:setHorzTextAlign("center");
-    obj.button66:setName("button66");
+    obj.button61 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button61:setParent(obj.layout84);
+    obj.button61:setAlign("client");
+    obj.button61:setText("DESTREZA");
+    obj.button61:setVertTextAlign("center");
+    obj.button61:setHorzTextAlign("center");
+    obj.button61:setName("button61");
 
-    obj.flowLayout35 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout35:setParent(obj.flowPart239);
-    obj.flowLayout35:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout35:setAutoHeight(true);
-    obj.flowLayout35:setLineSpacing(0);
-    obj.flowLayout35:setHorzAlign("leading");
-    obj.flowLayout35:setName("flowLayout35");
-    obj.flowLayout35:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout35:setVertAlign("leading");
+    obj.flowLayout30 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout30:setParent(obj.flowPart137);
+    obj.flowLayout30:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout30:setAutoHeight(true);
+    obj.flowLayout30:setLineSpacing(0);
+    obj.flowLayout30:setHorzAlign("leading");
+    obj.flowLayout30:setName("flowLayout30");
+    obj.flowLayout30:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout30:setVertAlign("leading");
 
-    obj.flowPart240 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart240:setParent(obj.flowLayout35);
-    obj.flowPart240:setMinWidth(206);
-    obj.flowPart240:setMaxWidth(250);
-    obj.flowPart240:setHeight(17);
-    obj.flowPart240:setName("flowPart240");
-    obj.flowPart240:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart240:setVertAlign("leading");
+    obj.flowPart138 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart138:setParent(obj.flowLayout30);
+    obj.flowPart138:setMinWidth(206);
+    obj.flowPart138:setMaxWidth(250);
+    obj.flowPart138:setHeight(17);
+    obj.flowPart138:setName("flowPart138");
+    obj.flowPart138:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart138:setVertAlign("leading");
 
     obj.cbProfcompaniondestreza = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompaniondestreza:setParent(obj.flowPart240);
+    obj.cbProfcompaniondestreza:setParent(obj.flowPart138);
     obj.cbProfcompaniondestreza:setName("cbProfcompaniondestreza");
     obj.cbProfcompaniondestreza:setAlign("left");
     obj.cbProfcompaniondestreza:setField("resistencias.companiondestreza");
@@ -12428,25 +9527,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink157 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink157:setParent(obj.flowPart240);
-    obj.dataLink157:setField("macroExpertise.companiondestreza");
-    obj.dataLink157:setName("dataLink157");
+    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink146:setParent(obj.flowPart138);
+    obj.dataLink146:setField("macroExpertise.companiondestreza");
+    obj.dataLink146:setName("dataLink146");
 
-    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink158:setParent(obj.flowPart240);
-    obj.dataLink158:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink158:setName("dataLink158");
+    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink147:setParent(obj.flowPart138);
+    obj.dataLink147:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink147:setName("dataLink147");
 
-    obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout96:setParent(obj.flowPart240);
-    obj.layout96:setAlign("left");
-    obj.layout96:setWidth(26);
-    obj.layout96:setMargins({left=2});
-    obj.layout96:setName("layout96");
+    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout85:setParent(obj.flowPart138);
+    obj.layout85:setAlign("left");
+    obj.layout85:setWidth(26);
+    obj.layout85:setMargins({left=2});
+    obj.layout85:setName("layout85");
 
     obj.labProfcompaniondestreza = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompaniondestreza:setParent(obj.layout96);
+    obj.labProfcompaniondestreza:setParent(obj.layout85);
     obj.labProfcompaniondestreza:setName("labProfcompaniondestreza");
     obj.labProfcompaniondestreza:setField("resistencias.bonuscompaniondestrezastr");
     obj.labProfcompaniondestreza:setAlign("client");
@@ -12456,36 +9555,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompaniondestreza:setFontColor("white");
 
     obj.horzLine41 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine41:setParent(obj.layout96);
+    obj.horzLine41:setParent(obj.layout85);
     obj.horzLine41:setStrokeColor("white");
     obj.horzLine41:setStrokeSize(1);
     obj.horzLine41:setAlign("bottom");
     obj.horzLine41:setName("horzLine41");
 
-    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button67:setParent(obj.flowPart240);
-    obj.button67:setAlign("left");
-    obj.button67:setText("Resistência");
-    obj.button67:setWidth(122);
-    obj.button67:setMargins({left=2});
-    obj.button67:setName("button67");
+    obj.button62 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button62:setParent(obj.flowPart138);
+    obj.button62:setAlign("left");
+    obj.button62:setText("Resistência");
+    obj.button62:setWidth(122);
+    obj.button62:setMargins({left=2});
+    obj.button62:setName("button62");
 
-    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink159:setParent(obj.flowLayout35);
-    obj.dataLink159:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'resistencias.companiondestreza', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink159:setName("dataLink159");
+    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink148:setParent(obj.flowLayout30);
+    obj.dataLink148:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'resistencias.companiondestreza', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink148:setName("dataLink148");
 
-    obj.flowPart241 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart241:setParent(obj.flowLayout35);
-    obj.flowPart241:setMinWidth(206);
-    obj.flowPart241:setMaxWidth(250);
-    obj.flowPart241:setHeight(17);
-    obj.flowPart241:setName("flowPart241");
-    obj.flowPart241:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart241:setVertAlign("leading");
+    obj.flowPart139 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart139:setParent(obj.flowLayout30);
+    obj.flowPart139:setMinWidth(206);
+    obj.flowPart139:setMaxWidth(250);
+    obj.flowPart139:setHeight(17);
+    obj.flowPart139:setName("flowPart139");
+    obj.flowPart139:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart139:setVertAlign("leading");
 
     obj.cbProfcompanionacrobacia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionacrobacia:setParent(obj.flowPart241);
+    obj.cbProfcompanionacrobacia:setParent(obj.flowPart139);
     obj.cbProfcompanionacrobacia:setName("cbProfcompanionacrobacia");
     obj.cbProfcompanionacrobacia:setAlign("left");
     obj.cbProfcompanionacrobacia:setField("pericias.companionacrobacia");
@@ -12527,25 +9626,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink160:setParent(obj.flowPart241);
-    obj.dataLink160:setField("macroExpertise.companionacrobacia");
-    obj.dataLink160:setName("dataLink160");
+    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink149:setParent(obj.flowPart139);
+    obj.dataLink149:setField("macroExpertise.companionacrobacia");
+    obj.dataLink149:setName("dataLink149");
 
-    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink161:setParent(obj.flowPart241);
-    obj.dataLink161:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink161:setName("dataLink161");
+    obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink150:setParent(obj.flowPart139);
+    obj.dataLink150:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink150:setName("dataLink150");
 
-    obj.layout97 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout97:setParent(obj.flowPart241);
-    obj.layout97:setAlign("left");
-    obj.layout97:setWidth(26);
-    obj.layout97:setMargins({left=2});
-    obj.layout97:setName("layout97");
+    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout86:setParent(obj.flowPart139);
+    obj.layout86:setAlign("left");
+    obj.layout86:setWidth(26);
+    obj.layout86:setMargins({left=2});
+    obj.layout86:setName("layout86");
 
     obj.labProfcompanionacrobacia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionacrobacia:setParent(obj.layout97);
+    obj.labProfcompanionacrobacia:setParent(obj.layout86);
     obj.labProfcompanionacrobacia:setName("labProfcompanionacrobacia");
     obj.labProfcompanionacrobacia:setField("pericias.bonuscompanionacrobaciastr");
     obj.labProfcompanionacrobacia:setAlign("client");
@@ -12555,36 +9654,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionacrobacia:setFontColor("white");
 
     obj.horzLine42 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine42:setParent(obj.layout97);
+    obj.horzLine42:setParent(obj.layout86);
     obj.horzLine42:setStrokeColor("white");
     obj.horzLine42:setStrokeSize(1);
     obj.horzLine42:setAlign("bottom");
     obj.horzLine42:setName("horzLine42");
 
-    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button68:setParent(obj.flowPart241);
-    obj.button68:setAlign("left");
-    obj.button68:setText("Acrobacia");
-    obj.button68:setWidth(122);
-    obj.button68:setMargins({left=2});
-    obj.button68:setName("button68");
+    obj.button63 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button63:setParent(obj.flowPart139);
+    obj.button63:setAlign("left");
+    obj.button63:setText("Acrobacia");
+    obj.button63:setWidth(122);
+    obj.button63:setMargins({left=2});
+    obj.button63:setName("button63");
 
-    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink162:setParent(obj.flowLayout35);
-    obj.dataLink162:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionacrobacia', 'macroExpertise.companionacrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink162:setName("dataLink162");
+    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink151:setParent(obj.flowLayout30);
+    obj.dataLink151:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionacrobacia', 'macroExpertise.companionacrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink151:setName("dataLink151");
 
-    obj.flowPart242 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart242:setParent(obj.flowLayout35);
-    obj.flowPart242:setMinWidth(206);
-    obj.flowPart242:setMaxWidth(250);
-    obj.flowPart242:setHeight(17);
-    obj.flowPart242:setName("flowPart242");
-    obj.flowPart242:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart242:setVertAlign("leading");
+    obj.flowPart140 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart140:setParent(obj.flowLayout30);
+    obj.flowPart140:setMinWidth(206);
+    obj.flowPart140:setMaxWidth(250);
+    obj.flowPart140:setHeight(17);
+    obj.flowPart140:setName("flowPart140");
+    obj.flowPart140:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart140:setVertAlign("leading");
 
     obj.cbProfcompanionfurtividade = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionfurtividade:setParent(obj.flowPart242);
+    obj.cbProfcompanionfurtividade:setParent(obj.flowPart140);
     obj.cbProfcompanionfurtividade:setName("cbProfcompanionfurtividade");
     obj.cbProfcompanionfurtividade:setAlign("left");
     obj.cbProfcompanionfurtividade:setField("pericias.companionfurtividade");
@@ -12626,25 +9725,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink163:setParent(obj.flowPart242);
-    obj.dataLink163:setField("macroExpertise.companionfurtividade");
-    obj.dataLink163:setName("dataLink163");
+    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink152:setParent(obj.flowPart140);
+    obj.dataLink152:setField("macroExpertise.companionfurtividade");
+    obj.dataLink152:setName("dataLink152");
 
-    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink164:setParent(obj.flowPart242);
-    obj.dataLink164:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink164:setName("dataLink164");
+    obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink153:setParent(obj.flowPart140);
+    obj.dataLink153:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink153:setName("dataLink153");
 
-    obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout98:setParent(obj.flowPart242);
-    obj.layout98:setAlign("left");
-    obj.layout98:setWidth(26);
-    obj.layout98:setMargins({left=2});
-    obj.layout98:setName("layout98");
+    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout87:setParent(obj.flowPart140);
+    obj.layout87:setAlign("left");
+    obj.layout87:setWidth(26);
+    obj.layout87:setMargins({left=2});
+    obj.layout87:setName("layout87");
 
     obj.labProfcompanionfurtividade = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionfurtividade:setParent(obj.layout98);
+    obj.labProfcompanionfurtividade:setParent(obj.layout87);
     obj.labProfcompanionfurtividade:setName("labProfcompanionfurtividade");
     obj.labProfcompanionfurtividade:setField("pericias.bonuscompanionfurtividadestr");
     obj.labProfcompanionfurtividade:setAlign("client");
@@ -12654,36 +9753,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionfurtividade:setFontColor("white");
 
     obj.horzLine43 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine43:setParent(obj.layout98);
+    obj.horzLine43:setParent(obj.layout87);
     obj.horzLine43:setStrokeColor("white");
     obj.horzLine43:setStrokeSize(1);
     obj.horzLine43:setAlign("bottom");
     obj.horzLine43:setName("horzLine43");
 
-    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button69:setParent(obj.flowPart242);
-    obj.button69:setAlign("left");
-    obj.button69:setText("Furtividade");
-    obj.button69:setWidth(122);
-    obj.button69:setMargins({left=2});
-    obj.button69:setName("button69");
+    obj.button64 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button64:setParent(obj.flowPart140);
+    obj.button64:setAlign("left");
+    obj.button64:setText("Furtividade");
+    obj.button64:setWidth(122);
+    obj.button64:setMargins({left=2});
+    obj.button64:setName("button64");
 
-    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink165:setParent(obj.flowLayout35);
-    obj.dataLink165:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionfurtividade', 'macroExpertise.companionfurtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink165:setName("dataLink165");
+    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink154:setParent(obj.flowLayout30);
+    obj.dataLink154:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionfurtividade', 'macroExpertise.companionfurtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink154:setName("dataLink154");
 
-    obj.flowPart243 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart243:setParent(obj.flowLayout35);
-    obj.flowPart243:setMinWidth(206);
-    obj.flowPart243:setMaxWidth(250);
-    obj.flowPart243:setHeight(17);
-    obj.flowPart243:setName("flowPart243");
-    obj.flowPart243:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart243:setVertAlign("leading");
+    obj.flowPart141 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart141:setParent(obj.flowLayout30);
+    obj.flowPart141:setMinWidth(206);
+    obj.flowPart141:setMaxWidth(250);
+    obj.flowPart141:setHeight(17);
+    obj.flowPart141:setName("flowPart141");
+    obj.flowPart141:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart141:setVertAlign("leading");
 
     obj.cbProfcompanionprestidigitacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionprestidigitacao:setParent(obj.flowPart243);
+    obj.cbProfcompanionprestidigitacao:setParent(obj.flowPart141);
     obj.cbProfcompanionprestidigitacao:setName("cbProfcompanionprestidigitacao");
     obj.cbProfcompanionprestidigitacao:setAlign("left");
     obj.cbProfcompanionprestidigitacao:setField("pericias.companionprestidigitacao");
@@ -12725,25 +9824,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink166:setParent(obj.flowPart243);
-    obj.dataLink166:setField("macroExpertise.companionprestidigitacao");
-    obj.dataLink166:setName("dataLink166");
+    obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink155:setParent(obj.flowPart141);
+    obj.dataLink155:setField("macroExpertise.companionprestidigitacao");
+    obj.dataLink155:setName("dataLink155");
 
-    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink167:setParent(obj.flowPart243);
-    obj.dataLink167:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink167:setName("dataLink167");
+    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink156:setParent(obj.flowPart141);
+    obj.dataLink156:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink156:setName("dataLink156");
 
-    obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout99:setParent(obj.flowPart243);
-    obj.layout99:setAlign("left");
-    obj.layout99:setWidth(26);
-    obj.layout99:setMargins({left=2});
-    obj.layout99:setName("layout99");
+    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout88:setParent(obj.flowPart141);
+    obj.layout88:setAlign("left");
+    obj.layout88:setWidth(26);
+    obj.layout88:setMargins({left=2});
+    obj.layout88:setName("layout88");
 
     obj.labProfcompanionprestidigitacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionprestidigitacao:setParent(obj.layout99);
+    obj.labProfcompanionprestidigitacao:setParent(obj.layout88);
     obj.labProfcompanionprestidigitacao:setName("labProfcompanionprestidigitacao");
     obj.labProfcompanionprestidigitacao:setField("pericias.bonuscompanionprestidigitacaostr");
     obj.labProfcompanionprestidigitacao:setAlign("client");
@@ -12753,110 +9852,110 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionprestidigitacao:setFontColor("white");
 
     obj.horzLine44 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine44:setParent(obj.layout99);
+    obj.horzLine44:setParent(obj.layout88);
     obj.horzLine44:setStrokeColor("white");
     obj.horzLine44:setStrokeSize(1);
     obj.horzLine44:setAlign("bottom");
     obj.horzLine44:setName("horzLine44");
 
-    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button70:setParent(obj.flowPart243);
-    obj.button70:setAlign("left");
-    obj.button70:setText("Prestidigitação");
-    obj.button70:setWidth(122);
-    obj.button70:setMargins({left=2});
-    obj.button70:setName("button70");
+    obj.button65 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button65:setParent(obj.flowPart141);
+    obj.button65:setAlign("left");
+    obj.button65:setText("Prestidigitação");
+    obj.button65:setWidth(122);
+    obj.button65:setMargins({left=2});
+    obj.button65:setName("button65");
 
-    obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink168:setParent(obj.flowLayout35);
-    obj.dataLink168:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionprestidigitacao', 'macroExpertise.companionprestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink168:setName("dataLink168");
+    obj.dataLink157 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink157:setParent(obj.flowLayout30);
+    obj.dataLink157:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionprestidigitacao', 'macroExpertise.companionprestidigitacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink157:setName("dataLink157");
 
-    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink169:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink169:setField("atributos.companionconstituicao");
-    obj.dataLink169:setName("dataLink169");
+    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink158:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink158:setField("atributos.companionconstituicao");
+    obj.dataLink158:setName("dataLink158");
 
-    obj.flowPart244 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart244:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart244:setHeight(140);
-    obj.flowPart244:setMinWidth(320);
-    obj.flowPart244:setMaxWidth(420);
-    obj.flowPart244:setMinScaledWidth(305);
-    obj.flowPart244:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart244:setName("flowPart244");
-    obj.flowPart244:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart244:setVertAlign("leading");
+    obj.flowPart142 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart142:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart142:setHeight(140);
+    obj.flowPart142:setMinWidth(320);
+    obj.flowPart142:setMaxWidth(420);
+    obj.flowPart142:setMinScaledWidth(305);
+    obj.flowPart142:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart142:setName("flowPart142");
+    obj.flowPart142:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart142:setVertAlign("leading");
 
-    obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout100:setParent(obj.flowPart244);
-    obj.layout100:setLeft(6);
-    obj.layout100:setTop(12);
-    obj.layout100:setWidth(116);
-    obj.layout100:setHeight(115);
-    obj.layout100:setName("layout100");
+    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout89:setParent(obj.flowPart142);
+    obj.layout89:setLeft(6);
+    obj.layout89:setTop(12);
+    obj.layout89:setWidth(116);
+    obj.layout89:setHeight(115);
+    obj.layout89:setName("layout89");
 
-    obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit116:setParent(obj.layout100);
-    obj.edit116:setAlign("top");
-    obj.edit116:setMargins({left=30, right=30});
-    obj.edit116:setField("atributos.companionconstituicao");
-    obj.edit116:setHeight(30);
-    obj.edit116:setType("number");
-    obj.edit116:setMin(0);
-    obj.edit116:setMax(99);
-    obj.edit116:setName("edit116");
-    obj.edit116:setTransparent(true);
-    obj.edit116:setVertTextAlign("center");
-    obj.edit116:setHorzTextAlign("center");
-    obj.edit116:setFontSize(15);
-    obj.edit116:setFontColor("white");
+    obj.edit50 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit50:setParent(obj.layout89);
+    obj.edit50:setAlign("top");
+    obj.edit50:setMargins({left=30, right=30});
+    obj.edit50:setField("atributos.companionconstituicao");
+    obj.edit50:setHeight(30);
+    obj.edit50:setType("number");
+    obj.edit50:setMin(0);
+    obj.edit50:setMax(99);
+    obj.edit50:setName("edit50");
+    obj.edit50:setTransparent(true);
+    obj.edit50:setVertTextAlign("center");
+    obj.edit50:setHorzTextAlign("center");
+    obj.edit50:setFontSize(15);
+    obj.edit50:setFontColor("white");
 
-    obj.label156 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label156:setParent(obj.flowPart244);
-    obj.label156:setFrameRegion("modificador");
-    obj.label156:setField("atributos.modcompanionconstituicaostr");
-    obj.label156:setHorzTextAlign("center");
-    obj.label156:setVertTextAlign("center");
-    obj.label156:setFontSize(46);
-    lfm_setPropAsString(obj.label156, "fontStyle",  "bold");
-    obj.label156:setName("label156");
-    obj.label156:setFontColor("white");
+    obj.label102 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label102:setParent(obj.flowPart142);
+    obj.label102:setFrameRegion("modificador");
+    obj.label102:setField("atributos.modcompanionconstituicaostr");
+    obj.label102:setHorzTextAlign("center");
+    obj.label102:setVertTextAlign("center");
+    obj.label102:setFontSize(46);
+    lfm_setPropAsString(obj.label102, "fontStyle",  "bold");
+    obj.label102:setName("label102");
+    obj.label102:setFontColor("white");
 
-    obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout101:setParent(obj.flowPart244);
-    obj.layout101:setFrameRegion("titulo");
-    obj.layout101:setName("layout101");
+    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout90:setParent(obj.flowPart142);
+    obj.layout90:setFrameRegion("titulo");
+    obj.layout90:setName("layout90");
 
-    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button71:setParent(obj.layout101);
-    obj.button71:setAlign("client");
-    obj.button71:setText("CONSTITUIÇÃO");
-    obj.button71:setVertTextAlign("center");
-    obj.button71:setHorzTextAlign("center");
-    obj.button71:setName("button71");
+    obj.button66 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button66:setParent(obj.layout90);
+    obj.button66:setAlign("client");
+    obj.button66:setText("CONSTITUIÇÃO");
+    obj.button66:setVertTextAlign("center");
+    obj.button66:setHorzTextAlign("center");
+    obj.button66:setName("button66");
 
-    obj.flowLayout36 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout36:setParent(obj.flowPart244);
-    obj.flowLayout36:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout36:setAutoHeight(true);
-    obj.flowLayout36:setLineSpacing(0);
-    obj.flowLayout36:setHorzAlign("leading");
-    obj.flowLayout36:setName("flowLayout36");
-    obj.flowLayout36:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout36:setVertAlign("leading");
+    obj.flowLayout31 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout31:setParent(obj.flowPart142);
+    obj.flowLayout31:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout31:setAutoHeight(true);
+    obj.flowLayout31:setLineSpacing(0);
+    obj.flowLayout31:setHorzAlign("leading");
+    obj.flowLayout31:setName("flowLayout31");
+    obj.flowLayout31:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout31:setVertAlign("leading");
 
-    obj.flowPart245 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart245:setParent(obj.flowLayout36);
-    obj.flowPart245:setMinWidth(206);
-    obj.flowPart245:setMaxWidth(250);
-    obj.flowPart245:setHeight(17);
-    obj.flowPart245:setName("flowPart245");
-    obj.flowPart245:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart245:setVertAlign("leading");
+    obj.flowPart143 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart143:setParent(obj.flowLayout31);
+    obj.flowPart143:setMinWidth(206);
+    obj.flowPart143:setMaxWidth(250);
+    obj.flowPart143:setHeight(17);
+    obj.flowPart143:setName("flowPart143");
+    obj.flowPart143:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart143:setVertAlign("leading");
 
     obj.cbProfcompanionconstituicao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionconstituicao:setParent(obj.flowPart245);
+    obj.cbProfcompanionconstituicao:setParent(obj.flowPart143);
     obj.cbProfcompanionconstituicao:setName("cbProfcompanionconstituicao");
     obj.cbProfcompanionconstituicao:setAlign("left");
     obj.cbProfcompanionconstituicao:setField("resistencias.companionconstituicao");
@@ -12898,25 +9997,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink170:setParent(obj.flowPart245);
-    obj.dataLink170:setField("macroExpertise.companionconstituicao");
-    obj.dataLink170:setName("dataLink170");
+    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink159:setParent(obj.flowPart143);
+    obj.dataLink159:setField("macroExpertise.companionconstituicao");
+    obj.dataLink159:setName("dataLink159");
 
-    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink171:setParent(obj.flowPart245);
-    obj.dataLink171:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink171:setName("dataLink171");
+    obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink160:setParent(obj.flowPart143);
+    obj.dataLink160:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink160:setName("dataLink160");
 
-    obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout102:setParent(obj.flowPart245);
-    obj.layout102:setAlign("left");
-    obj.layout102:setWidth(26);
-    obj.layout102:setMargins({left=2});
-    obj.layout102:setName("layout102");
+    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout91:setParent(obj.flowPart143);
+    obj.layout91:setAlign("left");
+    obj.layout91:setWidth(26);
+    obj.layout91:setMargins({left=2});
+    obj.layout91:setName("layout91");
 
     obj.labProfcompanionconstituicao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionconstituicao:setParent(obj.layout102);
+    obj.labProfcompanionconstituicao:setParent(obj.layout91);
     obj.labProfcompanionconstituicao:setName("labProfcompanionconstituicao");
     obj.labProfcompanionconstituicao:setField("resistencias.bonuscompanionconstituicaostr");
     obj.labProfcompanionconstituicao:setAlign("client");
@@ -12926,36 +10025,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionconstituicao:setFontColor("white");
 
     obj.horzLine45 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine45:setParent(obj.layout102);
+    obj.horzLine45:setParent(obj.layout91);
     obj.horzLine45:setStrokeColor("white");
     obj.horzLine45:setStrokeSize(1);
     obj.horzLine45:setAlign("bottom");
     obj.horzLine45:setName("horzLine45");
 
-    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button72:setParent(obj.flowPart245);
-    obj.button72:setAlign("left");
-    obj.button72:setText("Resistência");
-    obj.button72:setWidth(122);
-    obj.button72:setMargins({left=2});
-    obj.button72:setName("button72");
+    obj.button67 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button67:setParent(obj.flowPart143);
+    obj.button67:setAlign("left");
+    obj.button67:setText("Resistência");
+    obj.button67:setWidth(122);
+    obj.button67:setMargins({left=2});
+    obj.button67:setName("button67");
 
-    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink172:setParent(obj.flowLayout36);
-    obj.dataLink172:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'resistencias.companionconstituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink172:setName("dataLink172");
+    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink161:setParent(obj.flowLayout31);
+    obj.dataLink161:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'resistencias.companionconstituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink161:setName("dataLink161");
 
-    obj.flowPart246 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart246:setParent(obj.flowLayout36);
-    obj.flowPart246:setMinWidth(206);
-    obj.flowPart246:setMaxWidth(250);
-    obj.flowPart246:setHeight(17);
-    obj.flowPart246:setName("flowPart246");
-    obj.flowPart246:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart246:setVertAlign("leading");
+    obj.flowPart144 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart144:setParent(obj.flowLayout31);
+    obj.flowPart144:setMinWidth(206);
+    obj.flowPart144:setMaxWidth(250);
+    obj.flowPart144:setHeight(17);
+    obj.flowPart144:setName("flowPart144");
+    obj.flowPart144:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart144:setVertAlign("leading");
 
     obj.cbProfcompanionconcentracao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionconcentracao:setParent(obj.flowPart246);
+    obj.cbProfcompanionconcentracao:setParent(obj.flowPart144);
     obj.cbProfcompanionconcentracao:setName("cbProfcompanionconcentracao");
     obj.cbProfcompanionconcentracao:setAlign("left");
     obj.cbProfcompanionconcentracao:setField("pericias.companionconcentracao");
@@ -12997,25 +10096,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink173:setParent(obj.flowPart246);
-    obj.dataLink173:setField("macroExpertise.companionconcentracao");
-    obj.dataLink173:setName("dataLink173");
+    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink162:setParent(obj.flowPart144);
+    obj.dataLink162:setField("macroExpertise.companionconcentracao");
+    obj.dataLink162:setName("dataLink162");
 
-    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink174:setParent(obj.flowPart246);
-    obj.dataLink174:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink174:setName("dataLink174");
+    obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink163:setParent(obj.flowPart144);
+    obj.dataLink163:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink163:setName("dataLink163");
 
-    obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout103:setParent(obj.flowPart246);
-    obj.layout103:setAlign("left");
-    obj.layout103:setWidth(26);
-    obj.layout103:setMargins({left=2});
-    obj.layout103:setName("layout103");
+    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout92:setParent(obj.flowPart144);
+    obj.layout92:setAlign("left");
+    obj.layout92:setWidth(26);
+    obj.layout92:setMargins({left=2});
+    obj.layout92:setName("layout92");
 
     obj.labProfcompanionconcentracao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionconcentracao:setParent(obj.layout103);
+    obj.labProfcompanionconcentracao:setParent(obj.layout92);
     obj.labProfcompanionconcentracao:setName("labProfcompanionconcentracao");
     obj.labProfcompanionconcentracao:setField("pericias.bonuscompanionconcentracaostr");
     obj.labProfcompanionconcentracao:setAlign("client");
@@ -13025,36 +10124,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionconcentracao:setFontColor("white");
 
     obj.horzLine46 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine46:setParent(obj.layout103);
+    obj.horzLine46:setParent(obj.layout92);
     obj.horzLine46:setStrokeColor("white");
     obj.horzLine46:setStrokeSize(1);
     obj.horzLine46:setAlign("bottom");
     obj.horzLine46:setName("horzLine46");
 
-    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button73:setParent(obj.flowPart246);
-    obj.button73:setAlign("left");
-    obj.button73:setText("Concentração");
-    obj.button73:setWidth(122);
-    obj.button73:setMargins({left=2});
-    obj.button73:setName("button73");
+    obj.button68 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button68:setParent(obj.flowPart144);
+    obj.button68:setAlign("left");
+    obj.button68:setText("Concentração");
+    obj.button68:setWidth(122);
+    obj.button68:setMargins({left=2});
+    obj.button68:setName("button68");
 
-    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink175:setParent(obj.flowLayout36);
-    obj.dataLink175:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companionconcentracao', 'macroExpertise.companionconcentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink175:setName("dataLink175");
+    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink164:setParent(obj.flowLayout31);
+    obj.dataLink164:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companionconcentracao', 'macroExpertise.companionconcentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink164:setName("dataLink164");
 
-    obj.flowPart247 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart247:setParent(obj.flowLayout36);
-    obj.flowPart247:setMinWidth(206);
-    obj.flowPart247:setMaxWidth(250);
-    obj.flowPart247:setHeight(17);
-    obj.flowPart247:setName("flowPart247");
-    obj.flowPart247:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart247:setVertAlign("leading");
+    obj.flowPart145 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart145:setParent(obj.flowLayout31);
+    obj.flowPart145:setMinWidth(206);
+    obj.flowPart145:setMaxWidth(250);
+    obj.flowPart145:setHeight(17);
+    obj.flowPart145:setName("flowPart145");
+    obj.flowPart145:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart145:setVertAlign("leading");
 
     obj.cbProfcompaniontolerancia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompaniontolerancia:setParent(obj.flowPart247);
+    obj.cbProfcompaniontolerancia:setParent(obj.flowPart145);
     obj.cbProfcompaniontolerancia:setName("cbProfcompaniontolerancia");
     obj.cbProfcompaniontolerancia:setAlign("left");
     obj.cbProfcompaniontolerancia:setField("pericias.companiontolerancia");
@@ -13096,25 +10195,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink176:setParent(obj.flowPart247);
-    obj.dataLink176:setField("macroExpertise.companiontolerancia");
-    obj.dataLink176:setName("dataLink176");
+    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink165:setParent(obj.flowPart145);
+    obj.dataLink165:setField("macroExpertise.companiontolerancia");
+    obj.dataLink165:setName("dataLink165");
 
-    obj.dataLink177 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink177:setParent(obj.flowPart247);
-    obj.dataLink177:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink177:setName("dataLink177");
+    obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink166:setParent(obj.flowPart145);
+    obj.dataLink166:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink166:setName("dataLink166");
 
-    obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout104:setParent(obj.flowPart247);
-    obj.layout104:setAlign("left");
-    obj.layout104:setWidth(26);
-    obj.layout104:setMargins({left=2});
-    obj.layout104:setName("layout104");
+    obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout93:setParent(obj.flowPart145);
+    obj.layout93:setAlign("left");
+    obj.layout93:setWidth(26);
+    obj.layout93:setMargins({left=2});
+    obj.layout93:setName("layout93");
 
     obj.labProfcompaniontolerancia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompaniontolerancia:setParent(obj.layout104);
+    obj.labProfcompaniontolerancia:setParent(obj.layout93);
     obj.labProfcompaniontolerancia:setName("labProfcompaniontolerancia");
     obj.labProfcompaniontolerancia:setField("pericias.bonuscompaniontoleranciastr");
     obj.labProfcompaniontolerancia:setAlign("client");
@@ -13124,110 +10223,110 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompaniontolerancia:setFontColor("white");
 
     obj.horzLine47 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine47:setParent(obj.layout104);
+    obj.horzLine47:setParent(obj.layout93);
     obj.horzLine47:setStrokeColor("white");
     obj.horzLine47:setStrokeSize(1);
     obj.horzLine47:setAlign("bottom");
     obj.horzLine47:setName("horzLine47");
 
-    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button74:setParent(obj.flowPart247);
-    obj.button74:setAlign("left");
-    obj.button74:setText("Tolerancia");
-    obj.button74:setWidth(122);
-    obj.button74:setMargins({left=2});
-    obj.button74:setName("button74");
+    obj.button69 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button69:setParent(obj.flowPart145);
+    obj.button69:setAlign("left");
+    obj.button69:setText("Tolerancia");
+    obj.button69:setWidth(122);
+    obj.button69:setMargins({left=2});
+    obj.button69:setName("button69");
 
-    obj.dataLink178 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink178:setParent(obj.flowLayout36);
-    obj.dataLink178:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companiontolerancia', 'macroExpertise.companiontolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink178:setName("dataLink178");
+    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink167:setParent(obj.flowLayout31);
+    obj.dataLink167:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companiontolerancia', 'macroExpertise.companiontolerancia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink167:setName("dataLink167");
 
-    obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink179:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink179:setField("atributos.companioninteligencia");
-    obj.dataLink179:setName("dataLink179");
+    obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink168:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink168:setField("atributos.companioninteligencia");
+    obj.dataLink168:setName("dataLink168");
 
-    obj.flowPart248 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart248:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart248:setHeight(140);
-    obj.flowPart248:setMinWidth(320);
-    obj.flowPart248:setMaxWidth(420);
-    obj.flowPart248:setMinScaledWidth(305);
-    obj.flowPart248:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart248:setName("flowPart248");
-    obj.flowPart248:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart248:setVertAlign("leading");
+    obj.flowPart146 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart146:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart146:setHeight(140);
+    obj.flowPart146:setMinWidth(320);
+    obj.flowPart146:setMaxWidth(420);
+    obj.flowPart146:setMinScaledWidth(305);
+    obj.flowPart146:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart146:setName("flowPart146");
+    obj.flowPart146:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart146:setVertAlign("leading");
 
-    obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout105:setParent(obj.flowPart248);
-    obj.layout105:setLeft(6);
-    obj.layout105:setTop(12);
-    obj.layout105:setWidth(116);
-    obj.layout105:setHeight(115);
-    obj.layout105:setName("layout105");
+    obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout94:setParent(obj.flowPart146);
+    obj.layout94:setLeft(6);
+    obj.layout94:setTop(12);
+    obj.layout94:setWidth(116);
+    obj.layout94:setHeight(115);
+    obj.layout94:setName("layout94");
 
-    obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit117:setParent(obj.layout105);
-    obj.edit117:setAlign("top");
-    obj.edit117:setMargins({left=30, right=30});
-    obj.edit117:setField("atributos.companioninteligencia");
-    obj.edit117:setHeight(30);
-    obj.edit117:setType("number");
-    obj.edit117:setMin(0);
-    obj.edit117:setMax(99);
-    obj.edit117:setName("edit117");
-    obj.edit117:setTransparent(true);
-    obj.edit117:setVertTextAlign("center");
-    obj.edit117:setHorzTextAlign("center");
-    obj.edit117:setFontSize(15);
-    obj.edit117:setFontColor("white");
+    obj.edit51 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit51:setParent(obj.layout94);
+    obj.edit51:setAlign("top");
+    obj.edit51:setMargins({left=30, right=30});
+    obj.edit51:setField("atributos.companioninteligencia");
+    obj.edit51:setHeight(30);
+    obj.edit51:setType("number");
+    obj.edit51:setMin(0);
+    obj.edit51:setMax(99);
+    obj.edit51:setName("edit51");
+    obj.edit51:setTransparent(true);
+    obj.edit51:setVertTextAlign("center");
+    obj.edit51:setHorzTextAlign("center");
+    obj.edit51:setFontSize(15);
+    obj.edit51:setFontColor("white");
 
-    obj.label157 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label157:setParent(obj.flowPart248);
-    obj.label157:setFrameRegion("modificador");
-    obj.label157:setField("atributos.modcompanioninteligenciastr");
-    obj.label157:setHorzTextAlign("center");
-    obj.label157:setVertTextAlign("center");
-    obj.label157:setFontSize(46);
-    lfm_setPropAsString(obj.label157, "fontStyle",  "bold");
-    obj.label157:setName("label157");
-    obj.label157:setFontColor("white");
+    obj.label103 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label103:setParent(obj.flowPart146);
+    obj.label103:setFrameRegion("modificador");
+    obj.label103:setField("atributos.modcompanioninteligenciastr");
+    obj.label103:setHorzTextAlign("center");
+    obj.label103:setVertTextAlign("center");
+    obj.label103:setFontSize(46);
+    lfm_setPropAsString(obj.label103, "fontStyle",  "bold");
+    obj.label103:setName("label103");
+    obj.label103:setFontColor("white");
 
-    obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout106:setParent(obj.flowPart248);
-    obj.layout106:setFrameRegion("titulo");
-    obj.layout106:setName("layout106");
+    obj.layout95 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout95:setParent(obj.flowPart146);
+    obj.layout95:setFrameRegion("titulo");
+    obj.layout95:setName("layout95");
 
-    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button75:setParent(obj.layout106);
-    obj.button75:setAlign("client");
-    obj.button75:setText("INTELIGÊNCIA");
-    obj.button75:setVertTextAlign("center");
-    obj.button75:setHorzTextAlign("center");
-    obj.button75:setName("button75");
+    obj.button70 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button70:setParent(obj.layout95);
+    obj.button70:setAlign("client");
+    obj.button70:setText("INTELIGÊNCIA");
+    obj.button70:setVertTextAlign("center");
+    obj.button70:setHorzTextAlign("center");
+    obj.button70:setName("button70");
 
-    obj.flowLayout37 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout37:setParent(obj.flowPart248);
-    obj.flowLayout37:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout37:setAutoHeight(true);
-    obj.flowLayout37:setLineSpacing(0);
-    obj.flowLayout37:setHorzAlign("leading");
-    obj.flowLayout37:setName("flowLayout37");
-    obj.flowLayout37:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout37:setVertAlign("leading");
+    obj.flowLayout32 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout32:setParent(obj.flowPart146);
+    obj.flowLayout32:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout32:setAutoHeight(true);
+    obj.flowLayout32:setLineSpacing(0);
+    obj.flowLayout32:setHorzAlign("leading");
+    obj.flowLayout32:setName("flowLayout32");
+    obj.flowLayout32:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout32:setVertAlign("leading");
 
-    obj.flowPart249 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart249:setParent(obj.flowLayout37);
-    obj.flowPart249:setMinWidth(206);
-    obj.flowPart249:setMaxWidth(250);
-    obj.flowPart249:setHeight(17);
-    obj.flowPart249:setName("flowPart249");
-    obj.flowPart249:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart249:setVertAlign("leading");
+    obj.flowPart147 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart147:setParent(obj.flowLayout32);
+    obj.flowPart147:setMinWidth(206);
+    obj.flowPart147:setMaxWidth(250);
+    obj.flowPart147:setHeight(17);
+    obj.flowPart147:setName("flowPart147");
+    obj.flowPart147:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart147:setVertAlign("leading");
 
     obj.cbProfcompanioninteligencia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioninteligencia:setParent(obj.flowPart249);
+    obj.cbProfcompanioninteligencia:setParent(obj.flowPart147);
     obj.cbProfcompanioninteligencia:setName("cbProfcompanioninteligencia");
     obj.cbProfcompanioninteligencia:setAlign("left");
     obj.cbProfcompanioninteligencia:setField("resistencias.companioninteligencia");
@@ -13269,25 +10368,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink180 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink180:setParent(obj.flowPart249);
-    obj.dataLink180:setField("macroExpertise.companioninteligencia");
-    obj.dataLink180:setName("dataLink180");
+    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink169:setParent(obj.flowPart147);
+    obj.dataLink169:setField("macroExpertise.companioninteligencia");
+    obj.dataLink169:setName("dataLink169");
 
-    obj.dataLink181 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink181:setParent(obj.flowPart249);
-    obj.dataLink181:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink181:setName("dataLink181");
+    obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink170:setParent(obj.flowPart147);
+    obj.dataLink170:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink170:setName("dataLink170");
 
-    obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout107:setParent(obj.flowPart249);
-    obj.layout107:setAlign("left");
-    obj.layout107:setWidth(26);
-    obj.layout107:setMargins({left=2});
-    obj.layout107:setName("layout107");
+    obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout96:setParent(obj.flowPart147);
+    obj.layout96:setAlign("left");
+    obj.layout96:setWidth(26);
+    obj.layout96:setMargins({left=2});
+    obj.layout96:setName("layout96");
 
     obj.labProfcompanioninteligencia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioninteligencia:setParent(obj.layout107);
+    obj.labProfcompanioninteligencia:setParent(obj.layout96);
     obj.labProfcompanioninteligencia:setName("labProfcompanioninteligencia");
     obj.labProfcompanioninteligencia:setField("resistencias.bonuscompanioninteligenciastr");
     obj.labProfcompanioninteligencia:setAlign("client");
@@ -13297,36 +10396,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioninteligencia:setFontColor("white");
 
     obj.horzLine48 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine48:setParent(obj.layout107);
+    obj.horzLine48:setParent(obj.layout96);
     obj.horzLine48:setStrokeColor("white");
     obj.horzLine48:setStrokeSize(1);
     obj.horzLine48:setAlign("bottom");
     obj.horzLine48:setName("horzLine48");
 
-    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button76:setParent(obj.flowPart249);
-    obj.button76:setAlign("left");
-    obj.button76:setText("Resistência");
-    obj.button76:setWidth(122);
-    obj.button76:setMargins({left=2});
-    obj.button76:setName("button76");
+    obj.button71 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button71:setParent(obj.flowPart147);
+    obj.button71:setAlign("left");
+    obj.button71:setText("Resistência");
+    obj.button71:setWidth(122);
+    obj.button71:setMargins({left=2});
+    obj.button71:setName("button71");
 
-    obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink182:setParent(obj.flowLayout37);
-    obj.dataLink182:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'resistencias.companioninteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink182:setName("dataLink182");
+    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink171:setParent(obj.flowLayout32);
+    obj.dataLink171:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'resistencias.companioninteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink171:setName("dataLink171");
 
-    obj.flowPart250 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart250:setParent(obj.flowLayout37);
-    obj.flowPart250:setMinWidth(206);
-    obj.flowPart250:setMaxWidth(250);
-    obj.flowPart250:setHeight(17);
-    obj.flowPart250:setName("flowPart250");
-    obj.flowPart250:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart250:setVertAlign("leading");
+    obj.flowPart148 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart148:setParent(obj.flowLayout32);
+    obj.flowPart148:setMinWidth(206);
+    obj.flowPart148:setMaxWidth(250);
+    obj.flowPart148:setHeight(17);
+    obj.flowPart148:setName("flowPart148");
+    obj.flowPart148:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart148:setVertAlign("leading");
 
     obj.cbProfcompanionarcanismo = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionarcanismo:setParent(obj.flowPart250);
+    obj.cbProfcompanionarcanismo:setParent(obj.flowPart148);
     obj.cbProfcompanionarcanismo:setName("cbProfcompanionarcanismo");
     obj.cbProfcompanionarcanismo:setAlign("left");
     obj.cbProfcompanionarcanismo:setField("pericias.companionarcanismo");
@@ -13368,25 +10467,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink183 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink183:setParent(obj.flowPart250);
-    obj.dataLink183:setField("macroExpertise.companionarcanismo");
-    obj.dataLink183:setName("dataLink183");
+    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink172:setParent(obj.flowPart148);
+    obj.dataLink172:setField("macroExpertise.companionarcanismo");
+    obj.dataLink172:setName("dataLink172");
 
-    obj.dataLink184 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink184:setParent(obj.flowPart250);
-    obj.dataLink184:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink184:setName("dataLink184");
+    obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink173:setParent(obj.flowPart148);
+    obj.dataLink173:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink173:setName("dataLink173");
 
-    obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout108:setParent(obj.flowPart250);
-    obj.layout108:setAlign("left");
-    obj.layout108:setWidth(26);
-    obj.layout108:setMargins({left=2});
-    obj.layout108:setName("layout108");
+    obj.layout97 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout97:setParent(obj.flowPart148);
+    obj.layout97:setAlign("left");
+    obj.layout97:setWidth(26);
+    obj.layout97:setMargins({left=2});
+    obj.layout97:setName("layout97");
 
     obj.labProfcompanionarcanismo = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionarcanismo:setParent(obj.layout108);
+    obj.labProfcompanionarcanismo:setParent(obj.layout97);
     obj.labProfcompanionarcanismo:setName("labProfcompanionarcanismo");
     obj.labProfcompanionarcanismo:setField("pericias.bonuscompanionarcanismostr");
     obj.labProfcompanionarcanismo:setAlign("client");
@@ -13396,36 +10495,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionarcanismo:setFontColor("white");
 
     obj.horzLine49 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine49:setParent(obj.layout108);
+    obj.horzLine49:setParent(obj.layout97);
     obj.horzLine49:setStrokeColor("white");
     obj.horzLine49:setStrokeSize(1);
     obj.horzLine49:setAlign("bottom");
     obj.horzLine49:setName("horzLine49");
 
-    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button77:setParent(obj.flowPart250);
-    obj.button77:setAlign("left");
-    obj.button77:setText("Arcanismo");
-    obj.button77:setWidth(122);
-    obj.button77:setMargins({left=2});
-    obj.button77:setName("button77");
+    obj.button72 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button72:setParent(obj.flowPart148);
+    obj.button72:setAlign("left");
+    obj.button72:setText("Arcanismo");
+    obj.button72:setWidth(122);
+    obj.button72:setMargins({left=2});
+    obj.button72:setName("button72");
 
-    obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink185:setParent(obj.flowLayout37);
-    obj.dataLink185:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionarcanismo', 'macroExpertise.companionarcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink185:setName("dataLink185");
+    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink174:setParent(obj.flowLayout32);
+    obj.dataLink174:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionarcanismo', 'macroExpertise.companionarcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink174:setName("dataLink174");
 
-    obj.flowPart251 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart251:setParent(obj.flowLayout37);
-    obj.flowPart251:setMinWidth(206);
-    obj.flowPart251:setMaxWidth(250);
-    obj.flowPart251:setHeight(17);
-    obj.flowPart251:setName("flowPart251");
-    obj.flowPart251:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart251:setVertAlign("leading");
+    obj.flowPart149 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart149:setParent(obj.flowLayout32);
+    obj.flowPart149:setMinWidth(206);
+    obj.flowPart149:setMaxWidth(250);
+    obj.flowPart149:setHeight(17);
+    obj.flowPart149:setName("flowPart149");
+    obj.flowPart149:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart149:setVertAlign("leading");
 
     obj.cbProfcompanionhistoria = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionhistoria:setParent(obj.flowPart251);
+    obj.cbProfcompanionhistoria:setParent(obj.flowPart149);
     obj.cbProfcompanionhistoria:setName("cbProfcompanionhistoria");
     obj.cbProfcompanionhistoria:setAlign("left");
     obj.cbProfcompanionhistoria:setField("pericias.companionhistoria");
@@ -13467,25 +10566,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink186 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink186:setParent(obj.flowPart251);
-    obj.dataLink186:setField("macroExpertise.companionhistoria");
-    obj.dataLink186:setName("dataLink186");
+    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink175:setParent(obj.flowPart149);
+    obj.dataLink175:setField("macroExpertise.companionhistoria");
+    obj.dataLink175:setName("dataLink175");
 
-    obj.dataLink187 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink187:setParent(obj.flowPart251);
-    obj.dataLink187:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink187:setName("dataLink187");
+    obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink176:setParent(obj.flowPart149);
+    obj.dataLink176:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink176:setName("dataLink176");
 
-    obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout109:setParent(obj.flowPart251);
-    obj.layout109:setAlign("left");
-    obj.layout109:setWidth(26);
-    obj.layout109:setMargins({left=2});
-    obj.layout109:setName("layout109");
+    obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout98:setParent(obj.flowPart149);
+    obj.layout98:setAlign("left");
+    obj.layout98:setWidth(26);
+    obj.layout98:setMargins({left=2});
+    obj.layout98:setName("layout98");
 
     obj.labProfcompanionhistoria = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionhistoria:setParent(obj.layout109);
+    obj.labProfcompanionhistoria:setParent(obj.layout98);
     obj.labProfcompanionhistoria:setName("labProfcompanionhistoria");
     obj.labProfcompanionhistoria:setField("pericias.bonuscompanionhistoriastr");
     obj.labProfcompanionhistoria:setAlign("client");
@@ -13495,36 +10594,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionhistoria:setFontColor("white");
 
     obj.horzLine50 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine50:setParent(obj.layout109);
+    obj.horzLine50:setParent(obj.layout98);
     obj.horzLine50:setStrokeColor("white");
     obj.horzLine50:setStrokeSize(1);
     obj.horzLine50:setAlign("bottom");
     obj.horzLine50:setName("horzLine50");
 
-    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button78:setParent(obj.flowPart251);
-    obj.button78:setAlign("left");
-    obj.button78:setText("História");
-    obj.button78:setWidth(122);
-    obj.button78:setMargins({left=2});
-    obj.button78:setName("button78");
+    obj.button73 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button73:setParent(obj.flowPart149);
+    obj.button73:setAlign("left");
+    obj.button73:setText("História");
+    obj.button73:setWidth(122);
+    obj.button73:setMargins({left=2});
+    obj.button73:setName("button73");
 
-    obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink188:setParent(obj.flowLayout37);
-    obj.dataLink188:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionhistoria', 'macroExpertise.companionhistoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink188:setName("dataLink188");
+    obj.dataLink177 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink177:setParent(obj.flowLayout32);
+    obj.dataLink177:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionhistoria', 'macroExpertise.companionhistoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink177:setName("dataLink177");
 
-    obj.flowPart252 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart252:setParent(obj.flowLayout37);
-    obj.flowPart252:setMinWidth(206);
-    obj.flowPart252:setMaxWidth(250);
-    obj.flowPart252:setHeight(17);
-    obj.flowPart252:setName("flowPart252");
-    obj.flowPart252:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart252:setVertAlign("leading");
+    obj.flowPart150 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart150:setParent(obj.flowLayout32);
+    obj.flowPart150:setMinWidth(206);
+    obj.flowPart150:setMaxWidth(250);
+    obj.flowPart150:setHeight(17);
+    obj.flowPart150:setName("flowPart150");
+    obj.flowPart150:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart150:setVertAlign("leading");
 
     obj.cbProfcompanioninvestigacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioninvestigacao:setParent(obj.flowPart252);
+    obj.cbProfcompanioninvestigacao:setParent(obj.flowPart150);
     obj.cbProfcompanioninvestigacao:setName("cbProfcompanioninvestigacao");
     obj.cbProfcompanioninvestigacao:setAlign("left");
     obj.cbProfcompanioninvestigacao:setField("pericias.companioninvestigacao");
@@ -13566,25 +10665,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink189 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink189:setParent(obj.flowPart252);
-    obj.dataLink189:setField("macroExpertise.companioninvestigacao");
-    obj.dataLink189:setName("dataLink189");
+    obj.dataLink178 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink178:setParent(obj.flowPart150);
+    obj.dataLink178:setField("macroExpertise.companioninvestigacao");
+    obj.dataLink178:setName("dataLink178");
 
-    obj.dataLink190 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink190:setParent(obj.flowPart252);
-    obj.dataLink190:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink190:setName("dataLink190");
+    obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink179:setParent(obj.flowPart150);
+    obj.dataLink179:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink179:setName("dataLink179");
 
-    obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout110:setParent(obj.flowPart252);
-    obj.layout110:setAlign("left");
-    obj.layout110:setWidth(26);
-    obj.layout110:setMargins({left=2});
-    obj.layout110:setName("layout110");
+    obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout99:setParent(obj.flowPart150);
+    obj.layout99:setAlign("left");
+    obj.layout99:setWidth(26);
+    obj.layout99:setMargins({left=2});
+    obj.layout99:setName("layout99");
 
     obj.labProfcompanioninvestigacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioninvestigacao:setParent(obj.layout110);
+    obj.labProfcompanioninvestigacao:setParent(obj.layout99);
     obj.labProfcompanioninvestigacao:setName("labProfcompanioninvestigacao");
     obj.labProfcompanioninvestigacao:setField("pericias.bonuscompanioninvestigacaostr");
     obj.labProfcompanioninvestigacao:setAlign("client");
@@ -13594,36 +10693,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioninvestigacao:setFontColor("white");
 
     obj.horzLine51 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine51:setParent(obj.layout110);
+    obj.horzLine51:setParent(obj.layout99);
     obj.horzLine51:setStrokeColor("white");
     obj.horzLine51:setStrokeSize(1);
     obj.horzLine51:setAlign("bottom");
     obj.horzLine51:setName("horzLine51");
 
-    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button79:setParent(obj.flowPart252);
-    obj.button79:setAlign("left");
-    obj.button79:setText("Investigação");
-    obj.button79:setWidth(122);
-    obj.button79:setMargins({left=2});
-    obj.button79:setName("button79");
+    obj.button74 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button74:setParent(obj.flowPart150);
+    obj.button74:setAlign("left");
+    obj.button74:setText("Investigação");
+    obj.button74:setWidth(122);
+    obj.button74:setMargins({left=2});
+    obj.button74:setName("button74");
 
-    obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink191:setParent(obj.flowLayout37);
-    obj.dataLink191:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companioninvestigacao', 'macroExpertise.companioninvestigacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink191:setName("dataLink191");
+    obj.dataLink180 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink180:setParent(obj.flowLayout32);
+    obj.dataLink180:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companioninvestigacao', 'macroExpertise.companioninvestigacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink180:setName("dataLink180");
 
-    obj.flowPart253 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart253:setParent(obj.flowLayout37);
-    obj.flowPart253:setMinWidth(206);
-    obj.flowPart253:setMaxWidth(250);
-    obj.flowPart253:setHeight(17);
-    obj.flowPart253:setName("flowPart253");
-    obj.flowPart253:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart253:setVertAlign("leading");
+    obj.flowPart151 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart151:setParent(obj.flowLayout32);
+    obj.flowPart151:setMinWidth(206);
+    obj.flowPart151:setMaxWidth(250);
+    obj.flowPart151:setHeight(17);
+    obj.flowPart151:setName("flowPart151");
+    obj.flowPart151:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart151:setVertAlign("leading");
 
     obj.cbProfcompanionnatureza = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionnatureza:setParent(obj.flowPart253);
+    obj.cbProfcompanionnatureza:setParent(obj.flowPart151);
     obj.cbProfcompanionnatureza:setName("cbProfcompanionnatureza");
     obj.cbProfcompanionnatureza:setAlign("left");
     obj.cbProfcompanionnatureza:setField("pericias.companionnatureza");
@@ -13665,25 +10764,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink192 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink192:setParent(obj.flowPart253);
-    obj.dataLink192:setField("macroExpertise.companionnatureza");
-    obj.dataLink192:setName("dataLink192");
+    obj.dataLink181 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink181:setParent(obj.flowPart151);
+    obj.dataLink181:setField("macroExpertise.companionnatureza");
+    obj.dataLink181:setName("dataLink181");
 
-    obj.dataLink193 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink193:setParent(obj.flowPart253);
-    obj.dataLink193:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink193:setName("dataLink193");
+    obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink182:setParent(obj.flowPart151);
+    obj.dataLink182:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink182:setName("dataLink182");
 
-    obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout111:setParent(obj.flowPart253);
-    obj.layout111:setAlign("left");
-    obj.layout111:setWidth(26);
-    obj.layout111:setMargins({left=2});
-    obj.layout111:setName("layout111");
+    obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout100:setParent(obj.flowPart151);
+    obj.layout100:setAlign("left");
+    obj.layout100:setWidth(26);
+    obj.layout100:setMargins({left=2});
+    obj.layout100:setName("layout100");
 
     obj.labProfcompanionnatureza = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionnatureza:setParent(obj.layout111);
+    obj.labProfcompanionnatureza:setParent(obj.layout100);
     obj.labProfcompanionnatureza:setName("labProfcompanionnatureza");
     obj.labProfcompanionnatureza:setField("pericias.bonuscompanionnaturezastr");
     obj.labProfcompanionnatureza:setAlign("client");
@@ -13693,36 +10792,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionnatureza:setFontColor("white");
 
     obj.horzLine52 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine52:setParent(obj.layout111);
+    obj.horzLine52:setParent(obj.layout100);
     obj.horzLine52:setStrokeColor("white");
     obj.horzLine52:setStrokeSize(1);
     obj.horzLine52:setAlign("bottom");
     obj.horzLine52:setName("horzLine52");
 
-    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button80:setParent(obj.flowPart253);
-    obj.button80:setAlign("left");
-    obj.button80:setText("Natureza");
-    obj.button80:setWidth(122);
-    obj.button80:setMargins({left=2});
-    obj.button80:setName("button80");
+    obj.button75 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button75:setParent(obj.flowPart151);
+    obj.button75:setAlign("left");
+    obj.button75:setText("Natureza");
+    obj.button75:setWidth(122);
+    obj.button75:setMargins({left=2});
+    obj.button75:setName("button75");
 
-    obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink194:setParent(obj.flowLayout37);
-    obj.dataLink194:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionnatureza', 'macroExpertise.companionnatureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink194:setName("dataLink194");
+    obj.dataLink183 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink183:setParent(obj.flowLayout32);
+    obj.dataLink183:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionnatureza', 'macroExpertise.companionnatureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink183:setName("dataLink183");
 
-    obj.flowPart254 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart254:setParent(obj.flowLayout37);
-    obj.flowPart254:setMinWidth(206);
-    obj.flowPart254:setMaxWidth(250);
-    obj.flowPart254:setHeight(17);
-    obj.flowPart254:setName("flowPart254");
-    obj.flowPart254:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart254:setVertAlign("leading");
+    obj.flowPart152 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart152:setParent(obj.flowLayout32);
+    obj.flowPart152:setMinWidth(206);
+    obj.flowPart152:setMaxWidth(250);
+    obj.flowPart152:setHeight(17);
+    obj.flowPart152:setName("flowPart152");
+    obj.flowPart152:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart152:setVertAlign("leading");
 
     obj.cbProfcompanionreligiao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionreligiao:setParent(obj.flowPart254);
+    obj.cbProfcompanionreligiao:setParent(obj.flowPart152);
     obj.cbProfcompanionreligiao:setName("cbProfcompanionreligiao");
     obj.cbProfcompanionreligiao:setAlign("left");
     obj.cbProfcompanionreligiao:setField("pericias.companionreligiao");
@@ -13764,25 +10863,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink195 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink195:setParent(obj.flowPart254);
-    obj.dataLink195:setField("macroExpertise.companionreligiao");
-    obj.dataLink195:setName("dataLink195");
+    obj.dataLink184 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink184:setParent(obj.flowPart152);
+    obj.dataLink184:setField("macroExpertise.companionreligiao");
+    obj.dataLink184:setName("dataLink184");
 
-    obj.dataLink196 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink196:setParent(obj.flowPart254);
-    obj.dataLink196:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink196:setName("dataLink196");
+    obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink185:setParent(obj.flowPart152);
+    obj.dataLink185:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink185:setName("dataLink185");
 
-    obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout112:setParent(obj.flowPart254);
-    obj.layout112:setAlign("left");
-    obj.layout112:setWidth(26);
-    obj.layout112:setMargins({left=2});
-    obj.layout112:setName("layout112");
+    obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout101:setParent(obj.flowPart152);
+    obj.layout101:setAlign("left");
+    obj.layout101:setWidth(26);
+    obj.layout101:setMargins({left=2});
+    obj.layout101:setName("layout101");
 
     obj.labProfcompanionreligiao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionreligiao:setParent(obj.layout112);
+    obj.labProfcompanionreligiao:setParent(obj.layout101);
     obj.labProfcompanionreligiao:setName("labProfcompanionreligiao");
     obj.labProfcompanionreligiao:setField("pericias.bonuscompanionreligiaostr");
     obj.labProfcompanionreligiao:setAlign("client");
@@ -13792,110 +10891,110 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionreligiao:setFontColor("white");
 
     obj.horzLine53 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine53:setParent(obj.layout112);
+    obj.horzLine53:setParent(obj.layout101);
     obj.horzLine53:setStrokeColor("white");
     obj.horzLine53:setStrokeSize(1);
     obj.horzLine53:setAlign("bottom");
     obj.horzLine53:setName("horzLine53");
 
-    obj.button81 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button81:setParent(obj.flowPart254);
-    obj.button81:setAlign("left");
-    obj.button81:setText("Religião");
-    obj.button81:setWidth(122);
-    obj.button81:setMargins({left=2});
-    obj.button81:setName("button81");
+    obj.button76 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button76:setParent(obj.flowPart152);
+    obj.button76:setAlign("left");
+    obj.button76:setText("Religião");
+    obj.button76:setWidth(122);
+    obj.button76:setMargins({left=2});
+    obj.button76:setName("button76");
 
-    obj.dataLink197 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink197:setParent(obj.flowLayout37);
-    obj.dataLink197:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionreligiao', 'macroExpertise.companionreligiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink197:setName("dataLink197");
+    obj.dataLink186 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink186:setParent(obj.flowLayout32);
+    obj.dataLink186:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionreligiao', 'macroExpertise.companionreligiao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink186:setName("dataLink186");
 
-    obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink198:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink198:setField("atributos.companionsabedoria");
-    obj.dataLink198:setName("dataLink198");
+    obj.dataLink187 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink187:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink187:setField("atributos.companionsabedoria");
+    obj.dataLink187:setName("dataLink187");
 
-    obj.flowPart255 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart255:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart255:setHeight(140);
-    obj.flowPart255:setMinWidth(320);
-    obj.flowPart255:setMaxWidth(420);
-    obj.flowPart255:setMinScaledWidth(305);
-    obj.flowPart255:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart255:setName("flowPart255");
-    obj.flowPart255:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart255:setVertAlign("leading");
+    obj.flowPart153 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart153:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart153:setHeight(140);
+    obj.flowPart153:setMinWidth(320);
+    obj.flowPart153:setMaxWidth(420);
+    obj.flowPart153:setMinScaledWidth(305);
+    obj.flowPart153:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart153:setName("flowPart153");
+    obj.flowPart153:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart153:setVertAlign("leading");
 
-    obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout113:setParent(obj.flowPart255);
-    obj.layout113:setLeft(6);
-    obj.layout113:setTop(12);
-    obj.layout113:setWidth(116);
-    obj.layout113:setHeight(115);
-    obj.layout113:setName("layout113");
+    obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout102:setParent(obj.flowPart153);
+    obj.layout102:setLeft(6);
+    obj.layout102:setTop(12);
+    obj.layout102:setWidth(116);
+    obj.layout102:setHeight(115);
+    obj.layout102:setName("layout102");
 
-    obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit118:setParent(obj.layout113);
-    obj.edit118:setAlign("top");
-    obj.edit118:setMargins({left=30, right=30});
-    obj.edit118:setField("atributos.companionsabedoria");
-    obj.edit118:setHeight(30);
-    obj.edit118:setType("number");
-    obj.edit118:setMin(0);
-    obj.edit118:setMax(99);
-    obj.edit118:setName("edit118");
-    obj.edit118:setTransparent(true);
-    obj.edit118:setVertTextAlign("center");
-    obj.edit118:setHorzTextAlign("center");
-    obj.edit118:setFontSize(15);
-    obj.edit118:setFontColor("white");
+    obj.edit52 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit52:setParent(obj.layout102);
+    obj.edit52:setAlign("top");
+    obj.edit52:setMargins({left=30, right=30});
+    obj.edit52:setField("atributos.companionsabedoria");
+    obj.edit52:setHeight(30);
+    obj.edit52:setType("number");
+    obj.edit52:setMin(0);
+    obj.edit52:setMax(99);
+    obj.edit52:setName("edit52");
+    obj.edit52:setTransparent(true);
+    obj.edit52:setVertTextAlign("center");
+    obj.edit52:setHorzTextAlign("center");
+    obj.edit52:setFontSize(15);
+    obj.edit52:setFontColor("white");
 
-    obj.label158 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label158:setParent(obj.flowPart255);
-    obj.label158:setFrameRegion("modificador");
-    obj.label158:setField("atributos.modcompanionsabedoriastr");
-    obj.label158:setHorzTextAlign("center");
-    obj.label158:setVertTextAlign("center");
-    obj.label158:setFontSize(46);
-    lfm_setPropAsString(obj.label158, "fontStyle",  "bold");
-    obj.label158:setName("label158");
-    obj.label158:setFontColor("white");
+    obj.label104 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label104:setParent(obj.flowPart153);
+    obj.label104:setFrameRegion("modificador");
+    obj.label104:setField("atributos.modcompanionsabedoriastr");
+    obj.label104:setHorzTextAlign("center");
+    obj.label104:setVertTextAlign("center");
+    obj.label104:setFontSize(46);
+    lfm_setPropAsString(obj.label104, "fontStyle",  "bold");
+    obj.label104:setName("label104");
+    obj.label104:setFontColor("white");
 
-    obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout114:setParent(obj.flowPart255);
-    obj.layout114:setFrameRegion("titulo");
-    obj.layout114:setName("layout114");
+    obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout103:setParent(obj.flowPart153);
+    obj.layout103:setFrameRegion("titulo");
+    obj.layout103:setName("layout103");
 
-    obj.button82 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button82:setParent(obj.layout114);
-    obj.button82:setAlign("client");
-    obj.button82:setText("SABEDORIA");
-    obj.button82:setVertTextAlign("center");
-    obj.button82:setHorzTextAlign("center");
-    obj.button82:setName("button82");
+    obj.button77 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button77:setParent(obj.layout103);
+    obj.button77:setAlign("client");
+    obj.button77:setText("SABEDORIA");
+    obj.button77:setVertTextAlign("center");
+    obj.button77:setHorzTextAlign("center");
+    obj.button77:setName("button77");
 
-    obj.flowLayout38 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout38:setParent(obj.flowPart255);
-    obj.flowLayout38:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout38:setAutoHeight(true);
-    obj.flowLayout38:setLineSpacing(0);
-    obj.flowLayout38:setHorzAlign("leading");
-    obj.flowLayout38:setName("flowLayout38");
-    obj.flowLayout38:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout38:setVertAlign("leading");
+    obj.flowLayout33 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout33:setParent(obj.flowPart153);
+    obj.flowLayout33:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout33:setAutoHeight(true);
+    obj.flowLayout33:setLineSpacing(0);
+    obj.flowLayout33:setHorzAlign("leading");
+    obj.flowLayout33:setName("flowLayout33");
+    obj.flowLayout33:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout33:setVertAlign("leading");
 
-    obj.flowPart256 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart256:setParent(obj.flowLayout38);
-    obj.flowPart256:setMinWidth(206);
-    obj.flowPart256:setMaxWidth(250);
-    obj.flowPart256:setHeight(17);
-    obj.flowPart256:setName("flowPart256");
-    obj.flowPart256:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart256:setVertAlign("leading");
+    obj.flowPart154 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart154:setParent(obj.flowLayout33);
+    obj.flowPart154:setMinWidth(206);
+    obj.flowPart154:setMaxWidth(250);
+    obj.flowPart154:setHeight(17);
+    obj.flowPart154:setName("flowPart154");
+    obj.flowPart154:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart154:setVertAlign("leading");
 
     obj.cbProfcompanionsabedoria = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionsabedoria:setParent(obj.flowPart256);
+    obj.cbProfcompanionsabedoria:setParent(obj.flowPart154);
     obj.cbProfcompanionsabedoria:setName("cbProfcompanionsabedoria");
     obj.cbProfcompanionsabedoria:setAlign("left");
     obj.cbProfcompanionsabedoria:setField("resistencias.companionsabedoria");
@@ -13937,25 +11036,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink199 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink199:setParent(obj.flowPart256);
-    obj.dataLink199:setField("macroExpertise.companionsabedoria");
-    obj.dataLink199:setName("dataLink199");
+    obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink188:setParent(obj.flowPart154);
+    obj.dataLink188:setField("macroExpertise.companionsabedoria");
+    obj.dataLink188:setName("dataLink188");
 
-    obj.dataLink200 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink200:setParent(obj.flowPart256);
-    obj.dataLink200:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink200:setName("dataLink200");
+    obj.dataLink189 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink189:setParent(obj.flowPart154);
+    obj.dataLink189:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink189:setName("dataLink189");
 
-    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout115:setParent(obj.flowPart256);
-    obj.layout115:setAlign("left");
-    obj.layout115:setWidth(26);
-    obj.layout115:setMargins({left=2});
-    obj.layout115:setName("layout115");
+    obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout104:setParent(obj.flowPart154);
+    obj.layout104:setAlign("left");
+    obj.layout104:setWidth(26);
+    obj.layout104:setMargins({left=2});
+    obj.layout104:setName("layout104");
 
     obj.labProfcompanionsabedoria = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionsabedoria:setParent(obj.layout115);
+    obj.labProfcompanionsabedoria:setParent(obj.layout104);
     obj.labProfcompanionsabedoria:setName("labProfcompanionsabedoria");
     obj.labProfcompanionsabedoria:setField("resistencias.bonuscompanionsabedoriastr");
     obj.labProfcompanionsabedoria:setAlign("client");
@@ -13965,36 +11064,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionsabedoria:setFontColor("white");
 
     obj.horzLine54 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine54:setParent(obj.layout115);
+    obj.horzLine54:setParent(obj.layout104);
     obj.horzLine54:setStrokeColor("white");
     obj.horzLine54:setStrokeSize(1);
     obj.horzLine54:setAlign("bottom");
     obj.horzLine54:setName("horzLine54");
 
-    obj.button83 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button83:setParent(obj.flowPart256);
-    obj.button83:setAlign("left");
-    obj.button83:setText("Resistência");
-    obj.button83:setWidth(122);
-    obj.button83:setMargins({left=2});
-    obj.button83:setName("button83");
+    obj.button78 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button78:setParent(obj.flowPart154);
+    obj.button78:setAlign("left");
+    obj.button78:setText("Resistência");
+    obj.button78:setWidth(122);
+    obj.button78:setMargins({left=2});
+    obj.button78:setName("button78");
 
-    obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink201:setParent(obj.flowLayout38);
-    obj.dataLink201:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'resistencias.companionsabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink201:setName("dataLink201");
+    obj.dataLink190 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink190:setParent(obj.flowLayout33);
+    obj.dataLink190:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'resistencias.companionsabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink190:setName("dataLink190");
 
-    obj.flowPart257 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart257:setParent(obj.flowLayout38);
-    obj.flowPart257:setMinWidth(206);
-    obj.flowPart257:setMaxWidth(250);
-    obj.flowPart257:setHeight(17);
-    obj.flowPart257:setName("flowPart257");
-    obj.flowPart257:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart257:setVertAlign("leading");
+    obj.flowPart155 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart155:setParent(obj.flowLayout33);
+    obj.flowPart155:setMinWidth(206);
+    obj.flowPart155:setMaxWidth(250);
+    obj.flowPart155:setHeight(17);
+    obj.flowPart155:setName("flowPart155");
+    obj.flowPart155:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart155:setVertAlign("leading");
 
     obj.cbProfcompanionadestrarAnimais = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionadestrarAnimais:setParent(obj.flowPart257);
+    obj.cbProfcompanionadestrarAnimais:setParent(obj.flowPart155);
     obj.cbProfcompanionadestrarAnimais:setName("cbProfcompanionadestrarAnimais");
     obj.cbProfcompanionadestrarAnimais:setAlign("left");
     obj.cbProfcompanionadestrarAnimais:setField("pericias.companionadestrarAnimais");
@@ -14036,25 +11135,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink202 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink202:setParent(obj.flowPart257);
-    obj.dataLink202:setField("macroExpertise.companionadestrarAnimais");
-    obj.dataLink202:setName("dataLink202");
+    obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink191:setParent(obj.flowPart155);
+    obj.dataLink191:setField("macroExpertise.companionadestrarAnimais");
+    obj.dataLink191:setName("dataLink191");
 
-    obj.dataLink203 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink203:setParent(obj.flowPart257);
-    obj.dataLink203:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink203:setName("dataLink203");
+    obj.dataLink192 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink192:setParent(obj.flowPart155);
+    obj.dataLink192:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink192:setName("dataLink192");
 
-    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout116:setParent(obj.flowPart257);
-    obj.layout116:setAlign("left");
-    obj.layout116:setWidth(26);
-    obj.layout116:setMargins({left=2});
-    obj.layout116:setName("layout116");
+    obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout105:setParent(obj.flowPart155);
+    obj.layout105:setAlign("left");
+    obj.layout105:setWidth(26);
+    obj.layout105:setMargins({left=2});
+    obj.layout105:setName("layout105");
 
     obj.labProfcompanionadestrarAnimais = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionadestrarAnimais:setParent(obj.layout116);
+    obj.labProfcompanionadestrarAnimais:setParent(obj.layout105);
     obj.labProfcompanionadestrarAnimais:setName("labProfcompanionadestrarAnimais");
     obj.labProfcompanionadestrarAnimais:setField("pericias.bonuscompanionadestrarAnimaisstr");
     obj.labProfcompanionadestrarAnimais:setAlign("client");
@@ -14064,36 +11163,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionadestrarAnimais:setFontColor("white");
 
     obj.horzLine55 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine55:setParent(obj.layout116);
+    obj.horzLine55:setParent(obj.layout105);
     obj.horzLine55:setStrokeColor("white");
     obj.horzLine55:setStrokeSize(1);
     obj.horzLine55:setAlign("bottom");
     obj.horzLine55:setName("horzLine55");
 
-    obj.button84 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button84:setParent(obj.flowPart257);
-    obj.button84:setAlign("left");
-    obj.button84:setText("Adestrar Animais");
-    obj.button84:setWidth(122);
-    obj.button84:setMargins({left=2});
-    obj.button84:setName("button84");
+    obj.button79 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button79:setParent(obj.flowPart155);
+    obj.button79:setAlign("left");
+    obj.button79:setText("Adestrar Animais");
+    obj.button79:setWidth(122);
+    obj.button79:setMargins({left=2});
+    obj.button79:setName("button79");
 
-    obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink204:setParent(obj.flowLayout38);
-    obj.dataLink204:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionadestrarAnimais', 'macroExpertise.companionadestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink204:setName("dataLink204");
+    obj.dataLink193 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink193:setParent(obj.flowLayout33);
+    obj.dataLink193:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionadestrarAnimais', 'macroExpertise.companionadestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink193:setName("dataLink193");
 
-    obj.flowPart258 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart258:setParent(obj.flowLayout38);
-    obj.flowPart258:setMinWidth(206);
-    obj.flowPart258:setMaxWidth(250);
-    obj.flowPart258:setHeight(17);
-    obj.flowPart258:setName("flowPart258");
-    obj.flowPart258:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart258:setVertAlign("leading");
+    obj.flowPart156 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart156:setParent(obj.flowLayout33);
+    obj.flowPart156:setMinWidth(206);
+    obj.flowPart156:setMaxWidth(250);
+    obj.flowPart156:setHeight(17);
+    obj.flowPart156:setName("flowPart156");
+    obj.flowPart156:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart156:setVertAlign("leading");
 
     obj.cbProfcompanionintuicao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionintuicao:setParent(obj.flowPart258);
+    obj.cbProfcompanionintuicao:setParent(obj.flowPart156);
     obj.cbProfcompanionintuicao:setName("cbProfcompanionintuicao");
     obj.cbProfcompanionintuicao:setAlign("left");
     obj.cbProfcompanionintuicao:setField("pericias.companionintuicao");
@@ -14135,25 +11234,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink205 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink205:setParent(obj.flowPart258);
-    obj.dataLink205:setField("macroExpertise.companionintuicao");
-    obj.dataLink205:setName("dataLink205");
+    obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink194:setParent(obj.flowPart156);
+    obj.dataLink194:setField("macroExpertise.companionintuicao");
+    obj.dataLink194:setName("dataLink194");
 
-    obj.dataLink206 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink206:setParent(obj.flowPart258);
-    obj.dataLink206:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink206:setName("dataLink206");
+    obj.dataLink195 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink195:setParent(obj.flowPart156);
+    obj.dataLink195:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink195:setName("dataLink195");
 
-    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout117:setParent(obj.flowPart258);
-    obj.layout117:setAlign("left");
-    obj.layout117:setWidth(26);
-    obj.layout117:setMargins({left=2});
-    obj.layout117:setName("layout117");
+    obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout106:setParent(obj.flowPart156);
+    obj.layout106:setAlign("left");
+    obj.layout106:setWidth(26);
+    obj.layout106:setMargins({left=2});
+    obj.layout106:setName("layout106");
 
     obj.labProfcompanionintuicao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionintuicao:setParent(obj.layout117);
+    obj.labProfcompanionintuicao:setParent(obj.layout106);
     obj.labProfcompanionintuicao:setName("labProfcompanionintuicao");
     obj.labProfcompanionintuicao:setField("pericias.bonuscompanionintuicaostr");
     obj.labProfcompanionintuicao:setAlign("client");
@@ -14163,36 +11262,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionintuicao:setFontColor("white");
 
     obj.horzLine56 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine56:setParent(obj.layout117);
+    obj.horzLine56:setParent(obj.layout106);
     obj.horzLine56:setStrokeColor("white");
     obj.horzLine56:setStrokeSize(1);
     obj.horzLine56:setAlign("bottom");
     obj.horzLine56:setName("horzLine56");
 
-    obj.button85 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button85:setParent(obj.flowPart258);
-    obj.button85:setAlign("left");
-    obj.button85:setText("Intuição");
-    obj.button85:setWidth(122);
-    obj.button85:setMargins({left=2});
-    obj.button85:setName("button85");
+    obj.button80 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button80:setParent(obj.flowPart156);
+    obj.button80:setAlign("left");
+    obj.button80:setText("Intuição");
+    obj.button80:setWidth(122);
+    obj.button80:setMargins({left=2});
+    obj.button80:setName("button80");
 
-    obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink207:setParent(obj.flowLayout38);
-    obj.dataLink207:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionintuicao', 'macroExpertise.companionintuicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink207:setName("dataLink207");
+    obj.dataLink196 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink196:setParent(obj.flowLayout33);
+    obj.dataLink196:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionintuicao', 'macroExpertise.companionintuicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink196:setName("dataLink196");
 
-    obj.flowPart259 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart259:setParent(obj.flowLayout38);
-    obj.flowPart259:setMinWidth(206);
-    obj.flowPart259:setMaxWidth(250);
-    obj.flowPart259:setHeight(17);
-    obj.flowPart259:setName("flowPart259");
-    obj.flowPart259:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart259:setVertAlign("leading");
+    obj.flowPart157 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart157:setParent(obj.flowLayout33);
+    obj.flowPart157:setMinWidth(206);
+    obj.flowPart157:setMaxWidth(250);
+    obj.flowPart157:setHeight(17);
+    obj.flowPart157:setName("flowPart157");
+    obj.flowPart157:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart157:setVertAlign("leading");
 
     obj.cbProfcompanionmedicina = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionmedicina:setParent(obj.flowPart259);
+    obj.cbProfcompanionmedicina:setParent(obj.flowPart157);
     obj.cbProfcompanionmedicina:setName("cbProfcompanionmedicina");
     obj.cbProfcompanionmedicina:setAlign("left");
     obj.cbProfcompanionmedicina:setField("pericias.companionmedicina");
@@ -14234,25 +11333,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink208 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink208:setParent(obj.flowPart259);
-    obj.dataLink208:setField("macroExpertise.companionmedicina");
-    obj.dataLink208:setName("dataLink208");
+    obj.dataLink197 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink197:setParent(obj.flowPart157);
+    obj.dataLink197:setField("macroExpertise.companionmedicina");
+    obj.dataLink197:setName("dataLink197");
 
-    obj.dataLink209 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink209:setParent(obj.flowPart259);
-    obj.dataLink209:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink209:setName("dataLink209");
+    obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink198:setParent(obj.flowPart157);
+    obj.dataLink198:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink198:setName("dataLink198");
 
-    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout118:setParent(obj.flowPart259);
-    obj.layout118:setAlign("left");
-    obj.layout118:setWidth(26);
-    obj.layout118:setMargins({left=2});
-    obj.layout118:setName("layout118");
+    obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout107:setParent(obj.flowPart157);
+    obj.layout107:setAlign("left");
+    obj.layout107:setWidth(26);
+    obj.layout107:setMargins({left=2});
+    obj.layout107:setName("layout107");
 
     obj.labProfcompanionmedicina = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionmedicina:setParent(obj.layout118);
+    obj.labProfcompanionmedicina:setParent(obj.layout107);
     obj.labProfcompanionmedicina:setName("labProfcompanionmedicina");
     obj.labProfcompanionmedicina:setField("pericias.bonuscompanionmedicinastr");
     obj.labProfcompanionmedicina:setAlign("client");
@@ -14262,36 +11361,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionmedicina:setFontColor("white");
 
     obj.horzLine57 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine57:setParent(obj.layout118);
+    obj.horzLine57:setParent(obj.layout107);
     obj.horzLine57:setStrokeColor("white");
     obj.horzLine57:setStrokeSize(1);
     obj.horzLine57:setAlign("bottom");
     obj.horzLine57:setName("horzLine57");
 
-    obj.button86 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button86:setParent(obj.flowPart259);
-    obj.button86:setAlign("left");
-    obj.button86:setText("Medicina");
-    obj.button86:setWidth(122);
-    obj.button86:setMargins({left=2});
-    obj.button86:setName("button86");
+    obj.button81 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button81:setParent(obj.flowPart157);
+    obj.button81:setAlign("left");
+    obj.button81:setText("Medicina");
+    obj.button81:setWidth(122);
+    obj.button81:setMargins({left=2});
+    obj.button81:setName("button81");
 
-    obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink210:setParent(obj.flowLayout38);
-    obj.dataLink210:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionmedicina', 'macroExpertise.companionmedicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink210:setName("dataLink210");
+    obj.dataLink199 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink199:setParent(obj.flowLayout33);
+    obj.dataLink199:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionmedicina', 'macroExpertise.companionmedicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink199:setName("dataLink199");
 
-    obj.flowPart260 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart260:setParent(obj.flowLayout38);
-    obj.flowPart260:setMinWidth(206);
-    obj.flowPart260:setMaxWidth(250);
-    obj.flowPart260:setHeight(17);
-    obj.flowPart260:setName("flowPart260");
-    obj.flowPart260:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart260:setVertAlign("leading");
+    obj.flowPart158 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart158:setParent(obj.flowLayout33);
+    obj.flowPart158:setMinWidth(206);
+    obj.flowPart158:setMaxWidth(250);
+    obj.flowPart158:setHeight(17);
+    obj.flowPart158:setName("flowPart158");
+    obj.flowPart158:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart158:setVertAlign("leading");
 
     obj.cbProfcompanionpercepcao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionpercepcao:setParent(obj.flowPart260);
+    obj.cbProfcompanionpercepcao:setParent(obj.flowPart158);
     obj.cbProfcompanionpercepcao:setName("cbProfcompanionpercepcao");
     obj.cbProfcompanionpercepcao:setAlign("left");
     obj.cbProfcompanionpercepcao:setField("pericias.companionpercepcao");
@@ -14333,25 +11432,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink211 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink211:setParent(obj.flowPart260);
-    obj.dataLink211:setField("macroExpertise.companionpercepcao");
-    obj.dataLink211:setName("dataLink211");
+    obj.dataLink200 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink200:setParent(obj.flowPart158);
+    obj.dataLink200:setField("macroExpertise.companionpercepcao");
+    obj.dataLink200:setName("dataLink200");
 
-    obj.dataLink212 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink212:setParent(obj.flowPart260);
-    obj.dataLink212:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink212:setName("dataLink212");
+    obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink201:setParent(obj.flowPart158);
+    obj.dataLink201:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink201:setName("dataLink201");
 
-    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout119:setParent(obj.flowPart260);
-    obj.layout119:setAlign("left");
-    obj.layout119:setWidth(26);
-    obj.layout119:setMargins({left=2});
-    obj.layout119:setName("layout119");
+    obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout108:setParent(obj.flowPart158);
+    obj.layout108:setAlign("left");
+    obj.layout108:setWidth(26);
+    obj.layout108:setMargins({left=2});
+    obj.layout108:setName("layout108");
 
     obj.labProfcompanionpercepcao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionpercepcao:setParent(obj.layout119);
+    obj.labProfcompanionpercepcao:setParent(obj.layout108);
     obj.labProfcompanionpercepcao:setName("labProfcompanionpercepcao");
     obj.labProfcompanionpercepcao:setField("pericias.bonuscompanionpercepcaostr");
     obj.labProfcompanionpercepcao:setAlign("client");
@@ -14361,36 +11460,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionpercepcao:setFontColor("white");
 
     obj.horzLine58 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine58:setParent(obj.layout119);
+    obj.horzLine58:setParent(obj.layout108);
     obj.horzLine58:setStrokeColor("white");
     obj.horzLine58:setStrokeSize(1);
     obj.horzLine58:setAlign("bottom");
     obj.horzLine58:setName("horzLine58");
 
-    obj.button87 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button87:setParent(obj.flowPart260);
-    obj.button87:setAlign("left");
-    obj.button87:setText("Percepção");
-    obj.button87:setWidth(122);
-    obj.button87:setMargins({left=2});
-    obj.button87:setName("button87");
+    obj.button82 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button82:setParent(obj.flowPart158);
+    obj.button82:setAlign("left");
+    obj.button82:setText("Percepção");
+    obj.button82:setWidth(122);
+    obj.button82:setMargins({left=2});
+    obj.button82:setName("button82");
 
-    obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink213:setParent(obj.flowLayout38);
-    obj.dataLink213:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionpercepcao', 'macroExpertise.companionpercepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink213:setName("dataLink213");
+    obj.dataLink202 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink202:setParent(obj.flowLayout33);
+    obj.dataLink202:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionpercepcao', 'macroExpertise.companionpercepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink202:setName("dataLink202");
 
-    obj.flowPart261 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart261:setParent(obj.flowLayout38);
-    obj.flowPart261:setMinWidth(206);
-    obj.flowPart261:setMaxWidth(250);
-    obj.flowPart261:setHeight(17);
-    obj.flowPart261:setName("flowPart261");
-    obj.flowPart261:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart261:setVertAlign("leading");
+    obj.flowPart159 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart159:setParent(obj.flowLayout33);
+    obj.flowPart159:setMinWidth(206);
+    obj.flowPart159:setMaxWidth(250);
+    obj.flowPart159:setHeight(17);
+    obj.flowPart159:setName("flowPart159");
+    obj.flowPart159:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart159:setVertAlign("leading");
 
     obj.cbProfcompanionsobrevivencia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionsobrevivencia:setParent(obj.flowPart261);
+    obj.cbProfcompanionsobrevivencia:setParent(obj.flowPart159);
     obj.cbProfcompanionsobrevivencia:setName("cbProfcompanionsobrevivencia");
     obj.cbProfcompanionsobrevivencia:setAlign("left");
     obj.cbProfcompanionsobrevivencia:setField("pericias.companionsobrevivencia");
@@ -14432,25 +11531,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink214 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink214:setParent(obj.flowPart261);
-    obj.dataLink214:setField("macroExpertise.companionsobrevivencia");
-    obj.dataLink214:setName("dataLink214");
+    obj.dataLink203 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink203:setParent(obj.flowPart159);
+    obj.dataLink203:setField("macroExpertise.companionsobrevivencia");
+    obj.dataLink203:setName("dataLink203");
 
-    obj.dataLink215 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink215:setParent(obj.flowPart261);
-    obj.dataLink215:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink215:setName("dataLink215");
+    obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink204:setParent(obj.flowPart159);
+    obj.dataLink204:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink204:setName("dataLink204");
 
-    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout120:setParent(obj.flowPart261);
-    obj.layout120:setAlign("left");
-    obj.layout120:setWidth(26);
-    obj.layout120:setMargins({left=2});
-    obj.layout120:setName("layout120");
+    obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout109:setParent(obj.flowPart159);
+    obj.layout109:setAlign("left");
+    obj.layout109:setWidth(26);
+    obj.layout109:setMargins({left=2});
+    obj.layout109:setName("layout109");
 
     obj.labProfcompanionsobrevivencia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionsobrevivencia:setParent(obj.layout120);
+    obj.labProfcompanionsobrevivencia:setParent(obj.layout109);
     obj.labProfcompanionsobrevivencia:setName("labProfcompanionsobrevivencia");
     obj.labProfcompanionsobrevivencia:setField("pericias.bonuscompanionsobrevivenciastr");
     obj.labProfcompanionsobrevivencia:setAlign("client");
@@ -14460,110 +11559,110 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionsobrevivencia:setFontColor("white");
 
     obj.horzLine59 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine59:setParent(obj.layout120);
+    obj.horzLine59:setParent(obj.layout109);
     obj.horzLine59:setStrokeColor("white");
     obj.horzLine59:setStrokeSize(1);
     obj.horzLine59:setAlign("bottom");
     obj.horzLine59:setName("horzLine59");
 
-    obj.button88 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button88:setParent(obj.flowPart261);
-    obj.button88:setAlign("left");
-    obj.button88:setText("Sobrevivência");
-    obj.button88:setWidth(122);
-    obj.button88:setMargins({left=2});
-    obj.button88:setName("button88");
+    obj.button83 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button83:setParent(obj.flowPart159);
+    obj.button83:setAlign("left");
+    obj.button83:setText("Sobrevivência");
+    obj.button83:setWidth(122);
+    obj.button83:setMargins({left=2});
+    obj.button83:setName("button83");
 
-    obj.dataLink216 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink216:setParent(obj.flowLayout38);
-    obj.dataLink216:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionsobrevivencia', 'macroExpertise.companionsobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink216:setName("dataLink216");
+    obj.dataLink205 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink205:setParent(obj.flowLayout33);
+    obj.dataLink205:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionsobrevivencia', 'macroExpertise.companionsobrevivencia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink205:setName("dataLink205");
 
-    obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink217:setParent(obj.fraLayAtributosCompanion);
-    obj.dataLink217:setField("atributos.companioncarisma");
-    obj.dataLink217:setName("dataLink217");
+    obj.dataLink206 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink206:setParent(obj.fraLayAtributosCompanion);
+    obj.dataLink206:setField("atributos.companioncarisma");
+    obj.dataLink206:setName("dataLink206");
 
-    obj.flowPart262 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart262:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart262:setHeight(140);
-    obj.flowPart262:setMinWidth(320);
-    obj.flowPart262:setMaxWidth(420);
-    obj.flowPart262:setMinScaledWidth(305);
-    obj.flowPart262:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart262:setName("flowPart262");
-    obj.flowPart262:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart262:setVertAlign("leading");
+    obj.flowPart160 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart160:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart160:setHeight(140);
+    obj.flowPart160:setMinWidth(320);
+    obj.flowPart160:setMaxWidth(420);
+    obj.flowPart160:setMinScaledWidth(305);
+    obj.flowPart160:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart160:setName("flowPart160");
+    obj.flowPart160:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart160:setVertAlign("leading");
 
-    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout121:setParent(obj.flowPart262);
-    obj.layout121:setLeft(6);
-    obj.layout121:setTop(12);
-    obj.layout121:setWidth(116);
-    obj.layout121:setHeight(115);
-    obj.layout121:setName("layout121");
+    obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout110:setParent(obj.flowPart160);
+    obj.layout110:setLeft(6);
+    obj.layout110:setTop(12);
+    obj.layout110:setWidth(116);
+    obj.layout110:setHeight(115);
+    obj.layout110:setName("layout110");
 
-    obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit119:setParent(obj.layout121);
-    obj.edit119:setAlign("top");
-    obj.edit119:setMargins({left=30, right=30});
-    obj.edit119:setField("atributos.companioncarisma");
-    obj.edit119:setHeight(30);
-    obj.edit119:setType("number");
-    obj.edit119:setMin(0);
-    obj.edit119:setMax(99);
-    obj.edit119:setName("edit119");
-    obj.edit119:setTransparent(true);
-    obj.edit119:setVertTextAlign("center");
-    obj.edit119:setHorzTextAlign("center");
-    obj.edit119:setFontSize(15);
-    obj.edit119:setFontColor("white");
+    obj.edit53 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit53:setParent(obj.layout110);
+    obj.edit53:setAlign("top");
+    obj.edit53:setMargins({left=30, right=30});
+    obj.edit53:setField("atributos.companioncarisma");
+    obj.edit53:setHeight(30);
+    obj.edit53:setType("number");
+    obj.edit53:setMin(0);
+    obj.edit53:setMax(99);
+    obj.edit53:setName("edit53");
+    obj.edit53:setTransparent(true);
+    obj.edit53:setVertTextAlign("center");
+    obj.edit53:setHorzTextAlign("center");
+    obj.edit53:setFontSize(15);
+    obj.edit53:setFontColor("white");
 
-    obj.label159 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label159:setParent(obj.flowPart262);
-    obj.label159:setFrameRegion("modificador");
-    obj.label159:setField("atributos.modcompanioncarismastr");
-    obj.label159:setHorzTextAlign("center");
-    obj.label159:setVertTextAlign("center");
-    obj.label159:setFontSize(46);
-    lfm_setPropAsString(obj.label159, "fontStyle",  "bold");
-    obj.label159:setName("label159");
-    obj.label159:setFontColor("white");
+    obj.label105 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label105:setParent(obj.flowPart160);
+    obj.label105:setFrameRegion("modificador");
+    obj.label105:setField("atributos.modcompanioncarismastr");
+    obj.label105:setHorzTextAlign("center");
+    obj.label105:setVertTextAlign("center");
+    obj.label105:setFontSize(46);
+    lfm_setPropAsString(obj.label105, "fontStyle",  "bold");
+    obj.label105:setName("label105");
+    obj.label105:setFontColor("white");
 
-    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout122:setParent(obj.flowPart262);
-    obj.layout122:setFrameRegion("titulo");
-    obj.layout122:setName("layout122");
+    obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout111:setParent(obj.flowPart160);
+    obj.layout111:setFrameRegion("titulo");
+    obj.layout111:setName("layout111");
 
-    obj.button89 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button89:setParent(obj.layout122);
-    obj.button89:setAlign("client");
-    obj.button89:setText("CARISMA");
-    obj.button89:setVertTextAlign("center");
-    obj.button89:setHorzTextAlign("center");
-    obj.button89:setName("button89");
+    obj.button84 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button84:setParent(obj.layout111);
+    obj.button84:setAlign("client");
+    obj.button84:setText("CARISMA");
+    obj.button84:setVertTextAlign("center");
+    obj.button84:setHorzTextAlign("center");
+    obj.button84:setName("button84");
 
-    obj.flowLayout39 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout39:setParent(obj.flowPart262);
-    obj.flowLayout39:setFrameRegion("RegiaoDePericias");
-    obj.flowLayout39:setAutoHeight(true);
-    obj.flowLayout39:setLineSpacing(0);
-    obj.flowLayout39:setHorzAlign("leading");
-    obj.flowLayout39:setName("flowLayout39");
-    obj.flowLayout39:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout39:setVertAlign("leading");
+    obj.flowLayout34 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout34:setParent(obj.flowPart160);
+    obj.flowLayout34:setFrameRegion("RegiaoDePericias");
+    obj.flowLayout34:setAutoHeight(true);
+    obj.flowLayout34:setLineSpacing(0);
+    obj.flowLayout34:setHorzAlign("leading");
+    obj.flowLayout34:setName("flowLayout34");
+    obj.flowLayout34:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout34:setVertAlign("leading");
 
-    obj.flowPart263 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart263:setParent(obj.flowLayout39);
-    obj.flowPart263:setMinWidth(206);
-    obj.flowPart263:setMaxWidth(250);
-    obj.flowPart263:setHeight(17);
-    obj.flowPart263:setName("flowPart263");
-    obj.flowPart263:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart263:setVertAlign("leading");
+    obj.flowPart161 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart161:setParent(obj.flowLayout34);
+    obj.flowPart161:setMinWidth(206);
+    obj.flowPart161:setMaxWidth(250);
+    obj.flowPart161:setHeight(17);
+    obj.flowPart161:setName("flowPart161");
+    obj.flowPart161:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart161:setVertAlign("leading");
 
     obj.cbProfcompanioncarisma = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioncarisma:setParent(obj.flowPart263);
+    obj.cbProfcompanioncarisma:setParent(obj.flowPart161);
     obj.cbProfcompanioncarisma:setName("cbProfcompanioncarisma");
     obj.cbProfcompanioncarisma:setAlign("left");
     obj.cbProfcompanioncarisma:setField("resistencias.companioncarisma");
@@ -14605,25 +11704,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink218 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink218:setParent(obj.flowPart263);
-    obj.dataLink218:setField("macroExpertise.companioncarisma");
-    obj.dataLink218:setName("dataLink218");
+    obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink207:setParent(obj.flowPart161);
+    obj.dataLink207:setField("macroExpertise.companioncarisma");
+    obj.dataLink207:setName("dataLink207");
 
-    obj.dataLink219 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink219:setParent(obj.flowPart263);
-    obj.dataLink219:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink219:setName("dataLink219");
+    obj.dataLink208 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink208:setParent(obj.flowPart161);
+    obj.dataLink208:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink208:setName("dataLink208");
 
-    obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout123:setParent(obj.flowPart263);
-    obj.layout123:setAlign("left");
-    obj.layout123:setWidth(26);
-    obj.layout123:setMargins({left=2});
-    obj.layout123:setName("layout123");
+    obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout112:setParent(obj.flowPart161);
+    obj.layout112:setAlign("left");
+    obj.layout112:setWidth(26);
+    obj.layout112:setMargins({left=2});
+    obj.layout112:setName("layout112");
 
     obj.labProfcompanioncarisma = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioncarisma:setParent(obj.layout123);
+    obj.labProfcompanioncarisma:setParent(obj.layout112);
     obj.labProfcompanioncarisma:setName("labProfcompanioncarisma");
     obj.labProfcompanioncarisma:setField("resistencias.bonuscompanioncarismastr");
     obj.labProfcompanioncarisma:setAlign("client");
@@ -14633,36 +11732,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioncarisma:setFontColor("white");
 
     obj.horzLine60 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine60:setParent(obj.layout123);
+    obj.horzLine60:setParent(obj.layout112);
     obj.horzLine60:setStrokeColor("white");
     obj.horzLine60:setStrokeSize(1);
     obj.horzLine60:setAlign("bottom");
     obj.horzLine60:setName("horzLine60");
 
-    obj.button90 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button90:setParent(obj.flowPart263);
-    obj.button90:setAlign("left");
-    obj.button90:setText("Resistência");
-    obj.button90:setWidth(122);
-    obj.button90:setMargins({left=2});
-    obj.button90:setName("button90");
+    obj.button85 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button85:setParent(obj.flowPart161);
+    obj.button85:setAlign("left");
+    obj.button85:setText("Resistência");
+    obj.button85:setWidth(122);
+    obj.button85:setMargins({left=2});
+    obj.button85:setName("button85");
 
-    obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink220:setParent(obj.flowLayout39);
-    obj.dataLink220:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'resistencias.companioncarisma', 'propriedades.prescience', 'propriedades.saveBonus'});
-    obj.dataLink220:setName("dataLink220");
+    obj.dataLink209 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink209:setParent(obj.flowLayout34);
+    obj.dataLink209:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'resistencias.companioncarisma', 'propriedades.prescience', 'propriedades.saveBonus'});
+    obj.dataLink209:setName("dataLink209");
 
-    obj.flowPart264 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart264:setParent(obj.flowLayout39);
-    obj.flowPart264:setMinWidth(206);
-    obj.flowPart264:setMaxWidth(250);
-    obj.flowPart264:setHeight(17);
-    obj.flowPart264:setName("flowPart264");
-    obj.flowPart264:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart264:setVertAlign("leading");
+    obj.flowPart162 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart162:setParent(obj.flowLayout34);
+    obj.flowPart162:setMinWidth(206);
+    obj.flowPart162:setMaxWidth(250);
+    obj.flowPart162:setHeight(17);
+    obj.flowPart162:setName("flowPart162");
+    obj.flowPart162:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart162:setVertAlign("leading");
 
     obj.cbProfcompanionatuacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionatuacao:setParent(obj.flowPart264);
+    obj.cbProfcompanionatuacao:setParent(obj.flowPart162);
     obj.cbProfcompanionatuacao:setName("cbProfcompanionatuacao");
     obj.cbProfcompanionatuacao:setAlign("left");
     obj.cbProfcompanionatuacao:setField("pericias.companionatuacao");
@@ -14704,25 +11803,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink221 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink221:setParent(obj.flowPart264);
-    obj.dataLink221:setField("macroExpertise.companionatuacao");
-    obj.dataLink221:setName("dataLink221");
+    obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink210:setParent(obj.flowPart162);
+    obj.dataLink210:setField("macroExpertise.companionatuacao");
+    obj.dataLink210:setName("dataLink210");
 
-    obj.dataLink222 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink222:setParent(obj.flowPart264);
-    obj.dataLink222:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink222:setName("dataLink222");
+    obj.dataLink211 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink211:setParent(obj.flowPart162);
+    obj.dataLink211:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink211:setName("dataLink211");
 
-    obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout124:setParent(obj.flowPart264);
-    obj.layout124:setAlign("left");
-    obj.layout124:setWidth(26);
-    obj.layout124:setMargins({left=2});
-    obj.layout124:setName("layout124");
+    obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout113:setParent(obj.flowPart162);
+    obj.layout113:setAlign("left");
+    obj.layout113:setWidth(26);
+    obj.layout113:setMargins({left=2});
+    obj.layout113:setName("layout113");
 
     obj.labProfcompanionatuacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionatuacao:setParent(obj.layout124);
+    obj.labProfcompanionatuacao:setParent(obj.layout113);
     obj.labProfcompanionatuacao:setName("labProfcompanionatuacao");
     obj.labProfcompanionatuacao:setField("pericias.bonuscompanionatuacaostr");
     obj.labProfcompanionatuacao:setAlign("client");
@@ -14732,36 +11831,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionatuacao:setFontColor("white");
 
     obj.horzLine61 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine61:setParent(obj.layout124);
+    obj.horzLine61:setParent(obj.layout113);
     obj.horzLine61:setStrokeColor("white");
     obj.horzLine61:setStrokeSize(1);
     obj.horzLine61:setAlign("bottom");
     obj.horzLine61:setName("horzLine61");
 
-    obj.button91 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button91:setParent(obj.flowPart264);
-    obj.button91:setAlign("left");
-    obj.button91:setText("Atuação");
-    obj.button91:setWidth(122);
-    obj.button91:setMargins({left=2});
-    obj.button91:setName("button91");
+    obj.button86 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button86:setParent(obj.flowPart162);
+    obj.button86:setAlign("left");
+    obj.button86:setText("Atuação");
+    obj.button86:setWidth(122);
+    obj.button86:setMargins({left=2});
+    obj.button86:setName("button86");
 
-    obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink223:setParent(obj.flowLayout39);
-    obj.dataLink223:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionatuacao', 'macroExpertise.companionatuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink223:setName("dataLink223");
+    obj.dataLink212 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink212:setParent(obj.flowLayout34);
+    obj.dataLink212:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionatuacao', 'macroExpertise.companionatuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink212:setName("dataLink212");
 
-    obj.flowPart265 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart265:setParent(obj.flowLayout39);
-    obj.flowPart265:setMinWidth(206);
-    obj.flowPart265:setMaxWidth(250);
-    obj.flowPart265:setHeight(17);
-    obj.flowPart265:setName("flowPart265");
-    obj.flowPart265:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart265:setVertAlign("leading");
+    obj.flowPart163 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart163:setParent(obj.flowLayout34);
+    obj.flowPart163:setMinWidth(206);
+    obj.flowPart163:setMaxWidth(250);
+    obj.flowPart163:setHeight(17);
+    obj.flowPart163:setName("flowPart163");
+    obj.flowPart163:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart163:setVertAlign("leading");
 
     obj.cbProfcompanionenganacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionenganacao:setParent(obj.flowPart265);
+    obj.cbProfcompanionenganacao:setParent(obj.flowPart163);
     obj.cbProfcompanionenganacao:setName("cbProfcompanionenganacao");
     obj.cbProfcompanionenganacao:setAlign("left");
     obj.cbProfcompanionenganacao:setField("pericias.companionenganacao");
@@ -14803,25 +11902,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink224 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink224:setParent(obj.flowPart265);
-    obj.dataLink224:setField("macroExpertise.companionenganacao");
-    obj.dataLink224:setName("dataLink224");
+    obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink213:setParent(obj.flowPart163);
+    obj.dataLink213:setField("macroExpertise.companionenganacao");
+    obj.dataLink213:setName("dataLink213");
 
-    obj.dataLink225 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink225:setParent(obj.flowPart265);
-    obj.dataLink225:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink225:setName("dataLink225");
+    obj.dataLink214 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink214:setParent(obj.flowPart163);
+    obj.dataLink214:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink214:setName("dataLink214");
 
-    obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout125:setParent(obj.flowPart265);
-    obj.layout125:setAlign("left");
-    obj.layout125:setWidth(26);
-    obj.layout125:setMargins({left=2});
-    obj.layout125:setName("layout125");
+    obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout114:setParent(obj.flowPart163);
+    obj.layout114:setAlign("left");
+    obj.layout114:setWidth(26);
+    obj.layout114:setMargins({left=2});
+    obj.layout114:setName("layout114");
 
     obj.labProfcompanionenganacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionenganacao:setParent(obj.layout125);
+    obj.labProfcompanionenganacao:setParent(obj.layout114);
     obj.labProfcompanionenganacao:setName("labProfcompanionenganacao");
     obj.labProfcompanionenganacao:setField("pericias.bonuscompanionenganacaostr");
     obj.labProfcompanionenganacao:setAlign("client");
@@ -14831,36 +11930,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionenganacao:setFontColor("white");
 
     obj.horzLine62 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine62:setParent(obj.layout125);
+    obj.horzLine62:setParent(obj.layout114);
     obj.horzLine62:setStrokeColor("white");
     obj.horzLine62:setStrokeSize(1);
     obj.horzLine62:setAlign("bottom");
     obj.horzLine62:setName("horzLine62");
 
-    obj.button92 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button92:setParent(obj.flowPart265);
-    obj.button92:setAlign("left");
-    obj.button92:setText("Enganação");
-    obj.button92:setWidth(122);
-    obj.button92:setMargins({left=2});
-    obj.button92:setName("button92");
+    obj.button87 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button87:setParent(obj.flowPart163);
+    obj.button87:setAlign("left");
+    obj.button87:setText("Enganação");
+    obj.button87:setWidth(122);
+    obj.button87:setMargins({left=2});
+    obj.button87:setName("button87");
 
-    obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink226:setParent(obj.flowLayout39);
-    obj.dataLink226:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionenganacao', 'macroExpertise.companionenganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink226:setName("dataLink226");
+    obj.dataLink215 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink215:setParent(obj.flowLayout34);
+    obj.dataLink215:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionenganacao', 'macroExpertise.companionenganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink215:setName("dataLink215");
 
-    obj.flowPart266 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart266:setParent(obj.flowLayout39);
-    obj.flowPart266:setMinWidth(206);
-    obj.flowPart266:setMaxWidth(250);
-    obj.flowPart266:setHeight(17);
-    obj.flowPart266:setName("flowPart266");
-    obj.flowPart266:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart266:setVertAlign("leading");
+    obj.flowPart164 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart164:setParent(obj.flowLayout34);
+    obj.flowPart164:setMinWidth(206);
+    obj.flowPart164:setMaxWidth(250);
+    obj.flowPart164:setHeight(17);
+    obj.flowPart164:setName("flowPart164");
+    obj.flowPart164:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart164:setVertAlign("leading");
 
     obj.cbProfcompanionintimidacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionintimidacao:setParent(obj.flowPart266);
+    obj.cbProfcompanionintimidacao:setParent(obj.flowPart164);
     obj.cbProfcompanionintimidacao:setName("cbProfcompanionintimidacao");
     obj.cbProfcompanionintimidacao:setAlign("left");
     obj.cbProfcompanionintimidacao:setField("pericias.companionintimidacao");
@@ -14902,25 +12001,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink227 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink227:setParent(obj.flowPart266);
-    obj.dataLink227:setField("macroExpertise.companionintimidacao");
-    obj.dataLink227:setName("dataLink227");
+    obj.dataLink216 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink216:setParent(obj.flowPart164);
+    obj.dataLink216:setField("macroExpertise.companionintimidacao");
+    obj.dataLink216:setName("dataLink216");
 
-    obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink228:setParent(obj.flowPart266);
-    obj.dataLink228:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink228:setName("dataLink228");
+    obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink217:setParent(obj.flowPart164);
+    obj.dataLink217:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink217:setName("dataLink217");
 
-    obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout126:setParent(obj.flowPart266);
-    obj.layout126:setAlign("left");
-    obj.layout126:setWidth(26);
-    obj.layout126:setMargins({left=2});
-    obj.layout126:setName("layout126");
+    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout115:setParent(obj.flowPart164);
+    obj.layout115:setAlign("left");
+    obj.layout115:setWidth(26);
+    obj.layout115:setMargins({left=2});
+    obj.layout115:setName("layout115");
 
     obj.labProfcompanionintimidacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionintimidacao:setParent(obj.layout126);
+    obj.labProfcompanionintimidacao:setParent(obj.layout115);
     obj.labProfcompanionintimidacao:setName("labProfcompanionintimidacao");
     obj.labProfcompanionintimidacao:setField("pericias.bonuscompanionintimidacaostr");
     obj.labProfcompanionintimidacao:setAlign("client");
@@ -14930,36 +12029,36 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionintimidacao:setFontColor("white");
 
     obj.horzLine63 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine63:setParent(obj.layout126);
+    obj.horzLine63:setParent(obj.layout115);
     obj.horzLine63:setStrokeColor("white");
     obj.horzLine63:setStrokeSize(1);
     obj.horzLine63:setAlign("bottom");
     obj.horzLine63:setName("horzLine63");
 
-    obj.button93 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button93:setParent(obj.flowPart266);
-    obj.button93:setAlign("left");
-    obj.button93:setText("Intimidação");
-    obj.button93:setWidth(122);
-    obj.button93:setMargins({left=2});
-    obj.button93:setName("button93");
+    obj.button88 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button88:setParent(obj.flowPart164);
+    obj.button88:setAlign("left");
+    obj.button88:setText("Intimidação");
+    obj.button88:setWidth(122);
+    obj.button88:setMargins({left=2});
+    obj.button88:setName("button88");
 
-    obj.dataLink229 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink229:setParent(obj.flowLayout39);
-    obj.dataLink229:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionintimidacao', 'macroExpertise.companionintimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink229:setName("dataLink229");
+    obj.dataLink218 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink218:setParent(obj.flowLayout34);
+    obj.dataLink218:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionintimidacao', 'macroExpertise.companionintimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink218:setName("dataLink218");
 
-    obj.flowPart267 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart267:setParent(obj.flowLayout39);
-    obj.flowPart267:setMinWidth(206);
-    obj.flowPart267:setMaxWidth(250);
-    obj.flowPart267:setHeight(17);
-    obj.flowPart267:setName("flowPart267");
-    obj.flowPart267:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart267:setVertAlign("leading");
+    obj.flowPart165 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart165:setParent(obj.flowLayout34);
+    obj.flowPart165:setMinWidth(206);
+    obj.flowPart165:setMaxWidth(250);
+    obj.flowPart165:setHeight(17);
+    obj.flowPart165:setName("flowPart165");
+    obj.flowPart165:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart165:setVertAlign("leading");
 
     obj.cbProfcompanionpersuasao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionpersuasao:setParent(obj.flowPart267);
+    obj.cbProfcompanionpersuasao:setParent(obj.flowPart165);
     obj.cbProfcompanionpersuasao:setName("cbProfcompanionpersuasao");
     obj.cbProfcompanionpersuasao:setAlign("left");
     obj.cbProfcompanionpersuasao:setField("pericias.companionpersuasao");
@@ -15001,25 +12100,25 @@ self.upperGridMagicBox3._RecalcSize();
 				
 
 
-    obj.dataLink230 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink230:setParent(obj.flowPart267);
-    obj.dataLink230:setField("macroExpertise.companionpersuasao");
-    obj.dataLink230:setName("dataLink230");
+    obj.dataLink219 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink219:setParent(obj.flowPart165);
+    obj.dataLink219:setField("macroExpertise.companionpersuasao");
+    obj.dataLink219:setName("dataLink219");
 
-    obj.dataLink231 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink231:setParent(obj.flowPart267);
-    obj.dataLink231:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
-    obj.dataLink231:setName("dataLink231");
+    obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink220:setParent(obj.flowPart165);
+    obj.dataLink220:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
+    obj.dataLink220:setName("dataLink220");
 
-    obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout127:setParent(obj.flowPart267);
-    obj.layout127:setAlign("left");
-    obj.layout127:setWidth(26);
-    obj.layout127:setMargins({left=2});
-    obj.layout127:setName("layout127");
+    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout116:setParent(obj.flowPart165);
+    obj.layout116:setAlign("left");
+    obj.layout116:setWidth(26);
+    obj.layout116:setMargins({left=2});
+    obj.layout116:setName("layout116");
 
     obj.labProfcompanionpersuasao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionpersuasao:setParent(obj.layout127);
+    obj.labProfcompanionpersuasao:setParent(obj.layout116);
     obj.labProfcompanionpersuasao:setName("labProfcompanionpersuasao");
     obj.labProfcompanionpersuasao:setField("pericias.bonuscompanionpersuasaostr");
     obj.labProfcompanionpersuasao:setAlign("client");
@@ -15029,236 +12128,236 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionpersuasao:setFontColor("white");
 
     obj.horzLine64 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine64:setParent(obj.layout127);
+    obj.horzLine64:setParent(obj.layout116);
     obj.horzLine64:setStrokeColor("white");
     obj.horzLine64:setStrokeSize(1);
     obj.horzLine64:setAlign("bottom");
     obj.horzLine64:setName("horzLine64");
 
-    obj.button94 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button94:setParent(obj.flowPart267);
-    obj.button94:setAlign("left");
-    obj.button94:setText("Persuasão");
-    obj.button94:setWidth(122);
-    obj.button94:setMargins({left=2});
-    obj.button94:setName("button94");
+    obj.button89 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button89:setParent(obj.flowPart165);
+    obj.button89:setAlign("left");
+    obj.button89:setText("Persuasão");
+    obj.button89:setWidth(122);
+    obj.button89:setMargins({left=2});
+    obj.button89:setName("button89");
 
-    obj.dataLink232 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink232:setParent(obj.flowLayout39);
-    obj.dataLink232:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionpersuasao', 'macroExpertise.companionpersuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
-    obj.dataLink232:setName("dataLink232");
+    obj.dataLink221 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink221:setParent(obj.flowLayout34);
+    obj.dataLink221:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionpersuasao', 'macroExpertise.companionpersuasao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
+    obj.dataLink221:setName("dataLink221");
 
-    obj.flowLayout40 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout40:setParent(obj.flowLayout33);
-    obj.flowLayout40:setAutoHeight(true);
-    obj.flowLayout40:setHorzAlign("center");
-    obj.flowLayout40:setVertAlign("leading");
-    obj.flowLayout40:setMaxControlsPerLine(1);
-    obj.flowLayout40:setName("flowLayout40");
-    obj.flowLayout40:setStepSizes({310, 360});
-    obj.flowLayout40:setMinScaledWidth(300);
-    obj.flowLayout40:setMaxScaledWidth(340);
-    obj.flowLayout40:setAvoidScale(true);
-    obj.flowLayout40:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout35 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout35:setParent(obj.flowLayout28);
+    obj.flowLayout35:setAutoHeight(true);
+    obj.flowLayout35:setHorzAlign("center");
+    obj.flowLayout35:setVertAlign("leading");
+    obj.flowLayout35:setMaxControlsPerLine(1);
+    obj.flowLayout35:setName("flowLayout35");
+    obj.flowLayout35:setStepSizes({310, 360});
+    obj.flowLayout35:setMinScaledWidth(300);
+    obj.flowLayout35:setMaxScaledWidth(340);
+    obj.flowLayout35:setAvoidScale(true);
+    obj.flowLayout35:setMargins({left=1, right=1, top=2, bottom=2});
 
-    obj.flowLayout41 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout41:setParent(obj.flowLayout40);
-    obj.flowLayout41:setMinWidth(235);
-    obj.flowLayout41:setMaxWidth(475);
-    obj.flowLayout41:setAutoHeight(true);
-    obj.flowLayout41:setAvoidScale(false);
-    obj.flowLayout41:setVertAlign("center");
-    obj.flowLayout41:setHorzAlign("justify");
-    obj.flowLayout41:setName("flowLayout41");
-    obj.flowLayout41:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout36 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout36:setParent(obj.flowLayout35);
+    obj.flowLayout36:setMinWidth(235);
+    obj.flowLayout36:setMaxWidth(475);
+    obj.flowLayout36:setAutoHeight(true);
+    obj.flowLayout36:setAvoidScale(false);
+    obj.flowLayout36:setVertAlign("center");
+    obj.flowLayout36:setHorzAlign("justify");
+    obj.flowLayout36:setName("flowLayout36");
+    obj.flowLayout36:setMargins({left=1, right=1, top=2, bottom=2});
 
-    obj.flowPart268 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart268:setParent(obj.flowLayout41);
-    obj.flowPart268:setStepSizes({105});
-    obj.flowPart268:setMinScaledWidth(75);
-    obj.flowPart268:setHeight(120);
-    obj.flowPart268:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart268:setName("flowPart268");
-    obj.flowPart268:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart268:setVertAlign("leading");
+    obj.flowPart166 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart166:setParent(obj.flowLayout36);
+    obj.flowPart166:setStepSizes({105});
+    obj.flowPart166:setMinScaledWidth(75);
+    obj.flowPart166:setHeight(120);
+    obj.flowPart166:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart166:setName("flowPart166");
+    obj.flowPart166:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart166:setVertAlign("leading");
 
-    obj.button95 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button95:setParent(obj.flowPart268);
-    obj.button95:setAlign("top");
-    obj.button95:setText("INICIATIVA");
-    obj.button95:setHeight(20);
-    obj.button95:setFontSize(9);
-    obj.button95:setWordWrap(true);
-    obj.button95:setHorzTextAlign("center");
-    obj.button95:setMargins({left=5, right=5});
-    obj.button95:setTextTrimming("none");
-    obj.button95:setName("button95");
+    obj.button90 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button90:setParent(obj.flowPart166);
+    obj.button90:setAlign("top");
+    obj.button90:setText("INICIATIVA");
+    obj.button90:setHeight(20);
+    obj.button90:setFontSize(9);
+    obj.button90:setWordWrap(true);
+    obj.button90:setHorzTextAlign("center");
+    obj.button90:setMargins({left=5, right=5});
+    obj.button90:setTextTrimming("none");
+    obj.button90:setName("button90");
 
-    obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit120:setParent(obj.flowPart268);
-    obj.edit120:setAlign("client");
-    obj.edit120:setField("iniciativacompanion");
-    obj.edit120:setFontSize(30);
-    obj.edit120:setName("edit120");
-    obj.edit120:setTransparent(true);
-    obj.edit120:setVertTextAlign("center");
-    obj.edit120:setHorzTextAlign("center");
-    obj.edit120:setFontColor("white");
+    obj.edit54 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit54:setParent(obj.flowPart166);
+    obj.edit54:setAlign("client");
+    obj.edit54:setField("iniciativacompanion");
+    obj.edit54:setFontSize(30);
+    obj.edit54:setName("edit54");
+    obj.edit54:setTransparent(true);
+    obj.edit54:setVertTextAlign("center");
+    obj.edit54:setHorzTextAlign("center");
+    obj.edit54:setFontColor("white");
 
-    obj.flowPart269 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart269:setParent(obj.flowLayout41);
-    obj.flowPart269:setStepSizes({105});
-    obj.flowPart269:setMinScaledWidth(75);
-    obj.flowPart269:setHeight(120);
-    obj.flowPart269:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart269:setName("flowPart269");
-    obj.flowPart269:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart269:setVertAlign("leading");
+    obj.flowPart167 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart167:setParent(obj.flowLayout36);
+    obj.flowPart167:setStepSizes({105});
+    obj.flowPart167:setMinScaledWidth(75);
+    obj.flowPart167:setHeight(120);
+    obj.flowPart167:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart167:setName("flowPart167");
+    obj.flowPart167:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart167:setVertAlign("leading");
 
-    obj.label160 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label160:setParent(obj.flowPart269);
-    obj.label160:setAlign("top");
-    obj.label160:setText("DESLOCAMENTO ANDANDO");
-    obj.label160:setHeight(20);
-    obj.label160:setFontSize(9);
-    obj.label160:setWordWrap(true);
-    obj.label160:setHorzTextAlign("center");
-    obj.label160:setTextTrimming("none");
-    obj.label160:setName("label160");
-    obj.label160:setFontColor("white");
+    obj.label106 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label106:setParent(obj.flowPart167);
+    obj.label106:setAlign("top");
+    obj.label106:setText("DESLOCAMENTO ANDANDO");
+    obj.label106:setHeight(20);
+    obj.label106:setFontSize(9);
+    obj.label106:setWordWrap(true);
+    obj.label106:setHorzTextAlign("center");
+    obj.label106:setTextTrimming("none");
+    obj.label106:setName("label106");
+    obj.label106:setFontColor("white");
 
-    obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit121:setParent(obj.flowPart269);
-    obj.edit121:setAlign("client");
-    obj.edit121:setField("deslocamento andando Companion");
-    obj.edit121:setFontSize(30);
-    obj.edit121:setName("edit121");
-    obj.edit121:setTransparent(true);
-    obj.edit121:setVertTextAlign("center");
-    obj.edit121:setHorzTextAlign("center");
-    obj.edit121:setFontColor("white");
+    obj.edit55 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit55:setParent(obj.flowPart167);
+    obj.edit55:setAlign("client");
+    obj.edit55:setField("deslocamento andando Companion");
+    obj.edit55:setFontSize(30);
+    obj.edit55:setName("edit55");
+    obj.edit55:setTransparent(true);
+    obj.edit55:setVertTextAlign("center");
+    obj.edit55:setHorzTextAlign("center");
+    obj.edit55:setFontColor("white");
 
-    obj.flowPart270 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart270:setParent(obj.flowLayout41);
-    obj.flowPart270:setStepSizes({105});
-    obj.flowPart270:setMinScaledWidth(75);
-    obj.flowPart270:setHeight(120);
-    obj.flowPart270:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart270:setName("flowPart270");
-    obj.flowPart270:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart270:setVertAlign("leading");
+    obj.flowPart168 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart168:setParent(obj.flowLayout36);
+    obj.flowPart168:setStepSizes({105});
+    obj.flowPart168:setMinScaledWidth(75);
+    obj.flowPart168:setHeight(120);
+    obj.flowPart168:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart168:setName("flowPart168");
+    obj.flowPart168:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart168:setVertAlign("leading");
 
-    obj.label161 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label161:setParent(obj.flowPart270);
-    obj.label161:setAlign("top");
-    obj.label161:setText("DESLOCAMENTO NADO / ESCALADA");
-    obj.label161:setHeight(20);
-    obj.label161:setFontSize(9);
-    obj.label161:setWordWrap(true);
-    obj.label161:setHorzTextAlign("center");
-    obj.label161:setTextTrimming("none");
-    obj.label161:setName("label161");
-    obj.label161:setFontColor("white");
+    obj.label107 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label107:setParent(obj.flowPart168);
+    obj.label107:setAlign("top");
+    obj.label107:setText("DESLOCAMENTO NADO / ESCALADA");
+    obj.label107:setHeight(20);
+    obj.label107:setFontSize(9);
+    obj.label107:setWordWrap(true);
+    obj.label107:setHorzTextAlign("center");
+    obj.label107:setTextTrimming("none");
+    obj.label107:setName("label107");
+    obj.label107:setFontColor("white");
 
-    obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit122:setParent(obj.flowPart270);
-    obj.edit122:setAlign("client");
-    obj.edit122:setField("deslocamento nado Companion");
-    obj.edit122:setFontSize(30);
-    obj.edit122:setName("edit122");
-    obj.edit122:setTransparent(true);
-    obj.edit122:setVertTextAlign("center");
-    obj.edit122:setHorzTextAlign("center");
-    obj.edit122:setFontColor("white");
+    obj.edit56 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit56:setParent(obj.flowPart168);
+    obj.edit56:setAlign("client");
+    obj.edit56:setField("deslocamento nado Companion");
+    obj.edit56:setFontSize(30);
+    obj.edit56:setName("edit56");
+    obj.edit56:setTransparent(true);
+    obj.edit56:setVertTextAlign("center");
+    obj.edit56:setHorzTextAlign("center");
+    obj.edit56:setFontColor("white");
 
-    obj.flowPart271 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart271:setParent(obj.flowLayout41);
-    obj.flowPart271:setStepSizes({105});
-    obj.flowPart271:setMinScaledWidth(75);
-    obj.flowPart271:setHeight(120);
-    obj.flowPart271:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart271:setName("flowPart271");
-    obj.flowPart271:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart271:setVertAlign("leading");
+    obj.flowPart169 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart169:setParent(obj.flowLayout36);
+    obj.flowPart169:setStepSizes({105});
+    obj.flowPart169:setMinScaledWidth(75);
+    obj.flowPart169:setHeight(120);
+    obj.flowPart169:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart169:setName("flowPart169");
+    obj.flowPart169:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart169:setVertAlign("leading");
 
-    obj.label162 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label162:setParent(obj.flowPart271);
-    obj.label162:setAlign("top");
-    obj.label162:setText("DESLOCAMENTO VOO");
-    obj.label162:setHeight(20);
-    obj.label162:setFontSize(9);
-    obj.label162:setWordWrap(true);
-    obj.label162:setHorzTextAlign("center");
-    obj.label162:setTextTrimming("none");
-    obj.label162:setName("label162");
-    obj.label162:setFontColor("white");
+    obj.label108 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label108:setParent(obj.flowPart169);
+    obj.label108:setAlign("top");
+    obj.label108:setText("DESLOCAMENTO VOO");
+    obj.label108:setHeight(20);
+    obj.label108:setFontSize(9);
+    obj.label108:setWordWrap(true);
+    obj.label108:setHorzTextAlign("center");
+    obj.label108:setTextTrimming("none");
+    obj.label108:setName("label108");
+    obj.label108:setFontColor("white");
 
-    obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit123:setParent(obj.flowPart271);
-    obj.edit123:setAlign("client");
-    obj.edit123:setField("deslocamento voo Companion");
-    obj.edit123:setFontSize(30);
-    obj.edit123:setName("edit123");
-    obj.edit123:setTransparent(true);
-    obj.edit123:setVertTextAlign("center");
-    obj.edit123:setHorzTextAlign("center");
-    obj.edit123:setFontColor("white");
+    obj.edit57 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit57:setParent(obj.flowPart169);
+    obj.edit57:setAlign("client");
+    obj.edit57:setField("deslocamento voo Companion");
+    obj.edit57:setFontSize(30);
+    obj.edit57:setName("edit57");
+    obj.edit57:setTransparent(true);
+    obj.edit57:setVertTextAlign("center");
+    obj.edit57:setHorzTextAlign("center");
+    obj.edit57:setFontColor("white");
 
-    obj.flowPart272 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart272:setParent(obj.flowLayout40);
-    obj.flowPart272:setMinWidth(235);
-    obj.flowPart272:setMaxWidth(475);
-    obj.flowPart272:setMinScaledWidth(200);
-    obj.flowPart272:setHeight(175);
-    obj.flowPart272:setMargins({left=2, right=2, top=4, bottom=8});
-    obj.flowPart272:setName("flowPart272");
-    obj.flowPart272:setVertAlign("leading");
+    obj.flowPart170 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart170:setParent(obj.flowLayout35);
+    obj.flowPart170:setMinWidth(235);
+    obj.flowPart170:setMaxWidth(475);
+    obj.flowPart170:setMinScaledWidth(200);
+    obj.flowPart170:setHeight(175);
+    obj.flowPart170:setMargins({left=2, right=2, top=4, bottom=8});
+    obj.flowPart170:setName("flowPart170");
+    obj.flowPart170:setVertAlign("leading");
 
     obj.frame8 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame8:setParent(obj.flowPart272);
+    obj.frame8:setParent(obj.flowPart170);
     obj.frame8:setAlign("client");
     obj.frame8:setFrameStyle("frames/panel5/topPanel.xml");
     obj.frame8:setMargins({left = 4, right = 4, bottom=4});
     obj.frame8:setName("frame8");
 
-    obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout128:setParent(obj.frame8);
-    obj.layout128:setAlign("client");
-    obj.layout128:setMargins({left=5,right=5,bottom=5,top=5});
-    obj.layout128:setName("layout128");
+    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout117:setParent(obj.frame8);
+    obj.layout117:setAlign("client");
+    obj.layout117:setMargins({left=5,right=5,bottom=5,top=5});
+    obj.layout117:setName("layout117");
 
-    obj.flowLayout42 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout42:setParent(obj.layout128);
-    obj.flowLayout42:setAlign("top");
-    obj.flowLayout42:setHorzAlign("center");
-    obj.flowLayout42:setHeight(30);
-    obj.flowLayout42:setMargins({bottom=5});
-    obj.flowLayout42:setName("flowLayout42");
-    obj.flowLayout42:setVertAlign("leading");
+    obj.flowLayout37 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout37:setParent(obj.layout117);
+    obj.flowLayout37:setAlign("top");
+    obj.flowLayout37:setHorzAlign("center");
+    obj.flowLayout37:setHeight(30);
+    obj.flowLayout37:setMargins({bottom=5});
+    obj.flowLayout37:setName("flowLayout37");
+    obj.flowLayout37:setVertAlign("leading");
 
  require("descanso.lua"); 
 
 
-    obj.button96 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button96:setParent(obj.flowLayout42);
-    obj.button96:setText("Short Rest");
-    obj.button96:setWidth(75);
-    obj.button96:setName("button96");
+    obj.button91 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button91:setParent(obj.flowLayout37);
+    obj.button91:setText("Short Rest");
+    obj.button91:setWidth(75);
+    obj.button91:setName("button91");
 
-    obj.button97 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button97:setParent(obj.flowLayout42);
-    obj.button97:setText("Long Rest");
-    obj.button97:setWidth(75);
-    obj.button97:setName("button97");
+    obj.button92 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button92:setParent(obj.flowLayout37);
+    obj.button92:setText("Long Rest");
+    obj.button92:setWidth(75);
+    obj.button92:setName("button92");
 
-    obj.button98 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button98:setParent(obj.flowLayout42);
-    obj.button98:setText("Dano");
-    obj.button98:setWidth(50);
-    obj.button98:setName("button98");
+    obj.button93 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button93:setParent(obj.flowLayout37);
+    obj.button93:setText("Dano");
+    obj.button93:setWidth(50);
+    obj.button93:setName("button93");
 
     obj.colorComboBox2 = GUI.fromHandle(_obj_newObject("colorComboBox"));
-    obj.colorComboBox2:setParent(obj.flowLayout42);
+    obj.colorComboBox2:setParent(obj.flowLayout37);
     obj.colorComboBox2:setAlign("right");
     obj.colorComboBox2:setMargins({left=2});
     obj.colorComboBox2:setWidth(50);
@@ -15266,59 +12365,59 @@ self.upperGridMagicBox3._RecalcSize();
     obj.colorComboBox2:setUseAlpha(false);
     obj.colorComboBox2:setName("colorComboBox2");
 
-    obj.dataLink233 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink233:setParent(obj.flowLayout42);
-    obj.dataLink233:setField("barColor2");
-    obj.dataLink233:setDefaultValue("Red");
-    obj.dataLink233:setName("dataLink233");
+    obj.dataLink222 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink222:setParent(obj.flowLayout37);
+    obj.dataLink222:setField("barColor2");
+    obj.dataLink222:setDefaultValue("Red");
+    obj.dataLink222:setName("dataLink222");
 
-    obj.layout129 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout129:setParent(obj.layout128);
-    obj.layout129:setAlign("client");
-    obj.layout129:setMargins({bottom=10});
-    obj.layout129:setName("layout129");
+    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout118:setParent(obj.layout117);
+    obj.layout118:setAlign("client");
+    obj.layout118:setMargins({bottom=10});
+    obj.layout118:setName("layout118");
 
-    obj.layout130 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout130:setParent(obj.layout129);
-    obj.layout130:setAlign("right");
-    obj.layout130:setWidth(81);
-    obj.layout130:setName("layout130");
+    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout119:setParent(obj.layout118);
+    obj.layout119:setAlign("right");
+    obj.layout119:setWidth(81);
+    obj.layout119:setName("layout119");
 
-    obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit124:setParent(obj.layout130);
-    obj.edit124:setAlign("left");
-    obj.edit124:setMargins({left=2});
-    obj.edit124:setWidth(35);
-    obj.edit124:setField("PV2");
-    obj.edit124:setType("number");
-    obj.edit124:setMin(0);
-    obj.edit124:setName("edit124");
-    obj.edit124:setFontSize(15);
-    obj.edit124:setFontColor("white");
+    obj.edit58 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit58:setParent(obj.layout119);
+    obj.edit58:setAlign("left");
+    obj.edit58:setMargins({left=2});
+    obj.edit58:setWidth(35);
+    obj.edit58:setField("PV2");
+    obj.edit58:setType("number");
+    obj.edit58:setMin(0);
+    obj.edit58:setName("edit58");
+    obj.edit58:setFontSize(15);
+    obj.edit58:setFontColor("white");
 
-    obj.label163 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label163:setParent(obj.layout130);
-    obj.label163:setAlign("left");
-    obj.label163:setMargins({left=2});
-    obj.label163:setText("/");
-    obj.label163:setWidth(5);
-    obj.label163:setName("label163");
-    obj.label163:setFontColor("white");
+    obj.label109 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label109:setParent(obj.layout119);
+    obj.label109:setAlign("left");
+    obj.label109:setMargins({left=2});
+    obj.label109:setText("/");
+    obj.label109:setWidth(5);
+    obj.label109:setName("label109");
+    obj.label109:setFontColor("white");
 
-    obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit125:setParent(obj.layout130);
-    obj.edit125:setAlign("left");
-    obj.edit125:setMargins({left=2});
-    obj.edit125:setWidth(35);
-    obj.edit125:setField("PVmax2");
-    obj.edit125:setType("number");
-    obj.edit125:setMin(0);
-    obj.edit125:setName("edit125");
-    obj.edit125:setFontSize(15);
-    obj.edit125:setFontColor("white");
+    obj.edit59 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit59:setParent(obj.layout119);
+    obj.edit59:setAlign("left");
+    obj.edit59:setMargins({left=2});
+    obj.edit59:setWidth(35);
+    obj.edit59:setField("PVmax2");
+    obj.edit59:setType("number");
+    obj.edit59:setMin(0);
+    obj.edit59:setName("edit59");
+    obj.edit59:setFontSize(15);
+    obj.edit59:setFontColor("white");
 
     obj.progBar2 = GUI.fromHandle(_obj_newObject("progressBar"));
-    obj.progBar2:setParent(obj.layout129);
+    obj.progBar2:setParent(obj.layout118);
     obj.progBar2:setName("progBar2");
     obj.progBar2:setAlign("client");
     obj.progBar2:setColor("yellow");
@@ -15326,190 +12425,190 @@ self.upperGridMagicBox3._RecalcSize();
     obj.progBar2:setField("PV2");
     obj.progBar2:setFieldMax("PVmax2");
 
-    obj.label164 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label164:setParent(obj.layout129);
-    obj.label164:setAlign("client");
-    obj.label164:setAutoSize(true);
-    obj.label164:setText("PONTOS DE VIDA");
-    obj.label164:setFontSize(11);
-    obj.label164:setVertTextAlign("center");
-    obj.label164:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label164, "fontStyle",  "bold");
-    obj.label164:setMargins({top=1,left=1});
-    obj.label164:setFontColor("black");
-    obj.label164:setName("label164");
+    obj.label110 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label110:setParent(obj.layout118);
+    obj.label110:setAlign("client");
+    obj.label110:setAutoSize(true);
+    obj.label110:setText("PONTOS DE VIDA");
+    obj.label110:setFontSize(11);
+    obj.label110:setVertTextAlign("center");
+    obj.label110:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label110, "fontStyle",  "bold");
+    obj.label110:setMargins({top=1,left=1});
+    obj.label110:setFontColor("black");
+    obj.label110:setName("label110");
 
-    obj.label165 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label165:setParent(obj.layout129);
-    obj.label165:setAlign("client");
-    obj.label165:setAutoSize(true);
-    obj.label165:setText("PONTOS DE VIDA");
-    obj.label165:setFontSize(11);
-    obj.label165:setVertTextAlign("center");
-    obj.label165:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label165, "fontStyle",  "bold");
-    obj.label165:setName("label165");
-    obj.label165:setFontColor("white");
+    obj.label111 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label111:setParent(obj.layout118);
+    obj.label111:setAlign("client");
+    obj.label111:setAutoSize(true);
+    obj.label111:setText("PONTOS DE VIDA");
+    obj.label111:setFontSize(11);
+    obj.label111:setVertTextAlign("center");
+    obj.label111:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label111, "fontStyle",  "bold");
+    obj.label111:setName("label111");
+    obj.label111:setFontColor("white");
 
-    obj.dataLink234 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink234:setParent(obj.layout129);
-    obj.dataLink234:setFields({'PV2', 'PVmax2'});
-    obj.dataLink234:setName("dataLink234");
+    obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink223:setParent(obj.layout118);
+    obj.dataLink223:setFields({'PV2', 'PVmax2'});
+    obj.dataLink223:setName("dataLink223");
 
-    obj.dataLink235 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink235:setParent(obj.layout128);
-    obj.dataLink235:setField("descansoLongo");
-    obj.dataLink235:setName("dataLink235");
+    obj.dataLink224 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink224:setParent(obj.layout117);
+    obj.dataLink224:setField("descansoLongo");
+    obj.dataLink224:setName("dataLink224");
 
     obj.frame9 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame9:setParent(obj.flowPart272);
+    obj.frame9:setParent(obj.flowPart170);
     obj.frame9:setAlign("bottom");
     obj.frame9:setHeight(70);
     obj.frame9:setFrameStyle("frames/panel5/bottomPanel.xml");
     obj.frame9:setMargins({left = 4, right = 4});
     obj.frame9:setName("frame9");
 
-    obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit126:setParent(obj.frame9);
-    obj.edit126:setAlign("client");
-    obj.edit126:setField("PVTemporario");
-    obj.edit126:setMargins({top=2});
-    obj.edit126:setHorzTextAlign("center");
-    obj.edit126:setVertTextAlign("center");
-    obj.edit126:setFontSize(36);
-    lfm_setPropAsString(obj.edit126, "fontStyle",  "bold");
-    obj.edit126:setType("number");
-    obj.edit126:setName("edit126");
-    obj.edit126:setFontColor("white");
-    obj.edit126:setTransparent(true);
+    obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit60:setParent(obj.frame9);
+    obj.edit60:setAlign("client");
+    obj.edit60:setField("PVTemporario");
+    obj.edit60:setMargins({top=2});
+    obj.edit60:setHorzTextAlign("center");
+    obj.edit60:setVertTextAlign("center");
+    obj.edit60:setFontSize(36);
+    lfm_setPropAsString(obj.edit60, "fontStyle",  "bold");
+    obj.edit60:setType("number");
+    obj.edit60:setName("edit60");
+    obj.edit60:setFontColor("white");
+    obj.edit60:setTransparent(true);
 
-    obj.label166 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label166:setParent(obj.frame9);
-    obj.label166:setAlign("bottom");
-    obj.label166:setAutoSize(true);
-    obj.label166:setText("PONTOS DE VIDA TEMPORÁRIOS");
-    obj.label166:setFontSize(11);
-    obj.label166:setVertTextAlign("center");
-    obj.label166:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label166, "fontStyle",  "bold");
-    obj.label166:setName("label166");
-    obj.label166:setFontColor("white");
+    obj.label112 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label112:setParent(obj.frame9);
+    obj.label112:setAlign("bottom");
+    obj.label112:setAutoSize(true);
+    obj.label112:setText("PONTOS DE VIDA TEMPORÁRIOS");
+    obj.label112:setFontSize(11);
+    obj.label112:setVertTextAlign("center");
+    obj.label112:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label112, "fontStyle",  "bold");
+    obj.label112:setName("label112");
+    obj.label112:setFontColor("white");
 
-    obj.flowLayout43 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout43:setParent(obj.flowLayout40);
-    obj.flowLayout43:setAutoHeight(true);
-    obj.flowLayout43:setMinWidth(235);
-    obj.flowLayout43:setMaxWidth(475);
-    obj.flowLayout43:setMinScaledWidth(235);
-    obj.flowLayout43:setHorzAlign("justify");
-    obj.flowLayout43:setName("flowLayout43");
-    obj.flowLayout43:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowLayout43:setVertAlign("leading");
+    obj.flowLayout38 = GUI.fromHandle(_obj_newObject("flowLayout"));
+    obj.flowLayout38:setParent(obj.flowLayout35);
+    obj.flowLayout38:setAutoHeight(true);
+    obj.flowLayout38:setMinWidth(235);
+    obj.flowLayout38:setMaxWidth(475);
+    obj.flowLayout38:setMinScaledWidth(235);
+    obj.flowLayout38:setHorzAlign("justify");
+    obj.flowLayout38:setName("flowLayout38");
+    obj.flowLayout38:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowLayout38:setVertAlign("leading");
 
-    obj.flowPart273 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart273:setParent(obj.flowLayout43);
-    obj.flowPart273:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart273:setStepSizes({130, 150, 160});
-    obj.flowPart273:setHeight(100);
-    obj.flowPart273:setName("flowPart273");
-    obj.flowPart273:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart273:setVertAlign("leading");
+    obj.flowPart171 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart171:setParent(obj.flowLayout38);
+    obj.flowPart171:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart171:setStepSizes({130, 150, 160});
+    obj.flowPart171:setHeight(100);
+    obj.flowPart171:setName("flowPart171");
+    obj.flowPart171:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart171:setVertAlign("leading");
 
-    obj.layout131 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout131:setParent(obj.flowPart273);
-    obj.layout131:setAlign("top");
-    obj.layout131:setHeight(25);
-    obj.layout131:setName("layout131");
+    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout120:setParent(obj.flowPart171);
+    obj.layout120:setAlign("top");
+    obj.layout120:setHeight(25);
+    obj.layout120:setName("layout120");
 
-    obj.label167 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label167:setParent(obj.layout131);
-    obj.label167:setAlign("left");
-    obj.label167:setAutoSize(true);
-    obj.label167:setText("ACERTO:");
-    obj.label167:setTextTrimming("none");
-    obj.label167:setWordWrap(false);
-    obj.label167:setFontSize(10);
-    obj.label167:setHorzTextAlign("trailing");
-    obj.label167:setName("label167");
-    obj.label167:setFontColor("#D0D0D0");
+    obj.label113 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label113:setParent(obj.layout120);
+    obj.label113:setAlign("left");
+    obj.label113:setAutoSize(true);
+    obj.label113:setText("ACERTO:");
+    obj.label113:setTextTrimming("none");
+    obj.label113:setWordWrap(false);
+    obj.label113:setFontSize(10);
+    obj.label113:setHorzTextAlign("trailing");
+    obj.label113:setName("label113");
+    obj.label113:setFontColor("#D0D0D0");
 
-    obj.layout132 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout132:setParent(obj.layout131);
-    obj.layout132:setAlign("client");
-    obj.layout132:setMargins({left=5, right=3});
-    obj.layout132:setName("layout132");
+    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout121:setParent(obj.layout120);
+    obj.layout121:setAlign("client");
+    obj.layout121:setMargins({left=5, right=3});
+    obj.layout121:setName("layout121");
 
-    obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit127:setParent(obj.layout132);
-    obj.edit127:setAlign("client");
-    obj.edit127:setField("DadosDeVidaTotalcompanion");
-    obj.edit127:setVertTextAlign("center");
-    obj.edit127:setHorzTextAlign("center");
-    obj.edit127:setName("edit127");
-    obj.edit127:setFontSize(15);
-    obj.edit127:setFontColor("white");
-    obj.edit127:setTransparent(true);
+    obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit61:setParent(obj.layout121);
+    obj.edit61:setAlign("client");
+    obj.edit61:setField("DadosDeVidaTotalcompanion");
+    obj.edit61:setVertTextAlign("center");
+    obj.edit61:setHorzTextAlign("center");
+    obj.edit61:setName("edit61");
+    obj.edit61:setFontSize(15);
+    obj.edit61:setFontColor("white");
+    obj.edit61:setTransparent(true);
 
     obj.horzLine65 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine65:setParent(obj.layout132);
+    obj.horzLine65:setParent(obj.layout121);
     obj.horzLine65:setAlign("bottom");
     obj.horzLine65:setStrokeColor("gray");
     obj.horzLine65:setName("horzLine65");
 
-    obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit128:setParent(obj.flowPart273);
-    obj.edit128:setAlign("client");
-    obj.edit128:setField("DadosDeVidacompanion");
-    obj.edit128:setMargins({top=2});
-    obj.edit128:setHorzTextAlign("center");
-    obj.edit128:setVertTextAlign("center");
-    obj.edit128:setFontSize(21);
-    obj.edit128:setName("edit128");
-    obj.edit128:setFontColor("white");
-    obj.edit128:setTransparent(true);
+    obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit62:setParent(obj.flowPart171);
+    obj.edit62:setAlign("client");
+    obj.edit62:setField("DadosDeVidacompanion");
+    obj.edit62:setMargins({top=2});
+    obj.edit62:setHorzTextAlign("center");
+    obj.edit62:setVertTextAlign("center");
+    obj.edit62:setFontSize(21);
+    obj.edit62:setName("edit62");
+    obj.edit62:setFontColor("white");
+    obj.edit62:setTransparent(true);
 
-    obj.label168 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label168:setParent(obj.flowPart273);
-    obj.label168:setAlign("bottom");
-    obj.label168:setAutoSize(true);
-    obj.label168:setText("DANO DO COMPANION");
-    obj.label168:setFontSize(11);
-    obj.label168:setVertTextAlign("center");
-    obj.label168:setHorzTextAlign("center");
-    obj.label168:setName("label168");
-    obj.label168:setFontColor("white");
+    obj.label114 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label114:setParent(obj.flowPart171);
+    obj.label114:setAlign("bottom");
+    obj.label114:setAutoSize(true);
+    obj.label114:setText("DANO DO COMPANION");
+    obj.label114:setFontSize(11);
+    obj.label114:setVertTextAlign("center");
+    obj.label114:setHorzTextAlign("center");
+    obj.label114:setName("label114");
+    obj.label114:setFontColor("white");
 
-    obj.flowPart274 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart274:setParent(obj.flowLayout43);
-    obj.flowPart274:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart274:setStepSizes({170, 170});
-    obj.flowPart274:setHeight(100);
-    obj.flowPart274:setName("flowPart274");
-    obj.flowPart274:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart274:setVertAlign("leading");
+    obj.flowPart172 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart172:setParent(obj.flowLayout38);
+    obj.flowPart172:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart172:setStepSizes({170, 170});
+    obj.flowPart172:setHeight(100);
+    obj.flowPart172:setName("flowPart172");
+    obj.flowPart172:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart172:setVertAlign("leading");
 
-    obj.layout133 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout133:setParent(obj.flowPart274);
-    obj.layout133:setAlign("top");
-    obj.layout133:setHeight(25);
-    obj.layout133:setMargins({left=2});
-    obj.layout133:setName("layout133");
+    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout122:setParent(obj.flowPart172);
+    obj.layout122:setAlign("top");
+    obj.layout122:setHeight(25);
+    obj.layout122:setMargins({left=2});
+    obj.layout122:setName("layout122");
 
-    obj.label169 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label169:setParent(obj.layout133);
-    obj.label169:setAlign("client");
-    obj.label169:setAutoSize(true);
-    obj.label169:setFontSize(10);
-    obj.label169:setText("SUCESSOS");
-    obj.label169:setWordWrap(false);
-    obj.label169:setVertTextAlign("center");
-    obj.label169:setHorzTextAlign("trailing");
-    obj.label169:setMargins({right=6});
-    obj.label169:setName("label169");
-    obj.label169:setFontColor("white");
+    obj.label115 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label115:setParent(obj.layout122);
+    obj.label115:setAlign("client");
+    obj.label115:setAutoSize(true);
+    obj.label115:setFontSize(10);
+    obj.label115:setText("SUCESSOS");
+    obj.label115:setWordWrap(false);
+    obj.label115:setVertTextAlign("center");
+    obj.label115:setHorzTextAlign("trailing");
+    obj.label115:setMargins({right=6});
+    obj.label115:setName("label115");
+    obj.label115:setFontColor("white");
 
     obj.imageCheckBox7 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox7:setParent(obj.layout133);
+    obj.imageCheckBox7:setParent(obj.layout122);
     obj.imageCheckBox7:setAlign("right");
     obj.imageCheckBox7:setWidth(25);
     obj.imageCheckBox7:setMargins({right=2});
@@ -15522,7 +12621,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox7:setVisible(true);
 
     obj.imageCheckBox8 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox8:setParent(obj.layout133);
+    obj.imageCheckBox8:setParent(obj.layout122);
     obj.imageCheckBox8:setAlign("right");
     obj.imageCheckBox8:setWidth(25);
     obj.imageCheckBox8:setMargins({right=2});
@@ -15535,7 +12634,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox8:setVisible(true);
 
     obj.imageCheckBox9 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox9:setParent(obj.layout133);
+    obj.imageCheckBox9:setParent(obj.layout122);
     obj.imageCheckBox9:setAlign("right");
     obj.imageCheckBox9:setWidth(25);
     obj.imageCheckBox9:setMargins({right=6});
@@ -15547,27 +12646,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox9:setHeight(20);
     obj.imageCheckBox9:setVisible(true);
 
-    obj.layout134 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout134:setParent(obj.flowPart274);
-    obj.layout134:setAlign("top");
-    obj.layout134:setHeight(25);
-    obj.layout134:setMargins({left=2, top = 4});
-    obj.layout134:setName("layout134");
+    obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout123:setParent(obj.flowPart172);
+    obj.layout123:setAlign("top");
+    obj.layout123:setHeight(25);
+    obj.layout123:setMargins({left=2, top = 4});
+    obj.layout123:setName("layout123");
 
-    obj.label170 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label170:setParent(obj.layout134);
-    obj.label170:setAlign("client");
-    obj.label170:setAutoSize(true);
-    obj.label170:setFontSize(10);
-    obj.label170:setText("FALHAS");
-    obj.label170:setVertTextAlign("center");
-    obj.label170:setHorzTextAlign("trailing");
-    obj.label170:setMargins({right=6});
-    obj.label170:setName("label170");
-    obj.label170:setFontColor("white");
+    obj.label116 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label116:setParent(obj.layout123);
+    obj.label116:setAlign("client");
+    obj.label116:setAutoSize(true);
+    obj.label116:setFontSize(10);
+    obj.label116:setText("FALHAS");
+    obj.label116:setVertTextAlign("center");
+    obj.label116:setHorzTextAlign("trailing");
+    obj.label116:setMargins({right=6});
+    obj.label116:setName("label116");
+    obj.label116:setFontColor("white");
 
     obj.imageCheckBox10 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox10:setParent(obj.layout134);
+    obj.imageCheckBox10:setParent(obj.layout123);
     obj.imageCheckBox10:setAlign("right");
     obj.imageCheckBox10:setWidth(25);
     obj.imageCheckBox10:setMargins({right=2});
@@ -15580,7 +12679,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox10:setVisible(true);
 
     obj.imageCheckBox11 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox11:setParent(obj.layout134);
+    obj.imageCheckBox11:setParent(obj.layout123);
     obj.imageCheckBox11:setAlign("right");
     obj.imageCheckBox11:setWidth(25);
     obj.imageCheckBox11:setMargins({right=2});
@@ -15593,7 +12692,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox11:setVisible(true);
 
     obj.imageCheckBox12 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox12:setParent(obj.layout134);
+    obj.imageCheckBox12:setParent(obj.layout123);
     obj.imageCheckBox12:setAlign("right");
     obj.imageCheckBox12:setWidth(25);
     obj.imageCheckBox12:setMargins({right=6});
@@ -15605,39 +12704,39 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox12:setHeight(20);
     obj.imageCheckBox12:setVisible(true);
 
-    obj.button99 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button99:setParent(obj.flowPart274);
-    obj.button99:setAlign("bottom");
-    obj.button99:setText("TESTE CONTRA MORTE");
-    obj.button99:setFontSize(11);
-    obj.button99:setVertTextAlign("center");
-    obj.button99:setHorzTextAlign("center");
-    obj.button99:setName("button99");
+    obj.button94 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button94:setParent(obj.flowPart172);
+    obj.button94:setAlign("bottom");
+    obj.button94:setText("TESTE CONTRA MORTE");
+    obj.button94:setFontSize(11);
+    obj.button94:setVertTextAlign("center");
+    obj.button94:setHorzTextAlign("center");
+    obj.button94:setName("button94");
 
-    obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab13:setParent(obj.pgcPrincipal);
-    obj.tab13:setTitle("C.ANOTAÇÕES");
-    obj.tab13:setName("tab13");
+    obj.tab12 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab12:setParent(obj.pgcPrincipal);
+    obj.tab12:setTitle("C.ANOTAÇÕES");
+    obj.tab12:setName("tab12");
 
-    obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle28:setParent(obj.tab13);
-    obj.rectangle28:setAlign("client");
-    obj.rectangle28:setStrokeColor("white");
-    obj.rectangle28:setStrokeSize(1);
-    obj.rectangle28:setName("rectangle28");
-    obj.rectangle28:setColor("#40000000");
-    obj.rectangle28:setXradius(10);
-    obj.rectangle28:setYradius(10);
+    obj.rectangle26 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle26:setParent(obj.tab12);
+    obj.rectangle26:setAlign("client");
+    obj.rectangle26:setStrokeColor("white");
+    obj.rectangle26:setStrokeSize(1);
+    obj.rectangle26:setName("rectangle26");
+    obj.rectangle26:setColor("#40000000");
+    obj.rectangle26:setXradius(10);
+    obj.rectangle26:setYradius(10);
 
     obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.rectangle28);
+    obj.checkBox10:setParent(obj.rectangle26);
     obj.checkBox10:setAlign("right");
     obj.checkBox10:setWidth(15);
     obj.checkBox10:setField("companion.anotacoes_melhorado");
     obj.checkBox10:setName("checkBox10");
 
     obj.companionanotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.companionanotacoesFancy:setParent(obj.rectangle28);
+    obj.companionanotacoesFancy:setParent(obj.rectangle26);
     obj.companionanotacoesFancy:setName("companionanotacoesFancy");
     obj.companionanotacoesFancy:setAlign("client");
     lfm_setPropAsString(obj.companionanotacoesFancy, "backgroundColor",  "#333333");
@@ -15650,7 +12749,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.companionanotacoesFancy:setVisible(false);
 
     obj.companionanotacoesMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.companionanotacoesMerda:setParent(obj.rectangle28);
+    obj.companionanotacoesMerda:setParent(obj.rectangle26);
     obj.companionanotacoesMerda:setName("companionanotacoesMerda");
     obj.companionanotacoesMerda:setAlign("client");
     obj.companionanotacoesMerda:setField("companion.anotacoes");
@@ -15658,30 +12757,30 @@ self.upperGridMagicBox3._RecalcSize();
     obj.companionanotacoesMerda:setVisible(true);
     obj.companionanotacoesMerda:setTransparent(true);
 
-    obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab14:setParent(obj.pgcPrincipal);
-    obj.tab14:setTitle("ANOTAÇÕES");
-    obj.tab14:setName("tab14");
+    obj.tab13 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab13:setParent(obj.pgcPrincipal);
+    obj.tab13:setTitle("ANOTAÇÕES");
+    obj.tab13:setName("tab13");
 
-    obj.rectangle29 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle29:setParent(obj.tab14);
-    obj.rectangle29:setAlign("client");
-    obj.rectangle29:setStrokeColor("white");
-    obj.rectangle29:setStrokeSize(1);
-    obj.rectangle29:setName("rectangle29");
-    obj.rectangle29:setColor("#40000000");
-    obj.rectangle29:setXradius(10);
-    obj.rectangle29:setYradius(10);
+    obj.rectangle27 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle27:setParent(obj.tab13);
+    obj.rectangle27:setAlign("client");
+    obj.rectangle27:setStrokeColor("white");
+    obj.rectangle27:setStrokeSize(1);
+    obj.rectangle27:setName("rectangle27");
+    obj.rectangle27:setColor("#40000000");
+    obj.rectangle27:setXradius(10);
+    obj.rectangle27:setYradius(10);
 
     obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.rectangle29);
+    obj.checkBox11:setParent(obj.rectangle27);
     obj.checkBox11:setAlign("right");
     obj.checkBox11:setWidth(15);
     obj.checkBox11:setField("outros.anotacoes_melhorado");
     obj.checkBox11:setName("checkBox11");
 
     obj.anotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.anotacoesFancy:setParent(obj.rectangle29);
+    obj.anotacoesFancy:setParent(obj.rectangle27);
     obj.anotacoesFancy:setName("anotacoesFancy");
     obj.anotacoesFancy:setAlign("client");
     lfm_setPropAsString(obj.anotacoesFancy, "backgroundColor",  "#333333");
@@ -15694,7 +12793,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.anotacoesFancy:setVisible(false);
 
     obj.anotacoesMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.anotacoesMerda:setParent(obj.rectangle29);
+    obj.anotacoesMerda:setParent(obj.rectangle27);
     obj.anotacoesMerda:setName("anotacoesMerda");
     obj.anotacoesMerda:setAlign("client");
     obj.anotacoesMerda:setField("outros.anotacoes");
@@ -15702,26 +12801,26 @@ self.upperGridMagicBox3._RecalcSize();
     obj.anotacoesMerda:setVisible(true);
     obj.anotacoesMerda:setTransparent(true);
 
-    obj.tab15 = GUI.fromHandle(_obj_newObject("tab"));
-    obj.tab15:setParent(obj.pgcPrincipal);
-    obj.tab15:setTitle("CREDITOS");
-    obj.tab15:setName("tab15");
+    obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
+    obj.tab14:setParent(obj.pgcPrincipal);
+    obj.tab14:setTitle("CREDITOS");
+    obj.tab14:setName("tab14");
 
     obj.frmFichaRPGmeister11_svg = GUI.fromHandle(_obj_newObject("form"));
-    obj.frmFichaRPGmeister11_svg:setParent(obj.tab15);
+    obj.frmFichaRPGmeister11_svg:setParent(obj.tab14);
     obj.frmFichaRPGmeister11_svg:setName("frmFichaRPGmeister11_svg");
     obj.frmFichaRPGmeister11_svg:setAlign("client");
     obj.frmFichaRPGmeister11_svg:setTheme("dark");
 
-    obj.rectangle30 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle30:setParent(obj.frmFichaRPGmeister11_svg);
-    obj.rectangle30:setAlign("client");
-    obj.rectangle30:setColor("black");
-    obj.rectangle30:setStrokeColor("white");
-    obj.rectangle30:setStrokeSize(1);
-    obj.rectangle30:setName("rectangle30");
-    obj.rectangle30:setXradius(10);
-    obj.rectangle30:setYradius(10);
+    obj.rectangle28 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle28:setParent(obj.frmFichaRPGmeister11_svg);
+    obj.rectangle28:setAlign("client");
+    obj.rectangle28:setColor("black");
+    obj.rectangle28:setStrokeColor("white");
+    obj.rectangle28:setStrokeSize(1);
+    obj.rectangle28:setName("rectangle28");
+    obj.rectangle28:setXradius(10);
+    obj.rectangle28:setYradius(10);
 
 
 			local function recursiveFindControls(node, controlsList)
@@ -15789,370 +12888,370 @@ self.upperGridMagicBox3._RecalcSize();
 		
 
 
-    obj.scrollBox10 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox10:setParent(obj.rectangle30);
-    obj.scrollBox10:setAlign("client");
-    obj.scrollBox10:setName("scrollBox10");
+    obj.scrollBox8 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox8:setParent(obj.rectangle28);
+    obj.scrollBox8:setAlign("client");
+    obj.scrollBox8:setName("scrollBox8");
 
-    obj.layout135 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout135:setParent(obj.scrollBox10);
-    obj.layout135:setLeft(10);
-    obj.layout135:setTop(10);
-    obj.layout135:setWidth(500);
-    obj.layout135:setHeight(600);
-    obj.layout135:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout135:setName("layout135");
+    obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout124:setParent(obj.scrollBox8);
+    obj.layout124:setLeft(10);
+    obj.layout124:setTop(10);
+    obj.layout124:setWidth(500);
+    obj.layout124:setHeight(600);
+    obj.layout124:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout124:setName("layout124");
 
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.layout135);
-    obj.image7:setLeft(10);
-    obj.image7:setTop(10);
-    obj.image7:setWidth(480);
-    obj.image7:setHeight(580);
-    obj.image7:setSRC("images/Mesa_do_Bolo.png");
-    obj.image7:setStyle("stretch");
-    obj.image7:setOptimize(true);
-    obj.image7:setName("image7");
+    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.layout124);
+    obj.image6:setLeft(10);
+    obj.image6:setTop(10);
+    obj.image6:setWidth(480);
+    obj.image6:setHeight(580);
+    obj.image6:setSRC("images/Mesa_do_Bolo.png");
+    obj.image6:setStyle("stretch");
+    obj.image6:setOptimize(true);
+    obj.image6:setName("image6");
 
-    obj.layout136 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout136:setParent(obj.scrollBox10);
-    obj.layout136:setLeft(525);
-    obj.layout136:setTop(10);
-    obj.layout136:setWidth(200);
-    obj.layout136:setHeight(220);
-    obj.layout136:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout136:setName("layout136");
+    obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout125:setParent(obj.scrollBox8);
+    obj.layout125:setLeft(525);
+    obj.layout125:setTop(10);
+    obj.layout125:setWidth(200);
+    obj.layout125:setHeight(220);
+    obj.layout125:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout125:setName("layout125");
 
-    obj.label171 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label171:setParent(obj.layout136);
-    obj.label171:setLeft(0);
-    obj.label171:setTop(10);
-    obj.label171:setWidth(200);
-    obj.label171:setHeight(20);
-    obj.label171:setText("Programador e Revisão:");
-    obj.label171:setHorzTextAlign("center");
-    obj.label171:setName("label171");
-    obj.label171:setFontColor("white");
+    obj.label117 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label117:setParent(obj.layout125);
+    obj.label117:setLeft(0);
+    obj.label117:setTop(10);
+    obj.label117:setWidth(200);
+    obj.label117:setHeight(20);
+    obj.label117:setText("Programador e Revisão:");
+    obj.label117:setHorzTextAlign("center");
+    obj.label117:setName("label117");
+    obj.label117:setFontColor("white");
 
-    obj.label172 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label172:setParent(obj.layout136);
-    obj.label172:setLeft(0);
-    obj.label172:setTop(30);
-    obj.label172:setWidth(200);
-    obj.label172:setHeight(20);
-    obj.label172:setText("Samael (Zambrakas)");
-    obj.label172:setHorzTextAlign("center");
-    obj.label172:setName("label172");
-    obj.label172:setFontColor("white");
+    obj.label118 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label118:setParent(obj.layout125);
+    obj.label118:setLeft(0);
+    obj.label118:setTop(30);
+    obj.label118:setWidth(200);
+    obj.label118:setHeight(20);
+    obj.label118:setText("Samael (Zambrakas)");
+    obj.label118:setHorzTextAlign("center");
+    obj.label118:setName("label118");
+    obj.label118:setFontColor("white");
 
-    obj.label173 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label173:setParent(obj.layout136);
-    obj.label173:setLeft(0);
-    obj.label173:setTop(50);
-    obj.label173:setWidth(200);
-    obj.label173:setHeight(20);
-    obj.label173:setText("Krampus (Krampus)");
-    obj.label173:setHorzTextAlign("center");
-    obj.label173:setName("label173");
-    obj.label173:setFontColor("white");
+    obj.label119 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label119:setParent(obj.layout125);
+    obj.label119:setLeft(0);
+    obj.label119:setTop(50);
+    obj.label119:setWidth(200);
+    obj.label119:setHeight(20);
+    obj.label119:setText("Krampus (Krampus)");
+    obj.label119:setHorzTextAlign("center");
+    obj.label119:setName("label119");
+    obj.label119:setFontColor("white");
 
-    obj.label174 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label174:setParent(obj.layout136);
-    obj.label174:setLeft(0);
-    obj.label174:setTop(80);
-    obj.label174:setWidth(200);
-    obj.label174:setHeight(20);
-    obj.label174:setText("Arte:");
-    obj.label174:setHorzTextAlign("center");
-    obj.label174:setName("label174");
-    obj.label174:setFontColor("white");
+    obj.label120 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label120:setParent(obj.layout125);
+    obj.label120:setLeft(0);
+    obj.label120:setTop(80);
+    obj.label120:setWidth(200);
+    obj.label120:setHeight(20);
+    obj.label120:setText("Arte:");
+    obj.label120:setHorzTextAlign("center");
+    obj.label120:setName("label120");
+    obj.label120:setFontColor("white");
 
-    obj.label175 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label175:setParent(obj.layout136);
-    obj.label175:setLeft(0);
-    obj.label175:setTop(100);
-    obj.label175:setWidth(200);
-    obj.label175:setHeight(20);
-    obj.label175:setText("Samael (Zambrakas)");
-    obj.label175:setHorzTextAlign("center");
-    obj.label175:setName("label175");
-    obj.label175:setFontColor("white");
+    obj.label121 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label121:setParent(obj.layout125);
+    obj.label121:setLeft(0);
+    obj.label121:setTop(100);
+    obj.label121:setWidth(200);
+    obj.label121:setHeight(20);
+    obj.label121:setText("Samael (Zambrakas)");
+    obj.label121:setHorzTextAlign("center");
+    obj.label121:setName("label121");
+    obj.label121:setFontColor("white");
 
-    obj.label176 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label176:setParent(obj.layout136);
-    obj.label176:setLeft(0);
-    obj.label176:setTop(130);
-    obj.label176:setWidth(200);
-    obj.label176:setHeight(20);
-    obj.label176:setText("Ficha feita para a mesa: ");
-    obj.label176:setHorzTextAlign("center");
-    obj.label176:setName("label176");
-    obj.label176:setFontColor("white");
+    obj.label122 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label122:setParent(obj.layout125);
+    obj.label122:setLeft(0);
+    obj.label122:setTop(130);
+    obj.label122:setWidth(200);
+    obj.label122:setHeight(20);
+    obj.label122:setText("Ficha feita para a mesa: ");
+    obj.label122:setHorzTextAlign("center");
+    obj.label122:setName("label122");
+    obj.label122:setFontColor("white");
 
-    obj.label177 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label177:setParent(obj.layout136);
-    obj.label177:setLeft(0);
-    obj.label177:setTop(150);
-    obj.label177:setWidth(200);
-    obj.label177:setHeight(20);
-    obj.label177:setText("Mesa do Bolo");
-    obj.label177:setHorzTextAlign("center");
-    obj.label177:setName("label177");
-    obj.label177:setFontColor("white");
+    obj.label123 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label123:setParent(obj.layout125);
+    obj.label123:setLeft(0);
+    obj.label123:setTop(150);
+    obj.label123:setWidth(200);
+    obj.label123:setHeight(20);
+    obj.label123:setText("Mesa do Bolo");
+    obj.label123:setHorzTextAlign("center");
+    obj.label123:setName("label123");
+    obj.label123:setFontColor("white");
 
-    obj.label178 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label178:setParent(obj.layout136);
-    obj.label178:setLeft(0);
-    obj.label178:setTop(170);
-    obj.label178:setWidth(200);
-    obj.label178:setHeight(20);
-    obj.label178:setText("Mesa da Veia");
-    obj.label178:setHorzTextAlign("center");
-    obj.label178:setName("label178");
-    obj.label178:setFontColor("white");
+    obj.label124 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label124:setParent(obj.layout125);
+    obj.label124:setLeft(0);
+    obj.label124:setTop(170);
+    obj.label124:setWidth(200);
+    obj.label124:setHeight(20);
+    obj.label124:setText("Mesa da Veia");
+    obj.label124:setHorzTextAlign("center");
+    obj.label124:setName("label124");
+    obj.label124:setFontColor("white");
 
-    obj.label179 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label179:setParent(obj.layout136);
-    obj.label179:setLeft(0);
-    obj.label179:setTop(190);
-    obj.label179:setWidth(200);
-    obj.label179:setHeight(20);
-    obj.label179:setText("Tales Of Alpha");
-    obj.label179:setHorzTextAlign("center");
-    obj.label179:setName("label179");
-    obj.label179:setFontColor("white");
+    obj.label125 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label125:setParent(obj.layout125);
+    obj.label125:setLeft(0);
+    obj.label125:setTop(190);
+    obj.label125:setWidth(200);
+    obj.label125:setHeight(20);
+    obj.label125:setText("Tales Of Alpha");
+    obj.label125:setHorzTextAlign("center");
+    obj.label125:setName("label125");
+    obj.label125:setFontColor("white");
 
-    obj.label180 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label180:setParent(obj.layout136);
-    obj.label180:setLeft(0);
-    obj.label180:setTop(210);
-    obj.label180:setWidth(200);
-    obj.label180:setHeight(20);
-    obj.label180:setText(" ");
-    obj.label180:setHorzTextAlign("center");
-    obj.label180:setName("label180");
-    obj.label180:setFontColor("white");
+    obj.label126 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label126:setParent(obj.layout125);
+    obj.label126:setLeft(0);
+    obj.label126:setTop(210);
+    obj.label126:setWidth(200);
+    obj.label126:setHeight(20);
+    obj.label126:setText(" ");
+    obj.label126:setHorzTextAlign("center");
+    obj.label126:setName("label126");
+    obj.label126:setFontColor("white");
 
-    obj.layout137 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout137:setParent(obj.scrollBox10);
-    obj.layout137:setLeft(525);
-    obj.layout137:setTop(250);
-    obj.layout137:setWidth(200);
-    obj.layout137:setHeight(150);
-    obj.layout137:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout137:setName("layout137");
+    obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout126:setParent(obj.scrollBox8);
+    obj.layout126:setLeft(525);
+    obj.layout126:setTop(250);
+    obj.layout126:setWidth(200);
+    obj.layout126:setHeight(150);
+    obj.layout126:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout126:setName("layout126");
 
-    obj.label181 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label181:setParent(obj.layout137);
-    obj.label181:setLeft(0);
-    obj.label181:setTop(10);
-    obj.label181:setWidth(80);
-    obj.label181:setHeight(20);
-    obj.label181:setText("Tema:");
-    obj.label181:setHorzTextAlign("center");
-    obj.label181:setName("label181");
-    obj.label181:setFontColor("white");
+    obj.label127 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label127:setParent(obj.layout126);
+    obj.label127:setLeft(0);
+    obj.label127:setTop(10);
+    obj.label127:setWidth(80);
+    obj.label127:setHeight(20);
+    obj.label127:setText("Tema:");
+    obj.label127:setHorzTextAlign("center");
+    obj.label127:setName("label127");
+    obj.label127:setFontColor("white");
 
-    obj.comboBox25 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox25:setParent(obj.layout137);
-    obj.comboBox25:setLeft(95);
-    obj.comboBox25:setTop(10);
-    obj.comboBox25:setWidth(90);
-    obj.comboBox25:setField("theme");
-    obj.comboBox25:setFontColor("white");
-    obj.comboBox25:setItems({'Escuro',});
-    obj.comboBox25:setHorzTextAlign("center");
-    obj.comboBox25:setName("comboBox25");
+    obj.comboBox13 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox13:setParent(obj.layout126);
+    obj.comboBox13:setLeft(95);
+    obj.comboBox13:setTop(10);
+    obj.comboBox13:setWidth(90);
+    obj.comboBox13:setField("theme");
+    obj.comboBox13:setFontColor("white");
+    obj.comboBox13:setItems({'Escuro',});
+    obj.comboBox13:setHorzTextAlign("center");
+    obj.comboBox13:setName("comboBox13");
 
-    obj.dataLink236 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink236:setParent(obj.layout137);
-    obj.dataLink236:setField("theme");
-    obj.dataLink236:setDefaultValue("Escuro");
-    obj.dataLink236:setName("dataLink236");
+    obj.dataLink225 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink225:setParent(obj.layout126);
+    obj.dataLink225:setField("theme");
+    obj.dataLink225:setDefaultValue("Escuro");
+    obj.dataLink225:setName("dataLink225");
 
-    obj.label182 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label182:setParent(obj.layout137);
-    obj.label182:setLeft(0);
-    obj.label182:setTop(35);
-    obj.label182:setWidth(90);
-    obj.label182:setHeight(20);
-    obj.label182:setText("Cores: ");
-    obj.label182:setHorzTextAlign("center");
-    obj.label182:setName("label182");
-    obj.label182:setFontColor("white");
+    obj.label128 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label128:setParent(obj.layout126);
+    obj.label128:setLeft(0);
+    obj.label128:setTop(35);
+    obj.label128:setWidth(90);
+    obj.label128:setHeight(20);
+    obj.label128:setText("Cores: ");
+    obj.label128:setHorzTextAlign("center");
+    obj.label128:setName("label128");
+    obj.label128:setFontColor("white");
 
-    obj.label183 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label183:setParent(obj.layout137);
-    obj.label183:setLeft(0);
-    obj.label183:setTop(60);
-    obj.label183:setWidth(90);
-    obj.label183:setHeight(20);
-    obj.label183:setText("Fundo ");
-    obj.label183:setHorzTextAlign("center");
-    obj.label183:setName("label183");
-    obj.label183:setFontColor("white");
+    obj.label129 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label129:setParent(obj.layout126);
+    obj.label129:setLeft(0);
+    obj.label129:setTop(60);
+    obj.label129:setWidth(90);
+    obj.label129:setHeight(20);
+    obj.label129:setText("Fundo ");
+    obj.label129:setHorzTextAlign("center");
+    obj.label129:setName("label129");
+    obj.label129:setFontColor("white");
 
-    obj.comboBox26 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox26:setParent(obj.layout137);
-    obj.comboBox26:setLeft(95);
-    obj.comboBox26:setTop(60);
-    obj.comboBox26:setWidth(90);
-    obj.comboBox26:setField("colorBackground");
-    obj.comboBox26:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox26:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
-    obj.comboBox26:setName("comboBox26");
+    obj.comboBox14 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox14:setParent(obj.layout126);
+    obj.comboBox14:setLeft(95);
+    obj.comboBox14:setTop(60);
+    obj.comboBox14:setWidth(90);
+    obj.comboBox14:setField("colorBackground");
+    obj.comboBox14:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
+    obj.comboBox14:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox14:setName("comboBox14");
 
-    obj.dataLink237 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink237:setParent(obj.layout137);
-    obj.dataLink237:setField("colorBackground");
-    obj.dataLink237:setDefaultValue("#505050");
-    obj.dataLink237:setName("dataLink237");
+    obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink226:setParent(obj.layout126);
+    obj.dataLink226:setField("colorBackground");
+    obj.dataLink226:setDefaultValue("#505050");
+    obj.dataLink226:setName("dataLink226");
 
-    obj.label184 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label184:setParent(obj.layout137);
-    obj.label184:setLeft(0);
-    obj.label184:setTop(85);
-    obj.label184:setWidth(90);
-    obj.label184:setHeight(20);
-    obj.label184:setText("Linhas ");
-    obj.label184:setHorzTextAlign("center");
-    obj.label184:setName("label184");
-    obj.label184:setFontColor("white");
+    obj.label130 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label130:setParent(obj.layout126);
+    obj.label130:setLeft(0);
+    obj.label130:setTop(85);
+    obj.label130:setWidth(90);
+    obj.label130:setHeight(20);
+    obj.label130:setText("Linhas ");
+    obj.label130:setHorzTextAlign("center");
+    obj.label130:setName("label130");
+    obj.label130:setFontColor("white");
 
-    obj.comboBox27 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox27:setParent(obj.layout137);
-    obj.comboBox27:setLeft(95);
-    obj.comboBox27:setTop(85);
-    obj.comboBox27:setWidth(90);
-    obj.comboBox27:setField("colorStroke");
-    obj.comboBox27:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox27:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
-    obj.comboBox27:setName("comboBox27");
+    obj.comboBox15 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox15:setParent(obj.layout126);
+    obj.comboBox15:setLeft(95);
+    obj.comboBox15:setTop(85);
+    obj.comboBox15:setWidth(90);
+    obj.comboBox15:setField("colorStroke");
+    obj.comboBox15:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
+    obj.comboBox15:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox15:setName("comboBox15");
 
-    obj.dataLink238 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink238:setParent(obj.layout137);
-    obj.dataLink238:setField("colorStroke");
-    obj.dataLink238:setDefaultValue("#FFFFFF");
-    obj.dataLink238:setName("dataLink238");
+    obj.dataLink227 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink227:setParent(obj.layout126);
+    obj.dataLink227:setField("colorStroke");
+    obj.dataLink227:setDefaultValue("#FFFFFF");
+    obj.dataLink227:setName("dataLink227");
 
-    obj.label185 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label185:setParent(obj.layout137);
-    obj.label185:setLeft(0);
-    obj.label185:setTop(110);
-    obj.label185:setWidth(90);
-    obj.label185:setHeight(20);
-    obj.label185:setText("Fonte");
-    obj.label185:setHorzTextAlign("center");
-    obj.label185:setName("label185");
-    obj.label185:setFontColor("white");
+    obj.label131 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label131:setParent(obj.layout126);
+    obj.label131:setLeft(0);
+    obj.label131:setTop(110);
+    obj.label131:setWidth(90);
+    obj.label131:setHeight(20);
+    obj.label131:setText("Fonte");
+    obj.label131:setHorzTextAlign("center");
+    obj.label131:setName("label131");
+    obj.label131:setFontColor("white");
 
-    obj.comboBox28 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox28:setParent(obj.layout137);
-    obj.comboBox28:setLeft(95);
-    obj.comboBox28:setTop(110);
-    obj.comboBox28:setWidth(90);
-    obj.comboBox28:setField("colorFont");
-    obj.comboBox28:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox28:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
-    obj.comboBox28:setName("comboBox28");
+    obj.comboBox16 = GUI.fromHandle(_obj_newObject("comboBox"));
+    obj.comboBox16:setParent(obj.layout126);
+    obj.comboBox16:setLeft(95);
+    obj.comboBox16:setTop(110);
+    obj.comboBox16:setWidth(90);
+    obj.comboBox16:setField("colorFont");
+    obj.comboBox16:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
+    obj.comboBox16:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox16:setName("comboBox16");
 
-    obj.dataLink239 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink239:setParent(obj.layout137);
-    obj.dataLink239:setField("colorFont");
-    obj.dataLink239:setDefaultValue("#FFFFFF");
-    obj.dataLink239:setName("dataLink239");
+    obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink228:setParent(obj.layout126);
+    obj.dataLink228:setField("colorFont");
+    obj.dataLink228:setDefaultValue("#FFFFFF");
+    obj.dataLink228:setName("dataLink228");
 
-    obj.layout138 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout138:setParent(obj.scrollBox10);
-    obj.layout138:setLeft(740);
-    obj.layout138:setTop(10);
-    obj.layout138:setWidth(500);
-    obj.layout138:setHeight(600);
-    obj.layout138:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout138:setName("layout138");
+    obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout127:setParent(obj.scrollBox8);
+    obj.layout127:setLeft(740);
+    obj.layout127:setTop(10);
+    obj.layout127:setWidth(500);
+    obj.layout127:setHeight(600);
+    obj.layout127:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout127:setName("layout127");
 
-    obj.label186 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label186:setParent(obj.layout138);
-    obj.label186:setLeft(0);
-    obj.label186:setTop(560);
-    obj.label186:setWidth(500);
-    obj.label186:setHeight(20);
-    obj.label186:setText("ANOTAÇÕES DO MESTRE");
-    obj.label186:setHorzTextAlign("center");
-    obj.label186:setName("label186");
-    obj.label186:setFontColor("white");
+    obj.label132 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label132:setParent(obj.layout127);
+    obj.label132:setLeft(0);
+    obj.label132:setTop(560);
+    obj.label132:setWidth(500);
+    obj.label132:setHeight(20);
+    obj.label132:setText("ANOTAÇÕES DO MESTRE");
+    obj.label132:setHorzTextAlign("center");
+    obj.label132:setName("label132");
+    obj.label132:setFontColor("white");
 
-    obj.textEditor8 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor8:setParent(obj.layout138);
-    obj.textEditor8:setLeft(30);
-    obj.textEditor8:setTop(20);
-    obj.textEditor8:setWidth(440);
-    obj.textEditor8:setHeight(530);
-    obj.textEditor8:setField("anotacoes_do_mestre");
-    obj.textEditor8:setName("textEditor8");
-    obj.textEditor8:setTransparent(true);
+    obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor7:setParent(obj.layout127);
+    obj.textEditor7:setLeft(30);
+    obj.textEditor7:setTop(20);
+    obj.textEditor7:setWidth(440);
+    obj.textEditor7:setHeight(530);
+    obj.textEditor7:setField("anotacoes_do_mestre");
+    obj.textEditor7:setName("textEditor7");
+    obj.textEditor7:setTransparent(true);
 
-    obj.layout139 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout139:setParent(obj.scrollBox10);
-    obj.layout139:setLeft(525);
-    obj.layout139:setTop(420);
-    obj.layout139:setWidth(200);
-    obj.layout139:setHeight(190);
-    obj.layout139:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout139:setName("layout139");
+    obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout128:setParent(obj.scrollBox8);
+    obj.layout128:setLeft(525);
+    obj.layout128:setTop(420);
+    obj.layout128:setWidth(200);
+    obj.layout128:setHeight(190);
+    obj.layout128:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout128:setName("layout128");
 
-    obj.label187 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label187:setParent(obj.layout139);
-    obj.label187:setLeft(50);
-    obj.label187:setTop(30);
-    obj.label187:setWidth(200);
-    obj.label187:setHeight(20);
-    obj.label187:setText("CONHEÇA A MESA:");
-    obj.label187:setFontSize(11);
-    obj.label187:setName("label187");
-    obj.label187:setFontColor("white");
+    obj.label133 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label133:setParent(obj.layout128);
+    obj.label133:setLeft(50);
+    obj.label133:setTop(30);
+    obj.label133:setWidth(200);
+    obj.label133:setHeight(20);
+    obj.label133:setText("CONHEÇA A MESA:");
+    obj.label133:setFontSize(11);
+    obj.label133:setName("label133");
+    obj.label133:setFontColor("white");
 
-    obj.button100 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button100:setParent(obj.layout139);
-    obj.button100:setLeft(20);
-    obj.button100:setTop(70);
-    obj.button100:setWidth(80);
-    obj.button100:setText("Atualizar");
-    obj.button100:setName("button100");
+    obj.button95 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button95:setParent(obj.layout128);
+    obj.button95:setLeft(20);
+    obj.button95:setTop(70);
+    obj.button95:setWidth(80);
+    obj.button95:setText("Atualizar");
+    obj.button95:setName("button95");
 
-    obj.button101 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button101:setParent(obj.layout139);
-    obj.button101:setLeft(20);
-    obj.button101:setTop(100);
-    obj.button101:setWidth(80);
-    obj.button101:setText("Discord");
-    obj.button101:setName("button101");
+    obj.button96 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button96:setParent(obj.layout128);
+    obj.button96:setLeft(20);
+    obj.button96:setTop(100);
+    obj.button96:setWidth(80);
+    obj.button96:setText("Discord");
+    obj.button96:setName("button96");
 
-    obj.button102 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button102:setParent(obj.layout139);
-    obj.button102:setLeft(20);
-    obj.button102:setTop(130);
-    obj.button102:setWidth(80);
-    obj.button102:setText("Zap (Mesa)");
-    obj.button102:setName("button102");
+    obj.button97 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button97:setParent(obj.layout128);
+    obj.button97:setLeft(20);
+    obj.button97:setTop(130);
+    obj.button97:setWidth(80);
+    obj.button97:setText("Zap (Mesa)");
+    obj.button97:setName("button97");
 
-    obj.button103 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button103:setParent(obj.layout139);
-    obj.button103:setLeft(100);
-    obj.button103:setTop(70);
-    obj.button103:setWidth(80);
-    obj.button103:setHeight(20);
-    obj.button103:setText("Exportar");
-    obj.button103:setName("button103");
+    obj.button98 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button98:setParent(obj.layout128);
+    obj.button98:setLeft(100);
+    obj.button98:setTop(70);
+    obj.button98:setWidth(80);
+    obj.button98:setHeight(20);
+    obj.button98:setText("Exportar");
+    obj.button98:setName("button98");
 
-    obj.button104 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button104:setParent(obj.layout139);
-    obj.button104:setLeft(100);
-    obj.button104:setTop(100);
-    obj.button104:setWidth(80);
-    obj.button104:setHeight(20);
-    obj.button104:setText("Importar");
-    obj.button104:setName("button104");
+    obj.button99 = GUI.fromHandle(_obj_newObject("button"));
+    obj.button99:setParent(obj.layout128);
+    obj.button99:setLeft(100);
+    obj.button99:setTop(100);
+    obj.button99:setWidth(80);
+    obj.button99:setHeight(20);
+    obj.button99:setText("Importar");
+    obj.button99:setName("button99");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
@@ -19287,898 +16386,6 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj._e_event428 = obj.dataLink138:addEventListener("onChange",
         function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						local type = sheet.sobrentural;
-            						if type == "Raro" then
-            							sheet.sobrentural_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.sobrentural_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.sobrentural_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.sobrentural_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.sobrentural_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event429 = obj.dataLink139:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.auroras;
-            						if type == "Raro" then
-            							sheet.auroras_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.auroras_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.auroras_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.auroras_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.auroras_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event430 = obj.dataLink140:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.cometas;
-            						if type == "Raro" then
-            							sheet.cometas_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.cometas_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.cometas_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.cometas_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.cometas_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event431 = obj.dataLink141:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.cadentes;
-            						if type == "Raro" then
-            							sheet.cadentes_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.cadentes_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.cadentes_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.cadentes_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.cadentes_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event432 = obj.dataLink142:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.lunar;
-            						if type == "Raro" then
-            							sheet.lunar_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.lunar_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.lunar_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.lunar_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.lunar_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event433 = obj.dataLink143:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.solar;
-            						if type == "Raro" then
-            							sheet.solar_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.solar_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.solar_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.solar_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.solar_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event434 = obj.dataLink144:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.meteoros;
-            						if type == "Raro" then
-            							sheet.meteoros_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.meteoros_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.meteoros_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.meteoros_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.meteoros_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event435 = obj.dataLink145:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet==nil then return end;
-            						
-            						local type = sheet.terremotos;
-            						if type == "Raro" then
-            							sheet.terremotos_chance = 1;
-            						elseif type == "Incomum" then
-            							sheet.terremotos_chance = 3;
-            						elseif type == "Comum" then
-            							sheet.terremotos_chance = 7;
-            						elseif type == "Constante" then
-            							sheet.terremotos_chance = 14;
-            						elseif type == "Nenhum" then
-            							sheet.terremotos_chance = 0;
-            						end;
-        end, obj);
-
-    obj._e_event436 = obj.button58:addEventListener("onClick",
-        function (_)
-            if sheet~=nil then
-            								local meses = NDB.getChildNodes(sheet.listaMeses);
-            								local num = #meses + 1;
-            
-            								local node = self.rclMeses:append();
-            								if node~=nil then
-            									node.ordem = num;
-            									node.mes = "Mês " .. num;
-            									node.dias = 30;
-            								end;
-            
-            								self.rclMeses:sort();
-            							end;
-        end, obj);
-
-    obj._e_event437 = obj.rclMeses:addEventListener("onCompare",
-        function (_, nodeA, nodeB)
-            if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
-            		                    return -1;
-            		                elseif (tonumber(nodeA.ordem) or 0) > (tonumber(nodeB.ordem) or 0) then
-            		                    return 1;
-            		                else   
-            		                    return 0;
-            		                end;
-        end, obj);
-
-    obj._e_event438 = obj.dataLink146:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet~= nil then
-            							if sheet.dias ~= sheet.duracaoEstacao then
-            								self.dias.fontColor = "red";
-            							else
-            								self.dias.fontColor = "white";
-            							end;
-            						end;
-        end, obj);
-
-    obj._e_event439 = obj.button59:addEventListener("onClick",
-        function (_)
-            if sheet~=nil then
-            								local semana = NDB.getChildNodes(sheet.listaSemana);
-            								local num = #semana + 1;
-            
-            								local node = self.rclSemana:append();
-            								if node~=nil then
-            									node.ordem = num;
-            									node.dia = "Dia " .. num;
-            								end;
-            
-            								self.rclSemana:sort();
-            							end;
-        end, obj);
-
-    obj._e_event440 = obj.rclSemana:addEventListener("onCompare",
-        function (_, nodeA, nodeB)
-            if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
-            		                        return -1;
-            		                elseif (tonumber(nodeA.ordem) or 0) > (tonumber(nodeB.ordem) or 0) then
-            		                        return 1;
-            		                else   
-            		                        return 0;
-            		                end;
-        end, obj);
-
-    obj._e_event441 = obj.button60:addEventListener("onClick",
-        function (_)
-            if sheet~=nil then
-            								local node = self.rclLuas:append();
-            								if node~=nil then
-            									node.luas = "Lua";
-            									node.ciclo = 28;
-            									node.desvio = 0;
-            								end;
-            
-            								self.rclLuas:sort();
-            							end;
-        end, obj);
-
-    obj._e_event442 = obj.celestialBt:addEventListener("onClick",
-        function (_)
-            local pop = self:findControlByName("popCelestial");
-            							
-            							if pop ~= nil then
-            								pop:setNodeObject(self.sheet);
-            								pop:showPopupEx("bottomCenter", self.celestialBt);
-            							else
-            								showMessage("Ops, bug.. nao encontrei o popup de eventos celestiais para exibir");
-            							end;
-        end, obj);
-
-    obj._e_event443 = obj.button61:addEventListener("onClick",
-        function (_)
-            if sheet~=nil then
-            								local estacao = NDB.getChildNodes(sheet.listaEstacoes);
-            								local num = #estacao + 1;
-            
-            								local node = self.rclEstacoes:append();
-            								if node~=nil then
-            									node.ordem = num;
-            									node.estacao = "Estação " .. num;
-            									node.dias = 90;
-            								end;
-            
-            								self.rclEstacoes:sort();
-            							end;
-        end, obj);
-
-    obj._e_event444 = obj.rclEstacoes:addEventListener("onCompare",
-        function (_, nodeA, nodeB)
-            if (tonumber(nodeA.ordem) or 0) < (tonumber(nodeB.ordem) or 0) then
-            		                    return -1;
-            		                elseif (tonumber(nodeA.ordem) or 0) > (tonumber(nodeB.ordem) or 0) then
-            		                    return 1;
-            		                else   
-            		                    return 0;
-            		                end;
-        end, obj);
-
-    obj._e_event445 = obj.button62:addEventListener("onClick",
-        function (_)
-            if sheet~=nil then
-            							local tempo = tonumber(sheet.tempo) or 1;
-            							local add = tonumber(sheet.add) or 1;
-            
-            							tempo = tempo + add;
-            							local tempoRestante = tempo;
-            
-            							local anoDuracao = tonumber(sheet.dias) or 1;
-            							local ano = math.floor((tempo-1) / anoDuracao) + 1;
-            							tempoRestante = tempoRestante - ((ano-1) * anoDuracao);
-            
-            							local meses = NDB.getChildNodes(sheet.listaMeses);
-            							local mes = #meses;
-            							local search = true;
-            							local aux = 0;
-            							for i=1, #meses, 1 do
-            								if tempoRestante <= meses[i].cumulativo and search then
-            									search = false;
-            									mes = i-1;
-            									if i > 1 then
-            										aux = meses[i-1].cumulativo;
-            									end;
-            									tempoRestante = tempoRestante - aux;
-            								end;
-            							end;
-            							if mes == #meses then
-            								aux = meses[#meses].cumulativo; 
-            								tempoRestante = tempoRestante - aux;
-            							end;
-            
-            							sheet.tempo = tempo;
-            							sheet.dia = tempoRestante;
-            							sheet.mes = mes;
-            							sheet.ano = ano;
-            						end;
-        end, obj);
-
-    obj._e_event446 = obj.dataLink148:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
-            if sheet~= nil then
-            							-- Reading sheet
-            
-            							local seed;
-            							if sheet.seed == nil then
-            								seed = math.random(1, 99999);
-            								sheet.seed = seed;
-            							else
-            								seed = tonumber(sheet.seed) or 0;
-            							end;
-            
-            							local dia = tonumber(sheet.dia) or 1;
-            							local mes = tonumber(sheet.mes) or 1;
-            							local ano = tonumber(sheet.ano) or 1;
-            
-            							local anoDuracao = tonumber(sheet.dias) or 1;
-            							local duracaoEstacao = tonumber(sheet.duracaoEstacao) or 1;
-            
-            							local desvioSemana = tonumber(sheet.desvioSemana) or 0;
-            							local desvioEstacao = tonumber(sheet.desvioEstacao) or 0;
-            
-            							local meses = NDB.getChildNodes(sheet.listaMeses);
-            							local semana = NDB.getChildNodes(sheet.listaSemana); 
-            							local estacoes = NDB.getChildNodes(sheet.listaEstacoes); 
-            							local luas = NDB.getChildNodes(sheet.listaLuas); 
-            
-            							-- processing date
-            
-            							if meses[mes] == nil or #semana < 1 or #estacoes < 1 then
-            								return;
-            							end;
-            							
-            							local nomeMes = "not found";
-            							for i=1, #meses, 1 do
-            								if meses[i].ordem == mes then
-            									nomeMes = meses[i].mes;
-            								end;
-            							end;
-            
-            							local diaDoAno = dia + meses[mes].cumulativo;
-            							local tempo = diaDoAno + (ano-1) * anoDuracao;
-            
-            							local diaDaSemana = (tempo + desvioSemana) % #semana;
-            							if diaDaSemana == 0 then
-            								diaDaSemana = #semana;
-            							end;
-            							local nomeDiaDaSemana = "not found";
-            							for i=1, #semana, 1 do
-            								if semana[i].ordem == diaDaSemana then
-            									nomeDiaDaSemana = semana[i].dia;
-            								end;
-            							end;
-            
-            							-- defining season
-            							local estacao = 0;
-            							local diaDaEstacao = (tempo - desvioEstacao) % duracaoEstacao;
-            							if diaDaEstacao == 0 then
-            								diaDaEstacao = duracaoEstacao;
-            							end;
-            							local estacaoPos = 0;
-            							for i=1, #estacoes, 1 do
-            								if diaDaEstacao > estacoes[i].cumulativo then
-            									estacao = i;
-            									estacaoPos = diaDaEstacao - estacoes[i].cumulativo;
-            								end
-            							end;
-            							local estacaoNome = estacoes[estacao].estacao;
-            
-            							local estacaoEpoca = "fim";
-            							local porcEstacao = estacaoPos / (tonumber(estacoes[estacao].dias) or 1);
-            							if porcEstacao < 0.33 then
-            								estacaoEpoca = "começo";
-            							elseif porcEstacao < 0.67 then
-            								estacaoEpoca = "meio";
-            							end;
-            
-            							-- defining temperatures
-            							math.randomseed(tempo + seed);
-            
-            							local maxTemp = nil;
-            
-            							 -- The average temperature
-            							local temperatures = {tonumber(estacoes[estacao].temperatura_1) or 0,tonumber(estacoes[estacao].temperatura_2) 
-            							or 0,tonumber(estacoes[estacao].temperatura_3) or 0,tonumber(estacoes[estacao].temperatura_4) or 0,tonumber(estacoes[estacao].temperatura_5) or 0};
-            
-            							 -- The temperature variance
-            							local temperaturesVar = {tonumber(estacoes[estacao].temperaturaVar_1) or 1,tonumber(estacoes[estacao].temperaturaVar_2) 
-            							or 1,tonumber(estacoes[estacao].temperaturaVar_3) or 1,tonumber(estacoes[estacao].temperaturaVar_4) or 1,tonumber(estacoes[estacao].temperaturaVar_5) or 1};
-            
-            							-- The temperature chance
-            							local temperaturesChances = {tonumber(estacoes[estacao].temperaturaChance_1) or 0,tonumber(estacoes[estacao].temperaturaChance_2) 
-            							or 0,tonumber(estacoes[estacao].temperaturaChance_3) or 0,tonumber(estacoes[estacao].temperaturaChance_4) or 0,tonumber(estacoes[estacao].temperaturaChance_5) or 0};
-            							for i=2, 5, 1 do 
-            								temperaturesChances[i] = temperaturesChances[i-1] + temperaturesChances[i];
-            							end;
-            
-            							local MinMaxTemps = {tonumber(estacoes[estacao].temperaturaMM_1) or 1,tonumber(estacoes[estacao].temperaturaMM_2) 
-            							or 1,tonumber(estacoes[estacao].temperaturaMM_3) or 1,tonumber(estacoes[estacao].temperaturaMM_4) or 1,tonumber(estacoes[estacao].temperaturaMM_5) or 1};
-            							local selected = nil;
-            
-            							-- Define temperature range to be used
-            							local sensacao = "";
-            							local dice1 = math.random(1, 100);
-            							if dice1 <= temperaturesChances[1] then
-            								selected = 1;
-            								sensacao = "muito mais frio que o normal"
-            							elseif dice1 <= temperaturesChances[2] then
-            								selected = 2;
-            								sensacao = "mais frio que o normal"
-            							elseif dice1 <= temperaturesChances[3] then
-            								selected = 3;
-            								sensacao = "com a temperatura padrão"
-            							elseif dice1 <= temperaturesChances[4] then
-            								selected = 4;
-            								sensacao = "mais quente que o normal"
-            							else
-            								selected = 5;
-            								sensacao = "muito mais quente que o normal"
-            							end;
-            
-            							local dice2 = math.random(1, temperaturesVar[selected]);
-            							local baseTemp = temperatures[selected] + dice2;
-            
-            							-- Definine min and max temperature of the day
-            							local dice3 = math.random(1, 100);
-            							if dice3 <= temperaturesChances[1] then
-            								selected = 1;
-            							elseif dice3 <= temperaturesChances[2] then
-            								selected = 2;
-            							elseif dice3 <= temperaturesChances[3] then
-            								selected = 3;
-            							elseif dice3 <= temperaturesChances[4] then
-            								selected = 4;
-            							else
-            								selected = 5;
-            							end;
-            
-            							minTemp = 0 - MinMaxTemps[selected];
-            							maxTemp = 0 + MinMaxTemps[selected];
-            
-            							-- defining rain
-            							local intensidade;
-            							local nevoa = false;
-            
-            							-- Define rain intensity chance
-            							local intensidadeChance = {tonumber(estacoes[estacao].chuvaChance_1) or 0,tonumber(estacoes[estacao].chuvaChance_2) 
-            							or 0,tonumber(estacoes[estacao].chuvaChance_3) or 0,tonumber(estacoes[estacao].chuvaChance_4) or 0,tonumber(estacoes[estacao].chuvaChance_5) or 0,tonumber(estacoes[estacao].chuvaChance_6) or 0};
-            							for i=2, 6, 1 do 
-            								intensidadeChance[i] = intensidadeChance[i-1] + intensidadeChance[i];
-            							end;
-            
-            							local dice4 = math.random(1, 100);
-            							local dice5;
-            							if dice4 <= intensidadeChance[1] then
-            								intensidade = 1;
-            								dice5 = 0;
-            							elseif dice4 <= intensidadeChance[2] then
-            								intensidade = 2;
-            								dice5 = math.random(1, 10);
-            							elseif dice4 <= intensidadeChance[3] then
-            								intensidade = 3;
-            								dice5 = 0 - math.random(1, 3);
-            							elseif dice4 <= intensidadeChance[4] then
-            								intensidade = 4;
-            								dice5 = 0 - math.random(1, 6);
-            							elseif dice4 <= intensidadeChance[5] then
-            								intensidade = 5;
-            								dice5 = 0 - math.random(1, 8);
-            							else
-            								intensidade = 6;
-            								dice5 = 0 - math.random(1, 10);
-            							end;
-            							baseTemp = baseTemp + dice5;
-            
-            							local dice6 = math.random(1, 100);
-            							if dice6 > intensidadeChance[3] and dice6 <= intensidadeChance[4] then
-            								nevoa = true;
-            							end;
-            
-            							-- defining wind
-            
-            							-- define each wind intensity chance
-            							local ventosChance = {tonumber(estacoes[estacao].ventosChance_1) or 0,tonumber(estacoes[estacao].ventosChance_2) 
-            							or 0,tonumber(estacoes[estacao].ventosChance_3) or 0,tonumber(estacoes[estacao].ventosChance_4) or 0,tonumber(estacoes[estacao].ventosChance_5) 
-            							or 0,tonumber(estacoes[estacao].ventosChance_6) or 0,tonumber(estacoes[estacao].ventosChance_7) or 0,tonumber(estacoes[estacao].ventosChance_8) or 0};
-            							for i=2, 8, 1 do 
-            								ventosChance[i] = ventosChance[i-1] + ventosChance[i];
-            							end;
-            
-            							local ventos = 0;
-            							local ventosVelocidade;
-            
-            							local dice7 = math.random(1, 100);
-            
-            							if dice7 <= ventosChance[1] then
-            								ventos = 1;
-            								ventosVelocidade = 0;
-            								baseTemp = baseTemp + math.random(1, 10);
-            							elseif dice7 <= ventosChance[2] then
-            								ventos = 2;
-            								ventosVelocidade = math.random(1, 16) - 1;
-            								if ventosVelocidade == 0 then
-            									ventos = 1;
-            									baseTemp = baseTemp + math.random(1, 10);
-            								end
-            							elseif dice7 <= ventosChance[3] then
-            								ventos = 3;
-            								ventosVelocidade = math.random(1, 15) + 15;
-            								baseTemp = baseTemp - math.random(1, 2);
-            							elseif dice7 <= ventosChance[4] then
-            								ventos = 4;
-            								ventosVelocidade = math.random(1, 15) + 30;
-            								baseTemp = baseTemp - math.random(1, 3);
-            							elseif dice7 <= ventosChance[5] then
-            								ventos = 5;
-            								ventosVelocidade = math.random(1, 35) + 45;
-            								baseTemp = baseTemp - math.random(1, 4);
-            							elseif dice7 <= ventosChance[6] then
-            								ventos = 6;
-            								ventosVelocidade = math.random(1, 40) + 80;
-            								baseTemp = baseTemp - math.random(1, 5);
-            							elseif dice7 <= ventosChance[7] then
-            								ventos = 7;
-            								ventosVelocidade = math.random(1, 160) + 120;
-            								baseTemp = baseTemp - math.random(1, 6);
-            							else
-            								ventos = 8;
-            								ventosVelocidade = math.random(1, 200) + 280;
-            								baseTemp = baseTemp - math.random(1, 8);
-            							end;
-            
-            							-- Defining sandstorm
-            
-            							local areia = false;
-            							local areiaMin = (tonumber(estacoes[estacao].areiaMin) or 9)
-            							if intensidade == 1 and ventos >= estacoes[estacao].areiaMin then
-            								areia = true;
-            							end;
-            
-            							-- defining moons
-            
-            							local luasInfo = "";
-            							local luasLabel = "";
-            							if #luas > 1 then
-            								luasInfo = "No céu as luas ";
-            								luasLabel = "Luas: ";
-            							elseif #luas > 0 then
-            								luasInfo = "No céu a lua ";
-            								luasLabel = "Lua: ";
-            							end;
-            							for i=1, #luas, 1 do
-            								local ciclo = tonumber(luas[i].ciclo) or 1;
-            								local desvio = tonumber(luas[i].desvio) or 0;
-            
-            								-- define day in the moon cicle
-            								local diaCiclo = (tempo+desvio) % ciclo;
-            								if diaCiclo == 0 then
-            									diaCiclo = ciclo;
-            								end;
-            
-            								local porcentagemCiclo = diaCiclo / ciclo;
-            
-            								if luas[i].luas == nil then
-            									luas[i].luas = "Lua";
-            								end;
-            
-            								-- define percentage of each phase
-            								local phases = {0.125,0.25,0.375,0.5,0.625,0.75,0.875,1};
-            								local durations = {luas[i].lua_cheia_duration,luas[i].lua_minguante_convexo_duration,luas[i].lua_quarto_minguante_duration,luas[i].lua_minguante_concavo_duration,luas[i].lua_lua_nova_duration,
-            								luas[i].lua_crescente_concavo_duration,luas[i].lua_quarto_crescente_duration,luas[i].lua_crescente_convexo_duration};
-            								local pos = 0;
-            								for j=1, 8, 1 do
-            									pos = pos + (tonumber(durations[j]) or math.floor(ciclo/8));
-            									phases[j] = (pos / ciclo);
-            								end;
-            
-            								if porcentagemCiclo <= phases[1] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_cheia or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_cheia or "") .. ")";
-            								elseif porcentagemCiclo <= phases[2] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_minguante_convexo or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_minguante_convexo or "") .. ")";
-            								elseif porcentagemCiclo <= phases[3] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_quarto_minguante or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_quarto_minguante or "") .. ")";
-            								elseif porcentagemCiclo <= phases[4] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_minguante_concavo or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_minguante_concavo or "") .. ")";
-            								elseif porcentagemCiclo <= phases[5] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_lua_nova or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_lua_nova or "") .. ")";
-            								elseif porcentagemCiclo <= phases[6] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_crescente_concavo or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_crescente_concavo or "") .. ")";
-            								elseif porcentagemCiclo <= phases[7] then
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_quarto_crescente or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_quarto_crescente or "") .. ")";
-            								else
-            									luasInfo = luasInfo .. luas[i].luas .. " em " .. (luas[i].lua_crescente_convexo or "");
-            									luasLabel = luasLabel .. luas[i].luas .. " (" .. (luas[i].lua_crescente_convexo or "") .. ")";
-            								end;
-            
-            								if i < #luas then
-            									luasInfo = luasInfo .. ", ";
-            									luasLabel = luasLabel .. ", ";
-            								else
-            									luasInfo = luasInfo .. ". ";
-            									luasLabel = luasLabel .. ". ";
-            								end;
-            							end;
-            							sheet.luasLabel = luasLabel;
-            
-            							-- defining celestial events
-            
-            							local eventChance = {};
-            							eventChance[0] = 0;
-            							local events = {sheet.sobrentural_chance, sheet.auroras_chance, sheet.cometas_chance, sheet.cadentes_chance, sheet.lunar_chance, sheet.solar_chance, sheet.meteoros_chance, sheet.terremotos_chance};
-            
-            							for i = 1, 8, 1 do 
-            								eventChance[i] = eventChance[i-1] + (tonumber(events[i]) or 0);
-            							end;
-            							
-            							local dice8 = math.random(1, 100);
-            							local event = 0;
-            							local subEvent = math.random(1, 10);
-            							if dice8 <= eventChance[1] then
-            								event = 1;
-            							elseif dice8 <= eventChance[2] then
-            								event = 2;
-            							elseif dice8 <= eventChance[3] then
-            								event = 3;
-            							elseif dice8 <= eventChance[4] then
-            								event = 4;
-            							elseif dice8 <= eventChance[5] then
-            								event = 5;
-            								if #luas <1 then
-            									event = 0;
-            								end;
-            							elseif dice8 <= eventChance[6] then
-            								event = 6;
-            							elseif dice8 <= eventChance[7] then
-            								event = 7;
-            							elseif dice8 <= eventChance[8] then
-            								event = 8;
-            							end;
-            
-            							-- finalizing
-            							minTemp = minTemp + baseTemp;
-            							maxTemp = maxTemp + baseTemp;
-            
-            							-- saving variables
-            							sheet.tempo = tempo;
-            							-- sheet.era = tempo;
-            
-            							-- Cleaning hints
-            
-            							self.temperaturaLabel.hint="A temperatura atinge seu ponto mais baixo de meia noite e mais alto de meio dia. ";
-            							self.precipitacaoLabel.hint="";
-            							self.ventoLabel.hint="";
-            							self.eventosLabel.hint="";
-            
-            							-- defining message
-            							local data = dia .. " de " .. nomeMes .. " de " .. ano .. "; " .. nomeDiaDaSemana .. ". Era o " .. estacaoEpoca .. " do " .. estacaoNome .. ". Estava " .. sensacao .. " pra época, variando entre " .. minTemp .. "º C e " .. maxTemp .. "º C entre a noite e o dia. ";
-            							sheet.dataLabel = dia .. " de " .. nomeMes .. " de " .. ano .. "; " .. nomeDiaDaSemana;
-            							sheet.estacaoLabel = estacaoNome .. " (" .. estacaoEpoca .. ")";
-            							sheet.temperaturaLabel = "Temperatura: " .. minTemp .. "º C ~ " .. maxTemp .. "º C";
-            
-            							if minTemp < 5 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. "\n Muito Frio: CD15 + 1/teste a cada hora contra 1d6 dano.";
-            							elseif minTemp < -15 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. "\n Frio Severo: CD15 + 1/teste a cada 10 minutos contra 1d6 dano. Personagem fica fatigado enquanto não recuperar esse dano. ";
-            							elseif minTemp < -30 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. "\n Frio Extremo: CD15 + 1/teste a cada minuto contra 1d4 dano. Criaturas vestindo armaduras de metal são afetadas por esfriar metais. Personagem fica fatigado enquanto não recuperar esse dano. ";
-            							elseif maxTemp > 32 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. "\n Muito Quente: CD15 + 1/teste a cada hora contra 1d4 dano. Penalidade de -4 se tiver usando armaduras ou roupas pesadas. ";
-            							elseif maxTemp > 43 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. "\n Calor Severo: CD15 + 1/teste a cada 10 minutos contra 1d4 dano. Penalidade de -4 se tiver usando armaduras ou roupas pesadas. Personagem fica fatigado enquanto não recuperar esse dano. ";
-            							elseif maxTemp > 60 then
-            								self.temperaturaLabel.hint = self.temperaturaLabel.hint .. 
-            								"\n Calor Severo: CD15 + 1/teste a cada minuto contra 1d6 dano. Penalidade de -4 se tiver usando armaduras ou roupas pesadas. riaturas vestindo armaduras de metal são afetadas por esquentar metais. Personagem fica fatigado enquanto não recuperar esse dano. ";
-            							end;
-            
-            							if intensidade > 1 then
-            								local precipitacao;
-            								local labels;
-            								local penalidades;
-            								if baseTemp < 0 then
-            									precipitacao = {"", "O dia estava nublado. ", "Pequenos flocos de neve caiam lentamente e durante todo o dia. ", "Nevava ao longo do dia, com pequenas e raras pausas. ", 
-            									"Uma forte nevasca atingia a região cobrindo tudo com neve. ", "Estava caindo uma tempestade de granizo. Grandes pedras de gelo atingiam o chão. "};
-            									labels = {"", "Nublado.", "Neve leve.", "Neve.", "Nevasca.", "Granizo."};
-            									penalidades = {"", "", "", "Visibilidade reduzida pela metade, -4 em Observar, -4 Ouvir, -4 Ataques a distancia. Apaga chamas desprotegidas e 50% de chance de apagar chamas protegidas. Deslocamento na neve custa 2 quadrados. ",
-            									 "Visibilidade reduzida pela metade, -8 em Observar, -8 Ouvir, Impossivel atacar a distancia. Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas. . Deslocamento na neve custa 4 quadrados. ",
-            									  "Visibilidade reduzida pela metade, -8 em Observar, -8 Ouvir, Impossivel atacar a distancia. Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas. Pedras de gelo que causam 1d8 de dano por minuto caem em todos na região. Deslocamento na neve custa 4 quadrados. "};
-            								else
-            									precipitacao = {"", "O dia estava nublado. ", "Chuviscava, deixando tudo coberto por uma fina camada de água. ", "Chuvia ao longo do dia, com pequenas e raras pausas. ", "Um temporal atingia a região. ", "Uma forte tempestade atingia a região. Raios e trovões eram ouvidos ao longe. "};
-            									labels = {"", "Nublado.", "Chuviscando.", "Chuva.", "Temporal.", "Tempestade."};
-            									penalidades = {"", "", "", "Visibilidade reduzida pela metade, -4 em Observar, -4 Ouvir, -4 Ataques a distancia. Apaga chamas desprotegidas e 50% de chance de apagar chamas protegidas. ", "Visibilidade reduzida pela metade, -8 em Observar, -8 Ouvir, Impossivel atacar a distancia. Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas. ", "Visibilidade reduzida pela metade, -8 em Observar, -8 Ouvir, Impossivel atacar a distancia. Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas. Raios que causam (1d10)d8 de dano caem aleatoriamente. "};
-            								end;
-            								data = data .. precipitacao[intensidade];
-            								sheet.precipitacaoLabel = "Precipitação: " .. labels[intensidade];
-            								self.precipitacaoLabel.hint = penalidades[intensidade];
-            							else
-            								sheet.precipitacaoLabel = "Precipitação: Nenhuma."
-            							end;
-            							if nevoa and baseTemp < 20 then
-            								data = data .. "Uma forte neblina se espalhava, cobrindo tudo. ";
-            								sheet.precipitacaoLabel = sheet.precipitacaoLabel .. " Névoa.";
-            								self.precipitacaoLabel.hint = self.precipitacaoLabel.hint .. "\n Neblina obscurece visão além de 1,5m dando camuflagem (20%) a alvos distantes. ";
-            							end;
-            							if areia then
-            								if ventos == 1 then
-            									data = data .. "Não ventava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Sem vento."
-            								elseif ventos == 2 then
-            									data = data .. "Uma leve Brisa de " .. ventosVelocidade .. "Km/h soprava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Brisa (" .. ventosVelocidade .. "Km/h)."
-            								elseif ventos == 3 then
-            									data = data .. "Um vento Moderado de " .. ventosVelocidade .. "Km/h levantava a areia, criando uma nuvem de poeira. ";
-            									sheet.ventoLabel = "Ventos: Moderado (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="50% de chance de apagar chamas desprotegidas. Visibilidade reduzida pela metade, -4 em Observar.";
-            								elseif ventos == 4 then
-            									data = data .. "Um vento Forte de " .. ventosVelocidade .. "Km/h levantava a areia, criando uma nuvem de poeira. ";
-            									sheet.ventoLabel = "Ventos: Forte (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas. Visibilidade reduzida pela metade, -4 em Observar, -2 Ouvir e -2 ataques a distancia.";
-            								elseif ventos == 5 then
-            									data = data .. "Um vento Severo de " .. ventosVelocidade .. "Km/h levantava a areia criando uma tempestade de areia que cobria tudo. ";
-            									sheet.ventoLabel = "Ventos: Severo (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas e 50% de chance de apagar chamas protegidas. Visibilidade reduzida pela metade, -4 em Observar, -4 Ouvir e -4 ataques a distancia.";
-            								elseif ventos == 6 then
-            									data = data .. "Uma Ventania de " .. ventosVelocidade .. "Km/h cria uma perigosa tempestade de areia. ";
-            									sheet.ventoLabel = "Ventos: Ventania (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas. Visibilidade reduzida pela metade, -8 em Observar, -8 Ouvir e impossivel fazer ataques a distancia. 1d3 de dano contusivo por rodada. ";
-            								elseif ventos == 7 then
-            									data = data .. "Um Furação de " .. ventosVelocidade .. "Km/h  se forma, a areia da região segue os fortes ventos criando uma terrivel tempestade de areia. ";
-            									sheet.ventoLabel = "Ventos: Furacão (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="Apaga todas chamas. Visibilidade reduzida pela metade, -8 em Observar, impossivel ouvir e impossivel fazer ataques a distancia. 1d3 de dano contusivo por rodada. Impossivel respirar sem proteção facial e 10xcon rodadas com proteção. ";
-            								else
-            									data = data .. "Um Tornado de " .. ventosVelocidade .. "Km/h  se forma, a areia da região segue os fortes ventos criando uma terrivel tempestade de areia. ";
-            									sheet.ventoLabel = "Ventos: Tornado (" .. ventosVelocidade .. "Km/h) com areia.";
-            									self.ventoLabel.hint="Apaga todas chamas. Visibilidade reduzida pela metade, -8 em Observar, impossivel ouvir e impossivel fazer ataques a distancia. 1d3 de dano contusivo por rodada. Impossivel respirar sem proteção facial e 10xcon rodadas com proteção. Fortitude CD30, para evitar ser arrastado por 1d10 rodadas. Tomando 6d6 dano por rodada e depois dano por queda. ";
-            								end;
-            							else
-            								if ventos == 1 then
-            									data = data .. "Não ventava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Sem vento.";
-            								elseif ventos == 2 then
-            									data = data .. "Uma leve Brisa de " .. ventosVelocidade .. "Km/h soprava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Brisa (" .. ventosVelocidade .. "Km/h).";
-            								elseif ventos == 3 then
-            									data = data .. "Uma vento Moderado " .. ventosVelocidade .. "Km/h soprava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Moderado (" .. ventosVelocidade .. "Km/h).";
-            									self.ventoLabel.hint="50% de chance de apagar chamas desprotegidas. ";
-            								elseif ventos == 4 then
-            									data = data .. "Uma vento Forte de " .. ventosVelocidade .. "Km/h soprava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Forte (" .. ventosVelocidade .. "Km/h).";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas, -2 Ouvir e -2 ataques a distancia.";
-            								elseif ventos == 5 then
-            									data = data .. "Uma vento Severo de " .. ventosVelocidade .. "Km/h soprava naquele dia. ";
-            									sheet.ventoLabel = "Ventos: Severo (" .. ventosVelocidade .. "Km/h).";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas e 50% de chance de apagar chamas protegidas, -4 Ouvir e -4 ataques a distancia.";
-            								elseif ventos == 6 then
-            									data = data .. "Uma Ventania de " .. ventosVelocidade .. "Km/h se formava e arrastava consigo tudo que podia. ";
-            									sheet.ventoLabel = "Ventos: Ventania (" .. ventosVelocidade .. "Km/h).";
-            									self.ventoLabel.hint="Apaga chamas desprotegidas e 75% de chance de apagar chamas protegidas, -8 Ouvir e impossivel fazer ataques a distancia.";
-            								elseif ventos == 7 then
-            									data = data .. "Um Furacão se formava com ventos de " .. ventosVelocidade .. "Km/h destruindo por onde passava. ";
-            									sheet.ventoLabel = "Ventos: Furacão (" .. ventosVelocidade .. "Km/h).";
-            									self.ventoLabel.hint="Apaga todas chamas. Impossivel ouvir e impossivel fazer ataques a distancia. ";
-            								else
-            									data = data .. "Um Tornado se formava com ventos de " .. ventosVelocidade .. "Km/h destruindo por onde passava. ";
-            									sheet.ventoLabel = "Ventos: Tornado (" .. ventosVelocidade .. "Km/h)."
-            									self.ventoLabel.hint="Apaga todas chamas. Impossivel ouvir e impossivel fazer ataques a distancia. Fortitude CD30, para evitar ser arrastado por 1d10 rodadas. Tomando 6d6 dano por rodada e depois dano por queda. ";
-            								end;
-            							end;
-            
-            							data = data .. luasInfo;
-            
-            							if event > 0 then
-            								if event == 1 then
-            									local subEvent = math.random(1, 36);
-            									
-            									local sobrenatural = {"Toda vez que o vento soprava naquele dia era possivel ouvir estranhos sons trazidos de longe. Não se podia ver a origem daqueles sons nas proximidades. ", 
-            									"Toda vez que o vento soprava naquele dia todos se sentiam como se ficassem leves e levitassem um pouco. ", "Uma estranha chuva de granizo começa. Cada granizo que toca o chão explode soltando um som como o de um trovão. ", 
-            									"Durante a noite um estranho fenomeno ocorre. As estrelas do céu começam a cair num chuva de estrelas. Em pouco menos de uma hora todo céu ficava escuro. ", "As nuvens assumem a forma de teias e se espalham pelo céu de forma intricada. ", 
-            									"Uma estranha nevoa surge pela manhã. Ela era densa e ficava muito difícil de atravessa-la. ", "Em certo ponto do dia diversas rachaduras começam a surgir no céu, causando ondas de choque e estrondos. ", 
-            									"Todos acordam calmos, incapazes de sentir emoções fortes ou raiva. ", "Uma estranha chuva começa. Cada gota de chuva tinha uma cor diferente e brilhava. Ficando mais dificil de enchergar coisas distantes com precisão por conta de todas cores e brilhos. ", 
-            									"Uma estranha neve começa a cair. Ela se espalhava mesmo sem vento, e caminhar por ela não deixava pegadas. ", "As nuvens adquirem uma luminosidade natural, como o sol ou a lua. Ficando tudo claro mesmo a noite. ", 
-            									"Uma estranha chuva começa. Quanto mais vão ficando molhados, mais leves vão se tornando. Após alguns minutos os objetos molhados começam a flutuar. ", "Uma estranha neve começa a cair. Ela fazia um som relaxante e caia lentamente, deixando todos sonolentos. ", 
-            									"Uma estranha neve começa a cair. Ela era pesada. Quanto mais se acumulava sobre algo mais seu peso ficava evidente. ", "Um estranho vento começa a soprar. Ele entrava mesmo em lugares completamente fechados, como se fosse incorporeo. ", 
-            									"Grandes nuvens escuras de fumaça surgem no céu. Era possivel ver faiscas e chamas brancas saindo de seu interior. ", "Uma estranha chuva começa a cair. Assim que a água toca algo ela se congela. Cobrindo tudo em gelo. ", 
-            									"Estranhas nuvens de tempestade negra surgem. Raios a atravessam sem ir em direção ao chão. O barulho dos trovões e do vento forte dificultam a audição. ", 
-            									"Toda vez que o vento soprava era possivel ouvir os gritos dos mortos. Vozes do além, felizes ou tristes, podiam ser ouvidas em qualquer lugar. ", 
-            									"Uma estranha tempestade começa. Cada vez que um raio parte o céu uma rachadura se abre, por onde é possivel ver outros mundos. ", "Estranhas nuvens de fumaça surgem no céu. Começa uma chuva estranha que se incendeia ao tocar qualquer coisa. ", 
-            									"Um estranho vento começa a soprar, sempre vindo pelas costas e empurrando todos para frente. ", "Uma estranha neblina surge. Vez ou outra as pessoas que tentavam atravessa-la se encontram longe de onde estavam, em outro ponto da neblina. ", 
-            									"O céu fica coberto de luzes douradas, algumas pessoas se sentem inspiradas e mais felizes. ", "Nuvens em forma de monstros surgem no céu. Sempre que o vento empurra uma para perto de outro elas brigam e se despedaçam. ", 
-            									"Uma estranha chuva de granizo começa. Ao invés de blocos de gelo liso, pedras de gelo cheias de espinhos começam a cair. ", "Uma estranha nevoa vermelha cobre tudo. Dela era possivel ouvir o som de batalhas distantes e o sofrimento dos soldados. ", 
-            									"O céu estava especialmente limpo. Nenhum sinal de nuvens. Tambem estava especialmente claro, mesmo em lugares de sombra. ", "Uma estranha chuva começa a cair de nuvens negra. Assim que a água escura toca algo ela se congela. Cobrindo tudo em gelo negro. ", 
-            									"Uma tempestade estranha surge. As nuvens pareciam ter estranhas runas e grande quantidade de energia pode ser sentida emanando delas. ", "Uma estranha neve começa a cair. Ela era acizentada e fazia aqueles que a tocavam se sentirem mal. ", 
-            									"O céu parece estranho e distorcido, sendo dificil entender sua forma. As nuvens pareciam retorcidas e as luzes pareciam fraquejar como se estivessem falhando. ", "Uma estranha chuva começa. Tudo que ela tocava começava a se dissolver lentamente. ", 
-            									"Estranhos ventos quentes começam, acompanhados por faiscas e pequenas chamas. ", "Começa a chover de baixo pra cima. Água, de poços, lagos e rios começa a subir. ", 
-            									"As núvens assumem a forma de engrenagens e começam a se conectar e girar, formando complexos mecanismos. "};
-            									
-            									local label = {"Vento Sussurrante", "Vento Ágil ", "Granizo Trovão", "Granizo Estrelar", "Nuvens de Teia", "Nevoa Solida", "Ceurremoto", "Calma Psiquica", "Chuva Prismatica", 
-            									"Neve Fantasma", "Nuvens Brilhantes", "Chuva Levitante", "Neve do Sono", "Neve de Chumbo", "Vento Incorporeo", "Nuvens Incendiarias", "Chuva Congelante", "Tempestade Alucinogena", "Tempestade Fantasma", "Tempestade Planar", "Tempestade de Fogo", 
-            									"Vento de Cauda", "Nevoa Eterea", "Céu Dourado", "Nuvens Monstro", "Nevasca Atroz", "Nevoa Vermelha", "Claridade Celestial", "Chuva Negra", "Tempestade Arcana", "Nevasca Negra", "Céu Aberrante", "Chuva Ácida", "Sopro Draconico", 
-            									"Chuva Reversa", "Núvens Mecanicas"};
-            
-            									local efeitos = {"Qualquer criatura pode mandar uma mensagem ou som pra um local familiar escolhido. 50% de chance de apagar chamas desprotegidas. ", 
-            									"Personagens podem voar com deslocamento de voo 12m bom, ou 9m se usar armadura media ou superior. 50% de chance de apagar chamas desprotegidas. ", "Causa 1d6 de dano por minuto. Torna testes de ouvir impossiveis. ", 
-            									"Deixa o céu totalmente escuro. Barulho das estrelas caindo impoe -4 em ouvir. Estrelas voltam ao céu no dia seguinte. ", "Como a magia teia contra criaturas voadoras. ", "Como a magia nevoa solida. ", 
-            									"Fortitude CD15 pra evitar surdez por uma hora. Fortitude CD15 para evitar 2d6 de dano em criaturas voadoras. ", "Remove todos efeitos de moral, furia, inspirar coragem, ou confusão. Criaturas não conseguem tomar ações violetas, mas podem se defender. ", 
-            									"-8 em Observar. ", "+4 Furtividade, -4 Observar. Impossivel rastrear pegadas. Custa 2 quadrados para se mover pela neve. ", "Criaturas fracas contra luz do dia são afetadas como se fosse dia. ", 
-            									"Criatuas molhadas voam subindo 6m por rodada. Chuva apaga chamas desprotegidas e tem 75% de chance de apagar chamas protegidas. -4 em ouvir, observar, e ataques a distancia. ", 
-            									"Fortidude CD15 a cada hora para não dormir por 1h. -4 Observar, ouvir e ataques a distancia. Deslocamento custa o dobro. ", 
-            									"Criatuas cobertas pela neve tomam 1d6 de dano por minuto. -8 Observar, ouvir e impossivel atacar a distancia. Apaga chamas desprotegidas e 50% de chance de apagar protegidas. Deslocamento custa o dobro. ", 
-            									"Nega efeitos contra frio ou calor de roupas. Apenas bloqueado por energia. Apaga todas chamas. ", "Como a magia nuvem incendiaria", 
-            									"Fortitude CD15 a cada hora. Na primeira falha deslocamento cai pela metade e -1 em ataques, CA e Reflexos. Na segunda falha Sofre de lentidão e penalidade aumenta pra -2. Na terceira falha fica presa em gelo e paralisada. Na quarta falha a criatura morre congelada. ", 
-            									"-4 Ouvir e Observar. ", 
-            									"Um personagem que passe 10 minutos chamando um espirito consegue sua atenção por 1d6 rodadas antes dele ser carregado pelo vento. -8 em ouvir, impossivel atacar a distancia. Apaga chamas desprotegidas, 75% de chance de apagar chamas protegidas. ", 
-            									"Fortitude ou Vontade CD15 para criaturas voadoras não serem tragadas pra um plano aleatorio. ", "1d6 de dano por rodada por fogo. -4 Observar, Ouvir, e impossivel atacar a distancia. ", "Aumenta em 9m todos deslocamentos terrestres e de voo. ", 
-            									"Vontade CD15 pra não ser teleportado pra lugar aleatorio da neblina a cada movimento. ", "Bonus moral de +1 em ataques e +2 em pericias para criaturas neutras e o dobro pra criaturas boas. ", "", "1d6 de dano por minuto, -4 em ouvir. ", 
-            									"Vontade CD15 por minuto ou sofrer os efeitos de confusão. ", "+4 Observar, Ouvir, Sentir motivação. Dissipa confusão, medo ou ilusões. ", 
-            									"Fortitude CD15 pra evitar nível negativo. -4 Observar, Ouvir e ataques a distancia. Apaga chamas desprotegidas e 75% das chamas protegidas. Deslocamento custa o dobro. ", "Aumenta em 1 a CD de todas magias. Aumenta em 1 os níveis de todos conjuradores. ", 
-            									"Qualquer criatura morta durante a nevasca volta como uma aparição 1d4 rodadas depois. ", "Vontade 18 contra a magia insanidade, dura 1d6 horas. ", 
-            									"1d6 de dano ácido por minuto. Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", "50% de chance de incendiar objetos inflamaveis. ", "Reduz visibilidade a metade, -4 Observar, ouvir e ataques a distancia. Apaga chamas desprotegidas e 50% das chamas protegidas. ", ""};
-            
-            									data = data .. sobrenatural[subEvent];
-            									sheet.eventosLabel = "Eventos: " .. label[subEvent] .. ".";
-            									self.eventosLabel.hint = efeitos[subEvent];
-            								elseif event == 2 then
-            									data = data .. "Durante a noite, o céu ficava coberto por uma Aurora. As grandes luzes se espalhavam pelo céu como panos de luz colorida. "
-            									sheet.eventosLabel = "Eventos: Aurora."
-            								elseif event == 3 then
-            									data = data .. "Durante a noite, um cometa é visto atravessando os céus lentamente. Atravessando-o como uma linha de fogo. "
-            									sheet.eventosLabel = "Eventos: Cometa."
-            								elseif event == 4 then
-            									local subEvent = math.random(1, 10);
-            									if subEvent <= 7 then
-            										data = data .. "Durante a noite, uma estrela cadente é vista cruzando o céu com velocidade. "
-            										sheet.eventosLabel = "Eventos: Estrela Cadente."
-            									elseif subEvent <= 9 then
-            										data = data .. "Durante a noite, algumas estrelas cadentes podem ser vistas cruzando o céu com velocidade. "
-            										sheet.eventosLabel = "Eventos: Estrelas Cadentes."
-            									else
-            										data = data .. "Durante a noite, frequentemente se pode ver estrelas cadentes cruzando o céu com velocidade. "
-            										sheet.eventosLabel = "Eventos: Estrelas Cadentes."
-            									end;
-            								elseif event == 5 then
-            									local subEvent = math.random(1, 4);
-            									if subEvent <= 3 then
-            										data = data .. "Durante a noite, um eclipse lunar penumbral ocorre. A lua fica vermelha, deixando tudo com uma aparencia avermelhada. "
-            										sheet.eventosLabel = "Eventos: Lua de Sangue."
-            									else
-            										data = data .. "Durante a noite, um eclipse lunar ocorre. Deixando tudo escuro. "
-            										sheet.eventosLabel = "Eventos: Eclipse Lunar."
-            									end;
-            								elseif event == 6 then
-            									local subEvent = math.random(1, 4);
-            									if subEvent <= 3 then
-            										data = data .. "Durante o dia, um eclipse solar anular ocorre. O sol fica coberto por uma mancha negra, mas era possivel ver o circulo de fogo em volta da mancha. "
-            										sheet.eventosLabel = "Eventos: Eclipse Solar Anular."
-            									else
-            										data = data .. "Durante o dia, um eclipse solar ocorre. Deixando tudo escuro por alguns minutos. "
-            										sheet.eventosLabel = "Eventos: Eclipse Solar."
-            									end;
-            								elseif event == 7 then
-            									local subEvent = math.random(1, 10);
-            									if subEvent <= 7 then
-            										data = data .. "Durante a noite, uma fraca chuva de meteoros é vista. Algumas vezes era possivel ver pequenos meteoros cruzando o céu. "
-            										sheet.eventosLabel = "Eventos: Chuva de Meteoros."
-            									elseif subEvent <= 9 then
-            										data = data .. "Durante a noite, uma chuva de meteoros é vista. Varias vezes era possivel perceber os pequenos meteoros cruzando o céu. "
-            										sheet.eventosLabel = "Eventos: Chuva de Meteoros."
-            									else
-            										data = data .. "Durante a noite, uma forte chuva de meteoros é vista. Dezenas de meteoros iluminam o céu. "
-            										sheet.eventosLabel = "Eventos: Chuva de Meteoros."
-            									end;
-            								elseif event == 8 then
-            									data = data .. "Em certo momento do dia um terremoto começa, fazendo o chão se tremer e derrubando construções e objetos. ";
-            									sheet.eventosLabel = "Eventos: Terremoto."
-            								end;
-            							else
-            								sheet.eventosLabel = "Eventos: Nenhum."
-            							end;
-            							sheet.data = data;
-            						end;
-        end, obj);
-
-    obj._e_event447 = obj.dataLink149:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
             
@@ -20207,27 +16414,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event448 = obj.button63:addEventListener("onKeyDown",
+    obj._e_event429 = obj.button58:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event449 = obj.button63:addEventListener("onKeyUp",
+    obj._e_event430 = obj.button58:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event450 = obj.button63:addEventListener("onClick",
+    obj._e_event431 = obj.button58:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event451 = obj.button63:addEventListener("onMenu",
+    obj._e_event432 = obj.button58:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event452 = obj.cbProfcompanionforca:addEventListener("onMenu",
+    obj._e_event433 = obj.cbProfcompanionforca:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionforca"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionforca', true);
@@ -20235,42 +16442,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event453 = obj.cbProfcompanionforca:addEventListener("onClick",
+    obj._e_event434 = obj.cbProfcompanionforca:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionforca', false);
         end, obj);
 
-    obj._e_event454 = obj.dataLink150:addEventListener("onChange",
+    obj._e_event435 = obj.dataLink139:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionforca");
         end, obj);
 
-    obj._e_event455 = obj.dataLink151:addEventListener("onChange",
+    obj._e_event436 = obj.dataLink140:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionforca'] then updateCbVisibility('companionforca'); end;
         end, obj);
 
-    obj._e_event456 = obj.button64:addEventListener("onKeyDown",
+    obj._e_event437 = obj.button59:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event457 = obj.button64:addEventListener("onKeyUp",
+    obj._e_event438 = obj.button59:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event458 = obj.button64:addEventListener("onClick",
+    obj._e_event439 = obj.button59:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, false);
         end, obj);
 
-    obj._e_event459 = obj.button64:addEventListener("onMenu",
+    obj._e_event440 = obj.button59:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionforca'}, nil, true);
         end, obj);
 
-    obj._e_event460 = obj.dataLink152:addEventListener("onChange",
+    obj._e_event441 = obj.dataLink141:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionforca');
             
@@ -20286,7 +16493,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionforca:setHint(hint);
         end, obj);
 
-    obj._e_event461 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
+    obj._e_event442 = obj.cbProfcompanionatletismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatletismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatletismo', true);
@@ -20294,42 +16501,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event462 = obj.cbProfcompanionatletismo:addEventListener("onClick",
+    obj._e_event443 = obj.cbProfcompanionatletismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatletismo', false);
         end, obj);
 
-    obj._e_event463 = obj.dataLink153:addEventListener("onChange",
+    obj._e_event444 = obj.dataLink142:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatletismo");
         end, obj);
 
-    obj._e_event464 = obj.dataLink154:addEventListener("onChange",
+    obj._e_event445 = obj.dataLink143:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatletismo'] then updateCbVisibility('companionatletismo'); end;
         end, obj);
 
-    obj._e_event465 = obj.button65:addEventListener("onKeyDown",
+    obj._e_event446 = obj.button60:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event466 = obj.button65:addEventListener("onKeyUp",
+    obj._e_event447 = obj.button60:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event467 = obj.button65:addEventListener("onClick",
+    obj._e_event448 = obj.button60:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, false);
         end, obj);
 
-    obj._e_event468 = obj.button65:addEventListener("onMenu",
+    obj._e_event449 = obj.button60:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatletismo'}, nil, true);
         end, obj);
 
-    obj._e_event469 = obj.dataLink155:addEventListener("onChange",
+    obj._e_event450 = obj.dataLink144:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionforca', 'companionatletismo');
             
@@ -20345,7 +16552,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatletismo:setHint(hint);
         end, obj);
 
-    obj._e_event470 = obj.dataLink156:addEventListener("onChange",
+    obj._e_event451 = obj.dataLink145:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20375,27 +16582,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event471 = obj.button66:addEventListener("onKeyDown",
+    obj._e_event452 = obj.button61:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event472 = obj.button66:addEventListener("onKeyUp",
+    obj._e_event453 = obj.button61:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event473 = obj.button66:addEventListener("onClick",
+    obj._e_event454 = obj.button61:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event474 = obj.button66:addEventListener("onMenu",
+    obj._e_event455 = obj.button61:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event475 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
+    obj._e_event456 = obj.cbProfcompaniondestreza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiondestreza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiondestreza', true);
@@ -20403,42 +16610,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event476 = obj.cbProfcompaniondestreza:addEventListener("onClick",
+    obj._e_event457 = obj.cbProfcompaniondestreza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiondestreza', false);
         end, obj);
 
-    obj._e_event477 = obj.dataLink157:addEventListener("onChange",
+    obj._e_event458 = obj.dataLink146:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiondestreza");
         end, obj);
 
-    obj._e_event478 = obj.dataLink158:addEventListener("onChange",
+    obj._e_event459 = obj.dataLink147:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiondestreza'] then updateCbVisibility('companiondestreza'); end;
         end, obj);
 
-    obj._e_event479 = obj.button67:addEventListener("onKeyDown",
+    obj._e_event460 = obj.button62:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event480 = obj.button67:addEventListener("onKeyUp",
+    obj._e_event461 = obj.button62:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event481 = obj.button67:addEventListener("onClick",
+    obj._e_event462 = obj.button62:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, false);
         end, obj);
 
-    obj._e_event482 = obj.button67:addEventListener("onMenu",
+    obj._e_event463 = obj.button62:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companiondestreza'}, nil, true);
         end, obj);
 
-    obj._e_event483 = obj.dataLink159:addEventListener("onChange",
+    obj._e_event464 = obj.dataLink148:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companiondestreza');
             
@@ -20454,7 +16661,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompaniondestreza:setHint(hint);
         end, obj);
 
-    obj._e_event484 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
+    obj._e_event465 = obj.cbProfcompanionacrobacia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionacrobacia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionacrobacia', true);
@@ -20462,42 +16669,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event485 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
+    obj._e_event466 = obj.cbProfcompanionacrobacia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionacrobacia', false);
         end, obj);
 
-    obj._e_event486 = obj.dataLink160:addEventListener("onChange",
+    obj._e_event467 = obj.dataLink149:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionacrobacia");
         end, obj);
 
-    obj._e_event487 = obj.dataLink161:addEventListener("onChange",
+    obj._e_event468 = obj.dataLink150:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionacrobacia'] then updateCbVisibility('companionacrobacia'); end;
         end, obj);
 
-    obj._e_event488 = obj.button68:addEventListener("onKeyDown",
+    obj._e_event469 = obj.button63:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event489 = obj.button68:addEventListener("onKeyUp",
+    obj._e_event470 = obj.button63:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event490 = obj.button68:addEventListener("onClick",
+    obj._e_event471 = obj.button63:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, false);
         end, obj);
 
-    obj._e_event491 = obj.button68:addEventListener("onMenu",
+    obj._e_event472 = obj.button63:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionacrobacia'}, nil, true);
         end, obj);
 
-    obj._e_event492 = obj.dataLink162:addEventListener("onChange",
+    obj._e_event473 = obj.dataLink151:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionacrobacia');
             
@@ -20513,7 +16720,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionacrobacia:setHint(hint);
         end, obj);
 
-    obj._e_event493 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
+    obj._e_event474 = obj.cbProfcompanionfurtividade:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionfurtividade"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionfurtividade', true);
@@ -20521,42 +16728,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event494 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
+    obj._e_event475 = obj.cbProfcompanionfurtividade:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionfurtividade', false);
         end, obj);
 
-    obj._e_event495 = obj.dataLink163:addEventListener("onChange",
+    obj._e_event476 = obj.dataLink152:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionfurtividade");
         end, obj);
 
-    obj._e_event496 = obj.dataLink164:addEventListener("onChange",
+    obj._e_event477 = obj.dataLink153:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionfurtividade'] then updateCbVisibility('companionfurtividade'); end;
         end, obj);
 
-    obj._e_event497 = obj.button69:addEventListener("onKeyDown",
+    obj._e_event478 = obj.button64:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event498 = obj.button69:addEventListener("onKeyUp",
+    obj._e_event479 = obj.button64:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event499 = obj.button69:addEventListener("onClick",
+    obj._e_event480 = obj.button64:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, false);
         end, obj);
 
-    obj._e_event500 = obj.button69:addEventListener("onMenu",
+    obj._e_event481 = obj.button64:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionfurtividade'}, nil, true);
         end, obj);
 
-    obj._e_event501 = obj.dataLink165:addEventListener("onChange",
+    obj._e_event482 = obj.dataLink154:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionfurtividade');
             
@@ -20572,7 +16779,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionfurtividade:setHint(hint);
         end, obj);
 
-    obj._e_event502 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
+    obj._e_event483 = obj.cbProfcompanionprestidigitacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionprestidigitacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', true);
@@ -20580,42 +16787,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event503 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
+    obj._e_event484 = obj.cbProfcompanionprestidigitacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionprestidigitacao', false);
         end, obj);
 
-    obj._e_event504 = obj.dataLink166:addEventListener("onChange",
+    obj._e_event485 = obj.dataLink155:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionprestidigitacao");
         end, obj);
 
-    obj._e_event505 = obj.dataLink167:addEventListener("onChange",
+    obj._e_event486 = obj.dataLink156:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionprestidigitacao'] then updateCbVisibility('companionprestidigitacao'); end;
         end, obj);
 
-    obj._e_event506 = obj.button70:addEventListener("onKeyDown",
+    obj._e_event487 = obj.button65:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event507 = obj.button70:addEventListener("onKeyUp",
+    obj._e_event488 = obj.button65:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event508 = obj.button70:addEventListener("onClick",
+    obj._e_event489 = obj.button65:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, false);
         end, obj);
 
-    obj._e_event509 = obj.button70:addEventListener("onMenu",
+    obj._e_event490 = obj.button65:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionprestidigitacao'}, nil, true);
         end, obj);
 
-    obj._e_event510 = obj.dataLink168:addEventListener("onChange",
+    obj._e_event491 = obj.dataLink157:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companiondestreza', 'companionprestidigitacao');
             
@@ -20631,7 +16838,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionprestidigitacao:setHint(hint);
         end, obj);
 
-    obj._e_event511 = obj.dataLink169:addEventListener("onChange",
+    obj._e_event492 = obj.dataLink158:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20661,27 +16868,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event512 = obj.button71:addEventListener("onKeyDown",
+    obj._e_event493 = obj.button66:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event513 = obj.button71:addEventListener("onKeyUp",
+    obj._e_event494 = obj.button66:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event514 = obj.button71:addEventListener("onClick",
+    obj._e_event495 = obj.button66:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event515 = obj.button71:addEventListener("onMenu",
+    obj._e_event496 = obj.button66:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event516 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
+    obj._e_event497 = obj.cbProfcompanionconstituicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconstituicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconstituicao', true);
@@ -20689,42 +16896,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event517 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
+    obj._e_event498 = obj.cbProfcompanionconstituicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconstituicao', false);
         end, obj);
 
-    obj._e_event518 = obj.dataLink170:addEventListener("onChange",
+    obj._e_event499 = obj.dataLink159:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconstituicao");
         end, obj);
 
-    obj._e_event519 = obj.dataLink171:addEventListener("onChange",
+    obj._e_event500 = obj.dataLink160:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconstituicao'] then updateCbVisibility('companionconstituicao'); end;
         end, obj);
 
-    obj._e_event520 = obj.button72:addEventListener("onKeyDown",
+    obj._e_event501 = obj.button67:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event521 = obj.button72:addEventListener("onKeyUp",
+    obj._e_event502 = obj.button67:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event522 = obj.button72:addEventListener("onClick",
+    obj._e_event503 = obj.button67:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, false);
         end, obj);
 
-    obj._e_event523 = obj.button72:addEventListener("onMenu",
+    obj._e_event504 = obj.button67:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionconstituicao'}, nil, true);
         end, obj);
 
-    obj._e_event524 = obj.dataLink172:addEventListener("onChange",
+    obj._e_event505 = obj.dataLink161:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionconstituicao');
             
@@ -20740,7 +16947,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionconstituicao:setHint(hint);
         end, obj);
 
-    obj._e_event525 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
+    obj._e_event506 = obj.cbProfcompanionconcentracao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionconcentracao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionconcentracao', true);
@@ -20748,42 +16955,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event526 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
+    obj._e_event507 = obj.cbProfcompanionconcentracao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionconcentracao', false);
         end, obj);
 
-    obj._e_event527 = obj.dataLink173:addEventListener("onChange",
+    obj._e_event508 = obj.dataLink162:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionconcentracao");
         end, obj);
 
-    obj._e_event528 = obj.dataLink174:addEventListener("onChange",
+    obj._e_event509 = obj.dataLink163:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionconcentracao'] then updateCbVisibility('companionconcentracao'); end;
         end, obj);
 
-    obj._e_event529 = obj.button73:addEventListener("onKeyDown",
+    obj._e_event510 = obj.button68:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event530 = obj.button73:addEventListener("onKeyUp",
+    obj._e_event511 = obj.button68:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event531 = obj.button73:addEventListener("onClick",
+    obj._e_event512 = obj.button68:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, false);
         end, obj);
 
-    obj._e_event532 = obj.button73:addEventListener("onMenu",
+    obj._e_event513 = obj.button68:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionconcentracao'}, nil, true);
         end, obj);
 
-    obj._e_event533 = obj.dataLink175:addEventListener("onChange",
+    obj._e_event514 = obj.dataLink164:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companionconcentracao');
             
@@ -20799,7 +17006,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionconcentracao:setHint(hint);
         end, obj);
 
-    obj._e_event534 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
+    obj._e_event515 = obj.cbProfcompaniontolerancia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companiontolerancia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companiontolerancia', true);
@@ -20807,42 +17014,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event535 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
+    obj._e_event516 = obj.cbProfcompaniontolerancia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companiontolerancia', false);
         end, obj);
 
-    obj._e_event536 = obj.dataLink176:addEventListener("onChange",
+    obj._e_event517 = obj.dataLink165:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companiontolerancia");
         end, obj);
 
-    obj._e_event537 = obj.dataLink177:addEventListener("onChange",
+    obj._e_event518 = obj.dataLink166:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companiontolerancia'] then updateCbVisibility('companiontolerancia'); end;
         end, obj);
 
-    obj._e_event538 = obj.button74:addEventListener("onKeyDown",
+    obj._e_event519 = obj.button69:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event539 = obj.button74:addEventListener("onKeyUp",
+    obj._e_event520 = obj.button69:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event540 = obj.button74:addEventListener("onClick",
+    obj._e_event521 = obj.button69:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, false);
         end, obj);
 
-    obj._e_event541 = obj.button74:addEventListener("onMenu",
+    obj._e_event522 = obj.button69:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companiontolerancia'}, nil, true);
         end, obj);
 
-    obj._e_event542 = obj.dataLink178:addEventListener("onChange",
+    obj._e_event523 = obj.dataLink167:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionconstituicao', 'companiontolerancia');
             
@@ -20858,7 +17065,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompaniontolerancia:setHint(hint);
         end, obj);
 
-    obj._e_event543 = obj.dataLink179:addEventListener("onChange",
+    obj._e_event524 = obj.dataLink168:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -20888,27 +17095,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event544 = obj.button75:addEventListener("onKeyDown",
+    obj._e_event525 = obj.button70:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event545 = obj.button75:addEventListener("onKeyUp",
+    obj._e_event526 = obj.button70:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event546 = obj.button75:addEventListener("onClick",
+    obj._e_event527 = obj.button70:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event547 = obj.button75:addEventListener("onMenu",
+    obj._e_event528 = obj.button70:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event548 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
+    obj._e_event529 = obj.cbProfcompanioninteligencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninteligencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninteligencia', true);
@@ -20916,42 +17123,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event549 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
+    obj._e_event530 = obj.cbProfcompanioninteligencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninteligencia', false);
         end, obj);
 
-    obj._e_event550 = obj.dataLink180:addEventListener("onChange",
+    obj._e_event531 = obj.dataLink169:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninteligencia");
         end, obj);
 
-    obj._e_event551 = obj.dataLink181:addEventListener("onChange",
+    obj._e_event532 = obj.dataLink170:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninteligencia'] then updateCbVisibility('companioninteligencia'); end;
         end, obj);
 
-    obj._e_event552 = obj.button76:addEventListener("onKeyDown",
+    obj._e_event533 = obj.button71:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event553 = obj.button76:addEventListener("onKeyUp",
+    obj._e_event534 = obj.button71:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event554 = obj.button76:addEventListener("onClick",
+    obj._e_event535 = obj.button71:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, false);
         end, obj);
 
-    obj._e_event555 = obj.button76:addEventListener("onMenu",
+    obj._e_event536 = obj.button71:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioninteligencia'}, nil, true);
         end, obj);
 
-    obj._e_event556 = obj.dataLink182:addEventListener("onChange",
+    obj._e_event537 = obj.dataLink171:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioninteligencia');
             
@@ -20967,7 +17174,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioninteligencia:setHint(hint);
         end, obj);
 
-    obj._e_event557 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
+    obj._e_event538 = obj.cbProfcompanionarcanismo:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionarcanismo"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionarcanismo', true);
@@ -20975,42 +17182,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event558 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
+    obj._e_event539 = obj.cbProfcompanionarcanismo:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionarcanismo', false);
         end, obj);
 
-    obj._e_event559 = obj.dataLink183:addEventListener("onChange",
+    obj._e_event540 = obj.dataLink172:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionarcanismo");
         end, obj);
 
-    obj._e_event560 = obj.dataLink184:addEventListener("onChange",
+    obj._e_event541 = obj.dataLink173:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionarcanismo'] then updateCbVisibility('companionarcanismo'); end;
         end, obj);
 
-    obj._e_event561 = obj.button77:addEventListener("onKeyDown",
+    obj._e_event542 = obj.button72:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event562 = obj.button77:addEventListener("onKeyUp",
+    obj._e_event543 = obj.button72:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event563 = obj.button77:addEventListener("onClick",
+    obj._e_event544 = obj.button72:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, false);
         end, obj);
 
-    obj._e_event564 = obj.button77:addEventListener("onMenu",
+    obj._e_event545 = obj.button72:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionarcanismo'}, nil, true);
         end, obj);
 
-    obj._e_event565 = obj.dataLink185:addEventListener("onChange",
+    obj._e_event546 = obj.dataLink174:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionarcanismo');
             
@@ -21026,7 +17233,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionarcanismo:setHint(hint);
         end, obj);
 
-    obj._e_event566 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
+    obj._e_event547 = obj.cbProfcompanionhistoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionhistoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionhistoria', true);
@@ -21034,42 +17241,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event567 = obj.cbProfcompanionhistoria:addEventListener("onClick",
+    obj._e_event548 = obj.cbProfcompanionhistoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionhistoria', false);
         end, obj);
 
-    obj._e_event568 = obj.dataLink186:addEventListener("onChange",
+    obj._e_event549 = obj.dataLink175:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionhistoria");
         end, obj);
 
-    obj._e_event569 = obj.dataLink187:addEventListener("onChange",
+    obj._e_event550 = obj.dataLink176:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionhistoria'] then updateCbVisibility('companionhistoria'); end;
         end, obj);
 
-    obj._e_event570 = obj.button78:addEventListener("onKeyDown",
+    obj._e_event551 = obj.button73:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event571 = obj.button78:addEventListener("onKeyUp",
+    obj._e_event552 = obj.button73:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event572 = obj.button78:addEventListener("onClick",
+    obj._e_event553 = obj.button73:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, false);
         end, obj);
 
-    obj._e_event573 = obj.button78:addEventListener("onMenu",
+    obj._e_event554 = obj.button73:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionhistoria'}, nil, true);
         end, obj);
 
-    obj._e_event574 = obj.dataLink188:addEventListener("onChange",
+    obj._e_event555 = obj.dataLink177:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionhistoria');
             
@@ -21085,7 +17292,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionhistoria:setHint(hint);
         end, obj);
 
-    obj._e_event575 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
+    obj._e_event556 = obj.cbProfcompanioninvestigacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioninvestigacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioninvestigacao', true);
@@ -21093,42 +17300,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event576 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
+    obj._e_event557 = obj.cbProfcompanioninvestigacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioninvestigacao', false);
         end, obj);
 
-    obj._e_event577 = obj.dataLink189:addEventListener("onChange",
+    obj._e_event558 = obj.dataLink178:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioninvestigacao");
         end, obj);
 
-    obj._e_event578 = obj.dataLink190:addEventListener("onChange",
+    obj._e_event559 = obj.dataLink179:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioninvestigacao'] then updateCbVisibility('companioninvestigacao'); end;
         end, obj);
 
-    obj._e_event579 = obj.button79:addEventListener("onKeyDown",
+    obj._e_event560 = obj.button74:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event580 = obj.button79:addEventListener("onKeyUp",
+    obj._e_event561 = obj.button74:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event581 = obj.button79:addEventListener("onClick",
+    obj._e_event562 = obj.button74:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, false);
         end, obj);
 
-    obj._e_event582 = obj.button79:addEventListener("onMenu",
+    obj._e_event563 = obj.button74:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companioninvestigacao'}, nil, true);
         end, obj);
 
-    obj._e_event583 = obj.dataLink191:addEventListener("onChange",
+    obj._e_event564 = obj.dataLink180:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companioninvestigacao');
             
@@ -21144,7 +17351,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanioninvestigacao:setHint(hint);
         end, obj);
 
-    obj._e_event584 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
+    obj._e_event565 = obj.cbProfcompanionnatureza:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionnatureza"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionnatureza', true);
@@ -21152,42 +17359,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event585 = obj.cbProfcompanionnatureza:addEventListener("onClick",
+    obj._e_event566 = obj.cbProfcompanionnatureza:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionnatureza', false);
         end, obj);
 
-    obj._e_event586 = obj.dataLink192:addEventListener("onChange",
+    obj._e_event567 = obj.dataLink181:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionnatureza");
         end, obj);
 
-    obj._e_event587 = obj.dataLink193:addEventListener("onChange",
+    obj._e_event568 = obj.dataLink182:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionnatureza'] then updateCbVisibility('companionnatureza'); end;
         end, obj);
 
-    obj._e_event588 = obj.button80:addEventListener("onKeyDown",
+    obj._e_event569 = obj.button75:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event589 = obj.button80:addEventListener("onKeyUp",
+    obj._e_event570 = obj.button75:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event590 = obj.button80:addEventListener("onClick",
+    obj._e_event571 = obj.button75:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, false);
         end, obj);
 
-    obj._e_event591 = obj.button80:addEventListener("onMenu",
+    obj._e_event572 = obj.button75:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionnatureza'}, nil, true);
         end, obj);
 
-    obj._e_event592 = obj.dataLink194:addEventListener("onChange",
+    obj._e_event573 = obj.dataLink183:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionnatureza');
             
@@ -21203,7 +17410,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionnatureza:setHint(hint);
         end, obj);
 
-    obj._e_event593 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
+    obj._e_event574 = obj.cbProfcompanionreligiao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionreligiao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionreligiao', true);
@@ -21211,42 +17418,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event594 = obj.cbProfcompanionreligiao:addEventListener("onClick",
+    obj._e_event575 = obj.cbProfcompanionreligiao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionreligiao', false);
         end, obj);
 
-    obj._e_event595 = obj.dataLink195:addEventListener("onChange",
+    obj._e_event576 = obj.dataLink184:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionreligiao");
         end, obj);
 
-    obj._e_event596 = obj.dataLink196:addEventListener("onChange",
+    obj._e_event577 = obj.dataLink185:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionreligiao'] then updateCbVisibility('companionreligiao'); end;
         end, obj);
 
-    obj._e_event597 = obj.button81:addEventListener("onKeyDown",
+    obj._e_event578 = obj.button76:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event598 = obj.button81:addEventListener("onKeyUp",
+    obj._e_event579 = obj.button76:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event599 = obj.button81:addEventListener("onClick",
+    obj._e_event580 = obj.button76:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, false);
         end, obj);
 
-    obj._e_event600 = obj.button81:addEventListener("onMenu",
+    obj._e_event581 = obj.button76:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionreligiao'}, nil, true);
         end, obj);
 
-    obj._e_event601 = obj.dataLink197:addEventListener("onChange",
+    obj._e_event582 = obj.dataLink186:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioninteligencia', 'companionreligiao');
             
@@ -21262,7 +17469,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionreligiao:setHint(hint);
         end, obj);
 
-    obj._e_event602 = obj.dataLink198:addEventListener("onChange",
+    obj._e_event583 = obj.dataLink187:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21292,27 +17499,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event603 = obj.button82:addEventListener("onKeyDown",
+    obj._e_event584 = obj.button77:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event604 = obj.button82:addEventListener("onKeyUp",
+    obj._e_event585 = obj.button77:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event605 = obj.button82:addEventListener("onClick",
+    obj._e_event586 = obj.button77:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event606 = obj.button82:addEventListener("onMenu",
+    obj._e_event587 = obj.button77:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event607 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
+    obj._e_event588 = obj.cbProfcompanionsabedoria:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsabedoria"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsabedoria', true);
@@ -21320,42 +17527,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event608 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
+    obj._e_event589 = obj.cbProfcompanionsabedoria:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsabedoria', false);
         end, obj);
 
-    obj._e_event609 = obj.dataLink199:addEventListener("onChange",
+    obj._e_event590 = obj.dataLink188:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsabedoria");
         end, obj);
 
-    obj._e_event610 = obj.dataLink200:addEventListener("onChange",
+    obj._e_event591 = obj.dataLink189:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsabedoria'] then updateCbVisibility('companionsabedoria'); end;
         end, obj);
 
-    obj._e_event611 = obj.button83:addEventListener("onKeyDown",
+    obj._e_event592 = obj.button78:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event612 = obj.button83:addEventListener("onKeyUp",
+    obj._e_event593 = obj.button78:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event613 = obj.button83:addEventListener("onClick",
+    obj._e_event594 = obj.button78:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, false);
         end, obj);
 
-    obj._e_event614 = obj.button83:addEventListener("onMenu",
+    obj._e_event595 = obj.button78:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companionsabedoria'}, nil, true);
         end, obj);
 
-    obj._e_event615 = obj.dataLink201:addEventListener("onChange",
+    obj._e_event596 = obj.dataLink190:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companionsabedoria');
             
@@ -21371,7 +17578,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanionsabedoria:setHint(hint);
         end, obj);
 
-    obj._e_event616 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
+    obj._e_event597 = obj.cbProfcompanionadestrarAnimais:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionadestrarAnimais"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', true);
@@ -21379,42 +17586,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event617 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
+    obj._e_event598 = obj.cbProfcompanionadestrarAnimais:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionadestrarAnimais', false);
         end, obj);
 
-    obj._e_event618 = obj.dataLink202:addEventListener("onChange",
+    obj._e_event599 = obj.dataLink191:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionadestrarAnimais");
         end, obj);
 
-    obj._e_event619 = obj.dataLink203:addEventListener("onChange",
+    obj._e_event600 = obj.dataLink192:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionadestrarAnimais'] then updateCbVisibility('companionadestrarAnimais'); end;
         end, obj);
 
-    obj._e_event620 = obj.button84:addEventListener("onKeyDown",
+    obj._e_event601 = obj.button79:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event621 = obj.button84:addEventListener("onKeyUp",
+    obj._e_event602 = obj.button79:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event622 = obj.button84:addEventListener("onClick",
+    obj._e_event603 = obj.button79:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, false);
         end, obj);
 
-    obj._e_event623 = obj.button84:addEventListener("onMenu",
+    obj._e_event604 = obj.button79:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionadestrarAnimais'}, nil, true);
         end, obj);
 
-    obj._e_event624 = obj.dataLink204:addEventListener("onChange",
+    obj._e_event605 = obj.dataLink193:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionadestrarAnimais');
             
@@ -21430,7 +17637,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionadestrarAnimais:setHint(hint);
         end, obj);
 
-    obj._e_event625 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
+    obj._e_event606 = obj.cbProfcompanionintuicao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintuicao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintuicao', true);
@@ -21438,42 +17645,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event626 = obj.cbProfcompanionintuicao:addEventListener("onClick",
+    obj._e_event607 = obj.cbProfcompanionintuicao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintuicao', false);
         end, obj);
 
-    obj._e_event627 = obj.dataLink205:addEventListener("onChange",
+    obj._e_event608 = obj.dataLink194:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintuicao");
         end, obj);
 
-    obj._e_event628 = obj.dataLink206:addEventListener("onChange",
+    obj._e_event609 = obj.dataLink195:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintuicao'] then updateCbVisibility('companionintuicao'); end;
         end, obj);
 
-    obj._e_event629 = obj.button85:addEventListener("onKeyDown",
+    obj._e_event610 = obj.button80:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event630 = obj.button85:addEventListener("onKeyUp",
+    obj._e_event611 = obj.button80:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event631 = obj.button85:addEventListener("onClick",
+    obj._e_event612 = obj.button80:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, false);
         end, obj);
 
-    obj._e_event632 = obj.button85:addEventListener("onMenu",
+    obj._e_event613 = obj.button80:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintuicao'}, nil, true);
         end, obj);
 
-    obj._e_event633 = obj.dataLink207:addEventListener("onChange",
+    obj._e_event614 = obj.dataLink196:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionintuicao');
             
@@ -21489,7 +17696,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintuicao:setHint(hint);
         end, obj);
 
-    obj._e_event634 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
+    obj._e_event615 = obj.cbProfcompanionmedicina:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionmedicina"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionmedicina', true);
@@ -21497,42 +17704,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event635 = obj.cbProfcompanionmedicina:addEventListener("onClick",
+    obj._e_event616 = obj.cbProfcompanionmedicina:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionmedicina', false);
         end, obj);
 
-    obj._e_event636 = obj.dataLink208:addEventListener("onChange",
+    obj._e_event617 = obj.dataLink197:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionmedicina");
         end, obj);
 
-    obj._e_event637 = obj.dataLink209:addEventListener("onChange",
+    obj._e_event618 = obj.dataLink198:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionmedicina'] then updateCbVisibility('companionmedicina'); end;
         end, obj);
 
-    obj._e_event638 = obj.button86:addEventListener("onKeyDown",
+    obj._e_event619 = obj.button81:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event639 = obj.button86:addEventListener("onKeyUp",
+    obj._e_event620 = obj.button81:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event640 = obj.button86:addEventListener("onClick",
+    obj._e_event621 = obj.button81:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, false);
         end, obj);
 
-    obj._e_event641 = obj.button86:addEventListener("onMenu",
+    obj._e_event622 = obj.button81:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionmedicina'}, nil, true);
         end, obj);
 
-    obj._e_event642 = obj.dataLink210:addEventListener("onChange",
+    obj._e_event623 = obj.dataLink199:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionmedicina');
             
@@ -21548,7 +17755,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionmedicina:setHint(hint);
         end, obj);
 
-    obj._e_event643 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
+    obj._e_event624 = obj.cbProfcompanionpercepcao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpercepcao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpercepcao', true);
@@ -21556,42 +17763,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event644 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
+    obj._e_event625 = obj.cbProfcompanionpercepcao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpercepcao', false);
         end, obj);
 
-    obj._e_event645 = obj.dataLink211:addEventListener("onChange",
+    obj._e_event626 = obj.dataLink200:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpercepcao");
         end, obj);
 
-    obj._e_event646 = obj.dataLink212:addEventListener("onChange",
+    obj._e_event627 = obj.dataLink201:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpercepcao'] then updateCbVisibility('companionpercepcao'); end;
         end, obj);
 
-    obj._e_event647 = obj.button87:addEventListener("onKeyDown",
+    obj._e_event628 = obj.button82:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event648 = obj.button87:addEventListener("onKeyUp",
+    obj._e_event629 = obj.button82:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event649 = obj.button87:addEventListener("onClick",
+    obj._e_event630 = obj.button82:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, false);
         end, obj);
 
-    obj._e_event650 = obj.button87:addEventListener("onMenu",
+    obj._e_event631 = obj.button82:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpercepcao'}, nil, true);
         end, obj);
 
-    obj._e_event651 = obj.dataLink213:addEventListener("onChange",
+    obj._e_event632 = obj.dataLink202:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionpercepcao');
             
@@ -21607,7 +17814,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpercepcao:setHint(hint);
         end, obj);
 
-    obj._e_event652 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
+    obj._e_event633 = obj.cbProfcompanionsobrevivencia:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionsobrevivencia"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', true);
@@ -21615,42 +17822,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event653 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
+    obj._e_event634 = obj.cbProfcompanionsobrevivencia:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionsobrevivencia', false);
         end, obj);
 
-    obj._e_event654 = obj.dataLink214:addEventListener("onChange",
+    obj._e_event635 = obj.dataLink203:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionsobrevivencia");
         end, obj);
 
-    obj._e_event655 = obj.dataLink215:addEventListener("onChange",
+    obj._e_event636 = obj.dataLink204:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionsobrevivencia'] then updateCbVisibility('companionsobrevivencia'); end;
         end, obj);
 
-    obj._e_event656 = obj.button88:addEventListener("onKeyDown",
+    obj._e_event637 = obj.button83:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event657 = obj.button88:addEventListener("onKeyUp",
+    obj._e_event638 = obj.button83:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event658 = obj.button88:addEventListener("onClick",
+    obj._e_event639 = obj.button83:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, false);
         end, obj);
 
-    obj._e_event659 = obj.button88:addEventListener("onMenu",
+    obj._e_event640 = obj.button83:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionsobrevivencia'}, nil, true);
         end, obj);
 
-    obj._e_event660 = obj.dataLink216:addEventListener("onChange",
+    obj._e_event641 = obj.dataLink205:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companionsabedoria', 'companionsobrevivencia');
             
@@ -21666,7 +17873,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionsobrevivencia:setHint(hint);
         end, obj);
 
-    obj._e_event661 = obj.dataLink217:addEventListener("onChange",
+    obj._e_event642 = obj.dataLink206:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local numAsStr = tostring(newValue);
             				local numero;
@@ -21696,27 +17903,27 @@ self.upperGridMagicBox3._RecalcSize();
             				end;
         end, obj);
 
-    obj._e_event662 = obj.button89:addEventListener("onKeyDown",
+    obj._e_event643 = obj.button84:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event663 = obj.button89:addEventListener("onKeyUp",
+    obj._e_event644 = obj.button84:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event664 = obj.button89:addEventListener("onClick",
+    obj._e_event645 = obj.button84:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event665 = obj.button89:addEventListener("onMenu",
+    obj._e_event646 = obj.button84:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'attr', field = 'companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event666 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
+    obj._e_event647 = obj.cbProfcompanioncarisma:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companioncarisma"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companioncarisma', true);
@@ -21724,42 +17931,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event667 = obj.cbProfcompanioncarisma:addEventListener("onClick",
+    obj._e_event648 = obj.cbProfcompanioncarisma:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companioncarisma', false);
         end, obj);
 
-    obj._e_event668 = obj.dataLink218:addEventListener("onChange",
+    obj._e_event649 = obj.dataLink207:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companioncarisma");
         end, obj);
 
-    obj._e_event669 = obj.dataLink219:addEventListener("onChange",
+    obj._e_event650 = obj.dataLink208:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companioncarisma'] then updateCbVisibility('companioncarisma'); end;
         end, obj);
 
-    obj._e_event670 = obj.button90:addEventListener("onKeyDown",
+    obj._e_event651 = obj.button85:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event671 = obj.button90:addEventListener("onKeyUp",
+    obj._e_event652 = obj.button85:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event672 = obj.button90:addEventListener("onClick",
+    obj._e_event653 = obj.button85:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, false);
         end, obj);
 
-    obj._e_event673 = obj.button90:addEventListener("onMenu",
+    obj._e_event654 = obj.button85:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'resistencias.companioncarisma'}, nil, true);
         end, obj);
 
-    obj._e_event674 = obj.dataLink220:addEventListener("onChange",
+    obj._e_event655 = obj.dataLink209:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'resistencia', 'companioncarisma');
             
@@ -21775,7 +17982,7 @@ self.upperGridMagicBox3._RecalcSize();
             						self.labProfcompanioncarisma:setHint(hint);
         end, obj);
 
-    obj._e_event675 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
+    obj._e_event656 = obj.cbProfcompanionatuacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionatuacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionatuacao', true);
@@ -21783,42 +17990,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event676 = obj.cbProfcompanionatuacao:addEventListener("onClick",
+    obj._e_event657 = obj.cbProfcompanionatuacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionatuacao', false);
         end, obj);
 
-    obj._e_event677 = obj.dataLink221:addEventListener("onChange",
+    obj._e_event658 = obj.dataLink210:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionatuacao");
         end, obj);
 
-    obj._e_event678 = obj.dataLink222:addEventListener("onChange",
+    obj._e_event659 = obj.dataLink211:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionatuacao'] then updateCbVisibility('companionatuacao'); end;
         end, obj);
 
-    obj._e_event679 = obj.button91:addEventListener("onKeyDown",
+    obj._e_event660 = obj.button86:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event680 = obj.button91:addEventListener("onKeyUp",
+    obj._e_event661 = obj.button86:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event681 = obj.button91:addEventListener("onClick",
+    obj._e_event662 = obj.button86:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, false);
         end, obj);
 
-    obj._e_event682 = obj.button91:addEventListener("onMenu",
+    obj._e_event663 = obj.button86:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionatuacao'}, nil, true);
         end, obj);
 
-    obj._e_event683 = obj.dataLink223:addEventListener("onChange",
+    obj._e_event664 = obj.dataLink212:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionatuacao');
             
@@ -21834,7 +18041,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionatuacao:setHint(hint);
         end, obj);
 
-    obj._e_event684 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
+    obj._e_event665 = obj.cbProfcompanionenganacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionenganacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionenganacao', true);
@@ -21842,42 +18049,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event685 = obj.cbProfcompanionenganacao:addEventListener("onClick",
+    obj._e_event666 = obj.cbProfcompanionenganacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionenganacao', false);
         end, obj);
 
-    obj._e_event686 = obj.dataLink224:addEventListener("onChange",
+    obj._e_event667 = obj.dataLink213:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionenganacao");
         end, obj);
 
-    obj._e_event687 = obj.dataLink225:addEventListener("onChange",
+    obj._e_event668 = obj.dataLink214:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionenganacao'] then updateCbVisibility('companionenganacao'); end;
         end, obj);
 
-    obj._e_event688 = obj.button92:addEventListener("onKeyDown",
+    obj._e_event669 = obj.button87:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event689 = obj.button92:addEventListener("onKeyUp",
+    obj._e_event670 = obj.button87:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event690 = obj.button92:addEventListener("onClick",
+    obj._e_event671 = obj.button87:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, false);
         end, obj);
 
-    obj._e_event691 = obj.button92:addEventListener("onMenu",
+    obj._e_event672 = obj.button87:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionenganacao'}, nil, true);
         end, obj);
 
-    obj._e_event692 = obj.dataLink226:addEventListener("onChange",
+    obj._e_event673 = obj.dataLink215:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionenganacao');
             
@@ -21893,7 +18100,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionenganacao:setHint(hint);
         end, obj);
 
-    obj._e_event693 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
+    obj._e_event674 = obj.cbProfcompanionintimidacao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionintimidacao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionintimidacao', true);
@@ -21901,42 +18108,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event694 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
+    obj._e_event675 = obj.cbProfcompanionintimidacao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionintimidacao', false);
         end, obj);
 
-    obj._e_event695 = obj.dataLink227:addEventListener("onChange",
+    obj._e_event676 = obj.dataLink216:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionintimidacao");
         end, obj);
 
-    obj._e_event696 = obj.dataLink228:addEventListener("onChange",
+    obj._e_event677 = obj.dataLink217:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionintimidacao'] then updateCbVisibility('companionintimidacao'); end;
         end, obj);
 
-    obj._e_event697 = obj.button93:addEventListener("onKeyDown",
+    obj._e_event678 = obj.button88:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event698 = obj.button93:addEventListener("onKeyUp",
+    obj._e_event679 = obj.button88:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event699 = obj.button93:addEventListener("onClick",
+    obj._e_event680 = obj.button88:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, false);
         end, obj);
 
-    obj._e_event700 = obj.button93:addEventListener("onMenu",
+    obj._e_event681 = obj.button88:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionintimidacao'}, nil, true);
         end, obj);
 
-    obj._e_event701 = obj.dataLink229:addEventListener("onChange",
+    obj._e_event682 = obj.dataLink218:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionintimidacao');
             
@@ -21952,7 +18159,7 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionintimidacao:setHint(hint);
         end, obj);
 
-    obj._e_event702 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
+    obj._e_event683 = obj.cbProfcompanionpersuasao:addEventListener("onMenu",
         function (_, x, y)
             if common.pericias["companionpersuasao"] ~= nil then
             						common.fichaSetEspecializacao(sheet, 'companionpersuasao', true);
@@ -21960,42 +18167,42 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event703 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
+    obj._e_event684 = obj.cbProfcompanionpersuasao:addEventListener("onClick",
         function (_)
             common.fichaSetEspecializacao(sheet, 'companionpersuasao', false);
         end, obj);
 
-    obj._e_event704 = obj.dataLink230:addEventListener("onChange",
+    obj._e_event685 = obj.dataLink219:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             updateCbVisibility("companionpersuasao");
         end, obj);
 
-    obj._e_event705 = obj.dataLink231:addEventListener("onChange",
+    obj._e_event686 = obj.dataLink220:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if common.pericias['companionpersuasao'] then updateCbVisibility('companionpersuasao'); end;
         end, obj);
 
-    obj._e_event706 = obj.button94:addEventListener("onKeyDown",
+    obj._e_event687 = obj.button89:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event707 = obj.button94:addEventListener("onKeyUp",
+    obj._e_event688 = obj.button89:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event708 = obj.button94:addEventListener("onClick",
+    obj._e_event689 = obj.button89:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, false);
         end, obj);
 
-    obj._e_event709 = obj.button94:addEventListener("onMenu",
+    obj._e_event690 = obj.button89:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaPericia, { tipo = 'per', field = 'pericias.companionpersuasao'}, nil, true);
         end, obj);
 
-    obj._e_event710 = obj.dataLink232:addEventListener("onChange",
+    obj._e_event691 = obj.dataLink221:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local valor, hint = common.calculaBonus(sheet, 'pericia', 'companioncarisma', 'companionpersuasao');
             
@@ -22011,78 +18218,78 @@ self.upperGridMagicBox3._RecalcSize();
             							self.labProfcompanionpersuasao:setHint(hint);
         end, obj);
 
-    obj._e_event711 = obj.button95:addEventListener("onKeyDown",
+    obj._e_event692 = obj.button90:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event712 = obj.button95:addEventListener("onKeyUp",
+    obj._e_event693 = obj.button90:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event713 = obj.button95:addEventListener("onClick",
+    obj._e_event694 = obj.button90:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, false);
         end, obj);
 
-    obj._e_event714 = obj.button95:addEventListener("onMenu",
+    obj._e_event695 = obj.button90:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.rolaIniciativa, nil, nil, true);
         end, obj);
 
-    obj._e_event715 = obj.button96:addEventListener("onClick",
+    obj._e_event696 = obj.button91:addEventListener("onClick",
         function (_)
             descanso.curto(sheet);
         end, obj);
 
-    obj._e_event716 = obj.button97:addEventListener("onClick",
+    obj._e_event697 = obj.button92:addEventListener("onClick",
         function (_)
             descanso.longo(sheet);
         end, obj);
 
-    obj._e_event717 = obj.button98:addEventListener("onClick",
+    obj._e_event698 = obj.button93:addEventListener("onClick",
         function (_)
             levarDano(sheet);
         end, obj);
 
-    obj._e_event718 = obj.dataLink233:addEventListener("onChange",
+    obj._e_event699 = obj.dataLink222:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             self.progBar2:setColor(sheet.barColor2);
         end, obj);
 
-    obj._e_event719 = obj.dataLink234:addEventListener("onChange",
+    obj._e_event700 = obj.dataLink223:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             local jogador = Firecast.getPersonagemDe(sheet).dono;
             										if common.isMyChar(sheet) and common.isMainChar(sheet) then jogador:requestSetBarValue(1, sheet.PV2, sheet.PVmax2); end;
         end, obj);
 
-    obj._e_event720 = obj.dataLink235:addEventListener("onChange",
+    obj._e_event701 = obj.dataLink224:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet.descansoLongo then sheet.PV2 = sheet.PVmax2; end;
         end, obj);
 
-    obj._e_event721 = obj.button99:addEventListener("onKeyDown",
+    obj._e_event702 = obj.button94:addEventListener("onKeyDown",
         function (_, event)
             common.keyDown(sheet, event);
         end, obj);
 
-    obj._e_event722 = obj.button99:addEventListener("onKeyUp",
+    obj._e_event703 = obj.button94:addEventListener("onKeyUp",
         function (_, event)
             common.keyUp(sheet, event);
         end, obj);
 
-    obj._e_event723 = obj.button99:addEventListener("onClick",
+    obj._e_event704 = obj.button94:addEventListener("onClick",
         function (_)
             common.onClick(sheet, common.deathSave, nil, nil, false);
         end, obj);
 
-    obj._e_event724 = obj.button99:addEventListener("onMenu",
+    obj._e_event705 = obj.button94:addEventListener("onMenu",
         function (_, x, y)
             common.onClick(sheet, common.deathSave, nil, nil, true);
         end, obj);
 
-    obj._e_event725 = obj.checkBox10:addEventListener("onChange",
+    obj._e_event706 = obj.checkBox10:addEventListener("onChange",
         function (_)
             if sheet then
             							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
@@ -22090,7 +18297,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event726 = obj.checkBox11:addEventListener("onChange",
+    obj._e_event707 = obj.checkBox11:addEventListener("onChange",
         function (_)
             if sheet then
             							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
@@ -22098,7 +18305,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end;
         end, obj);
 
-    obj._e_event727 = obj.dataLink236:addEventListener("onChange",
+    obj._e_event708 = obj.dataLink225:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             					local theme = sheet.theme;
@@ -22115,7 +18322,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event728 = obj.dataLink237:addEventListener("onChange",
+    obj._e_event709 = obj.dataLink226:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local color = sheet.colorBackground or "#505050";
@@ -22127,7 +18334,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event729 = obj.dataLink238:addEventListener("onChange",
+    obj._e_event710 = obj.dataLink227:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local strokeColor = sheet.colorStroke or "#FFFFFF";
@@ -22143,7 +18350,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event730 = obj.dataLink239:addEventListener("onChange",
+    obj._e_event711 = obj.dataLink228:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local fontColor = sheet.colorFont or "#FFFFFF";
@@ -22181,22 +18388,22 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event731 = obj.button100:addEventListener("onClick",
+    obj._e_event712 = obj.button95:addEventListener("onClick",
         function (_)
             GUI.openInBrowser(' ')
         end, obj);
 
-    obj._e_event732 = obj.button101:addEventListener("onClick",
+    obj._e_event713 = obj.button96:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');
         end, obj);
 
-    obj._e_event733 = obj.button102:addEventListener("onClick",
+    obj._e_event714 = obj.button97:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');
         end, obj);
 
-    obj._e_event734 = obj.button103:addEventListener("onClick",
+    obj._e_event715 = obj.button98:addEventListener("onClick",
         function (_)
             local xml = NDB.exportXML(sheet);
             
@@ -22213,7 +18420,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end);
         end, obj);
 
-    obj._e_event735 = obj.button104:addEventListener("onClick",
+    obj._e_event716 = obj.button99:addEventListener("onClick",
         function (_)
             Dialogs.openFile("Importar Ficha", "application/xml", false, 
             						function(arquivos)
@@ -22229,25 +18436,6 @@ self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event735);
-        __o_rrpgObjs.removeEventListenerById(self._e_event734);
-        __o_rrpgObjs.removeEventListenerById(self._e_event733);
-        __o_rrpgObjs.removeEventListenerById(self._e_event732);
-        __o_rrpgObjs.removeEventListenerById(self._e_event731);
-        __o_rrpgObjs.removeEventListenerById(self._e_event730);
-        __o_rrpgObjs.removeEventListenerById(self._e_event729);
-        __o_rrpgObjs.removeEventListenerById(self._e_event728);
-        __o_rrpgObjs.removeEventListenerById(self._e_event727);
-        __o_rrpgObjs.removeEventListenerById(self._e_event726);
-        __o_rrpgObjs.removeEventListenerById(self._e_event725);
-        __o_rrpgObjs.removeEventListenerById(self._e_event724);
-        __o_rrpgObjs.removeEventListenerById(self._e_event723);
-        __o_rrpgObjs.removeEventListenerById(self._e_event722);
-        __o_rrpgObjs.removeEventListenerById(self._e_event721);
-        __o_rrpgObjs.removeEventListenerById(self._e_event720);
-        __o_rrpgObjs.removeEventListenerById(self._e_event719);
-        __o_rrpgObjs.removeEventListenerById(self._e_event718);
-        __o_rrpgObjs.removeEventListenerById(self._e_event717);
         __o_rrpgObjs.removeEventListenerById(self._e_event716);
         __o_rrpgObjs.removeEventListenerById(self._e_event715);
         __o_rrpgObjs.removeEventListenerById(self._e_event714);
@@ -22976,111 +19164,205 @@ self.upperGridMagicBox3._RecalcSize();
           self:setNodeDatabase(nil);
         end;
 
-        if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
-        if self.dataLink142 ~= nil then self.dataLink142:destroy(); self.dataLink142 = nil; end;
+        if self.button89 ~= nil then self.button89:destroy(); self.button89 = nil; end;
+        if self.linUpperGridCampo1 ~= nil then self.linUpperGridCampo1:destroy(); self.linUpperGridCampo1 = nil; end;
         if self.labProfpericiaforca ~= nil then self.labProfpericiaforca:destroy(); self.labProfpericiaforca = nil; end;
+        if self.dataLink71 ~= nil then self.dataLink71:destroy(); self.dataLink71 = nil; end;
+        if self.dataLink142 ~= nil then self.dataLink142:destroy(); self.dataLink142 = nil; end;
+        if self.flowPart33 ~= nil then self.flowPart33:destroy(); self.flowPart33 = nil; end;
+        if self.layout83 ~= nil then self.layout83:destroy(); self.layout83 = nil; end;
+        if self.horzLine48 ~= nil then self.horzLine48:destroy(); self.horzLine48 = nil; end;
+        if self.dataLink206 ~= nil then self.dataLink206:destroy(); self.dataLink206 = nil; end;
+        if self.button15 ~= nil then self.button15:destroy(); self.button15 = nil; end;
         if self.label119 ~= nil then self.label119:destroy(); self.label119 = nil; end;
         if self.layout15 ~= nil then self.layout15:destroy(); self.layout15 = nil; end;
+        if self.labProfcompanionsobrevivencia ~= nil then self.labProfcompanionsobrevivencia:destroy(); self.labProfcompanionsobrevivencia = nil; end;
         if self.layout10 ~= nil then self.layout10:destroy(); self.layout10 = nil; end;
         if self.horzLine7 ~= nil then self.horzLine7:destroy(); self.horzLine7 = nil; end;
+        if self.dataLink33 ~= nil then self.dataLink33:destroy(); self.dataLink33 = nil; end;
+        if self.button96 ~= nil then self.button96:destroy(); self.button96 = nil; end;
         if self.layout64 ~= nil then self.layout64:destroy(); self.layout64 = nil; end;
+        if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
+        if self.flowPart129 ~= nil then self.flowPart129:destroy(); self.flowPart129 = nil; end;
         if self.label97 ~= nil then self.label97:destroy(); self.label97 = nil; end;
-        if self.flowPart260 ~= nil then self.flowPart260:destroy(); self.flowPart260 = nil; end;
+        if self.button67 ~= nil then self.button67:destroy(); self.button67 = nil; end;
         if self.fraUpperGridCompanion ~= nil then self.fraUpperGridCompanion:destroy(); self.fraUpperGridCompanion = nil; end;
-        if self.flowPart259 ~= nil then self.flowPart259:destroy(); self.flowPart259 = nil; end;
-        if self.flowLineBreak19 ~= nil then self.flowLineBreak19:destroy(); self.flowLineBreak19 = nil; end;
+        if self.label77 ~= nil then self.label77:destroy(); self.label77 = nil; end;
         if self.label128 ~= nil then self.label128:destroy(); self.label128 = nil; end;
+        if self.dataLink92 ~= nil then self.dataLink92:destroy(); self.dataLink92 = nil; end;
         if self.layout17 ~= nil then self.layout17:destroy(); self.layout17 = nil; end;
         if self.label45 ~= nil then self.label45:destroy(); self.label45 = nil; end;
+        if self.horzLine47 ~= nil then self.horzLine47:destroy(); self.horzLine47 = nil; end;
+        if self.labProfacrobacia ~= nil then self.labProfacrobacia:destroy(); self.labProfacrobacia = nil; end;
         if self.flowPart106 ~= nil then self.flowPart106:destroy(); self.flowPart106 = nil; end;
+        if self.flowLayout1 ~= nil then self.flowLayout1:destroy(); self.flowLayout1 = nil; end;
+        if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
+        if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
         if self.fpPEEscola ~= nil then self.fpPEEscola:destroy(); self.fpPEEscola = nil; end;
-        if self.label158 ~= nil then self.label158:destroy(); self.label158 = nil; end;
         if self.layout24 ~= nil then self.layout24:destroy(); self.layout24 = nil; end;
-        if self.rclSemana ~= nil then self.rclSemana:destroy(); self.rclSemana = nil; end;
+        if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
         if self.dataLink141 ~= nil then self.dataLink141:destroy(); self.dataLink141 = nil; end;
-        if self.label143 ~= nil then self.label143:destroy(); self.label143 = nil; end;
-        if self.comboBox22 ~= nil then self.comboBox22:destroy(); self.comboBox22 = nil; end;
-        if self.flowPart241 ~= nil then self.flowPart241:destroy(); self.flowPart241 = nil; end;
+        if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
+        if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
         if self.flowPart66 ~= nil then self.flowPart66:destroy(); self.flowPart66 = nil; end;
-        if self.label164 ~= nil then self.label164:destroy(); self.label164 = nil; end;
+        if self.button35 ~= nil then self.button35:destroy(); self.button35 = nil; end;
+        if self.dataLink68 ~= nil then self.dataLink68:destroy(); self.dataLink68 = nil; end;
         if self.flowPart55 ~= nil then self.flowPart55:destroy(); self.flowPart55 = nil; end;
         if self.flowPart95 ~= nil then self.flowPart95:destroy(); self.flowPart95 = nil; end;
+        if self.horzLine19 ~= nil then self.horzLine19:destroy(); self.horzLine19 = nil; end;
         if self.comboBoxImportClass ~= nil then self.comboBoxImportClass:destroy(); self.comboBoxImportClass = nil; end;
-        if self.label125 ~= nil then self.label125:destroy(); self.label125 = nil; end;
-        if self.dataLink174 ~= nil then self.dataLink174:destroy(); self.dataLink174 = nil; end;
+        if self.button93 ~= nil then self.button93:destroy(); self.button93 = nil; end;
+        if self.cbProfforca ~= nil then self.cbProfforca:destroy(); self.cbProfforca = nil; end;
+        if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
+        if self.flowPart51 ~= nil then self.flowPart51:destroy(); self.flowPart51 = nil; end;
+        if self.flowLayout16 ~= nil then self.flowLayout16:destroy(); self.flowLayout16 = nil; end;
+        if self.cbProfreligiao ~= nil then self.cbProfreligiao:destroy(); self.cbProfreligiao = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
+        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.flowPart107 ~= nil then self.flowPart107:destroy(); self.flowPart107 = nil; end;
+        if self.linUpperGridCampo7 ~= nil then self.linUpperGridCampo7:destroy(); self.linUpperGridCampo7 = nil; end;
+        if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
+        if self.labUpperGridCampo11 ~= nil then self.labUpperGridCampo11:destroy(); self.labUpperGridCampo11 = nil; end;
         if self.rclMagiasNiveis ~= nil then self.rclMagiasNiveis:destroy(); self.rclMagiasNiveis = nil; end;
+        if self.layout88 ~= nil then self.layout88:destroy(); self.layout88 = nil; end;
         if self.flowPart94 ~= nil then self.flowPart94:destroy(); self.flowPart94 = nil; end;
+        if self.dataLink174 ~= nil then self.dataLink174:destroy(); self.dataLink174 = nil; end;
+        if self.cbProfcompanionsobrevivencia ~= nil then self.cbProfcompanionsobrevivencia:destroy(); self.cbProfcompanionsobrevivencia = nil; end;
+        if self.tab13 ~= nil then self.tab13:destroy(); self.tab13 = nil; end;
+        if self.label125 ~= nil then self.label125:destroy(); self.label125 = nil; end;
         if self.labProffurtividade ~= nil then self.labProffurtividade:destroy(); self.labProffurtividade = nil; end;
+        if self.flowPart79 ~= nil then self.flowPart79:destroy(); self.flowPart79 = nil; end;
+        if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
+        if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.comboBox10 ~= nil then self.comboBox10:destroy(); self.comboBox10 = nil; end;
+        if self.cbProfcompanionarcanismo ~= nil then self.cbProfcompanionarcanismo:destroy(); self.cbProfcompanionarcanismo = nil; end;
+        if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
+        if self.horzLine37 ~= nil then self.horzLine37:destroy(); self.horzLine37 = nil; end;
         if self.cbProfprestidigitacao ~= nil then self.cbProfprestidigitacao:destroy(); self.cbProfprestidigitacao = nil; end;
-        if self.label162 ~= nil then self.label162:destroy(); self.label162 = nil; end;
+        if self.upperGridMagicBox3 ~= nil then self.upperGridMagicBox3:destroy(); self.upperGridMagicBox3 = nil; end;
         if self.dataLink186 ~= nil then self.dataLink186:destroy(); self.dataLink186 = nil; end;
         if self.dataLink84 ~= nil then self.dataLink84:destroy(); self.dataLink84 = nil; end;
         if self.dataLink225 ~= nil then self.dataLink225:destroy(); self.dataLink225 = nil; end;
+        if self.dataLink102 ~= nil then self.dataLink102:destroy(); self.dataLink102 = nil; end;
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
+        if self.button21 ~= nil then self.button21:destroy(); self.button21 = nil; end;
         if self.flowPart103 ~= nil then self.flowPart103:destroy(); self.flowPart103 = nil; end;
-        if self.edit115 ~= nil then self.edit115:destroy(); self.edit115 = nil; end;
         if self.dataLink94 ~= nil then self.dataLink94:destroy(); self.dataLink94 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
-        if self.labProfcompanionprestidigitacao ~= nil then self.labProfcompanionprestidigitacao:destroy(); self.labProfcompanionprestidigitacao = nil; end;
+        if self.flowPart43 ~= nil then self.flowPart43:destroy(); self.flowPart43 = nil; end;
+        if self.comboBox2 ~= nil then self.comboBox2:destroy(); self.comboBox2 = nil; end;
         if self.comboBox11 ~= nil then self.comboBox11:destroy(); self.comboBox11 = nil; end;
+        if self.labProfcompanionprestidigitacao ~= nil then self.labProfcompanionprestidigitacao:destroy(); self.labProfcompanionprestidigitacao = nil; end;
         if self.popupEdit ~= nil then self.popupEdit:destroy(); self.popupEdit = nil; end;
         if self.labProfcompanionnatureza ~= nil then self.labProfcompanionnatureza:destroy(); self.labProfcompanionnatureza = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
         if self.horzLine41 ~= nil then self.horzLine41:destroy(); self.horzLine41 = nil; end;
+        if self.dataLink188 ~= nil then self.dataLink188:destroy(); self.dataLink188 = nil; end;
         if self.layout106 ~= nil then self.layout106:destroy(); self.layout106 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.fraUpperGridFrente ~= nil then self.fraUpperGridFrente:destroy(); self.fraUpperGridFrente = nil; end;
         if self.flowPart128 ~= nil then self.flowPart128:destroy(); self.flowPart128 = nil; end;
+        if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
+        if self.dataLink160 ~= nil then self.dataLink160:destroy(); self.dataLink160 = nil; end;
         if self.dataLink183 ~= nil then self.dataLink183:destroy(); self.dataLink183 = nil; end;
+        if self.flowLineBreak5 ~= nil then self.flowLineBreak5:destroy(); self.flowLineBreak5 = nil; end;
+        if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
+        if self.dataLink172 ~= nil then self.dataLink172:destroy(); self.dataLink172 = nil; end;
         if self.flowPart22 ~= nil then self.flowPart22:destroy(); self.flowPart22 = nil; end;
         if self.button73 ~= nil then self.button73:destroy(); self.button73 = nil; end;
-        if self.flowPart236 ~= nil then self.flowPart236:destroy(); self.flowPart236 = nil; end;
+        if self.dataLink208 ~= nil then self.dataLink208:destroy(); self.dataLink208 = nil; end;
+        if self.cbProfcompanionreligiao ~= nil then self.cbProfcompanionreligiao:destroy(); self.cbProfcompanionreligiao = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
+        if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
-        if self.tab15 ~= nil then self.tab15:destroy(); self.tab15 = nil; end;
         if self.dataLink200 ~= nil then self.dataLink200:destroy(); self.dataLink200 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.flowPart78 ~= nil then self.flowPart78:destroy(); self.flowPart78 = nil; end;
+        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
         if self.UpperGridCampo3 ~= nil then self.UpperGridCampo3:destroy(); self.UpperGridCampo3 = nil; end;
         if self.progBar ~= nil then self.progBar:destroy(); self.progBar = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.panupperGridMagicBox3 ~= nil then self.panupperGridMagicBox3:destroy(); self.panupperGridMagicBox3 = nil; end;
         if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
         if self.tab10 ~= nil then self.tab10:destroy(); self.tab10 = nil; end;
-        if self.horzLine54 ~= nil then self.horzLine54:destroy(); self.horzLine54 = nil; end;
+        if self.flowLayout31 ~= nil then self.flowLayout31:destroy(); self.flowLayout31 = nil; end;
+        if self.cbProfcompanionsabedoria ~= nil then self.cbProfcompanionsabedoria:destroy(); self.cbProfcompanionsabedoria = nil; end;
         if self.flowPart6 ~= nil then self.flowPart6:destroy(); self.flowPart6 = nil; end;
+        if self.horzLine54 ~= nil then self.horzLine54:destroy(); self.horzLine54 = nil; end;
+        if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
+        if self.button45 ~= nil then self.button45:destroy(); self.button45 = nil; end;
         if self.dataLink227 ~= nil then self.dataLink227:destroy(); self.dataLink227 = nil; end;
         if self.label19 ~= nil then self.label19:destroy(); self.label19 = nil; end;
+        if self.cbProfcompanionadestrarAnimais ~= nil then self.cbProfcompanionadestrarAnimais:destroy(); self.cbProfcompanionadestrarAnimais = nil; end;
         if self.layout103 ~= nil then self.layout103:destroy(); self.layout103 = nil; end;
-        if self.edit67 ~= nil then self.edit67:destroy(); self.edit67 = nil; end;
-        if self.label139 ~= nil then self.label139:destroy(); self.label139 = nil; end;
+        if self.label116 ~= nil then self.label116:destroy(); self.label116 = nil; end;
+        if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
+        if self.dataLink76 ~= nil then self.dataLink76:destroy(); self.dataLink76 = nil; end;
+        if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
+        if self.button44 ~= nil then self.button44:destroy(); self.button44 = nil; end;
+        if self.cbProfcompanionhistoria ~= nil then self.cbProfcompanionhistoria:destroy(); self.cbProfcompanionhistoria = nil; end;
         if self.dataLink107 ~= nil then self.dataLink107:destroy(); self.dataLink107 = nil; end;
+        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
         if self.dataLink34 ~= nil then self.dataLink34:destroy(); self.dataLink34 = nil; end;
+        if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
         if self.dataLink97 ~= nil then self.dataLink97:destroy(); self.dataLink97 = nil; end;
-        if self.label184 ~= nil then self.label184:destroy(); self.label184 = nil; end;
+        if self.cbProfcompanionenganacao ~= nil then self.cbProfcompanionenganacao:destroy(); self.cbProfcompanionenganacao = nil; end;
+        if self.linUpperGridCampo4 ~= nil then self.linUpperGridCampo4:destroy(); self.linUpperGridCampo4 = nil; end;
+        if self.flowPart145 ~= nil then self.flowPart145:destroy(); self.flowPart145 = nil; end;
+        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.dataLink223 ~= nil then self.dataLink223:destroy(); self.dataLink223 = nil; end;
         if self.label38 ~= nil then self.label38:destroy(); self.label38 = nil; end;
+        if self.flowPart125 ~= nil then self.flowPart125:destroy(); self.flowPart125 = nil; end;
         if self.panupperGridMagicBox1 ~= nil then self.panupperGridMagicBox1:destroy(); self.panupperGridMagicBox1 = nil; end;
+        if self.comboBox15 ~= nil then self.comboBox15:destroy(); self.comboBox15 = nil; end;
         if self.flowPart142 ~= nil then self.flowPart142:destroy(); self.flowPart142 = nil; end;
+        if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
+        if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
+        if self.labupperGridMagicBox3 ~= nil then self.labupperGridMagicBox3:destroy(); self.labupperGridMagicBox3 = nil; end;
         if self.label115 ~= nil then self.label115:destroy(); self.label115 = nil; end;
         if self.scrollBox5 ~= nil then self.scrollBox5:destroy(); self.scrollBox5 = nil; end;
         if self.button72 ~= nil then self.button72:destroy(); self.button72 = nil; end;
+        if self.dataLink111 ~= nil then self.dataLink111:destroy(); self.dataLink111 = nil; end;
+        if self.dataLink80 ~= nil then self.dataLink80:destroy(); self.dataLink80 = nil; end;
         if self.edit62 ~= nil then self.edit62:destroy(); self.edit62 = nil; end;
+        if self.flowLineBreak2 ~= nil then self.flowLineBreak2:destroy(); self.flowLineBreak2 = nil; end;
+        if self.cbProfnatureza ~= nil then self.cbProfnatureza:destroy(); self.cbProfnatureza = nil; end;
         if self.flowPart152 ~= nil then self.flowPart152:destroy(); self.flowPart152 = nil; end;
         if self.flowPart169 ~= nil then self.flowPart169:destroy(); self.flowPart169 = nil; end;
-        if self.label185 ~= nil then self.label185:destroy(); self.label185 = nil; end;
+        if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
+        if self.flowLayout8 ~= nil then self.flowLayout8:destroy(); self.flowLayout8 = nil; end;
+        if self.labProfreligiao ~= nil then self.labProfreligiao:destroy(); self.labProfreligiao = nil; end;
         if self.flowPart113 ~= nil then self.flowPart113:destroy(); self.flowPart113 = nil; end;
-        if self.label142 ~= nil then self.label142:destroy(); self.label142 = nil; end;
         if self.cbProfpersuasao ~= nil then self.cbProfpersuasao:destroy(); self.cbProfpersuasao = nil; end;
         if self.UpperGridCampo10 ~= nil then self.UpperGridCampo10:destroy(); self.UpperGridCampo10 = nil; end;
+        if self.flowPart8 ~= nil then self.flowPart8:destroy(); self.flowPart8 = nil; end;
+        if self.frmFichaRPGmeister9_svg ~= nil then self.frmFichaRPGmeister9_svg:destroy(); self.frmFichaRPGmeister9_svg = nil; end;
+        if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
+        if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
+        if self.flowPart96 ~= nil then self.flowPart96:destroy(); self.flowPart96 = nil; end;
         if self.button68 ~= nil then self.button68:destroy(); self.button68 = nil; end;
+        if self.labProfdestreza ~= nil then self.labProfdestreza:destroy(); self.labProfdestreza = nil; end;
+        if self.horzLine63 ~= nil then self.horzLine63:destroy(); self.horzLine63 = nil; end;
+        if self.button28 ~= nil then self.button28:destroy(); self.button28 = nil; end;
+        if self.scrollBox7 ~= nil then self.scrollBox7:destroy(); self.scrollBox7 = nil; end;
+        if self.fpPETempo ~= nil then self.fpPETempo:destroy(); self.fpPETempo = nil; end;
+        if self.flowPart80 ~= nil then self.flowPart80:destroy(); self.flowPart80 = nil; end;
+        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
         if self.labUpperGridCampo12 ~= nil then self.labUpperGridCampo12:destroy(); self.labUpperGridCampo12 = nil; end;
         if self.flowPart72 ~= nil then self.flowPart72:destroy(); self.flowPart72 = nil; end;
+        if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
         if self.label73 ~= nil then self.label73:destroy(); self.label73 = nil; end;
         if self.layout59 ~= nil then self.layout59:destroy(); self.layout59 = nil; end;
         if self.flowLayout18 ~= nil then self.flowLayout18:destroy(); self.flowLayout18 = nil; end;
         if self.flowPart40 ~= nil then self.flowPart40:destroy(); self.flowPart40 = nil; end;
-        if self.flowPart144 ~= nil then self.flowPart144:destroy(); self.flowPart144 = nil; end;
-        if self.labProfsobrevivencia ~= nil then self.labProfsobrevivencia:destroy(); self.labProfsobrevivencia = nil; end;
+        if self.comboBoxImportLevel ~= nil then self.comboBoxImportLevel:destroy(); self.comboBoxImportLevel = nil; end;
+        if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
         if self.edtUpperGridCampo8 ~= nil then self.edtUpperGridCampo8:destroy(); self.edtUpperGridCampo8 = nil; end;
+        if self.labProfsobrevivencia ~= nil then self.labProfsobrevivencia:destroy(); self.labProfsobrevivencia = nil; end;
+        if self.flowPart144 ~= nil then self.flowPart144:destroy(); self.flowPart144 = nil; end;
         if self.dataLink201 ~= nil then self.dataLink201:destroy(); self.dataLink201 = nil; end;
-        if self.dataLink239 ~= nil then self.dataLink239:destroy(); self.dataLink239 = nil; end;
+        if self.flowLayout15 ~= nil then self.flowLayout15:destroy(); self.flowLayout15 = nil; end;
+        if self.label32 ~= nil then self.label32:destroy(); self.label32 = nil; end;
         if self.horzLine38 ~= nil then self.horzLine38:destroy(); self.horzLine38 = nil; end;
         if self.comboBox6 ~= nil then self.comboBox6:destroy(); self.comboBox6 = nil; end;
         if self.flowPart18 ~= nil then self.flowPart18:destroy(); self.flowPart18 = nil; end;
@@ -23089,114 +19371,169 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink128 ~= nil then self.dataLink128:destroy(); self.dataLink128 = nil; end;
         if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;
         if self.edtNome1 ~= nil then self.edtNome1:destroy(); self.edtNome1 = nil; end;
+        if self.tab2 ~= nil then self.tab2:destroy(); self.tab2 = nil; end;
         if self.flowPart118 ~= nil then self.flowPart118:destroy(); self.flowPart118 = nil; end;
         if self.edit54 ~= nil then self.edit54:destroy(); self.edit54 = nil; end;
+        if self.labProfpericiadestreza ~= nil then self.labProfpericiadestreza:destroy(); self.labProfpericiadestreza = nil; end;
         if self.flowPart116 ~= nil then self.flowPart116:destroy(); self.flowPart116 = nil; end;
         if self.horzLine22 ~= nil then self.horzLine22:destroy(); self.horzLine22 = nil; end;
         if self.edit24 ~= nil then self.edit24:destroy(); self.edit24 = nil; end;
         if self.popupEditCompM ~= nil then self.popupEditCompM:destroy(); self.popupEditCompM = nil; end;
         if self.edit59 ~= nil then self.edit59:destroy(); self.edit59 = nil; end;
-        if self.flowPart183 ~= nil then self.flowPart183:destroy(); self.flowPart183 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.labProfhistoria ~= nil then self.labProfhistoria:destroy(); self.labProfhistoria = nil; end;
         if self.layout25 ~= nil then self.layout25:destroy(); self.layout25 = nil; end;
+        if self.dataLink189 ~= nil then self.dataLink189:destroy(); self.dataLink189 = nil; end;
         if self.tab12 ~= nil then self.tab12:destroy(); self.tab12 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.cbProfenganacao ~= nil then self.cbProfenganacao:destroy(); self.cbProfenganacao = nil; end;
         if self.labProfnidade ~= nil then self.labProfnidade:destroy(); self.labProfnidade = nil; end;
-        if self.edit128 ~= nil then self.edit128:destroy(); self.edit128 = nil; end;
+        if self.flowPart48 ~= nil then self.flowPart48:destroy(); self.flowPart48 = nil; end;
+        if self.dataLink120 ~= nil then self.dataLink120:destroy(); self.dataLink120 = nil; end;
         if self.label129 ~= nil then self.label129:destroy(); self.label129 = nil; end;
         if self.button13 ~= nil then self.button13:destroy(); self.button13 = nil; end;
+        if self.dataLink113 ~= nil then self.dataLink113:destroy(); self.dataLink113 = nil; end;
         if self.cbProfsabedoria ~= nil then self.cbProfsabedoria:destroy(); self.cbProfsabedoria = nil; end;
-        if self.rclEstacoes ~= nil then self.rclEstacoes:destroy(); self.rclEstacoes = nil; end;
-        if self.flowPart274 ~= nil then self.flowPart274:destroy(); self.flowPart274 = nil; end;
+        if self.button74 ~= nil then self.button74:destroy(); self.button74 = nil; end;
+        if self.popupEditFormulaRL ~= nil then self.popupEditFormulaRL:destroy(); self.popupEditFormulaRL = nil; end;
         if self.dataLink173 ~= nil then self.dataLink173:destroy(); self.dataLink173 = nil; end;
+        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
         if self.labProfcompanioninvestigacao ~= nil then self.labProfcompanioninvestigacao:destroy(); self.labProfcompanioninvestigacao = nil; end;
+        if self.flowPart35 ~= nil then self.flowPart35:destroy(); self.flowPart35 = nil; end;
         if self.flowPart90 ~= nil then self.flowPart90:destroy(); self.flowPart90 = nil; end;
-        if self.luasLabel ~= nil then self.luasLabel:destroy(); self.luasLabel = nil; end;
-        if self.flowPart232 ~= nil then self.flowPart232:destroy(); self.flowPart232 = nil; end;
+        if self.flowLayout7 ~= nil then self.flowLayout7:destroy(); self.flowLayout7 = nil; end;
+        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
+        if self.flowPart91 ~= nil then self.flowPart91:destroy(); self.flowPart91 = nil; end;
+        if self.cbProfiniciativa ~= nil then self.cbProfiniciativa:destroy(); self.cbProfiniciativa = nil; end;
+        if self.button32 ~= nil then self.button32:destroy(); self.button32 = nil; end;
         if self.imageCheckBox10 ~= nil then self.imageCheckBox10:destroy(); self.imageCheckBox10 = nil; end;
+        if self.flowLayout10 ~= nil then self.flowLayout10:destroy(); self.flowLayout10 = nil; end;
         if self.labProfforca ~= nil then self.labProfforca:destroy(); self.labProfforca = nil; end;
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
         if self.button27 ~= nil then self.button27:destroy(); self.button27 = nil; end;
         if self.popupEditCondAtiv ~= nil then self.popupEditCondAtiv:destroy(); self.popupEditCondAtiv = nil; end;
+        if self.labProfarcanismo ~= nil then self.labProfarcanismo:destroy(); self.labProfarcanismo = nil; end;
         if self.label133 ~= nil then self.label133:destroy(); self.label133 = nil; end;
         if self.button24 ~= nil then self.button24:destroy(); self.button24 = nil; end;
         if self.edit21 ~= nil then self.edit21:destroy(); self.edit21 = nil; end;
         if self.horzLine64 ~= nil then self.horzLine64:destroy(); self.horzLine64 = nil; end;
-        if self.flowPart257 ~= nil then self.flowPart257:destroy(); self.flowPart257 = nil; end;
-        if self.flowPart222 ~= nil then self.flowPart222:destroy(); self.flowPart222 = nil; end;
-        if self.flowPart234 ~= nil then self.flowPart234:destroy(); self.flowPart234 = nil; end;
+        if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
+        if self.frame9 ~= nil then self.frame9:destroy(); self.frame9 = nil; end;
+        if self.cbProfpericiaconstituicao ~= nil then self.cbProfpericiaconstituicao:destroy(); self.cbProfpericiaconstituicao = nil; end;
+        if self.flowLayout27 ~= nil then self.flowLayout27:destroy(); self.flowLayout27 = nil; end;
+        if self.labUpperGridCampo3 ~= nil then self.labUpperGridCampo3:destroy(); self.labUpperGridCampo3 = nil; end;
+        if self.labProfconstituicao ~= nil then self.labProfconstituicao:destroy(); self.labProfconstituicao = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
         if self.dataLink161 ~= nil then self.dataLink161:destroy(); self.dataLink161 = nil; end;
-        if self.rclLuas ~= nil then self.rclLuas:destroy(); self.rclLuas = nil; end;
+        if self.layEquipDefenseBottom ~= nil then self.layEquipDefenseBottom:destroy(); self.layEquipDefenseBottom = nil; end;
+        if self.flowLayout4 ~= nil then self.flowLayout4:destroy(); self.flowLayout4 = nil; end;
+        if self.flowPart71 ~= nil then self.flowPart71:destroy(); self.flowPart71 = nil; end;
+        if self.dataLink35 ~= nil then self.dataLink35:destroy(); self.dataLink35 = nil; end;
+        if self.dataLink69 ~= nil then self.dataLink69:destroy(); self.dataLink69 = nil; end;
         if self.edit13 ~= nil then self.edit13:destroy(); self.edit13 = nil; end;
+        if self.button77 ~= nil then self.button77:destroy(); self.button77 = nil; end;
         if self.frame2 ~= nil then self.frame2:destroy(); self.frame2 = nil; end;
-        if self.edit81 ~= nil then self.edit81:destroy(); self.edit81 = nil; end;
-        if self.label181 ~= nil then self.label181:destroy(); self.label181 = nil; end;
+        if self.cbProfarcanismo ~= nil then self.cbProfarcanismo:destroy(); self.cbProfarcanismo = nil; end;
         if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
-        if self.scrollBox10 ~= nil then self.scrollBox10:destroy(); self.scrollBox10 = nil; end;
+        if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
         if self.dataLink169 ~= nil then self.dataLink169:destroy(); self.dataLink169 = nil; end;
         if self.button6 ~= nil then self.button6:destroy(); self.button6 = nil; end;
         if self.dataLink98 ~= nil then self.dataLink98:destroy(); self.dataLink98 = nil; end;
-        if self.flowPart180 ~= nil then self.flowPart180:destroy(); self.flowPart180 = nil; end;
+        if self.labProfcompanionacrobacia ~= nil then self.labProfcompanionacrobacia:destroy(); self.labProfcompanionacrobacia = nil; end;
+        if self.labProfcompaniontolerancia ~= nil then self.labProfcompaniontolerancia:destroy(); self.labProfcompaniontolerancia = nil; end;
         if self.cbProfinteligencia ~= nil then self.cbProfinteligencia:destroy(); self.cbProfinteligencia = nil; end;
+        if self.dataLink155 ~= nil then self.dataLink155:destroy(); self.dataLink155 = nil; end;
         if self.dataLink83 ~= nil then self.dataLink83:destroy(); self.dataLink83 = nil; end;
+        if self.button90 ~= nil then self.button90:destroy(); self.button90 = nil; end;
+        if self.dataLink187 ~= nil then self.dataLink187:destroy(); self.dataLink187 = nil; end;
         if self.layout70 ~= nil then self.layout70:destroy(); self.layout70 = nil; end;
+        if self.fraLayAtributos ~= nil then self.fraLayAtributos:destroy(); self.fraLayAtributos = nil; end;
         if self.cbProfatletismo ~= nil then self.cbProfatletismo:destroy(); self.cbProfatletismo = nil; end;
-        if self.button99 ~= nil then self.button99:destroy(); self.button99 = nil; end;
+        if self.dataLink30 ~= nil then self.dataLink30:destroy(); self.dataLink30 = nil; end;
+        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
+        if self.button10 ~= nil then self.button10:destroy(); self.button10 = nil; end;
+        if self.optAtaqueLegenda ~= nil then self.optAtaqueLegenda:destroy(); self.optAtaqueLegenda = nil; end;
+        if self.labUpperGridCampo6 ~= nil then self.labUpperGridCampo6:destroy(); self.labUpperGridCampo6 = nil; end;
         if self.frame5 ~= nil then self.frame5:destroy(); self.frame5 = nil; end;
         if self.layPrepValorChb ~= nil then self.layPrepValorChb:destroy(); self.layPrepValorChb = nil; end;
-        if self.labUpperGridCampo6 ~= nil then self.labUpperGridCampo6:destroy(); self.labUpperGridCampo6 = nil; end;
+        if self.layout67 ~= nil then self.layout67:destroy(); self.layout67 = nil; end;
+        if self.dataLink209 ~= nil then self.dataLink209:destroy(); self.dataLink209 = nil; end;
+        if self.button99 ~= nil then self.button99:destroy(); self.button99 = nil; end;
+        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
         if self.cbProfcompaniontolerancia ~= nil then self.cbProfcompaniontolerancia:destroy(); self.cbProfcompaniontolerancia = nil; end;
+        if self.label79 ~= nil then self.label79:destroy(); self.label79 = nil; end;
+        if self.horzLine26 ~= nil then self.horzLine26:destroy(); self.horzLine26 = nil; end;
+        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
+        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
         if self.flowPart124 ~= nil then self.flowPart124:destroy(); self.flowPart124 = nil; end;
-        if self.button54 ~= nil then self.button54:destroy(); self.button54 = nil; end;
-        if self.flowPart141 ~= nil then self.flowPart141:destroy(); self.flowPart141 = nil; end;
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
         if self.cbProfbedoria ~= nil then self.cbProfbedoria:destroy(); self.cbProfbedoria = nil; end;
+        if self.button54 ~= nil then self.button54:destroy(); self.button54 = nil; end;
+        if self.flowPart141 ~= nil then self.flowPart141:destroy(); self.flowPart141 = nil; end;
         if self.dataLink207 ~= nil then self.dataLink207:destroy(); self.dataLink207 = nil; end;
         if self.dataLink67 ~= nil then self.dataLink67:destroy(); self.dataLink67 = nil; end;
+        if self.flowLayout36 ~= nil then self.flowLayout36:destroy(); self.flowLayout36 = nil; end;
+        if self.flowPart37 ~= nil then self.flowPart37:destroy(); self.flowPart37 = nil; end;
         if self.flowPart45 ~= nil then self.flowPart45:destroy(); self.flowPart45 = nil; end;
+        if self.labProfcompanionhistoria ~= nil then self.labProfcompanionhistoria:destroy(); self.labProfcompanionhistoria = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
+        if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
         if self.dataLink57 ~= nil then self.dataLink57:destroy(); self.dataLink57 = nil; end;
+        if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
         if self.cbProfhistoria ~= nil then self.cbProfhistoria:destroy(); self.cbProfhistoria = nil; end;
         if self.dataLink220 ~= nil then self.dataLink220:destroy(); self.dataLink220 = nil; end;
+        if self.colorComboBox2 ~= nil then self.colorComboBox2:destroy(); self.colorComboBox2 = nil; end;
+        if self.btnApagar ~= nil then self.btnApagar:destroy(); self.btnApagar = nil; end;
         if self.scrollBox4 ~= nil then self.scrollBox4:destroy(); self.scrollBox4 = nil; end;
+        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
+        if self.dataLink193 ~= nil then self.dataLink193:destroy(); self.dataLink193 = nil; end;
         if self.button82 ~= nil then self.button82:destroy(); self.button82 = nil; end;
         if self.frame4 ~= nil then self.frame4:destroy(); self.frame4 = nil; end;
+        if self.button71 ~= nil then self.button71:destroy(); self.button71 = nil; end;
+        if self.dataLink133 ~= nil then self.dataLink133:destroy(); self.dataLink133 = nil; end;
         if self.edit32 ~= nil then self.edit32:destroy(); self.edit32 = nil; end;
+        if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
+        if self.button86 ~= nil then self.button86:destroy(); self.button86 = nil; end;
         if self.layout75 ~= nil then self.layout75:destroy(); self.layout75 = nil; end;
         if self.button97 ~= nil then self.button97:destroy(); self.button97 = nil; end;
         if self.dataLink199 ~= nil then self.dataLink199:destroy(); self.dataLink199 = nil; end;
         if self.cbProfpericiadestreza ~= nil then self.cbProfpericiadestreza:destroy(); self.cbProfpericiadestreza = nil; end;
+        if self.flowLayout37 ~= nil then self.flowLayout37:destroy(); self.flowLayout37 = nil; end;
         if self.flowLayout22 ~= nil then self.flowLayout22:destroy(); self.flowLayout22 = nil; end;
         if self.flowPart108 ~= nil then self.flowPart108:destroy(); self.flowPart108 = nil; end;
-        if self.button102 ~= nil then self.button102:destroy(); self.button102 = nil; end;
+        if self.label110 ~= nil then self.label110:destroy(); self.label110 = nil; end;
         if self.dataLink182 ~= nil then self.dataLink182:destroy(); self.dataLink182 = nil; end;
+        if self.layout58 ~= nil then self.layout58:destroy(); self.layout58 = nil; end;
         if self.dataLink28 ~= nil then self.dataLink28:destroy(); self.dataLink28 = nil; end;
         if self.fraFrenteLayout ~= nil then self.fraFrenteLayout:destroy(); self.fraFrenteLayout = nil; end;
-        if self.label138 ~= nil then self.label138:destroy(); self.label138 = nil; end;
         if self.layout110 ~= nil then self.layout110:destroy(); self.layout110 = nil; end;
         if self.label40 ~= nil then self.label40:destroy(); self.label40 = nil; end;
         if self.flowPart73 ~= nil then self.flowPart73:destroy(); self.flowPart73 = nil; end;
         if self.UpperGridCampo1 ~= nil then self.UpperGridCampo1:destroy(); self.UpperGridCampo1 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.flowPart155 ~= nil then self.flowPart155:destroy(); self.flowPart155 = nil; end;
-        if self.flowPart261 ~= nil then self.flowPart261:destroy(); self.flowPart261 = nil; end;
         if self.layout114 ~= nil then self.layout114:destroy(); self.layout114 = nil; end;
         if self.dataLink73 ~= nil then self.dataLink73:destroy(); self.dataLink73 = nil; end;
+        if self.flowLayout13 ~= nil then self.flowLayout13:destroy(); self.flowLayout13 = nil; end;
+        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
-        if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.flowPart42 ~= nil then self.flowPart42:destroy(); self.flowPart42 = nil; end;
         if self.button47 ~= nil then self.button47:destroy(); self.button47 = nil; end;
         if self.label71 ~= nil then self.label71:destroy(); self.label71 = nil; end;
-        if self.edit85 ~= nil then self.edit85:destroy(); self.edit85 = nil; end;
+        if self.fpPENome ~= nil then self.fpPENome:destroy(); self.fpPENome = nil; end;
+        if self.dataLink117 ~= nil then self.dataLink117:destroy(); self.dataLink117 = nil; end;
+        if self.horzLine45 ~= nil then self.horzLine45:destroy(); self.horzLine45 = nil; end;
+        if self.button56 ~= nil then self.button56:destroy(); self.button56 = nil; end;
+        if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
         if self.button70 ~= nil then self.button70:destroy(); self.button70 = nil; end;
-        if self.label177 ~= nil then self.label177:destroy(); self.label177 = nil; end;
         if self.dataLink21 ~= nil then self.dataLink21:destroy(); self.dataLink21 = nil; end;
         if self.layout13 ~= nil then self.layout13:destroy(); self.layout13 = nil; end;
         if self.linUpperGridCampo9 ~= nil then self.linUpperGridCampo9:destroy(); self.linUpperGridCampo9 = nil; end;
+        if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
+        if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.button20 ~= nil then self.button20:destroy(); self.button20 = nil; end;
+        if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.cbProfnidade ~= nil then self.cbProfnidade:destroy(); self.cbProfnidade = nil; end;
         if self.dataLink108 ~= nil then self.dataLink108:destroy(); self.dataLink108 = nil; end;
         if self.edtUpperGridCampo5 ~= nil then self.edtUpperGridCampo5:destroy(); self.edtUpperGridCampo5 = nil; end;
@@ -23204,1172 +19541,556 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label67 ~= nil then self.label67:destroy(); self.label67 = nil; end;
         if self.layout68 ~= nil then self.layout68:destroy(); self.layout68 = nil; end;
         if self.dataLink150 ~= nil then self.dataLink150:destroy(); self.dataLink150 = nil; end;
-        if self.flowPart248 ~= nil then self.flowPart248:destroy(); self.flowPart248 = nil; end;
+        if self.flowPart16 ~= nil then self.flowPart16:destroy(); self.flowPart16 = nil; end;
         if self.layout105 ~= nil then self.layout105:destroy(); self.layout105 = nil; end;
+        if self.dataLink123 ~= nil then self.dataLink123:destroy(); self.dataLink123 = nil; end;
+        if self.frmFichaRPGmeister11_svg ~= nil then self.frmFichaRPGmeister11_svg:destroy(); self.frmFichaRPGmeister11_svg = nil; end;
         if self.cbProfcompanionacrobacia ~= nil then self.cbProfcompanionacrobacia:destroy(); self.cbProfcompanionacrobacia = nil; end;
-        if self.edit120 ~= nil then self.edit120:destroy(); self.edit120 = nil; end;
         if self.dataLink53 ~= nil then self.dataLink53:destroy(); self.dataLink53 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
-        if self.label154 ~= nil then self.label154:destroy(); self.label154 = nil; end;
+        if self.labProfcompanionreligiao ~= nil then self.labProfcompanionreligiao:destroy(); self.labProfcompanionreligiao = nil; end;
+        if self.label105 ~= nil then self.label105:destroy(); self.label105 = nil; end;
         if self.label34 ~= nil then self.label34:destroy(); self.label34 = nil; end;
         if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
         if self.dataLink93 ~= nil then self.dataLink93:destroy(); self.dataLink93 = nil; end;
-        if self.label145 ~= nil then self.label145:destroy(); self.label145 = nil; end;
-        if self.horzLine40 ~= nil then self.horzLine40:destroy(); self.horzLine40 = nil; end;
-        if self.flowPart230 ~= nil then self.flowPart230:destroy(); self.flowPart230 = nil; end;
-        if self.edit68 ~= nil then self.edit68:destroy(); self.edit68 = nil; end;
-        if self.flowLayout39 ~= nil then self.flowLayout39:destroy(); self.flowLayout39 = nil; end;
-        if self.button29 ~= nil then self.button29:destroy(); self.button29 = nil; end;
-        if self.flowLayout29 ~= nil then self.flowLayout29:destroy(); self.flowLayout29 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.horzLine28 ~= nil then self.horzLine28:destroy(); self.horzLine28 = nil; end;
-        if self.comboBox14 ~= nil then self.comboBox14:destroy(); self.comboBox14 = nil; end;
-        if self.dataLink112 ~= nil then self.dataLink112:destroy(); self.dataLink112 = nil; end;
-        if self.flowPart105 ~= nil then self.flowPart105:destroy(); self.flowPart105 = nil; end;
-        if self.flowPart202 ~= nil then self.flowPart202:destroy(); self.flowPart202 = nil; end;
-        if self.dataLink74 ~= nil then self.dataLink74:destroy(); self.dataLink74 = nil; end;
-        if self.flowPart237 ~= nil then self.flowPart237:destroy(); self.flowPart237 = nil; end;
-        if self.flowPart174 ~= nil then self.flowPart174:destroy(); self.flowPart174 = nil; end;
-        if self.flowPart9 ~= nil then self.flowPart9:destroy(); self.flowPart9 = nil; end;
-        if self.dataLink127 ~= nil then self.dataLink127:destroy(); self.dataLink127 = nil; end;
-        if self.estacaoLabel ~= nil then self.estacaoLabel:destroy(); self.estacaoLabel = nil; end;
-        if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
-        if self.label155 ~= nil then self.label155:destroy(); self.label155 = nil; end;
-        if self.popMoon ~= nil then self.popMoon:destroy(); self.popMoon = nil; end;
-        if self.dataLink166 ~= nil then self.dataLink166:destroy(); self.dataLink166 = nil; end;
-        if self.flowPart252 ~= nil then self.flowPart252:destroy(); self.flowPart252 = nil; end;
-        if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
-        if self.tab9 ~= nil then self.tab9:destroy(); self.tab9 = nil; end;
-        if self.horzLine33 ~= nil then self.horzLine33:destroy(); self.horzLine33 = nil; end;
-        if self.flowPart197 ~= nil then self.flowPart197:destroy(); self.flowPart197 = nil; end;
-        if self.flowPart214 ~= nil then self.flowPart214:destroy(); self.flowPart214 = nil; end;
-        if self.horzLine57 ~= nil then self.horzLine57:destroy(); self.horzLine57 = nil; end;
-        if self.flowLineBreak15 ~= nil then self.flowLineBreak15:destroy(); self.flowLineBreak15 = nil; end;
-        if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
-        if self.flowLayout40 ~= nil then self.flowLayout40:destroy(); self.flowLayout40 = nil; end;
-        if self.flowPart26 ~= nil then self.flowPart26:destroy(); self.flowPart26 = nil; end;
-        if self.dataLink181 ~= nil then self.dataLink181:destroy(); self.dataLink181 = nil; end;
-        if self.dataLink145 ~= nil then self.dataLink145:destroy(); self.dataLink145 = nil; end;
-        if self.flowPart136 ~= nil then self.flowPart136:destroy(); self.flowPart136 = nil; end;
-        if self.dataLink231 ~= nil then self.dataLink231:destroy(); self.dataLink231 = nil; end;
-        if self.horzLine25 ~= nil then self.horzLine25:destroy(); self.horzLine25 = nil; end;
-        if self.pgcPrincipal ~= nil then self.pgcPrincipal:destroy(); self.pgcPrincipal = nil; end;
-        if self.flowPart41 ~= nil then self.flowPart41:destroy(); self.flowPart41 = nil; end;
-        if self.button84 ~= nil then self.button84:destroy(); self.button84 = nil; end;
-        if self.edit90 ~= nil then self.edit90:destroy(); self.edit90 = nil; end;
-        if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
-        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
-        if self.layout117 ~= nil then self.layout117:destroy(); self.layout117 = nil; end;
-        if self.upperGridMagicBox1 ~= nil then self.upperGridMagicBox1:destroy(); self.upperGridMagicBox1 = nil; end;
-        if self.horzLine52 ~= nil then self.horzLine52:destroy(); self.horzLine52 = nil; end;
-        if self.label117 ~= nil then self.label117:destroy(); self.label117 = nil; end;
-        if self.labProfatuacao ~= nil then self.labProfatuacao:destroy(); self.labProfatuacao = nil; end;
-        if self.linUpperGridCampo11 ~= nil then self.linUpperGridCampo11:destroy(); self.linUpperGridCampo11 = nil; end;
-        if self.dataLink58 ~= nil then self.dataLink58:destroy(); self.dataLink58 = nil; end;
-        if self.dataLink152 ~= nil then self.dataLink152:destroy(); self.dataLink152 = nil; end;
-        if self.dataLink77 ~= nil then self.dataLink77:destroy(); self.dataLink77 = nil; end;
-        if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
-        if self.cbProfcompanioninvestigacao ~= nil then self.cbProfcompanioninvestigacao:destroy(); self.cbProfcompanioninvestigacao = nil; end;
-        if self.label44 ~= nil then self.label44:destroy(); self.label44 = nil; end;
-        if self.comboBox26 ~= nil then self.comboBox26:destroy(); self.comboBox26 = nil; end;
-        if self.cbProffurtividade ~= nil then self.cbProffurtividade:destroy(); self.cbProffurtividade = nil; end;
-        if self.label179 ~= nil then self.label179:destroy(); self.label179 = nil; end;
-        if self.UpperGridCampo11 ~= nil then self.UpperGridCampo11:destroy(); self.UpperGridCampo11 = nil; end;
-        if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
-        if self.cmbupperGridMagicBox1 ~= nil then self.cmbupperGridMagicBox1:destroy(); self.cmbupperGridMagicBox1 = nil; end;
-        if self.flowPart210 ~= nil then self.flowPart210:destroy(); self.flowPart210 = nil; end;
-        if self.scrollBox8 ~= nil then self.scrollBox8:destroy(); self.scrollBox8 = nil; end;
-        if self.label98 ~= nil then self.label98:destroy(); self.label98 = nil; end;
-        if self.flowPart117 ~= nil then self.flowPart117:destroy(); self.flowPart117 = nil; end;
-        if self.flowPart46 ~= nil then self.flowPart46:destroy(); self.flowPart46 = nil; end;
-        if self.layout82 ~= nil then self.layout82:destroy(); self.layout82 = nil; end;
-        if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
-        if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
-        if self.button76 ~= nil then self.button76:destroy(); self.button76 = nil; end;
-        if self.editPENome ~= nil then self.editPENome:destroy(); self.editPENome = nil; end;
-        if self.edit57 ~= nil then self.edit57:destroy(); self.edit57 = nil; end;
-        if self.flowPart2 ~= nil then self.flowPart2:destroy(); self.flowPart2 = nil; end;
-        if self.flowPart204 ~= nil then self.flowPart204:destroy(); self.flowPart204 = nil; end;
-        if self.label169 ~= nil then self.label169:destroy(); self.label169 = nil; end;
-        if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
-        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
-        if self.dataLink75 ~= nil then self.dataLink75:destroy(); self.dataLink75 = nil; end;
-        if self.edit63 ~= nil then self.edit63:destroy(); self.edit63 = nil; end;
-        if self.flowPart179 ~= nil then self.flowPart179:destroy(); self.flowPart179 = nil; end;
-        if self.layout93 ~= nil then self.layout93:destroy(); self.layout93 = nil; end;
-        if self.horzLine17 ~= nil then self.horzLine17:destroy(); self.horzLine17 = nil; end;
-        if self.horzLine27 ~= nil then self.horzLine27:destroy(); self.horzLine27 = nil; end;
-        if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
-        if self.horzLine46 ~= nil then self.horzLine46:destroy(); self.horzLine46 = nil; end;
-        if self.UpperGridCampo8 ~= nil then self.UpperGridCampo8:destroy(); self.UpperGridCampo8 = nil; end;
-        if self.horzLine51 ~= nil then self.horzLine51:destroy(); self.horzLine51 = nil; end;
-        if self.cbProfpericiainteligencia ~= nil then self.cbProfpericiainteligencia:destroy(); self.cbProfpericiainteligencia = nil; end;
-        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
-        if self.layout66 ~= nil then self.layout66:destroy(); self.layout66 = nil; end;
-        if self.dataLink65 ~= nil then self.dataLink65:destroy(); self.dataLink65 = nil; end;
-        if self.linUpperGridCampo12 ~= nil then self.linUpperGridCampo12:destroy(); self.linUpperGridCampo12 = nil; end;
-        if self.dataLink228 ~= nil then self.dataLink228:destroy(); self.dataLink228 = nil; end;
-        if self.cbProfcompanionpercepcao ~= nil then self.cbProfcompanionpercepcao:destroy(); self.cbProfcompanionpercepcao = nil; end;
-        if self.cbProfcompanionconstituicao ~= nil then self.cbProfcompanionconstituicao:destroy(); self.cbProfcompanionconstituicao = nil; end;
-        if self.dataLink101 ~= nil then self.dataLink101:destroy(); self.dataLink101 = nil; end;
-        if self.label180 ~= nil then self.label180:destroy(); self.label180 = nil; end;
-        if self.flowPart64 ~= nil then self.flowPart64:destroy(); self.flowPart64 = nil; end;
-        if self.button22 ~= nil then self.button22:destroy(); self.button22 = nil; end;
-        if self.labProfpericiainteligencia ~= nil then self.labProfpericiainteligencia:destroy(); self.labProfpericiainteligencia = nil; end;
-        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
-        if self.dataLink60 ~= nil then self.dataLink60:destroy(); self.dataLink60 = nil; end;
-        if self.fraEquipamentoLayout ~= nil then self.fraEquipamentoLayout:destroy(); self.fraEquipamentoLayout = nil; end;
-        if self.flowLayout9 ~= nil then self.flowLayout9:destroy(); self.flowLayout9 = nil; end;
-        if self.dataLink144 ~= nil then self.dataLink144:destroy(); self.dataLink144 = nil; end;
-        if self.dataLink96 ~= nil then self.dataLink96:destroy(); self.dataLink96 = nil; end;
-        if self.flowPart153 ~= nil then self.flowPart153:destroy(); self.flowPart153 = nil; end;
-        if self.labProfconcentracao ~= nil then self.labProfconcentracao:destroy(); self.labProfconcentracao = nil; end;
-        if self.button42 ~= nil then self.button42:destroy(); self.button42 = nil; end;
-        if self.layout104 ~= nil then self.layout104:destroy(); self.layout104 = nil; end;
-        if self.labUpperGridCampo7 ~= nil then self.labUpperGridCampo7:destroy(); self.labUpperGridCampo7 = nil; end;
-        if self.edit56 ~= nil then self.edit56:destroy(); self.edit56 = nil; end;
-        if self.label137 ~= nil then self.label137:destroy(); self.label137 = nil; end;
-        if self.layPrincipal ~= nil then self.layPrincipal:destroy(); self.layPrincipal = nil; end;
-        if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
-        if self.flowLayout42 ~= nil then self.flowLayout42:destroy(); self.flowLayout42 = nil; end;
-        if self.flowPart167 ~= nil then self.flowPart167:destroy(); self.flowPart167 = nil; end;
-        if self.comboBox5 ~= nil then self.comboBox5:destroy(); self.comboBox5 = nil; end;
-        if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
-        if self.comboBox19 ~= nil then self.comboBox19:destroy(); self.comboBox19 = nil; end;
-        if self.dataLink159 ~= nil then self.dataLink159:destroy(); self.dataLink159 = nil; end;
-        if self.flowLayout11 ~= nil then self.flowLayout11:destroy(); self.flowLayout11 = nil; end;
-        if self.flowPart134 ~= nil then self.flowPart134:destroy(); self.flowPart134 = nil; end;
-        if self.dataLink218 ~= nil then self.dataLink218:destroy(); self.dataLink218 = nil; end;
-        if self.dataLink118 ~= nil then self.dataLink118:destroy(); self.dataLink118 = nil; end;
-        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.rectangle27 ~= nil then self.rectangle27:destroy(); self.rectangle27 = nil; end;
-        if self.flowPart36 ~= nil then self.flowPart36:destroy(); self.flowPart36 = nil; end;
-        if self.edtUpperGridCampo6 ~= nil then self.edtUpperGridCampo6:destroy(); self.edtUpperGridCampo6 = nil; end;
-        if self.flowPart151 ~= nil then self.flowPart151:destroy(); self.flowPart151 = nil; end;
-        if self.linUpperGridCampo10 ~= nil then self.linUpperGridCampo10:destroy(); self.linUpperGridCampo10 = nil; end;
-        if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
-        if self.flowLineBreak10 ~= nil then self.flowLineBreak10:destroy(); self.flowLineBreak10 = nil; end;
-        if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
-        if self.cbProfcompanionintuicao ~= nil then self.cbProfcompanionintuicao:destroy(); self.cbProfcompanionintuicao = nil; end;
-        if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
-        if self.dataLink232 ~= nil then self.dataLink232:destroy(); self.dataLink232 = nil; end;
-        if self.layout121 ~= nil then self.layout121:destroy(); self.layout121 = nil; end;
-        if self.label153 ~= nil then self.label153:destroy(); self.label153 = nil; end;
-        if self.cbProfacrobacia ~= nil then self.cbProfacrobacia:destroy(); self.cbProfacrobacia = nil; end;
-        if self.flowPart115 ~= nil then self.flowPart115:destroy(); self.flowPart115 = nil; end;
-        if self.flwNome1 ~= nil then self.flwNome1:destroy(); self.flwNome1 = nil; end;
-        if self.button75 ~= nil then self.button75:destroy(); self.button75 = nil; end;
-        if self.flowPart165 ~= nil then self.flowPart165:destroy(); self.flowPart165 = nil; end;
-        if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
-        if self.dataLink46 ~= nil then self.dataLink46:destroy(); self.dataLink46 = nil; end;
-        if self.flowPart184 ~= nil then self.flowPart184:destroy(); self.flowPart184 = nil; end;
-        if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
-        if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
-        if self.dataLink50 ~= nil then self.dataLink50:destroy(); self.dataLink50 = nil; end;
-        if self.edtUpperGridCampo12 ~= nil then self.edtUpperGridCampo12:destroy(); self.edtUpperGridCampo12 = nil; end;
-        if self.dataLink205 ~= nil then self.dataLink205:destroy(); self.dataLink205 = nil; end;
-        if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
-        if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
-        if self.dataLink86 ~= nil then self.dataLink86:destroy(); self.dataLink86 = nil; end;
-        if self.flowLayout24 ~= nil then self.flowLayout24:destroy(); self.flowLayout24 = nil; end;
-        if self.edit64 ~= nil then self.edit64:destroy(); self.edit64 = nil; end;
-        if self.dataLink149 ~= nil then self.dataLink149:destroy(); self.dataLink149 = nil; end;
-        if self.edit41 ~= nil then self.edit41:destroy(); self.edit41 = nil; end;
-        if self.flowPart121 ~= nil then self.flowPart121:destroy(); self.flowPart121 = nil; end;
-        if self.flowPart181 ~= nil then self.flowPart181:destroy(); self.flowPart181 = nil; end;
-        if self.edit36 ~= nil then self.edit36:destroy(); self.edit36 = nil; end;
-        if self.upperGridMagicBox2 ~= nil then self.upperGridMagicBox2:destroy(); self.upperGridMagicBox2 = nil; end;
-        if self.flowLayout19 ~= nil then self.flowLayout19:destroy(); self.flowLayout19 = nil; end;
-        if self.layout94 ~= nil then self.layout94:destroy(); self.layout94 = nil; end;
-        if self.dataLink185 ~= nil then self.dataLink185:destroy(); self.dataLink185 = nil; end;
-        if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
-        if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
-        if self.dataLink210 ~= nil then self.dataLink210:destroy(); self.dataLink210 = nil; end;
-        if self.flowPart13 ~= nil then self.flowPart13:destroy(); self.flowPart13 = nil; end;
-        if self.flowPart1 ~= nil then self.flowPart1:destroy(); self.flowPart1 = nil; end;
-        if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
-        if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
-        if self.rclEquips ~= nil then self.rclEquips:destroy(); self.rclEquips = nil; end;
-        if self.flowPart178 ~= nil then self.flowPart178:destroy(); self.flowPart178 = nil; end;
-        if self.flowPart74 ~= nil then self.flowPart74:destroy(); self.flowPart74 = nil; end;
-        if self.colorComboBox1 ~= nil then self.colorComboBox1:destroy(); self.colorComboBox1 = nil; end;
-        if self.layout62 ~= nil then self.layout62:destroy(); self.layout62 = nil; end;
-        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.layout89 ~= nil then self.layout89:destroy(); self.layout89 = nil; end;
-        if self.cbProfadestrarAnimais ~= nil then self.cbProfadestrarAnimais:destroy(); self.cbProfadestrarAnimais = nil; end;
-        if self.flowPart272 ~= nil then self.flowPart272:destroy(); self.flowPart272 = nil; end;
-        if self.flowPart225 ~= nil then self.flowPart225:destroy(); self.flowPart225 = nil; end;
-        if self.cbProfsobrevivencia ~= nil then self.cbProfsobrevivencia:destroy(); self.cbProfsobrevivencia = nil; end;
-        if self.dataLink44 ~= nil then self.dataLink44:destroy(); self.dataLink44 = nil; end;
-        if self.layout71 ~= nil then self.layout71:destroy(); self.layout71 = nil; end;
-        if self.flowPart223 ~= nil then self.flowPart223:destroy(); self.flowPart223 = nil; end;
-        if self.flowLayout30 ~= nil then self.flowLayout30:destroy(); self.flowLayout30 = nil; end;
-        if self.labProfmedicina ~= nil then self.labProfmedicina:destroy(); self.labProfmedicina = nil; end;
-        if self.label99 ~= nil then self.label99:destroy(); self.label99 = nil; end;
-        if self.label107 ~= nil then self.label107:destroy(); self.label107 = nil; end;
-        if self.scrollBox9 ~= nil then self.scrollBox9:destroy(); self.scrollBox9 = nil; end;
-        if self.dataLink196 ~= nil then self.dataLink196:destroy(); self.dataLink196 = nil; end;
-        if self.flowPart68 ~= nil then self.flowPart68:destroy(); self.flowPart68 = nil; end;
-        if self.label82 ~= nil then self.label82:destroy(); self.label82 = nil; end;
-        if self.layout36 ~= nil then self.layout36:destroy(); self.layout36 = nil; end;
-        if self.labUpperGridCampo5 ~= nil then self.labUpperGridCampo5:destroy(); self.labUpperGridCampo5 = nil; end;
-        if self.flowPart150 ~= nil then self.flowPart150:destroy(); self.flowPart150 = nil; end;
-        if self.flowPart140 ~= nil then self.flowPart140:destroy(); self.flowPart140 = nil; end;
-        if self.layout119 ~= nil then self.layout119:destroy(); self.layout119 = nil; end;
-        if self.flowPart34 ~= nil then self.flowPart34:destroy(); self.flowPart34 = nil; end;
-        if self.flowPart190 ~= nil then self.flowPart190:destroy(); self.flowPart190 = nil; end;
-        if self.flowLayout23 ~= nil then self.flowLayout23:destroy(); self.flowLayout23 = nil; end;
-        if self.celestialBt ~= nil then self.celestialBt:destroy(); self.celestialBt = nil; end;
-        if self.button26 ~= nil then self.button26:destroy(); self.button26 = nil; end;
-        if self.label76 ~= nil then self.label76:destroy(); self.label76 = nil; end;
-        if self.edit77 ~= nil then self.edit77:destroy(); self.edit77 = nil; end;
-        if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
-        if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
-        if self.cbProfcompanionforca ~= nil then self.cbProfcompanionforca:destroy(); self.cbProfcompanionforca = nil; end;
-        if self.cbProfatuacao ~= nil then self.cbProfatuacao:destroy(); self.cbProfatuacao = nil; end;
-        if self.edit58 ~= nil then self.edit58:destroy(); self.edit58 = nil; end;
-        if self.flowPart240 ~= nil then self.flowPart240:destroy(); self.flowPart240 = nil; end;
-        if self.comboBoxImportSource ~= nil then self.comboBoxImportSource:destroy(); self.comboBoxImportSource = nil; end;
-        if self.flowLayout33 ~= nil then self.flowLayout33:destroy(); self.flowLayout33 = nil; end;
-        if self.horzLine56 ~= nil then self.horzLine56:destroy(); self.horzLine56 = nil; end;
-        if self.edit66 ~= nil then self.edit66:destroy(); self.edit66 = nil; end;
-        if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
-        if self.dataLink114 ~= nil then self.dataLink114:destroy(); self.dataLink114 = nil; end;
-        if self.imgEquipAttackImg ~= nil then self.imgEquipAttackImg:destroy(); self.imgEquipAttackImg = nil; end;
-        if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
-        if self.flowPart59 ~= nil then self.flowPart59:destroy(); self.flowPart59 = nil; end;
-        if self.dataLink148 ~= nil then self.dataLink148:destroy(); self.dataLink148 = nil; end;
-        if self.flowPart231 ~= nil then self.flowPart231:destroy(); self.flowPart231 = nil; end;
-        if self.flowLayout14 ~= nil then self.flowLayout14:destroy(); self.flowLayout14 = nil; end;
-        if self.layEquipPropriedades ~= nil then self.layEquipPropriedades:destroy(); self.layEquipPropriedades = nil; end;
-        if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
-        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
-        if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
-        if self.button43 ~= nil then self.button43:destroy(); self.button43 = nil; end;
-        if self.horzLine62 ~= nil then self.horzLine62:destroy(); self.horzLine62 = nil; end;
-        if self.labProfcompanionpercepcao ~= nil then self.labProfcompanionpercepcao:destroy(); self.labProfcompanionpercepcao = nil; end;
-        if self.flowPart60 ~= nil then self.flowPart60:destroy(); self.flowPart60 = nil; end;
-        if self.rclProps ~= nil then self.rclProps:destroy(); self.rclProps = nil; end;
-        if self.editorFancy ~= nil then self.editorFancy:destroy(); self.editorFancy = nil; end;
-        if self.flowPart209 ~= nil then self.flowPart209:destroy(); self.flowPart209 = nil; end;
-        if self.dataLink81 ~= nil then self.dataLink81:destroy(); self.dataLink81 = nil; end;
-        if self.edit124 ~= nil then self.edit124:destroy(); self.edit124 = nil; end;
-        if self.flowPart87 ~= nil then self.flowPart87:destroy(); self.flowPart87 = nil; end;
-        if self.layEquipAttackImg ~= nil then self.layEquipAttackImg:destroy(); self.layEquipAttackImg = nil; end;
-        if self.dataLink138 ~= nil then self.dataLink138:destroy(); self.dataLink138 = nil; end;
-        if self.label159 ~= nil then self.label159:destroy(); self.label159 = nil; end;
-        if self.dataLink153 ~= nil then self.dataLink153:destroy(); self.dataLink153 = nil; end;
-        if self.layout100 ~= nil then self.layout100:destroy(); self.layout100 = nil; end;
-        if self.flowPart253 ~= nil then self.flowPart253:destroy(); self.flowPart253 = nil; end;
-        if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
-        if self.edit60 ~= nil then self.edit60:destroy(); self.edit60 = nil; end;
-        if self.label127 ~= nil then self.label127:destroy(); self.label127 = nil; end;
-        if self.dataLink175 ~= nil then self.dataLink175:destroy(); self.dataLink175 = nil; end;
-        if self.flowPart104 ~= nil then self.flowPart104:destroy(); self.flowPart104 = nil; end;
-        if self.layout132 ~= nil then self.layout132:destroy(); self.layout132 = nil; end;
-        if self.label170 ~= nil then self.label170:destroy(); self.label170 = nil; end;
-        if self.labupperGridMagicBox1 ~= nil then self.labupperGridMagicBox1:destroy(); self.labupperGridMagicBox1 = nil; end;
-        if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
-        if self.dataLink55 ~= nil then self.dataLink55:destroy(); self.dataLink55 = nil; end;
-        if self.flowPart92 ~= nil then self.flowPart92:destroy(); self.flowPart92 = nil; end;
-        if self.dataLink78 ~= nil then self.dataLink78:destroy(); self.dataLink78 = nil; end;
-        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
-        if self.labProfcompanionintuicao ~= nil then self.labProfcompanionintuicao:destroy(); self.labProfcompanionintuicao = nil; end;
-        if self.layout72 ~= nil then self.layout72:destroy(); self.layout72 = nil; end;
-        if self.flowPart220 ~= nil then self.flowPart220:destroy(); self.flowPart220 = nil; end;
-        if self.flowLayout12 ~= nil then self.flowLayout12:destroy(); self.flowLayout12 = nil; end;
-        if self.button39 ~= nil then self.button39:destroy(); self.button39 = nil; end;
-        if self.label90 ~= nil then self.label90:destroy(); self.label90 = nil; end;
-        if self.layout118 ~= nil then self.layout118:destroy(); self.layout118 = nil; end;
-        if self.flowPart102 ~= nil then self.flowPart102:destroy(); self.flowPart102 = nil; end;
-        if self.horzLine23 ~= nil then self.horzLine23:destroy(); self.horzLine23 = nil; end;
-        if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
-        if self.labProfcompaniondestreza ~= nil then self.labProfcompaniondestreza:destroy(); self.labProfcompaniondestreza = nil; end;
-        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
-        if self.labProfpericiahonra ~= nil then self.labProfpericiahonra:destroy(); self.labProfpericiahonra = nil; end;
-        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
-        if self.cbProfcompanionmedicina ~= nil then self.cbProfcompanionmedicina:destroy(); self.cbProfcompanionmedicina = nil; end;
-        if self.horzLine53 ~= nil then self.horzLine53:destroy(); self.horzLine53 = nil; end;
-        if self.dataLink204 ~= nil then self.dataLink204:destroy(); self.dataLink204 = nil; end;
-        if self.labelFieldPENivel ~= nil then self.labelFieldPENivel:destroy(); self.labelFieldPENivel = nil; end;
-        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
-        if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
-        if self.dataLink45 ~= nil then self.dataLink45:destroy(); self.dataLink45 = nil; end;
-        if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
-        if self.flwNomeCompanion1 ~= nil then self.flwNomeCompanion1:destroy(); self.flwNomeCompanion1 = nil; end;
-        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
-        if self.flowLayout25 ~= nil then self.flowLayout25:destroy(); self.flowLayout25 = nil; end;
-        if self.flowPart244 ~= nil then self.flowPart244:destroy(); self.flowPart244 = nil; end;
-        if self.popCelestial ~= nil then self.popCelestial:destroy(); self.popCelestial = nil; end;
-        if self.layout101 ~= nil then self.layout101:destroy(); self.layout101 = nil; end;
-        if self.flowPart4 ~= nil then self.flowPart4:destroy(); self.flowPart4 = nil; end;
-        if self.label86 ~= nil then self.label86:destroy(); self.label86 = nil; end;
-        if self.comboBox7 ~= nil then self.comboBox7:destroy(); self.comboBox7 = nil; end;
-        if self.flowPart189 ~= nil then self.flowPart189:destroy(); self.flowPart189 = nil; end;
-        if self.flowLineBreak14 ~= nil then self.flowLineBreak14:destroy(); self.flowLineBreak14 = nil; end;
-        if self.labelFieldPEEscola ~= nil then self.labelFieldPEEscola:destroy(); self.labelFieldPEEscola = nil; end;
-        if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
-        if self.tab11 ~= nil then self.tab11:destroy(); self.tab11 = nil; end;
-        if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
-        if self.dataLink217 ~= nil then self.dataLink217:destroy(); self.dataLink217 = nil; end;
-        if self.labUpperGridCampo4 ~= nil then self.labUpperGridCampo4:destroy(); self.labUpperGridCampo4 = nil; end;
-        if self.comboBox21 ~= nil then self.comboBox21:destroy(); self.comboBox21 = nil; end;
-        if self.button94 ~= nil then self.button94:destroy(); self.button94 = nil; end;
-        if self.edit93 ~= nil then self.edit93:destroy(); self.edit93 = nil; end;
-        if self.dataLink163 ~= nil then self.dataLink163:destroy(); self.dataLink163 = nil; end;
-        if self.edit126 ~= nil then self.edit126:destroy(); self.edit126 = nil; end;
-        if self.dataLink24 ~= nil then self.dataLink24:destroy(); self.dataLink24 = nil; end;
-        if self.label132 ~= nil then self.label132:destroy(); self.label132 = nil; end;
-        if self.edtUpperGridCampo10 ~= nil then self.edtUpperGridCampo10:destroy(); self.edtUpperGridCampo10 = nil; end;
-        if self.edtUpperGridCampo7 ~= nil then self.edtUpperGridCampo7:destroy(); self.edtUpperGridCampo7 = nil; end;
-        if self.flowPart249 ~= nil then self.flowPart249:destroy(); self.flowPart249 = nil; end;
-        if self.labProfcompanionfurtividade ~= nil then self.labProfcompanionfurtividade:destroy(); self.labProfcompanionfurtividade = nil; end;
-        if self.dataLink61 ~= nil then self.dataLink61:destroy(); self.dataLink61 = nil; end;
-        if self.cbProfcompanionfurtividade ~= nil then self.cbProfcompanionfurtividade:destroy(); self.cbProfcompanionfurtividade = nil; end;
-        if self.temperaturaLabel ~= nil then self.temperaturaLabel:destroy(); self.temperaturaLabel = nil; end;
-        if self.button41 ~= nil then self.button41:destroy(); self.button41 = nil; end;
-        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
-        if self.dataLink212 ~= nil then self.dataLink212:destroy(); self.dataLink212 = nil; end;
-        if self.flowPart216 ~= nil then self.flowPart216:destroy(); self.flowPart216 = nil; end;
-        if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
-        if self.flowPart3 ~= nil then self.flowPart3:destroy(); self.flowPart3 = nil; end;
-        if self.flowPart149 ~= nil then self.flowPart149:destroy(); self.flowPart149 = nil; end;
-        if self.layout113 ~= nil then self.layout113:destroy(); self.layout113 = nil; end;
-        if self.flowPart270 ~= nil then self.flowPart270:destroy(); self.flowPart270 = nil; end;
-        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
-        if self.flowPart239 ~= nil then self.flowPart239:destroy(); self.flowPart239 = nil; end;
-        if self.UpperGridCampo2 ~= nil then self.UpperGridCampo2:destroy(); self.UpperGridCampo2 = nil; end;
-        if self.button31 ~= nil then self.button31:destroy(); self.button31 = nil; end;
-        if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
-        if self.labProfinteligencia ~= nil then self.labProfinteligencia:destroy(); self.labProfinteligencia = nil; end;
-        if self.layout98 ~= nil then self.layout98:destroy(); self.layout98 = nil; end;
-        if self.layout73 ~= nil then self.layout73:destroy(); self.layout73 = nil; end;
-        if self.layout48 ~= nil then self.layout48:destroy(); self.layout48 = nil; end;
-        if self.flowPart228 ~= nil then self.flowPart228:destroy(); self.flowPart228 = nil; end;
-        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
-        if self.label84 ~= nil then self.label84:destroy(); self.label84 = nil; end;
-        if self.cbProfsanidade ~= nil then self.cbProfsanidade:destroy(); self.cbProfsanidade = nil; end;
-        if self.dataLink190 ~= nil then self.dataLink190:destroy(); self.dataLink190 = nil; end;
-        if self.edtUpperGridCampo1 ~= nil then self.edtUpperGridCampo1:destroy(); self.edtUpperGridCampo1 = nil; end;
-        if self.flowPart24 ~= nil then self.flowPart24:destroy(); self.flowPart24 = nil; end;
-        if self.frame3 ~= nil then self.frame3:destroy(); self.frame3 = nil; end;
-        if self.edit73 ~= nil then self.edit73:destroy(); self.edit73 = nil; end;
-        if self.dataLink42 ~= nil then self.dataLink42:destroy(); self.dataLink42 = nil; end;
-        if self.flowPart207 ~= nil then self.flowPart207:destroy(); self.flowPart207 = nil; end;
-        if self.dataLabel ~= nil then self.dataLabel:destroy(); self.dataLabel = nil; end;
-        if self.companionanotacoesFancy ~= nil then self.companionanotacoesFancy:destroy(); self.companionanotacoesFancy = nil; end;
-        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.button64 ~= nil then self.button64:destroy(); self.button64 = nil; end;
-        if self.linUpperGridCampo8 ~= nil then self.linUpperGridCampo8:destroy(); self.linUpperGridCampo8 = nil; end;
-        if self.dataLink203 ~= nil then self.dataLink203:destroy(); self.dataLink203 = nil; end;
-        if self.dataLink237 ~= nil then self.dataLink237:destroy(); self.dataLink237 = nil; end;
-        if self.popupEditAlcanceCurto ~= nil then self.popupEditAlcanceCurto:destroy(); self.popupEditAlcanceCurto = nil; end;
-        if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
-        if self.labNomeCompanion1 ~= nil then self.labNomeCompanion1:destroy(); self.labNomeCompanion1 = nil; end;
-        if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
-        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
-        if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
-        if self.popClima ~= nil then self.popClima:destroy(); self.popClima = nil; end;
-        if self.labProfenganacao ~= nil then self.labProfenganacao:destroy(); self.labProfenganacao = nil; end;
-        if self.flowPart166 ~= nil then self.flowPart166:destroy(); self.flowPart166 = nil; end;
-        if self.dataLink130 ~= nil then self.dataLink130:destroy(); self.dataLink130 = nil; end;
-        if self.cbProfcompanionatuacao ~= nil then self.cbProfcompanionatuacao:destroy(); self.cbProfcompanionatuacao = nil; end;
-        if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
-        if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
-        if self.button38 ~= nil then self.button38:destroy(); self.button38 = nil; end;
-        if self.dataLink131 ~= nil then self.dataLink131:destroy(); self.dataLink131 = nil; end;
-        if self.flowPart135 ~= nil then self.flowPart135:destroy(); self.flowPart135 = nil; end;
-        if self.button53 ~= nil then self.button53:destroy(); self.button53 = nil; end;
-        if self.horzLine36 ~= nil then self.horzLine36:destroy(); self.horzLine36 = nil; end;
-        if self.comboBox3 ~= nil then self.comboBox3:destroy(); self.comboBox3 = nil; end;
-        if self.dataLink103 ~= nil then self.dataLink103:destroy(); self.dataLink103 = nil; end;
-        if self.dataLink143 ~= nil then self.dataLink143:destroy(); self.dataLink143 = nil; end;
-        if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
-        if self.edit112 ~= nil then self.edit112:destroy(); self.edit112 = nil; end;
-        if self.edit34 ~= nil then self.edit34:destroy(); self.edit34 = nil; end;
-        if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
-        if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
-        if self.tab8 ~= nil then self.tab8:destroy(); self.tab8 = nil; end;
-        if self.dataLink195 ~= nil then self.dataLink195:destroy(); self.dataLink195 = nil; end;
-        if self.flowPart52 ~= nil then self.flowPart52:destroy(); self.flowPart52 = nil; end;
-        if self.flowPart170 ~= nil then self.flowPart170:destroy(); self.flowPart170 = nil; end;
-        if self.layout127 ~= nil then self.layout127:destroy(); self.layout127 = nil; end;
-        if self.label72 ~= nil then self.label72:destroy(); self.label72 = nil; end;
-        if self.dataLink134 ~= nil then self.dataLink134:destroy(); self.dataLink134 = nil; end;
-        if self.flowPart267 ~= nil then self.flowPart267:destroy(); self.flowPart267 = nil; end;
-        if self.cbProftolerancia ~= nil then self.cbProftolerancia:destroy(); self.cbProftolerancia = nil; end;
-        if self.fraMapa2Layout ~= nil then self.fraMapa2Layout:destroy(); self.fraMapa2Layout = nil; end;
-        if self.flowPart245 ~= nil then self.flowPart245:destroy(); self.flowPart245 = nil; end;
-        if self.rectangle28 ~= nil then self.rectangle28:destroy(); self.rectangle28 = nil; end;
-        if self.flowPart143 ~= nil then self.flowPart143:destroy(); self.flowPart143 = nil; end;
-        if self.flowPart20 ~= nil then self.flowPart20:destroy(); self.flowPart20 = nil; end;
-        if self.flowPart44 ~= nil then self.flowPart44:destroy(); self.flowPart44 = nil; end;
-        if self.textEditor7 ~= nil then self.textEditor7:destroy(); self.textEditor7 = nil; end;
-        if self.labProfcompanioncarisma ~= nil then self.labProfcompanioncarisma:destroy(); self.labProfcompanioncarisma = nil; end;
-        if self.dataLink139 ~= nil then self.dataLink139:destroy(); self.dataLink139 = nil; end;
-        if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
-        if self.dataLink233 ~= nil then self.dataLink233:destroy(); self.dataLink233 = nil; end;
-        if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
-        if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
-        if self.frame6 ~= nil then self.frame6:destroy(); self.frame6 = nil; end;
-        if self.button59 ~= nil then self.button59:destroy(); self.button59 = nil; end;
-        if self.button80 ~= nil then self.button80:destroy(); self.button80 = nil; end;
-        if self.label167 ~= nil then self.label167:destroy(); self.label167 = nil; end;
-        if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
-        if self.labProfcompanionpersuasao ~= nil then self.labProfcompanionpersuasao:destroy(); self.labProfcompanionpersuasao = nil; end;
-        if self.edtUpperGridCampo9 ~= nil then self.edtUpperGridCampo9:destroy(); self.edtUpperGridCampo9 = nil; end;
-        if self.label135 ~= nil then self.label135:destroy(); self.label135 = nil; end;
-        if self.flowLayout35 ~= nil then self.flowLayout35:destroy(); self.flowLayout35 = nil; end;
-        if self.edtUpperGridCampo3 ~= nil then self.edtUpperGridCampo3:destroy(); self.edtUpperGridCampo3 = nil; end;
-        if self.layout133 ~= nil then self.layout133:destroy(); self.layout133 = nil; end;
-        if self.tab7 ~= nil then self.tab7:destroy(); self.tab7 = nil; end;
-        if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
-        if self.flowPart29 ~= nil then self.flowPart29:destroy(); self.flowPart29 = nil; end;
-        if self.layout112 ~= nil then self.layout112:destroy(); self.layout112 = nil; end;
-        if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
-        if self.dataLink49 ~= nil then self.dataLink49:destroy(); self.dataLink49 = nil; end;
-        if self.dataLink177 ~= nil then self.dataLink177:destroy(); self.dataLink177 = nil; end;
-        if self.edit122 ~= nil then self.edit122:destroy(); self.edit122 = nil; end;
-        if self.textEditor6 ~= nil then self.textEditor6:destroy(); self.textEditor6 = nil; end;
-        if self.layPrepValorLab ~= nil then self.layPrepValorLab:destroy(); self.layPrepValorLab = nil; end;
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
-        if self.horzLine50 ~= nil then self.horzLine50:destroy(); self.horzLine50 = nil; end;
-        if self.edit123 ~= nil then self.edit123:destroy(); self.edit123 = nil; end;
-        if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
-        if self.labProfpersuasao ~= nil then self.labProfpersuasao:destroy(); self.labProfpersuasao = nil; end;
-        if self.layout49 ~= nil then self.layout49:destroy(); self.layout49 = nil; end;
-        if self.flowPart23 ~= nil then self.flowPart23:destroy(); self.flowPart23 = nil; end;
-        if self.ventoLabel ~= nil then self.ventoLabel:destroy(); self.ventoLabel = nil; end;
-        if self.dataLink198 ~= nil then self.dataLink198:destroy(); self.dataLink198 = nil; end;
-        if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
-        if self.flowPart258 ~= nil then self.flowPart258:destroy(); self.flowPart258 = nil; end;
-        if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
-        if self.flowPart186 ~= nil then self.flowPart186:destroy(); self.flowPart186 = nil; end;
-        if self.dataLink37 ~= nil then self.dataLink37:destroy(); self.dataLink37 = nil; end;
-        if self.horzLine16 ~= nil then self.horzLine16:destroy(); self.horzLine16 = nil; end;
-        if self.flowLayout6 ~= nil then self.flowLayout6:destroy(); self.flowLayout6 = nil; end;
-        if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
-        if self.label152 ~= nil then self.label152:destroy(); self.label152 = nil; end;
-        if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
-        if self.button83 ~= nil then self.button83:destroy(); self.button83 = nil; end;
-        if self.horzLine49 ~= nil then self.horzLine49:destroy(); self.horzLine49 = nil; end;
-        if self.dataLink56 ~= nil then self.dataLink56:destroy(); self.dataLink56 = nil; end;
-        if self.dataLink129 ~= nil then self.dataLink129:destroy(); self.dataLink129 = nil; end;
-        if self.edit49 ~= nil then self.edit49:destroy(); self.edit49 = nil; end;
-        if self.comboBox23 ~= nil then self.comboBox23:destroy(); self.comboBox23 = nil; end;
-        if self.labProfcompanionsabedoria ~= nil then self.labProfcompanionsabedoria:destroy(); self.labProfcompanionsabedoria = nil; end;
-        if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
-        if self.cbProfconcentracao ~= nil then self.cbProfconcentracao:destroy(); self.cbProfconcentracao = nil; end;
-        if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
-        if self.edit25 ~= nil then self.edit25:destroy(); self.edit25 = nil; end;
-        if self.dataLink156 ~= nil then self.dataLink156:destroy(); self.dataLink156 = nil; end;
-        if self.dataLink25 ~= nil then self.dataLink25:destroy(); self.dataLink25 = nil; end;
-        if self.cbProfcompanionpersuasao ~= nil then self.cbProfcompanionpersuasao:destroy(); self.cbProfcompanionpersuasao = nil; end;
-        if self.flowPart62 ~= nil then self.flowPart62:destroy(); self.flowPart62 = nil; end;
-        if self.edtUpperGridCampo4 ~= nil then self.edtUpperGridCampo4:destroy(); self.edtUpperGridCampo4 = nil; end;
-        if self.flowPart49 ~= nil then self.flowPart49:destroy(); self.flowPart49 = nil; end;
-        if self.popupEditAtaqueAtrib ~= nil then self.popupEditAtaqueAtrib:destroy(); self.popupEditAtaqueAtrib = nil; end;
-        if self.flowPart120 ~= nil then self.flowPart120:destroy(); self.flowPart120 = nil; end;
-        if self.dataLink140 ~= nil then self.dataLink140:destroy(); self.dataLink140 = nil; end;
-        if self.edit94 ~= nil then self.edit94:destroy(); self.edit94 = nil; end;
-        if self.flowPart212 ~= nil then self.flowPart212:destroy(); self.flowPart212 = nil; end;
-        if self.label178 ~= nil then self.label178:destroy(); self.label178 = nil; end;
-        if self.button62 ~= nil then self.button62:destroy(); self.button62 = nil; end;
-        if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
-        if self.labupperGridMagicBox2 ~= nil then self.labupperGridMagicBox2:destroy(); self.labupperGridMagicBox2 = nil; end;
-        if self.flowLineBreak9 ~= nil then self.flowLineBreak9:destroy(); self.flowLineBreak9 = nil; end;
-        if self.flowPart201 ~= nil then self.flowPart201:destroy(); self.flowPart201 = nil; end;
-        if self.horzLine61 ~= nil then self.horzLine61:destroy(); self.horzLine61 = nil; end;
-        if self.layEquipAttackLeft ~= nil then self.layEquipAttackLeft:destroy(); self.layEquipAttackLeft = nil; end;
-        if self.flowPart164 ~= nil then self.flowPart164:destroy(); self.flowPart164 = nil; end;
-        if self.label165 ~= nil then self.label165:destroy(); self.label165 = nil; end;
-        if self.button49 ~= nil then self.button49:destroy(); self.button49 = nil; end;
-        if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
-        if self.edit104 ~= nil then self.edit104:destroy(); self.edit104 = nil; end;
-        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
-        if self.dataLink197 ~= nil then self.dataLink197:destroy(); self.dataLink197 = nil; end;
-        if self.edit108 ~= nil then self.edit108:destroy(); self.edit108 = nil; end;
-        if self.edit95 ~= nil then self.edit95:destroy(); self.edit95 = nil; end;
-        if self.button103 ~= nil then self.button103:destroy(); self.button103 = nil; end;
-        if self.flowPart172 ~= nil then self.flowPart172:destroy(); self.flowPart172 = nil; end;
-        if self.layout65 ~= nil then self.layout65:destroy(); self.layout65 = nil; end;
-        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
-        if self.dataLink132 ~= nil then self.dataLink132:destroy(); self.dataLink132 = nil; end;
-        if self.comboBox4 ~= nil then self.comboBox4:destroy(); self.comboBox4 = nil; end;
-        if self.dataLink59 ~= nil then self.dataLink59:destroy(); self.dataLink59 = nil; end;
-        if self.labProfcompanionconcentracao ~= nil then self.labProfcompanionconcentracao:destroy(); self.labProfcompanionconcentracao = nil; end;
-        if self.edtUpperGridCampo2 ~= nil then self.edtUpperGridCampo2:destroy(); self.edtUpperGridCampo2 = nil; end;
-        if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
-        if self.cbProfpericiacarisma ~= nil then self.cbProfpericiacarisma:destroy(); self.cbProfpericiacarisma = nil; end;
-        if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
-        if self.label121 ~= nil then self.label121:destroy(); self.label121 = nil; end;
-        if self.flowPart221 ~= nil then self.flowPart221:destroy(); self.flowPart221 = nil; end;
-        if self.rectangle22 ~= nil then self.rectangle22:destroy(); self.rectangle22 = nil; end;
-        if self.layout99 ~= nil then self.layout99:destroy(); self.layout99 = nil; end;
-        if self.dataLink221 ~= nil then self.dataLink221:destroy(); self.dataLink221 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.rclEquipsDefense ~= nil then self.rclEquipsDefense:destroy(); self.rclEquipsDefense = nil; end;
-        if self.flowLineBreak21 ~= nil then self.flowLineBreak21:destroy(); self.flowLineBreak21 = nil; end;
-        if self.flowPart31 ~= nil then self.flowPart31:destroy(); self.flowPart31 = nil; end;
-        if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
-        if self.flowPart265 ~= nil then self.flowPart265:destroy(); self.flowPart265 = nil; end;
-        if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
-        if self.labUpperGridCampo8 ~= nil then self.labUpperGridCampo8:destroy(); self.labUpperGridCampo8 = nil; end;
-        if self.dataLink125 ~= nil then self.dataLink125:destroy(); self.dataLink125 = nil; end;
-        if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
-        if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
-        if self.flowPart12 ~= nil then self.flowPart12:destroy(); self.flowPart12 = nil; end;
-        if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
-        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
-        if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
-        if self.flowPart182 ~= nil then self.flowPart182:destroy(); self.flowPart182 = nil; end;
-        if self.btnEquipDefenseNew ~= nil then self.btnEquipDefenseNew:destroy(); self.btnEquipDefenseNew = nil; end;
-        if self.button50 ~= nil then self.button50:destroy(); self.button50 = nil; end;
-        if self.button48 ~= nil then self.button48:destroy(); self.button48 = nil; end;
-        if self.dataLink36 ~= nil then self.dataLink36:destroy(); self.dataLink36 = nil; end;
-        if self.edtUpperGridCampo11 ~= nil then self.edtUpperGridCampo11:destroy(); self.edtUpperGridCampo11 = nil; end;
-        if self.flowPart194 ~= nil then self.flowPart194:destroy(); self.flowPart194 = nil; end;
-        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
-        if self.popupEditDuracaoUnidade ~= nil then self.popupEditDuracaoUnidade:destroy(); self.popupEditDuracaoUnidade = nil; end;
-        if self.flowLayout17 ~= nil then self.flowLayout17:destroy(); self.flowLayout17 = nil; end;
-        if self.label157 ~= nil then self.label157:destroy(); self.label157 = nil; end;
-        if self.button95 ~= nil then self.button95:destroy(); self.button95 = nil; end;
-        if self.flowPart81 ~= nil then self.flowPart81:destroy(); self.flowPart81 = nil; end;
-        if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
-        if self.flowLayout21 ~= nil then self.flowLayout21:destroy(); self.flowLayout21 = nil; end;
-        if self.edit55 ~= nil then self.edit55:destroy(); self.edit55 = nil; end;
-        if self.label118 ~= nil then self.label118:destroy(); self.label118 = nil; end;
-        if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
-        if self.label156 ~= nil then self.label156:destroy(); self.label156 = nil; end;
-        if self.edit75 ~= nil then self.edit75:destroy(); self.edit75 = nil; end;
-        if self.layout53 ~= nil then self.layout53:destroy(); self.layout53 = nil; end;
-        if self.flowPart98 ~= nil then self.flowPart98:destroy(); self.flowPart98 = nil; end;
-        if self.flowPart238 ~= nil then self.flowPart238:destroy(); self.flowPart238 = nil; end;
-        if self.dataLink180 ~= nil then self.dataLink180:destroy(); self.dataLink180 = nil; end;
-        if self.flowPart70 ~= nil then self.flowPart70:destroy(); self.flowPart70 = nil; end;
-        if self.dataLink124 ~= nil then self.dataLink124:destroy(); self.dataLink124 = nil; end;
-        if self.flowPart11 ~= nil then self.flowPart11:destroy(); self.flowPart11 = nil; end;
-        if self.label168 ~= nil then self.label168:destroy(); self.label168 = nil; end;
-        if self.dataLink52 ~= nil then self.dataLink52:destroy(); self.dataLink52 = nil; end;
-        if self.button12 ~= nil then self.button12:destroy(); self.button12 = nil; end;
-        if self.popupEditAlcanceLongo ~= nil then self.popupEditAlcanceLongo:destroy(); self.popupEditAlcanceLongo = nil; end;
-        if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
-        if self.comboBox9 ~= nil then self.comboBox9:destroy(); self.comboBox9 = nil; end;
-        if self.flowPart86 ~= nil then self.flowPart86:destroy(); self.flowPart86 = nil; end;
-        if self.comboBox8 ~= nil then self.comboBox8:destroy(); self.comboBox8 = nil; end;
-        if self.tcPopupEdit ~= nil then self.tcPopupEdit:destroy(); self.tcPopupEdit = nil; end;
-        if self.flowLayout34 ~= nil then self.flowLayout34:destroy(); self.flowLayout34 = nil; end;
-        if self.flowPart146 ~= nil then self.flowPart146:destroy(); self.flowPart146 = nil; end;
-        if self.linUpperGridCampo6 ~= nil then self.linUpperGridCampo6:destroy(); self.linUpperGridCampo6 = nil; end;
-        if self.flowPart17 ~= nil then self.flowPart17:destroy(); self.flowPart17 = nil; end;
-        if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
-        if self.checkBox2 ~= nil then self.checkBox2:destroy(); self.checkBox2 = nil; end;
-        if self.flowLineBreak8 ~= nil then self.flowLineBreak8:destroy(); self.flowLineBreak8 = nil; end;
-        if self.flowPart61 ~= nil then self.flowPart61:destroy(); self.flowPart61 = nil; end;
-        if self.flowPart171 ~= nil then self.flowPart171:destroy(); self.flowPart171 = nil; end;
-        if self.label183 ~= nil then self.label183:destroy(); self.label183 = nil; end;
-        if self.dataLink216 ~= nil then self.dataLink216:destroy(); self.dataLink216 = nil; end;
-        if self.cbProfcarisma ~= nil then self.cbProfcarisma:destroy(); self.cbProfcarisma = nil; end;
-        if self.edit78 ~= nil then self.edit78:destroy(); self.edit78 = nil; end;
-        if self.layout84 ~= nil then self.layout84:destroy(); self.layout84 = nil; end;
-        if self.cbProfcompanionintimidacao ~= nil then self.cbProfcompanionintimidacao:destroy(); self.cbProfcompanionintimidacao = nil; end;
-        if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
-        if self.layout96 ~= nil then self.layout96:destroy(); self.layout96 = nil; end;
-        if self.edit91 ~= nil then self.edit91:destroy(); self.edit91 = nil; end;
-        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
-        if self.dataLink90 ~= nil then self.dataLink90:destroy(); self.dataLink90 = nil; end;
-        if self.flowPart119 ~= nil then self.flowPart119:destroy(); self.flowPart119 = nil; end;
-        if self.flowLayout28 ~= nil then self.flowLayout28:destroy(); self.flowLayout28 = nil; end;
-        if self.button46 ~= nil then self.button46:destroy(); self.button46 = nil; end;
-        if self.dataLink88 ~= nil then self.dataLink88:destroy(); self.dataLink88 = nil; end;
-        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
-        if self.flowPart251 ~= nil then self.flowPart251:destroy(); self.flowPart251 = nil; end;
-        if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
-        if self.label141 ~= nil then self.label141:destroy(); self.label141 = nil; end;
-        if self.frmGerenciador02 ~= nil then self.frmGerenciador02:destroy(); self.frmGerenciador02 = nil; end;
-        if self.layout86 ~= nil then self.layout86:destroy(); self.layout86 = nil; end;
-        if self.layout85 ~= nil then self.layout85:destroy(); self.layout85 = nil; end;
-        if self.layout91 ~= nil then self.layout91:destroy(); self.layout91 = nil; end;
-        if self.linUpperGridCampo1 ~= nil then self.linUpperGridCampo1:destroy(); self.linUpperGridCampo1 = nil; end;
-        if self.horzLine48 ~= nil then self.horzLine48:destroy(); self.horzLine48 = nil; end;
-        if self.dataLink71 ~= nil then self.dataLink71:destroy(); self.dataLink71 = nil; end;
-        if self.layout83 ~= nil then self.layout83:destroy(); self.layout83 = nil; end;
-        if self.flowPart33 ~= nil then self.flowPart33:destroy(); self.flowPart33 = nil; end;
-        if self.dataLink206 ~= nil then self.dataLink206:destroy(); self.dataLink206 = nil; end;
-        if self.button96 ~= nil then self.button96:destroy(); self.button96 = nil; end;
-        if self.button15 ~= nil then self.button15:destroy(); self.button15 = nil; end;
-        if self.labProfcompanionsobrevivencia ~= nil then self.labProfcompanionsobrevivencia:destroy(); self.labProfcompanionsobrevivencia = nil; end;
-        if self.dataLink33 ~= nil then self.dataLink33:destroy(); self.dataLink33 = nil; end;
-        if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
-        if self.flowPart129 ~= nil then self.flowPart129:destroy(); self.flowPart129 = nil; end;
-        if self.button67 ~= nil then self.button67:destroy(); self.button67 = nil; end;
-        if self.label77 ~= nil then self.label77:destroy(); self.label77 = nil; end;
-        if self.dataLink92 ~= nil then self.dataLink92:destroy(); self.dataLink92 = nil; end;
-        if self.flowPart193 ~= nil then self.flowPart193:destroy(); self.flowPart193 = nil; end;
-        if self.horzLine47 ~= nil then self.horzLine47:destroy(); self.horzLine47 = nil; end;
-        if self.labProfacrobacia ~= nil then self.labProfacrobacia:destroy(); self.labProfacrobacia = nil; end;
-        if self.flowLayout1 ~= nil then self.flowLayout1:destroy(); self.flowLayout1 = nil; end;
-        if self.layout47 ~= nil then self.layout47:destroy(); self.layout47 = nil; end;
-        if self.comboBox20 ~= nil then self.comboBox20:destroy(); self.comboBox20 = nil; end;
-        if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
-        if self.flowLayout43 ~= nil then self.flowLayout43:destroy(); self.flowLayout43 = nil; end;
-        if self.edit76 ~= nil then self.edit76:destroy(); self.edit76 = nil; end;
-        if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
-        if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
-        if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
-        if self.flowPart268 ~= nil then self.flowPart268:destroy(); self.flowPart268 = nil; end;
-        if self.edit82 ~= nil then self.edit82:destroy(); self.edit82 = nil; end;
-        if self.button35 ~= nil then self.button35:destroy(); self.button35 = nil; end;
-        if self.dataLink68 ~= nil then self.dataLink68:destroy(); self.dataLink68 = nil; end;
-        if self.flowPart243 ~= nil then self.flowPart243:destroy(); self.flowPart243 = nil; end;
-        if self.button93 ~= nil then self.button93:destroy(); self.button93 = nil; end;
-        if self.horzLine19 ~= nil then self.horzLine19:destroy(); self.horzLine19 = nil; end;
-        if self.label186 ~= nil then self.label186:destroy(); self.label186 = nil; end;
-        if self.cbProfforca ~= nil then self.cbProfforca:destroy(); self.cbProfforca = nil; end;
-        if self.label8 ~= nil then self.label8:destroy(); self.label8 = nil; end;
-        if self.flowPart51 ~= nil then self.flowPart51:destroy(); self.flowPart51 = nil; end;
-        if self.flowLayout16 ~= nil then self.flowLayout16:destroy(); self.flowLayout16 = nil; end;
-        if self.cbProfreligiao ~= nil then self.cbProfreligiao:destroy(); self.cbProfreligiao = nil; end;
-        if self.flowPart107 ~= nil then self.flowPart107:destroy(); self.flowPart107 = nil; end;
-        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
-        if self.layout88 ~= nil then self.layout88:destroy(); self.layout88 = nil; end;
-        if self.linUpperGridCampo7 ~= nil then self.linUpperGridCampo7:destroy(); self.linUpperGridCampo7 = nil; end;
-        if self.rectangle17 ~= nil then self.rectangle17:destroy(); self.rectangle17 = nil; end;
-        if self.labUpperGridCampo11 ~= nil then self.labUpperGridCampo11:destroy(); self.labUpperGridCampo11 = nil; end;
-        if self.cbProfcompanionsobrevivencia ~= nil then self.cbProfcompanionsobrevivencia:destroy(); self.cbProfcompanionsobrevivencia = nil; end;
-        if self.dataLink230 ~= nil then self.dataLink230:destroy(); self.dataLink230 = nil; end;
-        if self.tab13 ~= nil then self.tab13:destroy(); self.tab13 = nil; end;
-        if self.comboBox28 ~= nil then self.comboBox28:destroy(); self.comboBox28 = nil; end;
-        if self.flowPart79 ~= nil then self.flowPart79:destroy(); self.flowPart79 = nil; end;
-        if self.cbProfcompanionarcanismo ~= nil then self.cbProfcompanionarcanismo:destroy(); self.cbProfcompanionarcanismo = nil; end;
-        if self.layout32 ~= nil then self.layout32:destroy(); self.layout32 = nil; end;
-        if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
-        if self.label163 ~= nil then self.label163:destroy(); self.label163 = nil; end;
-        if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
-        if self.horzLine37 ~= nil then self.horzLine37:destroy(); self.horzLine37 = nil; end;
-        if self.upperGridMagicBox3 ~= nil then self.upperGridMagicBox3:destroy(); self.upperGridMagicBox3 = nil; end;
-        if self.dataLink102 ~= nil then self.dataLink102:destroy(); self.dataLink102 = nil; end;
-        if self.button21 ~= nil then self.button21:destroy(); self.button21 = nil; end;
-        if self.flowPart43 ~= nil then self.flowPart43:destroy(); self.flowPart43 = nil; end;
-        if self.comboBox2 ~= nil then self.comboBox2:destroy(); self.comboBox2 = nil; end;
-        if self.dataLink188 ~= nil then self.dataLink188:destroy(); self.dataLink188 = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.fraUpperGridFrente ~= nil then self.fraUpperGridFrente:destroy(); self.fraUpperGridFrente = nil; end;
-        if self.checkBox3 ~= nil then self.checkBox3:destroy(); self.checkBox3 = nil; end;
-        if self.dataLink160 ~= nil then self.dataLink160:destroy(); self.dataLink160 = nil; end;
-        if self.flowLineBreak5 ~= nil then self.flowLineBreak5:destroy(); self.flowLineBreak5 = nil; end;
-        if self.button66 ~= nil then self.button66:destroy(); self.button66 = nil; end;
-        if self.dataLink172 ~= nil then self.dataLink172:destroy(); self.dataLink172 = nil; end;
-        if self.dataLink208 ~= nil then self.dataLink208:destroy(); self.dataLink208 = nil; end;
-        if self.flowPart219 ~= nil then self.flowPart219:destroy(); self.flowPart219 = nil; end;
-        if self.cbProfcompanionreligiao ~= nil then self.cbProfcompanionreligiao:destroy(); self.cbProfcompanionreligiao = nil; end;
-        if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
-        if self.flowPart78 ~= nil then self.flowPart78:destroy(); self.flowPart78 = nil; end;
-        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.cbProfcompanionsabedoria ~= nil then self.cbProfcompanionsabedoria:destroy(); self.cbProfcompanionsabedoria = nil; end;
-        if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
-        if self.flowLayout31 ~= nil then self.flowLayout31:destroy(); self.flowLayout31 = nil; end;
-        if self.button45 ~= nil then self.button45:destroy(); self.button45 = nil; end;
-        if self.cbProfcompanionadestrarAnimais ~= nil then self.cbProfcompanionadestrarAnimais:destroy(); self.cbProfcompanionadestrarAnimais = nil; end;
-        if self.label116 ~= nil then self.label116:destroy(); self.label116 = nil; end;
-        if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
-        if self.dataLink76 ~= nil then self.dataLink76:destroy(); self.dataLink76 = nil; end;
-        if self.layout35 ~= nil then self.layout35:destroy(); self.layout35 = nil; end;
-        if self.button44 ~= nil then self.button44:destroy(); self.button44 = nil; end;
-        if self.cbProfcompanionhistoria ~= nil then self.cbProfcompanionhistoria:destroy(); self.cbProfcompanionhistoria = nil; end;
-        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
-        if self.dataLink32 ~= nil then self.dataLink32:destroy(); self.dataLink32 = nil; end;
-        if self.cbProfcompanionenganacao ~= nil then self.cbProfcompanionenganacao:destroy(); self.cbProfcompanionenganacao = nil; end;
-        if self.linUpperGridCampo4 ~= nil then self.linUpperGridCampo4:destroy(); self.linUpperGridCampo4 = nil; end;
-        if self.flowPart145 ~= nil then self.flowPart145:destroy(); self.flowPart145 = nil; end;
-        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
-        if self.dataLink223 ~= nil then self.dataLink223:destroy(); self.dataLink223 = nil; end;
-        if self.flowPart125 ~= nil then self.flowPart125:destroy(); self.flowPart125 = nil; end;
-        if self.comboBox15 ~= nil then self.comboBox15:destroy(); self.comboBox15 = nil; end;
-        if self.layout14 ~= nil then self.layout14:destroy(); self.layout14 = nil; end;
-        if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
-        if self.labupperGridMagicBox3 ~= nil then self.labupperGridMagicBox3:destroy(); self.labupperGridMagicBox3 = nil; end;
-        if self.dataLink111 ~= nil then self.dataLink111:destroy(); self.dataLink111 = nil; end;
-        if self.dataLink80 ~= nil then self.dataLink80:destroy(); self.dataLink80 = nil; end;
-        if self.flowPart246 ~= nil then self.flowPart246:destroy(); self.flowPart246 = nil; end;
-        if self.flowLineBreak2 ~= nil then self.flowLineBreak2:destroy(); self.flowLineBreak2 = nil; end;
-        if self.cbProfnatureza ~= nil then self.cbProfnatureza:destroy(); self.cbProfnatureza = nil; end;
-        if self.imageCheckBox12 ~= nil then self.imageCheckBox12:destroy(); self.imageCheckBox12 = nil; end;
-        if self.flowLayout8 ~= nil then self.flowLayout8:destroy(); self.flowLayout8 = nil; end;
-        if self.labProfreligiao ~= nil then self.labProfreligiao:destroy(); self.labProfreligiao = nil; end;
-        if self.flowPart215 ~= nil then self.flowPart215:destroy(); self.flowPart215 = nil; end;
-        if self.flowPart199 ~= nil then self.flowPart199:destroy(); self.flowPart199 = nil; end;
-        if self.flowPart8 ~= nil then self.flowPart8:destroy(); self.flowPart8 = nil; end;
-        if self.frmFichaRPGmeister9_svg ~= nil then self.frmFichaRPGmeister9_svg:destroy(); self.frmFichaRPGmeister9_svg = nil; end;
-        if self.imageCheckBox8 ~= nil then self.imageCheckBox8:destroy(); self.imageCheckBox8 = nil; end;
-        if self.dataLink40 ~= nil then self.dataLink40:destroy(); self.dataLink40 = nil; end;
-        if self.flowPart96 ~= nil then self.flowPart96:destroy(); self.flowPart96 = nil; end;
-        if self.labProfdestreza ~= nil then self.labProfdestreza:destroy(); self.labProfdestreza = nil; end;
-        if self.horzLine63 ~= nil then self.horzLine63:destroy(); self.horzLine63 = nil; end;
-        if self.button28 ~= nil then self.button28:destroy(); self.button28 = nil; end;
-        if self.scrollBox7 ~= nil then self.scrollBox7:destroy(); self.scrollBox7 = nil; end;
-        if self.fpPETempo ~= nil then self.fpPETempo:destroy(); self.fpPETempo = nil; end;
-        if self.flowPart80 ~= nil then self.flowPart80:destroy(); self.flowPart80 = nil; end;
-        if self.layout30 ~= nil then self.layout30:destroy(); self.layout30 = nil; end;
-        if self.layout135 ~= nil then self.layout135:destroy(); self.layout135 = nil; end;
-        if self.imageCheckBox4 ~= nil then self.imageCheckBox4:destroy(); self.imageCheckBox4 = nil; end;
-        if self.comboBoxImportLevel ~= nil then self.comboBoxImportLevel:destroy(); self.comboBoxImportLevel = nil; end;
-        if self.imageCheckBox7 ~= nil then self.imageCheckBox7:destroy(); self.imageCheckBox7 = nil; end;
-        if self.edit92 ~= nil then self.edit92:destroy(); self.edit92 = nil; end;
-        if self.flowLayout15 ~= nil then self.flowLayout15:destroy(); self.flowLayout15 = nil; end;
-        if self.label32 ~= nil then self.label32:destroy(); self.label32 = nil; end;
-        if self.tab2 ~= nil then self.tab2:destroy(); self.tab2 = nil; end;
-        if self.labProfpericiadestreza ~= nil then self.labProfpericiadestreza:destroy(); self.labProfpericiadestreza = nil; end;
-        if self.dataLink189 ~= nil then self.dataLink189:destroy(); self.dataLink189 = nil; end;
-        if self.cbProfenganacao ~= nil then self.cbProfenganacao:destroy(); self.cbProfenganacao = nil; end;
-        if self.flowPart48 ~= nil then self.flowPart48:destroy(); self.flowPart48 = nil; end;
-        if self.dataLink120 ~= nil then self.dataLink120:destroy(); self.dataLink120 = nil; end;
-        if self.dataLink113 ~= nil then self.dataLink113:destroy(); self.dataLink113 = nil; end;
-        if self.button74 ~= nil then self.button74:destroy(); self.button74 = nil; end;
-        if self.popupEditFormulaRL ~= nil then self.popupEditFormulaRL:destroy(); self.popupEditFormulaRL = nil; end;
-        if self.edit127 ~= nil then self.edit127:destroy(); self.edit127 = nil; end;
-        if self.layout26 ~= nil then self.layout26:destroy(); self.layout26 = nil; end;
-        if self.flowPart35 ~= nil then self.flowPart35:destroy(); self.flowPart35 = nil; end;
-        if self.flowLayout7 ~= nil then self.flowLayout7:destroy(); self.flowLayout7 = nil; end;
-        if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
-        if self.flowPart91 ~= nil then self.flowPart91:destroy(); self.flowPart91 = nil; end;
-        if self.flowPart205 ~= nil then self.flowPart205:destroy(); self.flowPart205 = nil; end;
-        if self.cbProfiniciativa ~= nil then self.cbProfiniciativa:destroy(); self.cbProfiniciativa = nil; end;
-        if self.button32 ~= nil then self.button32:destroy(); self.button32 = nil; end;
-        if self.flowLayout10 ~= nil then self.flowLayout10:destroy(); self.flowLayout10 = nil; end;
-        if self.labProfarcanismo ~= nil then self.labProfarcanismo:destroy(); self.labProfarcanismo = nil; end;
-        if self.label42 ~= nil then self.label42:destroy(); self.label42 = nil; end;
-        if self.frame9 ~= nil then self.frame9:destroy(); self.frame9 = nil; end;
-        if self.cbProfpericiaconstituicao ~= nil then self.cbProfpericiaconstituicao:destroy(); self.cbProfpericiaconstituicao = nil; end;
-        if self.flowLayout27 ~= nil then self.flowLayout27:destroy(); self.flowLayout27 = nil; end;
-        if self.labUpperGridCampo3 ~= nil then self.labUpperGridCampo3:destroy(); self.labUpperGridCampo3 = nil; end;
-        if self.labProfconstituicao ~= nil then self.labProfconstituicao:destroy(); self.labProfconstituicao = nil; end;
-        if self.layEquipDefenseBottom ~= nil then self.layEquipDefenseBottom:destroy(); self.layEquipDefenseBottom = nil; end;
-        if self.flowLayout4 ~= nil then self.flowLayout4:destroy(); self.flowLayout4 = nil; end;
-        if self.flowPart71 ~= nil then self.flowPart71:destroy(); self.flowPart71 = nil; end;
-        if self.dataLink35 ~= nil then self.dataLink35:destroy(); self.dataLink35 = nil; end;
-        if self.dataLink69 ~= nil then self.dataLink69:destroy(); self.dataLink69 = nil; end;
-        if self.flowPart195 ~= nil then self.flowPart195:destroy(); self.flowPart195 = nil; end;
-        if self.button77 ~= nil then self.button77:destroy(); self.button77 = nil; end;
-        if self.flowPart188 ~= nil then self.flowPart188:destroy(); self.flowPart188 = nil; end;
-        if self.cbProfarcanismo ~= nil then self.cbProfarcanismo:destroy(); self.cbProfarcanismo = nil; end;
-        if self.label166 ~= nil then self.label166:destroy(); self.label166 = nil; end;
-        if self.layout130 ~= nil then self.layout130:destroy(); self.layout130 = nil; end;
-        if self.dataLink22 ~= nil then self.dataLink22:destroy(); self.dataLink22 = nil; end;
-        if self.labProfcompanionacrobacia ~= nil then self.labProfcompanionacrobacia:destroy(); self.labProfcompanionacrobacia = nil; end;
-        if self.labProfcompaniontolerancia ~= nil then self.labProfcompaniontolerancia:destroy(); self.labProfcompaniontolerancia = nil; end;
-        if self.dataLink155 ~= nil then self.dataLink155:destroy(); self.dataLink155 = nil; end;
-        if self.button90 ~= nil then self.button90:destroy(); self.button90 = nil; end;
-        if self.dataLink187 ~= nil then self.dataLink187:destroy(); self.dataLink187 = nil; end;
-        if self.fraLayAtributos ~= nil then self.fraLayAtributos:destroy(); self.fraLayAtributos = nil; end;
-        if self.optAtaqueLegenda ~= nil then self.optAtaqueLegenda:destroy(); self.optAtaqueLegenda = nil; end;
-        if self.dataLink30 ~= nil then self.dataLink30:destroy(); self.dataLink30 = nil; end;
-        if self.edit17 ~= nil then self.edit17:destroy(); self.edit17 = nil; end;
-        if self.button10 ~= nil then self.button10:destroy(); self.button10 = nil; end;
-        if self.dataLink209 ~= nil then self.dataLink209:destroy(); self.dataLink209 = nil; end;
-        if self.layout67 ~= nil then self.layout67:destroy(); self.layout67 = nil; end;
-        if self.edit87 ~= nil then self.edit87:destroy(); self.edit87 = nil; end;
-        if self.layout29 ~= nil then self.layout29:destroy(); self.layout29 = nil; end;
-        if self.label79 ~= nil then self.label79:destroy(); self.label79 = nil; end;
-        if self.horzLine26 ~= nil then self.horzLine26:destroy(); self.horzLine26 = nil; end;
-        if self.edit113 ~= nil then self.edit113:destroy(); self.edit113 = nil; end;
-        if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
-        if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
-        if self.flowPart271 ~= nil then self.flowPart271:destroy(); self.flowPart271 = nil; end;
-        if self.flowLayout36 ~= nil then self.flowLayout36:destroy(); self.flowLayout36 = nil; end;
-        if self.flowPart37 ~= nil then self.flowPart37:destroy(); self.flowPart37 = nil; end;
-        if self.labProfcompanionhistoria ~= nil then self.labProfcompanionhistoria:destroy(); self.labProfcompanionhistoria = nil; end;
-        if self.label50 ~= nil then self.label50:destroy(); self.label50 = nil; end;
-        if self.button18 ~= nil then self.button18:destroy(); self.button18 = nil; end;
-        if self.colorComboBox2 ~= nil then self.colorComboBox2:destroy(); self.colorComboBox2 = nil; end;
-        if self.btnApagar ~= nil then self.btnApagar:destroy(); self.btnApagar = nil; end;
-        if self.dataLink193 ~= nil then self.dataLink193:destroy(); self.dataLink193 = nil; end;
-        if self.layout22 ~= nil then self.layout22:destroy(); self.layout22 = nil; end;
-        if self.button71 ~= nil then self.button71:destroy(); self.button71 = nil; end;
-        if self.dataLink133 ~= nil then self.dataLink133:destroy(); self.dataLink133 = nil; end;
-        if self.button86 ~= nil then self.button86:destroy(); self.button86 = nil; end;
-        if self.horzLine6 ~= nil then self.horzLine6:destroy(); self.horzLine6 = nil; end;
-        if self.precipitacaoLabel ~= nil then self.precipitacaoLabel:destroy(); self.precipitacaoLabel = nil; end;
-        if self.flowLayout37 ~= nil then self.flowLayout37:destroy(); self.flowLayout37 = nil; end;
-        if self.comboBox24 ~= nil then self.comboBox24:destroy(); self.comboBox24 = nil; end;
-        if self.label110 ~= nil then self.label110:destroy(); self.label110 = nil; end;
-        if self.flowPart224 ~= nil then self.flowPart224:destroy(); self.flowPart224 = nil; end;
-        if self.layout58 ~= nil then self.layout58:destroy(); self.layout58 = nil; end;
-        if self.label151 ~= nil then self.label151:destroy(); self.label151 = nil; end;
-        if self.edit28 ~= nil then self.edit28:destroy(); self.edit28 = nil; end;
-        if self.flowLayout13 ~= nil then self.flowLayout13:destroy(); self.flowLayout13 = nil; end;
-        if self.dataLink238 ~= nil then self.dataLink238:destroy(); self.dataLink238 = nil; end;
-        if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
-        if self.flowPart198 ~= nil then self.flowPart198:destroy(); self.flowPart198 = nil; end;
-        if self.flowPart187 ~= nil then self.flowPart187:destroy(); self.flowPart187 = nil; end;
-        if self.flowPart192 ~= nil then self.flowPart192:destroy(); self.flowPart192 = nil; end;
-        if self.fpPENome ~= nil then self.fpPENome:destroy(); self.fpPENome = nil; end;
-        if self.dataLink117 ~= nil then self.dataLink117:destroy(); self.dataLink117 = nil; end;
-        if self.horzLine45 ~= nil then self.horzLine45:destroy(); self.horzLine45 = nil; end;
-        if self.button56 ~= nil then self.button56:destroy(); self.button56 = nil; end;
-        if self.layout38 ~= nil then self.layout38:destroy(); self.layout38 = nil; end;
-        if self.label144 ~= nil then self.label144:destroy(); self.label144 = nil; end;
-        if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
-        if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
-        if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
-        if self.flowPart16 ~= nil then self.flowPart16:destroy(); self.flowPart16 = nil; end;
-        if self.dataLink123 ~= nil then self.dataLink123:destroy(); self.dataLink123 = nil; end;
-        if self.label140 ~= nil then self.label140:destroy(); self.label140 = nil; end;
-        if self.frmFichaRPGmeister11_svg ~= nil then self.frmFichaRPGmeister11_svg:destroy(); self.frmFichaRPGmeister11_svg = nil; end;
-        if self.edit114 ~= nil then self.edit114:destroy(); self.edit114 = nil; end;
-        if self.labProfcompanionreligiao ~= nil then self.labProfcompanionreligiao:destroy(); self.labProfcompanionreligiao = nil; end;
-        if self.label105 ~= nil then self.label105:destroy(); self.label105 = nil; end;
         if self.tab5 ~= nil then self.tab5:destroy(); self.tab5 = nil; end;
         if self.label88 ~= nil then self.label88:destroy(); self.label88 = nil; end;
-        if self.rclMeses ~= nil then self.rclMeses:destroy(); self.rclMeses = nil; end;
+        if self.horzLine40 ~= nil then self.horzLine40:destroy(); self.horzLine40 = nil; end;
         if self.rectangle15 ~= nil then self.rectangle15:destroy(); self.rectangle15 = nil; end;
         if self.flowPart131 ~= nil then self.flowPart131:destroy(); self.flowPart131 = nil; end;
-        if self.edit72 ~= nil then self.edit72:destroy(); self.edit72 = nil; end;
         if self.linUpperGridCampo5 ~= nil then self.linUpperGridCampo5:destroy(); self.linUpperGridCampo5 = nil; end;
         if self.textEditor5 ~= nil then self.textEditor5:destroy(); self.textEditor5 = nil; end;
         if self.layout92 ~= nil then self.layout92:destroy(); self.layout92 = nil; end;
         if self.label131 ~= nil then self.label131:destroy(); self.label131 = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
+        if self.button29 ~= nil then self.button29:destroy(); self.button29 = nil; end;
+        if self.flowLayout29 ~= nil then self.flowLayout29:destroy(); self.flowLayout29 = nil; end;
         if self.horzLine44 ~= nil then self.horzLine44:destroy(); self.horzLine44 = nil; end;
-        if self.edit79 ~= nil then self.edit79:destroy(); self.edit79 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.horzLine28 ~= nil then self.horzLine28:destroy(); self.horzLine28 = nil; end;
+        if self.comboBox14 ~= nil then self.comboBox14:destroy(); self.comboBox14 = nil; end;
         if self.label101 ~= nil then self.label101:destroy(); self.label101 = nil; end;
-        if self.flowPart263 ~= nil then self.flowPart263:destroy(); self.flowPart263 = nil; end;
+        if self.dataLink112 ~= nil then self.dataLink112:destroy(); self.dataLink112 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
-        if self.edit101 ~= nil then self.edit101:destroy(); self.edit101 = nil; end;
+        if self.flowPart105 ~= nil then self.flowPart105:destroy(); self.flowPart105 = nil; end;
         if self.cbProfcompanioninteligencia ~= nil then self.cbProfcompanioninteligencia:destroy(); self.cbProfcompanioninteligencia = nil; end;
+        if self.dataLink74 ~= nil then self.dataLink74:destroy(); self.dataLink74 = nil; end;
         if self.label58 ~= nil then self.label58:destroy(); self.label58 = nil; end;
+        if self.flowPart9 ~= nil then self.flowPart9:destroy(); self.flowPart9 = nil; end;
         if self.rclOptsAttack ~= nil then self.rclOptsAttack:destroy(); self.rclOptsAttack = nil; end;
+        if self.dataLink127 ~= nil then self.dataLink127:destroy(); self.dataLink127 = nil; end;
+        if self.layout20 ~= nil then self.layout20:destroy(); self.layout20 = nil; end;
         if self.labProfcompanioninteligencia ~= nil then self.labProfcompanioninteligencia:destroy(); self.labProfcompanioninteligencia = nil; end;
+        if self.dataLink166 ~= nil then self.dataLink166:destroy(); self.dataLink166 = nil; end;
+        if self.horzLine57 ~= nil then self.horzLine57:destroy(); self.horzLine57 = nil; end;
+        if self.layout18 ~= nil then self.layout18:destroy(); self.layout18 = nil; end;
+        if self.tab9 ~= nil then self.tab9:destroy(); self.tab9 = nil; end;
         if self.labProfatletismo ~= nil then self.labProfatletismo:destroy(); self.labProfatletismo = nil; end;
+        if self.horzLine33 ~= nil then self.horzLine33:destroy(); self.horzLine33 = nil; end;
         if self.imageCheckBox9 ~= nil then self.imageCheckBox9:destroy(); self.imageCheckBox9 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
+        if self.label120 ~= nil then self.label120:destroy(); self.label120 = nil; end;
         if self.linUpperGridCampo2 ~= nil then self.linUpperGridCampo2:destroy(); self.linUpperGridCampo2 = nil; end;
         if self.flowPart56 ~= nil then self.flowPart56:destroy(); self.flowPart56 = nil; end;
-        if self.layout138 ~= nil then self.layout138:destroy(); self.layout138 = nil; end;
         if self.dataLink154 ~= nil then self.dataLink154:destroy(); self.dataLink154 = nil; end;
-        if self.edit86 ~= nil then self.edit86:destroy(); self.edit86 = nil; end;
-        if self.flowPart254 ~= nil then self.flowPart254:destroy(); self.flowPart254 = nil; end;
-        if self.flowLineBreak11 ~= nil then self.flowLineBreak11:destroy(); self.flowLineBreak11 = nil; end;
+        if self.flowPart26 ~= nil then self.flowPart26:destroy(); self.flowPart26 = nil; end;
+        if self.dataLink181 ~= nil then self.dataLink181:destroy(); self.dataLink181 = nil; end;
         if self.dataLink135 ~= nil then self.dataLink135:destroy(); self.dataLink135 = nil; end;
-        if self.layout129 ~= nil then self.layout129:destroy(); self.layout129 = nil; end;
-        if self.edit105 ~= nil then self.edit105:destroy(); self.edit105 = nil; end;
+        if self.dataLink145 ~= nil then self.dataLink145:destroy(); self.dataLink145 = nil; end;
+        if self.flowPart136 ~= nil then self.flowPart136:destroy(); self.flowPart136 = nil; end;
         if self.dataLink116 ~= nil then self.dataLink116:destroy(); self.dataLink116 = nil; end;
-        if self.flowPart250 ~= nil then self.flowPart250:destroy(); self.flowPart250 = nil; end;
+        if self.horzLine25 ~= nil then self.horzLine25:destroy(); self.horzLine25 = nil; end;
+        if self.pgcPrincipal ~= nil then self.pgcPrincipal:destroy(); self.pgcPrincipal = nil; end;
+        if self.flowPart41 ~= nil then self.flowPart41:destroy(); self.flowPart41 = nil; end;
+        if self.button84 ~= nil then self.button84:destroy(); self.button84 = nil; end;
         if self.progBar2 ~= nil then self.progBar2:destroy(); self.progBar2 = nil; end;
-        if self.textEditor8 ~= nil then self.textEditor8:destroy(); self.textEditor8 = nil; end;
+        if self.label18 ~= nil then self.label18:destroy(); self.label18 = nil; end;
+        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
         if self.layout33 ~= nil then self.layout33:destroy(); self.layout33 = nil; end;
+        if self.upperGridMagicBox1 ~= nil then self.upperGridMagicBox1:destroy(); self.upperGridMagicBox1 = nil; end;
+        if self.layout117 ~= nil then self.layout117:destroy(); self.layout117 = nil; end;
+        if self.horzLine52 ~= nil then self.horzLine52:destroy(); self.horzLine52 = nil; end;
         if self.cbOptAtaqueMunicao ~= nil then self.cbOptAtaqueMunicao:destroy(); self.cbOptAtaqueMunicao = nil; end;
         if self.flowPart139 ~= nil then self.flowPart139:destroy(); self.flowPart139 = nil; end;
-        if self.flowPart138 ~= nil then self.flowPart138:destroy(); self.flowPart138 = nil; end;
+        if self.labProfatuacao ~= nil then self.labProfatuacao:destroy(); self.labProfatuacao = nil; end;
         if self.flowPart88 ~= nil then self.flowPart88:destroy(); self.flowPart88 = nil; end;
+        if self.linUpperGridCampo11 ~= nil then self.linUpperGridCampo11:destroy(); self.linUpperGridCampo11 = nil; end;
         if self.layout21 ~= nil then self.layout21:destroy(); self.layout21 = nil; end;
-        if self.flowPart191 ~= nil then self.flowPart191:destroy(); self.flowPart191 = nil; end;
+        if self.flowPart138 ~= nil then self.flowPart138:destroy(); self.flowPart138 = nil; end;
+        if self.label117 ~= nil then self.label117:destroy(); self.label117 = nil; end;
         if self.flowPart123 ~= nil then self.flowPart123:destroy(); self.flowPart123 = nil; end;
-        if self.button104 ~= nil then self.button104:destroy(); self.button104 = nil; end;
         if self.checkBox4 ~= nil then self.checkBox4:destroy(); self.checkBox4 = nil; end;
+        if self.dataLink58 ~= nil then self.dataLink58:destroy(); self.dataLink58 = nil; end;
         if self.scrollBox1 ~= nil then self.scrollBox1:destroy(); self.scrollBox1 = nil; end;
+        if self.dataLink152 ~= nil then self.dataLink152:destroy(); self.dataLink152 = nil; end;
         if self.popupEditFormulaLegenda ~= nil then self.popupEditFormulaLegenda:destroy(); self.popupEditFormulaLegenda = nil; end;
         if self.cbProfintimidacao ~= nil then self.cbProfintimidacao:destroy(); self.cbProfintimidacao = nil; end;
         if self.dataEquipAttackDetails ~= nil then self.dataEquipAttackDetails:destroy(); self.dataEquipAttackDetails = nil; end;
+        if self.dataLink77 ~= nil then self.dataLink77:destroy(); self.dataLink77 = nil; end;
         if self.label33 ~= nil then self.label33:destroy(); self.label33 = nil; end;
-        if self.flowPart242 ~= nil then self.flowPart242:destroy(); self.flowPart242 = nil; end;
         if self.dataLink31 ~= nil then self.dataLink31:destroy(); self.dataLink31 = nil; end;
-        if self.flowPart218 ~= nil then self.flowPart218:destroy(); self.flowPart218 = nil; end;
-        if self.frame8 ~= nil then self.frame8:destroy(); self.frame8 = nil; end;
-        if self.edit46 ~= nil then self.edit46:destroy(); self.edit46 = nil; end;
+        if self.rectangle11 ~= nil then self.rectangle11:destroy(); self.rectangle11 = nil; end;
+        if self.label44 ~= nil then self.label44:destroy(); self.label44 = nil; end;
+        if self.cbProfcompanioninvestigacao ~= nil then self.cbProfcompanioninvestigacao:destroy(); self.cbProfcompanioninvestigacao = nil; end;
+        if self.cbProffurtividade ~= nil then self.cbProffurtividade:destroy(); self.cbProffurtividade = nil; end;
         if self.label95 ~= nil then self.label95:destroy(); self.label95 = nil; end;
-        if self.eventosLabel ~= nil then self.eventosLabel:destroy(); self.eventosLabel = nil; end;
+        if self.edit46 ~= nil then self.edit46:destroy(); self.edit46 = nil; end;
+        if self.UpperGridCampo11 ~= nil then self.UpperGridCampo11:destroy(); self.UpperGridCampo11 = nil; end;
         if self.dataLink171 ~= nil then self.dataLink171:destroy(); self.dataLink171 = nil; end;
+        if self.frame8 ~= nil then self.frame8:destroy(); self.frame8 = nil; end;
+        if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
+        if self.cmbupperGridMagicBox1 ~= nil then self.cmbupperGridMagicBox1:destroy(); self.cmbupperGridMagicBox1 = nil; end;
         if self.horzLine43 ~= nil then self.horzLine43:destroy(); self.horzLine43 = nil; end;
+        if self.scrollBox8 ~= nil then self.scrollBox8:destroy(); self.scrollBox8 = nil; end;
         if self.flowLayout3 ~= nil then self.flowLayout3:destroy(); self.flowLayout3 = nil; end;
+        if self.label98 ~= nil then self.label98:destroy(); self.label98 = nil; end;
         if self.layout80 ~= nil then self.layout80:destroy(); self.layout80 = nil; end;
+        if self.flowPart117 ~= nil then self.flowPart117:destroy(); self.flowPart117 = nil; end;
         if self.flowPart7 ~= nil then self.flowPart7:destroy(); self.flowPart7 = nil; end;
         if self.dataLink99 ~= nil then self.dataLink99:destroy(); self.dataLink99 = nil; end;
+        if self.flowPart46 ~= nil then self.flowPart46:destroy(); self.flowPart46 = nil; end;
         if self.editorMerda ~= nil then self.editorMerda:destroy(); self.editorMerda = nil; end;
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.labupperGridMagicBox3val ~= nil then self.labupperGridMagicBox3val:destroy(); self.labupperGridMagicBox3val = nil; end;
-        if self.edit80 ~= nil then self.edit80:destroy(); self.edit80 = nil; end;
+        if self.label66 ~= nil then self.label66:destroy(); self.label66 = nil; end;
+        if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
+        if self.layout82 ~= nil then self.layout82:destroy(); self.layout82 = nil; end;
+        if self.button76 ~= nil then self.button76:destroy(); self.button76 = nil; end;
+        if self.editPENome ~= nil then self.editPENome:destroy(); self.editPENome = nil; end;
         if self.dataLink136 ~= nil then self.dataLink136:destroy(); self.dataLink136 = nil; end;
         if self.dataLink13 ~= nil then self.dataLink13:destroy(); self.dataLink13 = nil; end;
         if self.dataLink105 ~= nil then self.dataLink105:destroy(); self.dataLink105 = nil; end;
         if self.flowPart109 ~= nil then self.flowPart109:destroy(); self.flowPart109 = nil; end;
-        if self.label112 ~= nil then self.label112:destroy(); self.label112 = nil; end;
         if self.dataLink184 ~= nil then self.dataLink184:destroy(); self.dataLink184 = nil; end;
+        if self.edit57 ~= nil then self.edit57:destroy(); self.edit57 = nil; end;
+        if self.flowPart2 ~= nil then self.flowPart2:destroy(); self.flowPart2 = nil; end;
         if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
         if self.layout95 ~= nil then self.layout95:destroy(); self.layout95 = nil; end;
-        if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
+        if self.label65 ~= nil then self.label65:destroy(); self.label65 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.dataLink75 ~= nil then self.dataLink75:destroy(); self.dataLink75 = nil; end;
+        if self.layout93 ~= nil then self.layout93:destroy(); self.layout93 = nil; end;
+        if self.label112 ~= nil then self.label112:destroy(); self.label112 = nil; end;
         if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
         if self.horzLine21 ~= nil then self.horzLine21:destroy(); self.horzLine21 = nil; end;
         if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
+        if self.horzLine17 ~= nil then self.horzLine17:destroy(); self.horzLine17 = nil; end;
         if self.layout122 ~= nil then self.layout122:destroy(); self.layout122 = nil; end;
+        if self.horzLine27 ~= nil then self.horzLine27:destroy(); self.horzLine27 = nil; end;
+        if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
         if self.layout77 ~= nil then self.layout77:destroy(); self.layout77 = nil; end;
         if self.flowPart156 ~= nil then self.flowPart156:destroy(); self.flowPart156 = nil; end;
+        if self.horzLine46 ~= nil then self.horzLine46:destroy(); self.horzLine46 = nil; end;
         if self.dataLink164 ~= nil then self.dataLink164:destroy(); self.dataLink164 = nil; end;
         if self.popupEditFormulaRect ~= nil then self.popupEditFormulaRect:destroy(); self.popupEditFormulaRect = nil; end;
         if self.layout56 ~= nil then self.layout56:destroy(); self.layout56 = nil; end;
         if self.edit44 ~= nil then self.edit44:destroy(); self.edit44 = nil; end;
-        if self.edit88 ~= nil then self.edit88:destroy(); self.edit88 = nil; end;
-        if self.label150 ~= nil then self.label150:destroy(); self.label150 = nil; end;
+        if self.cbProfpericiainteligencia ~= nil then self.cbProfpericiainteligencia:destroy(); self.cbProfpericiainteligencia = nil; end;
+        if self.UpperGridCampo8 ~= nil then self.UpperGridCampo8:destroy(); self.UpperGridCampo8 = nil; end;
+        if self.horzLine51 ~= nil then self.horzLine51:destroy(); self.horzLine51 = nil; end;
         if self.button63 ~= nil then self.button63:destroy(); self.button63 = nil; end;
-        if self.labProfcompanionenganacao ~= nil then self.labProfcompanionenganacao:destroy(); self.labProfcompanionenganacao = nil; end;
+        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.layout66 ~= nil then self.layout66:destroy(); self.layout66 = nil; end;
+        if self.dataLink65 ~= nil then self.dataLink65:destroy(); self.dataLink65 = nil; end;
+        if self.linUpperGridCampo12 ~= nil then self.linUpperGridCampo12:destroy(); self.linUpperGridCampo12 = nil; end;
         if self.UpperGridCampo7 ~= nil then self.UpperGridCampo7:destroy(); self.UpperGridCampo7 = nil; end;
-        if self.dataLink229 ~= nil then self.dataLink229:destroy(); self.dataLink229 = nil; end;
+        if self.labProfcompanionenganacao ~= nil then self.labProfcompanionenganacao:destroy(); self.labProfcompanionenganacao = nil; end;
+        if self.dataLink228 ~= nil then self.dataLink228:destroy(); self.dataLink228 = nil; end;
+        if self.cbProfcompanionpercepcao ~= nil then self.cbProfcompanionpercepcao:destroy(); self.cbProfcompanionpercepcao = nil; end;
         if self.cbProfmedicina ~= nil then self.cbProfmedicina:destroy(); self.cbProfmedicina = nil; end;
         if self.flowPart148 ~= nil then self.flowPart148:destroy(); self.flowPart148 = nil; end;
-        if self.label172 ~= nil then self.label172:destroy(); self.label172 = nil; end;
+        if self.cbProfcompanionconstituicao ~= nil then self.cbProfcompanionconstituicao:destroy(); self.cbProfcompanionconstituicao = nil; end;
+        if self.dataLink101 ~= nil then self.dataLink101:destroy(); self.dataLink101 = nil; end;
+        if self.flowPart64 ~= nil then self.flowPart64:destroy(); self.flowPart64 = nil; end;
+        if self.button22 ~= nil then self.button22:destroy(); self.button22 = nil; end;
+        if self.labProfpericiainteligencia ~= nil then self.labProfpericiainteligencia:destroy(); self.labProfpericiainteligencia = nil; end;
         if self.dataLink211 ~= nil then self.dataLink211:destroy(); self.dataLink211 = nil; end;
+        if self.layout27 ~= nil then self.layout27:destroy(); self.layout27 = nil; end;
+        if self.dataLink60 ~= nil then self.dataLink60:destroy(); self.dataLink60 = nil; end;
         if self.edit53 ~= nil then self.edit53:destroy(); self.edit53 = nil; end;
         if self.comboBox16 ~= nil then self.comboBox16:destroy(); self.comboBox16 = nil; end;
         if self.layout44 ~= nil then self.layout44:destroy(); self.layout44 = nil; end;
+        if self.flowLayout9 ~= nil then self.flowLayout9:destroy(); self.flowLayout9 = nil; end;
+        if self.fraEquipamentoLayout ~= nil then self.fraEquipamentoLayout:destroy(); self.fraEquipamentoLayout = nil; end;
+        if self.dataLink144 ~= nil then self.dataLink144:destroy(); self.dataLink144 = nil; end;
         if self.label28 ~= nil then self.label28:destroy(); self.label28 = nil; end;
-        if self.edit107 ~= nil then self.edit107:destroy(); self.edit107 = nil; end;
+        if self.dataLink96 ~= nil then self.dataLink96:destroy(); self.dataLink96 = nil; end;
+        if self.flowPart153 ~= nil then self.flowPart153:destroy(); self.flowPart153 = nil; end;
+        if self.labProfconcentracao ~= nil then self.labProfconcentracao:destroy(); self.labProfconcentracao = nil; end;
+        if self.button42 ~= nil then self.button42:destroy(); self.button42 = nil; end;
         if self.flwPartEquipDefense ~= nil then self.flwPartEquipDefense:destroy(); self.flwPartEquipDefense = nil; end;
         if self.layout74 ~= nil then self.layout74:destroy(); self.layout74 = nil; end;
+        if self.layout104 ~= nil then self.layout104:destroy(); self.layout104 = nil; end;
         if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
         if self.tab4 ~= nil then self.tab4:destroy(); self.tab4 = nil; end;
-        if self.flowPart177 ~= nil then self.flowPart177:destroy(); self.flowPart177 = nil; end;
+        if self.labUpperGridCampo7 ~= nil then self.labUpperGridCampo7:destroy(); self.labUpperGridCampo7 = nil; end;
+        if self.layPrincipal ~= nil then self.layPrincipal:destroy(); self.layPrincipal = nil; end;
+        if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
+        if self.edit56 ~= nil then self.edit56:destroy(); self.edit56 = nil; end;
+        if self.flowPart167 ~= nil then self.flowPart167:destroy(); self.flowPart167 = nil; end;
         if self.layout124 ~= nil then self.layout124:destroy(); self.layout124 = nil; end;
         if self.dataLink170 ~= nil then self.dataLink170:destroy(); self.dataLink170 = nil; end;
+        if self.comboBox5 ~= nil then self.comboBox5:destroy(); self.comboBox5 = nil; end;
+        if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
         if self.dataLink157 ~= nil then self.dataLink157:destroy(); self.dataLink157 = nil; end;
+        if self.dataLink159 ~= nil then self.dataLink159:destroy(); self.dataLink159 = nil; end;
+        if self.flowLayout11 ~= nil then self.flowLayout11:destroy(); self.flowLayout11 = nil; end;
         if self.label100 ~= nil then self.label100:destroy(); self.label100 = nil; end;
+        if self.flowPart134 ~= nil then self.flowPart134:destroy(); self.flowPart134 = nil; end;
+        if self.dataLink218 ~= nil then self.dataLink218:destroy(); self.dataLink218 = nil; end;
         if self.button23 ~= nil then self.button23:destroy(); self.button23 = nil; end;
         if self.popupEditDanoLegenda ~= nil then self.popupEditDanoLegenda:destroy(); self.popupEditDanoLegenda = nil; end;
         if self.horzLine18 ~= nil then self.horzLine18:destroy(); self.horzLine18 = nil; end;
-        if self.flowPart211 ~= nil then self.flowPart211:destroy(); self.flowPart211 = nil; end;
-        if self.dataLink234 ~= nil then self.dataLink234:destroy(); self.dataLink234 = nil; end;
-        if self.label187 ~= nil then self.label187:destroy(); self.label187 = nil; end;
+        if self.dataLink118 ~= nil then self.dataLink118:destroy(); self.dataLink118 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.rectangle27 ~= nil then self.rectangle27:destroy(); self.rectangle27 = nil; end;
+        if self.flowPart36 ~= nil then self.flowPart36:destroy(); self.flowPart36 = nil; end;
         if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.edtUpperGridCampo6 ~= nil then self.edtUpperGridCampo6:destroy(); self.edtUpperGridCampo6 = nil; end;
         if self.flowPart137 ~= nil then self.flowPart137:destroy(); self.flowPart137 = nil; end;
-        if self.flowPart217 ~= nil then self.flowPart217:destroy(); self.flowPart217 = nil; end;
+        if self.flowPart151 ~= nil then self.flowPart151:destroy(); self.flowPart151 = nil; end;
         if self.edit51 ~= nil then self.edit51:destroy(); self.edit51 = nil; end;
         if self.flowPart82 ~= nil then self.flowPart82:destroy(); self.flowPart82 = nil; end;
+        if self.linUpperGridCampo10 ~= nil then self.linUpperGridCampo10:destroy(); self.linUpperGridCampo10 = nil; end;
+        if self.button17 ~= nil then self.button17:destroy(); self.button17 = nil; end;
         if self.edit48 ~= nil then self.edit48:destroy(); self.edit48 = nil; end;
+        if self.label85 ~= nil then self.label85:destroy(); self.label85 = nil; end;
         if self.flowPart84 ~= nil then self.flowPart84:destroy(); self.flowPart84 = nil; end;
+        if self.cbProfcompanionintuicao ~= nil then self.cbProfcompanionintuicao:destroy(); self.cbProfcompanionintuicao = nil; end;
+        if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
         if self.UpperGridCampo12 ~= nil then self.UpperGridCampo12:destroy(); self.UpperGridCampo12 = nil; end;
+        if self.layout121 ~= nil then self.layout121:destroy(); self.layout121 = nil; end;
         if self.layout40 ~= nil then self.layout40:destroy(); self.layout40 = nil; end;
         if self.popupEditCDvalor ~= nil then self.popupEditCDvalor:destroy(); self.popupEditCDvalor = nil; end;
         if self.layout87 ~= nil then self.layout87:destroy(); self.layout87 = nil; end;
         if self.button61 ~= nil then self.button61:destroy(); self.button61 = nil; end;
+        if self.cbProfacrobacia ~= nil then self.cbProfacrobacia:destroy(); self.cbProfacrobacia = nil; end;
         if self.dataLink85 ~= nil then self.dataLink85:destroy(); self.dataLink85 = nil; end;
         if self.labProfcompanionatletismo ~= nil then self.labProfcompanionatletismo:destroy(); self.labProfcompanionatletismo = nil; end;
-        if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
+        if self.flowPart115 ~= nil then self.flowPart115:destroy(); self.flowPart115 = nil; end;
         if self.flowPart65 ~= nil then self.flowPart65:destroy(); self.flowPart65 = nil; end;
         if self.linUpperGridCampo3 ~= nil then self.linUpperGridCampo3:destroy(); self.linUpperGridCampo3 = nil; end;
         if self.horzLine55 ~= nil then self.horzLine55:destroy(); self.horzLine55 = nil; end;
-        if self.flowPart200 ~= nil then self.flowPart200:destroy(); self.flowPart200 = nil; end;
+        if self.flwNome1 ~= nil then self.flwNome1:destroy(); self.flwNome1 = nil; end;
         if self.dataLink158 ~= nil then self.dataLink158:destroy(); self.dataLink158 = nil; end;
         if self.flowPart112 ~= nil then self.flowPart112:destroy(); self.flowPart112 = nil; end;
+        if self.button75 ~= nil then self.button75:destroy(); self.button75 = nil; end;
+        if self.flowPart165 ~= nil then self.flowPart165:destroy(); self.flowPart165 = nil; end;
         if self.labProfsabedoria ~= nil then self.labProfsabedoria:destroy(); self.labProfsabedoria = nil; end;
+        if self.dataLink11 ~= nil then self.dataLink11:destroy(); self.dataLink11 = nil; end;
+        if self.dataLink46 ~= nil then self.dataLink46:destroy(); self.dataLink46 = nil; end;
         if self.horzLine65 ~= nil then self.horzLine65:destroy(); self.horzLine65 = nil; end;
+        if self.imageCheckBox11 ~= nil then self.imageCheckBox11:destroy(); self.imageCheckBox11 = nil; end;
+        if self.button14 ~= nil then self.button14:destroy(); self.button14 = nil; end;
+        if self.dataLink50 ~= nil then self.dataLink50:destroy(); self.dataLink50 = nil; end;
         if self.flowLineBreak4 ~= nil then self.flowLineBreak4:destroy(); self.flowLineBreak4 = nil; end;
         if self.cbProfhonra ~= nil then self.cbProfhonra:destroy(); self.cbProfhonra = nil; end;
-        if self.label134 ~= nil then self.label134:destroy(); self.label134 = nil; end;
+        if self.edtUpperGridCampo12 ~= nil then self.edtUpperGridCampo12:destroy(); self.edtUpperGridCampo12 = nil; end;
         if self.dataLink95 ~= nil then self.dataLink95:destroy(); self.dataLink95 = nil; end;
         if self.rectangle24 ~= nil then self.rectangle24:destroy(); self.rectangle24 = nil; end;
         if self.flowPart100 ~= nil then self.flowPart100:destroy(); self.flowPart100 = nil; end;
+        if self.dataLink205 ~= nil then self.dataLink205:destroy(); self.dataLink205 = nil; end;
+        if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
         if self.labUpperGridCampo2 ~= nil then self.labUpperGridCampo2:destroy(); self.labUpperGridCampo2 = nil; end;
+        if self.horzLine11 ~= nil then self.horzLine11:destroy(); self.horzLine11 = nil; end;
+        if self.dataLink86 ~= nil then self.dataLink86:destroy(); self.dataLink86 = nil; end;
+        if self.flowLayout24 ~= nil then self.flowLayout24:destroy(); self.flowLayout24 = nil; end;
+        if self.dataLink149 ~= nil then self.dataLink149:destroy(); self.dataLink149 = nil; end;
         if self.horzLine35 ~= nil then self.horzLine35:destroy(); self.horzLine35 = nil; end;
+        if self.edit41 ~= nil then self.edit41:destroy(); self.edit41 = nil; end;
+        if self.flowPart121 ~= nil then self.flowPart121:destroy(); self.flowPart121 = nil; end;
         if self.button85 ~= nil then self.button85:destroy(); self.button85 = nil; end;
+        if self.edit36 ~= nil then self.edit36:destroy(); self.edit36 = nil; end;
         if self.label43 ~= nil then self.label43:destroy(); self.label43 = nil; end;
         if self.edit33 ~= nil then self.edit33:destroy(); self.edit33 = nil; end;
         if self.dataLink89 ~= nil then self.dataLink89:destroy(); self.dataLink89 = nil; end;
         if self.labProfpericiaconstituicao ~= nil then self.labProfpericiaconstituicao:destroy(); self.labProfpericiaconstituicao = nil; end;
         if self.edit29 ~= nil then self.edit29:destroy(); self.edit29 = nil; end;
         if self.cbProfcompanionconcentracao ~= nil then self.cbProfcompanionconcentracao:destroy(); self.cbProfcompanionconcentracao = nil; end;
-        if self.flowPart247 ~= nil then self.flowPart247:destroy(); self.flowPart247 = nil; end;
+        if self.upperGridMagicBox2 ~= nil then self.upperGridMagicBox2:destroy(); self.upperGridMagicBox2 = nil; end;
         if self.labUpperGridCampo1 ~= nil then self.labUpperGridCampo1:destroy(); self.labUpperGridCampo1 = nil; end;
         if self.flowPart32 ~= nil then self.flowPart32:destroy(); self.flowPart32 = nil; end;
+        if self.flowLayout19 ~= nil then self.flowLayout19:destroy(); self.flowLayout19 = nil; end;
+        if self.layout94 ~= nil then self.layout94:destroy(); self.layout94 = nil; end;
+        if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
+        if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
+        if self.dataLink185 ~= nil then self.dataLink185:destroy(); self.dataLink185 = nil; end;
+        if self.dataLink210 ~= nil then self.dataLink210:destroy(); self.dataLink210 = nil; end;
+        if self.flowPart13 ~= nil then self.flowPart13:destroy(); self.flowPart13 = nil; end;
         if self.dataLink215 ~= nil then self.dataLink215:destroy(); self.dataLink215 = nil; end;
-        if self.label148 ~= nil then self.label148:destroy(); self.label148 = nil; end;
+        if self.flowPart1 ~= nil then self.flowPart1:destroy(); self.flowPart1 = nil; end;
+        if self.button16 ~= nil then self.button16:destroy(); self.button16 = nil; end;
         if self.rectangle16 ~= nil then self.rectangle16:destroy(); self.rectangle16 = nil; end;
+        if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
+        if self.rclEquips ~= nil then self.rclEquips:destroy(); self.rclEquips = nil; end;
         if self.flowPart157 ~= nil then self.flowPart157:destroy(); self.flowPart157 = nil; end;
         if self.flowPart25 ~= nil then self.flowPart25:destroy(); self.flowPart25 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.flowPart69 ~= nil then self.flowPart69:destroy(); self.flowPart69 = nil; end;
+        if self.flowPart74 ~= nil then self.flowPart74:destroy(); self.flowPart74 = nil; end;
+        if self.colorComboBox1 ~= nil then self.colorComboBox1:destroy(); self.colorComboBox1 = nil; end;
         if self.flowPart76 ~= nil then self.flowPart76:destroy(); self.flowPart76 = nil; end;
         if self.flowPart101 ~= nil then self.flowPart101:destroy(); self.flowPart101 = nil; end;
-        if self.label122 ~= nil then self.label122:destroy(); self.label122 = nil; end;
-        if self.dataLink213 ~= nil then self.dataLink213:destroy(); self.dataLink213 = nil; end;
+        if self.layout62 ~= nil then self.layout62:destroy(); self.layout62 = nil; end;
         if self.flowPart19 ~= nil then self.flowPart19:destroy(); self.flowPart19 = nil; end;
-        if self.flowPart203 ~= nil then self.flowPart203:destroy(); self.flowPart203 = nil; end;
-        if self.flowPart233 ~= nil then self.flowPart233:destroy(); self.flowPart233 = nil; end;
+        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
+        if self.layout89 ~= nil then self.layout89:destroy(); self.layout89 = nil; end;
+        if self.dataLink213 ~= nil then self.dataLink213:destroy(); self.dataLink213 = nil; end;
         if self.layout125 ~= nil then self.layout125:destroy(); self.layout125 = nil; end;
         if self.flowPart161 ~= nil then self.flowPart161:destroy(); self.flowPart161 = nil; end;
-        if self.flowLineBreak18 ~= nil then self.flowLineBreak18:destroy(); self.flowLineBreak18 = nil; end;
+        if self.label122 ~= nil then self.label122:destroy(); self.label122 = nil; end;
         if self.cbProfpericiaforca ~= nil then self.cbProfpericiaforca:destroy(); self.cbProfpericiaforca = nil; end;
-        if self.label146 ~= nil then self.label146:destroy(); self.label146 = nil; end;
+        if self.cbProfadestrarAnimais ~= nil then self.cbProfadestrarAnimais:destroy(); self.cbProfadestrarAnimais = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
         if self.dataLink100 ~= nil then self.dataLink100:destroy(); self.dataLink100 = nil; end;
         if self.button40 ~= nil then self.button40:destroy(); self.button40 = nil; end;
+        if self.cbProfsobrevivencia ~= nil then self.cbProfsobrevivencia:destroy(); self.cbProfsobrevivencia = nil; end;
+        if self.dataLink44 ~= nil then self.dataLink44:destroy(); self.dataLink44 = nil; end;
+        if self.layout71 ~= nil then self.layout71:destroy(); self.layout71 = nil; end;
         if self.dataLink179 ~= nil then self.dataLink179:destroy(); self.dataLink179 = nil; end;
+        if self.flowLayout30 ~= nil then self.flowLayout30:destroy(); self.flowLayout30 = nil; end;
         if self.dataLink147 ~= nil then self.dataLink147:destroy(); self.dataLink147 = nil; end;
         if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
+        if self.labProfmedicina ~= nil then self.labProfmedicina:destroy(); self.labProfmedicina = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
-        if self.label161 ~= nil then self.label161:destroy(); self.label161 = nil; end;
+        if self.label99 ~= nil then self.label99:destroy(); self.label99 = nil; end;
+        if self.label107 ~= nil then self.label107:destroy(); self.label107 = nil; end;
         if self.flowPart89 ~= nil then self.flowPart89:destroy(); self.flowPart89 = nil; end;
         if self.horzLine30 ~= nil then self.horzLine30:destroy(); self.horzLine30 = nil; end;
+        if self.dataLink196 ~= nil then self.dataLink196:destroy(); self.dataLink196 = nil; end;
+        if self.flowPart68 ~= nil then self.flowPart68:destroy(); self.flowPart68 = nil; end;
         if self.button79 ~= nil then self.button79:destroy(); self.button79 = nil; end;
         if self.dataLink202 ~= nil then self.dataLink202:destroy(); self.dataLink202 = nil; end;
         if self.button37 ~= nil then self.button37:destroy(); self.button37 = nil; end;
         if self.flowLineBreak6 ~= nil then self.flowLineBreak6:destroy(); self.flowLineBreak6 = nil; end;
         if self.button36 ~= nil then self.button36:destroy(); self.button36 = nil; end;
+        if self.label82 ~= nil then self.label82:destroy(); self.label82 = nil; end;
+        if self.layout36 ~= nil then self.layout36:destroy(); self.layout36 = nil; end;
+        if self.labUpperGridCampo5 ~= nil then self.labUpperGridCampo5:destroy(); self.labUpperGridCampo5 = nil; end;
         if self.cbProfpericiahonra ~= nil then self.cbProfpericiahonra:destroy(); self.cbProfpericiahonra = nil; end;
-        if self.edit69 ~= nil then self.edit69:destroy(); self.edit69 = nil; end;
+        if self.flowPart140 ~= nil then self.flowPart140:destroy(); self.flowPart140 = nil; end;
+        if self.flowPart150 ~= nil then self.flowPart150:destroy(); self.flowPart150 = nil; end;
+        if self.flowPart34 ~= nil then self.flowPart34:destroy(); self.flowPart34 = nil; end;
+        if self.layout119 ~= nil then self.layout119:destroy(); self.layout119 = nil; end;
         if self.layout52 ~= nil then self.layout52:destroy(); self.layout52 = nil; end;
         if self.flowPart54 ~= nil then self.flowPart54:destroy(); self.flowPart54 = nil; end;
+        if self.flowLayout23 ~= nil then self.flowLayout23:destroy(); self.flowLayout23 = nil; end;
         if self.labProfnatureza ~= nil then self.labProfnatureza:destroy(); self.labProfnatureza = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
         if self.dataLink63 ~= nil then self.dataLink63:destroy(); self.dataLink63 = nil; end;
         if self.flowPart53 ~= nil then self.flowPart53:destroy(); self.flowPart53 = nil; end;
         if self.label47 ~= nil then self.label47:destroy(); self.label47 = nil; end;
-        if self.edit116 ~= nil then self.edit116:destroy(); self.edit116 = nil; end;
+        if self.button26 ~= nil then self.button26:destroy(); self.button26 = nil; end;
+        if self.label76 ~= nil then self.label76:destroy(); self.label76 = nil; end;
         if self.labProfadestrarAnimais ~= nil then self.labProfadestrarAnimais:destroy(); self.labProfadestrarAnimais = nil; end;
         if self.optAtaquePadrao ~= nil then self.optAtaquePadrao:destroy(); self.optAtaquePadrao = nil; end;
         if self.button4 ~= nil then self.button4:destroy(); self.button4 = nil; end;
         if self.edit52 ~= nil then self.edit52:destroy(); self.edit52 = nil; end;
+        if self.layout34 ~= nil then self.layout34:destroy(); self.layout34 = nil; end;
         if self.labProfsanidade ~= nil then self.labProfsanidade:destroy(); self.labProfsanidade = nil; end;
+        if self.rectangle7 ~= nil then self.rectangle7:destroy(); self.rectangle7 = nil; end;
         if self.flowPart57 ~= nil then self.flowPart57:destroy(); self.flowPart57 = nil; end;
         if self.comboBoxImportMagia ~= nil then self.comboBoxImportMagia:destroy(); self.comboBoxImportMagia = nil; end;
-        if self.label176 ~= nil then self.label176:destroy(); self.label176 = nil; end;
+        if self.cbProfcompanionforca ~= nil then self.cbProfcompanionforca:destroy(); self.cbProfcompanionforca = nil; end;
+        if self.cbProfatuacao ~= nil then self.cbProfatuacao:destroy(); self.cbProfatuacao = nil; end;
         if self.button7 ~= nil then self.button7:destroy(); self.button7 = nil; end;
         if self.layout42 ~= nil then self.layout42:destroy(); self.layout42 = nil; end;
         if self.layout61 ~= nil then self.layout61:destroy(); self.layout61 = nil; end;
-        if self.label109 ~= nil then self.label109:destroy(); self.label109 = nil; end;
-        if self.label106 ~= nil then self.label106:destroy(); self.label106 = nil; end;
+        if self.comboBoxImportSource ~= nil then self.comboBoxImportSource:destroy(); self.comboBoxImportSource = nil; end;
+        if self.flowLayout33 ~= nil then self.flowLayout33:destroy(); self.flowLayout33 = nil; end;
+        if self.horzLine56 ~= nil then self.horzLine56:destroy(); self.horzLine56 = nil; end;
         if self.label103 ~= nil then self.label103:destroy(); self.label103 = nil; end;
+        if self.label106 ~= nil then self.label106:destroy(); self.label106 = nil; end;
+        if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
+        if self.edit58 ~= nil then self.edit58:destroy(); self.edit58 = nil; end;
+        if self.label109 ~= nil then self.label109:destroy(); self.label109 = nil; end;
+        if self.dataLink114 ~= nil then self.dataLink114:destroy(); self.dataLink114 = nil; end;
+        if self.imgEquipAttackImg ~= nil then self.imgEquipAttackImg:destroy(); self.imgEquipAttackImg = nil; end;
+        if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
+        if self.flowPart59 ~= nil then self.flowPart59:destroy(); self.flowPart59 = nil; end;
+        if self.dataLink148 ~= nil then self.dataLink148:destroy(); self.dataLink148 = nil; end;
         if self.label29 ~= nil then self.label29:destroy(); self.label29 = nil; end;
         if self.dataLink72 ~= nil then self.dataLink72:destroy(); self.dataLink72 = nil; end;
         if self.labupperGridMagicBox2val ~= nil then self.labupperGridMagicBox2val:destroy(); self.labupperGridMagicBox2val = nil; end;
-        if self.layout137 ~= nil then self.layout137:destroy(); self.layout137 = nil; end;
+        if self.flowLayout14 ~= nil then self.flowLayout14:destroy(); self.flowLayout14 = nil; end;
         if self.rectangle23 ~= nil then self.rectangle23:destroy(); self.rectangle23 = nil; end;
+        if self.layEquipPropriedades ~= nil then self.layEquipPropriedades:destroy(); self.layEquipPropriedades = nil; end;
+        if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
+        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
+        if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
         if self.imageCheckBox2 ~= nil then self.imageCheckBox2:destroy(); self.imageCheckBox2 = nil; end;
         if self.label51 ~= nil then self.label51:destroy(); self.label51 = nil; end;
-        if self.edit99 ~= nil then self.edit99:destroy(); self.edit99 = nil; end;
         if self.flowPart39 ~= nil then self.flowPart39:destroy(); self.flowPart39 = nil; end;
         if self.labProfcompanionatuacao ~= nil then self.labProfcompanionatuacao:destroy(); self.labProfcompanionatuacao = nil; end;
+        if self.button43 ~= nil then self.button43:destroy(); self.button43 = nil; end;
+        if self.horzLine62 ~= nil then self.horzLine62:destroy(); self.horzLine62 = nil; end;
         if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.labUpperGridCampo10 ~= nil then self.labUpperGridCampo10:destroy(); self.labUpperGridCampo10 = nil; end;
-        if self.button98 ~= nil then self.button98:destroy(); self.button98 = nil; end;
+        if self.flowPart60 ~= nil then self.flowPart60:destroy(); self.flowPart60 = nil; end;
+        if self.labProfcompanionpercepcao ~= nil then self.labProfcompanionpercepcao:destroy(); self.labProfcompanionpercepcao = nil; end;
+        if self.rclProps ~= nil then self.rclProps:destroy(); self.rclProps = nil; end;
         if self.flowPart28 ~= nil then self.flowPart28:destroy(); self.flowPart28 = nil; end;
+        if self.button98 ~= nil then self.button98:destroy(); self.button98 = nil; end;
+        if self.editorFancy ~= nil then self.editorFancy:destroy(); self.editorFancy = nil; end;
         if self.layout108 ~= nil then self.layout108:destroy(); self.layout108 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.rectangle14 ~= nil then self.rectangle14:destroy(); self.rectangle14 = nil; end;
-        if self.label147 ~= nil then self.label147:destroy(); self.label147 = nil; end;
+        if self.dataLink81 ~= nil then self.dataLink81:destroy(); self.dataLink81 = nil; end;
+        if self.flowPart87 ~= nil then self.flowPart87:destroy(); self.flowPart87 = nil; end;
         if self.dataLink165 ~= nil then self.dataLink165:destroy(); self.dataLink165 = nil; end;
+        if self.layEquipAttackImg ~= nil then self.layEquipAttackImg:destroy(); self.layEquipAttackImg = nil; end;
         if self.dataLink82 ~= nil then self.dataLink82:destroy(); self.dataLink82 = nil; end;
         if self.label89 ~= nil then self.label89:destroy(); self.label89 = nil; end;
         if self.button33 ~= nil then self.button33:destroy(); self.button33 = nil; end;
-        if self.edit83 ~= nil then self.edit83:destroy(); self.edit83 = nil; end;
+        if self.dataLink138 ~= nil then self.dataLink138:destroy(); self.dataLink138 = nil; end;
         if self.richEdit2 ~= nil then self.richEdit2:destroy(); self.richEdit2 = nil; end;
         if self.UpperGridCampo6 ~= nil then self.UpperGridCampo6:destroy(); self.UpperGridCampo6 = nil; end;
         if self.layout51 ~= nil then self.layout51:destroy(); self.layout51 = nil; end;
-        if self.edit74 ~= nil then self.edit74:destroy(); self.edit74 = nil; end;
+        if self.dataLink153 ~= nil then self.dataLink153:destroy(); self.dataLink153 = nil; end;
+        if self.layout100 ~= nil then self.layout100:destroy(); self.layout100 = nil; end;
         if self.button92 ~= nil then self.button92:destroy(); self.button92 = nil; end;
         if self.flowPart15 ~= nil then self.flowPart15:destroy(); self.flowPart15 = nil; end;
+        if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.UpperGridCampo5 ~= nil then self.UpperGridCampo5:destroy(); self.UpperGridCampo5 = nil; end;
+        if self.dataLink175 ~= nil then self.dataLink175:destroy(); self.dataLink175 = nil; end;
+        if self.edit60 ~= nil then self.edit60:destroy(); self.edit60 = nil; end;
+        if self.flowPart104 ~= nil then self.flowPart104:destroy(); self.flowPart104 = nil; end;
+        if self.label127 ~= nil then self.label127:destroy(); self.label127 = nil; end;
         if self.dataLink151 ~= nil then self.dataLink151:destroy(); self.dataLink151 = nil; end;
         if self.layout39 ~= nil then self.layout39:destroy(); self.layout39 = nil; end;
         if self.tab3 ~= nil then self.tab3:destroy(); self.tab3 = nil; end;
-        if self.layout136 ~= nil then self.layout136:destroy(); self.layout136 = nil; end;
+        if self.labupperGridMagicBox1 ~= nil then self.labupperGridMagicBox1:destroy(); self.labupperGridMagicBox1 = nil; end;
         if self.flowPart132 ~= nil then self.flowPart132:destroy(); self.flowPart132 = nil; end;
         if self.flowPart10 ~= nil then self.flowPart10:destroy(); self.flowPart10 = nil; end;
         if self.horzLine29 ~= nil then self.horzLine29:destroy(); self.horzLine29 = nil; end;
         if self.layout69 ~= nil then self.layout69:destroy(); self.layout69 = nil; end;
         if self.flowLayout32 ~= nil then self.flowLayout32:destroy(); self.flowLayout32 = nil; end;
+        if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.dataLink194 ~= nil then self.dataLink194:destroy(); self.dataLink194 = nil; end;
-        if self.edit121 ~= nil then self.edit121:destroy(); self.edit121 = nil; end;
         if self.button51 ~= nil then self.button51:destroy(); self.button51 = nil; end;
-        if self.flowPart122 ~= nil then self.flowPart122:destroy(); self.flowPart122 = nil; end;
+        if self.dataLink55 ~= nil then self.dataLink55:destroy(); self.dataLink55 = nil; end;
         if self.fpPENivel ~= nil then self.fpPENivel:destroy(); self.fpPENivel = nil; end;
+        if self.flowPart122 ~= nil then self.flowPart122:destroy(); self.flowPart122 = nil; end;
         if self.dataLink167 ~= nil then self.dataLink167:destroy(); self.dataLink167 = nil; end;
         if self.dataLink47 ~= nil then self.dataLink47:destroy(); self.dataLink47 = nil; end;
-        if self.edtNomeCompanion1 ~= nil then self.edtNomeCompanion1:destroy(); self.edtNomeCompanion1 = nil; end;
+        if self.flowPart92 ~= nil then self.flowPart92:destroy(); self.flowPart92 = nil; end;
+        if self.dataLink78 ~= nil then self.dataLink78:destroy(); self.dataLink78 = nil; end;
         if self.layout60 ~= nil then self.layout60:destroy(); self.layout60 = nil; end;
+        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
         if self.dataLink121 ~= nil then self.dataLink121:destroy(); self.dataLink121 = nil; end;
-        if self.flowPart235 ~= nil then self.flowPart235:destroy(); self.flowPart235 = nil; end;
+        if self.edtNomeCompanion1 ~= nil then self.edtNomeCompanion1:destroy(); self.edtNomeCompanion1 = nil; end;
+        if self.labProfcompanionintuicao ~= nil then self.labProfcompanionintuicao:destroy(); self.labProfcompanionintuicao = nil; end;
         if self.flowPart75 ~= nil then self.flowPart75:destroy(); self.flowPart75 = nil; end;
         if self.horzLine39 ~= nil then self.horzLine39:destroy(); self.horzLine39 = nil; end;
-        if self.flowPart256 ~= nil then self.flowPart256:destroy(); self.flowPart256 = nil; end;
+        if self.layout72 ~= nil then self.layout72:destroy(); self.layout72 = nil; end;
         if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
         if self.dataLink79 ~= nil then self.dataLink79:destroy(); self.dataLink79 = nil; end;
+        if self.button39 ~= nil then self.button39:destroy(); self.button39 = nil; end;
+        if self.flowLayout12 ~= nil then self.flowLayout12:destroy(); self.flowLayout12 = nil; end;
         if self.label23 ~= nil then self.label23:destroy(); self.label23 = nil; end;
         if self.flowPart97 ~= nil then self.flowPart97:destroy(); self.flowPart97 = nil; end;
-        if self.layout90 ~= nil then self.layout90:destroy(); self.layout90 = nil; end;
+        if self.label90 ~= nil then self.label90:destroy(); self.label90 = nil; end;
         if self.rclFichaPropriedades ~= nil then self.rclFichaPropriedades:destroy(); self.rclFichaPropriedades = nil; end;
         if self.horzLine2 ~= nil then self.horzLine2:destroy(); self.horzLine2 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
-        if self.edit100 ~= nil then self.edit100:destroy(); self.edit100 = nil; end;
+        if self.flowPart102 ~= nil then self.flowPart102:destroy(); self.flowPart102 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.horzLine23 ~= nil then self.horzLine23:destroy(); self.horzLine23 = nil; end;
         if self.button30 ~= nil then self.button30:destroy(); self.button30 = nil; end;
-        if self.edit84 ~= nil then self.edit84:destroy(); self.edit84 = nil; end;
+        if self.layout90 ~= nil then self.layout90:destroy(); self.layout90 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
+        if self.layout118 ~= nil then self.layout118:destroy(); self.layout118 = nil; end;
+        if self.labProfcompaniondestreza ~= nil then self.labProfcompaniondestreza:destroy(); self.labProfcompaniondestreza = nil; end;
         if self.layout111 ~= nil then self.layout111:destroy(); self.layout111 = nil; end;
+        if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
+        if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
+        if self.labProfpericiahonra ~= nil then self.labProfpericiahonra:destroy(); self.labProfpericiahonra = nil; end;
+        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.labelFieldPETempo ~= nil then self.labelFieldPETempo:destroy(); self.labelFieldPETempo = nil; end;
-        if self.flowLineBreak20 ~= nil then self.flowLineBreak20:destroy(); self.flowLineBreak20 = nil; end;
+        if self.cbProfcompanionmedicina ~= nil then self.cbProfcompanionmedicina:destroy(); self.cbProfcompanionmedicina = nil; end;
+        if self.horzLine53 ~= nil then self.horzLine53:destroy(); self.horzLine53 = nil; end;
+        if self.dataLink204 ~= nil then self.dataLink204:destroy(); self.dataLink204 = nil; end;
+        if self.labelFieldPENivel ~= nil then self.labelFieldPENivel:destroy(); self.labelFieldPENivel = nil; end;
         if self.flowLayout20 ~= nil then self.flowLayout20:destroy(); self.flowLayout20 = nil; end;
-        if self.layout116 ~= nil then self.layout116:destroy(); self.layout116 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
+        if self.layout107 ~= nil then self.layout107:destroy(); self.layout107 = nil; end;
         if self.flwPartEquipAttack ~= nil then self.flwPartEquipAttack:destroy(); self.flwPartEquipAttack = nil; end;
         if self.frame7 ~= nil then self.frame7:destroy(); self.frame7 = nil; end;
+        if self.dataLink45 ~= nil then self.dataLink45:destroy(); self.dataLink45 = nil; end;
         if self.frame1 ~= nil then self.frame1:destroy(); self.frame1 = nil; end;
-        if self.edit103 ~= nil then self.edit103:destroy(); self.edit103 = nil; end;
-        if self.button88 ~= nil then self.button88:destroy(); self.button88 = nil; end;
+        if self.layout116 ~= nil then self.layout116:destroy(); self.layout116 = nil; end;
+        if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
+        if self.flwNomeCompanion1 ~= nil then self.flwNomeCompanion1:destroy(); self.flwNomeCompanion1 = nil; end;
+        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
         if self.horzLine5 ~= nil then self.horzLine5:destroy(); self.horzLine5 = nil; end;
         if self.dataLink119 ~= nil then self.dataLink119:destroy(); self.dataLink119 = nil; end;
+        if self.flowLayout25 ~= nil then self.flowLayout25:destroy(); self.flowLayout25 = nil; end;
         if self.flowLayout26 ~= nil then self.flowLayout26:destroy(); self.flowLayout26 = nil; end;
+        if self.button88 ~= nil then self.button88:destroy(); self.button88 = nil; end;
+        if self.layout101 ~= nil then self.layout101:destroy(); self.layout101 = nil; end;
         if self.flowPart127 ~= nil then self.flowPart127:destroy(); self.flowPart127 = nil; end;
         if self.edit45 ~= nil then self.edit45:destroy(); self.edit45 = nil; end;
         if self.button55 ~= nil then self.button55:destroy(); self.button55 = nil; end;
         if self.checkBox9 ~= nil then self.checkBox9:destroy(); self.checkBox9 = nil; end;
         if self.button91 ~= nil then self.button91:destroy(); self.button91 = nil; end;
         if self.flowPart147 ~= nil then self.flowPart147:destroy(); self.flowPart147 = nil; end;
-        if self.flowLineBreak16 ~= nil then self.flowLineBreak16:destroy(); self.flowLineBreak16 = nil; end;
         if self.dataLink226 ~= nil then self.dataLink226:destroy(); self.dataLink226 = nil; end;
         if self.popupEditContadorNome ~= nil then self.popupEditContadorNome:destroy(); self.popupEditContadorNome = nil; end;
+        if self.flowPart4 ~= nil then self.flowPart4:destroy(); self.flowPart4 = nil; end;
         if self.popupEditDanoRL ~= nil then self.popupEditDanoRL:destroy(); self.popupEditDanoRL = nil; end;
-        if self.fraLayAtributosCompanion ~= nil then self.fraLayAtributosCompanion:destroy(); self.fraLayAtributosCompanion = nil; end;
         if self.flowPart93 ~= nil then self.flowPart93:destroy(); self.flowPart93 = nil; end;
-        if self.edit96 ~= nil then self.edit96:destroy(); self.edit96 = nil; end;
+        if self.label86 ~= nil then self.label86:destroy(); self.label86 = nil; end;
+        if self.fraLayAtributosCompanion ~= nil then self.fraLayAtributosCompanion:destroy(); self.fraLayAtributosCompanion = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.flowPart158 ~= nil then self.flowPart158:destroy(); self.flowPart158 = nil; end;
         if self.flowPart110 ~= nil then self.flowPart110:destroy(); self.flowPart110 = nil; end;
-        if self.labProfcompanionadestrarAnimais ~= nil then self.labProfcompanionadestrarAnimais:destroy(); self.labProfcompanionadestrarAnimais = nil; end;
+        if self.comboBox7 ~= nil then self.comboBox7:destroy(); self.comboBox7 = nil; end;
         if self.labProfcompanionarcanismo ~= nil then self.labProfcompanionarcanismo:destroy(); self.labProfcompanionarcanismo = nil; end;
-        if self.flowLineBreak13 ~= nil then self.flowLineBreak13:destroy(); self.flowLineBreak13 = nil; end;
-        if self.edit109 ~= nil then self.edit109:destroy(); self.edit109 = nil; end;
+        if self.labProfcompanionadestrarAnimais ~= nil then self.labProfcompanionadestrarAnimais:destroy(); self.labProfcompanionadestrarAnimais = nil; end;
+        if self.labelFieldPEEscola ~= nil then self.labelFieldPEEscola:destroy(); self.labelFieldPEEscola = nil; end;
+        if self.horzLine9 ~= nil then self.horzLine9:destroy(); self.horzLine9 = nil; end;
+        if self.tab11 ~= nil then self.tab11:destroy(); self.tab11 = nil; end;
         if self.horzLine60 ~= nil then self.horzLine60:destroy(); self.horzLine60 = nil; end;
-        if self.button100 ~= nil then self.button100:destroy(); self.button100 = nil; end;
+        if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
         if self.dataLink64 ~= nil then self.dataLink64:destroy(); self.dataLink64 = nil; end;
+        if self.dataLink217 ~= nil then self.dataLink217:destroy(); self.dataLink217 = nil; end;
         if self.layout76 ~= nil then self.layout76:destroy(); self.layout76 = nil; end;
+        if self.labUpperGridCampo4 ~= nil then self.labUpperGridCampo4:destroy(); self.labUpperGridCampo4 = nil; end;
         if self.layNomeHolderCompanion ~= nil then self.layNomeHolderCompanion:destroy(); self.layNomeHolderCompanion = nil; end;
         if self.dataLink162 ~= nil then self.dataLink162:destroy(); self.dataLink162 = nil; end;
         if self.flowPart162 ~= nil then self.flowPart162:destroy(); self.flowPart162 = nil; end;
         if self.fraCompanionLayout ~= nil then self.fraCompanionLayout:destroy(); self.fraCompanionLayout = nil; end;
-        if self.flowPart176 ~= nil then self.flowPart176:destroy(); self.flowPart176 = nil; end;
+        if self.button94 ~= nil then self.button94:destroy(); self.button94 = nil; end;
         if self.label102 ~= nil then self.label102:destroy(); self.label102 = nil; end;
         if self.cbProfdestreza ~= nil then self.cbProfdestreza:destroy(); self.cbProfdestreza = nil; end;
         if self.dataLink54 ~= nil then self.dataLink54:destroy(); self.dataLink54 = nil; end;
-        if self.flowPart208 ~= nil then self.flowPart208:destroy(); self.flowPart208 = nil; end;
+        if self.dataLink24 ~= nil then self.dataLink24:destroy(); self.dataLink24 = nil; end;
+        if self.dataLink163 ~= nil then self.dataLink163:destroy(); self.dataLink163 = nil; end;
+        if self.label132 ~= nil then self.label132:destroy(); self.label132 = nil; end;
         if self.flowPart126 ~= nil then self.flowPart126:destroy(); self.flowPart126 = nil; end;
+        if self.edtUpperGridCampo10 ~= nil then self.edtUpperGridCampo10:destroy(); self.edtUpperGridCampo10 = nil; end;
         if self.layout128 ~= nil then self.layout128:destroy(); self.layout128 = nil; end;
         if self.button11 ~= nil then self.button11:destroy(); self.button11 = nil; end;
         if self.dataLink70 ~= nil then self.dataLink70:destroy(); self.dataLink70 = nil; end;
         if self.dataLink137 ~= nil then self.dataLink137:destroy(); self.dataLink137 = nil; end;
+        if self.edtUpperGridCampo7 ~= nil then self.edtUpperGridCampo7:destroy(); self.edtUpperGridCampo7 = nil; end;
         if self.button58 ~= nil then self.button58:destroy(); self.button58 = nil; end;
-        if self.layout97 ~= nil then self.layout97:destroy(); self.layout97 = nil; end;
         if self.horzLine20 ~= nil then self.horzLine20:destroy(); self.horzLine20 = nil; end;
         if self.cbProfpercepcao ~= nil then self.cbProfpercepcao:destroy(); self.cbProfpercepcao = nil; end;
         if self.horzLine31 ~= nil then self.horzLine31:destroy(); self.horzLine31 = nil; end;
-        if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
-        if self.horzLine58 ~= nil then self.horzLine58:destroy(); self.horzLine58 = nil; end;
+        if self.dataLink61 ~= nil then self.dataLink61:destroy(); self.dataLink61 = nil; end;
+        if self.labProfcompanionfurtividade ~= nil then self.labProfcompanionfurtividade:destroy(); self.labProfcompanionfurtividade = nil; end;
         if self.button5 ~= nil then self.button5:destroy(); self.button5 = nil; end;
+        if self.layout97 ~= nil then self.layout97:destroy(); self.layout97 = nil; end;
         if self.edit37 ~= nil then self.edit37:destroy(); self.edit37 = nil; end;
+        if self.button78 ~= nil then self.button78:destroy(); self.button78 = nil; end;
+        if self.cbProfcompanionfurtividade ~= nil then self.cbProfcompanionfurtividade:destroy(); self.cbProfcompanionfurtividade = nil; end;
+        if self.horzLine58 ~= nil then self.horzLine58:destroy(); self.horzLine58 = nil; end;
         if self.labProfhonra ~= nil then self.labProfhonra:destroy(); self.labProfhonra = nil; end;
         if self.flowLayout2 ~= nil then self.flowLayout2:destroy(); self.flowLayout2 = nil; end;
         if self.layNomeHolderFrente ~= nil then self.layNomeHolderFrente:destroy(); self.layNomeHolderFrente = nil; end;
@@ -24378,221 +20099,384 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink27 ~= nil then self.dataLink27:destroy(); self.dataLink27 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
         if self.labProfintimidacao ~= nil then self.labProfintimidacao:destroy(); self.labProfintimidacao = nil; end;
+        if self.button41 ~= nil then self.button41:destroy(); self.button41 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.layout120 ~= nil then self.layout120:destroy(); self.layout120 = nil; end;
-        if self.label175 ~= nil then self.label175:destroy(); self.label175 = nil; end;
-        if self.rectangle30 ~= nil then self.rectangle30:destroy(); self.rectangle30 = nil; end;
+        if self.dataLink212 ~= nil then self.dataLink212:destroy(); self.dataLink212 = nil; end;
+        if self.label39 ~= nil then self.label39:destroy(); self.label39 = nil; end;
+        if self.flowPart3 ~= nil then self.flowPart3:destroy(); self.flowPart3 = nil; end;
+        if self.flowPart149 ~= nil then self.flowPart149:destroy(); self.flowPart149 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
+        if self.layout113 ~= nil then self.layout113:destroy(); self.layout113 = nil; end;
         if self.cbProfconstituicao ~= nil then self.cbProfconstituicao:destroy(); self.cbProfconstituicao = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
         if self.flowPart163 ~= nil then self.flowPart163:destroy(); self.flowPart163 = nil; end;
-        if self.flowPart226 ~= nil then self.flowPart226:destroy(); self.flowPart226 = nil; end;
+        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
+        if self.UpperGridCampo2 ~= nil then self.UpperGridCampo2:destroy(); self.UpperGridCampo2 = nil; end;
+        if self.button31 ~= nil then self.button31:destroy(); self.button31 = nil; end;
         if self.flowLayout38 ~= nil then self.flowLayout38:destroy(); self.flowLayout38 = nil; end;
         if self.button8 ~= nil then self.button8:destroy(); self.button8 = nil; end;
-        if self.comboBox27 ~= nil then self.comboBox27:destroy(); self.comboBox27 = nil; end;
+        if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
         if self.button65 ~= nil then self.button65:destroy(); self.button65 = nil; end;
+        if self.labProfinteligencia ~= nil then self.labProfinteligencia:destroy(); self.labProfinteligencia = nil; end;
         if self.layout109 ~= nil then self.layout109:destroy(); self.layout109 = nil; end;
-        if self.edit118 ~= nil then self.edit118:destroy(); self.edit118 = nil; end;
         if self.checkBox10 ~= nil then self.checkBox10:destroy(); self.checkBox10 = nil; end;
+        if self.layout98 ~= nil then self.layout98:destroy(); self.layout98 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.layout48 ~= nil then self.layout48:destroy(); self.layout48 = nil; end;
+        if self.layout73 ~= nil then self.layout73:destroy(); self.layout73 = nil; end;
         if self.flowPart85 ~= nil then self.flowPart85:destroy(); self.flowPart85 = nil; end;
+        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
+        if self.label84 ~= nil then self.label84:destroy(); self.label84 = nil; end;
         if self.label124 ~= nil then self.label124:destroy(); self.label124 = nil; end;
         if self.dataLink110 ~= nil then self.dataLink110:destroy(); self.dataLink110 = nil; end;
         if self.tab1 ~= nil then self.tab1:destroy(); self.tab1 = nil; end;
         if self.dataLink38 ~= nil then self.dataLink38:destroy(); self.dataLink38 = nil; end;
-        if self.edit102 ~= nil then self.edit102:destroy(); self.edit102 = nil; end;
+        if self.cbProfsanidade ~= nil then self.cbProfsanidade:destroy(); self.cbProfsanidade = nil; end;
         if self.layout115 ~= nil then self.layout115:destroy(); self.layout115 = nil; end;
+        if self.dataLink190 ~= nil then self.dataLink190:destroy(); self.dataLink190 = nil; end;
+        if self.edtUpperGridCampo1 ~= nil then self.edtUpperGridCampo1:destroy(); self.edtUpperGridCampo1 = nil; end;
+        if self.flowPart24 ~= nil then self.flowPart24:destroy(); self.flowPart24 = nil; end;
         if self.dataLink126 ~= nil then self.dataLink126:destroy(); self.dataLink126 = nil; end;
-        if self.edit117 ~= nil then self.edit117:destroy(); self.edit117 = nil; end;
         if self.flowPart77 ~= nil then self.flowPart77:destroy(); self.flowPart77 = nil; end;
-        if self.flowPart173 ~= nil then self.flowPart173:destroy(); self.flowPart173 = nil; end;
         if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
-        if self.layout134 ~= nil then self.layout134:destroy(); self.layout134 = nil; end;
-        if self.edit98 ~= nil then self.edit98:destroy(); self.edit98 = nil; end;
-        if self.comboBox17 ~= nil then self.comboBox17:destroy(); self.comboBox17 = nil; end;
+        if self.frame3 ~= nil then self.frame3:destroy(); self.frame3 = nil; end;
         if self.dataLink62 ~= nil then self.dataLink62:destroy(); self.dataLink62 = nil; end;
-        if self.flowPart255 ~= nil then self.flowPart255:destroy(); self.flowPart255 = nil; end;
+        if self.dataLink42 ~= nil then self.dataLink42:destroy(); self.dataLink42 = nil; end;
+        if self.labProfcompanionintimidacao ~= nil then self.labProfcompanionintimidacao:destroy(); self.labProfcompanionintimidacao = nil; end;
         if self.flowPart133 ~= nil then self.flowPart133:destroy(); self.flowPart133 = nil; end;
         if self.flowPart154 ~= nil then self.flowPart154:destroy(); self.flowPart154 = nil; end;
-        if self.labProfcompanionintimidacao ~= nil then self.labProfcompanionintimidacao:destroy(); self.labProfcompanionintimidacao = nil; end;
+        if self.companionanotacoesFancy ~= nil then self.companionanotacoesFancy:destroy(); self.companionanotacoesFancy = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.layout63 ~= nil then self.layout63:destroy(); self.layout63 = nil; end;
-        if self.comboBox13 ~= nil then self.comboBox13:destroy(); self.comboBox13 = nil; end;
-        if self.edit111 ~= nil then self.edit111:destroy(); self.edit111 = nil; end;
         if self.dataLink214 ~= nil then self.dataLink214:destroy(); self.dataLink214 = nil; end;
+        if self.button64 ~= nil then self.button64:destroy(); self.button64 = nil; end;
+        if self.comboBox13 ~= nil then self.comboBox13:destroy(); self.comboBox13 = nil; end;
+        if self.linUpperGridCampo8 ~= nil then self.linUpperGridCampo8:destroy(); self.linUpperGridCampo8 = nil; end;
         if self.UpperGridCampo4 ~= nil then self.UpperGridCampo4:destroy(); self.UpperGridCampo4 = nil; end;
         if self.dataLink87 ~= nil then self.dataLink87:destroy(); self.dataLink87 = nil; end;
         if self.layout41 ~= nil then self.layout41:destroy(); self.layout41 = nil; end;
-        if self.label160 ~= nil then self.label160:destroy(); self.label160 = nil; end;
+        if self.dataLink203 ~= nil then self.dataLink203:destroy(); self.dataLink203 = nil; end;
+        if self.popupEditAlcanceCurto ~= nil then self.popupEditAlcanceCurto:destroy(); self.popupEditAlcanceCurto = nil; end;
         if self.flowLineBreak7 ~= nil then self.flowLineBreak7:destroy(); self.flowLineBreak7 = nil; end;
-        if self.flowPart227 ~= nil then self.flowPart227:destroy(); self.flowPart227 = nil; end;
+        if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
+        if self.labNomeCompanion1 ~= nil then self.labNomeCompanion1:destroy(); self.labNomeCompanion1 = nil; end;
+        if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
+        if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
+        if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
+        if self.labProfenganacao ~= nil then self.labProfenganacao:destroy(); self.labProfenganacao = nil; end;
+        if self.cbProfcompanionatuacao ~= nil then self.cbProfcompanionatuacao:destroy(); self.cbProfcompanionatuacao = nil; end;
+        if self.dataLink130 ~= nil then self.dataLink130:destroy(); self.dataLink130 = nil; end;
+        if self.flowPart166 ~= nil then self.flowPart166:destroy(); self.flowPart166 = nil; end;
+        if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.label59 ~= nil then self.label59:destroy(); self.label59 = nil; end;
+        if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
+        if self.button38 ~= nil then self.button38:destroy(); self.button38 = nil; end;
+        if self.dataLink131 ~= nil then self.dataLink131:destroy(); self.dataLink131 = nil; end;
         if self.edit47 ~= nil then self.edit47:destroy(); self.edit47 = nil; end;
         if self.dataLink122 ~= nil then self.dataLink122:destroy(); self.dataLink122 = nil; end;
         if self.button52 ~= nil then self.button52:destroy(); self.button52 = nil; end;
+        if self.flowPart135 ~= nil then self.flowPart135:destroy(); self.flowPart135 = nil; end;
         if self.horzLine59 ~= nil then self.horzLine59:destroy(); self.horzLine59 = nil; end;
+        if self.button53 ~= nil then self.button53:destroy(); self.button53 = nil; end;
+        if self.horzLine36 ~= nil then self.horzLine36:destroy(); self.horzLine36 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.labProfprestidigitacao ~= nil then self.labProfprestidigitacao:destroy(); self.labProfprestidigitacao = nil; end;
+        if self.dataLink103 ~= nil then self.dataLink103:destroy(); self.dataLink103 = nil; end;
+        if self.comboBox3 ~= nil then self.comboBox3:destroy(); self.comboBox3 = nil; end;
+        if self.edit26 ~= nil then self.edit26:destroy(); self.edit26 = nil; end;
         if self.labProfcompanionforca ~= nil then self.labProfcompanionforca:destroy(); self.labProfcompanionforca = nil; end;
+        if self.dataLink143 ~= nil then self.dataLink143:destroy(); self.dataLink143 = nil; end;
+        if self.edit34 ~= nil then self.edit34:destroy(); self.edit34 = nil; end;
+        if self.label31 ~= nil then self.label31:destroy(); self.label31 = nil; end;
+        if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
+        if self.tab8 ~= nil then self.tab8:destroy(); self.tab8 = nil; end;
+        if self.dataLink195 ~= nil then self.dataLink195:destroy(); self.dataLink195 = nil; end;
+        if self.flowPart52 ~= nil then self.flowPart52:destroy(); self.flowPart52 = nil; end;
+        if self.flowPart170 ~= nil then self.flowPart170:destroy(); self.flowPart170 = nil; end;
         if self.layout54 ~= nil then self.layout54:destroy(); self.layout54 = nil; end;
         if self.comboBox12 ~= nil then self.comboBox12:destroy(); self.comboBox12 = nil; end;
         if self.label126 ~= nil then self.label126:destroy(); self.label126 = nil; end;
         if self.flowPart38 ~= nil then self.flowPart38:destroy(); self.flowPart38 = nil; end;
         if self.layout50 ~= nil then self.layout50:destroy(); self.layout50 = nil; end;
+        if self.layout127 ~= nil then self.layout127:destroy(); self.layout127 = nil; end;
         if self.dataLink115 ~= nil then self.dataLink115:destroy(); self.dataLink115 = nil; end;
         if self.label41 ~= nil then self.label41:destroy(); self.label41 = nil; end;
         if self.scrollBox2 ~= nil then self.scrollBox2:destroy(); self.scrollBox2 = nil; end;
+        if self.label72 ~= nil then self.label72:destroy(); self.label72 = nil; end;
+        if self.dataLink134 ~= nil then self.dataLink134:destroy(); self.dataLink134 = nil; end;
         if self.label12 ~= nil then self.label12:destroy(); self.label12 = nil; end;
         if self.layPrepValor ~= nil then self.layPrepValor:destroy(); self.layPrepValor = nil; end;
         if self.flowPart160 ~= nil then self.flowPart160:destroy(); self.flowPart160 = nil; end;
+        if self.cbProftolerancia ~= nil then self.cbProftolerancia:destroy(); self.cbProftolerancia = nil; end;
+        if self.rectangle28 ~= nil then self.rectangle28:destroy(); self.rectangle28 = nil; end;
+        if self.flowPart143 ~= nil then self.flowPart143:destroy(); self.flowPart143 = nil; end;
+        if self.flowPart20 ~= nil then self.flowPart20:destroy(); self.flowPart20 = nil; end;
+        if self.flowPart44 ~= nil then self.flowPart44:destroy(); self.flowPart44 = nil; end;
+        if self.labProfcompanioncarisma ~= nil then self.labProfcompanioncarisma:destroy(); self.labProfcompanioncarisma = nil; end;
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
         if self.popupEditDanoRect ~= nil then self.popupEditDanoRect:destroy(); self.popupEditDanoRect = nil; end;
         if self.edit31 ~= nil then self.edit31:destroy(); self.edit31 = nil; end;
-        if self.flowLineBreak17 ~= nil then self.flowLineBreak17:destroy(); self.flowLineBreak17 = nil; end;
-        if self.edit106 ~= nil then self.edit106:destroy(); self.edit106 = nil; end;
         if self.labProfcompanionconstituicao ~= nil then self.labProfcompanionconstituicao:destroy(); self.labProfcompanionconstituicao = nil; end;
-        if self.edit125 ~= nil then self.edit125:destroy(); self.edit125 = nil; end;
-        if self.flowPart273 ~= nil then self.flowPart273:destroy(); self.flowPart273 = nil; end;
+        if self.textEditor7 ~= nil then self.textEditor7:destroy(); self.textEditor7 = nil; end;
+        if self.dataLink139 ~= nil then self.dataLink139:destroy(); self.dataLink139 = nil; end;
+        if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
         if self.horzLine34 ~= nil then self.horzLine34:destroy(); self.horzLine34 = nil; end;
+        if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
+        if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.labUpperGridCampo9 ~= nil then self.labUpperGridCampo9:destroy(); self.labUpperGridCampo9 = nil; end;
         if self.dataLink104 ~= nil then self.dataLink104:destroy(); self.dataLink104 = nil; end;
+        if self.frame6 ~= nil then self.frame6:destroy(); self.frame6 = nil; end;
+        if self.button59 ~= nil then self.button59:destroy(); self.button59 = nil; end;
+        if self.button80 ~= nil then self.button80:destroy(); self.button80 = nil; end;
+        if self.image3 ~= nil then self.image3:destroy(); self.image3 = nil; end;
         if self.dataLink192 ~= nil then self.dataLink192:destroy(); self.dataLink192 = nil; end;
-        if self.comboBox18 ~= nil then self.comboBox18:destroy(); self.comboBox18 = nil; end;
         if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
-        if self.label114 ~= nil then self.label114:destroy(); self.label114 = nil; end;
+        if self.labProfcompanionpersuasao ~= nil then self.labProfcompanionpersuasao:destroy(); self.labProfcompanionpersuasao = nil; end;
         if self.flowPart5 ~= nil then self.flowPart5:destroy(); self.flowPart5 = nil; end;
+        if self.label114 ~= nil then self.label114:destroy(); self.label114 = nil; end;
+        if self.edtUpperGridCampo9 ~= nil then self.edtUpperGridCampo9:destroy(); self.edtUpperGridCampo9 = nil; end;
+        if self.flowLayout35 ~= nil then self.flowLayout35:destroy(); self.flowLayout35 = nil; end;
+        if self.edtUpperGridCampo3 ~= nil then self.edtUpperGridCampo3:destroy(); self.edtUpperGridCampo3 = nil; end;
         if self.edit23 ~= nil then self.edit23:destroy(); self.edit23 = nil; end;
         if self.historiaFancy ~= nil then self.historiaFancy:destroy(); self.historiaFancy = nil; end;
-        if self.flowPart262 ~= nil then self.flowPart262:destroy(); self.flowPart262 = nil; end;
+        if self.tab7 ~= nil then self.tab7:destroy(); self.tab7 = nil; end;
+        if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
+        if self.flowPart29 ~= nil then self.flowPart29:destroy(); self.flowPart29 = nil; end;
+        if self.layout112 ~= nil then self.layout112:destroy(); self.layout112 = nil; end;
         if self.labProfpercepcao ~= nil then self.labProfpercepcao:destroy(); self.labProfpercepcao = nil; end;
+        if self.imageCheckBox1 ~= nil then self.imageCheckBox1:destroy(); self.imageCheckBox1 = nil; end;
+        if self.dataLink49 ~= nil then self.dataLink49:destroy(); self.dataLink49 = nil; end;
+        if self.dataLink177 ~= nil then self.dataLink177:destroy(); self.dataLink177 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
-        if self.edit110 ~= nil then self.edit110:destroy(); self.edit110 = nil; end;
+        if self.textEditor6 ~= nil then self.textEditor6:destroy(); self.textEditor6 = nil; end;
+        if self.layPrepValorLab ~= nil then self.layPrepValorLab:destroy(); self.layPrepValorLab = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.dataLink235 ~= nil then self.dataLink235:destroy(); self.dataLink235 = nil; end;
+        if self.horzLine50 ~= nil then self.horzLine50:destroy(); self.horzLine50 = nil; end;
         if self.edit38 ~= nil then self.edit38:destroy(); self.edit38 = nil; end;
+        if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
         if self.button60 ~= nil then self.button60:destroy(); self.button60 = nil; end;
-        if self.label130 ~= nil then self.label130:destroy(); self.label130 = nil; end;
+        if self.labProfpersuasao ~= nil then self.labProfpersuasao:destroy(); self.labProfpersuasao = nil; end;
+        if self.layout49 ~= nil then self.layout49:destroy(); self.layout49 = nil; end;
+        if self.flowPart23 ~= nil then self.flowPart23:destroy(); self.flowPart23 = nil; end;
         if self.dataLink191 ~= nil then self.dataLink191:destroy(); self.dataLink191 = nil; end;
         if self.richEdit1 ~= nil then self.richEdit1:destroy(); self.richEdit1 = nil; end;
+        if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
+        if self.dataLink198 ~= nil then self.dataLink198:destroy(); self.dataLink198 = nil; end;
+        if self.button87 ~= nil then self.button87:destroy(); self.button87 = nil; end;
+        if self.label130 ~= nil then self.label130:destroy(); self.label130 = nil; end;
+        if self.dataLink37 ~= nil then self.dataLink37:destroy(); self.dataLink37 = nil; end;
+        if self.horzLine16 ~= nil then self.horzLine16:destroy(); self.horzLine16 = nil; end;
         if self.scrollBox3 ~= nil then self.scrollBox3:destroy(); self.scrollBox3 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
-        if self.label182 ~= nil then self.label182:destroy(); self.label182 = nil; end;
+        if self.flowLayout6 ~= nil then self.flowLayout6:destroy(); self.flowLayout6 = nil; end;
+        if self.dataLink29 ~= nil then self.dataLink29:destroy(); self.dataLink29 = nil; end;
+        if self.button83 ~= nil then self.button83:destroy(); self.button83 = nil; end;
+        if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
         if self.edit6 ~= nil then self.edit6:destroy(); self.edit6 = nil; end;
         if self.imageCheckBox6 ~= nil then self.imageCheckBox6:destroy(); self.imageCheckBox6 = nil; end;
-        if self.flowLineBreak12 ~= nil then self.flowLineBreak12:destroy(); self.flowLineBreak12 = nil; end;
         if self.flowPart30 ~= nil then self.flowPart30:destroy(); self.flowPart30 = nil; end;
+        if self.horzLine49 ~= nil then self.horzLine49:destroy(); self.horzLine49 = nil; end;
         if self.cbProfcompaniondestreza ~= nil then self.cbProfcompaniondestreza:destroy(); self.cbProfcompaniondestreza = nil; end;
+        if self.dataLink56 ~= nil then self.dataLink56:destroy(); self.dataLink56 = nil; end;
+        if self.dataLink129 ~= nil then self.dataLink129:destroy(); self.dataLink129 = nil; end;
         if self.label62 ~= nil then self.label62:destroy(); self.label62 = nil; end;
-        if self.popupEditAtaqueBonus ~= nil then self.popupEditAtaqueBonus:destroy(); self.popupEditAtaqueBonus = nil; end;
+        if self.edit49 ~= nil then self.edit49:destroy(); self.edit49 = nil; end;
+        if self.labProfcompanionsabedoria ~= nil then self.labProfcompanionsabedoria:destroy(); self.labProfcompanionsabedoria = nil; end;
+        if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.dataLink91 ~= nil then self.dataLink91:destroy(); self.dataLink91 = nil; end;
+        if self.popupEditAtaqueBonus ~= nil then self.popupEditAtaqueBonus:destroy(); self.popupEditAtaqueBonus = nil; end;
         if self.layout102 ~= nil then self.layout102:destroy(); self.layout102 = nil; end;
+        if self.cbProfconcentracao ~= nil then self.cbProfconcentracao:destroy(); self.cbProfconcentracao = nil; end;
         if self.flowPart99 ~= nil then self.flowPart99:destroy(); self.flowPart99 = nil; end;
+        if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
+        if self.edit25 ~= nil then self.edit25:destroy(); self.edit25 = nil; end;
         if self.horzLine42 ~= nil then self.horzLine42:destroy(); self.horzLine42 = nil; end;
+        if self.dataLink156 ~= nil then self.dataLink156:destroy(); self.dataLink156 = nil; end;
+        if self.dataLink25 ~= nil then self.dataLink25:destroy(); self.dataLink25 = nil; end;
+        if self.cbProfcompanionpersuasao ~= nil then self.cbProfcompanionpersuasao:destroy(); self.cbProfcompanionpersuasao = nil; end;
+        if self.flowPart62 ~= nil then self.flowPart62:destroy(); self.flowPart62 = nil; end;
+        if self.edtUpperGridCampo4 ~= nil then self.edtUpperGridCampo4:destroy(); self.edtUpperGridCampo4 = nil; end;
+        if self.flowPart49 ~= nil then self.flowPart49:destroy(); self.flowPart49 = nil; end;
+        if self.popupEditAtaqueAtrib ~= nil then self.popupEditAtaqueAtrib:destroy(); self.popupEditAtaqueAtrib = nil; end;
+        if self.flowPart120 ~= nil then self.flowPart120:destroy(); self.flowPart120 = nil; end;
         if self.layout79 ~= nil then self.layout79:destroy(); self.layout79 = nil; end;
+        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
+        if self.dataLink140 ~= nil then self.dataLink140:destroy(); self.dataLink140 = nil; end;
         if self.dataLink219 ~= nil then self.dataLink219:destroy(); self.dataLink219 = nil; end;
         if self.anotacoesFancy ~= nil then self.anotacoesFancy:destroy(); self.anotacoesFancy = nil; end;
-        if self.label171 ~= nil then self.label171:destroy(); self.label171 = nil; end;
-        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
-        if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
         if self.flowPart14 ~= nil then self.flowPart14:destroy(); self.flowPart14 = nil; end;
+        if self.button62 ~= nil then self.button62:destroy(); self.button62 = nil; end;
+        if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
+        if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
+        if self.labupperGridMagicBox2 ~= nil then self.labupperGridMagicBox2:destroy(); self.labupperGridMagicBox2 = nil; end;
         if self.labProfiniciativa ~= nil then self.labProfiniciativa:destroy(); self.labProfiniciativa = nil; end;
+        if self.horzLine61 ~= nil then self.horzLine61:destroy(); self.horzLine61 = nil; end;
+        if self.layEquipAttackLeft ~= nil then self.layEquipAttackLeft:destroy(); self.layEquipAttackLeft = nil; end;
         if self.cbProfcompanionatletismo ~= nil then self.cbProfcompanionatletismo:destroy(); self.cbProfcompanionatletismo = nil; end;
         if self.dataLink168 ~= nil then self.dataLink168:destroy(); self.dataLink168 = nil; end;
-        if self.label174 ~= nil then self.label174:destroy(); self.label174 = nil; end;
+        if self.flowPart164 ~= nil then self.flowPart164:destroy(); self.flowPart164 = nil; end;
         if self.dataLink39 ~= nil then self.dataLink39:destroy(); self.dataLink39 = nil; end;
+        if self.button49 ~= nil then self.button49:destroy(); self.button49 = nil; end;
         if self.flowPart83 ~= nil then self.flowPart83:destroy(); self.flowPart83 = nil; end;
+        if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
         if self.labProfcompanionmedicina ~= nil then self.labProfcompanionmedicina:destroy(); self.labProfcompanionmedicina = nil; end;
         if self.dataLink106 ~= nil then self.dataLink106:destroy(); self.dataLink106 = nil; end;
-        if self.flowPart175 ~= nil then self.flowPart175:destroy(); self.flowPart175 = nil; end;
-        if self.layout139 ~= nil then self.layout139:destroy(); self.layout139 = nil; end;
+        if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.layout57 ~= nil then self.layout57:destroy(); self.layout57 = nil; end;
+        if self.dataLink197 ~= nil then self.dataLink197:destroy(); self.dataLink197 = nil; end;
         if self.panupperGridMagicBox2 ~= nil then self.panupperGridMagicBox2:destroy(); self.panupperGridMagicBox2 = nil; end;
         if self.cbProfcompanioncarisma ~= nil then self.cbProfcompanioncarisma:destroy(); self.cbProfcompanioncarisma = nil; end;
-        if self.button101 ~= nil then self.button101:destroy(); self.button101 = nil; end;
+        if self.flowPart172 ~= nil then self.flowPart172:destroy(); self.flowPart172 = nil; end;
+        if self.layout65 ~= nil then self.layout65:destroy(); self.layout65 = nil; end;
         if self.edit35 ~= nil then self.edit35:destroy(); self.edit35 = nil; end;
+        if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
+        if self.dataLink132 ~= nil then self.dataLink132:destroy(); self.dataLink132 = nil; end;
+        if self.comboBox4 ~= nil then self.comboBox4:destroy(); self.comboBox4 = nil; end;
         if self.cbProfcompanionprestidigitacao ~= nil then self.cbProfcompanionprestidigitacao:destroy(); self.cbProfcompanionprestidigitacao = nil; end;
+        if self.dataLink59 ~= nil then self.dataLink59:destroy(); self.dataLink59 = nil; end;
         if self.flowPart130 ~= nil then self.flowPart130:destroy(); self.flowPart130 = nil; end;
-        if self.edit97 ~= nil then self.edit97:destroy(); self.edit97 = nil; end;
-        if self.dataLink236 ~= nil then self.dataLink236:destroy(); self.dataLink236 = nil; end;
-        if self.flowLayout41 ~= nil then self.flowLayout41:destroy(); self.flowLayout41 = nil; end;
+        if self.edtUpperGridCampo2 ~= nil then self.edtUpperGridCampo2:destroy(); self.edtUpperGridCampo2 = nil; end;
+        if self.checkBox6 ~= nil then self.checkBox6:destroy(); self.checkBox6 = nil; end;
+        if self.cbProfpericiacarisma ~= nil then self.cbProfpericiacarisma:destroy(); self.cbProfpericiacarisma = nil; end;
+        if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
+        if self.labProfcompanionconcentracao ~= nil then self.labProfcompanionconcentracao:destroy(); self.labProfcompanionconcentracao = nil; end;
+        if self.layout99 ~= nil then self.layout99:destroy(); self.layout99 = nil; end;
+        if self.rectangle22 ~= nil then self.rectangle22:destroy(); self.rectangle22 = nil; end;
         if self.flowPart50 ~= nil then self.flowPart50:destroy(); self.flowPart50 = nil; end;
+        if self.dataLink221 ~= nil then self.dataLink221:destroy(); self.dataLink221 = nil; end;
+        if self.label121 ~= nil then self.label121:destroy(); self.label121 = nil; end;
         if self.layout81 ~= nil then self.layout81:destroy(); self.layout81 = nil; end;
-        if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.rclEquipsDefense ~= nil then self.rclEquipsDefense:destroy(); self.rclEquipsDefense = nil; end;
         if self.layout45 ~= nil then self.layout45:destroy(); self.layout45 = nil; end;
         if self.flowPart47 ~= nil then self.flowPart47:destroy(); self.flowPart47 = nil; end;
         if self.label64 ~= nil then self.label64:destroy(); self.label64 = nil; end;
         if self.flowPart67 ~= nil then self.flowPart67:destroy(); self.flowPart67 = nil; end;
+        if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
+        if self.flowPart31 ~= nil then self.flowPart31:destroy(); self.flowPart31 = nil; end;
         if self.dataLink146 ~= nil then self.dataLink146:destroy(); self.dataLink146 = nil; end;
-        if self.label173 ~= nil then self.label173:destroy(); self.label173 = nil; end;
+        if self.layout46 ~= nil then self.layout46:destroy(); self.layout46 = nil; end;
         if self.labProfbedoria ~= nil then self.labProfbedoria:destroy(); self.labProfbedoria = nil; end;
         if self.horzLine8 ~= nil then self.horzLine8:destroy(); self.horzLine8 = nil; end;
+        if self.labUpperGridCampo8 ~= nil then self.labUpperGridCampo8:destroy(); self.labUpperGridCampo8 = nil; end;
         if self.button34 ~= nil then self.button34:destroy(); self.button34 = nil; end;
-        if self.flowPart229 ~= nil then self.flowPart229:destroy(); self.flowPart229 = nil; end;
+        if self.dataLink125 ~= nil then self.dataLink125:destroy(); self.dataLink125 = nil; end;
+        if self.rectangle25 ~= nil then self.rectangle25:destroy(); self.rectangle25 = nil; end;
+        if self.flowPart12 ~= nil then self.flowPart12:destroy(); self.flowPart12 = nil; end;
+        if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.flowPart168 ~= nil then self.flowPart168:destroy(); self.flowPart168 = nil; end;
-        if self.label149 ~= nil then self.label149:destroy(); self.label149 = nil; end;
+        if self.dataLink41 ~= nil then self.dataLink41:destroy(); self.dataLink41 = nil; end;
+        if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
         if self.dataLink224 ~= nil then self.dataLink224:destroy(); self.dataLink224 = nil; end;
+        if self.btnEquipDefenseNew ~= nil then self.btnEquipDefenseNew:destroy(); self.btnEquipDefenseNew = nil; end;
+        if self.button50 ~= nil then self.button50:destroy(); self.button50 = nil; end;
         if self.button69 ~= nil then self.button69:destroy(); self.button69 = nil; end;
+        if self.button48 ~= nil then self.button48:destroy(); self.button48 = nil; end;
+        if self.dataLink36 ~= nil then self.dataLink36:destroy(); self.dataLink36 = nil; end;
         if self.flowPart114 ~= nil then self.flowPart114:destroy(); self.flowPart114 = nil; end;
+        if self.edtUpperGridCampo11 ~= nil then self.edtUpperGridCampo11:destroy(); self.edtUpperGridCampo11 = nil; end;
+        if self.layout28 ~= nil then self.layout28:destroy(); self.layout28 = nil; end;
+        if self.popupEditDuracaoUnidade ~= nil then self.popupEditDuracaoUnidade:destroy(); self.popupEditDuracaoUnidade = nil; end;
         if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
         if self.layout19 ~= nil then self.layout19:destroy(); self.layout19 = nil; end;
         if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
         if self.labEquipDefense ~= nil then self.labEquipDefense:destroy(); self.labEquipDefense = nil; end;
+        if self.flowLayout17 ~= nil then self.flowLayout17:destroy(); self.flowLayout17 = nil; end;
         if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.flowLineBreak1 ~= nil then self.flowLineBreak1:destroy(); self.flowLineBreak1 = nil; end;
+        if self.flowPart81 ~= nil then self.flowPart81:destroy(); self.flowPart81 = nil; end;
         if self.dataLink176 ~= nil then self.dataLink176:destroy(); self.dataLink176 = nil; end;
-        if self.flowPart269 ~= nil then self.flowPart269:destroy(); self.flowPart269 = nil; end;
+        if self.button95 ~= nil then self.button95:destroy(); self.button95 = nil; end;
         if self.edit30 ~= nil then self.edit30:destroy(); self.edit30 = nil; end;
+        if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
         if self.flowPart159 ~= nil then self.flowPart159:destroy(); self.flowPart159 = nil; end;
         if self.button57 ~= nil then self.button57:destroy(); self.button57 = nil; end;
+        if self.flowLayout21 ~= nil then self.flowLayout21:destroy(); self.flowLayout21 = nil; end;
         if self.rclContadores ~= nil then self.rclContadores:destroy(); self.rclContadores = nil; end;
-        if self.comboBox25 ~= nil then self.comboBox25:destroy(); self.comboBox25 = nil; end;
-        if self.flowPart264 ~= nil then self.flowPart264:destroy(); self.flowPart264 = nil; end;
+        if self.edit55 ~= nil then self.edit55:destroy(); self.edit55 = nil; end;
+        if self.label118 ~= nil then self.label118:destroy(); self.label118 = nil; end;
         if self.flowLineBreak3 ~= nil then self.flowLineBreak3:destroy(); self.flowLineBreak3 = nil; end;
+        if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
         if self.horzLine32 ~= nil then self.horzLine32:destroy(); self.horzLine32 = nil; end;
         if self.dataLink66 ~= nil then self.dataLink66:destroy(); self.dataLink66 = nil; end;
-        if self.edit65 ~= nil then self.edit65:destroy(); self.edit65 = nil; end;
+        if self.layout53 ~= nil then self.layout53:destroy(); self.layout53 = nil; end;
         if self.flowPart63 ~= nil then self.flowPart63:destroy(); self.flowPart63 = nil; end;
         if self.labNome1 ~= nil then self.labNome1:destroy(); self.labNome1 = nil; end;
         if self.edit39 ~= nil then self.edit39:destroy(); self.edit39 = nil; end;
+        if self.flowPart98 ~= nil then self.flowPart98:destroy(); self.flowPart98 = nil; end;
         if self.imageCheckBox5 ~= nil then self.imageCheckBox5:destroy(); self.imageCheckBox5 = nil; end;
-        if self.layout131 ~= nil then self.layout131:destroy(); self.layout131 = nil; end;
-        if self.flowPart185 ~= nil then self.flowPart185:destroy(); self.flowPart185 = nil; end;
-        if self.flowPart196 ~= nil then self.flowPart196:destroy(); self.flowPart196 = nil; end;
+        if self.flowPart70 ~= nil then self.flowPart70:destroy(); self.flowPart70 = nil; end;
+        if self.flowPart11 ~= nil then self.flowPart11:destroy(); self.flowPart11 = nil; end;
+        if self.dataLink124 ~= nil then self.dataLink124:destroy(); self.dataLink124 = nil; end;
+        if self.dataLink180 ~= nil then self.dataLink180:destroy(); self.dataLink180 = nil; end;
+        if self.dataLink52 ~= nil then self.dataLink52:destroy(); self.dataLink52 = nil; end;
+        if self.button12 ~= nil then self.button12:destroy(); self.button12 = nil; end;
+        if self.popupEditAlcanceLongo ~= nil then self.popupEditAlcanceLongo:destroy(); self.popupEditAlcanceLongo = nil; end;
+        if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
+        if self.comboBox9 ~= nil then self.comboBox9:destroy(); self.comboBox9 = nil; end;
         if self.horzLine15 ~= nil then self.horzLine15:destroy(); self.horzLine15 = nil; end;
         if self.dataLink26 ~= nil then self.dataLink26:destroy(); self.dataLink26 = nil; end;
         if self.cbProfcompanionnatureza ~= nil then self.cbProfcompanionnatureza:destroy(); self.cbProfcompanionnatureza = nil; end;
+        if self.flowPart86 ~= nil then self.flowPart86:destroy(); self.flowPart86 = nil; end;
         if self.flowPart111 ~= nil then self.flowPart111:destroy(); self.flowPart111 = nil; end;
-        if self.edit119 ~= nil then self.edit119:destroy(); self.edit119 = nil; end;
+        if self.comboBox8 ~= nil then self.comboBox8:destroy(); self.comboBox8 = nil; end;
+        if self.tcPopupEdit ~= nil then self.tcPopupEdit:destroy(); self.tcPopupEdit = nil; end;
+        if self.flowLayout34 ~= nil then self.flowLayout34:destroy(); self.flowLayout34 = nil; end;
+        if self.flowPart146 ~= nil then self.flowPart146:destroy(); self.flowPart146 = nil; end;
+        if self.linUpperGridCampo6 ~= nil then self.linUpperGridCampo6:destroy(); self.linUpperGridCampo6 = nil; end;
+        if self.flowPart17 ~= nil then self.flowPart17:destroy(); self.flowPart17 = nil; end;
         if self.dataLink48 ~= nil then self.dataLink48:destroy(); self.dataLink48 = nil; end;
         if self.button25 ~= nil then self.button25:destroy(); self.button25 = nil; end;
-        if self.popupEditContadorUsosTotal ~= nil then self.popupEditContadorUsosTotal:destroy(); self.popupEditContadorUsosTotal = nil; end;
+        if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
         if self.imageCheckBox3 ~= nil then self.imageCheckBox3:destroy(); self.imageCheckBox3 = nil; end;
+        if self.flowPart61 ~= nil then self.flowPart61:destroy(); self.flowPart61 = nil; end;
         if self.flowPart27 ~= nil then self.flowPart27:destroy(); self.flowPart27 = nil; end;
+        if self.checkBox2 ~= nil then self.checkBox2:destroy(); self.checkBox2 = nil; end;
+        if self.popupEditContadorUsosTotal ~= nil then self.popupEditContadorUsosTotal:destroy(); self.popupEditContadorUsosTotal = nil; end;
+        if self.flowLineBreak8 ~= nil then self.flowLineBreak8:destroy(); self.flowLineBreak8 = nil; end;
+        if self.flowPart171 ~= nil then self.flowPart171:destroy(); self.flowPart171 = nil; end;
         if self.historiaMerda ~= nil then self.historiaMerda:destroy(); self.historiaMerda = nil; end;
+        if self.dataLink216 ~= nil then self.dataLink216:destroy(); self.dataLink216 = nil; end;
         if self.flowPart58 ~= nil then self.flowPart58:destroy(); self.flowPart58 = nil; end;
+        if self.cbProfcarisma ~= nil then self.cbProfcarisma:destroy(); self.cbProfcarisma = nil; end;
+        if self.layout84 ~= nil then self.layout84:destroy(); self.layout84 = nil; end;
         if self.button81 ~= nil then self.button81:destroy(); self.button81 = nil; end;
+        if self.cbProfcompanionintimidacao ~= nil then self.cbProfcompanionintimidacao:destroy(); self.cbProfcompanionintimidacao = nil; end;
         if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
+        if self.layout96 ~= nil then self.layout96:destroy(); self.layout96 = nil; end;
         if self.dataLink109 ~= nil then self.dataLink109:destroy(); self.dataLink109 = nil; end;
+        if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
         if self.labProfcarisma ~= nil then self.labProfcarisma:destroy(); self.labProfcarisma = nil; end;
+        if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.UpperGridCampo9 ~= nil then self.UpperGridCampo9:destroy(); self.UpperGridCampo9 = nil; end;
+        if self.dataLink90 ~= nil then self.dataLink90:destroy(); self.dataLink90 = nil; end;
+        if self.flowPart119 ~= nil then self.flowPart119:destroy(); self.flowPart119 = nil; end;
+        if self.flowLayout28 ~= nil then self.flowLayout28:destroy(); self.flowLayout28 = nil; end;
+        if self.button46 ~= nil then self.button46:destroy(); self.button46 = nil; end;
         if self.flowPart21 ~= nil then self.flowPart21:destroy(); self.flowPart21 = nil; end;
         if self.dataLink51 ~= nil then self.dataLink51:destroy(); self.dataLink51 = nil; end;
-        if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
+        if self.dataLink88 ~= nil then self.dataLink88:destroy(); self.dataLink88 = nil; end;
         if self.labProfpericiacarisma ~= nil then self.labProfpericiacarisma:destroy(); self.labProfpericiacarisma = nil; end;
-        if self.flowPart213 ~= nil then self.flowPart213:destroy(); self.flowPart213 = nil; end;
+        if self.edit22 ~= nil then self.edit22:destroy(); self.edit22 = nil; end;
+        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.horzLine13 ~= nil then self.horzLine13:destroy(); self.horzLine13 = nil; end;
-        if self.flowPart266 ~= nil then self.flowPart266:destroy(); self.flowPart266 = nil; end;
+        if self.rectangle13 ~= nil then self.rectangle13:destroy(); self.rectangle13 = nil; end;
         if self.dataLink222 ~= nil then self.dataLink222:destroy(); self.dataLink222 = nil; end;
         if self.horzLine24 ~= nil then self.horzLine24:destroy(); self.horzLine24 = nil; end;
-        if self.flowPart206 ~= nil then self.flowPart206:destroy(); self.flowPart206 = nil; end;
         if self.button19 ~= nil then self.button19:destroy(); self.button19 = nil; end;
         if self.dataLink178 ~= nil then self.dataLink178:destroy(); self.dataLink178 = nil; end;
+        if self.layout86 ~= nil then self.layout86:destroy(); self.layout86 = nil; end;
+        if self.layout85 ~= nil then self.layout85:destroy(); self.layout85 = nil; end;
         if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
-        if self.dias ~= nil then self.dias:destroy(); self.dias = nil; end;
         if self.labProftolerancia ~= nil then self.labProftolerancia:destroy(); self.labProftolerancia = nil; end;
         if self.tab14 ~= nil then self.tab14:destroy(); self.tab14 = nil; end;
+        if self.layout91 ~= nil then self.layout91:destroy(); self.layout91 = nil; end;
         if self.anotacoesMerda ~= nil then self.anotacoesMerda:destroy(); self.anotacoesMerda = nil; end;
-        if self.button89 ~= nil then self.button89:destroy(); self.button89 = nil; end;
+        if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
         self:_oldLFMDestroy();
     end;
 
