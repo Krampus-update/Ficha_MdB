@@ -133,7 +133,6 @@
 					</dataScopeBox>
 				</layout>
 			</flowPart>
-
 			<flowLineBreak/>
 
 			<!-- Equipamentos de Defesa -->
@@ -148,12 +147,11 @@
 					<button name="btnEquipDefenseNew" align="left" onClick="self.rclEquipsDefense:append();" text="Novo Item" width="160" margins="{top=4, bottom=4}"/>
 				</layout>
 			</flowPart>
-
 			<flowLineBreak/>
 
 			<!-- Outros Equipamentos e DINHEIRO -->
 			<flowPart class="tile" height="400" frameStyle="frames/panel4transp/frame.xml" minScaledWidth="290">
-				<layout align="left" width="250" margins="{left=-20}">
+				<layout align="left" width="150" margins="{left=-20}">
 					<boxDinheiro align="top" text="1" field="equipamento.dinheiro.1"/>
 					<boxDinheiro align="top" text="2" field="equipamento.dinheiro.2"/>
 					<boxDinheiro align="top" text="3" field="equipamento.dinheiro.3"/>
@@ -175,6 +173,7 @@
 				<textEditor name="editorMerda" align="client" margins="{left=10, right=10}" field="equipamento.outros" fontSize="15" visible="true"/>
 				<label align="bottom" autoSize="true" text="OUTROS EQUIPAMENTOS" fontSize="12" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" onResize="recalcularTamanhoEquipsDefesa();"/>
 			</flowPart>
+
 		</flowLayout>
 	</scrollBox>
 </rectangle>
