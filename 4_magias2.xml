@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<rectangle class="fundo">
+<rectangle class="fundo" strokeColor="white" strokeSize="1">
 	<!-- Niveis de magia -->
 	<recordList name="rclMagiasNiveis" field="magias.niveis" templateForm="frmNivelDeMagia" align="client"/>
 	<dataLink fields="{'descansoLongo', 'descansoCurto'}">

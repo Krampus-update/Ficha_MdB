@@ -6,7 +6,7 @@
 	<optAtaque align="top" enabled="true" alcanceOuNome="nome"/>
 
 
-	<dataLink field="nome" defaultValue="NOME"/>
+	<dataLink field="nome" defaultValue=""/>
 	<dataLink field="ataque" defaultValue=""/>
 	<dataLink field="dano" defaultValue=""/>
 	<dataLink field="tipo" defaultValue=""/>
