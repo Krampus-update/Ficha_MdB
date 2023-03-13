@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<form name="frmFichaMdB" align="client" class="transparente vcenter" margins="{top=1}">
+
 
 <template name="Descricao">
 	<label left="$(left1)" top="$(top)" width="90" height="20" text="$(text)" horzTextAlign="center"/>
 	<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
 </template>
-
-<form name="frmMdB" align="client" class="transparente vcenter" margins="{top=1}">
 	<scrollBox align="client">
 		<rectangle class="fundo">
 			<scrollBox align="client">
