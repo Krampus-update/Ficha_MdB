@@ -33,8 +33,17 @@
 		</tab>
 
 		<tab title="DIARIO">
-			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
-					<textEditor name="historiaFancy" align="client" field="historia.texto2" class="transparente" margins="{top=2}" fontSize="16" visible="true"/>
+			<rectangle class="fundo">
+					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
+						<event name="onChange">
+							if sheet then
+								self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
+								self.historiaMerda:setVisible(not (sheet.historia.usarEditorFancy));
+							end;
+						</event>
+					</checkBox>
+					<richEdit name="historiaFancy" align="client" field="historia.texto2" class="transparente" defaultFontColor="white" hideSelection="false" defaultFontSize="16" animateImages="true" margins="{top=2}" visible="false"/>
+					<textEditor name="historiaMerda" align="client" field="historia.texto" class="transparente" margins="{top=2}" fontSize="16" visible="true"/>
 			</rectangle>
 		</tab>
 
@@ -47,13 +56,32 @@
 		</tab>
 
 		<tab title="C.ANOTAÇÕES">
-			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
-				<textEditor name="companionanotacoesFancy" align="client" field="companion.anotacoes2" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
+			<rectangle class="fundo">
+				<checkBox align="right" width="15" field="companion.anotacoes_melhorado">
+					<event name="onChange">
+						if sheet then
+							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
+							self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
+						end;
+					</event>
+				</checkBox>
+				<richEdit name="companionanotacoesFancy" align="client" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" 
+				margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
+				<textEditor name="companionanotacoesMerda" align="client" field="companion.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
 		</tab>
 
 		<tab title="ANOTAÇÕES">
-			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
+			<rectangle class="fundo">
+				<checkBox align="right" width="15" field="outros.anotacoes_melhorado">
+					<event name="onChange">
+						if sheet then
+							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
+							self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
+						end;
+					</event>
+				</checkBox>
+				<richEdit name="anotacoesFancy" align="client" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 				<textEditor name="anotacoesFancy" align="client" field="outros.anotacoes2" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
 		</tab>
