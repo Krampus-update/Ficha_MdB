@@ -84,7 +84,19 @@
 
 	<template name="colorSelection">
 		<label left="0" top="$(top)" width="80" height="20" text="$(place): " horzTextAlign="center"/>
-		<comboBox left="85" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
+		<edit left="85" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>
+		<dataLink field="$(field)" defaultValue="$defaultValue">
+		        <event name="onChange">
+		            if sheet==nil then return end;
+					local color = sheet.$(field) or "#505050";
+
+		            local rectangles = findClass("rectangle");
+
+					for i=1, #rectangles, 1 do 
+						rectangles[i].color = color;
+					end;
+		        </event>
+			</dataLink>
 	</template>
 
     <scrollBox align="client">
