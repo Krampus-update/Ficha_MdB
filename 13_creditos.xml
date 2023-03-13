@@ -143,8 +143,7 @@
 		        </event>
 			</dataLink>
 
-			<label left="0" top="85" width="80" height="20" text="Linhas " horzTextAlign="center"/>
-			<colorSelection top="85" field="colorStroke"/>
+			<colorSelection top="85" field="colorStroke" place="Linhas: "/>
 			<dataLink field="colorStroke" defaultValue="#FFFFFF">
 		        <event name="onChange">
 		            if sheet==nil then return end;
