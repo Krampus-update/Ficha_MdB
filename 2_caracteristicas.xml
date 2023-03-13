@@ -3,7 +3,6 @@
 	<scrollBox align="client">
 
 <!-- trocar Form por isso e ajustar os campos
-
 <rectangle class="fundo">
 	<scrollBox align="client">
 		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraXLayout">
@@ -11,7 +10,6 @@
 		</flowLayout>
 	</scrollBox>
 </rectangle>
-
  -->
  
 		<template name="Descricao">
