@@ -4944,7 +4944,7 @@ require('mudaNick.lua')
     obj.image1:setParent(obj.frame2);
     obj.image1:setAlign("client");
     obj.image1:setStyle("proportional");
-    obj.image1:setField("imagens.aparencia.frente");
+    obj.image1:setField("imagens.aparencia");
     obj.image1:setMargins({top=2});
     obj.image1:setEditable(true);
     lfm_setPropAsString(obj.image1, "animate",  "true");
