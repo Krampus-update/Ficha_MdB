@@ -83,7 +83,7 @@
 	</script>
 
 	<template name="colorSelection">
-		<label left="0" top="$(top)" width="90" height="20" text="$(place): " horzTextAlign="center"/>
+		<label left="0" top="$(top)" width="80" height="20" text="$(place): " horzTextAlign="center"/>
 		<comboBox left="95" top="$(top)" width="90" field="$(field)" items="{ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' }" values="{ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' }"/>	
 	</template>
 
