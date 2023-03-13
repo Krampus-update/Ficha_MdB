@@ -15,7 +15,7 @@
 	</dataLink>
 
 	<!-- Cabeçalho no pé da pagina -->
-	<flowLayout align="bottom" frameStyle="frames/upperInfoGrid/frame.xml" autoHeight="true" horzAlign="justify">
+	<flowLayout align="bottom" frameStyle="frames/panel4transp/frame.xml" autoHeight="true" horzAlign="justify">
 		<flowPart width="1"/>
 		<upperGridMagic2ComboBox height="40" minWidth="165" field="magias.habilidadeDeConjuracao" titulo="HABILIDADE DE CONJURAÇÃO" 
 		items="{'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
