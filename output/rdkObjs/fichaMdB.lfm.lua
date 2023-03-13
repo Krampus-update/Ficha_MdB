@@ -8642,6 +8642,8 @@ self.upperGridMagicBox3._RecalcSize();
     obj.historiaFancy:setName("historiaFancy");
     obj.historiaFancy:setAlign("client");
     obj.historiaFancy:setField("historia.texto2");
+    lfm_setPropAsString(obj.historiaFancy, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.historiaFancy, "defaultFontColor",  "white");
     lfm_setPropAsString(obj.historiaFancy, "hideSelection",  "false");
     lfm_setPropAsString(obj.historiaFancy, "defaultFontSize",  "16");
     lfm_setPropAsString(obj.historiaFancy, "animateImages",  "true");
@@ -15628,16 +15630,34 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle28:setXradius(10);
     obj.rectangle28:setYradius(10);
 
+    obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox10:setParent(obj.rectangle28);
+    obj.checkBox10:setAlign("right");
+    obj.checkBox10:setWidth(15);
+    obj.checkBox10:setField("companion.anotacoes_melhorado");
+    obj.checkBox10:setName("checkBox10");
+
     obj.companionanotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
     obj.companionanotacoesFancy:setParent(obj.rectangle28);
     obj.companionanotacoesFancy:setName("companionanotacoesFancy");
     obj.companionanotacoesFancy:setAlign("client");
+    lfm_setPropAsString(obj.companionanotacoesFancy, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.companionanotacoesFancy, "defaultFontColor",  "white");
     obj.companionanotacoesFancy:setField("companion.anotacoes2");
     lfm_setPropAsString(obj.companionanotacoesFancy, "hideSelection",  "false");
     lfm_setPropAsString(obj.companionanotacoesFancy, "defaultFontSize",  "15");
     lfm_setPropAsString(obj.companionanotacoesFancy, "animateImages",  "true");
     obj.companionanotacoesFancy:setMargins({left=2, right=2, top=2, bottom=2});
     obj.companionanotacoesFancy:setVisible(false);
+
+    obj.companionanotacoesMerda = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.companionanotacoesMerda:setParent(obj.rectangle28);
+    obj.companionanotacoesMerda:setName("companionanotacoesMerda");
+    obj.companionanotacoesMerda:setAlign("client");
+    obj.companionanotacoesMerda:setField("companion.anotacoes");
+    obj.companionanotacoesMerda:setMargins({left=2, right=2, top=2, bottom=2});
+    obj.companionanotacoesMerda:setVisible(true);
+    obj.companionanotacoesMerda:setTransparent(true);
 
     obj.tab14 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab14:setParent(obj.pgcPrincipal);
@@ -15654,17 +15674,19 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle29:setXradius(10);
     obj.rectangle29:setYradius(10);
 
-    obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.rectangle29);
-    obj.checkBox10:setAlign("right");
-    obj.checkBox10:setWidth(15);
-    obj.checkBox10:setField("outros.anotacoes_melhorado");
-    obj.checkBox10:setName("checkBox10");
+    obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
+    obj.checkBox11:setParent(obj.rectangle29);
+    obj.checkBox11:setAlign("right");
+    obj.checkBox11:setWidth(15);
+    obj.checkBox11:setField("outros.anotacoes_melhorado");
+    obj.checkBox11:setName("checkBox11");
 
     obj.anotacoesFancy = GUI.fromHandle(_obj_newObject("richEdit"));
     obj.anotacoesFancy:setParent(obj.rectangle29);
     obj.anotacoesFancy:setName("anotacoesFancy");
     obj.anotacoesFancy:setAlign("client");
+    lfm_setPropAsString(obj.anotacoesFancy, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.anotacoesFancy, "defaultFontColor",  "white");
     obj.anotacoesFancy:setField("outros.anotacoes2");
     lfm_setPropAsString(obj.anotacoesFancy, "hideSelection",  "false");
     lfm_setPropAsString(obj.anotacoesFancy, "defaultFontSize",  "15");
@@ -15676,7 +15698,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.anotacoesMerda:setParent(obj.rectangle29);
     obj.anotacoesMerda:setName("anotacoesMerda");
     obj.anotacoesMerda:setAlign("client");
-    obj.anotacoesMerda:setField("outros.anotacoes2");
+    obj.anotacoesMerda:setField("outros.anotacoes");
     obj.anotacoesMerda:setMargins({left=2, right=2, top=2, bottom=2});
     obj.anotacoesMerda:setVisible(true);
     obj.anotacoesMerda:setTransparent(true);
@@ -22063,12 +22085,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event725 = obj.checkBox10:addEventListener("onChange",
         function (_)
             if sheet then
+            							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
+            							self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
+            						end;
+        end, obj);
+
+    obj._e_event726 = obj.checkBox11:addEventListener("onChange",
+        function (_)
+            if sheet then
             							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
             							self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
             						end;
         end, obj);
 
-    obj._e_event726 = obj.dataLink236:addEventListener("onChange",
+    obj._e_event727 = obj.dataLink236:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet == nil then return end;
             					local theme = sheet.theme;
@@ -22085,7 +22115,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event727 = obj.dataLink237:addEventListener("onChange",
+    obj._e_event728 = obj.dataLink237:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local color = sheet.colorBackground or "#505050";
@@ -22097,7 +22127,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event728 = obj.dataLink238:addEventListener("onChange",
+    obj._e_event729 = obj.dataLink238:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local strokeColor = sheet.colorStroke or "#FFFFFF";
@@ -22113,7 +22143,7 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event729 = obj.dataLink239:addEventListener("onChange",
+    obj._e_event730 = obj.dataLink239:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             if sheet==nil then return end;
             					local fontColor = sheet.colorFont or "#FFFFFF";
@@ -22151,22 +22181,22 @@ self.upperGridMagicBox3._RecalcSize();
             					end;
         end, obj);
 
-    obj._e_event730 = obj.button100:addEventListener("onClick",
+    obj._e_event731 = obj.button100:addEventListener("onClick",
         function (_)
             GUI.openInBrowser(' ')
         end, obj);
 
-    obj._e_event731 = obj.button101:addEventListener("onClick",
+    obj._e_event732 = obj.button101:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://discord.gg/yc9jCvKE3t');
         end, obj);
 
-    obj._e_event732 = obj.button102:addEventListener("onClick",
+    obj._e_event733 = obj.button102:addEventListener("onClick",
         function (_)
             GUI.openInBrowser('https://chat.whatsapp.com/BuFcGPgSRNqGwHlMHmFxE5');
         end, obj);
 
-    obj._e_event733 = obj.button103:addEventListener("onClick",
+    obj._e_event734 = obj.button103:addEventListener("onClick",
         function (_)
             local xml = NDB.exportXML(sheet);
             
@@ -22183,7 +22213,7 @@ self.upperGridMagicBox3._RecalcSize();
             						end);
         end, obj);
 
-    obj._e_event734 = obj.button104:addEventListener("onClick",
+    obj._e_event735 = obj.button104:addEventListener("onClick",
         function (_)
             Dialogs.openFile("Importar Ficha", "application/xml", false, 
             						function(arquivos)
@@ -22199,6 +22229,7 @@ self.upperGridMagicBox3._RecalcSize();
         end, obj);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event735);
         __o_rrpgObjs.removeEventListenerById(self._e_event734);
         __o_rrpgObjs.removeEventListenerById(self._e_event733);
         __o_rrpgObjs.removeEventListenerById(self._e_event732);
@@ -23536,6 +23567,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.popupEditAlcanceCurto ~= nil then self.popupEditAlcanceCurto:destroy(); self.popupEditAlcanceCurto = nil; end;
         if self.horzLine10 ~= nil then self.horzLine10:destroy(); self.horzLine10 = nil; end;
         if self.labNomeCompanion1 ~= nil then self.labNomeCompanion1:destroy(); self.labNomeCompanion1 = nil; end;
+        if self.checkBox11 ~= nil then self.checkBox11:destroy(); self.checkBox11 = nil; end;
         if self.button2 ~= nil then self.button2:destroy(); self.button2 = nil; end;
         if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
         if self.popClima ~= nil then self.popClima:destroy(); self.popClima = nil; end;
@@ -24342,6 +24374,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowLayout2 ~= nil then self.flowLayout2:destroy(); self.flowLayout2 = nil; end;
         if self.layNomeHolderFrente ~= nil then self.layNomeHolderFrente:destroy(); self.layNomeHolderFrente = nil; end;
         if self.layout31 ~= nil then self.layout31:destroy(); self.layout31 = nil; end;
+        if self.companionanotacoesMerda ~= nil then self.companionanotacoesMerda:destroy(); self.companionanotacoesMerda = nil; end;
         if self.dataLink27 ~= nil then self.dataLink27:destroy(); self.dataLink27 = nil; end;
         if self.label10 ~= nil then self.label10:destroy(); self.label10 = nil; end;
         if self.labProfintimidacao ~= nil then self.labProfintimidacao:destroy(); self.labProfintimidacao = nil; end;
