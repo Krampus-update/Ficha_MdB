@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rectangle class="fundo">
-	<scrollBox align="client">
-		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraXLayout">
+<form name="frmFichaRPGmeister11_svg" align="client" theme="dark">
+<rectangle class="fundo" align="client" color="black" strokeColor="white" strokeSize="1">
 
 
 <!-- trocar Form por isso e ajustar os campos
@@ -249,5 +248,6 @@
 			</button>
 		</layout>
 		</flowLayout>
-	</scrollBox>
-</rectangle>
+    </scrollBox>
+</rectangle> 
+</form>
