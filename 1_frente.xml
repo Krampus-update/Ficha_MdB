@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rectangle class="fundo">
+<rectangle class="fundo" strokeColor="white" strokeSize="1">
 	<script> require("common.lua"); </script>
 	<scrollBox align="client">
 		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraFrenteLayout">
