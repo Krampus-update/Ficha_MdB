@@ -33,7 +33,7 @@
 		</tab>
 
 		<tab title="DIARIO">
-			<rectangle class="fundo">
+			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
 					<checkBox align="right" width="15" field="historia.usarEditorFancy" margins="{left = 2, right = -2}">
 						<event name="onChange">
 							if sheet then
@@ -56,14 +56,14 @@
 		</tab>
 
 		<tab title="C.ANOTAÇÕES">
-			<rectangle class="fundo">
+			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
 				<richEdit name="companionanotacoesFancy" align="client" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" 
 				margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
 			</rectangle>
 		</tab>
 
 		<tab title="ANOTAÇÕES">
-			<rectangle class="fundo">
+			<rectangle class="fundo" align="client" strokeColor="white" strokeSize="1">
 				<checkBox align="right" width="15" field="outros.anotacoes_melhorado">
 					<event name="onChange">
 						if sheet then
@@ -73,7 +73,7 @@
 					</event>
 				</checkBox>
 				<richEdit name="anotacoesFancy" align="client" defaultFontColor="white" field="outros.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
-				<textEditor name="anotacoesFancy" align="client" field="outros.anotacoes2" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
+				<textEditor name="anotacoesMerda" align="client" field="outros.anotacoes2" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
 		</tab>
 
