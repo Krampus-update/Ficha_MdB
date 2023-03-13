@@ -22,7 +22,7 @@
 				<!-- ORIGEM; REGIÃO; PASSADO -->	
 						<!-- ORIGEM é o equilavente a raça, por exemplo Humano -->
 						<upperGridCampo field="raca" minWidth="100" titulo="ORIGEM"/>
-						<upperGridCampo field="regiao" titulo="REGIÃO"/>
+						<upperGridCampo field="caracteristicas.regiao" titulo="REGIÃO"/>
 						<!-- PASSADO é o equilavente a antecedente, por exemplo Sabio -->
 						<upperGridCampo field="antecedente" titulo="PASSADO"/>
 				<!-- ALINHAMENTO; DEVOÇÕES; -->	
