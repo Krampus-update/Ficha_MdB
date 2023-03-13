@@ -57,17 +57,8 @@
 
 		<tab title="C.ANOTAÇÕES">
 			<rectangle class="fundo">
-				<checkBox align="right" width="15" field="companion.anotacoes_melhorado">
-					<event name="onChange">
-						if sheet then
-							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
-							self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
-						end;
-					</event>
-				</checkBox>
 				<richEdit name="companionanotacoesFancy" align="client" defaultFontColor="white" field="companion.anotacoes2" hideSelection="false" defaultFontSize="15" animateImages="true" 
 				margins="{left=2, right=2, top=2, bottom=2}" visible="false"/>
-				<textEditor name="companionanotacoesMerda" align="client" field="companion.anotacoes" class="transparente"  margins="{left=2, right=2, top=2, bottom=2}" visible="true"/>
 			</rectangle>
 		</tab>
 
