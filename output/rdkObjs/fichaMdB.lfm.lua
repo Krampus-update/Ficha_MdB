@@ -8548,6 +8548,8 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.rectangle22 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle22:setParent(obj.tab8);
+    obj.rectangle22:setStrokeColor("white");
+    obj.rectangle22:setStrokeSize(1);
     obj.rectangle22:setName("rectangle22");
     obj.rectangle22:setAlign("client");
     obj.rectangle22:setColor("#40000000");
@@ -8594,6 +8596,8 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.rectangle23 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle23:setParent(obj.tab9);
+    obj.rectangle23:setStrokeColor("white");
+    obj.rectangle23:setStrokeSize(1);
     obj.rectangle23:setName("rectangle23");
     obj.rectangle23:setAlign("client");
     obj.rectangle23:setColor("#40000000");
@@ -8672,6 +8676,8 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.rectangle25 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle25:setParent(obj.tab11);
+    obj.rectangle25:setStrokeColor("white");
+    obj.rectangle25:setStrokeSize(1);
     obj.rectangle25:setName("rectangle25");
     obj.rectangle25:setAlign("client");
     obj.rectangle25:setColor("#40000000");

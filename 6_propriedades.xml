@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rectangle class='fundo'>
+<rectangle class='fundo' strokeColor="white" strokeSize="1">
 	<recordList name='rclFichaPropriedades' align='client' field='propriedades.rcl' templateForm='frmFichaPropriedade'/>
 	<button align='bottom' text='Resetar Propriedades'>
 		<event name='onClick'>
