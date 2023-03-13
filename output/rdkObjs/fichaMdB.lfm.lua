@@ -16091,6 +16091,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.textEditor8:setHeight(530);
     obj.textEditor8:setField("anotacoes_do_mestre");
     obj.textEditor8:setName("textEditor8");
+    obj.textEditor8:setTransparent(true);
 
     obj.layout139 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout139:setParent(obj.scrollBox10);

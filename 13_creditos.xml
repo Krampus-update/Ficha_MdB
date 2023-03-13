@@ -206,7 +206,7 @@
 
 		<layout left="740" top="10" width="500" height="600" frameStyle="frames/panel3transp/frame.xml">
 			<label left="0" top="560" width="500" height="20" text="ANOTAÇÕES DO MESTRE" horzTextAlign="center"/>
-			<textEditor left="30" top="20" width="440" height="530" field="anotacoes_do_mestre"/>
+			<textEditor left="30" top="20" width="440" height="530" class="transparente vcenter" field="anotacoes_do_mestre"/>
 		</layout>
 
 		<layout left="525" top="420" width="200" height="190" frameStyle="frames/panel3transp/frame.xml">
