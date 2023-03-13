@@ -13097,8 +13097,8 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox14:setTop(60);
     obj.comboBox14:setWidth(90);
     obj.comboBox14:setField("colorBackground");
-    obj.comboBox14:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox14:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox14:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' });
+    obj.comboBox14:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' });
     obj.comboBox14:setName("comboBox14");
 
     obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13124,8 +13124,8 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox15:setTop(85);
     obj.comboBox15:setWidth(90);
     obj.comboBox15:setField("colorStroke");
-    obj.comboBox15:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox15:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox15:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' });
+    obj.comboBox15:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' });
     obj.comboBox15:setName("comboBox15");
 
     obj.dataLink227 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -13151,8 +13151,8 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox16:setTop(110);
     obj.comboBox16:setWidth(90);
     obj.comboBox16:setField("colorFont");
-    obj.comboBox16:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', });
-    obj.comboBox16:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', });
+    obj.comboBox16:setItems({ '', 'White', 'Black', 'BlueViolet', 'Red', 'Violet','Orange' });
+    obj.comboBox16:setValues({ '', '#FFFFFF', '#060500', '#6B5794', '#A52A2A', '#b433ff' });
     obj.comboBox16:setName("comboBox16");
 
     obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
