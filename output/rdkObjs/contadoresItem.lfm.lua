@@ -327,7 +327,7 @@ local function constructNew_frmContador()
             						else
             							local jogador = Firecast.getPersonagemDe(sheet).dono;
             							if common.isMyChar(sheet) and common.isMainChar(sheet) then 
-            								if sheet.valCur ~= sheet.valPrev or sheet.valCur ~= sheet.valPrev and sheet.valMax ~= sheet.valMaxPrev or sheet.valMax ~= sheet.valMaxPrev then
+            								if sheet.valCur ~= sheet.valPrev or sheet.valMax ~= sheet.valMaxPrev then
             									jogador:requestSetBarValue(bar, sheet.valCur, sheet.valMax);
             								else 
             									local curBar, maxBar = jogador:getBarValue(bar);
