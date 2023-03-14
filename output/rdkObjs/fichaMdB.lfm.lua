@@ -245,7 +245,7 @@ require('mudaNick.lua')
     obj.edtUpperGridCampo3:setParent(obj.UpperGridCampo3);
     obj.edtUpperGridCampo3:setName("edtUpperGridCampo3");
     obj.edtUpperGridCampo3:setAlign("top");
-    obj.edtUpperGridCampo3:setField("regiao");
+    obj.edtUpperGridCampo3:setField("caracteristicas.regiao");
     obj.edtUpperGridCampo3:setFontSize(13);
     obj.edtUpperGridCampo3:setHeight(30);
     obj.edtUpperGridCampo3:setTransparent(true);
