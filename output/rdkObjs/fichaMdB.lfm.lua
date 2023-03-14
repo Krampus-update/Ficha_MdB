@@ -5221,6 +5221,7 @@ require('mudaNick.lua')
     obj.CaractLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.CaractLayout:setParent(obj.fraXLayout);
     obj.CaractLayout:setAlign("top");
+    obj.CaractLayout:setHeight(499);
     obj.CaractLayout:setAutoHeight(true);
     obj.CaractLayout:setHorzAlign("center");
     obj.CaractLayout:setName("CaractLayout");

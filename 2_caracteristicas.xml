@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="frmFichaMdB" align="client" class="transparente vcenter" margins="{top=1}">
 
-
 <template name="Descricao">
 	<label left="$(left1)" top="$(top)" width="90" height="20" text="$(text)" horzTextAlign="center"/>
 	<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
 </template>
+
 	<scrollBox align="client">
 		<rectangle class="fundo">
 			<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" name="fraXLayout">
-				<flowLayout class="tile" align="top" autoHeight="true" horzAlign="center" name="CaractLayout">
+				<flowLayout class="tile" align="top" height="499" autoHeight="true" horzAlign="center" name="CaractLayout">
 					<layout left="0" top="0" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
 					<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
 					<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
