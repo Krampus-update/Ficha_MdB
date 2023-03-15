@@ -17,7 +17,6 @@
 
 				<!-- GRID DE INFORMACOES SUPERIORES DA FRENTE -->
 				<flowLayout  minWidth="320" maxWidth="1600" name="fraUpperGridFrente" avoidScale="true" frameStyle="frames/panel4transp/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">
-				<rectangle align="client" color="black" xradius="15" yradius="15" cornerType="round" strokeColor="white" strokeSize="1"/>
 				<!-- CLASSE; NIVEL; EXPERIÉCIA -->		
 						<upperGridCampo field="classeENivel" minWidth="100" titulo="CLASSES &amp; NIVEIS"/>
 				<!-- ORIGEM; REGIÃO; PASSADO -->	
