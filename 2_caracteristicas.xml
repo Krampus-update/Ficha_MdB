@@ -38,20 +38,14 @@
 			<Descricao left1="900" left2="980" top="38" text="ALTURA" field="caracteristicas.altura"/>
 			<Descricao left1="900" left2="980" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
-	
-		<flowPart left="0" top="110" width="375" height="420" margins="{left = 0, right = 4}">
-		<rectangle width="375" height="420" color="#202020" xradius="20" yradius="20" strokeColor="white" strokeSize="1"/>
-			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
-			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
-		</flowPart>
 
-		<flowPart minWidth="100" maxWidth="375" height="420">
+		<flowPart left="0" top="110" minWidth="100" maxWidth="375" height="420">
 			<rectangle width="355" height="410" color="#202020" />
 			<rectangle width="365" height="410" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
 				<!-- APARÊNCIA -->
 				<DivisorD texto="A P A R Ê N C I A" largura="160" topo="60"/>
 				<image field="imagens.aparencia" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
-				<layout align="top" frameStyle="/Frames/frameFundo.xml" margins="{left=10, right=20}" height="500"/>
+				<layout align="top" frameStyle="/frames/frameFundo.xml" margins="{left=10, right=20}" height="500"/>
 		</flowPart>
 
 		<flowPart left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
