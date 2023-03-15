@@ -28,6 +28,23 @@ local function constructNew_actions()
     obj:beginUpdate();
     obj:setName("actions");
 
+
+			require("common.lua");
+			local function atualizarDesiredHeight()
+				local margins = self.layPrincipal.margins;
+				local h = self.fraLayout:getHeight() + 2 + margins.top + margins.bottom;
+				local ultObjMenu = self.btnRolarAtaque;
+				local mH = ultObjMenu.top + ultObjMenu.height + self.layMenu.top + self.layMenu.margins.bottom;
+
+				if h < mH then
+					h = mH;
+				end;
+
+				self.height = h;
+			end;
+            
+
+
     obj.action_Frame = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.action_Frame:setParent(obj);
     obj.action_Frame:setName("action_Frame");
