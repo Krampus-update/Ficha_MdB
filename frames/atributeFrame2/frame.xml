@@ -2,17 +2,11 @@
 <frame width="345" height="128" autoScaleY="true">
 	<borders left="6" top="8" bottom="12" right="6" />
 	<draw>	
+
 			<!-- QUADRADO -->
-			<image left="0" top="0" right="159" bottom="128" overflowX="stretch" overflowY="stretch" zOrder="-1">
+			<path mode="original" left="0" right="159" top="0" bottom="128" data="M140.71,3.16v5.49l-8.03,6.88h-7.79h-1h-17.88L95.87,4.89H30.93L20.79,15.53H1.91v110.12H124.9V17.53h8.53l9.29-7.96V5.16H159v-2H140.71z M31.79,6.89h63.23l9.21,9.66L79.05,44.97H48.63L22.58,16.54L31.79,6.89z M122.9,123.65H3.91V17.53 h16.87l26.97,29.44h32.2l26.09-29.44h16.86V123.65z"/>
 				<anchors left="true" top="true" bottom="true" right="false"/>
-				<path mode="original" left="0" right="159" top="0" bottom="128" data="cole aqui"/>
-			</image>		
-
-
-"105.59,16.53 123.9,16.53 123.9,124.65 2.91,124.65 2.91,16.53 21.22,16.53
-"31.36,5.89 95.44,5.89 105.59,16.53 79.5,45.97 48.19,45.97 21.22,16.53
-"123.9,16.53 133.05,16.53 141.71,9.11 141.71,4.16 159,4.16
-
+			</path>		
 
 			<!-- LINHA SUPERIOR -->
 			<image left="159" top="0" right="337" bottom="6" overflowX="stretch" overflowY="stretch" zOrder="-1">
