@@ -101,13 +101,8 @@ require('mudaNick.lua')
     obj.flwNome1:setAvoidScale(true);
     obj.flwNome1:setMargins({left=1, right=1, top=2, bottom=2});
 
-    obj.layNomeHolderFrente = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layNomeHolderFrente:setParent(obj.flwNome1);
-    obj.layNomeHolderFrente:setAlign("client");
-    obj.layNomeHolderFrente:setName("layNomeHolderFrente");
-
     obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle2:setParent(obj.layNomeHolderFrente);
+    obj.rectangle2:setParent(obj.flwNome1);
     obj.rectangle2:setAlign("client");
     obj.rectangle2:setColor("black");
     obj.rectangle2:setXradius(15);
@@ -116,6 +111,11 @@ require('mudaNick.lua')
     obj.rectangle2:setStrokeColor("white");
     obj.rectangle2:setStrokeSize(1);
     obj.rectangle2:setName("rectangle2");
+
+    obj.layNomeHolderFrente = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layNomeHolderFrente:setParent(obj.flwNome1);
+    obj.layNomeHolderFrente:setAlign("client");
+    obj.layNomeHolderFrente:setName("layNomeHolderFrente");
 
     obj.edtNome1 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edtNome1:setParent(obj.layNomeHolderFrente);
