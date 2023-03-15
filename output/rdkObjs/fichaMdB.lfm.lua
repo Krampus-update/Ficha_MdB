@@ -96,7 +96,7 @@ require('mudaNick.lua')
     obj.flwNome1:setName("flwNome1");
     obj.flwNome1:setMinWidth(320);
     obj.flwNome1:setMaxWidth(1600);
-    obj.flwNome1:setHeight(175);
+    obj.flwNome1:setHeight(100);
     obj.flwNome1:setVertAlign("center");
     obj.flwNome1:setAvoidScale(true);
     obj.flwNome1:setMargins({left=1, right=1, top=2, bottom=2});
