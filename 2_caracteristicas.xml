@@ -45,7 +45,7 @@
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 		</flowPart>
 
-		<flowPart  left="10" top="540" width="375" height="315" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
+		<flowPart  left="10" top="530" width="375" height="315" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
 			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
 			<textEditor left="10" top="30" width="355" height="265" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes"/>
 		</flowPart>
