@@ -97,7 +97,7 @@ require('mudaNick.lua')
     obj.flwNome1:setMinWidth(320);
     obj.flwNome1:setMaxWidth(1600);
     obj.flwNome1:setFrameStyle("frames/banner/dragon.xml");
-    obj.flwNome1:setHeight(175);
+    obj.flwNome1:setHeight(275);
     obj.flwNome1:setVertAlign("center");
     obj.flwNome1:setAvoidScale(true);
     obj.flwNome1:setMargins({left=1, right=1, top=2, bottom=2});
@@ -5568,7 +5568,7 @@ require('mudaNick.lua')
     obj.flowPart57 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart57:setParent(obj.scrollBox2);
     obj.flowPart57:setLeft(390);
-    obj.flowPart57:setTop(110);
+    obj.flowPart57:setTop(120);
     obj.flowPart57:setWidth(412);
     obj.flowPart57:setHeight(123);
     obj.flowPart57:setFrameStyle("frames/panel5/frame.xml");
@@ -5600,7 +5600,7 @@ require('mudaNick.lua')
     obj.flowPart58 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart58:setParent(obj.scrollBox2);
     obj.flowPart58:setLeft(802);
-    obj.flowPart58:setTop(110);
+    obj.flowPart58:setTop(120);
     obj.flowPart58:setWidth(412);
     obj.flowPart58:setHeight(125);
     obj.flowPart58:setFrameStyle("frames/panel5/frame.xml");
@@ -5632,7 +5632,7 @@ require('mudaNick.lua')
     obj.flowPart59 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart59:setParent(obj.scrollBox2);
     obj.flowPart59:setLeft(390);
-    obj.flowPart59:setTop(240);
+    obj.flowPart59:setTop(250);
     obj.flowPart59:setWidth(412);
     obj.flowPart59:setHeight(123);
     obj.flowPart59:setFrameStyle("frames/panel5/frame.xml");
@@ -5664,7 +5664,7 @@ require('mudaNick.lua')
     obj.flowPart60 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart60:setParent(obj.scrollBox2);
     obj.flowPart60:setLeft(802);
-    obj.flowPart60:setTop(240);
+    obj.flowPart60:setTop(250);
     obj.flowPart60:setWidth(412);
     obj.flowPart60:setHeight(125);
     obj.flowPart60:setFrameStyle("frames/panel5/frame.xml");
@@ -5698,7 +5698,7 @@ require('mudaNick.lua')
     obj.flowPart61:setLeft(390);
     obj.flowPart61:setTop(375);
     obj.flowPart61:setWidth(825);
-    obj.flowPart61:setHeight(495);
+    obj.flowPart61:setHeight(475);
     obj.flowPart61:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart61:setName("flowPart61");
     obj.flowPart61:setMargins({left=1, right=1, top=2, bottom=2});
