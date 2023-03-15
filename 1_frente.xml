@@ -4,21 +4,20 @@
 	<scrollBox align="client">
 		<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="2" name="fraFrenteLayout">
 
-			<!-- PARTE SUPERIOR DA FRENTE  -->
+			<!-- PARTE SUPERIOR DA FRENTE -->
 			<flowLayout class="oneLineTile" autoHeight="true" minScaledWidth="290" horzAlign="center">
 
 				<!-- NOME DO PERSONAGEM -->
-				<flowPart name="flwNome1" minWidth="320" maxWidth="1600" height="100" vertAlign="center" avoidScale="true">
-					<rectangle align="client" color="black" xradius="15" yradius="15" cornerType="round" strokeColor="white" strokeSize="2"/>
+				<flowPart name="flwNome1" minWidth="320" maxWidth="1600" frameStyle="frames/banner/dragon.xml" height="175" vertAlign="center" avoidScale="true">
 					<layout align="client" name="layNomeHolderFrente">
 							<edit name="edtNome1" field="nome" class="transparente vcenter" fontSize="17" align="client"/>
-							<rectangle align="client" color="black" xradius="15" yradius="15" cornerType="round" strokeColor="white" strokeSize="2"/>
 							<label margins="{left=3}" name="labNome1" align="bottom" text="NOME DO PERSONAGEM" class="tituloCampo" autoSize="true"/>
 					</layout>
 				</flowPart>
 
 				<!-- GRID DE INFORMACOES SUPERIORES DA FRENTE -->
 				<flowLayout  minWidth="320" maxWidth="1600" name="fraUpperGridFrente" avoidScale="true" frameStyle="frames/panel4transp/frame.xml" autoHeight="true" vertAlign="trailing" maxControlsPerLine="3">
+				<rectangle align="client" color="black" xradius="15" yradius="15" cornerType="round" strokeColor="white" strokeSize="1"/>
 				<!-- CLASSE; NIVEL; EXPERIÉCIA -->		
 						<upperGridCampo field="classeENivel" minWidth="100" titulo="CLASSES &amp; NIVEIS"/>
 				<!-- ORIGEM; REGIÃO; PASSADO -->	
