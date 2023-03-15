@@ -5241,22 +5241,22 @@ require('mudaNick.lua')
 
     obj.label25 = GUI.fromHandle(_obj_newObject("label"));
     obj.label25:setParent(obj.layout59);
-    obj.label25:setLeft(10);
+    obj.label25:setLeft(310);
     obj.label25:setTop(38);
     obj.label25:setWidth(90);
     obj.label25:setHeight(20);
-    obj.label25:setText("ALTURA");
+    obj.label25:setText("SEXO");
     obj.label25:setHorzTextAlign("center");
     obj.label25:setName("label25");
     obj.label25:setFontColor("white");
 
     obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit20:setParent(obj.layout59);
-    obj.edit20:setLeft(100);
+    obj.edit20:setLeft(410);
     obj.edit20:setTop(38);
     obj.edit20:setWidth(200);
     obj.edit20:setHeight(25);
-    obj.edit20:setField("caracteristicas.altura");
+    obj.edit20:setField("caracteristicas.sexo");
     obj.edit20:setVertTextAlign("center");
     obj.edit20:setName("edit20");
     obj.edit20:setFontSize(15);
@@ -5264,22 +5264,22 @@ require('mudaNick.lua')
 
     obj.label26 = GUI.fromHandle(_obj_newObject("label"));
     obj.label26:setParent(obj.layout59);
-    obj.label26:setLeft(10);
+    obj.label26:setLeft(310);
     obj.label26:setTop(65);
     obj.label26:setWidth(90);
     obj.label26:setHeight(20);
-    obj.label26:setText("PESO");
+    obj.label26:setText("OUTROS");
     obj.label26:setHorzTextAlign("center");
     obj.label26:setName("label26");
     obj.label26:setFontColor("white");
 
     obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit21:setParent(obj.layout59);
-    obj.edit21:setLeft(100);
+    obj.edit21:setLeft(410);
     obj.edit21:setTop(65);
     obj.edit21:setWidth(200);
     obj.edit21:setHeight(25);
-    obj.edit21:setField("caracteristicas.peso");
+    obj.edit21:setField("caracteristicas.aparenciaOutros");
     obj.edit21:setVertTextAlign("center");
     obj.edit21:setName("edit21");
     obj.edit21:setFontSize(15);
@@ -5287,22 +5287,22 @@ require('mudaNick.lua')
 
     obj.label27 = GUI.fromHandle(_obj_newObject("label"));
     obj.label27:setParent(obj.layout59);
-    obj.label27:setLeft(310);
+    obj.label27:setLeft(900);
     obj.label27:setTop(10);
     obj.label27:setWidth(90);
     obj.label27:setHeight(20);
-    obj.label27:setText("IDADE");
+    obj.label27:setText("PLANO");
     obj.label27:setHorzTextAlign("center");
     obj.label27:setName("label27");
     obj.label27:setFontColor("white");
 
     obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit22:setParent(obj.layout59);
-    obj.edit22:setLeft(410);
+    obj.edit22:setLeft(980);
     obj.edit22:setTop(10);
     obj.edit22:setWidth(200);
     obj.edit22:setHeight(25);
-    obj.edit22:setField("caracteristicas.idade");
+    obj.edit22:setField("caracteristicas.plano");
     obj.edit22:setVertTextAlign("center");
     obj.edit22:setName("edit22");
     obj.edit22:setFontSize(15);
@@ -5310,22 +5310,22 @@ require('mudaNick.lua')
 
     obj.label28 = GUI.fromHandle(_obj_newObject("label"));
     obj.label28:setParent(obj.layout59);
-    obj.label28:setLeft(310);
+    obj.label28:setLeft(900);
     obj.label28:setTop(38);
     obj.label28:setWidth(90);
     obj.label28:setHeight(20);
-    obj.label28:setText("SEXO");
+    obj.label28:setText("REGIÃO");
     obj.label28:setHorzTextAlign("center");
     obj.label28:setName("label28");
     obj.label28:setFontColor("white");
 
     obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit23:setParent(obj.layout59);
-    obj.edit23:setLeft(410);
+    obj.edit23:setLeft(980);
     obj.edit23:setTop(38);
     obj.edit23:setWidth(200);
     obj.edit23:setHeight(25);
-    obj.edit23:setField("caracteristicas.sexo");
+    obj.edit23:setField("caracteristicas.regiao");
     obj.edit23:setVertTextAlign("center");
     obj.edit23:setName("edit23");
     obj.edit23:setFontSize(15);
@@ -5333,22 +5333,22 @@ require('mudaNick.lua')
 
     obj.label29 = GUI.fromHandle(_obj_newObject("label"));
     obj.label29:setParent(obj.layout59);
-    obj.label29:setLeft(310);
+    obj.label29:setLeft(900);
     obj.label29:setTop(65);
     obj.label29:setWidth(90);
     obj.label29:setHeight(20);
-    obj.label29:setText("OUTROS");
+    obj.label29:setText("REINO");
     obj.label29:setHorzTextAlign("center");
     obj.label29:setName("label29");
     obj.label29:setFontColor("white");
 
     obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit24:setParent(obj.layout59);
-    obj.edit24:setLeft(410);
+    obj.edit24:setLeft(980);
     obj.edit24:setTop(65);
     obj.edit24:setWidth(200);
     obj.edit24:setHeight(25);
-    obj.edit24:setField("caracteristicas.aparenciaOutros");
+    obj.edit24:setField("caracteristicas.reino");
     obj.edit24:setVertTextAlign("center");
     obj.edit24:setName("edit24");
     obj.edit24:setFontSize(15);
@@ -5425,22 +5425,22 @@ require('mudaNick.lua')
 
     obj.label33 = GUI.fromHandle(_obj_newObject("label"));
     obj.label33:setParent(obj.layout59);
-    obj.label33:setLeft(900);
-    obj.label33:setTop(10);
+    obj.label33:setLeft(10);
+    obj.label33:setTop(38);
     obj.label33:setWidth(90);
     obj.label33:setHeight(20);
-    obj.label33:setText("PLANO");
+    obj.label33:setText("ALTURA");
     obj.label33:setHorzTextAlign("center");
     obj.label33:setName("label33");
     obj.label33:setFontColor("white");
 
     obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout59);
-    obj.edit28:setLeft(980);
-    obj.edit28:setTop(10);
+    obj.edit28:setLeft(100);
+    obj.edit28:setTop(38);
     obj.edit28:setWidth(200);
     obj.edit28:setHeight(25);
-    obj.edit28:setField("caracteristicas.plano");
+    obj.edit28:setField("caracteristicas.altura");
     obj.edit28:setVertTextAlign("center");
     obj.edit28:setName("edit28");
     obj.edit28:setFontSize(15);
@@ -5448,22 +5448,22 @@ require('mudaNick.lua')
 
     obj.label34 = GUI.fromHandle(_obj_newObject("label"));
     obj.label34:setParent(obj.layout59);
-    obj.label34:setLeft(900);
-    obj.label34:setTop(38);
+    obj.label34:setLeft(10);
+    obj.label34:setTop(65);
     obj.label34:setWidth(90);
     obj.label34:setHeight(20);
-    obj.label34:setText("REGIÃO");
+    obj.label34:setText("PESO");
     obj.label34:setHorzTextAlign("center");
     obj.label34:setName("label34");
     obj.label34:setFontColor("white");
 
     obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout59);
-    obj.edit29:setLeft(980);
-    obj.edit29:setTop(38);
+    obj.edit29:setLeft(100);
+    obj.edit29:setTop(65);
     obj.edit29:setWidth(200);
     obj.edit29:setHeight(25);
-    obj.edit29:setField("caracteristicas.regiao");
+    obj.edit29:setField("caracteristicas.peso");
     obj.edit29:setVertTextAlign("center");
     obj.edit29:setName("edit29");
     obj.edit29:setFontSize(15);
@@ -5471,22 +5471,22 @@ require('mudaNick.lua')
 
     obj.label35 = GUI.fromHandle(_obj_newObject("label"));
     obj.label35:setParent(obj.layout59);
-    obj.label35:setLeft(900);
-    obj.label35:setTop(65);
+    obj.label35:setLeft(310);
+    obj.label35:setTop(10);
     obj.label35:setWidth(90);
     obj.label35:setHeight(20);
-    obj.label35:setText("REINO");
+    obj.label35:setText("IDADE");
     obj.label35:setHorzTextAlign("center");
     obj.label35:setName("label35");
     obj.label35:setFontColor("white");
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout59);
-    obj.edit30:setLeft(980);
-    obj.edit30:setTop(65);
+    obj.edit30:setLeft(410);
+    obj.edit30:setTop(10);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
-    obj.edit30:setField("caracteristicas.reino");
+    obj.edit30:setField("caracteristicas.idade");
     obj.edit30:setVertTextAlign("center");
     obj.edit30:setName("edit30");
     obj.edit30:setFontSize(15);
