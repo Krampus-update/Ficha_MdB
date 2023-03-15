@@ -44,7 +44,7 @@
 			<rectangle width="365" height="410" color="#202020" xradius="20" yradius="20"/>
 				<!-- APARÊNCIA -->
 				<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="APARÊNCIA"/>	
-				<image field="imagens.aparencia" style="autofit" editable="true" width="289" height="400" left="10"/>
+				<image field="imagens.aparencia" style="autofit" editable="true" width="355" height="400" left="10"/>
 		</flowPart>
 
 		<flowPart left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
