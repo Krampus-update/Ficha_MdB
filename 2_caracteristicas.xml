@@ -24,20 +24,20 @@
 			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
 			<checkBox left="200" top="10" width="100" field="caracteristicas.quadrupede" text="Quadrúpede"/>
 
-			<Descricao left1="10" left2="100" top="38" text="SEXO" field="caracteristicas.sexo"/>
-			<Descricao left1="10" left2="100" top="65" text="OUTROS" field="caracteristicas.aparenciaOutros"/>
+			<Descricao left1="10" left2="110" top="38" text="SEXO" field="caracteristicas.sexo"/>
+			<Descricao left1="10" left2="110" top="65" text="OUTROS" field="caracteristicas.aparenciaOutros"/>
 
-			<Descricao left1="310" left2="410" top="10" text="PLANO" field="caracteristicas.plano"/>
-			<Descricao left1="310" left2="410" top="38" text="REGIÃO" field="caracteristicas.regiao"/>
-			<Descricao left1="310" left2="410" top="65" text="REINO" field="caracteristicas.reino"/>
+			<Descricao left1="320" left2="420" top="10" text="PLANO" field="caracteristicas.plano"/>
+			<Descricao left1="320" left2="420" top="38" text="REGIÃO" field="caracteristicas.regiao"/>
+			<Descricao left1="320" left2="420" top="65" text="REINO" field="caracteristicas.reino"/>
 
-			<Descricao left1="610" left2="700" top="10" text="OLHOS" field="caracteristicas.aparenciaOlhos"/>
-			<Descricao left1="610" left2="700" top="38" text="PELE" field="caracteristicas.pele"/>
-			<Descricao left1="610" left2="700" top="65" text="CABELO" field="caracteristicas.cabelo"/>
+			<Descricao left1="620" left2="710" top="10" text="OLHOS" field="caracteristicas.aparenciaOlhos"/>
+			<Descricao left1="620" left2="710" top="38" text="PELE" field="caracteristicas.pele"/>
+			<Descricao left1="620" left2="710" top="65" text="CABELO" field="caracteristicas.cabelo"/>
 
-			<Descricao left1="900" left2="980" top="10" text="IDADE" field="caracteristicas.idade"/>
-			<Descricao left1="900" left2="980" top="38" text="ALTURA" field="caracteristicas.altura"/>
-			<Descricao left1="900" left2="980" top="65" text="PESO" field="caracteristicas.peso"/>
+			<Descricao left1="900" left2="990" top="10" text="IDADE" field="caracteristicas.idade"/>
+			<Descricao left1="900" left2="990" top="38" text="ALTURA" field="caracteristicas.altura"/>
+			<Descricao left1="900" left2="990" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
 	
 		<flowPart left="10" top="110" width="375" height="420" margins="{left = 0, right = 4}">
