@@ -100,7 +100,8 @@
 		<layout align="left" width="184">
 			<layout align="left" width="152" margins="{left=2}">
 				<comboBox name="cbBarChoose" align="top" height="60" items="{'','Barra 2', 'Barra 3', 'Barra 4'}" values="{'','2','3','4'}" field="barChoose"/>
-				<dataLink fields="{'barChoose','valMax','valCur'}">	<event name="onChange">
+				<dataLink fields="{'barChoose','valMax','valCur'}">
+					<event name="onChange">
 						local bar = tonumber(sheet.barChoose)
 						if bar == nil then
 							return;
@@ -116,7 +117,8 @@
 								end;
 							end;
 						end;
-				</event></dataLink>
+					</event>
+				</dataLink>
 			</layout>
 		</layout>
 	<button name="btnDelete" align="left" margins="{left=2}" width="25" text="✖" onClick="askForDelete();" onMenu="NDB.deleteNode(sheet)"/>
