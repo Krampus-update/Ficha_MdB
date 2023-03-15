@@ -8,7 +8,7 @@
 			<flowLayout class="oneLineTile" autoHeight="true" minScaledWidth="290" horzAlign="center">
 
 				<!-- NOME DO PERSONAGEM -->
-				<flowPart name="flwNome1" minWidth="320" maxWidth="1600" frameStyle="frames/banner/dragon.xml" height="175" vertAlign="center" avoidScale="true">
+				<flowPart name="flwNome1" minWidth="320" maxWidth="1600" height="175" vertAlign="center" avoidScale="true" strokeColor="white" strokeSize="1">
 					<layout align="client" name="layNomeHolderFrente">
 							<edit name="edtNome1" field="nome" class="transparente vcenter" fontSize="17" align="client"/>
 							<label margins="{left=3}" name="labNome1" align="bottom" text="NOME DO PERSONAGEM" class="tituloCampo" autoSize="true"/>
