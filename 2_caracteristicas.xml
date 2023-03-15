@@ -72,7 +72,7 @@
 
 		<flowPart left="390" top="375" width="825" height="475" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
-			<richEdit left="10" top="20" width="805" height="450" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
+			<richEdit left="10" top="20" width="805" height="420" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</flowPart >
 
 	</scrollBox>

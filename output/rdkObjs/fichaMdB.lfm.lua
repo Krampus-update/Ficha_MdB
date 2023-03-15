@@ -5721,7 +5721,7 @@ require('mudaNick.lua')
     obj.richEdit1:setLeft(10);
     obj.richEdit1:setTop(20);
     obj.richEdit1:setWidth(805);
-    obj.richEdit1:setHeight(450);
+    obj.richEdit1:setHeight(420);
     obj.richEdit1:setField("background");
     lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#333333");
     lfm_setPropAsString(obj.richEdit1, "defaultFontSize",  "12");
