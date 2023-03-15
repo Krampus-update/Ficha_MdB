@@ -110,7 +110,7 @@
 
 		<layout left="525" top="250" width="200" height="150" frameStyle="frames/panel3transp/frame.xml">
 			<label left="0" top="10" width="80" height="20" text="Tema:" horzTextAlign="center"/>
-			<comboBox left="95" top="10" width="90" field="theme" fontColor="white" items="{'Escuro',}" horzTextAlign="center"/>
+			<comboBox left="80" top="10" width="90" field="theme" fontColor="white" items="{'Escuro',}" horzTextAlign="center"/>
 			<dataLink field="theme" defaultValue="Escuro">
 				<event name="onChange">
 					if sheet == nil then return end;

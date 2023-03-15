@@ -13055,7 +13055,7 @@ self.upperGridMagicBox3._RecalcSize();
 
     obj.comboBox13 = GUI.fromHandle(_obj_newObject("comboBox"));
     obj.comboBox13:setParent(obj.layout120);
-    obj.comboBox13:setLeft(95);
+    obj.comboBox13:setLeft(80);
     obj.comboBox13:setTop(10);
     obj.comboBox13:setWidth(90);
     obj.comboBox13:setField("theme");
