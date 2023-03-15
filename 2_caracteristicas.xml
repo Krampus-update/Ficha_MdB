@@ -43,7 +43,7 @@
 			<rectangle width="355" height="410" color="#202020" />
 			<rectangle width="365" height="410" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
 				<!-- APARÊNCIA -->
-				<DivisorD texto="A P A R Ê N C I A" largura="160" topo="60"/>
+				<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="APARÊNCIA"/>	
 				<image field="imagens.aparencia" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 				<layout align="top" frameStyle="/frames/frameFundo.xml" margins="{left=10, right=20}" height="500"/>
 		</flowPart>
