@@ -5241,7 +5241,7 @@ require('mudaNick.lua')
 
     obj.label25 = GUI.fromHandle(_obj_newObject("label"));
     obj.label25:setParent(obj.layout59);
-    obj.label25:setLeft(310);
+    obj.label25:setLeft(10);
     obj.label25:setTop(38);
     obj.label25:setWidth(90);
     obj.label25:setHeight(20);
@@ -5252,7 +5252,7 @@ require('mudaNick.lua')
 
     obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit20:setParent(obj.layout59);
-    obj.edit20:setLeft(410);
+    obj.edit20:setLeft(100);
     obj.edit20:setTop(38);
     obj.edit20:setWidth(200);
     obj.edit20:setHeight(25);
@@ -5264,7 +5264,7 @@ require('mudaNick.lua')
 
     obj.label26 = GUI.fromHandle(_obj_newObject("label"));
     obj.label26:setParent(obj.layout59);
-    obj.label26:setLeft(310);
+    obj.label26:setLeft(10);
     obj.label26:setTop(65);
     obj.label26:setWidth(90);
     obj.label26:setHeight(20);
@@ -5275,7 +5275,7 @@ require('mudaNick.lua')
 
     obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit21:setParent(obj.layout59);
-    obj.edit21:setLeft(410);
+    obj.edit21:setLeft(100);
     obj.edit21:setTop(65);
     obj.edit21:setWidth(200);
     obj.edit21:setHeight(25);
@@ -5287,7 +5287,7 @@ require('mudaNick.lua')
 
     obj.label27 = GUI.fromHandle(_obj_newObject("label"));
     obj.label27:setParent(obj.layout59);
-    obj.label27:setLeft(900);
+    obj.label27:setLeft(310);
     obj.label27:setTop(10);
     obj.label27:setWidth(90);
     obj.label27:setHeight(20);
@@ -5298,7 +5298,7 @@ require('mudaNick.lua')
 
     obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit22:setParent(obj.layout59);
-    obj.edit22:setLeft(980);
+    obj.edit22:setLeft(410);
     obj.edit22:setTop(10);
     obj.edit22:setWidth(200);
     obj.edit22:setHeight(25);
@@ -5310,7 +5310,7 @@ require('mudaNick.lua')
 
     obj.label28 = GUI.fromHandle(_obj_newObject("label"));
     obj.label28:setParent(obj.layout59);
-    obj.label28:setLeft(900);
+    obj.label28:setLeft(310);
     obj.label28:setTop(38);
     obj.label28:setWidth(90);
     obj.label28:setHeight(20);
@@ -5321,7 +5321,7 @@ require('mudaNick.lua')
 
     obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit23:setParent(obj.layout59);
-    obj.edit23:setLeft(980);
+    obj.edit23:setLeft(410);
     obj.edit23:setTop(38);
     obj.edit23:setWidth(200);
     obj.edit23:setHeight(25);
@@ -5333,7 +5333,7 @@ require('mudaNick.lua')
 
     obj.label29 = GUI.fromHandle(_obj_newObject("label"));
     obj.label29:setParent(obj.layout59);
-    obj.label29:setLeft(900);
+    obj.label29:setLeft(310);
     obj.label29:setTop(65);
     obj.label29:setWidth(90);
     obj.label29:setHeight(20);
@@ -5344,7 +5344,7 @@ require('mudaNick.lua')
 
     obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit24:setParent(obj.layout59);
-    obj.edit24:setLeft(980);
+    obj.edit24:setLeft(410);
     obj.edit24:setTop(65);
     obj.edit24:setWidth(200);
     obj.edit24:setHeight(25);
@@ -5425,22 +5425,22 @@ require('mudaNick.lua')
 
     obj.label33 = GUI.fromHandle(_obj_newObject("label"));
     obj.label33:setParent(obj.layout59);
-    obj.label33:setLeft(10);
-    obj.label33:setTop(38);
+    obj.label33:setLeft(900);
+    obj.label33:setTop(10);
     obj.label33:setWidth(90);
     obj.label33:setHeight(20);
-    obj.label33:setText("ALTURA");
+    obj.label33:setText("IDADE");
     obj.label33:setHorzTextAlign("center");
     obj.label33:setName("label33");
     obj.label33:setFontColor("white");
 
     obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout59);
-    obj.edit28:setLeft(100);
-    obj.edit28:setTop(38);
+    obj.edit28:setLeft(980);
+    obj.edit28:setTop(10);
     obj.edit28:setWidth(200);
     obj.edit28:setHeight(25);
-    obj.edit28:setField("caracteristicas.altura");
+    obj.edit28:setField("caracteristicas.idade");
     obj.edit28:setVertTextAlign("center");
     obj.edit28:setName("edit28");
     obj.edit28:setFontSize(15);
@@ -5448,22 +5448,22 @@ require('mudaNick.lua')
 
     obj.label34 = GUI.fromHandle(_obj_newObject("label"));
     obj.label34:setParent(obj.layout59);
-    obj.label34:setLeft(10);
-    obj.label34:setTop(65);
+    obj.label34:setLeft(900);
+    obj.label34:setTop(38);
     obj.label34:setWidth(90);
     obj.label34:setHeight(20);
-    obj.label34:setText("PESO");
+    obj.label34:setText("ALTURA");
     obj.label34:setHorzTextAlign("center");
     obj.label34:setName("label34");
     obj.label34:setFontColor("white");
 
     obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit29:setParent(obj.layout59);
-    obj.edit29:setLeft(100);
-    obj.edit29:setTop(65);
+    obj.edit29:setLeft(980);
+    obj.edit29:setTop(38);
     obj.edit29:setWidth(200);
     obj.edit29:setHeight(25);
-    obj.edit29:setField("caracteristicas.peso");
+    obj.edit29:setField("caracteristicas.altura");
     obj.edit29:setVertTextAlign("center");
     obj.edit29:setName("edit29");
     obj.edit29:setFontSize(15);
@@ -5471,58 +5471,26 @@ require('mudaNick.lua')
 
     obj.label35 = GUI.fromHandle(_obj_newObject("label"));
     obj.label35:setParent(obj.layout59);
-    obj.label35:setLeft(310);
-    obj.label35:setTop(10);
+    obj.label35:setLeft(900);
+    obj.label35:setTop(65);
     obj.label35:setWidth(90);
     obj.label35:setHeight(20);
-    obj.label35:setText("IDADE");
+    obj.label35:setText("PESO");
     obj.label35:setHorzTextAlign("center");
     obj.label35:setName("label35");
     obj.label35:setFontColor("white");
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.layout59);
-    obj.edit30:setLeft(410);
-    obj.edit30:setTop(10);
+    obj.edit30:setLeft(980);
+    obj.edit30:setTop(65);
     obj.edit30:setWidth(200);
     obj.edit30:setHeight(25);
-    obj.edit30:setField("caracteristicas.idade");
+    obj.edit30:setField("caracteristicas.peso");
     obj.edit30:setVertTextAlign("center");
     obj.edit30:setName("edit30");
     obj.edit30:setFontSize(15);
     obj.edit30:setFontColor("white");
-
-    obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout60:setParent(obj.scrollBox2);
-    obj.layout60:setLeft(380);
-    obj.layout60:setTop(110);
-    obj.layout60:setWidth(825);
-    obj.layout60:setHeight(495);
-    obj.layout60:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout60:setName("layout60");
-
-    obj.label36 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label36:setParent(obj.layout60);
-    obj.label36:setAlign("bottom");
-    obj.label36:setAutoSize(true);
-    obj.label36:setVertTextAlign("center");
-    obj.label36:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label36, "fontStyle",  "bold");
-    obj.label36:setText("HISTORIA");
-    obj.label36:setName("label36");
-    obj.label36:setFontColor("white");
-
-    obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit1:setParent(obj.layout60);
-    obj.richEdit1:setLeft(10);
-    obj.richEdit1:setTop(20);
-    obj.richEdit1:setWidth(805);
-    obj.richEdit1:setHeight(450);
-    obj.richEdit1:setField("background");
-    lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#333333");
-    lfm_setPropAsString(obj.richEdit1, "defaultFontSize",  "12");
-    lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
-    obj.richEdit1:setName("richEdit1");
 
     obj.flowPart55 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart55:setParent(obj.scrollBox2);
@@ -5545,30 +5513,64 @@ require('mudaNick.lua')
     lfm_setPropAsString(obj.image2, "animate",  "true");
     obj.image2:setName("image2");
 
-    obj.label37 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label37:setParent(obj.flowPart55);
-    obj.label37:setAlign("bottom");
-    obj.label37:setAutoSize(true);
-    obj.label37:setText("APARENCIA");
-    obj.label37:setVertTextAlign("center");
-    obj.label37:setHorzTextAlign("center");
-    lfm_setPropAsString(obj.label37, "fontStyle",  "bold");
-    obj.label37:setName("label37");
-    obj.label37:setFontColor("white");
+    obj.label36 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label36:setParent(obj.flowPart55);
+    obj.label36:setAlign("bottom");
+    obj.label36:setAutoSize(true);
+    obj.label36:setText("APARENCIA");
+    obj.label36:setVertTextAlign("center");
+    obj.label36:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label36, "fontStyle",  "bold");
+    obj.label36:setName("label36");
+    obj.label36:setFontColor("white");
 
     obj.flowPart56 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart56:setParent(obj.scrollBox2);
-    obj.flowPart56:setLeft(0);
-    obj.flowPart56:setTop(325);
-    obj.flowPart56:setWidth(375);
-    obj.flowPart56:setHeight(211);
+    obj.flowPart56:setLeft(380);
+    obj.flowPart56:setTop(110);
+    obj.flowPart56:setWidth(825);
+    obj.flowPart56:setHeight(495);
     obj.flowPart56:setFrameStyle("frames/panel5/frame.xml");
-    obj.flowPart56:setMargins({left = 0, right = 4});
     obj.flowPart56:setName("flowPart56");
+    obj.flowPart56:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowPart56:setVertAlign("leading");
 
+    obj.label37 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label37:setParent(obj.flowPart56);
+    obj.label37:setAlign("bottom");
+    obj.label37:setAutoSize(true);
+    obj.label37:setVertTextAlign("center");
+    obj.label37:setHorzTextAlign("center");
+    lfm_setPropAsString(obj.label37, "fontStyle",  "bold");
+    obj.label37:setText("HISTORIA");
+    obj.label37:setName("label37");
+    obj.label37:setFontColor("white");
+
+    obj.richEdit1 = GUI.fromHandle(_obj_newObject("richEdit"));
+    obj.richEdit1:setParent(obj.flowPart56);
+    obj.richEdit1:setLeft(10);
+    obj.richEdit1:setTop(20);
+    obj.richEdit1:setWidth(805);
+    obj.richEdit1:setHeight(450);
+    obj.richEdit1:setField("background");
+    lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#333333");
+    lfm_setPropAsString(obj.richEdit1, "defaultFontSize",  "12");
+    lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
+    obj.richEdit1:setName("richEdit1");
+
+    obj.flowPart57 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart57:setParent(obj.scrollBox2);
+    obj.flowPart57:setLeft(0);
+    obj.flowPart57:setTop(325);
+    obj.flowPart57:setWidth(375);
+    obj.flowPart57:setHeight(211);
+    obj.flowPart57:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart57:setMargins({left = 0, right = 4});
+    obj.flowPart57:setName("flowPart57");
+    obj.flowPart57:setVertAlign("leading");
+
     obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.flowPart56);
+    obj.image3:setParent(obj.flowPart57);
     obj.image3:setAlign("client");
     obj.image3:setStyle("proportional");
     obj.image3:setField("imagens.aparencia2");
@@ -5578,7 +5580,7 @@ require('mudaNick.lua')
     obj.image3:setName("image3");
 
     obj.label38 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label38:setParent(obj.flowPart56);
+    obj.label38:setParent(obj.flowPart57);
     obj.label38:setAlign("bottom");
     obj.label38:setAutoSize(true);
     obj.label38:setText("APARENCIA");
@@ -5588,18 +5590,19 @@ require('mudaNick.lua')
     obj.label38:setName("label38");
     obj.label38:setFontColor("white");
 
-    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout61:setParent(obj.scrollBox2);
-    obj.layout61:setLeft(0);
-    obj.layout61:setTop(540);
-    obj.layout61:setWidth(375);
-    obj.layout61:setHeight(315);
-    obj.layout61:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout61:setMargins({left = 4, right = 4});
-    obj.layout61:setName("layout61");
+    obj.flowPart58 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart58:setParent(obj.scrollBox2);
+    obj.flowPart58:setLeft(0);
+    obj.flowPart58:setTop(540);
+    obj.flowPart58:setWidth(375);
+    obj.flowPart58:setHeight(315);
+    obj.flowPart58:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart58:setMargins({left = 4, right = 4});
+    obj.flowPart58:setName("flowPart58");
+    obj.flowPart58:setVertAlign("leading");
 
     obj.label39 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label39:setParent(obj.layout61);
+    obj.label39:setParent(obj.flowPart58);
     obj.label39:setAlign("top");
     obj.label39:setAutoSize(true);
     obj.label39:setVertTextAlign("center");
@@ -5610,7 +5613,7 @@ require('mudaNick.lua')
     obj.label39:setFontColor("white");
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.layout61);
+    obj.textEditor1:setParent(obj.flowPart58);
     obj.textEditor1:setLeft(10);
     obj.textEditor1:setTop(30);
     obj.textEditor1:setWidth(355);
@@ -5619,17 +5622,19 @@ require('mudaNick.lua')
     obj.textEditor1:setName("textEditor1");
     obj.textEditor1:setTransparent(true);
 
-    obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout62:setParent(obj.scrollBox2);
-    obj.layout62:setLeft(380);
-    obj.layout62:setTop(610);
-    obj.layout62:setWidth(412);
-    obj.layout62:setHeight(123);
-    obj.layout62:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout62:setName("layout62");
+    obj.flowPart59 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart59:setParent(obj.scrollBox2);
+    obj.flowPart59:setLeft(380);
+    obj.flowPart59:setTop(610);
+    obj.flowPart59:setWidth(412);
+    obj.flowPart59:setHeight(123);
+    obj.flowPart59:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart59:setName("flowPart59");
+    obj.flowPart59:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart59:setVertAlign("leading");
 
     obj.label40 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label40:setParent(obj.layout62);
+    obj.label40:setParent(obj.flowPart59);
     obj.label40:setAlign("bottom");
     obj.label40:setAutoSize(true);
     obj.label40:setVertTextAlign("center");
@@ -5640,7 +5645,7 @@ require('mudaNick.lua')
     obj.label40:setFontColor("white");
 
     obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.layout62);
+    obj.textEditor2:setParent(obj.flowPart59);
     obj.textEditor2:setLeft(10);
     obj.textEditor2:setTop(20);
     obj.textEditor2:setWidth(392);
@@ -5649,17 +5654,19 @@ require('mudaNick.lua')
     obj.textEditor2:setName("textEditor2");
     obj.textEditor2:setTransparent(true);
 
-    obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout63:setParent(obj.scrollBox2);
-    obj.layout63:setLeft(380);
-    obj.layout63:setTop(730);
-    obj.layout63:setWidth(412);
-    obj.layout63:setHeight(123);
-    obj.layout63:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout63:setName("layout63");
+    obj.flowPart60 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart60:setParent(obj.scrollBox2);
+    obj.flowPart60:setLeft(380);
+    obj.flowPart60:setTop(730);
+    obj.flowPart60:setWidth(412);
+    obj.flowPart60:setHeight(123);
+    obj.flowPart60:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart60:setName("flowPart60");
+    obj.flowPart60:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart60:setVertAlign("leading");
 
     obj.label41 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label41:setParent(obj.layout63);
+    obj.label41:setParent(obj.flowPart60);
     obj.label41:setAlign("bottom");
     obj.label41:setAutoSize(true);
     obj.label41:setVertTextAlign("center");
@@ -5670,7 +5677,7 @@ require('mudaNick.lua')
     obj.label41:setFontColor("white");
 
     obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor3:setParent(obj.layout63);
+    obj.textEditor3:setParent(obj.flowPart60);
     obj.textEditor3:setLeft(10);
     obj.textEditor3:setTop(20);
     obj.textEditor3:setWidth(392);
@@ -5679,17 +5686,19 @@ require('mudaNick.lua')
     obj.textEditor3:setName("textEditor3");
     obj.textEditor3:setTransparent(true);
 
-    obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout64:setParent(obj.scrollBox2);
-    obj.layout64:setLeft(792);
-    obj.layout64:setTop(610);
-    obj.layout64:setWidth(412);
-    obj.layout64:setHeight(125);
-    obj.layout64:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout64:setName("layout64");
+    obj.flowPart61 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart61:setParent(obj.scrollBox2);
+    obj.flowPart61:setLeft(792);
+    obj.flowPart61:setTop(610);
+    obj.flowPart61:setWidth(412);
+    obj.flowPart61:setHeight(125);
+    obj.flowPart61:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart61:setName("flowPart61");
+    obj.flowPart61:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart61:setVertAlign("leading");
 
     obj.label42 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label42:setParent(obj.layout64);
+    obj.label42:setParent(obj.flowPart61);
     obj.label42:setAlign("bottom");
     obj.label42:setAutoSize(true);
     obj.label42:setVertTextAlign("center");
@@ -5700,7 +5709,7 @@ require('mudaNick.lua')
     obj.label42:setFontColor("white");
 
     obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.layout64);
+    obj.textEditor4:setParent(obj.flowPart61);
     obj.textEditor4:setLeft(10);
     obj.textEditor4:setTop(20);
     obj.textEditor4:setWidth(392);
@@ -5709,17 +5718,19 @@ require('mudaNick.lua')
     obj.textEditor4:setName("textEditor4");
     obj.textEditor4:setTransparent(true);
 
-    obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout65:setParent(obj.scrollBox2);
-    obj.layout65:setLeft(792);
-    obj.layout65:setTop(730);
-    obj.layout65:setWidth(412);
-    obj.layout65:setHeight(125);
-    obj.layout65:setFrameStyle("frames/panel5/frame.xml");
-    obj.layout65:setName("layout65");
+    obj.flowPart62 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart62:setParent(obj.scrollBox2);
+    obj.flowPart62:setLeft(792);
+    obj.flowPart62:setTop(730);
+    obj.flowPart62:setWidth(412);
+    obj.flowPart62:setHeight(125);
+    obj.flowPart62:setFrameStyle("frames/panel5/frame.xml");
+    obj.flowPart62:setName("flowPart62");
+    obj.flowPart62:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart62:setVertAlign("leading");
 
     obj.label43 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label43:setParent(obj.layout65);
+    obj.label43:setParent(obj.flowPart62);
     obj.label43:setAlign("bottom");
     obj.label43:setAutoSize(true);
     obj.label43:setVertTextAlign("center");
@@ -5730,7 +5741,7 @@ require('mudaNick.lua')
     obj.label43:setFontColor("white");
 
     obj.textEditor5 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor5:setParent(obj.layout65);
+    obj.textEditor5:setParent(obj.flowPart62);
     obj.textEditor5:setLeft(10);
     obj.textEditor5:setTop(20);
     obj.textEditor5:setWidth(392);
@@ -5791,14 +5802,14 @@ require('mudaNick.lua')
     obj.flwPartEquipAttack:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flwPartEquipAttack:setVertAlign("leading");
 
-    obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout66:setParent(obj.flwPartEquipAttack);
-    obj.layout66:setAlign("client");
-    obj.layout66:setMargins({top=10, bottom=10});
-    obj.layout66:setName("layout66");
+    obj.layout60 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout60:setParent(obj.flwPartEquipAttack);
+    obj.layout60:setAlign("client");
+    obj.layout60:setMargins({top=10, bottom=10});
+    obj.layout60:setName("layout60");
 
     obj.layEquipAttackLeft = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layEquipAttackLeft:setParent(obj.layout66);
+    obj.layEquipAttackLeft:setParent(obj.layout60);
     obj.layEquipAttackLeft:setName("layEquipAttackLeft");
     obj.layEquipAttackLeft:setAlign("left");
     obj.layEquipAttackLeft:setWidth(240);
@@ -5832,7 +5843,7 @@ require('mudaNick.lua')
     obj.button48:setName("button48");
 
     obj.dataEquipAttackDetails = GUI.fromHandle(_obj_newObject("dataScopeBox"));
-    obj.dataEquipAttackDetails:setParent(obj.layout66);
+    obj.dataEquipAttackDetails:setParent(obj.layout60);
     obj.dataEquipAttackDetails:setName("dataEquipAttackDetails");
     obj.dataEquipAttackDetails:setAlign("client");
     obj.dataEquipAttackDetails:setFrameStyle("frames/panel5/frame.xml");
@@ -5923,17 +5934,17 @@ require('mudaNick.lua')
     obj.optAtaqueLegenda:setMargins({left=1, right=1, top=2, bottom=2});
     obj.optAtaqueLegenda:setVertAlign("leading");
 
-    obj.flowPart57 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart57:setParent(obj.optAtaqueLegenda);
-    obj.flowPart57:setHeight(15);
-    obj.flowPart57:setMinWidth(20);
-    obj.flowPart57:setMaxWidth(20);
-    obj.flowPart57:setName("flowPart57");
-    obj.flowPart57:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart57:setVertAlign("leading");
+    obj.flowPart63 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart63:setParent(obj.optAtaqueLegenda);
+    obj.flowPart63:setHeight(15);
+    obj.flowPart63:setMinWidth(20);
+    obj.flowPart63:setMaxWidth(20);
+    obj.flowPart63:setName("flowPart63");
+    obj.flowPart63:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart63:setVertAlign("leading");
 
     obj.label46 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label46:setParent(obj.flowPart57);
+    obj.label46:setParent(obj.flowPart63);
     obj.label46:setAlign("client");
     obj.label46:setText("");
     obj.label46:setHorzTextAlign("center");
@@ -5944,17 +5955,17 @@ require('mudaNick.lua')
     obj.label46:setFontSize(12);
     obj.label46:setFontColor("#D0D0D0");
 
-    obj.flowPart58 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart58:setParent(obj.optAtaqueLegenda);
-    obj.flowPart58:setHeight(15);
-    obj.flowPart58:setMinWidth(80);
-    obj.flowPart58:setMaxWidth(150);
-    obj.flowPart58:setName("flowPart58");
-    obj.flowPart58:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart58:setVertAlign("leading");
+    obj.flowPart64 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart64:setParent(obj.optAtaqueLegenda);
+    obj.flowPart64:setHeight(15);
+    obj.flowPart64:setMinWidth(80);
+    obj.flowPart64:setMaxWidth(150);
+    obj.flowPart64:setName("flowPart64");
+    obj.flowPart64:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart64:setVertAlign("leading");
 
     obj.label47 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label47:setParent(obj.flowPart58);
+    obj.label47:setParent(obj.flowPart64);
     obj.label47:setAlign("client");
     obj.label47:setText("ALCANCE");
     obj.label47:setHorzTextAlign("center");
@@ -5965,17 +5976,17 @@ require('mudaNick.lua')
     obj.label47:setFontSize(12);
     obj.label47:setFontColor("#D0D0D0");
 
-    obj.flowPart59 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart59:setParent(obj.optAtaqueLegenda);
-    obj.flowPart59:setHeight(15);
-    obj.flowPart59:setMinWidth(110);
-    obj.flowPart59:setMaxWidth(200);
-    obj.flowPart59:setName("flowPart59");
-    obj.flowPart59:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart59:setVertAlign("leading");
+    obj.flowPart65 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart65:setParent(obj.optAtaqueLegenda);
+    obj.flowPart65:setHeight(15);
+    obj.flowPart65:setMinWidth(110);
+    obj.flowPart65:setMaxWidth(200);
+    obj.flowPart65:setName("flowPart65");
+    obj.flowPart65:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart65:setVertAlign("leading");
 
     obj.label48 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label48:setParent(obj.flowPart59);
+    obj.label48:setParent(obj.flowPart65);
     obj.label48:setAlign("client");
     obj.label48:setText("ACERTO");
     obj.label48:setHorzTextAlign("center");
@@ -5986,17 +5997,17 @@ require('mudaNick.lua')
     obj.label48:setFontSize(12);
     obj.label48:setFontColor("#D0D0D0");
 
-    obj.flowPart60 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart60:setParent(obj.optAtaqueLegenda);
-    obj.flowPart60:setHeight(15);
-    obj.flowPart60:setMinWidth(80);
-    obj.flowPart60:setMaxWidth(170);
-    obj.flowPart60:setName("flowPart60");
-    obj.flowPart60:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart60:setVertAlign("leading");
+    obj.flowPart66 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart66:setParent(obj.optAtaqueLegenda);
+    obj.flowPart66:setHeight(15);
+    obj.flowPart66:setMinWidth(80);
+    obj.flowPart66:setMaxWidth(170);
+    obj.flowPart66:setName("flowPart66");
+    obj.flowPart66:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart66:setVertAlign("leading");
 
     obj.label49 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label49:setParent(obj.flowPart60);
+    obj.label49:setParent(obj.flowPart66);
     obj.label49:setAlign("client");
     obj.label49:setText("DANO");
     obj.label49:setHorzTextAlign("center");
@@ -6007,17 +6018,17 @@ require('mudaNick.lua')
     obj.label49:setFontSize(12);
     obj.label49:setFontColor("#D0D0D0");
 
-    obj.flowPart61 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart61:setParent(obj.optAtaqueLegenda);
-    obj.flowPart61:setHeight(15);
-    obj.flowPart61:setMinWidth(80);
-    obj.flowPart61:setMaxWidth(180);
-    obj.flowPart61:setName("flowPart61");
-    obj.flowPart61:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart61:setVertAlign("leading");
+    obj.flowPart67 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart67:setParent(obj.optAtaqueLegenda);
+    obj.flowPart67:setHeight(15);
+    obj.flowPart67:setMinWidth(80);
+    obj.flowPart67:setMaxWidth(180);
+    obj.flowPart67:setName("flowPart67");
+    obj.flowPart67:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart67:setVertAlign("leading");
 
     obj.label50 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label50:setParent(obj.flowPart61);
+    obj.label50:setParent(obj.flowPart67);
     obj.label50:setAlign("client");
     obj.label50:setText("TIPO");
     obj.label50:setHorzTextAlign("center");
@@ -6028,17 +6039,17 @@ require('mudaNick.lua')
     obj.label50:setFontSize(12);
     obj.label50:setFontColor("#D0D0D0");
 
-    obj.flowPart62 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart62:setParent(obj.optAtaqueLegenda);
-    obj.flowPart62:setHeight(15);
-    obj.flowPart62:setMinWidth(100);
-    obj.flowPart62:setMaxWidth(200);
-    obj.flowPart62:setName("flowPart62");
-    obj.flowPart62:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart62:setVertAlign("leading");
+    obj.flowPart68 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart68:setParent(obj.optAtaqueLegenda);
+    obj.flowPart68:setHeight(15);
+    obj.flowPart68:setMinWidth(100);
+    obj.flowPart68:setMaxWidth(200);
+    obj.flowPart68:setName("flowPart68");
+    obj.flowPart68:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart68:setVertAlign("leading");
 
     obj.label51 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label51:setParent(obj.flowPart62);
+    obj.label51:setParent(obj.flowPart68);
     obj.label51:setAlign("client");
     obj.label51:setText("MUNICAO");
     obj.label51:setHorzTextAlign("center");
@@ -6049,17 +6060,17 @@ require('mudaNick.lua')
     obj.label51:setFontSize(12);
     obj.label51:setFontColor("#D0D0D0");
 
-    obj.flowPart63 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart63:setParent(obj.optAtaqueLegenda);
-    obj.flowPart63:setHeight(15);
-    obj.flowPart63:setMinWidth(25);
-    obj.flowPart63:setMaxWidth(50);
-    obj.flowPart63:setName("flowPart63");
-    obj.flowPart63:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart63:setVertAlign("leading");
+    obj.flowPart69 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart69:setParent(obj.optAtaqueLegenda);
+    obj.flowPart69:setHeight(15);
+    obj.flowPart69:setMinWidth(25);
+    obj.flowPart69:setMaxWidth(50);
+    obj.flowPart69:setName("flowPart69");
+    obj.flowPart69:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart69:setVertAlign("leading");
 
     obj.label52 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label52:setParent(obj.flowPart63);
+    obj.label52:setParent(obj.flowPart69);
     obj.label52:setAlign("client");
     obj.label52:setText("QTD");
     obj.label52:setHorzTextAlign("center");
@@ -6070,17 +6081,17 @@ require('mudaNick.lua')
     obj.label52:setFontSize(12);
     obj.label52:setFontColor("#D0D0D0");
 
-    obj.flowPart64 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart64:setParent(obj.optAtaqueLegenda);
-    obj.flowPart64:setHeight(25);
-    obj.flowPart64:setMinWidth(25);
-    obj.flowPart64:setMaxWidth(25);
-    obj.flowPart64:setName("flowPart64");
-    obj.flowPart64:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart64:setVertAlign("leading");
+    obj.flowPart70 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart70:setParent(obj.optAtaqueLegenda);
+    obj.flowPart70:setHeight(25);
+    obj.flowPart70:setMinWidth(25);
+    obj.flowPart70:setMaxWidth(25);
+    obj.flowPart70:setName("flowPart70");
+    obj.flowPart70:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart70:setVertAlign("leading");
 
     obj.label53 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label53:setParent(obj.flowPart64);
+    obj.label53:setParent(obj.flowPart70);
     obj.label53:setAlign("client");
     obj.label53:setText("");
     obj.label53:setHorzTextAlign("center");
@@ -6103,33 +6114,33 @@ require('mudaNick.lua')
     obj.optAtaquePadrao:setMargins({left=1, right=1, top=2, bottom=2});
     obj.optAtaquePadrao:setVertAlign("leading");
 
-    obj.flowPart65 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart65:setParent(obj.optAtaquePadrao);
-    obj.flowPart65:setHeight(30);
-    obj.flowPart65:setWidth(20);
-    obj.flowPart65:setName("flowPart65");
-    obj.flowPart65:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart65:setVertAlign("leading");
+    obj.flowPart71 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart71:setParent(obj.optAtaquePadrao);
+    obj.flowPart71:setHeight(30);
+    obj.flowPart71:setWidth(20);
+    obj.flowPart71:setName("flowPart71");
+    obj.flowPart71:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart71:setVertAlign("leading");
 
     obj.checkBox2 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox2:setParent(obj.flowPart65);
+    obj.checkBox2:setParent(obj.flowPart71);
     obj.checkBox2:setAlign("client");
     obj.checkBox2:setChecked(true);
     obj.checkBox2:setEnabled(false);
     obj.checkBox2:setName("checkBox2");
 
-    obj.flowPart66 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart66:setParent(obj.optAtaquePadrao);
-    obj.flowPart66:setHeight(30);
-    obj.flowPart66:setMinWidth(80);
-    obj.flowPart66:setMaxWidth(150);
-    obj.flowPart66:setAvoidScale(true);
-    obj.flowPart66:setName("flowPart66");
-    obj.flowPart66:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart66:setVertAlign("leading");
+    obj.flowPart72 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart72:setParent(obj.optAtaquePadrao);
+    obj.flowPart72:setHeight(30);
+    obj.flowPart72:setMinWidth(80);
+    obj.flowPart72:setMaxWidth(150);
+    obj.flowPart72:setAvoidScale(true);
+    obj.flowPart72:setName("flowPart72");
+    obj.flowPart72:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart72:setVertAlign("leading");
 
     obj.edit31 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit31:setParent(obj.flowPart66);
+    obj.edit31:setParent(obj.flowPart72);
     obj.edit31:setAlign("client");
     obj.edit31:setField("alcance");
     obj.edit31:setHorzTextAlign("center");
@@ -6142,18 +6153,18 @@ require('mudaNick.lua')
     obj.edit31:setWidth(195);
     obj.edit31:setFontColor("white");
 
-    obj.flowPart67 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart67:setParent(obj.optAtaquePadrao);
-    obj.flowPart67:setHeight(30);
-    obj.flowPart67:setMinWidth(110);
-    obj.flowPart67:setMaxWidth(200);
-    obj.flowPart67:setAvoidScale(true);
-    obj.flowPart67:setName("flowPart67");
-    obj.flowPart67:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart67:setVertAlign("leading");
+    obj.flowPart73 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart73:setParent(obj.optAtaquePadrao);
+    obj.flowPart73:setHeight(30);
+    obj.flowPart73:setMinWidth(110);
+    obj.flowPart73:setMaxWidth(200);
+    obj.flowPart73:setAvoidScale(true);
+    obj.flowPart73:setName("flowPart73");
+    obj.flowPart73:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart73:setVertAlign("leading");
 
     obj.edit32 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit32:setParent(obj.flowPart67);
+    obj.edit32:setParent(obj.flowPart73);
     obj.edit32:setAlign("client");
     obj.edit32:setField("ataque");
     obj.edit32:setHorzTextAlign("center");
@@ -6166,18 +6177,18 @@ require('mudaNick.lua')
     obj.edit32:setWidth(195);
     obj.edit32:setFontColor("white");
 
-    obj.flowPart68 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart68:setParent(obj.optAtaquePadrao);
-    obj.flowPart68:setHeight(30);
-    obj.flowPart68:setMinWidth(80);
-    obj.flowPart68:setMaxWidth(170);
-    obj.flowPart68:setAvoidScale(true);
-    obj.flowPart68:setName("flowPart68");
-    obj.flowPart68:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart68:setVertAlign("leading");
+    obj.flowPart74 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart74:setParent(obj.optAtaquePadrao);
+    obj.flowPart74:setHeight(30);
+    obj.flowPart74:setMinWidth(80);
+    obj.flowPart74:setMaxWidth(170);
+    obj.flowPart74:setAvoidScale(true);
+    obj.flowPart74:setName("flowPart74");
+    obj.flowPart74:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart74:setVertAlign("leading");
 
     obj.edit33 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit33:setParent(obj.flowPart68);
+    obj.edit33:setParent(obj.flowPart74);
     obj.edit33:setAlign("client");
     obj.edit33:setField("dano");
     obj.edit33:setHorzTextAlign("center");
@@ -6190,18 +6201,18 @@ require('mudaNick.lua')
     obj.edit33:setWidth(195);
     obj.edit33:setFontColor("white");
 
-    obj.flowPart69 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart69:setParent(obj.optAtaquePadrao);
-    obj.flowPart69:setHeight(30);
-    obj.flowPart69:setMinWidth(80);
-    obj.flowPart69:setMaxWidth(180);
-    obj.flowPart69:setAvoidScale(true);
-    obj.flowPart69:setName("flowPart69");
-    obj.flowPart69:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart69:setVertAlign("leading");
+    obj.flowPart75 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart75:setParent(obj.optAtaquePadrao);
+    obj.flowPart75:setHeight(30);
+    obj.flowPart75:setMinWidth(80);
+    obj.flowPart75:setMaxWidth(180);
+    obj.flowPart75:setAvoidScale(true);
+    obj.flowPart75:setName("flowPart75");
+    obj.flowPart75:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart75:setVertAlign("leading");
 
     obj.edit34 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit34:setParent(obj.flowPart69);
+    obj.edit34:setParent(obj.flowPart75);
     obj.edit34:setAlign("client");
     obj.edit34:setField("tipo");
     obj.edit34:setHorzTextAlign("center");
@@ -6214,40 +6225,40 @@ require('mudaNick.lua')
     obj.edit34:setWidth(195);
     obj.edit34:setFontColor("white");
 
-    obj.flowPart70 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart70:setParent(obj.optAtaquePadrao);
-    obj.flowPart70:setHeight(30);
-    obj.flowPart70:setMinWidth(100);
-    obj.flowPart70:setMaxWidth(200);
-    obj.flowPart70:setAvoidScale(true);
-    obj.flowPart70:setName("flowPart70");
-    obj.flowPart70:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart70:setVertAlign("leading");
+    obj.flowPart76 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart76:setParent(obj.optAtaquePadrao);
+    obj.flowPart76:setHeight(30);
+    obj.flowPart76:setMinWidth(100);
+    obj.flowPart76:setMaxWidth(200);
+    obj.flowPart76:setAvoidScale(true);
+    obj.flowPart76:setName("flowPart76");
+    obj.flowPart76:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart76:setVertAlign("leading");
 
     obj.cbOptAtaqueMunicao = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.cbOptAtaqueMunicao:setParent(obj.flowPart70);
+    obj.cbOptAtaqueMunicao:setParent(obj.flowPart76);
     obj.cbOptAtaqueMunicao:setName("cbOptAtaqueMunicao");
     obj.cbOptAtaqueMunicao:setAlign("client");
     obj.cbOptAtaqueMunicao:setField("municao");
     obj.cbOptAtaqueMunicao:setHint("Qual 'contador' deve ser gasto");
 
     obj.dataLink120 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink120:setParent(obj.flowPart70);
+    obj.dataLink120:setParent(obj.flowPart76);
     obj.dataLink120:setField("contadoresMudaram");
     obj.dataLink120:setName("dataLink120");
 
-    obj.flowPart71 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart71:setParent(obj.optAtaquePadrao);
-    obj.flowPart71:setHeight(30);
-    obj.flowPart71:setMinWidth(25);
-    obj.flowPart71:setMaxWidth(50);
-    obj.flowPart71:setAvoidScale(true);
-    obj.flowPart71:setName("flowPart71");
-    obj.flowPart71:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart71:setVertAlign("leading");
+    obj.flowPart77 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart77:setParent(obj.optAtaquePadrao);
+    obj.flowPart77:setHeight(30);
+    obj.flowPart77:setMinWidth(25);
+    obj.flowPart77:setMaxWidth(50);
+    obj.flowPart77:setAvoidScale(true);
+    obj.flowPart77:setName("flowPart77");
+    obj.flowPart77:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart77:setVertAlign("leading");
 
     obj.edit35 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit35:setParent(obj.flowPart71);
+    obj.edit35:setParent(obj.flowPart77);
     obj.edit35:setAlign("client");
     obj.edit35:setField("qtMunicao");
     obj.edit35:setHorzTextAlign("center");
@@ -6260,16 +6271,16 @@ require('mudaNick.lua')
     obj.edit35:setWidth(195);
     obj.edit35:setFontColor("white");
 
-    obj.flowPart72 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart72:setParent(obj.optAtaquePadrao);
-    obj.flowPart72:setHeight(30);
-    obj.flowPart72:setWidth(25);
-    obj.flowPart72:setName("flowPart72");
-    obj.flowPart72:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart72:setVertAlign("leading");
+    obj.flowPart78 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart78:setParent(obj.optAtaquePadrao);
+    obj.flowPart78:setHeight(30);
+    obj.flowPart78:setWidth(25);
+    obj.flowPart78:setName("flowPart78");
+    obj.flowPart78:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart78:setVertAlign("leading");
 
     obj.btnApagar = GUI.fromHandle(_obj_newObject("button"));
-    obj.btnApagar:setParent(obj.flowPart72);
+    obj.btnApagar:setParent(obj.flowPart78);
     obj.btnApagar:setName("btnApagar");
     obj.btnApagar:setAlign("client");
     obj.btnApagar:setText("✖");
@@ -6357,25 +6368,25 @@ require('mudaNick.lua')
     obj.flowLineBreak4:setParent(obj.fraEquipamentoLayout);
     obj.flowLineBreak4:setName("flowLineBreak4");
 
-    obj.flowPart73 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart73:setParent(obj.fraEquipamentoLayout);
-    obj.flowPart73:setHeight(400);
-    obj.flowPart73:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart73:setMinScaledWidth(290);
-    obj.flowPart73:setName("flowPart73");
-    obj.flowPart73:setStepSizes({310, 420, 640, 760, 1150});
-    obj.flowPart73:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart73:setVertAlign("leading");
+    obj.flowPart79 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart79:setParent(obj.fraEquipamentoLayout);
+    obj.flowPart79:setHeight(400);
+    obj.flowPart79:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart79:setMinScaledWidth(290);
+    obj.flowPart79:setName("flowPart79");
+    obj.flowPart79:setStepSizes({310, 420, 640, 760, 1150});
+    obj.flowPart79:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart79:setVertAlign("leading");
 
-    obj.layout67 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout67:setParent(obj.flowPart73);
-    obj.layout67:setAlign("left");
-    obj.layout67:setWidth(200);
-    obj.layout67:setMargins({left=3});
-    obj.layout67:setName("layout67");
+    obj.layout61 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout61:setParent(obj.flowPart79);
+    obj.layout61:setAlign("left");
+    obj.layout61:setWidth(200);
+    obj.layout61:setMargins({left=3});
+    obj.layout61:setName("layout61");
 
     obj.frame3 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame3:setParent(obj.layout67);
+    obj.frame3:setParent(obj.layout61);
     obj.frame3:setFrameStyle("frames/dinheiro/pecaCobre.xml");
     obj.frame3:setWidth(228);
     obj.frame3:setHeight(64);
@@ -6407,7 +6418,7 @@ require('mudaNick.lua')
     obj.edit36:setTransparent(true);
 
     obj.frame4 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame4:setParent(obj.layout67);
+    obj.frame4:setParent(obj.layout61);
     obj.frame4:setFrameStyle("frames/dinheiro/pecaCobre.xml");
     obj.frame4:setWidth(228);
     obj.frame4:setHeight(64);
@@ -6439,7 +6450,7 @@ require('mudaNick.lua')
     obj.edit37:setTransparent(true);
 
     obj.frame5 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame5:setParent(obj.layout67);
+    obj.frame5:setParent(obj.layout61);
     obj.frame5:setFrameStyle("frames/dinheiro/pecaCobre.xml");
     obj.frame5:setWidth(228);
     obj.frame5:setHeight(64);
@@ -6471,7 +6482,7 @@ require('mudaNick.lua')
     obj.edit38:setTransparent(true);
 
     obj.frame6 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame6:setParent(obj.layout67);
+    obj.frame6:setParent(obj.layout61);
     obj.frame6:setFrameStyle("frames/dinheiro/pecaCobre.xml");
     obj.frame6:setWidth(228);
     obj.frame6:setHeight(64);
@@ -6503,7 +6514,7 @@ require('mudaNick.lua')
     obj.edit39:setTransparent(true);
 
     obj.frame7 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame7:setParent(obj.layout67);
+    obj.frame7:setParent(obj.layout61);
     obj.frame7:setFrameStyle("frames/dinheiro/pecaCobre.xml");
     obj.frame7:setWidth(228);
     obj.frame7:setHeight(64);
@@ -6535,14 +6546,14 @@ require('mudaNick.lua')
     obj.edit40:setTransparent(true);
 
     obj.checkBox3 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox3:setParent(obj.layout67);
+    obj.checkBox3:setParent(obj.layout61);
     obj.checkBox3:setAlign("top");
     obj.checkBox3:setField("equipamento.outros_melhorado");
     obj.checkBox3:setMargins({left=75, top=15});
     obj.checkBox3:setName("checkBox3");
 
     obj.editorFancy = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.editorFancy:setParent(obj.flowPart73);
+    obj.editorFancy:setParent(obj.flowPart79);
     obj.editorFancy:setName("editorFancy");
     obj.editorFancy:setAlign("client");
     obj.editorFancy:setMargins({left=10, right=10});
@@ -6562,7 +6573,7 @@ require('mudaNick.lua')
     obj.richEdit2:setName("richEdit2");
 
     obj.editorMerda = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.editorMerda:setParent(obj.flowPart73);
+    obj.editorMerda:setParent(obj.flowPart79);
     obj.editorMerda:setName("editorMerda");
     obj.editorMerda:setAlign("client");
     obj.editorMerda:setMargins({left=10, right=10});
@@ -6571,7 +6582,7 @@ require('mudaNick.lua')
     obj.editorMerda:setVisible(true);
 
     obj.label59 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label59:setParent(obj.flowPart73);
+    obj.label59:setParent(obj.flowPart79);
     obj.label59:setAlign("bottom");
     obj.label59:setAutoSize(true);
     obj.label59:setText("OUTROS EQUIPAMENTOS");
@@ -6619,12 +6630,12 @@ require('mudaNick.lua')
     obj.flowLayout16:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout16:setVertAlign("leading");
 
-    obj.flowPart74 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart74:setParent(obj.flowLayout16);
-    obj.flowPart74:setWidth(1);
-    obj.flowPart74:setName("flowPart74");
-    obj.flowPart74:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart74:setVertAlign("leading");
+    obj.flowPart80 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart80:setParent(obj.flowLayout16);
+    obj.flowPart80:setWidth(1);
+    obj.flowPart80:setName("flowPart80");
+    obj.flowPart80:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart80:setVertAlign("leading");
 
     obj.upperGridMagicBox1 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.upperGridMagicBox1:setParent(obj.flowLayout16);
@@ -6784,12 +6795,12 @@ self.upperGridMagicBox2._RecalcSize();
 self.upperGridMagicBox3._RecalcSize();	
 
 
-    obj.flowPart75 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart75:setParent(obj.flowLayout16);
-    obj.flowPart75:setWidth(1);
-    obj.flowPart75:setName("flowPart75");
-    obj.flowPart75:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart75:setVertAlign("leading");
+    obj.flowPart81 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart81:setParent(obj.flowLayout16);
+    obj.flowPart81:setWidth(1);
+    obj.flowPart81:setName("flowPart81");
+    obj.flowPart81:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart81:setVertAlign("leading");
 
   require("common.lua"); 
 
@@ -6802,21 +6813,21 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEdit:setHeight(600);
     lfm_setPropAsString(obj.popupEdit, "autoScopeNode",  "false");
 
-    obj.layout68 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout68:setParent(obj.popupEdit);
-    obj.layout68:setAlign("top");
-    obj.layout68:setHeight(100);
-    obj.layout68:setName("layout68");
+    obj.layout62 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout62:setParent(obj.popupEdit);
+    obj.layout62:setAlign("top");
+    obj.layout62:setHeight(100);
+    obj.layout62:setName("layout62");
 
     obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.layout68);
+    obj.image5:setParent(obj.layout62);
     obj.image5:setAlign("left");
     obj.image5:setField("icone");
     obj.image5:setEditable(true);
     obj.image5:setName("image5");
 
     obj.flowLayout17 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout17:setParent(obj.layout68);
+    obj.flowLayout17:setParent(obj.layout62);
     obj.flowLayout17:setAlign("client");
     obj.flowLayout17:setName("flowLayout17");
     obj.flowLayout17:setMargins({left=1, right=1, top=2, bottom=2});
@@ -6891,16 +6902,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labelFieldPENivel:setFontColor("White");
     obj.labelFieldPENivel:setFontSize(15);
 
-    obj.flowPart76 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart76:setParent(obj.flowLayout17);
-    obj.flowPart76:setWidth(1);
-    obj.flowPart76:setAdjustHeightToLine(true);
-    obj.flowPart76:setName("flowPart76");
-    obj.flowPart76:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart76:setVertAlign("leading");
+    obj.flowPart82 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart82:setParent(obj.flowLayout17);
+    obj.flowPart82:setWidth(1);
+    obj.flowPart82:setAdjustHeightToLine(true);
+    obj.flowPart82:setName("flowPart82");
+    obj.flowPart82:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart82:setVertAlign("leading");
 
     obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle5:setParent(obj.flowPart76);
+    obj.rectangle5:setParent(obj.flowPart82);
     obj.rectangle5:setAlign("client");
     obj.rectangle5:setColor("gray");
     obj.rectangle5:setName("rectangle5");
@@ -6932,16 +6943,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labelFieldPEEscola:setFontColor("White");
     obj.labelFieldPEEscola:setFontSize(15);
 
-    obj.flowPart77 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart77:setParent(obj.flowLayout17);
-    obj.flowPart77:setWidth(1);
-    obj.flowPart77:setAdjustHeightToLine(true);
-    obj.flowPart77:setName("flowPart77");
-    obj.flowPart77:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart77:setVertAlign("leading");
+    obj.flowPart83 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart83:setParent(obj.flowLayout17);
+    obj.flowPart83:setWidth(1);
+    obj.flowPart83:setAdjustHeightToLine(true);
+    obj.flowPart83:setName("flowPart83");
+    obj.flowPart83:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart83:setVertAlign("leading");
 
     obj.rectangle6 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle6:setParent(obj.flowPart77);
+    obj.rectangle6:setParent(obj.flowPart83);
     obj.rectangle6:setAlign("client");
     obj.rectangle6:setColor("gray");
     obj.rectangle6:setName("rectangle6");
@@ -6983,14 +6994,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.tab5:setTitle("Descrição");
     obj.tab5:setName("tab5");
 
-    obj.layout69 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout69:setParent(obj.tab5);
-    obj.layout69:setAlign("client");
-    obj.layout69:setMargins({top=5, bottom=5, left=5, right=5});
-    obj.layout69:setName("layout69");
+    obj.layout63 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout63:setParent(obj.tab5);
+    obj.layout63:setAlign("client");
+    obj.layout63:setMargins({top=5, bottom=5, left=5, right=5});
+    obj.layout63:setName("layout63");
 
     obj.label60 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label60:setParent(obj.layout69);
+    obj.label60:setParent(obj.layout63);
     obj.label60:setText("Mecânicas / Flavour");
     obj.label60:setName("label60");
     obj.label60:setAlign("top");
@@ -7000,7 +7011,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label60:setFontColor("white");
 
     obj.textEditor6 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor6:setParent(obj.layout69);
+    obj.textEditor6:setParent(obj.layout63);
     obj.textEditor6:setAlign("client");
     obj.textEditor6:setField("descricao");
     obj.textEditor6:setName("textEditor6");
@@ -7101,20 +7112,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label64:setName("label64");
     obj.label64:setFontColor("white");
 
-    obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout70:setParent(obj.rectangle9);
-    obj.layout70:setAlign("top");
-    obj.layout70:setHeight(30);
-    obj.layout70:setName("layout70");
+    obj.layout64 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout64:setParent(obj.rectangle9);
+    obj.layout64:setAlign("top");
+    obj.layout64:setHeight(30);
+    obj.layout64:setName("layout64");
 
-    obj.layout71 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout71:setParent(obj.layout70);
-    obj.layout71:setAlign("left");
-    obj.layout71:setWidth(34);
-    obj.layout71:setName("layout71");
+    obj.layout65 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout65:setParent(obj.layout64);
+    obj.layout65:setAlign("left");
+    obj.layout65:setWidth(34);
+    obj.layout65:setName("layout65");
 
     obj.label65 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label65:setParent(obj.layout71);
+    obj.label65:setParent(obj.layout65);
     obj.label65:setAlign("client");
     obj.label65:setHorzTextAlign("trailing");
     obj.label65:setText("V");
@@ -7122,20 +7133,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label65:setFontColor("white");
 
     obj.checkBox4 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox4:setParent(obj.layout71);
+    obj.checkBox4:setParent(obj.layout65);
     obj.checkBox4:setAlign("right");
     obj.checkBox4:setWidth(20);
     obj.checkBox4:setField("componentesV");
     obj.checkBox4:setName("checkBox4");
 
-    obj.layout72 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout72:setParent(obj.layout70);
-    obj.layout72:setAlign("left");
-    obj.layout72:setWidth(30);
-    obj.layout72:setName("layout72");
+    obj.layout66 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout66:setParent(obj.layout64);
+    obj.layout66:setAlign("left");
+    obj.layout66:setWidth(30);
+    obj.layout66:setName("layout66");
 
     obj.label66 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label66:setParent(obj.layout72);
+    obj.label66:setParent(obj.layout66);
     obj.label66:setAlign("client");
     obj.label66:setHorzTextAlign("trailing");
     obj.label66:setText("S");
@@ -7143,20 +7154,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label66:setFontColor("white");
 
     obj.checkBox5 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox5:setParent(obj.layout72);
+    obj.checkBox5:setParent(obj.layout66);
     obj.checkBox5:setAlign("right");
     obj.checkBox5:setWidth(20);
     obj.checkBox5:setField("componentesS");
     obj.checkBox5:setName("checkBox5");
 
-    obj.layout73 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout73:setParent(obj.layout70);
-    obj.layout73:setAlign("left");
-    obj.layout73:setWidth(32);
-    obj.layout73:setName("layout73");
+    obj.layout67 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout67:setParent(obj.layout64);
+    obj.layout67:setAlign("left");
+    obj.layout67:setWidth(32);
+    obj.layout67:setName("layout67");
 
     obj.label67 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label67:setParent(obj.layout73);
+    obj.label67:setParent(obj.layout67);
     obj.label67:setAlign("client");
     obj.label67:setHorzTextAlign("trailing");
     obj.label67:setText("M");
@@ -7164,14 +7175,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label67:setFontColor("white");
 
     obj.checkBox6 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox6:setParent(obj.layout73);
+    obj.checkBox6:setParent(obj.layout67);
     obj.checkBox6:setAlign("right");
     obj.checkBox6:setWidth(20);
     obj.checkBox6:setField("componentesM");
     obj.checkBox6:setName("checkBox6");
 
     obj.popupEditCompM = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditCompM:setParent(obj.layout70);
+    obj.popupEditCompM:setParent(obj.layout64);
     obj.popupEditCompM:setName("popupEditCompM");
     obj.popupEditCompM:setAlign("client");
     obj.popupEditCompM:setField("componentesMaterial");
@@ -7180,24 +7191,24 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditCompM:setFontColor("white");
 
     obj.dataLink123 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink123:setParent(obj.layout70);
+    obj.dataLink123:setParent(obj.layout64);
     obj.dataLink123:setField("componentesM");
     obj.dataLink123:setName("dataLink123");
 
-    obj.layout74 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout74:setParent(obj.rectangle9);
-    obj.layout74:setAlign("top");
-    obj.layout74:setHeight(30);
-    obj.layout74:setName("layout74");
+    obj.layout68 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout68:setParent(obj.rectangle9);
+    obj.layout68:setAlign("top");
+    obj.layout68:setHeight(30);
+    obj.layout68:setName("layout68");
 
-    obj.layout75 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout75:setParent(obj.layout74);
-    obj.layout75:setAlign("left");
-    obj.layout75:setWidth(100);
-    obj.layout75:setName("layout75");
+    obj.layout69 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout69:setParent(obj.layout68);
+    obj.layout69:setAlign("left");
+    obj.layout69:setWidth(100);
+    obj.layout69:setName("layout69");
 
     obj.label68 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label68:setParent(obj.layout75);
+    obj.label68:setParent(obj.layout69);
     obj.label68:setAlign("client");
     obj.label68:setHorzTextAlign("trailing");
     obj.label68:setText("Concentração");
@@ -7205,20 +7216,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label68:setFontColor("white");
 
     obj.checkBox7 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox7:setParent(obj.layout75);
+    obj.checkBox7:setParent(obj.layout69);
     obj.checkBox7:setAlign("right");
     obj.checkBox7:setWidth(20);
     obj.checkBox7:setField("componentesConcentracao");
     obj.checkBox7:setName("checkBox7");
 
-    obj.layout76 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout76:setParent(obj.layout74);
-    obj.layout76:setAlign("left");
-    obj.layout76:setWidth(55);
-    obj.layout76:setName("layout76");
+    obj.layout70 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout70:setParent(obj.layout68);
+    obj.layout70:setAlign("left");
+    obj.layout70:setWidth(55);
+    obj.layout70:setName("layout70");
 
     obj.label69 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label69:setParent(obj.layout76);
+    obj.label69:setParent(obj.layout70);
     obj.label69:setAlign("client");
     obj.label69:setHorzTextAlign("trailing");
     obj.label69:setText("Ritual");
@@ -7226,7 +7237,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label69:setFontColor("white");
 
     obj.checkBox8 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox8:setParent(obj.layout76);
+    obj.checkBox8:setParent(obj.layout70);
     obj.checkBox8:setAlign("right");
     obj.checkBox8:setWidth(20);
     obj.checkBox8:setField("componentesRitual");
@@ -7283,17 +7294,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.layPrepValorChb:setWidth(20);
     obj.layPrepValorChb:setField("preparadoValor");
 
-    obj.flowPart78 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart78:setParent(obj.flowLayout18);
-    obj.flowPart78:setWidth(140);
-    obj.flowPart78:setMinScaledWidth(70);
-    obj.flowPart78:setHeight(24);
-    obj.flowPart78:setName("flowPart78");
-    obj.flowPart78:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart78:setVertAlign("leading");
+    obj.flowPart84 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart84:setParent(obj.flowLayout18);
+    obj.flowPart84:setWidth(140);
+    obj.flowPart84:setMinScaledWidth(70);
+    obj.flowPart84:setHeight(24);
+    obj.flowPart84:setName("flowPart84");
+    obj.flowPart84:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart84:setVertAlign("leading");
 
     obj.comboBox4 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox4:setParent(obj.flowPart78);
+    obj.comboBox4:setParent(obj.flowPart84);
     obj.comboBox4:setAlign("client");
     obj.comboBox4:setField("preparadoTipo");
     obj.comboBox4:setItems({'Preparada', 'Sempre Preparada', 'Conhecida', 'A vontade', 'Inata'});
@@ -7332,42 +7343,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout19:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout19:setVertAlign("leading");
 
-    obj.flowPart79 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart79:setParent(obj.flowLayout19);
-    obj.flowPart79:setMinWidth(173);
-    obj.flowPart79:setMaxWidth(865);
-    obj.flowPart79:setHeight(24);
-    obj.flowPart79:setName("flowPart79");
-    obj.flowPart79:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart79:setVertAlign("leading");
+    obj.flowPart85 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart85:setParent(obj.flowLayout19);
+    obj.flowPart85:setMinWidth(173);
+    obj.flowPart85:setMaxWidth(865);
+    obj.flowPart85:setHeight(24);
+    obj.flowPart85:setName("flowPart85");
+    obj.flowPart85:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart85:setVertAlign("leading");
 
     obj.label72 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label72:setParent(obj.flowPart79);
+    obj.label72:setParent(obj.flowPart85);
     obj.label72:setAlign("client");
     lfm_setPropAsString(obj.label72, "fontStyle",  "bold");
     obj.label72:setText("Tempo de Conjuração");
     obj.label72:setName("label72");
     obj.label72:setFontColor("white");
 
-    obj.flowPart80 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart80:setParent(obj.flowLayout19);
-    obj.flowPart80:setMinWidth(3);
-    obj.flowPart80:setHeight(24);
-    obj.flowPart80:setName("flowPart80");
-    obj.flowPart80:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart80:setVertAlign("leading");
+    obj.flowPart86 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart86:setParent(obj.flowLayout19);
+    obj.flowPart86:setMinWidth(3);
+    obj.flowPart86:setHeight(24);
+    obj.flowPart86:setName("flowPart86");
+    obj.flowPart86:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart86:setVertAlign("leading");
 
-    obj.flowPart81 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart81:setParent(obj.flowLayout19);
-    obj.flowPart81:setMinWidth(97);
-    obj.flowPart81:setMaxWidth(485);
-    obj.flowPart81:setHeight(24);
-    obj.flowPart81:setName("flowPart81");
-    obj.flowPart81:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart81:setVertAlign("leading");
+    obj.flowPart87 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart87:setParent(obj.flowLayout19);
+    obj.flowPart87:setMinWidth(97);
+    obj.flowPart87:setMaxWidth(485);
+    obj.flowPart87:setHeight(24);
+    obj.flowPart87:setName("flowPart87");
+    obj.flowPart87:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart87:setVertAlign("leading");
 
     obj.edit41 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit41:setParent(obj.flowPart81);
+    obj.edit41:setParent(obj.flowPart87);
     obj.edit41:setAlign("client");
     obj.edit41:setField("tempoConjuracaoValor");
     obj.edit41:setHorzTextAlign("trailing");
@@ -7376,25 +7387,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit41:setFontSize(15);
     obj.edit41:setFontColor("white");
 
-    obj.flowPart82 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart82:setParent(obj.flowLayout19);
-    obj.flowPart82:setMinWidth(3);
-    obj.flowPart82:setHeight(24);
-    obj.flowPart82:setName("flowPart82");
-    obj.flowPart82:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart82:setVertAlign("leading");
+    obj.flowPart88 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart88:setParent(obj.flowLayout19);
+    obj.flowPart88:setMinWidth(3);
+    obj.flowPart88:setHeight(24);
+    obj.flowPart88:setName("flowPart88");
+    obj.flowPart88:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart88:setVertAlign("leading");
 
-    obj.flowPart83 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart83:setParent(obj.flowLayout19);
-    obj.flowPart83:setMinWidth(158);
-    obj.flowPart83:setMaxWidth(790);
-    obj.flowPart83:setHeight(24);
-    obj.flowPart83:setName("flowPart83");
-    obj.flowPart83:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart83:setVertAlign("leading");
+    obj.flowPart89 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart89:setParent(obj.flowLayout19);
+    obj.flowPart89:setMinWidth(158);
+    obj.flowPart89:setMaxWidth(790);
+    obj.flowPart89:setHeight(24);
+    obj.flowPart89:setName("flowPart89");
+    obj.flowPart89:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart89:setVertAlign("leading");
 
     obj.comboBox5 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox5:setParent(obj.flowPart83);
+    obj.comboBox5:setParent(obj.flowPart89);
     obj.comboBox5:setAlign("client");
     obj.comboBox5:setField("tempoConjuracaoUnidade");
     obj.comboBox5:setItems({'', 'Ação', 'Ação Bônus', 'Ação de Tripulação', 'Dias', 'Horas', 'Ação Lendária', 'Minutos', 'Nada', 'Reação', 'Especial', 'Ação de Lar'});
@@ -7418,42 +7429,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout20:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout20:setVertAlign("leading");
 
-    obj.flowPart84 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart84:setParent(obj.flowLayout20);
-    obj.flowPart84:setMinWidth(173);
-    obj.flowPart84:setMaxWidth(865);
-    obj.flowPart84:setHeight(24);
-    obj.flowPart84:setName("flowPart84");
-    obj.flowPart84:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart84:setVertAlign("leading");
+    obj.flowPart90 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart90:setParent(obj.flowLayout20);
+    obj.flowPart90:setMinWidth(173);
+    obj.flowPart90:setMaxWidth(865);
+    obj.flowPart90:setHeight(24);
+    obj.flowPart90:setName("flowPart90");
+    obj.flowPart90:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart90:setVertAlign("leading");
 
     obj.label73 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label73:setParent(obj.flowPart84);
+    obj.label73:setParent(obj.flowPart90);
     obj.label73:setAlign("client");
     lfm_setPropAsString(obj.label73, "fontStyle",  "bold");
     obj.label73:setText("Condição de Ativação (Reação)");
     obj.label73:setName("label73");
     obj.label73:setFontColor("white");
 
-    obj.flowPart85 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart85:setParent(obj.flowLayout20);
-    obj.flowPart85:setMinWidth(3);
-    obj.flowPart85:setHeight(24);
-    obj.flowPart85:setName("flowPart85");
-    obj.flowPart85:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart85:setVertAlign("leading");
+    obj.flowPart91 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart91:setParent(obj.flowLayout20);
+    obj.flowPart91:setMinWidth(3);
+    obj.flowPart91:setHeight(24);
+    obj.flowPart91:setName("flowPart91");
+    obj.flowPart91:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart91:setVertAlign("leading");
 
-    obj.flowPart86 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart86:setParent(obj.flowLayout20);
-    obj.flowPart86:setMinWidth(258);
-    obj.flowPart86:setMaxWidth(1290);
-    obj.flowPart86:setHeight(24);
-    obj.flowPart86:setName("flowPart86");
-    obj.flowPart86:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart86:setVertAlign("leading");
+    obj.flowPart92 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart92:setParent(obj.flowLayout20);
+    obj.flowPart92:setMinWidth(258);
+    obj.flowPart92:setMaxWidth(1290);
+    obj.flowPart92:setHeight(24);
+    obj.flowPart92:setName("flowPart92");
+    obj.flowPart92:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart92:setVertAlign("leading");
 
     obj.popupEditCondAtiv = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditCondAtiv:setParent(obj.flowPart86);
+    obj.popupEditCondAtiv:setParent(obj.flowPart92);
     obj.popupEditCondAtiv:setName("popupEditCondAtiv");
     obj.popupEditCondAtiv:setAlign("client");
     obj.popupEditCondAtiv:setField("condicaoAtivacao");
@@ -7483,42 +7494,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout21:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout21:setVertAlign("leading");
 
-    obj.flowPart87 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart87:setParent(obj.flowLayout21);
-    obj.flowPart87:setMinWidth(173);
-    obj.flowPart87:setMaxWidth(865);
-    obj.flowPart87:setHeight(24);
-    obj.flowPart87:setName("flowPart87");
-    obj.flowPart87:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart87:setVertAlign("leading");
+    obj.flowPart93 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart93:setParent(obj.flowLayout21);
+    obj.flowPart93:setMinWidth(173);
+    obj.flowPart93:setMaxWidth(865);
+    obj.flowPart93:setHeight(24);
+    obj.flowPart93:setName("flowPart93");
+    obj.flowPart93:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart93:setVertAlign("leading");
 
     obj.label74 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label74:setParent(obj.flowPart87);
+    obj.label74:setParent(obj.flowPart93);
     obj.label74:setAlign("client");
     lfm_setPropAsString(obj.label74, "fontStyle",  "bold");
     obj.label74:setText("Alvo");
     obj.label74:setName("label74");
     obj.label74:setFontColor("white");
 
-    obj.flowPart88 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart88:setParent(obj.flowLayout21);
-    obj.flowPart88:setMinWidth(3);
-    obj.flowPart88:setHeight(24);
-    obj.flowPart88:setName("flowPart88");
-    obj.flowPart88:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart88:setVertAlign("leading");
+    obj.flowPart94 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart94:setParent(obj.flowLayout21);
+    obj.flowPart94:setMinWidth(3);
+    obj.flowPart94:setHeight(24);
+    obj.flowPart94:setName("flowPart94");
+    obj.flowPart94:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart94:setVertAlign("leading");
 
-    obj.flowPart89 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart89:setParent(obj.flowLayout21);
-    obj.flowPart89:setMinWidth(69);
-    obj.flowPart89:setMaxWidth(345);
-    obj.flowPart89:setHeight(24);
-    obj.flowPart89:setName("flowPart89");
-    obj.flowPart89:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart89:setVertAlign("leading");
+    obj.flowPart95 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart95:setParent(obj.flowLayout21);
+    obj.flowPart95:setMinWidth(69);
+    obj.flowPart95:setMaxWidth(345);
+    obj.flowPart95:setHeight(24);
+    obj.flowPart95:setName("flowPart95");
+    obj.flowPart95:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart95:setVertAlign("leading");
 
     obj.edit42 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit42:setParent(obj.flowPart89);
+    obj.edit42:setParent(obj.flowPart95);
     obj.edit42:setAlign("client");
     obj.edit42:setField("alvoValor");
     obj.edit42:setHorzTextAlign("trailing");
@@ -7527,49 +7538,49 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit42:setFontSize(15);
     obj.edit42:setFontColor("white");
 
-    obj.flowPart90 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart90:setParent(obj.flowLayout21);
-    obj.flowPart90:setMinWidth(3);
-    obj.flowPart90:setHeight(24);
-    obj.flowPart90:setName("flowPart90");
-    obj.flowPart90:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart90:setVertAlign("leading");
+    obj.flowPart96 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart96:setParent(obj.flowLayout21);
+    obj.flowPart96:setMinWidth(3);
+    obj.flowPart96:setHeight(24);
+    obj.flowPart96:setName("flowPart96");
+    obj.flowPart96:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart96:setVertAlign("leading");
 
-    obj.flowPart91 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart91:setParent(obj.flowLayout21);
-    obj.flowPart91:setMinWidth(92);
-    obj.flowPart91:setMaxWidth(460);
-    obj.flowPart91:setHeight(24);
-    obj.flowPart91:setName("flowPart91");
-    obj.flowPart91:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart91:setVertAlign("leading");
+    obj.flowPart97 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart97:setParent(obj.flowLayout21);
+    obj.flowPart97:setMinWidth(92);
+    obj.flowPart97:setMaxWidth(460);
+    obj.flowPart97:setHeight(24);
+    obj.flowPart97:setName("flowPart97");
+    obj.flowPart97:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart97:setVertAlign("leading");
 
     obj.comboBox6 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox6:setParent(obj.flowPart91);
+    obj.comboBox6:setParent(obj.flowPart97);
     obj.comboBox6:setAlign("client");
     obj.comboBox6:setField("alvoUnidade");
     obj.comboBox6:setItems({'', 'Nenhum', 'Pessoal', 'Toque', 'Especial', 'Qualquer', 'Pés', 'Milhas', 'Metros', 'Kilômetros'});
     obj.comboBox6:setName("comboBox6");
 
-    obj.flowPart92 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart92:setParent(obj.flowLayout21);
-    obj.flowPart92:setMinWidth(3);
-    obj.flowPart92:setHeight(24);
-    obj.flowPart92:setName("flowPart92");
-    obj.flowPart92:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart92:setVertAlign("leading");
+    obj.flowPart98 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart98:setParent(obj.flowLayout21);
+    obj.flowPart98:setMinWidth(3);
+    obj.flowPart98:setHeight(24);
+    obj.flowPart98:setName("flowPart98");
+    obj.flowPart98:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart98:setVertAlign("leading");
 
-    obj.flowPart93 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart93:setParent(obj.flowLayout21);
-    obj.flowPart93:setMinWidth(91);
-    obj.flowPart93:setMaxWidth(455);
-    obj.flowPart93:setHeight(24);
-    obj.flowPart93:setName("flowPart93");
-    obj.flowPart93:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart93:setVertAlign("leading");
+    obj.flowPart99 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart99:setParent(obj.flowLayout21);
+    obj.flowPart99:setMinWidth(91);
+    obj.flowPart99:setMaxWidth(455);
+    obj.flowPart99:setHeight(24);
+    obj.flowPart99:setName("flowPart99");
+    obj.flowPart99:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart99:setVertAlign("leading");
 
     obj.comboBox7 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox7:setParent(obj.flowPart93);
+    obj.comboBox7:setParent(obj.flowPart99);
     obj.comboBox7:setAlign("client");
     obj.comboBox7:setField("alvoTipo");
     obj.comboBox7:setItems({'', 'Aliado', 'Cone', 'Criatura', 'Cubo', 'Cilindro', 'Inimigo', 'Linha', 'Nenhum', 'Objeto', 'Raio', 'Pessoal', 'Espaço', 'Esfera', 'Quadrado', 'Parede'});
@@ -7593,42 +7604,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout22:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout22:setVertAlign("leading");
 
-    obj.flowPart94 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart94:setParent(obj.flowLayout22);
-    obj.flowPart94:setMinWidth(173);
-    obj.flowPart94:setMaxWidth(865);
-    obj.flowPart94:setHeight(24);
-    obj.flowPart94:setName("flowPart94");
-    obj.flowPart94:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart94:setVertAlign("leading");
+    obj.flowPart100 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart100:setParent(obj.flowLayout22);
+    obj.flowPart100:setMinWidth(173);
+    obj.flowPart100:setMaxWidth(865);
+    obj.flowPart100:setHeight(24);
+    obj.flowPart100:setName("flowPart100");
+    obj.flowPart100:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart100:setVertAlign("leading");
 
     obj.label75 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label75:setParent(obj.flowPart94);
+    obj.label75:setParent(obj.flowPart100);
     obj.label75:setAlign("client");
     lfm_setPropAsString(obj.label75, "fontStyle",  "bold");
     obj.label75:setText("Alcance");
     obj.label75:setName("label75");
     obj.label75:setFontColor("white");
 
-    obj.flowPart95 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart95:setParent(obj.flowLayout22);
-    obj.flowPart95:setMinWidth(3);
-    obj.flowPart95:setHeight(24);
-    obj.flowPart95:setName("flowPart95");
-    obj.flowPart95:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart95:setVertAlign("leading");
+    obj.flowPart101 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart101:setParent(obj.flowLayout22);
+    obj.flowPart101:setMinWidth(3);
+    obj.flowPart101:setHeight(24);
+    obj.flowPart101:setName("flowPart101");
+    obj.flowPart101:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart101:setVertAlign("leading");
 
-    obj.flowPart96 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart96:setParent(obj.flowLayout22);
-    obj.flowPart96:setMinWidth(68);
-    obj.flowPart96:setMaxWidth(340);
-    obj.flowPart96:setHeight(24);
-    obj.flowPart96:setName("flowPart96");
-    obj.flowPart96:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart96:setVertAlign("leading");
+    obj.flowPart102 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart102:setParent(obj.flowLayout22);
+    obj.flowPart102:setMinWidth(68);
+    obj.flowPart102:setMaxWidth(340);
+    obj.flowPart102:setHeight(24);
+    obj.flowPart102:setName("flowPart102");
+    obj.flowPart102:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart102:setVertAlign("leading");
 
     obj.popupEditAlcanceCurto = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditAlcanceCurto:setParent(obj.flowPart96);
+    obj.popupEditAlcanceCurto:setParent(obj.flowPart102);
     obj.popupEditAlcanceCurto:setName("popupEditAlcanceCurto");
     obj.popupEditAlcanceCurto:setAlign("client");
     obj.popupEditAlcanceCurto:setField("alcanceCurto");
@@ -7637,34 +7648,34 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditAlcanceCurto:setFontSize(15);
     obj.popupEditAlcanceCurto:setFontColor("white");
 
-    obj.flowPart97 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart97:setParent(obj.flowLayout22);
-    obj.flowPart97:setMinWidth(13);
-    obj.flowPart97:setMaxWidth(65);
-    obj.flowPart97:setHeight(24);
-    obj.flowPart97:setName("flowPart97");
-    obj.flowPart97:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart97:setVertAlign("leading");
+    obj.flowPart103 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart103:setParent(obj.flowLayout22);
+    obj.flowPart103:setMinWidth(13);
+    obj.flowPart103:setMaxWidth(65);
+    obj.flowPart103:setHeight(24);
+    obj.flowPart103:setName("flowPart103");
+    obj.flowPart103:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart103:setVertAlign("leading");
 
     obj.label76 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label76:setParent(obj.flowPart97);
+    obj.label76:setParent(obj.flowPart103);
     obj.label76:setAlign("client");
     obj.label76:setText("/");
     obj.label76:setHorzTextAlign("center");
     obj.label76:setName("label76");
     obj.label76:setFontColor("white");
 
-    obj.flowPart98 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart98:setParent(obj.flowLayout22);
-    obj.flowPart98:setMinWidth(68);
-    obj.flowPart98:setMaxWidth(340);
-    obj.flowPart98:setHeight(24);
-    obj.flowPart98:setName("flowPart98");
-    obj.flowPart98:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart98:setVertAlign("leading");
+    obj.flowPart104 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart104:setParent(obj.flowLayout22);
+    obj.flowPart104:setMinWidth(68);
+    obj.flowPart104:setMaxWidth(340);
+    obj.flowPart104:setHeight(24);
+    obj.flowPart104:setName("flowPart104");
+    obj.flowPart104:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart104:setVertAlign("leading");
 
     obj.popupEditAlcanceLongo = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditAlcanceLongo:setParent(obj.flowPart98);
+    obj.popupEditAlcanceLongo:setParent(obj.flowPart104);
     obj.popupEditAlcanceLongo:setName("popupEditAlcanceLongo");
     obj.popupEditAlcanceLongo:setAlign("client");
     obj.popupEditAlcanceLongo:setField("alcanceLongo");
@@ -7673,25 +7684,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditAlcanceLongo:setFontSize(15);
     obj.popupEditAlcanceLongo:setFontColor("white");
 
-    obj.flowPart99 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart99:setParent(obj.flowLayout22);
-    obj.flowPart99:setMinWidth(3);
-    obj.flowPart99:setHeight(24);
-    obj.flowPart99:setName("flowPart99");
-    obj.flowPart99:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart99:setVertAlign("leading");
+    obj.flowPart105 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart105:setParent(obj.flowLayout22);
+    obj.flowPart105:setMinWidth(3);
+    obj.flowPart105:setHeight(24);
+    obj.flowPart105:setName("flowPart105");
+    obj.flowPart105:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart105:setVertAlign("leading");
 
-    obj.flowPart100 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart100:setParent(obj.flowLayout22);
-    obj.flowPart100:setMinWidth(106);
-    obj.flowPart100:setMaxWidth(530);
-    obj.flowPart100:setHeight(24);
-    obj.flowPart100:setName("flowPart100");
-    obj.flowPart100:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart100:setVertAlign("leading");
+    obj.flowPart106 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart106:setParent(obj.flowLayout22);
+    obj.flowPart106:setMinWidth(106);
+    obj.flowPart106:setMaxWidth(530);
+    obj.flowPart106:setHeight(24);
+    obj.flowPart106:setName("flowPart106");
+    obj.flowPart106:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart106:setVertAlign("leading");
 
     obj.comboBox8 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox8:setParent(obj.flowPart100);
+    obj.comboBox8:setParent(obj.flowPart106);
     obj.comboBox8:setAlign("client");
     obj.comboBox8:setField("alcanceUnidade");
     obj.comboBox8:setItems({'', 'Nenhum', 'Pessoal', 'Toque', 'Especial', 'Qualquer', 'Pés', 'Milhas', 'Metros', 'Kilômetros'});
@@ -7720,42 +7731,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout23:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout23:setVertAlign("leading");
 
-    obj.flowPart101 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart101:setParent(obj.flowLayout23);
-    obj.flowPart101:setMinWidth(173);
-    obj.flowPart101:setMaxWidth(865);
-    obj.flowPart101:setHeight(24);
-    obj.flowPart101:setName("flowPart101");
-    obj.flowPart101:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart101:setVertAlign("leading");
+    obj.flowPart107 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart107:setParent(obj.flowLayout23);
+    obj.flowPart107:setMinWidth(173);
+    obj.flowPart107:setMaxWidth(865);
+    obj.flowPart107:setHeight(24);
+    obj.flowPart107:setName("flowPart107");
+    obj.flowPart107:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart107:setVertAlign("leading");
 
     obj.label77 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label77:setParent(obj.flowPart101);
+    obj.label77:setParent(obj.flowPart107);
     obj.label77:setAlign("client");
     lfm_setPropAsString(obj.label77, "fontStyle",  "bold");
     obj.label77:setText("Duração");
     obj.label77:setName("label77");
     obj.label77:setFontColor("white");
 
-    obj.flowPart102 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart102:setParent(obj.flowLayout23);
-    obj.flowPart102:setMinWidth(3);
-    obj.flowPart102:setHeight(24);
-    obj.flowPart102:setName("flowPart102");
-    obj.flowPart102:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart102:setVertAlign("leading");
+    obj.flowPart108 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart108:setParent(obj.flowLayout23);
+    obj.flowPart108:setMinWidth(3);
+    obj.flowPart108:setHeight(24);
+    obj.flowPart108:setName("flowPart108");
+    obj.flowPart108:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart108:setVertAlign("leading");
 
-    obj.flowPart103 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart103:setParent(obj.flowLayout23);
-    obj.flowPart103:setMinWidth(97);
-    obj.flowPart103:setMaxWidth(485);
-    obj.flowPart103:setHeight(24);
-    obj.flowPart103:setName("flowPart103");
-    obj.flowPart103:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart103:setVertAlign("leading");
+    obj.flowPart109 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart109:setParent(obj.flowLayout23);
+    obj.flowPart109:setMinWidth(97);
+    obj.flowPart109:setMaxWidth(485);
+    obj.flowPart109:setHeight(24);
+    obj.flowPart109:setName("flowPart109");
+    obj.flowPart109:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart109:setVertAlign("leading");
 
     obj.popupEditDuracaoUnidade = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditDuracaoUnidade:setParent(obj.flowPart103);
+    obj.popupEditDuracaoUnidade:setParent(obj.flowPart109);
     obj.popupEditDuracaoUnidade:setName("popupEditDuracaoUnidade");
     obj.popupEditDuracaoUnidade:setAlign("client");
     obj.popupEditDuracaoUnidade:setField("duracaoValor");
@@ -7764,25 +7775,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditDuracaoUnidade:setFontSize(15);
     obj.popupEditDuracaoUnidade:setFontColor("white");
 
-    obj.flowPart104 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart104:setParent(obj.flowLayout23);
-    obj.flowPart104:setMinWidth(3);
-    obj.flowPart104:setHeight(24);
-    obj.flowPart104:setName("flowPart104");
-    obj.flowPart104:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart104:setVertAlign("leading");
+    obj.flowPart110 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart110:setParent(obj.flowLayout23);
+    obj.flowPart110:setMinWidth(3);
+    obj.flowPart110:setHeight(24);
+    obj.flowPart110:setName("flowPart110");
+    obj.flowPart110:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart110:setVertAlign("leading");
 
-    obj.flowPart105 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart105:setParent(obj.flowLayout23);
-    obj.flowPart105:setMinWidth(158);
-    obj.flowPart105:setMaxWidth(790);
-    obj.flowPart105:setHeight(24);
-    obj.flowPart105:setName("flowPart105");
-    obj.flowPart105:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart105:setVertAlign("leading");
+    obj.flowPart111 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart111:setParent(obj.flowLayout23);
+    obj.flowPart111:setMinWidth(158);
+    obj.flowPart111:setMaxWidth(790);
+    obj.flowPart111:setHeight(24);
+    obj.flowPart111:setName("flowPart111");
+    obj.flowPart111:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart111:setVertAlign("leading");
 
     obj.comboBox9 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox9:setParent(obj.flowPart105);
+    obj.comboBox9:setParent(obj.flowPart111);
     obj.comboBox9:setAlign("client");
     obj.comboBox9:setField("duracaoUnidade");
     obj.comboBox9:setItems({'', 'Dias', 'Horas', 'Instantânea', 'Minutos', 'Meses', 'Permanente', 'Rodadas', 'Especial', 'Turnos', 'Anos'});
@@ -7811,42 +7822,42 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout24:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout24:setVertAlign("leading");
 
-    obj.flowPart106 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart106:setParent(obj.flowLayout24);
-    obj.flowPart106:setMinWidth(173);
-    obj.flowPart106:setMaxWidth(865);
-    obj.flowPart106:setHeight(24);
-    obj.flowPart106:setName("flowPart106");
-    obj.flowPart106:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart106:setVertAlign("leading");
+    obj.flowPart112 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart112:setParent(obj.flowLayout24);
+    obj.flowPart112:setMinWidth(173);
+    obj.flowPart112:setMaxWidth(865);
+    obj.flowPart112:setHeight(24);
+    obj.flowPart112:setName("flowPart112");
+    obj.flowPart112:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart112:setVertAlign("leading");
 
     obj.label78 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label78:setParent(obj.flowPart106);
+    obj.label78:setParent(obj.flowPart112);
     obj.label78:setAlign("client");
     lfm_setPropAsString(obj.label78, "fontStyle",  "bold");
     obj.label78:setText("Recurso Necessário");
     obj.label78:setName("label78");
     obj.label78:setFontColor("white");
 
-    obj.flowPart107 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart107:setParent(obj.flowLayout24);
-    obj.flowPart107:setMinWidth(3);
-    obj.flowPart107:setHeight(24);
-    obj.flowPart107:setName("flowPart107");
-    obj.flowPart107:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart107:setVertAlign("leading");
+    obj.flowPart113 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart113:setParent(obj.flowLayout24);
+    obj.flowPart113:setMinWidth(3);
+    obj.flowPart113:setHeight(24);
+    obj.flowPart113:setName("flowPart113");
+    obj.flowPart113:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart113:setVertAlign("leading");
 
-    obj.flowPart108 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart108:setParent(obj.flowLayout24);
-    obj.flowPart108:setMinWidth(44);
-    obj.flowPart108:setMaxWidth(220);
-    obj.flowPart108:setHeight(24);
-    obj.flowPart108:setName("flowPart108");
-    obj.flowPart108:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart108:setVertAlign("leading");
+    obj.flowPart114 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart114:setParent(obj.flowLayout24);
+    obj.flowPart114:setMinWidth(44);
+    obj.flowPart114:setMaxWidth(220);
+    obj.flowPart114:setHeight(24);
+    obj.flowPart114:setName("flowPart114");
+    obj.flowPart114:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart114:setVertAlign("leading");
 
     obj.edit43 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit43:setParent(obj.flowPart108);
+    obj.edit43:setParent(obj.flowPart114);
     obj.edit43:setAlign("client");
     obj.edit43:setField("contadorUsos");
     obj.edit43:setHorzTextAlign("trailing");
@@ -7855,34 +7866,34 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit43:setFontSize(15);
     obj.edit43:setFontColor("white");
 
-    obj.flowPart109 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart109:setParent(obj.flowLayout24);
-    obj.flowPart109:setMinWidth(23);
-    obj.flowPart109:setMaxWidth(115);
-    obj.flowPart109:setHeight(24);
-    obj.flowPart109:setName("flowPart109");
-    obj.flowPart109:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart109:setVertAlign("leading");
+    obj.flowPart115 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart115:setParent(obj.flowLayout24);
+    obj.flowPart115:setMinWidth(23);
+    obj.flowPart115:setMaxWidth(115);
+    obj.flowPart115:setHeight(24);
+    obj.flowPart115:setName("flowPart115");
+    obj.flowPart115:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart115:setVertAlign("leading");
 
     obj.label79 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label79:setParent(obj.flowPart109);
+    obj.label79:setParent(obj.flowPart115);
     obj.label79:setAlign("client");
     obj.label79:setText("de");
     obj.label79:setHorzTextAlign("center");
     obj.label79:setName("label79");
     obj.label79:setFontColor("white");
 
-    obj.flowPart110 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart110:setParent(obj.flowLayout24);
-    obj.flowPart110:setMinWidth(44);
-    obj.flowPart110:setMaxWidth(220);
-    obj.flowPart110:setHeight(24);
-    obj.flowPart110:setName("flowPart110");
-    obj.flowPart110:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart110:setVertAlign("leading");
+    obj.flowPart116 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart116:setParent(obj.flowLayout24);
+    obj.flowPart116:setMinWidth(44);
+    obj.flowPart116:setMaxWidth(220);
+    obj.flowPart116:setHeight(24);
+    obj.flowPart116:setName("flowPart116");
+    obj.flowPart116:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart116:setVertAlign("leading");
 
     obj.popupEditContadorUsosTotal = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditContadorUsosTotal:setParent(obj.flowPart110);
+    obj.popupEditContadorUsosTotal:setParent(obj.flowPart116);
     obj.popupEditContadorUsosTotal:setName("popupEditContadorUsosTotal");
     obj.popupEditContadorUsosTotal:setAlign("client");
     obj.popupEditContadorUsosTotal:setField("contadorUsosTotal");
@@ -7890,25 +7901,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditContadorUsosTotal:setFontSize(15);
     obj.popupEditContadorUsosTotal:setFontColor("white");
 
-    obj.flowPart111 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart111:setParent(obj.flowLayout24);
-    obj.flowPart111:setMinWidth(3);
-    obj.flowPart111:setHeight(24);
-    obj.flowPart111:setName("flowPart111");
-    obj.flowPart111:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart111:setVertAlign("leading");
+    obj.flowPart117 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart117:setParent(obj.flowLayout24);
+    obj.flowPart117:setMinWidth(3);
+    obj.flowPart117:setHeight(24);
+    obj.flowPart117:setName("flowPart117");
+    obj.flowPart117:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart117:setVertAlign("leading");
 
-    obj.flowPart112 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart112:setParent(obj.flowLayout24);
-    obj.flowPart112:setMinWidth(146);
-    obj.flowPart112:setMaxWidth(730);
-    obj.flowPart112:setHeight(24);
-    obj.flowPart112:setName("flowPart112");
-    obj.flowPart112:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart112:setVertAlign("leading");
+    obj.flowPart118 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart118:setParent(obj.flowLayout24);
+    obj.flowPart118:setMinWidth(146);
+    obj.flowPart118:setMaxWidth(730);
+    obj.flowPart118:setHeight(24);
+    obj.flowPart118:setName("flowPart118");
+    obj.flowPart118:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart118:setVertAlign("leading");
 
     obj.popupEditContadorNome = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.popupEditContadorNome:setParent(obj.flowPart112);
+    obj.popupEditContadorNome:setParent(obj.flowPart118);
     obj.popupEditContadorNome:setName("popupEditContadorNome");
     obj.popupEditContadorNome:setAlign("client");
     obj.popupEditContadorNome:setField("contadorNome");
@@ -8027,14 +8038,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditDanoRect:setXradius(2);
     obj.popupEditDanoRect:setYradius(2);
 
-    obj.layout77 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout77:setParent(obj.popupEditDanoRect);
-    obj.layout77:setAlign("top");
-    obj.layout77:setHeight(30);
-    obj.layout77:setName("layout77");
+    obj.layout71 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout71:setParent(obj.popupEditDanoRect);
+    obj.layout71:setAlign("top");
+    obj.layout71:setHeight(30);
+    obj.layout71:setName("layout71");
 
     obj.label84 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label84:setParent(obj.layout77);
+    obj.label84:setParent(obj.layout71);
     obj.label84:setAlign("left");
     lfm_setPropAsString(obj.label84, "fontStyle",  "bold");
     obj.label84:setText("Fórmulas de Dano");
@@ -8042,7 +8053,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label84:setFontColor("white");
 
     obj.button51 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button51:setParent(obj.layout77);
+    obj.button51:setParent(obj.layout71);
     obj.button51:setAlign("right");
     obj.button51:setWidth(140);
     obj.button51:setText("+ Adicionar Fórmula");
@@ -8058,86 +8069,86 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditDanoLegenda:setMargins({left=1, right=1, top=2, bottom=2});
     obj.popupEditDanoLegenda:setVertAlign("leading");
 
-    obj.flowPart113 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart113:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart113:setWidth(34);
-    obj.flowPart113:setMaxWidth(835);
-    obj.flowPart113:setHeight(20);
-    obj.flowPart113:setName("flowPart113");
-    obj.flowPart113:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart113:setVertAlign("leading");
+    obj.flowPart119 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart119:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart119:setWidth(34);
+    obj.flowPart119:setMaxWidth(835);
+    obj.flowPart119:setHeight(20);
+    obj.flowPart119:setName("flowPart119");
+    obj.flowPart119:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart119:setVertAlign("leading");
 
     obj.label85 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label85:setParent(obj.flowPart113);
+    obj.label85:setParent(obj.flowPart119);
     obj.label85:setAlign("client");
     obj.label85:setText("Fórmula");
     obj.label85:setName("label85");
     obj.label85:setFontColor("white");
 
-    obj.flowPart114 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart114:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart114:setWidth(5);
-    obj.flowPart114:setHeight(20);
-    obj.flowPart114:setName("flowPart114");
-    obj.flowPart114:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart114:setVertAlign("leading");
+    obj.flowPart120 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart120:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart120:setWidth(5);
+    obj.flowPart120:setHeight(20);
+    obj.flowPart120:setName("flowPart120");
+    obj.flowPart120:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart120:setVertAlign("leading");
 
-    obj.flowPart115 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart115:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart115:setWidth(33);
-    obj.flowPart115:setMaxWidth(830);
-    obj.flowPart115:setHeight(20);
-    obj.flowPart115:setName("flowPart115");
-    obj.flowPart115:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart115:setVertAlign("leading");
+    obj.flowPart121 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart121:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart121:setWidth(33);
+    obj.flowPart121:setMaxWidth(830);
+    obj.flowPart121:setHeight(20);
+    obj.flowPart121:setName("flowPart121");
+    obj.flowPart121:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart121:setVertAlign("leading");
 
     obj.label86 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label86:setParent(obj.flowPart115);
+    obj.label86:setParent(obj.flowPart121);
     obj.label86:setAlign("client");
     obj.label86:setText("Contexto");
     obj.label86:setName("label86");
     obj.label86:setFontColor("white");
 
-    obj.flowPart116 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart116:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart116:setWidth(5);
-    obj.flowPart116:setHeight(20);
-    obj.flowPart116:setName("flowPart116");
-    obj.flowPart116:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart116:setVertAlign("leading");
+    obj.flowPart122 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart122:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart122:setWidth(5);
+    obj.flowPart122:setHeight(20);
+    obj.flowPart122:setName("flowPart122");
+    obj.flowPart122:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart122:setVertAlign("leading");
 
-    obj.flowPart117 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart117:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart117:setWidth(27);
-    obj.flowPart117:setMaxWidth(685);
-    obj.flowPart117:setHeight(20);
-    obj.flowPart117:setName("flowPart117");
-    obj.flowPart117:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart117:setVertAlign("leading");
+    obj.flowPart123 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart123:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart123:setWidth(27);
+    obj.flowPart123:setMaxWidth(685);
+    obj.flowPart123:setHeight(20);
+    obj.flowPart123:setName("flowPart123");
+    obj.flowPart123:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart123:setVertAlign("leading");
 
     obj.label87 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label87:setParent(obj.flowPart117);
+    obj.label87:setParent(obj.flowPart123);
     obj.label87:setAlign("client");
     obj.label87:setText("Tipo");
     obj.label87:setName("label87");
     obj.label87:setFontColor("white");
 
-    obj.flowPart118 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart118:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart118:setWidth(5);
-    obj.flowPart118:setHeight(20);
-    obj.flowPart118:setName("flowPart118");
-    obj.flowPart118:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart118:setVertAlign("leading");
+    obj.flowPart124 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart124:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart124:setWidth(5);
+    obj.flowPart124:setHeight(20);
+    obj.flowPart124:setName("flowPart124");
+    obj.flowPart124:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart124:setVertAlign("leading");
 
-    obj.flowPart119 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart119:setParent(obj.popupEditDanoLegenda);
-    obj.flowPart119:setWidth(20);
-    obj.flowPart119:setMaxWidth(35);
-    obj.flowPart119:setHeight(20);
-    obj.flowPart119:setName("flowPart119");
-    obj.flowPart119:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart119:setVertAlign("leading");
+    obj.flowPart125 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart125:setParent(obj.popupEditDanoLegenda);
+    obj.flowPart125:setWidth(20);
+    obj.flowPart125:setMaxWidth(35);
+    obj.flowPart125:setHeight(20);
+    obj.flowPart125:setName("flowPart125");
+    obj.flowPart125:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart125:setVertAlign("leading");
 
     obj.popupEditDanoRL = GUI.fromHandle(_obj_newObject("recordList"));
     obj.popupEditDanoRL:setParent(obj.popupEditDanoRect);
@@ -8158,14 +8169,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditFormulaRect:setXradius(2);
     obj.popupEditFormulaRect:setYradius(2);
 
-    obj.layout78 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout78:setParent(obj.popupEditFormulaRect);
-    obj.layout78:setAlign("top");
-    obj.layout78:setHeight(30);
-    obj.layout78:setName("layout78");
+    obj.layout72 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout72:setParent(obj.popupEditFormulaRect);
+    obj.layout72:setAlign("top");
+    obj.layout72:setHeight(30);
+    obj.layout72:setName("layout72");
 
     obj.label88 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label88:setParent(obj.layout78);
+    obj.label88:setParent(obj.layout72);
     obj.label88:setAlign("left");
     lfm_setPropAsString(obj.label88, "fontStyle",  "bold");
     obj.label88:setText("Outras Fórmulas");
@@ -8173,7 +8184,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label88:setFontColor("white");
 
     obj.button52 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button52:setParent(obj.layout78);
+    obj.button52:setParent(obj.layout72);
     obj.button52:setAlign("right");
     obj.button52:setWidth(140);
     obj.button52:setText("+ Adicionar Fórmula");
@@ -8189,62 +8200,62 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditFormulaLegenda:setMargins({left=1, right=1, top=2, bottom=2});
     obj.popupEditFormulaLegenda:setVertAlign("leading");
 
-    obj.flowPart120 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart120:setParent(obj.popupEditFormulaLegenda);
-    obj.flowPart120:setWidth(34);
-    obj.flowPart120:setMaxWidth(835);
-    obj.flowPart120:setHeight(20);
-    obj.flowPart120:setName("flowPart120");
-    obj.flowPart120:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart120:setVertAlign("leading");
+    obj.flowPart126 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart126:setParent(obj.popupEditFormulaLegenda);
+    obj.flowPart126:setWidth(34);
+    obj.flowPart126:setMaxWidth(835);
+    obj.flowPart126:setHeight(20);
+    obj.flowPart126:setName("flowPart126");
+    obj.flowPart126:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart126:setVertAlign("leading");
 
     obj.label89 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label89:setParent(obj.flowPart120);
+    obj.label89:setParent(obj.flowPart126);
     obj.label89:setAlign("client");
     obj.label89:setText("Fórmula");
     obj.label89:setName("label89");
     obj.label89:setFontColor("white");
 
-    obj.flowPart121 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart121:setParent(obj.popupEditFormulaLegenda);
-    obj.flowPart121:setWidth(5);
-    obj.flowPart121:setHeight(20);
-    obj.flowPart121:setName("flowPart121");
-    obj.flowPart121:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart121:setVertAlign("leading");
+    obj.flowPart127 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart127:setParent(obj.popupEditFormulaLegenda);
+    obj.flowPart127:setWidth(5);
+    obj.flowPart127:setHeight(20);
+    obj.flowPart127:setName("flowPart127");
+    obj.flowPart127:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart127:setVertAlign("leading");
 
-    obj.flowPart122 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart122:setParent(obj.popupEditFormulaLegenda);
-    obj.flowPart122:setWidth(33);
-    obj.flowPart122:setMaxWidth(830);
-    obj.flowPart122:setHeight(20);
-    obj.flowPart122:setName("flowPart122");
-    obj.flowPart122:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart122:setVertAlign("leading");
+    obj.flowPart128 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart128:setParent(obj.popupEditFormulaLegenda);
+    obj.flowPart128:setWidth(33);
+    obj.flowPart128:setMaxWidth(830);
+    obj.flowPart128:setHeight(20);
+    obj.flowPart128:setName("flowPart128");
+    obj.flowPart128:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart128:setVertAlign("leading");
 
     obj.label90 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label90:setParent(obj.flowPart122);
+    obj.label90:setParent(obj.flowPart128);
     obj.label90:setAlign("client");
     obj.label90:setText("Contexto");
     obj.label90:setName("label90");
     obj.label90:setFontColor("white");
 
-    obj.flowPart123 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart123:setParent(obj.popupEditFormulaLegenda);
-    obj.flowPart123:setWidth(5);
-    obj.flowPart123:setHeight(20);
-    obj.flowPart123:setName("flowPart123");
-    obj.flowPart123:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart123:setVertAlign("leading");
+    obj.flowPart129 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart129:setParent(obj.popupEditFormulaLegenda);
+    obj.flowPart129:setWidth(5);
+    obj.flowPart129:setHeight(20);
+    obj.flowPart129:setName("flowPart129");
+    obj.flowPart129:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart129:setVertAlign("leading");
 
-    obj.flowPart124 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart124:setParent(obj.popupEditFormulaLegenda);
-    obj.flowPart124:setWidth(20);
-    obj.flowPart124:setMaxWidth(35);
-    obj.flowPart124:setHeight(20);
-    obj.flowPart124:setName("flowPart124");
-    obj.flowPart124:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart124:setVertAlign("leading");
+    obj.flowPart130 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart130:setParent(obj.popupEditFormulaLegenda);
+    obj.flowPart130:setWidth(20);
+    obj.flowPart130:setMaxWidth(35);
+    obj.flowPart130:setHeight(20);
+    obj.flowPart130:setName("flowPart130");
+    obj.flowPart130:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart130:setVertAlign("leading");
 
     obj.popupEditFormulaRL = GUI.fromHandle(_obj_newObject("recordList"));
     obj.popupEditFormulaRL:setParent(obj.popupEditFormulaRect);
@@ -8272,76 +8283,76 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout25:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout25:setVertAlign("leading");
 
-    obj.flowPart125 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart125:setParent(obj.flowLayout25);
-    obj.flowPart125:setMinWidth(173);
-    obj.flowPart125:setMaxWidth(865);
-    obj.flowPart125:setHeight(24);
-    obj.flowPart125:setName("flowPart125");
-    obj.flowPart125:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart125:setVertAlign("leading");
+    obj.flowPart131 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart131:setParent(obj.flowLayout25);
+    obj.flowPart131:setMinWidth(173);
+    obj.flowPart131:setMaxWidth(865);
+    obj.flowPart131:setHeight(24);
+    obj.flowPart131:setName("flowPart131");
+    obj.flowPart131:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart131:setVertAlign("leading");
 
     obj.label91 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label91:setParent(obj.flowPart125);
+    obj.label91:setParent(obj.flowPart131);
     obj.label91:setAlign("client");
     lfm_setPropAsString(obj.label91, "fontStyle",  "bold");
     obj.label91:setText("Teste de Resistência");
     obj.label91:setName("label91");
     obj.label91:setFontColor("white");
 
-    obj.flowPart126 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart126:setParent(obj.flowLayout25);
-    obj.flowPart126:setMinWidth(3);
-    obj.flowPart126:setHeight(24);
-    obj.flowPart126:setName("flowPart126");
-    obj.flowPart126:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart126:setVertAlign("leading");
+    obj.flowPart132 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart132:setParent(obj.flowLayout25);
+    obj.flowPart132:setMinWidth(3);
+    obj.flowPart132:setHeight(24);
+    obj.flowPart132:setName("flowPart132");
+    obj.flowPart132:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart132:setVertAlign("leading");
 
-    obj.flowPart127 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart127:setParent(obj.flowLayout25);
-    obj.flowPart127:setMinWidth(106);
-    obj.flowPart127:setMaxWidth(530);
-    obj.flowPart127:setHeight(24);
-    obj.flowPart127:setName("flowPart127");
-    obj.flowPart127:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart127:setVertAlign("leading");
+    obj.flowPart133 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart133:setParent(obj.flowLayout25);
+    obj.flowPart133:setMinWidth(106);
+    obj.flowPart133:setMaxWidth(530);
+    obj.flowPart133:setHeight(24);
+    obj.flowPart133:setName("flowPart133");
+    obj.flowPart133:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart133:setVertAlign("leading");
 
     obj.comboBox11 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox11:setParent(obj.flowPart127);
+    obj.comboBox11:setParent(obj.flowPart133);
     obj.comboBox11:setAlign("client");
     obj.comboBox11:setField("cdResistenciaAtributo");
     obj.comboBox11:setItems({'', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma'});
     obj.comboBox11:setValues({'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
     obj.comboBox11:setName("comboBox11");
 
-    obj.flowPart128 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart128:setParent(obj.flowLayout25);
-    obj.flowPart128:setMinWidth(61);
-    obj.flowPart128:setMaxWidth(305);
-    obj.flowPart128:setHeight(24);
-    obj.flowPart128:setName("flowPart128");
-    obj.flowPart128:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart128:setVertAlign("leading");
+    obj.flowPart134 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart134:setParent(obj.flowLayout25);
+    obj.flowPart134:setMinWidth(61);
+    obj.flowPart134:setMaxWidth(305);
+    obj.flowPart134:setHeight(24);
+    obj.flowPart134:setName("flowPart134");
+    obj.flowPart134:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart134:setVertAlign("leading");
 
     obj.label92 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label92:setParent(obj.flowPart128);
+    obj.label92:setParent(obj.flowPart134);
     obj.label92:setAlign("client");
     obj.label92:setText("contra CD.");
     obj.label92:setHorzTextAlign("center");
     obj.label92:setName("label92");
     obj.label92:setFontColor("white");
 
-    obj.flowPart129 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart129:setParent(obj.flowLayout25);
-    obj.flowPart129:setMinWidth(30);
-    obj.flowPart129:setMaxWidth(150);
-    obj.flowPart129:setHeight(24);
-    obj.flowPart129:setName("flowPart129");
-    obj.flowPart129:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart129:setVertAlign("leading");
+    obj.flowPart135 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart135:setParent(obj.flowLayout25);
+    obj.flowPart135:setMinWidth(30);
+    obj.flowPart135:setMaxWidth(150);
+    obj.flowPart135:setHeight(24);
+    obj.flowPart135:setName("flowPart135");
+    obj.flowPart135:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart135:setVertAlign("leading");
 
     obj.popupEditCDvalor = GUI.fromHandle(_obj_newObject("edit"));
-    obj.popupEditCDvalor:setParent(obj.flowPart129);
+    obj.popupEditCDvalor:setParent(obj.flowPart135);
     obj.popupEditCDvalor:setName("popupEditCDvalor");
     obj.popupEditCDvalor:setAlign("client");
     obj.popupEditCDvalor:setType("number");
@@ -8350,25 +8361,25 @@ self.upperGridMagicBox3._RecalcSize();
     obj.popupEditCDvalor:setFontSize(15);
     obj.popupEditCDvalor:setFontColor("white");
 
-    obj.flowPart130 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart130:setParent(obj.flowLayout25);
-    obj.flowPart130:setMinWidth(3);
-    obj.flowPart130:setHeight(24);
-    obj.flowPart130:setName("flowPart130");
-    obj.flowPart130:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart130:setVertAlign("leading");
+    obj.flowPart136 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart136:setParent(obj.flowLayout25);
+    obj.flowPart136:setMinWidth(3);
+    obj.flowPart136:setHeight(24);
+    obj.flowPart136:setName("flowPart136");
+    obj.flowPart136:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart136:setVertAlign("leading");
 
-    obj.flowPart131 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart131:setParent(obj.flowLayout25);
-    obj.flowPart131:setMinWidth(106);
-    obj.flowPart131:setMaxWidth(630);
-    obj.flowPart131:setHeight(24);
-    obj.flowPart131:setName("flowPart131");
-    obj.flowPart131:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart131:setVertAlign("leading");
+    obj.flowPart137 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart137:setParent(obj.flowLayout25);
+    obj.flowPart137:setMinWidth(106);
+    obj.flowPart137:setMaxWidth(630);
+    obj.flowPart137:setHeight(24);
+    obj.flowPart137:setName("flowPart137");
+    obj.flowPart137:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart137:setVertAlign("leading");
 
     obj.comboBox12 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox12:setParent(obj.flowPart131);
+    obj.comboBox12:setParent(obj.flowPart137);
     obj.comboBox12:setAlign("client");
     obj.comboBox12:setField("cdResistenciaTipo");
     obj.comboBox12:setItems({'Conjuração', 'Força', 'Destreza', 'Constituição', 'Inteligência', 'Sabedoria', 'Carisma', 'Fixo'});
@@ -9048,18 +9059,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout27:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout27:setVertAlign("leading");
 
-    obj.flowPart132 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart132:setParent(obj.flowLayout27);
-    obj.flowPart132:setMinWidth(280);
-    obj.flowPart132:setMaxWidth(800);
-    obj.flowPart132:setHeight(64);
-    obj.flowPart132:setFrameStyle("frames/posCaptionEdit1/frame.xml");
-    obj.flowPart132:setName("flowPart132");
-    obj.flowPart132:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart132:setVertAlign("leading");
+    obj.flowPart138 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart138:setParent(obj.flowLayout27);
+    obj.flowPart138:setMinWidth(280);
+    obj.flowPart138:setMaxWidth(800);
+    obj.flowPart138:setHeight(64);
+    obj.flowPart138:setFrameStyle("frames/posCaptionEdit1/frame.xml");
+    obj.flowPart138:setName("flowPart138");
+    obj.flowPart138:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart138:setVertAlign("leading");
 
     obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit46:setParent(obj.flowPart132);
+    obj.edit46:setParent(obj.flowPart138);
     obj.edit46:setAlign("left");
     obj.edit46:setField("graudelealdade");
     obj.edit46:setWidth(65);
@@ -9071,7 +9082,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit46:setFontColor("white");
 
     obj.label98 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label98:setParent(obj.flowPart132);
+    obj.label98:setParent(obj.flowPart138);
     obj.label98:setAlign("client");
     obj.label98:setText("GRAU DE LEALDADE");
     obj.label98:setMargins({left=10});
@@ -9080,18 +9091,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label98:setFontSize(12);
     obj.label98:setFontColor("#D0D0D0");
 
-    obj.flowPart133 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart133:setParent(obj.flowLayout27);
-    obj.flowPart133:setMinWidth(280);
-    obj.flowPart133:setMaxWidth(800);
-    obj.flowPart133:setHeight(64);
-    obj.flowPart133:setFrameStyle("frames/posCaptionEdit2/frame.xml");
-    obj.flowPart133:setName("flowPart133");
-    obj.flowPart133:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart133:setVertAlign("leading");
+    obj.flowPart139 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart139:setParent(obj.flowLayout27);
+    obj.flowPart139:setMinWidth(280);
+    obj.flowPart139:setMaxWidth(800);
+    obj.flowPart139:setHeight(64);
+    obj.flowPart139:setFrameStyle("frames/posCaptionEdit2/frame.xml");
+    obj.flowPart139:setName("flowPart139");
+    obj.flowPart139:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart139:setVertAlign("leading");
 
     obj.edit47 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit47:setParent(obj.flowPart133);
+    obj.edit47:setParent(obj.flowPart139);
     obj.edit47:setAlign("left");
     obj.edit47:setField("CACompanion");
     obj.edit47:setWidth(70);
@@ -9103,7 +9114,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit47:setFontColor("white");
 
     obj.label99 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label99:setParent(obj.flowPart133);
+    obj.label99:setParent(obj.flowPart139);
     obj.label99:setAlign("client");
     obj.label99:setText("CLASSE DE ARMADURA");
     obj.label99:setTextTrimming("none");
@@ -9146,27 +9157,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink138:setField("atributos.companionforca");
     obj.dataLink138:setName("dataLink138");
 
-    obj.flowPart134 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart134:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart134:setHeight(140);
-    obj.flowPart134:setMinWidth(320);
-    obj.flowPart134:setMaxWidth(420);
-    obj.flowPart134:setMinScaledWidth(305);
-    obj.flowPart134:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart134:setName("flowPart134");
-    obj.flowPart134:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart134:setVertAlign("leading");
+    obj.flowPart140 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart140:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart140:setHeight(140);
+    obj.flowPart140:setMinWidth(320);
+    obj.flowPart140:setMaxWidth(420);
+    obj.flowPart140:setMinScaledWidth(305);
+    obj.flowPart140:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart140:setName("flowPart140");
+    obj.flowPart140:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart140:setVertAlign("leading");
 
-    obj.layout79 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout79:setParent(obj.flowPart134);
-    obj.layout79:setLeft(6);
-    obj.layout79:setTop(12);
-    obj.layout79:setWidth(116);
-    obj.layout79:setHeight(115);
-    obj.layout79:setName("layout79");
+    obj.layout73 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout73:setParent(obj.flowPart140);
+    obj.layout73:setLeft(6);
+    obj.layout73:setTop(12);
+    obj.layout73:setWidth(116);
+    obj.layout73:setHeight(115);
+    obj.layout73:setName("layout73");
 
     obj.edit48 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit48:setParent(obj.layout79);
+    obj.edit48:setParent(obj.layout73);
     obj.edit48:setAlign("top");
     obj.edit48:setMargins({left=30, right=30});
     obj.edit48:setField("atributos.companionforca");
@@ -9182,7 +9193,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit48:setFontColor("white");
 
     obj.label100 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label100:setParent(obj.flowPart134);
+    obj.label100:setParent(obj.flowPart140);
     obj.label100:setFrameRegion("modificador");
     obj.label100:setField("atributos.modcompanionforcastr");
     obj.label100:setHorzTextAlign("center");
@@ -9192,13 +9203,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label100:setName("label100");
     obj.label100:setFontColor("white");
 
-    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout80:setParent(obj.flowPart134);
-    obj.layout80:setFrameRegion("titulo");
-    obj.layout80:setName("layout80");
+    obj.layout74 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout74:setParent(obj.flowPart140);
+    obj.layout74:setFrameRegion("titulo");
+    obj.layout74:setName("layout74");
 
     obj.button58 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button58:setParent(obj.layout80);
+    obj.button58:setParent(obj.layout74);
     obj.button58:setAlign("client");
     obj.button58:setText("FORÇA");
     obj.button58:setVertTextAlign("center");
@@ -9206,7 +9217,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button58:setName("button58");
 
     obj.flowLayout29 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout29:setParent(obj.flowPart134);
+    obj.flowLayout29:setParent(obj.flowPart140);
     obj.flowLayout29:setFrameRegion("RegiaoDePericias");
     obj.flowLayout29:setAutoHeight(true);
     obj.flowLayout29:setLineSpacing(0);
@@ -9215,17 +9226,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout29:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout29:setVertAlign("leading");
 
-    obj.flowPart135 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart135:setParent(obj.flowLayout29);
-    obj.flowPart135:setMinWidth(206);
-    obj.flowPart135:setMaxWidth(250);
-    obj.flowPart135:setHeight(17);
-    obj.flowPart135:setName("flowPart135");
-    obj.flowPart135:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart135:setVertAlign("leading");
+    obj.flowPart141 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart141:setParent(obj.flowLayout29);
+    obj.flowPart141:setMinWidth(206);
+    obj.flowPart141:setMaxWidth(250);
+    obj.flowPart141:setHeight(17);
+    obj.flowPart141:setName("flowPart141");
+    obj.flowPart141:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart141:setVertAlign("leading");
 
     obj.cbProfcompanionforca = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionforca:setParent(obj.flowPart135);
+    obj.cbProfcompanionforca:setParent(obj.flowPart141);
     obj.cbProfcompanionforca:setName("cbProfcompanionforca");
     obj.cbProfcompanionforca:setAlign("left");
     obj.cbProfcompanionforca:setField("resistencias.companionforca");
@@ -9268,24 +9279,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink139:setParent(obj.flowPart135);
+    obj.dataLink139:setParent(obj.flowPart141);
     obj.dataLink139:setField("macroExpertise.companionforca");
     obj.dataLink139:setName("dataLink139");
 
     obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink140:setParent(obj.flowPart135);
+    obj.dataLink140:setParent(obj.flowPart141);
     obj.dataLink140:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink140:setName("dataLink140");
 
-    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout81:setParent(obj.flowPart135);
-    obj.layout81:setAlign("left");
-    obj.layout81:setWidth(26);
-    obj.layout81:setMargins({left=2});
-    obj.layout81:setName("layout81");
+    obj.layout75 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout75:setParent(obj.flowPart141);
+    obj.layout75:setAlign("left");
+    obj.layout75:setWidth(26);
+    obj.layout75:setMargins({left=2});
+    obj.layout75:setName("layout75");
 
     obj.labProfcompanionforca = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionforca:setParent(obj.layout81);
+    obj.labProfcompanionforca:setParent(obj.layout75);
     obj.labProfcompanionforca:setName("labProfcompanionforca");
     obj.labProfcompanionforca:setField("resistencias.bonuscompanionforcastr");
     obj.labProfcompanionforca:setAlign("client");
@@ -9295,14 +9306,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionforca:setFontColor("white");
 
     obj.horzLine39 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine39:setParent(obj.layout81);
+    obj.horzLine39:setParent(obj.layout75);
     obj.horzLine39:setStrokeColor("white");
     obj.horzLine39:setStrokeSize(1);
     obj.horzLine39:setAlign("bottom");
     obj.horzLine39:setName("horzLine39");
 
     obj.button59 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button59:setParent(obj.flowPart135);
+    obj.button59:setParent(obj.flowPart141);
     obj.button59:setAlign("left");
     obj.button59:setText("Resistência");
     obj.button59:setWidth(122);
@@ -9314,17 +9325,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink141:setFields({'atributos.modcompanionforca', 'bonusProficiencia', 'resistencias.companionforca', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink141:setName("dataLink141");
 
-    obj.flowPart136 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart136:setParent(obj.flowLayout29);
-    obj.flowPart136:setMinWidth(206);
-    obj.flowPart136:setMaxWidth(250);
-    obj.flowPart136:setHeight(17);
-    obj.flowPart136:setName("flowPart136");
-    obj.flowPart136:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart136:setVertAlign("leading");
+    obj.flowPart142 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart142:setParent(obj.flowLayout29);
+    obj.flowPart142:setMinWidth(206);
+    obj.flowPart142:setMaxWidth(250);
+    obj.flowPart142:setHeight(17);
+    obj.flowPart142:setName("flowPart142");
+    obj.flowPart142:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart142:setVertAlign("leading");
 
     obj.cbProfcompanionatletismo = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionatletismo:setParent(obj.flowPart136);
+    obj.cbProfcompanionatletismo:setParent(obj.flowPart142);
     obj.cbProfcompanionatletismo:setName("cbProfcompanionatletismo");
     obj.cbProfcompanionatletismo:setAlign("left");
     obj.cbProfcompanionatletismo:setField("pericias.companionatletismo");
@@ -9367,24 +9378,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink142:setParent(obj.flowPart136);
+    obj.dataLink142:setParent(obj.flowPart142);
     obj.dataLink142:setField("macroExpertise.companionatletismo");
     obj.dataLink142:setName("dataLink142");
 
     obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink143:setParent(obj.flowPart136);
+    obj.dataLink143:setParent(obj.flowPart142);
     obj.dataLink143:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink143:setName("dataLink143");
 
-    obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout82:setParent(obj.flowPart136);
-    obj.layout82:setAlign("left");
-    obj.layout82:setWidth(26);
-    obj.layout82:setMargins({left=2});
-    obj.layout82:setName("layout82");
+    obj.layout76 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout76:setParent(obj.flowPart142);
+    obj.layout76:setAlign("left");
+    obj.layout76:setWidth(26);
+    obj.layout76:setMargins({left=2});
+    obj.layout76:setName("layout76");
 
     obj.labProfcompanionatletismo = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionatletismo:setParent(obj.layout82);
+    obj.labProfcompanionatletismo:setParent(obj.layout76);
     obj.labProfcompanionatletismo:setName("labProfcompanionatletismo");
     obj.labProfcompanionatletismo:setField("pericias.bonuscompanionatletismostr");
     obj.labProfcompanionatletismo:setAlign("client");
@@ -9394,14 +9405,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionatletismo:setFontColor("white");
 
     obj.horzLine40 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine40:setParent(obj.layout82);
+    obj.horzLine40:setParent(obj.layout76);
     obj.horzLine40:setStrokeColor("white");
     obj.horzLine40:setStrokeSize(1);
     obj.horzLine40:setAlign("bottom");
     obj.horzLine40:setName("horzLine40");
 
     obj.button60 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button60:setParent(obj.flowPart136);
+    obj.button60:setParent(obj.flowPart142);
     obj.button60:setAlign("left");
     obj.button60:setText("Atletismo");
     obj.button60:setWidth(122);
@@ -9418,27 +9429,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink145:setField("atributos.companiondestreza");
     obj.dataLink145:setName("dataLink145");
 
-    obj.flowPart137 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart137:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart137:setHeight(140);
-    obj.flowPart137:setMinWidth(320);
-    obj.flowPart137:setMaxWidth(420);
-    obj.flowPart137:setMinScaledWidth(305);
-    obj.flowPart137:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart137:setName("flowPart137");
-    obj.flowPart137:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart137:setVertAlign("leading");
+    obj.flowPart143 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart143:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart143:setHeight(140);
+    obj.flowPart143:setMinWidth(320);
+    obj.flowPart143:setMaxWidth(420);
+    obj.flowPart143:setMinScaledWidth(305);
+    obj.flowPart143:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart143:setName("flowPart143");
+    obj.flowPart143:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart143:setVertAlign("leading");
 
-    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout83:setParent(obj.flowPart137);
-    obj.layout83:setLeft(6);
-    obj.layout83:setTop(12);
-    obj.layout83:setWidth(116);
-    obj.layout83:setHeight(115);
-    obj.layout83:setName("layout83");
+    obj.layout77 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout77:setParent(obj.flowPart143);
+    obj.layout77:setLeft(6);
+    obj.layout77:setTop(12);
+    obj.layout77:setWidth(116);
+    obj.layout77:setHeight(115);
+    obj.layout77:setName("layout77");
 
     obj.edit49 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit49:setParent(obj.layout83);
+    obj.edit49:setParent(obj.layout77);
     obj.edit49:setAlign("top");
     obj.edit49:setMargins({left=30, right=30});
     obj.edit49:setField("atributos.companiondestreza");
@@ -9454,7 +9465,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit49:setFontColor("white");
 
     obj.label101 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label101:setParent(obj.flowPart137);
+    obj.label101:setParent(obj.flowPart143);
     obj.label101:setFrameRegion("modificador");
     obj.label101:setField("atributos.modcompaniondestrezastr");
     obj.label101:setHorzTextAlign("center");
@@ -9464,13 +9475,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label101:setName("label101");
     obj.label101:setFontColor("white");
 
-    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout84:setParent(obj.flowPart137);
-    obj.layout84:setFrameRegion("titulo");
-    obj.layout84:setName("layout84");
+    obj.layout78 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout78:setParent(obj.flowPart143);
+    obj.layout78:setFrameRegion("titulo");
+    obj.layout78:setName("layout78");
 
     obj.button61 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button61:setParent(obj.layout84);
+    obj.button61:setParent(obj.layout78);
     obj.button61:setAlign("client");
     obj.button61:setText("DESTREZA");
     obj.button61:setVertTextAlign("center");
@@ -9478,7 +9489,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button61:setName("button61");
 
     obj.flowLayout30 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout30:setParent(obj.flowPart137);
+    obj.flowLayout30:setParent(obj.flowPart143);
     obj.flowLayout30:setFrameRegion("RegiaoDePericias");
     obj.flowLayout30:setAutoHeight(true);
     obj.flowLayout30:setLineSpacing(0);
@@ -9487,17 +9498,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout30:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout30:setVertAlign("leading");
 
-    obj.flowPart138 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart138:setParent(obj.flowLayout30);
-    obj.flowPart138:setMinWidth(206);
-    obj.flowPart138:setMaxWidth(250);
-    obj.flowPart138:setHeight(17);
-    obj.flowPart138:setName("flowPart138");
-    obj.flowPart138:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart138:setVertAlign("leading");
+    obj.flowPart144 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart144:setParent(obj.flowLayout30);
+    obj.flowPart144:setMinWidth(206);
+    obj.flowPart144:setMaxWidth(250);
+    obj.flowPart144:setHeight(17);
+    obj.flowPart144:setName("flowPart144");
+    obj.flowPart144:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart144:setVertAlign("leading");
 
     obj.cbProfcompaniondestreza = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompaniondestreza:setParent(obj.flowPart138);
+    obj.cbProfcompaniondestreza:setParent(obj.flowPart144);
     obj.cbProfcompaniondestreza:setName("cbProfcompaniondestreza");
     obj.cbProfcompaniondestreza:setAlign("left");
     obj.cbProfcompaniondestreza:setField("resistencias.companiondestreza");
@@ -9540,24 +9551,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink146:setParent(obj.flowPart138);
+    obj.dataLink146:setParent(obj.flowPart144);
     obj.dataLink146:setField("macroExpertise.companiondestreza");
     obj.dataLink146:setName("dataLink146");
 
     obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink147:setParent(obj.flowPart138);
+    obj.dataLink147:setParent(obj.flowPart144);
     obj.dataLink147:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink147:setName("dataLink147");
 
-    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout85:setParent(obj.flowPart138);
-    obj.layout85:setAlign("left");
-    obj.layout85:setWidth(26);
-    obj.layout85:setMargins({left=2});
-    obj.layout85:setName("layout85");
+    obj.layout79 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout79:setParent(obj.flowPart144);
+    obj.layout79:setAlign("left");
+    obj.layout79:setWidth(26);
+    obj.layout79:setMargins({left=2});
+    obj.layout79:setName("layout79");
 
     obj.labProfcompaniondestreza = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompaniondestreza:setParent(obj.layout85);
+    obj.labProfcompaniondestreza:setParent(obj.layout79);
     obj.labProfcompaniondestreza:setName("labProfcompaniondestreza");
     obj.labProfcompaniondestreza:setField("resistencias.bonuscompaniondestrezastr");
     obj.labProfcompaniondestreza:setAlign("client");
@@ -9567,14 +9578,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompaniondestreza:setFontColor("white");
 
     obj.horzLine41 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine41:setParent(obj.layout85);
+    obj.horzLine41:setParent(obj.layout79);
     obj.horzLine41:setStrokeColor("white");
     obj.horzLine41:setStrokeSize(1);
     obj.horzLine41:setAlign("bottom");
     obj.horzLine41:setName("horzLine41");
 
     obj.button62 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button62:setParent(obj.flowPart138);
+    obj.button62:setParent(obj.flowPart144);
     obj.button62:setAlign("left");
     obj.button62:setText("Resistência");
     obj.button62:setWidth(122);
@@ -9586,17 +9597,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink148:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'resistencias.companiondestreza', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink148:setName("dataLink148");
 
-    obj.flowPart139 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart139:setParent(obj.flowLayout30);
-    obj.flowPart139:setMinWidth(206);
-    obj.flowPart139:setMaxWidth(250);
-    obj.flowPart139:setHeight(17);
-    obj.flowPart139:setName("flowPart139");
-    obj.flowPart139:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart139:setVertAlign("leading");
+    obj.flowPart145 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart145:setParent(obj.flowLayout30);
+    obj.flowPart145:setMinWidth(206);
+    obj.flowPart145:setMaxWidth(250);
+    obj.flowPart145:setHeight(17);
+    obj.flowPart145:setName("flowPart145");
+    obj.flowPart145:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart145:setVertAlign("leading");
 
     obj.cbProfcompanionacrobacia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionacrobacia:setParent(obj.flowPart139);
+    obj.cbProfcompanionacrobacia:setParent(obj.flowPart145);
     obj.cbProfcompanionacrobacia:setName("cbProfcompanionacrobacia");
     obj.cbProfcompanionacrobacia:setAlign("left");
     obj.cbProfcompanionacrobacia:setField("pericias.companionacrobacia");
@@ -9639,24 +9650,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink149:setParent(obj.flowPart139);
+    obj.dataLink149:setParent(obj.flowPart145);
     obj.dataLink149:setField("macroExpertise.companionacrobacia");
     obj.dataLink149:setName("dataLink149");
 
     obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink150:setParent(obj.flowPart139);
+    obj.dataLink150:setParent(obj.flowPart145);
     obj.dataLink150:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink150:setName("dataLink150");
 
-    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout86:setParent(obj.flowPart139);
-    obj.layout86:setAlign("left");
-    obj.layout86:setWidth(26);
-    obj.layout86:setMargins({left=2});
-    obj.layout86:setName("layout86");
+    obj.layout80 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout80:setParent(obj.flowPart145);
+    obj.layout80:setAlign("left");
+    obj.layout80:setWidth(26);
+    obj.layout80:setMargins({left=2});
+    obj.layout80:setName("layout80");
 
     obj.labProfcompanionacrobacia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionacrobacia:setParent(obj.layout86);
+    obj.labProfcompanionacrobacia:setParent(obj.layout80);
     obj.labProfcompanionacrobacia:setName("labProfcompanionacrobacia");
     obj.labProfcompanionacrobacia:setField("pericias.bonuscompanionacrobaciastr");
     obj.labProfcompanionacrobacia:setAlign("client");
@@ -9666,14 +9677,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionacrobacia:setFontColor("white");
 
     obj.horzLine42 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine42:setParent(obj.layout86);
+    obj.horzLine42:setParent(obj.layout80);
     obj.horzLine42:setStrokeColor("white");
     obj.horzLine42:setStrokeSize(1);
     obj.horzLine42:setAlign("bottom");
     obj.horzLine42:setName("horzLine42");
 
     obj.button63 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button63:setParent(obj.flowPart139);
+    obj.button63:setParent(obj.flowPart145);
     obj.button63:setAlign("left");
     obj.button63:setText("Acrobacia");
     obj.button63:setWidth(122);
@@ -9685,17 +9696,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink151:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionacrobacia', 'macroExpertise.companionacrobacia', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink151:setName("dataLink151");
 
-    obj.flowPart140 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart140:setParent(obj.flowLayout30);
-    obj.flowPart140:setMinWidth(206);
-    obj.flowPart140:setMaxWidth(250);
-    obj.flowPart140:setHeight(17);
-    obj.flowPart140:setName("flowPart140");
-    obj.flowPart140:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart140:setVertAlign("leading");
+    obj.flowPart146 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart146:setParent(obj.flowLayout30);
+    obj.flowPart146:setMinWidth(206);
+    obj.flowPart146:setMaxWidth(250);
+    obj.flowPart146:setHeight(17);
+    obj.flowPart146:setName("flowPart146");
+    obj.flowPart146:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart146:setVertAlign("leading");
 
     obj.cbProfcompanionfurtividade = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionfurtividade:setParent(obj.flowPart140);
+    obj.cbProfcompanionfurtividade:setParent(obj.flowPart146);
     obj.cbProfcompanionfurtividade:setName("cbProfcompanionfurtividade");
     obj.cbProfcompanionfurtividade:setAlign("left");
     obj.cbProfcompanionfurtividade:setField("pericias.companionfurtividade");
@@ -9738,24 +9749,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink152:setParent(obj.flowPart140);
+    obj.dataLink152:setParent(obj.flowPart146);
     obj.dataLink152:setField("macroExpertise.companionfurtividade");
     obj.dataLink152:setName("dataLink152");
 
     obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink153:setParent(obj.flowPart140);
+    obj.dataLink153:setParent(obj.flowPart146);
     obj.dataLink153:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink153:setName("dataLink153");
 
-    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout87:setParent(obj.flowPart140);
-    obj.layout87:setAlign("left");
-    obj.layout87:setWidth(26);
-    obj.layout87:setMargins({left=2});
-    obj.layout87:setName("layout87");
+    obj.layout81 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout81:setParent(obj.flowPart146);
+    obj.layout81:setAlign("left");
+    obj.layout81:setWidth(26);
+    obj.layout81:setMargins({left=2});
+    obj.layout81:setName("layout81");
 
     obj.labProfcompanionfurtividade = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionfurtividade:setParent(obj.layout87);
+    obj.labProfcompanionfurtividade:setParent(obj.layout81);
     obj.labProfcompanionfurtividade:setName("labProfcompanionfurtividade");
     obj.labProfcompanionfurtividade:setField("pericias.bonuscompanionfurtividadestr");
     obj.labProfcompanionfurtividade:setAlign("client");
@@ -9765,14 +9776,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionfurtividade:setFontColor("white");
 
     obj.horzLine43 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine43:setParent(obj.layout87);
+    obj.horzLine43:setParent(obj.layout81);
     obj.horzLine43:setStrokeColor("white");
     obj.horzLine43:setStrokeSize(1);
     obj.horzLine43:setAlign("bottom");
     obj.horzLine43:setName("horzLine43");
 
     obj.button64 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button64:setParent(obj.flowPart140);
+    obj.button64:setParent(obj.flowPart146);
     obj.button64:setAlign("left");
     obj.button64:setText("Furtividade");
     obj.button64:setWidth(122);
@@ -9784,17 +9795,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink154:setFields({'atributos.modcompaniondestreza', 'bonusProficiencia', 'pericias.companionfurtividade', 'macroExpertise.companionfurtividade', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink154:setName("dataLink154");
 
-    obj.flowPart141 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart141:setParent(obj.flowLayout30);
-    obj.flowPart141:setMinWidth(206);
-    obj.flowPart141:setMaxWidth(250);
-    obj.flowPart141:setHeight(17);
-    obj.flowPart141:setName("flowPart141");
-    obj.flowPart141:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart141:setVertAlign("leading");
+    obj.flowPart147 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart147:setParent(obj.flowLayout30);
+    obj.flowPart147:setMinWidth(206);
+    obj.flowPart147:setMaxWidth(250);
+    obj.flowPart147:setHeight(17);
+    obj.flowPart147:setName("flowPart147");
+    obj.flowPart147:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart147:setVertAlign("leading");
 
     obj.cbProfcompanionprestidigitacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionprestidigitacao:setParent(obj.flowPart141);
+    obj.cbProfcompanionprestidigitacao:setParent(obj.flowPart147);
     obj.cbProfcompanionprestidigitacao:setName("cbProfcompanionprestidigitacao");
     obj.cbProfcompanionprestidigitacao:setAlign("left");
     obj.cbProfcompanionprestidigitacao:setField("pericias.companionprestidigitacao");
@@ -9837,24 +9848,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink155:setParent(obj.flowPart141);
+    obj.dataLink155:setParent(obj.flowPart147);
     obj.dataLink155:setField("macroExpertise.companionprestidigitacao");
     obj.dataLink155:setName("dataLink155");
 
     obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink156:setParent(obj.flowPart141);
+    obj.dataLink156:setParent(obj.flowPart147);
     obj.dataLink156:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink156:setName("dataLink156");
 
-    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout88:setParent(obj.flowPart141);
-    obj.layout88:setAlign("left");
-    obj.layout88:setWidth(26);
-    obj.layout88:setMargins({left=2});
-    obj.layout88:setName("layout88");
+    obj.layout82 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout82:setParent(obj.flowPart147);
+    obj.layout82:setAlign("left");
+    obj.layout82:setWidth(26);
+    obj.layout82:setMargins({left=2});
+    obj.layout82:setName("layout82");
 
     obj.labProfcompanionprestidigitacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionprestidigitacao:setParent(obj.layout88);
+    obj.labProfcompanionprestidigitacao:setParent(obj.layout82);
     obj.labProfcompanionprestidigitacao:setName("labProfcompanionprestidigitacao");
     obj.labProfcompanionprestidigitacao:setField("pericias.bonuscompanionprestidigitacaostr");
     obj.labProfcompanionprestidigitacao:setAlign("client");
@@ -9864,14 +9875,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionprestidigitacao:setFontColor("white");
 
     obj.horzLine44 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine44:setParent(obj.layout88);
+    obj.horzLine44:setParent(obj.layout82);
     obj.horzLine44:setStrokeColor("white");
     obj.horzLine44:setStrokeSize(1);
     obj.horzLine44:setAlign("bottom");
     obj.horzLine44:setName("horzLine44");
 
     obj.button65 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button65:setParent(obj.flowPart141);
+    obj.button65:setParent(obj.flowPart147);
     obj.button65:setAlign("left");
     obj.button65:setText("Prestidigitação");
     obj.button65:setWidth(122);
@@ -9888,27 +9899,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink158:setField("atributos.companionconstituicao");
     obj.dataLink158:setName("dataLink158");
 
-    obj.flowPart142 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart142:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart142:setHeight(140);
-    obj.flowPart142:setMinWidth(320);
-    obj.flowPart142:setMaxWidth(420);
-    obj.flowPart142:setMinScaledWidth(305);
-    obj.flowPart142:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart142:setName("flowPart142");
-    obj.flowPart142:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart142:setVertAlign("leading");
+    obj.flowPart148 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart148:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart148:setHeight(140);
+    obj.flowPart148:setMinWidth(320);
+    obj.flowPart148:setMaxWidth(420);
+    obj.flowPart148:setMinScaledWidth(305);
+    obj.flowPart148:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart148:setName("flowPart148");
+    obj.flowPart148:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart148:setVertAlign("leading");
 
-    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout89:setParent(obj.flowPart142);
-    obj.layout89:setLeft(6);
-    obj.layout89:setTop(12);
-    obj.layout89:setWidth(116);
-    obj.layout89:setHeight(115);
-    obj.layout89:setName("layout89");
+    obj.layout83 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout83:setParent(obj.flowPart148);
+    obj.layout83:setLeft(6);
+    obj.layout83:setTop(12);
+    obj.layout83:setWidth(116);
+    obj.layout83:setHeight(115);
+    obj.layout83:setName("layout83");
 
     obj.edit50 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit50:setParent(obj.layout89);
+    obj.edit50:setParent(obj.layout83);
     obj.edit50:setAlign("top");
     obj.edit50:setMargins({left=30, right=30});
     obj.edit50:setField("atributos.companionconstituicao");
@@ -9924,7 +9935,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit50:setFontColor("white");
 
     obj.label102 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label102:setParent(obj.flowPart142);
+    obj.label102:setParent(obj.flowPart148);
     obj.label102:setFrameRegion("modificador");
     obj.label102:setField("atributos.modcompanionconstituicaostr");
     obj.label102:setHorzTextAlign("center");
@@ -9934,13 +9945,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label102:setName("label102");
     obj.label102:setFontColor("white");
 
-    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout90:setParent(obj.flowPart142);
-    obj.layout90:setFrameRegion("titulo");
-    obj.layout90:setName("layout90");
+    obj.layout84 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout84:setParent(obj.flowPart148);
+    obj.layout84:setFrameRegion("titulo");
+    obj.layout84:setName("layout84");
 
     obj.button66 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button66:setParent(obj.layout90);
+    obj.button66:setParent(obj.layout84);
     obj.button66:setAlign("client");
     obj.button66:setText("CONSTITUIÇÃO");
     obj.button66:setVertTextAlign("center");
@@ -9948,7 +9959,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button66:setName("button66");
 
     obj.flowLayout31 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout31:setParent(obj.flowPart142);
+    obj.flowLayout31:setParent(obj.flowPart148);
     obj.flowLayout31:setFrameRegion("RegiaoDePericias");
     obj.flowLayout31:setAutoHeight(true);
     obj.flowLayout31:setLineSpacing(0);
@@ -9957,17 +9968,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout31:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout31:setVertAlign("leading");
 
-    obj.flowPart143 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart143:setParent(obj.flowLayout31);
-    obj.flowPart143:setMinWidth(206);
-    obj.flowPart143:setMaxWidth(250);
-    obj.flowPart143:setHeight(17);
-    obj.flowPart143:setName("flowPart143");
-    obj.flowPart143:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart143:setVertAlign("leading");
+    obj.flowPart149 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart149:setParent(obj.flowLayout31);
+    obj.flowPart149:setMinWidth(206);
+    obj.flowPart149:setMaxWidth(250);
+    obj.flowPart149:setHeight(17);
+    obj.flowPart149:setName("flowPart149");
+    obj.flowPart149:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart149:setVertAlign("leading");
 
     obj.cbProfcompanionconstituicao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionconstituicao:setParent(obj.flowPart143);
+    obj.cbProfcompanionconstituicao:setParent(obj.flowPart149);
     obj.cbProfcompanionconstituicao:setName("cbProfcompanionconstituicao");
     obj.cbProfcompanionconstituicao:setAlign("left");
     obj.cbProfcompanionconstituicao:setField("resistencias.companionconstituicao");
@@ -10010,24 +10021,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink159:setParent(obj.flowPart143);
+    obj.dataLink159:setParent(obj.flowPart149);
     obj.dataLink159:setField("macroExpertise.companionconstituicao");
     obj.dataLink159:setName("dataLink159");
 
     obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink160:setParent(obj.flowPart143);
+    obj.dataLink160:setParent(obj.flowPart149);
     obj.dataLink160:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink160:setName("dataLink160");
 
-    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout91:setParent(obj.flowPart143);
-    obj.layout91:setAlign("left");
-    obj.layout91:setWidth(26);
-    obj.layout91:setMargins({left=2});
-    obj.layout91:setName("layout91");
+    obj.layout85 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout85:setParent(obj.flowPart149);
+    obj.layout85:setAlign("left");
+    obj.layout85:setWidth(26);
+    obj.layout85:setMargins({left=2});
+    obj.layout85:setName("layout85");
 
     obj.labProfcompanionconstituicao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionconstituicao:setParent(obj.layout91);
+    obj.labProfcompanionconstituicao:setParent(obj.layout85);
     obj.labProfcompanionconstituicao:setName("labProfcompanionconstituicao");
     obj.labProfcompanionconstituicao:setField("resistencias.bonuscompanionconstituicaostr");
     obj.labProfcompanionconstituicao:setAlign("client");
@@ -10037,14 +10048,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionconstituicao:setFontColor("white");
 
     obj.horzLine45 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine45:setParent(obj.layout91);
+    obj.horzLine45:setParent(obj.layout85);
     obj.horzLine45:setStrokeColor("white");
     obj.horzLine45:setStrokeSize(1);
     obj.horzLine45:setAlign("bottom");
     obj.horzLine45:setName("horzLine45");
 
     obj.button67 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button67:setParent(obj.flowPart143);
+    obj.button67:setParent(obj.flowPart149);
     obj.button67:setAlign("left");
     obj.button67:setText("Resistência");
     obj.button67:setWidth(122);
@@ -10056,17 +10067,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink161:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'resistencias.companionconstituicao', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink161:setName("dataLink161");
 
-    obj.flowPart144 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart144:setParent(obj.flowLayout31);
-    obj.flowPart144:setMinWidth(206);
-    obj.flowPart144:setMaxWidth(250);
-    obj.flowPart144:setHeight(17);
-    obj.flowPart144:setName("flowPart144");
-    obj.flowPart144:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart144:setVertAlign("leading");
+    obj.flowPart150 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart150:setParent(obj.flowLayout31);
+    obj.flowPart150:setMinWidth(206);
+    obj.flowPart150:setMaxWidth(250);
+    obj.flowPart150:setHeight(17);
+    obj.flowPart150:setName("flowPart150");
+    obj.flowPart150:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart150:setVertAlign("leading");
 
     obj.cbProfcompanionconcentracao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionconcentracao:setParent(obj.flowPart144);
+    obj.cbProfcompanionconcentracao:setParent(obj.flowPart150);
     obj.cbProfcompanionconcentracao:setName("cbProfcompanionconcentracao");
     obj.cbProfcompanionconcentracao:setAlign("left");
     obj.cbProfcompanionconcentracao:setField("pericias.companionconcentracao");
@@ -10109,24 +10120,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink162:setParent(obj.flowPart144);
+    obj.dataLink162:setParent(obj.flowPart150);
     obj.dataLink162:setField("macroExpertise.companionconcentracao");
     obj.dataLink162:setName("dataLink162");
 
     obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink163:setParent(obj.flowPart144);
+    obj.dataLink163:setParent(obj.flowPart150);
     obj.dataLink163:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink163:setName("dataLink163");
 
-    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout92:setParent(obj.flowPart144);
-    obj.layout92:setAlign("left");
-    obj.layout92:setWidth(26);
-    obj.layout92:setMargins({left=2});
-    obj.layout92:setName("layout92");
+    obj.layout86 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout86:setParent(obj.flowPart150);
+    obj.layout86:setAlign("left");
+    obj.layout86:setWidth(26);
+    obj.layout86:setMargins({left=2});
+    obj.layout86:setName("layout86");
 
     obj.labProfcompanionconcentracao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionconcentracao:setParent(obj.layout92);
+    obj.labProfcompanionconcentracao:setParent(obj.layout86);
     obj.labProfcompanionconcentracao:setName("labProfcompanionconcentracao");
     obj.labProfcompanionconcentracao:setField("pericias.bonuscompanionconcentracaostr");
     obj.labProfcompanionconcentracao:setAlign("client");
@@ -10136,14 +10147,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionconcentracao:setFontColor("white");
 
     obj.horzLine46 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine46:setParent(obj.layout92);
+    obj.horzLine46:setParent(obj.layout86);
     obj.horzLine46:setStrokeColor("white");
     obj.horzLine46:setStrokeSize(1);
     obj.horzLine46:setAlign("bottom");
     obj.horzLine46:setName("horzLine46");
 
     obj.button68 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button68:setParent(obj.flowPart144);
+    obj.button68:setParent(obj.flowPart150);
     obj.button68:setAlign("left");
     obj.button68:setText("Concentração");
     obj.button68:setWidth(122);
@@ -10155,17 +10166,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink164:setFields({'atributos.modcompanionconstituicao', 'bonusProficiencia', 'pericias.companionconcentracao', 'macroExpertise.companionconcentracao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink164:setName("dataLink164");
 
-    obj.flowPart145 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart145:setParent(obj.flowLayout31);
-    obj.flowPart145:setMinWidth(206);
-    obj.flowPart145:setMaxWidth(250);
-    obj.flowPart145:setHeight(17);
-    obj.flowPart145:setName("flowPart145");
-    obj.flowPart145:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart145:setVertAlign("leading");
+    obj.flowPart151 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart151:setParent(obj.flowLayout31);
+    obj.flowPart151:setMinWidth(206);
+    obj.flowPart151:setMaxWidth(250);
+    obj.flowPart151:setHeight(17);
+    obj.flowPart151:setName("flowPart151");
+    obj.flowPart151:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart151:setVertAlign("leading");
 
     obj.cbProfcompaniontolerancia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompaniontolerancia:setParent(obj.flowPart145);
+    obj.cbProfcompaniontolerancia:setParent(obj.flowPart151);
     obj.cbProfcompaniontolerancia:setName("cbProfcompaniontolerancia");
     obj.cbProfcompaniontolerancia:setAlign("left");
     obj.cbProfcompaniontolerancia:setField("pericias.companiontolerancia");
@@ -10208,24 +10219,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink165:setParent(obj.flowPart145);
+    obj.dataLink165:setParent(obj.flowPart151);
     obj.dataLink165:setField("macroExpertise.companiontolerancia");
     obj.dataLink165:setName("dataLink165");
 
     obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink166:setParent(obj.flowPart145);
+    obj.dataLink166:setParent(obj.flowPart151);
     obj.dataLink166:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink166:setName("dataLink166");
 
-    obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout93:setParent(obj.flowPart145);
-    obj.layout93:setAlign("left");
-    obj.layout93:setWidth(26);
-    obj.layout93:setMargins({left=2});
-    obj.layout93:setName("layout93");
+    obj.layout87 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout87:setParent(obj.flowPart151);
+    obj.layout87:setAlign("left");
+    obj.layout87:setWidth(26);
+    obj.layout87:setMargins({left=2});
+    obj.layout87:setName("layout87");
 
     obj.labProfcompaniontolerancia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompaniontolerancia:setParent(obj.layout93);
+    obj.labProfcompaniontolerancia:setParent(obj.layout87);
     obj.labProfcompaniontolerancia:setName("labProfcompaniontolerancia");
     obj.labProfcompaniontolerancia:setField("pericias.bonuscompaniontoleranciastr");
     obj.labProfcompaniontolerancia:setAlign("client");
@@ -10235,14 +10246,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompaniontolerancia:setFontColor("white");
 
     obj.horzLine47 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine47:setParent(obj.layout93);
+    obj.horzLine47:setParent(obj.layout87);
     obj.horzLine47:setStrokeColor("white");
     obj.horzLine47:setStrokeSize(1);
     obj.horzLine47:setAlign("bottom");
     obj.horzLine47:setName("horzLine47");
 
     obj.button69 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button69:setParent(obj.flowPart145);
+    obj.button69:setParent(obj.flowPart151);
     obj.button69:setAlign("left");
     obj.button69:setText("Tolerancia");
     obj.button69:setWidth(122);
@@ -10259,27 +10270,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink168:setField("atributos.companioninteligencia");
     obj.dataLink168:setName("dataLink168");
 
-    obj.flowPart146 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart146:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart146:setHeight(140);
-    obj.flowPart146:setMinWidth(320);
-    obj.flowPart146:setMaxWidth(420);
-    obj.flowPart146:setMinScaledWidth(305);
-    obj.flowPart146:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart146:setName("flowPart146");
-    obj.flowPart146:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart146:setVertAlign("leading");
+    obj.flowPart152 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart152:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart152:setHeight(140);
+    obj.flowPart152:setMinWidth(320);
+    obj.flowPart152:setMaxWidth(420);
+    obj.flowPart152:setMinScaledWidth(305);
+    obj.flowPart152:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart152:setName("flowPart152");
+    obj.flowPart152:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart152:setVertAlign("leading");
 
-    obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout94:setParent(obj.flowPart146);
-    obj.layout94:setLeft(6);
-    obj.layout94:setTop(12);
-    obj.layout94:setWidth(116);
-    obj.layout94:setHeight(115);
-    obj.layout94:setName("layout94");
+    obj.layout88 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout88:setParent(obj.flowPart152);
+    obj.layout88:setLeft(6);
+    obj.layout88:setTop(12);
+    obj.layout88:setWidth(116);
+    obj.layout88:setHeight(115);
+    obj.layout88:setName("layout88");
 
     obj.edit51 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit51:setParent(obj.layout94);
+    obj.edit51:setParent(obj.layout88);
     obj.edit51:setAlign("top");
     obj.edit51:setMargins({left=30, right=30});
     obj.edit51:setField("atributos.companioninteligencia");
@@ -10295,7 +10306,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit51:setFontColor("white");
 
     obj.label103 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label103:setParent(obj.flowPart146);
+    obj.label103:setParent(obj.flowPart152);
     obj.label103:setFrameRegion("modificador");
     obj.label103:setField("atributos.modcompanioninteligenciastr");
     obj.label103:setHorzTextAlign("center");
@@ -10305,13 +10316,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label103:setName("label103");
     obj.label103:setFontColor("white");
 
-    obj.layout95 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout95:setParent(obj.flowPart146);
-    obj.layout95:setFrameRegion("titulo");
-    obj.layout95:setName("layout95");
+    obj.layout89 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout89:setParent(obj.flowPart152);
+    obj.layout89:setFrameRegion("titulo");
+    obj.layout89:setName("layout89");
 
     obj.button70 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button70:setParent(obj.layout95);
+    obj.button70:setParent(obj.layout89);
     obj.button70:setAlign("client");
     obj.button70:setText("INTELIGÊNCIA");
     obj.button70:setVertTextAlign("center");
@@ -10319,7 +10330,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button70:setName("button70");
 
     obj.flowLayout32 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout32:setParent(obj.flowPart146);
+    obj.flowLayout32:setParent(obj.flowPart152);
     obj.flowLayout32:setFrameRegion("RegiaoDePericias");
     obj.flowLayout32:setAutoHeight(true);
     obj.flowLayout32:setLineSpacing(0);
@@ -10328,17 +10339,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout32:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout32:setVertAlign("leading");
 
-    obj.flowPart147 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart147:setParent(obj.flowLayout32);
-    obj.flowPart147:setMinWidth(206);
-    obj.flowPart147:setMaxWidth(250);
-    obj.flowPart147:setHeight(17);
-    obj.flowPart147:setName("flowPart147");
-    obj.flowPart147:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart147:setVertAlign("leading");
+    obj.flowPart153 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart153:setParent(obj.flowLayout32);
+    obj.flowPart153:setMinWidth(206);
+    obj.flowPart153:setMaxWidth(250);
+    obj.flowPart153:setHeight(17);
+    obj.flowPart153:setName("flowPart153");
+    obj.flowPart153:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart153:setVertAlign("leading");
 
     obj.cbProfcompanioninteligencia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioninteligencia:setParent(obj.flowPart147);
+    obj.cbProfcompanioninteligencia:setParent(obj.flowPart153);
     obj.cbProfcompanioninteligencia:setName("cbProfcompanioninteligencia");
     obj.cbProfcompanioninteligencia:setAlign("left");
     obj.cbProfcompanioninteligencia:setField("resistencias.companioninteligencia");
@@ -10381,24 +10392,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink169:setParent(obj.flowPart147);
+    obj.dataLink169:setParent(obj.flowPart153);
     obj.dataLink169:setField("macroExpertise.companioninteligencia");
     obj.dataLink169:setName("dataLink169");
 
     obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink170:setParent(obj.flowPart147);
+    obj.dataLink170:setParent(obj.flowPart153);
     obj.dataLink170:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink170:setName("dataLink170");
 
-    obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout96:setParent(obj.flowPart147);
-    obj.layout96:setAlign("left");
-    obj.layout96:setWidth(26);
-    obj.layout96:setMargins({left=2});
-    obj.layout96:setName("layout96");
+    obj.layout90 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout90:setParent(obj.flowPart153);
+    obj.layout90:setAlign("left");
+    obj.layout90:setWidth(26);
+    obj.layout90:setMargins({left=2});
+    obj.layout90:setName("layout90");
 
     obj.labProfcompanioninteligencia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioninteligencia:setParent(obj.layout96);
+    obj.labProfcompanioninteligencia:setParent(obj.layout90);
     obj.labProfcompanioninteligencia:setName("labProfcompanioninteligencia");
     obj.labProfcompanioninteligencia:setField("resistencias.bonuscompanioninteligenciastr");
     obj.labProfcompanioninteligencia:setAlign("client");
@@ -10408,14 +10419,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioninteligencia:setFontColor("white");
 
     obj.horzLine48 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine48:setParent(obj.layout96);
+    obj.horzLine48:setParent(obj.layout90);
     obj.horzLine48:setStrokeColor("white");
     obj.horzLine48:setStrokeSize(1);
     obj.horzLine48:setAlign("bottom");
     obj.horzLine48:setName("horzLine48");
 
     obj.button71 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button71:setParent(obj.flowPart147);
+    obj.button71:setParent(obj.flowPart153);
     obj.button71:setAlign("left");
     obj.button71:setText("Resistência");
     obj.button71:setWidth(122);
@@ -10427,17 +10438,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink171:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'resistencias.companioninteligencia', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink171:setName("dataLink171");
 
-    obj.flowPart148 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart148:setParent(obj.flowLayout32);
-    obj.flowPart148:setMinWidth(206);
-    obj.flowPart148:setMaxWidth(250);
-    obj.flowPart148:setHeight(17);
-    obj.flowPart148:setName("flowPart148");
-    obj.flowPart148:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart148:setVertAlign("leading");
+    obj.flowPart154 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart154:setParent(obj.flowLayout32);
+    obj.flowPart154:setMinWidth(206);
+    obj.flowPart154:setMaxWidth(250);
+    obj.flowPart154:setHeight(17);
+    obj.flowPart154:setName("flowPart154");
+    obj.flowPart154:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart154:setVertAlign("leading");
 
     obj.cbProfcompanionarcanismo = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionarcanismo:setParent(obj.flowPart148);
+    obj.cbProfcompanionarcanismo:setParent(obj.flowPart154);
     obj.cbProfcompanionarcanismo:setName("cbProfcompanionarcanismo");
     obj.cbProfcompanionarcanismo:setAlign("left");
     obj.cbProfcompanionarcanismo:setField("pericias.companionarcanismo");
@@ -10480,24 +10491,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink172:setParent(obj.flowPart148);
+    obj.dataLink172:setParent(obj.flowPart154);
     obj.dataLink172:setField("macroExpertise.companionarcanismo");
     obj.dataLink172:setName("dataLink172");
 
     obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink173:setParent(obj.flowPart148);
+    obj.dataLink173:setParent(obj.flowPart154);
     obj.dataLink173:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink173:setName("dataLink173");
 
-    obj.layout97 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout97:setParent(obj.flowPart148);
-    obj.layout97:setAlign("left");
-    obj.layout97:setWidth(26);
-    obj.layout97:setMargins({left=2});
-    obj.layout97:setName("layout97");
+    obj.layout91 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout91:setParent(obj.flowPart154);
+    obj.layout91:setAlign("left");
+    obj.layout91:setWidth(26);
+    obj.layout91:setMargins({left=2});
+    obj.layout91:setName("layout91");
 
     obj.labProfcompanionarcanismo = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionarcanismo:setParent(obj.layout97);
+    obj.labProfcompanionarcanismo:setParent(obj.layout91);
     obj.labProfcompanionarcanismo:setName("labProfcompanionarcanismo");
     obj.labProfcompanionarcanismo:setField("pericias.bonuscompanionarcanismostr");
     obj.labProfcompanionarcanismo:setAlign("client");
@@ -10507,14 +10518,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionarcanismo:setFontColor("white");
 
     obj.horzLine49 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine49:setParent(obj.layout97);
+    obj.horzLine49:setParent(obj.layout91);
     obj.horzLine49:setStrokeColor("white");
     obj.horzLine49:setStrokeSize(1);
     obj.horzLine49:setAlign("bottom");
     obj.horzLine49:setName("horzLine49");
 
     obj.button72 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button72:setParent(obj.flowPart148);
+    obj.button72:setParent(obj.flowPart154);
     obj.button72:setAlign("left");
     obj.button72:setText("Arcanismo");
     obj.button72:setWidth(122);
@@ -10526,17 +10537,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink174:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionarcanismo', 'macroExpertise.companionarcanismo', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink174:setName("dataLink174");
 
-    obj.flowPart149 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart149:setParent(obj.flowLayout32);
-    obj.flowPart149:setMinWidth(206);
-    obj.flowPart149:setMaxWidth(250);
-    obj.flowPart149:setHeight(17);
-    obj.flowPart149:setName("flowPart149");
-    obj.flowPart149:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart149:setVertAlign("leading");
+    obj.flowPart155 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart155:setParent(obj.flowLayout32);
+    obj.flowPart155:setMinWidth(206);
+    obj.flowPart155:setMaxWidth(250);
+    obj.flowPart155:setHeight(17);
+    obj.flowPart155:setName("flowPart155");
+    obj.flowPart155:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart155:setVertAlign("leading");
 
     obj.cbProfcompanionhistoria = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionhistoria:setParent(obj.flowPart149);
+    obj.cbProfcompanionhistoria:setParent(obj.flowPart155);
     obj.cbProfcompanionhistoria:setName("cbProfcompanionhistoria");
     obj.cbProfcompanionhistoria:setAlign("left");
     obj.cbProfcompanionhistoria:setField("pericias.companionhistoria");
@@ -10579,24 +10590,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink175:setParent(obj.flowPart149);
+    obj.dataLink175:setParent(obj.flowPart155);
     obj.dataLink175:setField("macroExpertise.companionhistoria");
     obj.dataLink175:setName("dataLink175");
 
     obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink176:setParent(obj.flowPart149);
+    obj.dataLink176:setParent(obj.flowPart155);
     obj.dataLink176:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink176:setName("dataLink176");
 
-    obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout98:setParent(obj.flowPart149);
-    obj.layout98:setAlign("left");
-    obj.layout98:setWidth(26);
-    obj.layout98:setMargins({left=2});
-    obj.layout98:setName("layout98");
+    obj.layout92 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout92:setParent(obj.flowPart155);
+    obj.layout92:setAlign("left");
+    obj.layout92:setWidth(26);
+    obj.layout92:setMargins({left=2});
+    obj.layout92:setName("layout92");
 
     obj.labProfcompanionhistoria = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionhistoria:setParent(obj.layout98);
+    obj.labProfcompanionhistoria:setParent(obj.layout92);
     obj.labProfcompanionhistoria:setName("labProfcompanionhistoria");
     obj.labProfcompanionhistoria:setField("pericias.bonuscompanionhistoriastr");
     obj.labProfcompanionhistoria:setAlign("client");
@@ -10606,14 +10617,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionhistoria:setFontColor("white");
 
     obj.horzLine50 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine50:setParent(obj.layout98);
+    obj.horzLine50:setParent(obj.layout92);
     obj.horzLine50:setStrokeColor("white");
     obj.horzLine50:setStrokeSize(1);
     obj.horzLine50:setAlign("bottom");
     obj.horzLine50:setName("horzLine50");
 
     obj.button73 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button73:setParent(obj.flowPart149);
+    obj.button73:setParent(obj.flowPart155);
     obj.button73:setAlign("left");
     obj.button73:setText("História");
     obj.button73:setWidth(122);
@@ -10625,17 +10636,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink177:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionhistoria', 'macroExpertise.companionhistoria', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink177:setName("dataLink177");
 
-    obj.flowPart150 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart150:setParent(obj.flowLayout32);
-    obj.flowPart150:setMinWidth(206);
-    obj.flowPart150:setMaxWidth(250);
-    obj.flowPart150:setHeight(17);
-    obj.flowPart150:setName("flowPart150");
-    obj.flowPart150:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart150:setVertAlign("leading");
+    obj.flowPart156 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart156:setParent(obj.flowLayout32);
+    obj.flowPart156:setMinWidth(206);
+    obj.flowPart156:setMaxWidth(250);
+    obj.flowPart156:setHeight(17);
+    obj.flowPart156:setName("flowPart156");
+    obj.flowPart156:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart156:setVertAlign("leading");
 
     obj.cbProfcompanioninvestigacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioninvestigacao:setParent(obj.flowPart150);
+    obj.cbProfcompanioninvestigacao:setParent(obj.flowPart156);
     obj.cbProfcompanioninvestigacao:setName("cbProfcompanioninvestigacao");
     obj.cbProfcompanioninvestigacao:setAlign("left");
     obj.cbProfcompanioninvestigacao:setField("pericias.companioninvestigacao");
@@ -10678,24 +10689,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink178 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink178:setParent(obj.flowPart150);
+    obj.dataLink178:setParent(obj.flowPart156);
     obj.dataLink178:setField("macroExpertise.companioninvestigacao");
     obj.dataLink178:setName("dataLink178");
 
     obj.dataLink179 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink179:setParent(obj.flowPart150);
+    obj.dataLink179:setParent(obj.flowPart156);
     obj.dataLink179:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink179:setName("dataLink179");
 
-    obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout99:setParent(obj.flowPart150);
-    obj.layout99:setAlign("left");
-    obj.layout99:setWidth(26);
-    obj.layout99:setMargins({left=2});
-    obj.layout99:setName("layout99");
+    obj.layout93 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout93:setParent(obj.flowPart156);
+    obj.layout93:setAlign("left");
+    obj.layout93:setWidth(26);
+    obj.layout93:setMargins({left=2});
+    obj.layout93:setName("layout93");
 
     obj.labProfcompanioninvestigacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioninvestigacao:setParent(obj.layout99);
+    obj.labProfcompanioninvestigacao:setParent(obj.layout93);
     obj.labProfcompanioninvestigacao:setName("labProfcompanioninvestigacao");
     obj.labProfcompanioninvestigacao:setField("pericias.bonuscompanioninvestigacaostr");
     obj.labProfcompanioninvestigacao:setAlign("client");
@@ -10705,14 +10716,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioninvestigacao:setFontColor("white");
 
     obj.horzLine51 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine51:setParent(obj.layout99);
+    obj.horzLine51:setParent(obj.layout93);
     obj.horzLine51:setStrokeColor("white");
     obj.horzLine51:setStrokeSize(1);
     obj.horzLine51:setAlign("bottom");
     obj.horzLine51:setName("horzLine51");
 
     obj.button74 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button74:setParent(obj.flowPart150);
+    obj.button74:setParent(obj.flowPart156);
     obj.button74:setAlign("left");
     obj.button74:setText("Investigação");
     obj.button74:setWidth(122);
@@ -10724,17 +10735,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink180:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companioninvestigacao', 'macroExpertise.companioninvestigacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink180:setName("dataLink180");
 
-    obj.flowPart151 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart151:setParent(obj.flowLayout32);
-    obj.flowPart151:setMinWidth(206);
-    obj.flowPart151:setMaxWidth(250);
-    obj.flowPart151:setHeight(17);
-    obj.flowPart151:setName("flowPart151");
-    obj.flowPart151:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart151:setVertAlign("leading");
+    obj.flowPart157 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart157:setParent(obj.flowLayout32);
+    obj.flowPart157:setMinWidth(206);
+    obj.flowPart157:setMaxWidth(250);
+    obj.flowPart157:setHeight(17);
+    obj.flowPart157:setName("flowPart157");
+    obj.flowPart157:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart157:setVertAlign("leading");
 
     obj.cbProfcompanionnatureza = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionnatureza:setParent(obj.flowPart151);
+    obj.cbProfcompanionnatureza:setParent(obj.flowPart157);
     obj.cbProfcompanionnatureza:setName("cbProfcompanionnatureza");
     obj.cbProfcompanionnatureza:setAlign("left");
     obj.cbProfcompanionnatureza:setField("pericias.companionnatureza");
@@ -10777,24 +10788,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink181 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink181:setParent(obj.flowPart151);
+    obj.dataLink181:setParent(obj.flowPart157);
     obj.dataLink181:setField("macroExpertise.companionnatureza");
     obj.dataLink181:setName("dataLink181");
 
     obj.dataLink182 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink182:setParent(obj.flowPart151);
+    obj.dataLink182:setParent(obj.flowPart157);
     obj.dataLink182:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink182:setName("dataLink182");
 
-    obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout100:setParent(obj.flowPart151);
-    obj.layout100:setAlign("left");
-    obj.layout100:setWidth(26);
-    obj.layout100:setMargins({left=2});
-    obj.layout100:setName("layout100");
+    obj.layout94 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout94:setParent(obj.flowPart157);
+    obj.layout94:setAlign("left");
+    obj.layout94:setWidth(26);
+    obj.layout94:setMargins({left=2});
+    obj.layout94:setName("layout94");
 
     obj.labProfcompanionnatureza = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionnatureza:setParent(obj.layout100);
+    obj.labProfcompanionnatureza:setParent(obj.layout94);
     obj.labProfcompanionnatureza:setName("labProfcompanionnatureza");
     obj.labProfcompanionnatureza:setField("pericias.bonuscompanionnaturezastr");
     obj.labProfcompanionnatureza:setAlign("client");
@@ -10804,14 +10815,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionnatureza:setFontColor("white");
 
     obj.horzLine52 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine52:setParent(obj.layout100);
+    obj.horzLine52:setParent(obj.layout94);
     obj.horzLine52:setStrokeColor("white");
     obj.horzLine52:setStrokeSize(1);
     obj.horzLine52:setAlign("bottom");
     obj.horzLine52:setName("horzLine52");
 
     obj.button75 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button75:setParent(obj.flowPart151);
+    obj.button75:setParent(obj.flowPart157);
     obj.button75:setAlign("left");
     obj.button75:setText("Natureza");
     obj.button75:setWidth(122);
@@ -10823,17 +10834,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink183:setFields({'atributos.modcompanioninteligencia', 'bonusProficiencia', 'pericias.companionnatureza', 'macroExpertise.companionnatureza', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink183:setName("dataLink183");
 
-    obj.flowPart152 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart152:setParent(obj.flowLayout32);
-    obj.flowPart152:setMinWidth(206);
-    obj.flowPart152:setMaxWidth(250);
-    obj.flowPart152:setHeight(17);
-    obj.flowPart152:setName("flowPart152");
-    obj.flowPart152:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart152:setVertAlign("leading");
+    obj.flowPart158 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart158:setParent(obj.flowLayout32);
+    obj.flowPart158:setMinWidth(206);
+    obj.flowPart158:setMaxWidth(250);
+    obj.flowPart158:setHeight(17);
+    obj.flowPart158:setName("flowPart158");
+    obj.flowPart158:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart158:setVertAlign("leading");
 
     obj.cbProfcompanionreligiao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionreligiao:setParent(obj.flowPart152);
+    obj.cbProfcompanionreligiao:setParent(obj.flowPart158);
     obj.cbProfcompanionreligiao:setName("cbProfcompanionreligiao");
     obj.cbProfcompanionreligiao:setAlign("left");
     obj.cbProfcompanionreligiao:setField("pericias.companionreligiao");
@@ -10876,24 +10887,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink184 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink184:setParent(obj.flowPart152);
+    obj.dataLink184:setParent(obj.flowPart158);
     obj.dataLink184:setField("macroExpertise.companionreligiao");
     obj.dataLink184:setName("dataLink184");
 
     obj.dataLink185 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink185:setParent(obj.flowPart152);
+    obj.dataLink185:setParent(obj.flowPart158);
     obj.dataLink185:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink185:setName("dataLink185");
 
-    obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout101:setParent(obj.flowPart152);
-    obj.layout101:setAlign("left");
-    obj.layout101:setWidth(26);
-    obj.layout101:setMargins({left=2});
-    obj.layout101:setName("layout101");
+    obj.layout95 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout95:setParent(obj.flowPart158);
+    obj.layout95:setAlign("left");
+    obj.layout95:setWidth(26);
+    obj.layout95:setMargins({left=2});
+    obj.layout95:setName("layout95");
 
     obj.labProfcompanionreligiao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionreligiao:setParent(obj.layout101);
+    obj.labProfcompanionreligiao:setParent(obj.layout95);
     obj.labProfcompanionreligiao:setName("labProfcompanionreligiao");
     obj.labProfcompanionreligiao:setField("pericias.bonuscompanionreligiaostr");
     obj.labProfcompanionreligiao:setAlign("client");
@@ -10903,14 +10914,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionreligiao:setFontColor("white");
 
     obj.horzLine53 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine53:setParent(obj.layout101);
+    obj.horzLine53:setParent(obj.layout95);
     obj.horzLine53:setStrokeColor("white");
     obj.horzLine53:setStrokeSize(1);
     obj.horzLine53:setAlign("bottom");
     obj.horzLine53:setName("horzLine53");
 
     obj.button76 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button76:setParent(obj.flowPart152);
+    obj.button76:setParent(obj.flowPart158);
     obj.button76:setAlign("left");
     obj.button76:setText("Religião");
     obj.button76:setWidth(122);
@@ -10927,27 +10938,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink187:setField("atributos.companionsabedoria");
     obj.dataLink187:setName("dataLink187");
 
-    obj.flowPart153 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart153:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart153:setHeight(140);
-    obj.flowPart153:setMinWidth(320);
-    obj.flowPart153:setMaxWidth(420);
-    obj.flowPart153:setMinScaledWidth(305);
-    obj.flowPart153:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart153:setName("flowPart153");
-    obj.flowPart153:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart153:setVertAlign("leading");
+    obj.flowPart159 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart159:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart159:setHeight(140);
+    obj.flowPart159:setMinWidth(320);
+    obj.flowPart159:setMaxWidth(420);
+    obj.flowPart159:setMinScaledWidth(305);
+    obj.flowPart159:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart159:setName("flowPart159");
+    obj.flowPart159:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart159:setVertAlign("leading");
 
-    obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout102:setParent(obj.flowPart153);
-    obj.layout102:setLeft(6);
-    obj.layout102:setTop(12);
-    obj.layout102:setWidth(116);
-    obj.layout102:setHeight(115);
-    obj.layout102:setName("layout102");
+    obj.layout96 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout96:setParent(obj.flowPart159);
+    obj.layout96:setLeft(6);
+    obj.layout96:setTop(12);
+    obj.layout96:setWidth(116);
+    obj.layout96:setHeight(115);
+    obj.layout96:setName("layout96");
 
     obj.edit52 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit52:setParent(obj.layout102);
+    obj.edit52:setParent(obj.layout96);
     obj.edit52:setAlign("top");
     obj.edit52:setMargins({left=30, right=30});
     obj.edit52:setField("atributos.companionsabedoria");
@@ -10963,7 +10974,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit52:setFontColor("white");
 
     obj.label104 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label104:setParent(obj.flowPart153);
+    obj.label104:setParent(obj.flowPart159);
     obj.label104:setFrameRegion("modificador");
     obj.label104:setField("atributos.modcompanionsabedoriastr");
     obj.label104:setHorzTextAlign("center");
@@ -10973,13 +10984,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label104:setName("label104");
     obj.label104:setFontColor("white");
 
-    obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout103:setParent(obj.flowPart153);
-    obj.layout103:setFrameRegion("titulo");
-    obj.layout103:setName("layout103");
+    obj.layout97 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout97:setParent(obj.flowPart159);
+    obj.layout97:setFrameRegion("titulo");
+    obj.layout97:setName("layout97");
 
     obj.button77 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button77:setParent(obj.layout103);
+    obj.button77:setParent(obj.layout97);
     obj.button77:setAlign("client");
     obj.button77:setText("SABEDORIA");
     obj.button77:setVertTextAlign("center");
@@ -10987,7 +10998,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button77:setName("button77");
 
     obj.flowLayout33 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout33:setParent(obj.flowPart153);
+    obj.flowLayout33:setParent(obj.flowPart159);
     obj.flowLayout33:setFrameRegion("RegiaoDePericias");
     obj.flowLayout33:setAutoHeight(true);
     obj.flowLayout33:setLineSpacing(0);
@@ -10996,17 +11007,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout33:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout33:setVertAlign("leading");
 
-    obj.flowPart154 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart154:setParent(obj.flowLayout33);
-    obj.flowPart154:setMinWidth(206);
-    obj.flowPart154:setMaxWidth(250);
-    obj.flowPart154:setHeight(17);
-    obj.flowPart154:setName("flowPart154");
-    obj.flowPart154:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart154:setVertAlign("leading");
+    obj.flowPart160 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart160:setParent(obj.flowLayout33);
+    obj.flowPart160:setMinWidth(206);
+    obj.flowPart160:setMaxWidth(250);
+    obj.flowPart160:setHeight(17);
+    obj.flowPart160:setName("flowPart160");
+    obj.flowPart160:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart160:setVertAlign("leading");
 
     obj.cbProfcompanionsabedoria = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionsabedoria:setParent(obj.flowPart154);
+    obj.cbProfcompanionsabedoria:setParent(obj.flowPart160);
     obj.cbProfcompanionsabedoria:setName("cbProfcompanionsabedoria");
     obj.cbProfcompanionsabedoria:setAlign("left");
     obj.cbProfcompanionsabedoria:setField("resistencias.companionsabedoria");
@@ -11049,24 +11060,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink188 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink188:setParent(obj.flowPart154);
+    obj.dataLink188:setParent(obj.flowPart160);
     obj.dataLink188:setField("macroExpertise.companionsabedoria");
     obj.dataLink188:setName("dataLink188");
 
     obj.dataLink189 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink189:setParent(obj.flowPart154);
+    obj.dataLink189:setParent(obj.flowPart160);
     obj.dataLink189:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink189:setName("dataLink189");
 
-    obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout104:setParent(obj.flowPart154);
-    obj.layout104:setAlign("left");
-    obj.layout104:setWidth(26);
-    obj.layout104:setMargins({left=2});
-    obj.layout104:setName("layout104");
+    obj.layout98 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout98:setParent(obj.flowPart160);
+    obj.layout98:setAlign("left");
+    obj.layout98:setWidth(26);
+    obj.layout98:setMargins({left=2});
+    obj.layout98:setName("layout98");
 
     obj.labProfcompanionsabedoria = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionsabedoria:setParent(obj.layout104);
+    obj.labProfcompanionsabedoria:setParent(obj.layout98);
     obj.labProfcompanionsabedoria:setName("labProfcompanionsabedoria");
     obj.labProfcompanionsabedoria:setField("resistencias.bonuscompanionsabedoriastr");
     obj.labProfcompanionsabedoria:setAlign("client");
@@ -11076,14 +11087,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionsabedoria:setFontColor("white");
 
     obj.horzLine54 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine54:setParent(obj.layout104);
+    obj.horzLine54:setParent(obj.layout98);
     obj.horzLine54:setStrokeColor("white");
     obj.horzLine54:setStrokeSize(1);
     obj.horzLine54:setAlign("bottom");
     obj.horzLine54:setName("horzLine54");
 
     obj.button78 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button78:setParent(obj.flowPart154);
+    obj.button78:setParent(obj.flowPart160);
     obj.button78:setAlign("left");
     obj.button78:setText("Resistência");
     obj.button78:setWidth(122);
@@ -11095,17 +11106,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink190:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'resistencias.companionsabedoria', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink190:setName("dataLink190");
 
-    obj.flowPart155 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart155:setParent(obj.flowLayout33);
-    obj.flowPart155:setMinWidth(206);
-    obj.flowPart155:setMaxWidth(250);
-    obj.flowPart155:setHeight(17);
-    obj.flowPart155:setName("flowPart155");
-    obj.flowPart155:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart155:setVertAlign("leading");
+    obj.flowPart161 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart161:setParent(obj.flowLayout33);
+    obj.flowPart161:setMinWidth(206);
+    obj.flowPart161:setMaxWidth(250);
+    obj.flowPart161:setHeight(17);
+    obj.flowPart161:setName("flowPart161");
+    obj.flowPart161:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart161:setVertAlign("leading");
 
     obj.cbProfcompanionadestrarAnimais = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionadestrarAnimais:setParent(obj.flowPart155);
+    obj.cbProfcompanionadestrarAnimais:setParent(obj.flowPart161);
     obj.cbProfcompanionadestrarAnimais:setName("cbProfcompanionadestrarAnimais");
     obj.cbProfcompanionadestrarAnimais:setAlign("left");
     obj.cbProfcompanionadestrarAnimais:setField("pericias.companionadestrarAnimais");
@@ -11148,24 +11159,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink191 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink191:setParent(obj.flowPart155);
+    obj.dataLink191:setParent(obj.flowPart161);
     obj.dataLink191:setField("macroExpertise.companionadestrarAnimais");
     obj.dataLink191:setName("dataLink191");
 
     obj.dataLink192 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink192:setParent(obj.flowPart155);
+    obj.dataLink192:setParent(obj.flowPart161);
     obj.dataLink192:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink192:setName("dataLink192");
 
-    obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout105:setParent(obj.flowPart155);
-    obj.layout105:setAlign("left");
-    obj.layout105:setWidth(26);
-    obj.layout105:setMargins({left=2});
-    obj.layout105:setName("layout105");
+    obj.layout99 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout99:setParent(obj.flowPart161);
+    obj.layout99:setAlign("left");
+    obj.layout99:setWidth(26);
+    obj.layout99:setMargins({left=2});
+    obj.layout99:setName("layout99");
 
     obj.labProfcompanionadestrarAnimais = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionadestrarAnimais:setParent(obj.layout105);
+    obj.labProfcompanionadestrarAnimais:setParent(obj.layout99);
     obj.labProfcompanionadestrarAnimais:setName("labProfcompanionadestrarAnimais");
     obj.labProfcompanionadestrarAnimais:setField("pericias.bonuscompanionadestrarAnimaisstr");
     obj.labProfcompanionadestrarAnimais:setAlign("client");
@@ -11175,14 +11186,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionadestrarAnimais:setFontColor("white");
 
     obj.horzLine55 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine55:setParent(obj.layout105);
+    obj.horzLine55:setParent(obj.layout99);
     obj.horzLine55:setStrokeColor("white");
     obj.horzLine55:setStrokeSize(1);
     obj.horzLine55:setAlign("bottom");
     obj.horzLine55:setName("horzLine55");
 
     obj.button79 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button79:setParent(obj.flowPart155);
+    obj.button79:setParent(obj.flowPart161);
     obj.button79:setAlign("left");
     obj.button79:setText("Adestrar Animais");
     obj.button79:setWidth(122);
@@ -11194,17 +11205,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink193:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionadestrarAnimais', 'macroExpertise.companionadestrarAnimais', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink193:setName("dataLink193");
 
-    obj.flowPart156 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart156:setParent(obj.flowLayout33);
-    obj.flowPart156:setMinWidth(206);
-    obj.flowPart156:setMaxWidth(250);
-    obj.flowPart156:setHeight(17);
-    obj.flowPart156:setName("flowPart156");
-    obj.flowPart156:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart156:setVertAlign("leading");
+    obj.flowPart162 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart162:setParent(obj.flowLayout33);
+    obj.flowPart162:setMinWidth(206);
+    obj.flowPart162:setMaxWidth(250);
+    obj.flowPart162:setHeight(17);
+    obj.flowPart162:setName("flowPart162");
+    obj.flowPart162:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart162:setVertAlign("leading");
 
     obj.cbProfcompanionintuicao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionintuicao:setParent(obj.flowPart156);
+    obj.cbProfcompanionintuicao:setParent(obj.flowPart162);
     obj.cbProfcompanionintuicao:setName("cbProfcompanionintuicao");
     obj.cbProfcompanionintuicao:setAlign("left");
     obj.cbProfcompanionintuicao:setField("pericias.companionintuicao");
@@ -11247,24 +11258,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink194 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink194:setParent(obj.flowPart156);
+    obj.dataLink194:setParent(obj.flowPart162);
     obj.dataLink194:setField("macroExpertise.companionintuicao");
     obj.dataLink194:setName("dataLink194");
 
     obj.dataLink195 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink195:setParent(obj.flowPart156);
+    obj.dataLink195:setParent(obj.flowPart162);
     obj.dataLink195:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink195:setName("dataLink195");
 
-    obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout106:setParent(obj.flowPart156);
-    obj.layout106:setAlign("left");
-    obj.layout106:setWidth(26);
-    obj.layout106:setMargins({left=2});
-    obj.layout106:setName("layout106");
+    obj.layout100 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout100:setParent(obj.flowPart162);
+    obj.layout100:setAlign("left");
+    obj.layout100:setWidth(26);
+    obj.layout100:setMargins({left=2});
+    obj.layout100:setName("layout100");
 
     obj.labProfcompanionintuicao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionintuicao:setParent(obj.layout106);
+    obj.labProfcompanionintuicao:setParent(obj.layout100);
     obj.labProfcompanionintuicao:setName("labProfcompanionintuicao");
     obj.labProfcompanionintuicao:setField("pericias.bonuscompanionintuicaostr");
     obj.labProfcompanionintuicao:setAlign("client");
@@ -11274,14 +11285,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionintuicao:setFontColor("white");
 
     obj.horzLine56 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine56:setParent(obj.layout106);
+    obj.horzLine56:setParent(obj.layout100);
     obj.horzLine56:setStrokeColor("white");
     obj.horzLine56:setStrokeSize(1);
     obj.horzLine56:setAlign("bottom");
     obj.horzLine56:setName("horzLine56");
 
     obj.button80 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button80:setParent(obj.flowPart156);
+    obj.button80:setParent(obj.flowPart162);
     obj.button80:setAlign("left");
     obj.button80:setText("Intuição");
     obj.button80:setWidth(122);
@@ -11293,17 +11304,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink196:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionintuicao', 'macroExpertise.companionintuicao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink196:setName("dataLink196");
 
-    obj.flowPart157 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart157:setParent(obj.flowLayout33);
-    obj.flowPart157:setMinWidth(206);
-    obj.flowPart157:setMaxWidth(250);
-    obj.flowPart157:setHeight(17);
-    obj.flowPart157:setName("flowPart157");
-    obj.flowPart157:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart157:setVertAlign("leading");
+    obj.flowPart163 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart163:setParent(obj.flowLayout33);
+    obj.flowPart163:setMinWidth(206);
+    obj.flowPart163:setMaxWidth(250);
+    obj.flowPart163:setHeight(17);
+    obj.flowPart163:setName("flowPart163");
+    obj.flowPart163:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart163:setVertAlign("leading");
 
     obj.cbProfcompanionmedicina = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionmedicina:setParent(obj.flowPart157);
+    obj.cbProfcompanionmedicina:setParent(obj.flowPart163);
     obj.cbProfcompanionmedicina:setName("cbProfcompanionmedicina");
     obj.cbProfcompanionmedicina:setAlign("left");
     obj.cbProfcompanionmedicina:setField("pericias.companionmedicina");
@@ -11346,24 +11357,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink197 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink197:setParent(obj.flowPart157);
+    obj.dataLink197:setParent(obj.flowPart163);
     obj.dataLink197:setField("macroExpertise.companionmedicina");
     obj.dataLink197:setName("dataLink197");
 
     obj.dataLink198 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink198:setParent(obj.flowPart157);
+    obj.dataLink198:setParent(obj.flowPart163);
     obj.dataLink198:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink198:setName("dataLink198");
 
-    obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout107:setParent(obj.flowPart157);
-    obj.layout107:setAlign("left");
-    obj.layout107:setWidth(26);
-    obj.layout107:setMargins({left=2});
-    obj.layout107:setName("layout107");
+    obj.layout101 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout101:setParent(obj.flowPart163);
+    obj.layout101:setAlign("left");
+    obj.layout101:setWidth(26);
+    obj.layout101:setMargins({left=2});
+    obj.layout101:setName("layout101");
 
     obj.labProfcompanionmedicina = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionmedicina:setParent(obj.layout107);
+    obj.labProfcompanionmedicina:setParent(obj.layout101);
     obj.labProfcompanionmedicina:setName("labProfcompanionmedicina");
     obj.labProfcompanionmedicina:setField("pericias.bonuscompanionmedicinastr");
     obj.labProfcompanionmedicina:setAlign("client");
@@ -11373,14 +11384,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionmedicina:setFontColor("white");
 
     obj.horzLine57 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine57:setParent(obj.layout107);
+    obj.horzLine57:setParent(obj.layout101);
     obj.horzLine57:setStrokeColor("white");
     obj.horzLine57:setStrokeSize(1);
     obj.horzLine57:setAlign("bottom");
     obj.horzLine57:setName("horzLine57");
 
     obj.button81 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button81:setParent(obj.flowPart157);
+    obj.button81:setParent(obj.flowPart163);
     obj.button81:setAlign("left");
     obj.button81:setText("Medicina");
     obj.button81:setWidth(122);
@@ -11392,17 +11403,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink199:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionmedicina', 'macroExpertise.companionmedicina', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink199:setName("dataLink199");
 
-    obj.flowPart158 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart158:setParent(obj.flowLayout33);
-    obj.flowPart158:setMinWidth(206);
-    obj.flowPart158:setMaxWidth(250);
-    obj.flowPart158:setHeight(17);
-    obj.flowPart158:setName("flowPart158");
-    obj.flowPart158:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart158:setVertAlign("leading");
+    obj.flowPart164 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart164:setParent(obj.flowLayout33);
+    obj.flowPart164:setMinWidth(206);
+    obj.flowPart164:setMaxWidth(250);
+    obj.flowPart164:setHeight(17);
+    obj.flowPart164:setName("flowPart164");
+    obj.flowPart164:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart164:setVertAlign("leading");
 
     obj.cbProfcompanionpercepcao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionpercepcao:setParent(obj.flowPart158);
+    obj.cbProfcompanionpercepcao:setParent(obj.flowPart164);
     obj.cbProfcompanionpercepcao:setName("cbProfcompanionpercepcao");
     obj.cbProfcompanionpercepcao:setAlign("left");
     obj.cbProfcompanionpercepcao:setField("pericias.companionpercepcao");
@@ -11445,24 +11456,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink200 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink200:setParent(obj.flowPart158);
+    obj.dataLink200:setParent(obj.flowPart164);
     obj.dataLink200:setField("macroExpertise.companionpercepcao");
     obj.dataLink200:setName("dataLink200");
 
     obj.dataLink201 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink201:setParent(obj.flowPart158);
+    obj.dataLink201:setParent(obj.flowPart164);
     obj.dataLink201:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink201:setName("dataLink201");
 
-    obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout108:setParent(obj.flowPart158);
-    obj.layout108:setAlign("left");
-    obj.layout108:setWidth(26);
-    obj.layout108:setMargins({left=2});
-    obj.layout108:setName("layout108");
+    obj.layout102 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout102:setParent(obj.flowPart164);
+    obj.layout102:setAlign("left");
+    obj.layout102:setWidth(26);
+    obj.layout102:setMargins({left=2});
+    obj.layout102:setName("layout102");
 
     obj.labProfcompanionpercepcao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionpercepcao:setParent(obj.layout108);
+    obj.labProfcompanionpercepcao:setParent(obj.layout102);
     obj.labProfcompanionpercepcao:setName("labProfcompanionpercepcao");
     obj.labProfcompanionpercepcao:setField("pericias.bonuscompanionpercepcaostr");
     obj.labProfcompanionpercepcao:setAlign("client");
@@ -11472,14 +11483,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionpercepcao:setFontColor("white");
 
     obj.horzLine58 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine58:setParent(obj.layout108);
+    obj.horzLine58:setParent(obj.layout102);
     obj.horzLine58:setStrokeColor("white");
     obj.horzLine58:setStrokeSize(1);
     obj.horzLine58:setAlign("bottom");
     obj.horzLine58:setName("horzLine58");
 
     obj.button82 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button82:setParent(obj.flowPart158);
+    obj.button82:setParent(obj.flowPart164);
     obj.button82:setAlign("left");
     obj.button82:setText("Percepção");
     obj.button82:setWidth(122);
@@ -11491,17 +11502,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink202:setFields({'atributos.modcompanionsabedoria', 'bonusProficiencia', 'pericias.companionpercepcao', 'macroExpertise.companionpercepcao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink202:setName("dataLink202");
 
-    obj.flowPart159 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart159:setParent(obj.flowLayout33);
-    obj.flowPart159:setMinWidth(206);
-    obj.flowPart159:setMaxWidth(250);
-    obj.flowPart159:setHeight(17);
-    obj.flowPart159:setName("flowPart159");
-    obj.flowPart159:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart159:setVertAlign("leading");
+    obj.flowPart165 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart165:setParent(obj.flowLayout33);
+    obj.flowPart165:setMinWidth(206);
+    obj.flowPart165:setMaxWidth(250);
+    obj.flowPart165:setHeight(17);
+    obj.flowPart165:setName("flowPart165");
+    obj.flowPart165:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart165:setVertAlign("leading");
 
     obj.cbProfcompanionsobrevivencia = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionsobrevivencia:setParent(obj.flowPart159);
+    obj.cbProfcompanionsobrevivencia:setParent(obj.flowPart165);
     obj.cbProfcompanionsobrevivencia:setName("cbProfcompanionsobrevivencia");
     obj.cbProfcompanionsobrevivencia:setAlign("left");
     obj.cbProfcompanionsobrevivencia:setField("pericias.companionsobrevivencia");
@@ -11544,24 +11555,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink203 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink203:setParent(obj.flowPart159);
+    obj.dataLink203:setParent(obj.flowPart165);
     obj.dataLink203:setField("macroExpertise.companionsobrevivencia");
     obj.dataLink203:setName("dataLink203");
 
     obj.dataLink204 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink204:setParent(obj.flowPart159);
+    obj.dataLink204:setParent(obj.flowPart165);
     obj.dataLink204:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink204:setName("dataLink204");
 
-    obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout109:setParent(obj.flowPart159);
-    obj.layout109:setAlign("left");
-    obj.layout109:setWidth(26);
-    obj.layout109:setMargins({left=2});
-    obj.layout109:setName("layout109");
+    obj.layout103 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout103:setParent(obj.flowPart165);
+    obj.layout103:setAlign("left");
+    obj.layout103:setWidth(26);
+    obj.layout103:setMargins({left=2});
+    obj.layout103:setName("layout103");
 
     obj.labProfcompanionsobrevivencia = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionsobrevivencia:setParent(obj.layout109);
+    obj.labProfcompanionsobrevivencia:setParent(obj.layout103);
     obj.labProfcompanionsobrevivencia:setName("labProfcompanionsobrevivencia");
     obj.labProfcompanionsobrevivencia:setField("pericias.bonuscompanionsobrevivenciastr");
     obj.labProfcompanionsobrevivencia:setAlign("client");
@@ -11571,14 +11582,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionsobrevivencia:setFontColor("white");
 
     obj.horzLine59 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine59:setParent(obj.layout109);
+    obj.horzLine59:setParent(obj.layout103);
     obj.horzLine59:setStrokeColor("white");
     obj.horzLine59:setStrokeSize(1);
     obj.horzLine59:setAlign("bottom");
     obj.horzLine59:setName("horzLine59");
 
     obj.button83 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button83:setParent(obj.flowPart159);
+    obj.button83:setParent(obj.flowPart165);
     obj.button83:setAlign("left");
     obj.button83:setText("Sobrevivência");
     obj.button83:setWidth(122);
@@ -11595,27 +11606,27 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink206:setField("atributos.companioncarisma");
     obj.dataLink206:setName("dataLink206");
 
-    obj.flowPart160 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart160:setParent(obj.fraLayAtributosCompanion);
-    obj.flowPart160:setHeight(140);
-    obj.flowPart160:setMinWidth(320);
-    obj.flowPart160:setMaxWidth(420);
-    obj.flowPart160:setMinScaledWidth(305);
-    obj.flowPart160:setFrameStyle("frames/atributeFrame2/frame.xml");
-    obj.flowPart160:setName("flowPart160");
-    obj.flowPart160:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart160:setVertAlign("leading");
+    obj.flowPart166 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart166:setParent(obj.fraLayAtributosCompanion);
+    obj.flowPart166:setHeight(140);
+    obj.flowPart166:setMinWidth(320);
+    obj.flowPart166:setMaxWidth(420);
+    obj.flowPart166:setMinScaledWidth(305);
+    obj.flowPart166:setFrameStyle("frames/atributeFrame2/frame.xml");
+    obj.flowPart166:setName("flowPart166");
+    obj.flowPart166:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart166:setVertAlign("leading");
 
-    obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout110:setParent(obj.flowPart160);
-    obj.layout110:setLeft(6);
-    obj.layout110:setTop(12);
-    obj.layout110:setWidth(116);
-    obj.layout110:setHeight(115);
-    obj.layout110:setName("layout110");
+    obj.layout104 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout104:setParent(obj.flowPart166);
+    obj.layout104:setLeft(6);
+    obj.layout104:setTop(12);
+    obj.layout104:setWidth(116);
+    obj.layout104:setHeight(115);
+    obj.layout104:setName("layout104");
 
     obj.edit53 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit53:setParent(obj.layout110);
+    obj.edit53:setParent(obj.layout104);
     obj.edit53:setAlign("top");
     obj.edit53:setMargins({left=30, right=30});
     obj.edit53:setField("atributos.companioncarisma");
@@ -11631,7 +11642,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit53:setFontColor("white");
 
     obj.label105 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label105:setParent(obj.flowPart160);
+    obj.label105:setParent(obj.flowPart166);
     obj.label105:setFrameRegion("modificador");
     obj.label105:setField("atributos.modcompanioncarismastr");
     obj.label105:setHorzTextAlign("center");
@@ -11641,13 +11652,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label105:setName("label105");
     obj.label105:setFontColor("white");
 
-    obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout111:setParent(obj.flowPart160);
-    obj.layout111:setFrameRegion("titulo");
-    obj.layout111:setName("layout111");
+    obj.layout105 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout105:setParent(obj.flowPart166);
+    obj.layout105:setFrameRegion("titulo");
+    obj.layout105:setName("layout105");
 
     obj.button84 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button84:setParent(obj.layout111);
+    obj.button84:setParent(obj.layout105);
     obj.button84:setAlign("client");
     obj.button84:setText("CARISMA");
     obj.button84:setVertTextAlign("center");
@@ -11655,7 +11666,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button84:setName("button84");
 
     obj.flowLayout34 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout34:setParent(obj.flowPart160);
+    obj.flowLayout34:setParent(obj.flowPart166);
     obj.flowLayout34:setFrameRegion("RegiaoDePericias");
     obj.flowLayout34:setAutoHeight(true);
     obj.flowLayout34:setLineSpacing(0);
@@ -11664,17 +11675,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout34:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout34:setVertAlign("leading");
 
-    obj.flowPart161 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart161:setParent(obj.flowLayout34);
-    obj.flowPart161:setMinWidth(206);
-    obj.flowPart161:setMaxWidth(250);
-    obj.flowPart161:setHeight(17);
-    obj.flowPart161:setName("flowPart161");
-    obj.flowPart161:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart161:setVertAlign("leading");
+    obj.flowPart167 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart167:setParent(obj.flowLayout34);
+    obj.flowPart167:setMinWidth(206);
+    obj.flowPart167:setMaxWidth(250);
+    obj.flowPart167:setHeight(17);
+    obj.flowPart167:setName("flowPart167");
+    obj.flowPart167:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart167:setVertAlign("leading");
 
     obj.cbProfcompanioncarisma = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanioncarisma:setParent(obj.flowPart161);
+    obj.cbProfcompanioncarisma:setParent(obj.flowPart167);
     obj.cbProfcompanioncarisma:setName("cbProfcompanioncarisma");
     obj.cbProfcompanioncarisma:setAlign("left");
     obj.cbProfcompanioncarisma:setField("resistencias.companioncarisma");
@@ -11717,24 +11728,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink207 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink207:setParent(obj.flowPart161);
+    obj.dataLink207:setParent(obj.flowPart167);
     obj.dataLink207:setField("macroExpertise.companioncarisma");
     obj.dataLink207:setName("dataLink207");
 
     obj.dataLink208 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink208:setParent(obj.flowPart161);
+    obj.dataLink208:setParent(obj.flowPart167);
     obj.dataLink208:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink208:setName("dataLink208");
 
-    obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout112:setParent(obj.flowPart161);
-    obj.layout112:setAlign("left");
-    obj.layout112:setWidth(26);
-    obj.layout112:setMargins({left=2});
-    obj.layout112:setName("layout112");
+    obj.layout106 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout106:setParent(obj.flowPart167);
+    obj.layout106:setAlign("left");
+    obj.layout106:setWidth(26);
+    obj.layout106:setMargins({left=2});
+    obj.layout106:setName("layout106");
 
     obj.labProfcompanioncarisma = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanioncarisma:setParent(obj.layout112);
+    obj.labProfcompanioncarisma:setParent(obj.layout106);
     obj.labProfcompanioncarisma:setName("labProfcompanioncarisma");
     obj.labProfcompanioncarisma:setField("resistencias.bonuscompanioncarismastr");
     obj.labProfcompanioncarisma:setAlign("client");
@@ -11744,14 +11755,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanioncarisma:setFontColor("white");
 
     obj.horzLine60 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine60:setParent(obj.layout112);
+    obj.horzLine60:setParent(obj.layout106);
     obj.horzLine60:setStrokeColor("white");
     obj.horzLine60:setStrokeSize(1);
     obj.horzLine60:setAlign("bottom");
     obj.horzLine60:setName("horzLine60");
 
     obj.button85 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button85:setParent(obj.flowPart161);
+    obj.button85:setParent(obj.flowPart167);
     obj.button85:setAlign("left");
     obj.button85:setText("Resistência");
     obj.button85:setWidth(122);
@@ -11763,17 +11774,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink209:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'resistencias.companioncarisma', 'propriedades.prescience', 'propriedades.saveBonus'});
     obj.dataLink209:setName("dataLink209");
 
-    obj.flowPart162 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart162:setParent(obj.flowLayout34);
-    obj.flowPart162:setMinWidth(206);
-    obj.flowPart162:setMaxWidth(250);
-    obj.flowPart162:setHeight(17);
-    obj.flowPart162:setName("flowPart162");
-    obj.flowPart162:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart162:setVertAlign("leading");
+    obj.flowPart168 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart168:setParent(obj.flowLayout34);
+    obj.flowPart168:setMinWidth(206);
+    obj.flowPart168:setMaxWidth(250);
+    obj.flowPart168:setHeight(17);
+    obj.flowPart168:setName("flowPart168");
+    obj.flowPart168:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart168:setVertAlign("leading");
 
     obj.cbProfcompanionatuacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionatuacao:setParent(obj.flowPart162);
+    obj.cbProfcompanionatuacao:setParent(obj.flowPart168);
     obj.cbProfcompanionatuacao:setName("cbProfcompanionatuacao");
     obj.cbProfcompanionatuacao:setAlign("left");
     obj.cbProfcompanionatuacao:setField("pericias.companionatuacao");
@@ -11816,24 +11827,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink210 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink210:setParent(obj.flowPart162);
+    obj.dataLink210:setParent(obj.flowPart168);
     obj.dataLink210:setField("macroExpertise.companionatuacao");
     obj.dataLink210:setName("dataLink210");
 
     obj.dataLink211 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink211:setParent(obj.flowPart162);
+    obj.dataLink211:setParent(obj.flowPart168);
     obj.dataLink211:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink211:setName("dataLink211");
 
-    obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout113:setParent(obj.flowPart162);
-    obj.layout113:setAlign("left");
-    obj.layout113:setWidth(26);
-    obj.layout113:setMargins({left=2});
-    obj.layout113:setName("layout113");
+    obj.layout107 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout107:setParent(obj.flowPart168);
+    obj.layout107:setAlign("left");
+    obj.layout107:setWidth(26);
+    obj.layout107:setMargins({left=2});
+    obj.layout107:setName("layout107");
 
     obj.labProfcompanionatuacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionatuacao:setParent(obj.layout113);
+    obj.labProfcompanionatuacao:setParent(obj.layout107);
     obj.labProfcompanionatuacao:setName("labProfcompanionatuacao");
     obj.labProfcompanionatuacao:setField("pericias.bonuscompanionatuacaostr");
     obj.labProfcompanionatuacao:setAlign("client");
@@ -11843,14 +11854,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionatuacao:setFontColor("white");
 
     obj.horzLine61 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine61:setParent(obj.layout113);
+    obj.horzLine61:setParent(obj.layout107);
     obj.horzLine61:setStrokeColor("white");
     obj.horzLine61:setStrokeSize(1);
     obj.horzLine61:setAlign("bottom");
     obj.horzLine61:setName("horzLine61");
 
     obj.button86 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button86:setParent(obj.flowPart162);
+    obj.button86:setParent(obj.flowPart168);
     obj.button86:setAlign("left");
     obj.button86:setText("Atuação");
     obj.button86:setWidth(122);
@@ -11862,17 +11873,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink212:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionatuacao', 'macroExpertise.companionatuacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink212:setName("dataLink212");
 
-    obj.flowPart163 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart163:setParent(obj.flowLayout34);
-    obj.flowPart163:setMinWidth(206);
-    obj.flowPart163:setMaxWidth(250);
-    obj.flowPart163:setHeight(17);
-    obj.flowPart163:setName("flowPart163");
-    obj.flowPart163:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart163:setVertAlign("leading");
+    obj.flowPart169 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart169:setParent(obj.flowLayout34);
+    obj.flowPart169:setMinWidth(206);
+    obj.flowPart169:setMaxWidth(250);
+    obj.flowPart169:setHeight(17);
+    obj.flowPart169:setName("flowPart169");
+    obj.flowPart169:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart169:setVertAlign("leading");
 
     obj.cbProfcompanionenganacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionenganacao:setParent(obj.flowPart163);
+    obj.cbProfcompanionenganacao:setParent(obj.flowPart169);
     obj.cbProfcompanionenganacao:setName("cbProfcompanionenganacao");
     obj.cbProfcompanionenganacao:setAlign("left");
     obj.cbProfcompanionenganacao:setField("pericias.companionenganacao");
@@ -11915,24 +11926,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink213 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink213:setParent(obj.flowPart163);
+    obj.dataLink213:setParent(obj.flowPart169);
     obj.dataLink213:setField("macroExpertise.companionenganacao");
     obj.dataLink213:setName("dataLink213");
 
     obj.dataLink214 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink214:setParent(obj.flowPart163);
+    obj.dataLink214:setParent(obj.flowPart169);
     obj.dataLink214:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink214:setName("dataLink214");
 
-    obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout114:setParent(obj.flowPart163);
-    obj.layout114:setAlign("left");
-    obj.layout114:setWidth(26);
-    obj.layout114:setMargins({left=2});
-    obj.layout114:setName("layout114");
+    obj.layout108 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout108:setParent(obj.flowPart169);
+    obj.layout108:setAlign("left");
+    obj.layout108:setWidth(26);
+    obj.layout108:setMargins({left=2});
+    obj.layout108:setName("layout108");
 
     obj.labProfcompanionenganacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionenganacao:setParent(obj.layout114);
+    obj.labProfcompanionenganacao:setParent(obj.layout108);
     obj.labProfcompanionenganacao:setName("labProfcompanionenganacao");
     obj.labProfcompanionenganacao:setField("pericias.bonuscompanionenganacaostr");
     obj.labProfcompanionenganacao:setAlign("client");
@@ -11942,14 +11953,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionenganacao:setFontColor("white");
 
     obj.horzLine62 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine62:setParent(obj.layout114);
+    obj.horzLine62:setParent(obj.layout108);
     obj.horzLine62:setStrokeColor("white");
     obj.horzLine62:setStrokeSize(1);
     obj.horzLine62:setAlign("bottom");
     obj.horzLine62:setName("horzLine62");
 
     obj.button87 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button87:setParent(obj.flowPart163);
+    obj.button87:setParent(obj.flowPart169);
     obj.button87:setAlign("left");
     obj.button87:setText("Enganação");
     obj.button87:setWidth(122);
@@ -11961,17 +11972,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink215:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionenganacao', 'macroExpertise.companionenganacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink215:setName("dataLink215");
 
-    obj.flowPart164 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart164:setParent(obj.flowLayout34);
-    obj.flowPart164:setMinWidth(206);
-    obj.flowPart164:setMaxWidth(250);
-    obj.flowPart164:setHeight(17);
-    obj.flowPart164:setName("flowPart164");
-    obj.flowPart164:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart164:setVertAlign("leading");
+    obj.flowPart170 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart170:setParent(obj.flowLayout34);
+    obj.flowPart170:setMinWidth(206);
+    obj.flowPart170:setMaxWidth(250);
+    obj.flowPart170:setHeight(17);
+    obj.flowPart170:setName("flowPart170");
+    obj.flowPart170:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart170:setVertAlign("leading");
 
     obj.cbProfcompanionintimidacao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionintimidacao:setParent(obj.flowPart164);
+    obj.cbProfcompanionintimidacao:setParent(obj.flowPart170);
     obj.cbProfcompanionintimidacao:setName("cbProfcompanionintimidacao");
     obj.cbProfcompanionintimidacao:setAlign("left");
     obj.cbProfcompanionintimidacao:setField("pericias.companionintimidacao");
@@ -12014,24 +12025,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink216 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink216:setParent(obj.flowPart164);
+    obj.dataLink216:setParent(obj.flowPart170);
     obj.dataLink216:setField("macroExpertise.companionintimidacao");
     obj.dataLink216:setName("dataLink216");
 
     obj.dataLink217 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink217:setParent(obj.flowPart164);
+    obj.dataLink217:setParent(obj.flowPart170);
     obj.dataLink217:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink217:setName("dataLink217");
 
-    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout115:setParent(obj.flowPart164);
-    obj.layout115:setAlign("left");
-    obj.layout115:setWidth(26);
-    obj.layout115:setMargins({left=2});
-    obj.layout115:setName("layout115");
+    obj.layout109 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout109:setParent(obj.flowPart170);
+    obj.layout109:setAlign("left");
+    obj.layout109:setWidth(26);
+    obj.layout109:setMargins({left=2});
+    obj.layout109:setName("layout109");
 
     obj.labProfcompanionintimidacao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionintimidacao:setParent(obj.layout115);
+    obj.labProfcompanionintimidacao:setParent(obj.layout109);
     obj.labProfcompanionintimidacao:setName("labProfcompanionintimidacao");
     obj.labProfcompanionintimidacao:setField("pericias.bonuscompanionintimidacaostr");
     obj.labProfcompanionintimidacao:setAlign("client");
@@ -12041,14 +12052,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionintimidacao:setFontColor("white");
 
     obj.horzLine63 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine63:setParent(obj.layout115);
+    obj.horzLine63:setParent(obj.layout109);
     obj.horzLine63:setStrokeColor("white");
     obj.horzLine63:setStrokeSize(1);
     obj.horzLine63:setAlign("bottom");
     obj.horzLine63:setName("horzLine63");
 
     obj.button88 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button88:setParent(obj.flowPart164);
+    obj.button88:setParent(obj.flowPart170);
     obj.button88:setAlign("left");
     obj.button88:setText("Intimidação");
     obj.button88:setWidth(122);
@@ -12060,17 +12071,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink218:setFields({'atributos.modcompanioncarisma', 'bonusProficiencia', 'pericias.companionintimidacao', 'macroExpertise.companionintimidacao', 'propriedades.jackOfAllTrades', 'propriedades.prescience', 'propriedades.checkBonus'});
     obj.dataLink218:setName("dataLink218");
 
-    obj.flowPart165 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart165:setParent(obj.flowLayout34);
-    obj.flowPart165:setMinWidth(206);
-    obj.flowPart165:setMaxWidth(250);
-    obj.flowPart165:setHeight(17);
-    obj.flowPart165:setName("flowPart165");
-    obj.flowPart165:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart165:setVertAlign("leading");
+    obj.flowPart171 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart171:setParent(obj.flowLayout34);
+    obj.flowPart171:setMinWidth(206);
+    obj.flowPart171:setMaxWidth(250);
+    obj.flowPart171:setHeight(17);
+    obj.flowPart171:setName("flowPart171");
+    obj.flowPart171:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart171:setVertAlign("leading");
 
     obj.cbProfcompanionpersuasao = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.cbProfcompanionpersuasao:setParent(obj.flowPart165);
+    obj.cbProfcompanionpersuasao:setParent(obj.flowPart171);
     obj.cbProfcompanionpersuasao:setName("cbProfcompanionpersuasao");
     obj.cbProfcompanionpersuasao:setAlign("left");
     obj.cbProfcompanionpersuasao:setField("pericias.companionpersuasao");
@@ -12113,24 +12124,24 @@ self.upperGridMagicBox3._RecalcSize();
 
 
     obj.dataLink219 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink219:setParent(obj.flowPart165);
+    obj.dataLink219:setParent(obj.flowPart171);
     obj.dataLink219:setField("macroExpertise.companionpersuasao");
     obj.dataLink219:setName("dataLink219");
 
     obj.dataLink220 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink220:setParent(obj.flowPart165);
+    obj.dataLink220:setParent(obj.flowPart171);
     obj.dataLink220:setFields({'propriedades.jackOfAllTrades', 'propriedades.remarkableAthlete'});
     obj.dataLink220:setName("dataLink220");
 
-    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout116:setParent(obj.flowPart165);
-    obj.layout116:setAlign("left");
-    obj.layout116:setWidth(26);
-    obj.layout116:setMargins({left=2});
-    obj.layout116:setName("layout116");
+    obj.layout110 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout110:setParent(obj.flowPart171);
+    obj.layout110:setAlign("left");
+    obj.layout110:setWidth(26);
+    obj.layout110:setMargins({left=2});
+    obj.layout110:setName("layout110");
 
     obj.labProfcompanionpersuasao = GUI.fromHandle(_obj_newObject("label"));
-    obj.labProfcompanionpersuasao:setParent(obj.layout116);
+    obj.labProfcompanionpersuasao:setParent(obj.layout110);
     obj.labProfcompanionpersuasao:setName("labProfcompanionpersuasao");
     obj.labProfcompanionpersuasao:setField("pericias.bonuscompanionpersuasaostr");
     obj.labProfcompanionpersuasao:setAlign("client");
@@ -12140,14 +12151,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.labProfcompanionpersuasao:setFontColor("white");
 
     obj.horzLine64 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine64:setParent(obj.layout116);
+    obj.horzLine64:setParent(obj.layout110);
     obj.horzLine64:setStrokeColor("white");
     obj.horzLine64:setStrokeSize(1);
     obj.horzLine64:setAlign("bottom");
     obj.horzLine64:setName("horzLine64");
 
     obj.button89 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button89:setParent(obj.flowPart165);
+    obj.button89:setParent(obj.flowPart171);
     obj.button89:setAlign("left");
     obj.button89:setText("Persuasão");
     obj.button89:setWidth(122);
@@ -12183,18 +12194,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout36:setName("flowLayout36");
     obj.flowLayout36:setMargins({left=1, right=1, top=2, bottom=2});
 
-    obj.flowPart166 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart166:setParent(obj.flowLayout36);
-    obj.flowPart166:setStepSizes({105});
-    obj.flowPart166:setMinScaledWidth(75);
-    obj.flowPart166:setHeight(120);
-    obj.flowPart166:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart166:setName("flowPart166");
-    obj.flowPart166:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart166:setVertAlign("leading");
+    obj.flowPart172 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart172:setParent(obj.flowLayout36);
+    obj.flowPart172:setStepSizes({105});
+    obj.flowPart172:setMinScaledWidth(75);
+    obj.flowPart172:setHeight(120);
+    obj.flowPart172:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart172:setName("flowPart172");
+    obj.flowPart172:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart172:setVertAlign("leading");
 
     obj.button90 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button90:setParent(obj.flowPart166);
+    obj.button90:setParent(obj.flowPart172);
     obj.button90:setAlign("top");
     obj.button90:setText("INICIATIVA");
     obj.button90:setHeight(20);
@@ -12206,7 +12217,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button90:setName("button90");
 
     obj.edit54 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit54:setParent(obj.flowPart166);
+    obj.edit54:setParent(obj.flowPart172);
     obj.edit54:setAlign("client");
     obj.edit54:setField("iniciativacompanion");
     obj.edit54:setFontSize(30);
@@ -12216,18 +12227,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit54:setHorzTextAlign("center");
     obj.edit54:setFontColor("white");
 
-    obj.flowPart167 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart167:setParent(obj.flowLayout36);
-    obj.flowPart167:setStepSizes({105});
-    obj.flowPart167:setMinScaledWidth(75);
-    obj.flowPart167:setHeight(120);
-    obj.flowPart167:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart167:setName("flowPart167");
-    obj.flowPart167:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart167:setVertAlign("leading");
+    obj.flowPart173 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart173:setParent(obj.flowLayout36);
+    obj.flowPart173:setStepSizes({105});
+    obj.flowPart173:setMinScaledWidth(75);
+    obj.flowPart173:setHeight(120);
+    obj.flowPart173:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart173:setName("flowPart173");
+    obj.flowPart173:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart173:setVertAlign("leading");
 
     obj.label106 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label106:setParent(obj.flowPart167);
+    obj.label106:setParent(obj.flowPart173);
     obj.label106:setAlign("top");
     obj.label106:setText("DESLOCAMENTO ANDANDO");
     obj.label106:setHeight(20);
@@ -12239,7 +12250,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label106:setFontColor("white");
 
     obj.edit55 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit55:setParent(obj.flowPart167);
+    obj.edit55:setParent(obj.flowPart173);
     obj.edit55:setAlign("client");
     obj.edit55:setField("deslocamento andando Companion");
     obj.edit55:setFontSize(30);
@@ -12249,18 +12260,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit55:setHorzTextAlign("center");
     obj.edit55:setFontColor("white");
 
-    obj.flowPart168 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart168:setParent(obj.flowLayout36);
-    obj.flowPart168:setStepSizes({105});
-    obj.flowPart168:setMinScaledWidth(75);
-    obj.flowPart168:setHeight(120);
-    obj.flowPart168:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart168:setName("flowPart168");
-    obj.flowPart168:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart168:setVertAlign("leading");
+    obj.flowPart174 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart174:setParent(obj.flowLayout36);
+    obj.flowPart174:setStepSizes({105});
+    obj.flowPart174:setMinScaledWidth(75);
+    obj.flowPart174:setHeight(120);
+    obj.flowPart174:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart174:setName("flowPart174");
+    obj.flowPart174:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart174:setVertAlign("leading");
 
     obj.label107 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label107:setParent(obj.flowPart168);
+    obj.label107:setParent(obj.flowPart174);
     obj.label107:setAlign("top");
     obj.label107:setText("DESLOCAMENTO NADO / ESCALADA");
     obj.label107:setHeight(20);
@@ -12272,7 +12283,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label107:setFontColor("white");
 
     obj.edit56 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit56:setParent(obj.flowPart168);
+    obj.edit56:setParent(obj.flowPart174);
     obj.edit56:setAlign("client");
     obj.edit56:setField("deslocamento nado Companion");
     obj.edit56:setFontSize(30);
@@ -12282,18 +12293,18 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit56:setHorzTextAlign("center");
     obj.edit56:setFontColor("white");
 
-    obj.flowPart169 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart169:setParent(obj.flowLayout36);
-    obj.flowPart169:setStepSizes({105});
-    obj.flowPart169:setMinScaledWidth(75);
-    obj.flowPart169:setHeight(120);
-    obj.flowPart169:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart169:setName("flowPart169");
-    obj.flowPart169:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart169:setVertAlign("leading");
+    obj.flowPart175 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart175:setParent(obj.flowLayout36);
+    obj.flowPart175:setStepSizes({105});
+    obj.flowPart175:setMinScaledWidth(75);
+    obj.flowPart175:setHeight(120);
+    obj.flowPart175:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart175:setName("flowPart175");
+    obj.flowPart175:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart175:setVertAlign("leading");
 
     obj.label108 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label108:setParent(obj.flowPart169);
+    obj.label108:setParent(obj.flowPart175);
     obj.label108:setAlign("top");
     obj.label108:setText("DESLOCAMENTO VOO");
     obj.label108:setHeight(20);
@@ -12305,7 +12316,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label108:setFontColor("white");
 
     obj.edit57 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit57:setParent(obj.flowPart169);
+    obj.edit57:setParent(obj.flowPart175);
     obj.edit57:setAlign("client");
     obj.edit57:setField("deslocamento voo Companion");
     obj.edit57:setFontSize(30);
@@ -12315,31 +12326,31 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit57:setHorzTextAlign("center");
     obj.edit57:setFontColor("white");
 
-    obj.flowPart170 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart170:setParent(obj.flowLayout35);
-    obj.flowPart170:setMinWidth(235);
-    obj.flowPart170:setMaxWidth(475);
-    obj.flowPart170:setMinScaledWidth(200);
-    obj.flowPart170:setHeight(175);
-    obj.flowPart170:setMargins({left=2, right=2, top=4, bottom=8});
-    obj.flowPart170:setName("flowPart170");
-    obj.flowPart170:setVertAlign("leading");
+    obj.flowPart176 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart176:setParent(obj.flowLayout35);
+    obj.flowPart176:setMinWidth(235);
+    obj.flowPart176:setMaxWidth(475);
+    obj.flowPart176:setMinScaledWidth(200);
+    obj.flowPart176:setHeight(175);
+    obj.flowPart176:setMargins({left=2, right=2, top=4, bottom=8});
+    obj.flowPart176:setName("flowPart176");
+    obj.flowPart176:setVertAlign("leading");
 
     obj.frame8 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame8:setParent(obj.flowPart170);
+    obj.frame8:setParent(obj.flowPart176);
     obj.frame8:setAlign("client");
     obj.frame8:setFrameStyle("frames/panel5/topPanel.xml");
     obj.frame8:setMargins({left = 4, right = 4, bottom=4});
     obj.frame8:setName("frame8");
 
-    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout117:setParent(obj.frame8);
-    obj.layout117:setAlign("client");
-    obj.layout117:setMargins({left=5,right=5,bottom=5,top=5});
-    obj.layout117:setName("layout117");
+    obj.layout111 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout111:setParent(obj.frame8);
+    obj.layout111:setAlign("client");
+    obj.layout111:setMargins({left=5,right=5,bottom=5,top=5});
+    obj.layout111:setName("layout111");
 
     obj.flowLayout37 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout37:setParent(obj.layout117);
+    obj.flowLayout37:setParent(obj.layout111);
     obj.flowLayout37:setAlign("top");
     obj.flowLayout37:setHorzAlign("center");
     obj.flowLayout37:setHeight(30);
@@ -12383,20 +12394,20 @@ self.upperGridMagicBox3._RecalcSize();
     obj.dataLink222:setDefaultValue("Red");
     obj.dataLink222:setName("dataLink222");
 
-    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout118:setParent(obj.layout117);
-    obj.layout118:setAlign("client");
-    obj.layout118:setMargins({bottom=10});
-    obj.layout118:setName("layout118");
+    obj.layout112 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout112:setParent(obj.layout111);
+    obj.layout112:setAlign("client");
+    obj.layout112:setMargins({bottom=10});
+    obj.layout112:setName("layout112");
 
-    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout119:setParent(obj.layout118);
-    obj.layout119:setAlign("right");
-    obj.layout119:setWidth(81);
-    obj.layout119:setName("layout119");
+    obj.layout113 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout113:setParent(obj.layout112);
+    obj.layout113:setAlign("right");
+    obj.layout113:setWidth(81);
+    obj.layout113:setName("layout113");
 
     obj.edit58 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit58:setParent(obj.layout119);
+    obj.edit58:setParent(obj.layout113);
     obj.edit58:setAlign("left");
     obj.edit58:setMargins({left=2});
     obj.edit58:setWidth(35);
@@ -12408,7 +12419,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit58:setFontColor("white");
 
     obj.label109 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label109:setParent(obj.layout119);
+    obj.label109:setParent(obj.layout113);
     obj.label109:setAlign("left");
     obj.label109:setMargins({left=2});
     obj.label109:setText("/");
@@ -12417,7 +12428,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label109:setFontColor("white");
 
     obj.edit59 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit59:setParent(obj.layout119);
+    obj.edit59:setParent(obj.layout113);
     obj.edit59:setAlign("left");
     obj.edit59:setMargins({left=2});
     obj.edit59:setWidth(35);
@@ -12429,7 +12440,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit59:setFontColor("white");
 
     obj.progBar2 = GUI.fromHandle(_obj_newObject("progressBar"));
-    obj.progBar2:setParent(obj.layout118);
+    obj.progBar2:setParent(obj.layout112);
     obj.progBar2:setName("progBar2");
     obj.progBar2:setAlign("client");
     obj.progBar2:setColor("yellow");
@@ -12438,7 +12449,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.progBar2:setFieldMax("PVmax2");
 
     obj.label110 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label110:setParent(obj.layout118);
+    obj.label110:setParent(obj.layout112);
     obj.label110:setAlign("client");
     obj.label110:setAutoSize(true);
     obj.label110:setText("PONTOS DE VIDA");
@@ -12451,7 +12462,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label110:setName("label110");
 
     obj.label111 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label111:setParent(obj.layout118);
+    obj.label111:setParent(obj.layout112);
     obj.label111:setAlign("client");
     obj.label111:setAutoSize(true);
     obj.label111:setText("PONTOS DE VIDA");
@@ -12463,17 +12474,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label111:setFontColor("white");
 
     obj.dataLink223 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink223:setParent(obj.layout118);
+    obj.dataLink223:setParent(obj.layout112);
     obj.dataLink223:setFields({'PV2', 'PVmax2'});
     obj.dataLink223:setName("dataLink223");
 
     obj.dataLink224 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink224:setParent(obj.layout117);
+    obj.dataLink224:setParent(obj.layout111);
     obj.dataLink224:setField("descansoLongo");
     obj.dataLink224:setName("dataLink224");
 
     obj.frame9 = GUI.fromHandle(_obj_newObject("frame"));
-    obj.frame9:setParent(obj.flowPart170);
+    obj.frame9:setParent(obj.flowPart176);
     obj.frame9:setAlign("bottom");
     obj.frame9:setHeight(70);
     obj.frame9:setFrameStyle("frames/panel5/bottomPanel.xml");
@@ -12517,23 +12528,23 @@ self.upperGridMagicBox3._RecalcSize();
     obj.flowLayout38:setMargins({left=1, right=1, top=2, bottom=2});
     obj.flowLayout38:setVertAlign("leading");
 
-    obj.flowPart171 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart171:setParent(obj.flowLayout38);
-    obj.flowPart171:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart171:setStepSizes({130, 150, 160});
-    obj.flowPart171:setHeight(100);
-    obj.flowPart171:setName("flowPart171");
-    obj.flowPart171:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart171:setVertAlign("leading");
+    obj.flowPart177 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart177:setParent(obj.flowLayout38);
+    obj.flowPart177:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart177:setStepSizes({130, 150, 160});
+    obj.flowPart177:setHeight(100);
+    obj.flowPart177:setName("flowPart177");
+    obj.flowPart177:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart177:setVertAlign("leading");
 
-    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout120:setParent(obj.flowPart171);
-    obj.layout120:setAlign("top");
-    obj.layout120:setHeight(25);
-    obj.layout120:setName("layout120");
+    obj.layout114 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout114:setParent(obj.flowPart177);
+    obj.layout114:setAlign("top");
+    obj.layout114:setHeight(25);
+    obj.layout114:setName("layout114");
 
     obj.label113 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label113:setParent(obj.layout120);
+    obj.label113:setParent(obj.layout114);
     obj.label113:setAlign("left");
     obj.label113:setAutoSize(true);
     obj.label113:setText("ACERTO:");
@@ -12544,14 +12555,14 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label113:setName("label113");
     obj.label113:setFontColor("#D0D0D0");
 
-    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout121:setParent(obj.layout120);
-    obj.layout121:setAlign("client");
-    obj.layout121:setMargins({left=5, right=3});
-    obj.layout121:setName("layout121");
+    obj.layout115 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout115:setParent(obj.layout114);
+    obj.layout115:setAlign("client");
+    obj.layout115:setMargins({left=5, right=3});
+    obj.layout115:setName("layout115");
 
     obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.layout121);
+    obj.edit61:setParent(obj.layout115);
     obj.edit61:setAlign("client");
     obj.edit61:setField("DadosDeVidaTotalcompanion");
     obj.edit61:setVertTextAlign("center");
@@ -12562,13 +12573,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit61:setTransparent(true);
 
     obj.horzLine65 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine65:setParent(obj.layout121);
+    obj.horzLine65:setParent(obj.layout115);
     obj.horzLine65:setAlign("bottom");
     obj.horzLine65:setStrokeColor("gray");
     obj.horzLine65:setName("horzLine65");
 
     obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.flowPart171);
+    obj.edit62:setParent(obj.flowPart177);
     obj.edit62:setAlign("client");
     obj.edit62:setField("DadosDeVidacompanion");
     obj.edit62:setMargins({top=2});
@@ -12580,7 +12591,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit62:setTransparent(true);
 
     obj.label114 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label114:setParent(obj.flowPart171);
+    obj.label114:setParent(obj.flowPart177);
     obj.label114:setAlign("bottom");
     obj.label114:setAutoSize(true);
     obj.label114:setText("DANO DO COMPANION");
@@ -12590,24 +12601,24 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label114:setName("label114");
     obj.label114:setFontColor("white");
 
-    obj.flowPart172 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart172:setParent(obj.flowLayout38);
-    obj.flowPart172:setFrameStyle("frames/panel4transp/frame.xml");
-    obj.flowPart172:setStepSizes({170, 170});
-    obj.flowPart172:setHeight(100);
-    obj.flowPart172:setName("flowPart172");
-    obj.flowPart172:setMargins({left=1, right=1, top=2, bottom=2});
-    obj.flowPart172:setVertAlign("leading");
+    obj.flowPart178 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart178:setParent(obj.flowLayout38);
+    obj.flowPart178:setFrameStyle("frames/panel4transp/frame.xml");
+    obj.flowPart178:setStepSizes({170, 170});
+    obj.flowPart178:setHeight(100);
+    obj.flowPart178:setName("flowPart178");
+    obj.flowPart178:setMargins({left=1, right=1, top=2, bottom=2});
+    obj.flowPart178:setVertAlign("leading");
 
-    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout122:setParent(obj.flowPart172);
-    obj.layout122:setAlign("top");
-    obj.layout122:setHeight(25);
-    obj.layout122:setMargins({left=2});
-    obj.layout122:setName("layout122");
+    obj.layout116 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout116:setParent(obj.flowPart178);
+    obj.layout116:setAlign("top");
+    obj.layout116:setHeight(25);
+    obj.layout116:setMargins({left=2});
+    obj.layout116:setName("layout116");
 
     obj.label115 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label115:setParent(obj.layout122);
+    obj.label115:setParent(obj.layout116);
     obj.label115:setAlign("client");
     obj.label115:setAutoSize(true);
     obj.label115:setFontSize(10);
@@ -12620,7 +12631,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label115:setFontColor("white");
 
     obj.imageCheckBox7 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox7:setParent(obj.layout122);
+    obj.imageCheckBox7:setParent(obj.layout116);
     obj.imageCheckBox7:setAlign("right");
     obj.imageCheckBox7:setWidth(25);
     obj.imageCheckBox7:setMargins({right=2});
@@ -12633,7 +12644,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox7:setVisible(true);
 
     obj.imageCheckBox8 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox8:setParent(obj.layout122);
+    obj.imageCheckBox8:setParent(obj.layout116);
     obj.imageCheckBox8:setAlign("right");
     obj.imageCheckBox8:setWidth(25);
     obj.imageCheckBox8:setMargins({right=2});
@@ -12646,7 +12657,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox8:setVisible(true);
 
     obj.imageCheckBox9 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox9:setParent(obj.layout122);
+    obj.imageCheckBox9:setParent(obj.layout116);
     obj.imageCheckBox9:setAlign("right");
     obj.imageCheckBox9:setWidth(25);
     obj.imageCheckBox9:setMargins({right=6});
@@ -12658,15 +12669,15 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox9:setHeight(20);
     obj.imageCheckBox9:setVisible(true);
 
-    obj.layout123 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout123:setParent(obj.flowPart172);
-    obj.layout123:setAlign("top");
-    obj.layout123:setHeight(25);
-    obj.layout123:setMargins({left=2, top = 4});
-    obj.layout123:setName("layout123");
+    obj.layout117 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout117:setParent(obj.flowPart178);
+    obj.layout117:setAlign("top");
+    obj.layout117:setHeight(25);
+    obj.layout117:setMargins({left=2, top = 4});
+    obj.layout117:setName("layout117");
 
     obj.label116 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label116:setParent(obj.layout123);
+    obj.label116:setParent(obj.layout117);
     obj.label116:setAlign("client");
     obj.label116:setAutoSize(true);
     obj.label116:setFontSize(10);
@@ -12678,7 +12689,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label116:setFontColor("white");
 
     obj.imageCheckBox10 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox10:setParent(obj.layout123);
+    obj.imageCheckBox10:setParent(obj.layout117);
     obj.imageCheckBox10:setAlign("right");
     obj.imageCheckBox10:setWidth(25);
     obj.imageCheckBox10:setMargins({right=2});
@@ -12691,7 +12702,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox10:setVisible(true);
 
     obj.imageCheckBox11 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox11:setParent(obj.layout123);
+    obj.imageCheckBox11:setParent(obj.layout117);
     obj.imageCheckBox11:setAlign("right");
     obj.imageCheckBox11:setWidth(25);
     obj.imageCheckBox11:setMargins({right=2});
@@ -12704,7 +12715,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox11:setVisible(true);
 
     obj.imageCheckBox12 = GUI.fromHandle(_obj_newObject("imageCheckBox"));
-    obj.imageCheckBox12:setParent(obj.layout123);
+    obj.imageCheckBox12:setParent(obj.layout117);
     obj.imageCheckBox12:setAlign("right");
     obj.imageCheckBox12:setWidth(25);
     obj.imageCheckBox12:setMargins({right=6});
@@ -12717,7 +12728,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.imageCheckBox12:setVisible(true);
 
     obj.button94 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button94:setParent(obj.flowPart172);
+    obj.button94:setParent(obj.flowPart178);
     obj.button94:setAlign("bottom");
     obj.button94:setText("TESTE CONTRA MORTE");
     obj.button94:setFontSize(11);
@@ -12905,17 +12916,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.scrollBox8:setAlign("client");
     obj.scrollBox8:setName("scrollBox8");
 
-    obj.layout124 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout124:setParent(obj.scrollBox8);
-    obj.layout124:setLeft(10);
-    obj.layout124:setTop(10);
-    obj.layout124:setWidth(500);
-    obj.layout124:setHeight(600);
-    obj.layout124:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout124:setName("layout124");
+    obj.layout118 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout118:setParent(obj.scrollBox8);
+    obj.layout118:setLeft(10);
+    obj.layout118:setTop(10);
+    obj.layout118:setWidth(500);
+    obj.layout118:setHeight(600);
+    obj.layout118:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout118:setName("layout118");
 
     obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.layout124);
+    obj.image6:setParent(obj.layout118);
     obj.image6:setLeft(10);
     obj.image6:setTop(10);
     obj.image6:setWidth(480);
@@ -12925,17 +12936,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.image6:setOptimize(true);
     obj.image6:setName("image6");
 
-    obj.layout125 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout125:setParent(obj.scrollBox8);
-    obj.layout125:setLeft(525);
-    obj.layout125:setTop(10);
-    obj.layout125:setWidth(200);
-    obj.layout125:setHeight(220);
-    obj.layout125:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout125:setName("layout125");
+    obj.layout119 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout119:setParent(obj.scrollBox8);
+    obj.layout119:setLeft(525);
+    obj.layout119:setTop(10);
+    obj.layout119:setWidth(200);
+    obj.layout119:setHeight(220);
+    obj.layout119:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout119:setName("layout119");
 
     obj.label117 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label117:setParent(obj.layout125);
+    obj.label117:setParent(obj.layout119);
     obj.label117:setLeft(0);
     obj.label117:setTop(10);
     obj.label117:setWidth(200);
@@ -12946,7 +12957,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label117:setFontColor("white");
 
     obj.label118 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label118:setParent(obj.layout125);
+    obj.label118:setParent(obj.layout119);
     obj.label118:setLeft(0);
     obj.label118:setTop(30);
     obj.label118:setWidth(200);
@@ -12957,7 +12968,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label118:setFontColor("white");
 
     obj.label119 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label119:setParent(obj.layout125);
+    obj.label119:setParent(obj.layout119);
     obj.label119:setLeft(0);
     obj.label119:setTop(50);
     obj.label119:setWidth(200);
@@ -12968,7 +12979,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label119:setFontColor("white");
 
     obj.label120 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label120:setParent(obj.layout125);
+    obj.label120:setParent(obj.layout119);
     obj.label120:setLeft(0);
     obj.label120:setTop(80);
     obj.label120:setWidth(200);
@@ -12979,7 +12990,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label120:setFontColor("white");
 
     obj.label121 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label121:setParent(obj.layout125);
+    obj.label121:setParent(obj.layout119);
     obj.label121:setLeft(0);
     obj.label121:setTop(100);
     obj.label121:setWidth(200);
@@ -12990,7 +13001,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label121:setFontColor("white");
 
     obj.label122 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label122:setParent(obj.layout125);
+    obj.label122:setParent(obj.layout119);
     obj.label122:setLeft(0);
     obj.label122:setTop(130);
     obj.label122:setWidth(200);
@@ -13001,7 +13012,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label122:setFontColor("white");
 
     obj.label123 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label123:setParent(obj.layout125);
+    obj.label123:setParent(obj.layout119);
     obj.label123:setLeft(0);
     obj.label123:setTop(150);
     obj.label123:setWidth(200);
@@ -13012,7 +13023,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label123:setFontColor("white");
 
     obj.label124 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label124:setParent(obj.layout125);
+    obj.label124:setParent(obj.layout119);
     obj.label124:setLeft(0);
     obj.label124:setTop(170);
     obj.label124:setWidth(200);
@@ -13023,7 +13034,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label124:setFontColor("white");
 
     obj.label125 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label125:setParent(obj.layout125);
+    obj.label125:setParent(obj.layout119);
     obj.label125:setLeft(0);
     obj.label125:setTop(190);
     obj.label125:setWidth(200);
@@ -13034,7 +13045,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label125:setFontColor("white");
 
     obj.label126 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label126:setParent(obj.layout125);
+    obj.label126:setParent(obj.layout119);
     obj.label126:setLeft(0);
     obj.label126:setTop(210);
     obj.label126:setWidth(200);
@@ -13044,17 +13055,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label126:setName("label126");
     obj.label126:setFontColor("white");
 
-    obj.layout126 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout126:setParent(obj.scrollBox8);
-    obj.layout126:setLeft(525);
-    obj.layout126:setTop(250);
-    obj.layout126:setWidth(200);
-    obj.layout126:setHeight(150);
-    obj.layout126:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout126:setName("layout126");
+    obj.layout120 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout120:setParent(obj.scrollBox8);
+    obj.layout120:setLeft(525);
+    obj.layout120:setTop(250);
+    obj.layout120:setWidth(200);
+    obj.layout120:setHeight(150);
+    obj.layout120:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout120:setName("layout120");
 
     obj.label127 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label127:setParent(obj.layout126);
+    obj.label127:setParent(obj.layout120);
     obj.label127:setLeft(0);
     obj.label127:setTop(10);
     obj.label127:setWidth(80);
@@ -13065,7 +13076,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label127:setFontColor("white");
 
     obj.comboBox13 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox13:setParent(obj.layout126);
+    obj.comboBox13:setParent(obj.layout120);
     obj.comboBox13:setLeft(95);
     obj.comboBox13:setTop(10);
     obj.comboBox13:setWidth(90);
@@ -13076,13 +13087,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.comboBox13:setName("comboBox13");
 
     obj.dataLink225 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink225:setParent(obj.layout126);
+    obj.dataLink225:setParent(obj.layout120);
     obj.dataLink225:setField("theme");
     obj.dataLink225:setDefaultValue("Escuro");
     obj.dataLink225:setName("dataLink225");
 
     obj.label128 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label128:setParent(obj.layout126);
+    obj.label128:setParent(obj.layout120);
     obj.label128:setLeft(0);
     obj.label128:setTop(35);
     obj.label128:setWidth(80);
@@ -13093,7 +13104,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label128:setFontColor("white");
 
     obj.label129 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label129:setParent(obj.layout126);
+    obj.label129:setParent(obj.layout120);
     obj.label129:setLeft(0);
     obj.label129:setTop(60);
     obj.label129:setWidth(80);
@@ -13104,7 +13115,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label129:setFontColor("white");
 
     obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.layout126);
+    obj.edit63:setParent(obj.layout120);
     obj.edit63:setLeft(85);
     obj.edit63:setTop(60);
     obj.edit63:setWidth(90);
@@ -13115,13 +13126,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit63:setFontColor("white");
 
     obj.dataLink226 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink226:setParent(obj.layout126);
+    obj.dataLink226:setParent(obj.layout120);
     obj.dataLink226:setField("colorBackground");
     obj.dataLink226:setDefaultValue("#505050");
     obj.dataLink226:setName("dataLink226");
 
     obj.label130 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label130:setParent(obj.layout126);
+    obj.label130:setParent(obj.layout120);
     obj.label130:setLeft(0);
     obj.label130:setTop(85);
     obj.label130:setWidth(80);
@@ -13132,7 +13143,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label130:setFontColor("white");
 
     obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.layout126);
+    obj.edit64:setParent(obj.layout120);
     obj.edit64:setLeft(85);
     obj.edit64:setTop(85);
     obj.edit64:setWidth(90);
@@ -13143,13 +13154,13 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit64:setFontColor("white");
 
     obj.dataLink227 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink227:setParent(obj.layout126);
+    obj.dataLink227:setParent(obj.layout120);
     obj.dataLink227:setField("colorStroke");
     obj.dataLink227:setDefaultValue("#FFFFFF");
     obj.dataLink227:setName("dataLink227");
 
     obj.label131 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label131:setParent(obj.layout126);
+    obj.label131:setParent(obj.layout120);
     obj.label131:setLeft(0);
     obj.label131:setTop(110);
     obj.label131:setWidth(80);
@@ -13160,7 +13171,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label131:setFontColor("white");
 
     obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.layout126);
+    obj.edit65:setParent(obj.layout120);
     obj.edit65:setLeft(85);
     obj.edit65:setTop(110);
     obj.edit65:setWidth(90);
@@ -13171,22 +13182,22 @@ self.upperGridMagicBox3._RecalcSize();
     obj.edit65:setFontColor("white");
 
     obj.dataLink228 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink228:setParent(obj.layout126);
+    obj.dataLink228:setParent(obj.layout120);
     obj.dataLink228:setField("colorFont");
     obj.dataLink228:setDefaultValue("#FFFFFF");
     obj.dataLink228:setName("dataLink228");
 
-    obj.layout127 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout127:setParent(obj.scrollBox8);
-    obj.layout127:setLeft(740);
-    obj.layout127:setTop(10);
-    obj.layout127:setWidth(500);
-    obj.layout127:setHeight(600);
-    obj.layout127:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout127:setName("layout127");
+    obj.layout121 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout121:setParent(obj.scrollBox8);
+    obj.layout121:setLeft(740);
+    obj.layout121:setTop(10);
+    obj.layout121:setWidth(500);
+    obj.layout121:setHeight(600);
+    obj.layout121:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout121:setName("layout121");
 
     obj.label132 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label132:setParent(obj.layout127);
+    obj.label132:setParent(obj.layout121);
     obj.label132:setLeft(0);
     obj.label132:setTop(560);
     obj.label132:setWidth(500);
@@ -13197,7 +13208,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label132:setFontColor("white");
 
     obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.layout127);
+    obj.textEditor7:setParent(obj.layout121);
     obj.textEditor7:setLeft(30);
     obj.textEditor7:setTop(20);
     obj.textEditor7:setWidth(440);
@@ -13206,17 +13217,17 @@ self.upperGridMagicBox3._RecalcSize();
     obj.textEditor7:setName("textEditor7");
     obj.textEditor7:setTransparent(true);
 
-    obj.layout128 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout128:setParent(obj.scrollBox8);
-    obj.layout128:setLeft(525);
-    obj.layout128:setTop(420);
-    obj.layout128:setWidth(200);
-    obj.layout128:setHeight(190);
-    obj.layout128:setFrameStyle("frames/panel3transp/frame.xml");
-    obj.layout128:setName("layout128");
+    obj.layout122 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout122:setParent(obj.scrollBox8);
+    obj.layout122:setLeft(525);
+    obj.layout122:setTop(420);
+    obj.layout122:setWidth(200);
+    obj.layout122:setHeight(190);
+    obj.layout122:setFrameStyle("frames/panel3transp/frame.xml");
+    obj.layout122:setName("layout122");
 
     obj.label133 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label133:setParent(obj.layout128);
+    obj.label133:setParent(obj.layout122);
     obj.label133:setLeft(50);
     obj.label133:setTop(30);
     obj.label133:setWidth(200);
@@ -13227,7 +13238,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label133:setFontColor("white");
 
     obj.button95 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button95:setParent(obj.layout128);
+    obj.button95:setParent(obj.layout122);
     obj.button95:setLeft(20);
     obj.button95:setTop(70);
     obj.button95:setWidth(80);
@@ -13235,7 +13246,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button95:setName("button95");
 
     obj.button96 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button96:setParent(obj.layout128);
+    obj.button96:setParent(obj.layout122);
     obj.button96:setLeft(20);
     obj.button96:setTop(100);
     obj.button96:setWidth(80);
@@ -13243,7 +13254,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button96:setName("button96");
 
     obj.button97 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button97:setParent(obj.layout128);
+    obj.button97:setParent(obj.layout122);
     obj.button97:setLeft(20);
     obj.button97:setTop(130);
     obj.button97:setWidth(80);
@@ -13251,7 +13262,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button97:setName("button97");
 
     obj.button98 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button98:setParent(obj.layout128);
+    obj.button98:setParent(obj.layout122);
     obj.button98:setLeft(100);
     obj.button98:setTop(70);
     obj.button98:setWidth(80);
@@ -13260,7 +13271,7 @@ self.upperGridMagicBox3._RecalcSize();
     obj.button98:setName("button98");
 
     obj.button99 = GUI.fromHandle(_obj_newObject("button"));
-    obj.button99:setParent(obj.layout128);
+    obj.button99:setParent(obj.layout122);
     obj.button99:setLeft(100);
     obj.button99:setTop(100);
     obj.button99:setWidth(80);
@@ -19218,7 +19229,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label70 ~= nil then self.label70:destroy(); self.label70 = nil; end;
         if self.dataLink141 ~= nil then self.dataLink141:destroy(); self.dataLink141 = nil; end;
         if self.label35 ~= nil then self.label35:destroy(); self.label35 = nil; end;
-        if self.layout123 ~= nil then self.layout123:destroy(); self.layout123 = nil; end;
         if self.flowPart66 ~= nil then self.flowPart66:destroy(); self.flowPart66 = nil; end;
         if self.button35 ~= nil then self.button35:destroy(); self.button35 = nil; end;
         if self.dataLink68 ~= nil then self.dataLink68:destroy(); self.dataLink68 = nil; end;
@@ -19288,7 +19298,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink208 ~= nil then self.dataLink208:destroy(); self.dataLink208 = nil; end;
         if self.cbProfcompanionreligiao ~= nil then self.cbProfcompanionreligiao:destroy(); self.cbProfcompanionreligiao = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
-        if self.layout126 ~= nil then self.layout126:destroy(); self.layout126 = nil; end;
         if self.layout55 ~= nil then self.layout55:destroy(); self.layout55 = nil; end;
         if self.dataLink200 ~= nil then self.dataLink200:destroy(); self.dataLink200 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
@@ -19298,8 +19307,8 @@ self.upperGridMagicBox3._RecalcSize();
         if self.progBar ~= nil then self.progBar:destroy(); self.progBar = nil; end;
         if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.panupperGridMagicBox3 ~= nil then self.panupperGridMagicBox3:destroy(); self.panupperGridMagicBox3 = nil; end;
-        if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
         if self.tab10 ~= nil then self.tab10:destroy(); self.tab10 = nil; end;
+        if self.layout78 ~= nil then self.layout78:destroy(); self.layout78 = nil; end;
         if self.flowLayout31 ~= nil then self.flowLayout31:destroy(); self.flowLayout31 = nil; end;
         if self.cbProfcompanionsabedoria ~= nil then self.cbProfcompanionsabedoria:destroy(); self.cbProfcompanionsabedoria = nil; end;
         if self.flowPart6 ~= nil then self.flowPart6:destroy(); self.flowPart6 = nil; end;
@@ -19589,6 +19598,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.cbProfcompanioninteligencia ~= nil then self.cbProfcompanioninteligencia:destroy(); self.cbProfcompanioninteligencia = nil; end;
         if self.dataLink74 ~= nil then self.dataLink74:destroy(); self.dataLink74 = nil; end;
         if self.label58 ~= nil then self.label58:destroy(); self.label58 = nil; end;
+        if self.flowPart174 ~= nil then self.flowPart174:destroy(); self.flowPart174 = nil; end;
         if self.flowPart9 ~= nil then self.flowPart9:destroy(); self.flowPart9 = nil; end;
         if self.rclOptsAttack ~= nil then self.rclOptsAttack:destroy(); self.rclOptsAttack = nil; end;
         if self.dataLink127 ~= nil then self.dataLink127:destroy(); self.dataLink127 = nil; end;
@@ -19744,7 +19754,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
         if self.edit56 ~= nil then self.edit56:destroy(); self.edit56 = nil; end;
         if self.flowPart167 ~= nil then self.flowPart167:destroy(); self.flowPart167 = nil; end;
-        if self.layout124 ~= nil then self.layout124:destroy(); self.layout124 = nil; end;
+        if self.flowPart177 ~= nil then self.flowPart177:destroy(); self.flowPart177 = nil; end;
         if self.dataLink170 ~= nil then self.dataLink170:destroy(); self.dataLink170 = nil; end;
         if self.comboBox5 ~= nil then self.comboBox5:destroy(); self.comboBox5 = nil; end;
         if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
@@ -19843,6 +19853,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.horzLine14 ~= nil then self.horzLine14:destroy(); self.horzLine14 = nil; end;
         if self.rclEquips ~= nil then self.rclEquips:destroy(); self.rclEquips = nil; end;
         if self.flowPart157 ~= nil then self.flowPart157:destroy(); self.flowPart157 = nil; end;
+        if self.flowPart178 ~= nil then self.flowPart178:destroy(); self.flowPart178 = nil; end;
         if self.flowPart25 ~= nil then self.flowPart25:destroy(); self.flowPart25 = nil; end;
         if self.layout23 ~= nil then self.layout23:destroy(); self.layout23 = nil; end;
         if self.flowPart69 ~= nil then self.flowPart69:destroy(); self.flowPart69 = nil; end;
@@ -19855,9 +19866,8 @@ self.upperGridMagicBox3._RecalcSize();
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.layout89 ~= nil then self.layout89:destroy(); self.layout89 = nil; end;
         if self.dataLink213 ~= nil then self.dataLink213:destroy(); self.dataLink213 = nil; end;
-        if self.layout125 ~= nil then self.layout125:destroy(); self.layout125 = nil; end;
-        if self.flowPart161 ~= nil then self.flowPart161:destroy(); self.flowPart161 = nil; end;
         if self.label122 ~= nil then self.label122:destroy(); self.label122 = nil; end;
+        if self.flowPart161 ~= nil then self.flowPart161:destroy(); self.flowPart161 = nil; end;
         if self.cbProfpericiaforca ~= nil then self.cbProfpericiaforca:destroy(); self.cbProfpericiaforca = nil; end;
         if self.cbProfadestrarAnimais ~= nil then self.cbProfadestrarAnimais:destroy(); self.cbProfadestrarAnimais = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
@@ -19994,8 +20004,8 @@ self.upperGridMagicBox3._RecalcSize();
         if self.dataLink47 ~= nil then self.dataLink47:destroy(); self.dataLink47 = nil; end;
         if self.flowPart92 ~= nil then self.flowPart92:destroy(); self.flowPart92 = nil; end;
         if self.dataLink78 ~= nil then self.dataLink78:destroy(); self.dataLink78 = nil; end;
-        if self.layout60 ~= nil then self.layout60:destroy(); self.layout60 = nil; end;
         if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
+        if self.layout60 ~= nil then self.layout60:destroy(); self.layout60 = nil; end;
         if self.dataLink121 ~= nil then self.dataLink121:destroy(); self.dataLink121 = nil; end;
         if self.edtNomeCompanion1 ~= nil then self.edtNomeCompanion1:destroy(); self.edtNomeCompanion1 = nil; end;
         if self.labProfcompanionintuicao ~= nil then self.labProfcompanionintuicao:destroy(); self.labProfcompanionintuicao = nil; end;
@@ -20018,10 +20028,10 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button30 ~= nil then self.button30:destroy(); self.button30 = nil; end;
         if self.layout90 ~= nil then self.layout90:destroy(); self.layout90 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
-        if self.layout118 ~= nil then self.layout118:destroy(); self.layout118 = nil; end;
+        if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
         if self.labProfcompaniondestreza ~= nil then self.labProfcompaniondestreza:destroy(); self.labProfcompaniondestreza = nil; end;
         if self.layout111 ~= nil then self.layout111:destroy(); self.layout111 = nil; end;
-        if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
+        if self.layout118 ~= nil then self.layout118:destroy(); self.layout118 = nil; end;
         if self.layout12 ~= nil then self.layout12:destroy(); self.layout12 = nil; end;
         if self.labProfpericiahonra ~= nil then self.labProfpericiahonra:destroy(); self.labProfpericiahonra = nil; end;
         if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
@@ -20073,13 +20083,14 @@ self.upperGridMagicBox3._RecalcSize();
         if self.button3 ~= nil then self.button3:destroy(); self.button3 = nil; end;
         if self.dataLink64 ~= nil then self.dataLink64:destroy(); self.dataLink64 = nil; end;
         if self.dataLink217 ~= nil then self.dataLink217:destroy(); self.dataLink217 = nil; end;
-        if self.layout76 ~= nil then self.layout76:destroy(); self.layout76 = nil; end;
-        if self.labUpperGridCampo4 ~= nil then self.labUpperGridCampo4:destroy(); self.labUpperGridCampo4 = nil; end;
         if self.layNomeHolderCompanion ~= nil then self.layNomeHolderCompanion:destroy(); self.layNomeHolderCompanion = nil; end;
+        if self.labUpperGridCampo4 ~= nil then self.labUpperGridCampo4:destroy(); self.labUpperGridCampo4 = nil; end;
+        if self.layout76 ~= nil then self.layout76:destroy(); self.layout76 = nil; end;
         if self.dataLink162 ~= nil then self.dataLink162:destroy(); self.dataLink162 = nil; end;
         if self.flowPart162 ~= nil then self.flowPart162:destroy(); self.flowPart162 = nil; end;
         if self.fraCompanionLayout ~= nil then self.fraCompanionLayout:destroy(); self.fraCompanionLayout = nil; end;
         if self.button94 ~= nil then self.button94:destroy(); self.button94 = nil; end;
+        if self.flowPart176 ~= nil then self.flowPart176:destroy(); self.flowPart176 = nil; end;
         if self.label102 ~= nil then self.label102:destroy(); self.label102 = nil; end;
         if self.cbProfdestreza ~= nil then self.cbProfdestreza:destroy(); self.cbProfdestreza = nil; end;
         if self.dataLink54 ~= nil then self.dataLink54:destroy(); self.dataLink54 = nil; end;
@@ -20088,7 +20099,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label132 ~= nil then self.label132:destroy(); self.label132 = nil; end;
         if self.flowPart126 ~= nil then self.flowPart126:destroy(); self.flowPart126 = nil; end;
         if self.edtUpperGridCampo10 ~= nil then self.edtUpperGridCampo10:destroy(); self.edtUpperGridCampo10 = nil; end;
-        if self.layout128 ~= nil then self.layout128:destroy(); self.layout128 = nil; end;
         if self.button11 ~= nil then self.button11:destroy(); self.button11 = nil; end;
         if self.dataLink70 ~= nil then self.dataLink70:destroy(); self.dataLink70 = nil; end;
         if self.dataLink137 ~= nil then self.dataLink137:destroy(); self.dataLink137 = nil; end;
@@ -20153,6 +20163,7 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart24 ~= nil then self.flowPart24:destroy(); self.flowPart24 = nil; end;
         if self.dataLink126 ~= nil then self.dataLink126:destroy(); self.dataLink126 = nil; end;
         if self.flowPart77 ~= nil then self.flowPart77:destroy(); self.flowPart77 = nil; end;
+        if self.flowPart173 ~= nil then self.flowPart173:destroy(); self.flowPart173 = nil; end;
         if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
         if self.frame3 ~= nil then self.frame3:destroy(); self.frame3 = nil; end;
         if self.dataLink62 ~= nil then self.dataLink62:destroy(); self.dataLink62 = nil; end;
@@ -20180,9 +20191,9 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowLayout5 ~= nil then self.flowLayout5:destroy(); self.flowLayout5 = nil; end;
         if self.label22 ~= nil then self.label22:destroy(); self.label22 = nil; end;
         if self.labProfenganacao ~= nil then self.labProfenganacao:destroy(); self.labProfenganacao = nil; end;
-        if self.cbProfcompanionatuacao ~= nil then self.cbProfcompanionatuacao:destroy(); self.cbProfcompanionatuacao = nil; end;
-        if self.dataLink130 ~= nil then self.dataLink130:destroy(); self.dataLink130 = nil; end;
         if self.flowPart166 ~= nil then self.flowPart166:destroy(); self.flowPart166 = nil; end;
+        if self.dataLink130 ~= nil then self.dataLink130:destroy(); self.dataLink130 = nil; end;
+        if self.cbProfcompanionatuacao ~= nil then self.cbProfcompanionatuacao:destroy(); self.cbProfcompanionatuacao = nil; end;
         if self.label13 ~= nil then self.label13:destroy(); self.label13 = nil; end;
         if self.label59 ~= nil then self.label59:destroy(); self.label59 = nil; end;
         if self.checkBox7 ~= nil then self.checkBox7:destroy(); self.checkBox7 = nil; end;
@@ -20214,7 +20225,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label126 ~= nil then self.label126:destroy(); self.label126 = nil; end;
         if self.flowPart38 ~= nil then self.flowPart38:destroy(); self.flowPart38 = nil; end;
         if self.layout50 ~= nil then self.layout50:destroy(); self.layout50 = nil; end;
-        if self.layout127 ~= nil then self.layout127:destroy(); self.layout127 = nil; end;
         if self.dataLink115 ~= nil then self.dataLink115:destroy(); self.dataLink115 = nil; end;
         if self.label41 ~= nil then self.label41:destroy(); self.label41 = nil; end;
         if self.scrollBox2 ~= nil then self.scrollBox2:destroy(); self.scrollBox2 = nil; end;
@@ -20316,9 +20326,9 @@ self.upperGridMagicBox3._RecalcSize();
         if self.flowPart49 ~= nil then self.flowPart49:destroy(); self.flowPart49 = nil; end;
         if self.popupEditAtaqueAtrib ~= nil then self.popupEditAtaqueAtrib:destroy(); self.popupEditAtaqueAtrib = nil; end;
         if self.flowPart120 ~= nil then self.flowPart120:destroy(); self.flowPart120 = nil; end;
-        if self.layout79 ~= nil then self.layout79:destroy(); self.layout79 = nil; end;
-        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
         if self.dataLink140 ~= nil then self.dataLink140:destroy(); self.dataLink140 = nil; end;
+        if self.tab6 ~= nil then self.tab6:destroy(); self.tab6 = nil; end;
+        if self.layout79 ~= nil then self.layout79:destroy(); self.layout79 = nil; end;
         if self.dataLink219 ~= nil then self.dataLink219:destroy(); self.dataLink219 = nil; end;
         if self.anotacoesFancy ~= nil then self.anotacoesFancy:destroy(); self.anotacoesFancy = nil; end;
         if self.flowPart14 ~= nil then self.flowPart14:destroy(); self.flowPart14 = nil; end;
@@ -20338,14 +20348,15 @@ self.upperGridMagicBox3._RecalcSize();
         if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
         if self.labProfcompanionmedicina ~= nil then self.labProfcompanionmedicina:destroy(); self.labProfcompanionmedicina = nil; end;
         if self.dataLink106 ~= nil then self.dataLink106:destroy(); self.dataLink106 = nil; end;
+        if self.flowPart175 ~= nil then self.flowPart175:destroy(); self.flowPart175 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.layout57 ~= nil then self.layout57:destroy(); self.layout57 = nil; end;
         if self.dataLink197 ~= nil then self.dataLink197:destroy(); self.dataLink197 = nil; end;
         if self.panupperGridMagicBox2 ~= nil then self.panupperGridMagicBox2:destroy(); self.panupperGridMagicBox2 = nil; end;
         if self.cbProfcompanioncarisma ~= nil then self.cbProfcompanioncarisma:destroy(); self.cbProfcompanioncarisma = nil; end;
         if self.flowPart172 ~= nil then self.flowPart172:destroy(); self.flowPart172 = nil; end;
-        if self.layout65 ~= nil then self.layout65:destroy(); self.layout65 = nil; end;
         if self.edit35 ~= nil then self.edit35:destroy(); self.edit35 = nil; end;
+        if self.layout65 ~= nil then self.layout65:destroy(); self.layout65 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
         if self.dataLink132 ~= nil then self.dataLink132:destroy(); self.dataLink132 = nil; end;
         if self.comboBox4 ~= nil then self.comboBox4:destroy(); self.comboBox4 = nil; end;
