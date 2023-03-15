@@ -5497,7 +5497,7 @@ require('mudaNick.lua')
     obj.flowPart55:setLeft(0);
     obj.flowPart55:setTop(110);
     obj.flowPart55:setWidth(375);
-    obj.flowPart55:setHeight(535);
+    obj.flowPart55:setHeight(420);
     obj.flowPart55:setFrameStyle("frames/panel5/frame.xml");
     obj.flowPart55:setMargins({left = 0, right = 4});
     obj.flowPart55:setName("flowPart55");
