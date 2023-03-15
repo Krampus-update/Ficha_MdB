@@ -26,17 +26,17 @@
 			<Descricao left1="10" left2="100" top="38" text="SEXO" field="caracteristicas.sexo"/>
 			<Descricao left1="10" left2="100" top="65" text="OUTROS" field="caracteristicas.aparenciaOutros"/>
 
-			<Descricao left1="900" left2="980" top="10" text="PLANO" field="caracteristicas.plano"/>
-			<Descricao left1="900" left2="980" top="38" text="REGIÃO" field="caracteristicas.regiao"/>
-			<Descricao left1="900" left2="980" top="65" text="REINO" field="caracteristicas.reino"/>
+			<Descricao left1="310" left2="410" top="10" text="PLANO" field="caracteristicas.plano"/>
+			<Descricao left1="310" left2="410" top="38" text="REGIÃO" field="caracteristicas.regiao"/>
+			<Descricao left1="310" left2="410" top="65" text="REINO" field="caracteristicas.reino"/>
 
 			<Descricao left1="610" left2="700" top="10" text="OLHOS" field="caracteristicas.aparenciaOlhos"/>
 			<Descricao left1="610" left2="700" top="38" text="PELE" field="caracteristicas.pele"/>
 			<Descricao left1="610" left2="700" top="65" text="CABELO" field="caracteristicas.cabelo"/>
 ~
-			<Descricao left1="310" left2="980" top="10" text="IDADE" field="caracteristicas.idade"/>
-			<Descricao left1="310" left2="410" top="38" text="ALTURA" field="caracteristicas.altura"/>
-			<Descricao left1="310" left2="410" top="65" text="PESO" field="caracteristicas.peso"/>
+			<Descricao left1="900" left2="980" top="10" text="IDADE" field="caracteristicas.idade"/>
+			<Descricao left1="900" left2="980" top="38" text="ALTURA" field="caracteristicas.altura"/>
+			<Descricao left1="900" left2="980" top="65" text="PESO" field="caracteristicas.peso"/>
 
 
 		</layout >
