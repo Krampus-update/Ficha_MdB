@@ -5,7 +5,7 @@
 			<!-- QUADRADO -->
 			<image left="0" top="0" right="159" bottom="128" overflowX="stretch" overflowY="stretch" zOrder="-1">
 				<anchors left="true" top="true" bottom="true" right="false"/>
-				<source url="quadrado.png" left="0" right="159" top="0" bottom="128"/>
+				<source url="quadrado.ai" left="0" right="159" top="0" bottom="128"/>
 			</image>		
 
 			<!-- LINHA SUPERIOR -->
