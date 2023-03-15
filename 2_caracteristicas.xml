@@ -40,9 +40,6 @@
 		</layout >
 
 		<flowPart left="0" top="110" minWidth="355" maxWidth="375" height="420">
-			<rectangle width="355" height="410" color="#202020"/>
-			<rectangle width="365" height="410" color="#202020" xradius="20" yradius="20"/>
-				<!-- APARÊNCIA -->
 				<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="APARÊNCIA"/>	
 				<image field="imagens.aparencia" style="autofit" editable="true" width="355" height="400" left="10"/>
 		</flowPart>
