@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="actions">
+    <script>
+        <![CDATA[
+			require("common.lua");
+			local function atualizarDesiredHeight()
+				local margins = self.layPrincipal.margins;
+				local h = self.fraLayout:getHeight() + 2 + margins.top + margins.bottom;
+				local ultObjMenu = self.btnRolarAtaque;
+				local mH = ultObjMenu.top + ultObjMenu.height + self.layMenu.top + self.layMenu.margins.bottom;
+
+				if h < mH then
+					h = mH;
+				end;
+
+				self.height = h;
+			end;
+            ]]>
+    </script>
     <flowPart name="action_Frame" frameStyle="frames/panel3transp/frame2.xml" minWidth="320" maxWidth="1600">
         
     </flowPart>
