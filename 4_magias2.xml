@@ -18,7 +18,7 @@
 	<flowLayout align="bottom" frameStyle="frames/panel4transp/frame.xml" autoHeight="true" horzAlign="justify">
 		<flowPart width="1"/>
 		<upperGridMagic2ComboBox height="40" minWidth="165" field="magias.habilidadeDeConjuracao" titulo="HABILIDADE DE CONJURAÇÃO" 
-		items="{'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA'}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
+		items="{'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA','' ,''}" values="{'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'}"/>
 		<upperGridMagic2Box      height="40" minWidth="100" field="magias.cdDaMagia"              titulo="CD DA MAGIA"/>
 		<upperGridMagic2Box      height="40" minWidth="160" field="magias.bonusAtaqueSTR"         titulo="BÔNUS DE ATAQUE DE MAGIA"/>
 		<flowPart width="1"/>
