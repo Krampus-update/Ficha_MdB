@@ -4,7 +4,7 @@
 	 viewBox="0 0 159 128" style="enable-background:new 0 0 159 128;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
-	.st1{fill:none;stroke:#4F4F4F;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#4F4F4F;}
 </style>
 <rect class="st0" width="159" height="128"/>
 <image style="display:none;overflow:visible;" width="159" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAACACAYAAAAVm7uuAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
@@ -143,7 +143,7 @@ D+Ds2bMAPP3001RWVt62viN3ckiHw0snRIF/wefEc+AvH36IyWQiJibm1tJITyLdaKS+vh6VSnVn
 p0DBUFi9Zg2vv/46HR0dFBQUcOzYMc6fP8/06dNJSEhg8+bNhIeHs2vnTvLz8/n/j43RP8WCADAA
 AAAASUVORK5CYII=">
 </image>
-<polyline class="st1" points="105.59,16.53 123.9,16.53 123.9,124.65 2.91,124.65 2.91,16.53 21.22,16.53 "/>
-<polygon class="st1" points="31.36,5.89 95.44,5.89 105.59,16.53 79.5,45.97 48.19,45.97 21.22,16.53 "/>
-<polyline class="st1" points="123.9,16.53 133.05,16.53 141.71,9.11 141.71,4.16 159,4.16 "/>
+<path class="st1" d="M140.71,3.16v5.49l-8.03,6.88h-7.79h-1h-17.88L95.87,4.89H30.93L20.79,15.53H1.91v110.12H124.9V17.53h8.53
+	l9.29-7.96V5.16H159v-2H140.71z M31.79,6.89h63.23l9.21,9.66L79.05,44.97H48.63L22.58,16.54L31.79,6.89z M122.9,123.65H3.91V17.53
+	h16.87l26.97,29.44h32.2l26.09-29.44h16.86V123.65z"/>
 </svg>

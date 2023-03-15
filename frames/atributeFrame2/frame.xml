@@ -5,8 +5,14 @@
 			<!-- QUADRADO -->
 			<image left="0" top="0" right="159" bottom="128" overflowX="stretch" overflowY="stretch" zOrder="-1">
 				<anchors left="true" top="true" bottom="true" right="false"/>
-				<source url="quadrado.ai" left="0" right="159" top="0" bottom="128"/>
+				<path mode="original" left="0" right="159" top="0" bottom="128" data="cole aqui"/>
 			</image>		
+
+
+"105.59,16.53 123.9,16.53 123.9,124.65 2.91,124.65 2.91,16.53 21.22,16.53
+"31.36,5.89 95.44,5.89 105.59,16.53 79.5,45.97 48.19,45.97 21.22,16.53
+"123.9,16.53 133.05,16.53 141.71,9.11 141.71,4.16 159,4.16
+
 
 			<!-- LINHA SUPERIOR -->
 			<image left="159" top="0" right="337" bottom="6" overflowX="stretch" overflowY="stretch" zOrder="-1">
