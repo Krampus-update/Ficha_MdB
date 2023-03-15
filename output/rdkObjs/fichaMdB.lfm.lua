@@ -6647,8 +6647,8 @@ require('mudaNick.lua')
     obj.cmbupperGridMagicBox1:setName("cmbupperGridMagicBox1");
     obj.cmbupperGridMagicBox1:setFrameRegion("ContentRegion");
     obj.cmbupperGridMagicBox1:setField("magias.habilidadeDeConjuracao");
-    obj.cmbupperGridMagicBox1:setItems({'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA'});
-    obj.cmbupperGridMagicBox1:setValues({'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma'});
+    obj.cmbupperGridMagicBox1:setItems({'', 'FORÇA', 'DESTREZA', 'CONSTITUIÇÃO', 'INTELIGÊNCIA', 'SABEDORIA', 'CARISMA','SANIDADE' ,' '});
+    obj.cmbupperGridMagicBox1:setValues({'', 'forca', 'destreza', 'constituicao', 'inteligencia', 'sabedoria', 'carisma','sanidade' ,'honra'});
     obj.cmbupperGridMagicBox1:setHorzTextAlign("center");
     obj.cmbupperGridMagicBox1:setVertTextAlign("center");
     obj.cmbupperGridMagicBox1:setFontSize(13);
