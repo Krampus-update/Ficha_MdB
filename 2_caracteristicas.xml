@@ -39,7 +39,7 @@
 			<Descricao left1="900" left2="980" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
 	
-		<flowPart left="0" top="110" width="375" height="420" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
+		<flowPart left="0" top="110" width="375" height="420" margins="{left = 0, right = 4}">
 		<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20"/>
 			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
