@@ -39,11 +39,12 @@
 			<Descricao left1="900" left2="980" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
 
-		<flowPart left="0" top="110" minWidth="355" maxWidth="375" height="420">
-				<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="APARÊNCIA"/>	
-				<image field="imagens.aparencia" style="autofit" editable="true" width="355" height="400" left="10"/>
+		<flowPart left="0" top="110" minWidth="100" maxWidth="375" height="420">
+				<!-- APARÊNCIA -->
+				<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
+				<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
+				<layout align="top" frameStyle="/frames/frameFundo.xml" margins="{left=10, right=20}" height="420"/>
 		</flowPart>
-
 		<flowPart left="380" top="110" width="825" height="495" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
 			<richEdit left="10" top="20" width="805" height="450" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
