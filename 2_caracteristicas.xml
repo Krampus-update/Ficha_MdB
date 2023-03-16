@@ -8,10 +8,14 @@
 			<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
 		</template>
 		
-
 	<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
 	<flowLineBreak/>	
 
+		<!-- Primeira Linha -->
+		<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
+		<!-- PRIMEIRA COLUNA -->
+		<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
+		<!-- Descrição -->
 		<layout left="10" top="10" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
 			<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
 			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
@@ -32,7 +36,8 @@
 			<Descricao left1="900" left2="990" top="38" text="ALTURA" field="caracteristicas.altura"/>
 			<Descricao left1="900" left2="990" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
-	
+		</flowLayout>
+
 		<flowPart left="10" top="120" width="375" height="400" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
 			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
@@ -69,7 +74,7 @@
 		</flowPart >
 
 
-		
+
 	</flowLayout>
 	</scrollBox>
 </rectangle>
