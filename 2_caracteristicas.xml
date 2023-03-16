@@ -60,12 +60,12 @@
 			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="vinculos"/>
 		</flowPart>
 
-		<flowPart  left="390" top="250" width="412" height="123" frameStyle="frames/panel5/frame.xml">
+		<flowPart  left="390" top="245" width="412" height="123" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE"/>
 			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="personalidade"/>
 		</flowPart>
 
-		<flowPart left="802" top="250" width="412" height="125" frameStyle="frames/panel5/frame.xml">
+		<flowPart left="802" top="245" width="412" height="125" frameStyle="frames/panel5/frame.xml">
 			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="FRAQUEZAS"/>
 			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="fraquezas"/>
 		</flowPart>
