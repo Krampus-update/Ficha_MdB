@@ -5633,7 +5633,7 @@ require('mudaNick.lua')
     obj.flowPart59 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart59:setParent(obj.scrollBox2);
     obj.flowPart59:setLeft(390);
-    obj.flowPart59:setTop(245);
+    obj.flowPart59:setTop(248);
     obj.flowPart59:setWidth(412);
     obj.flowPart59:setHeight(123);
     obj.flowPart59:setFrameStyle("frames/panel5/frame.xml");
@@ -5665,7 +5665,7 @@ require('mudaNick.lua')
     obj.flowPart60 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart60:setParent(obj.scrollBox2);
     obj.flowPart60:setLeft(802);
-    obj.flowPart60:setTop(245);
+    obj.flowPart60:setTop(248);
     obj.flowPart60:setWidth(412);
     obj.flowPart60:setHeight(125);
     obj.flowPart60:setFrameStyle("frames/panel5/frame.xml");
