@@ -37,17 +37,20 @@
 			<Descricao left1="900" left2="990" top="65" text="PESO" field="caracteristicas.peso"/>
 		</layout >
 		</flowLayout>
-
+		
+		<flowLineBreak/>
 		<flowPart left="10" top="120" width="375" height="400" frameStyle="frames/panel5/frame.xml" margins="{left = 0, right = 4}">
 			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
 			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
 		</flowPart>
-
+		<flowLineBreak/>
+		<!-- CARACTERISTICAS E TRACOS -->
+		<flowPart class="tile" height="515" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
 		<flowPart  left="10" top="530" width="375" height="315" frameStyle="frames/panel5/frame.xml" margins="{left = 4, right = 4}">
 			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
 			<textEditor left="10" top="30" width="355" height="265" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes"/>
 		</flowPart>
-
+		<flowLineBreak/>
 		<!-- PERSONALIDADE, IDIOMA, VINCULOS, FRAQUEZAS -->
 		<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left=4, right=4}">
 		<flowPart  left="390" top="120" width="412" height="123" frameStyle="frames/panel5/frame.xml">
@@ -75,7 +78,7 @@
 			<richEdit left="10" top="20" width="805" height="420" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
 		</flowPart >
 		</flowLayout>
-
+		<flowLineBreak/>
 
 	</flowLayout>
 	</flowLayout>
