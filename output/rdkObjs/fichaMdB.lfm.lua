@@ -5488,25 +5488,8 @@ require('mudaNick.lua')
     obj.scrollBox2:setAlign("client");
     obj.scrollBox2:setName("scrollBox2");
 
-    obj.fraCaracteristicasLayout = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.fraCaracteristicasLayout:setParent(obj.scrollBox2);
-    obj.fraCaracteristicasLayout:setAlign("top");
-    obj.fraCaracteristicasLayout:setHeight(500);
-    obj.fraCaracteristicasLayout:setMargins({left=10, right=10, top=10});
-    obj.fraCaracteristicasLayout:setAutoHeight(true);
-    obj.fraCaracteristicasLayout:setHorzAlign("center");
-    obj.fraCaracteristicasLayout:setLineSpacing(3);
-    obj.fraCaracteristicasLayout:setName("fraCaracteristicasLayout");
-    obj.fraCaracteristicasLayout:setStepSizes({310, 420, 640, 760, 1150});
-    obj.fraCaracteristicasLayout:setMinScaledWidth(300);
-    obj.fraCaracteristicasLayout:setVertAlign("leading");
-
-    obj.flowLineBreak3 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak3:setParent(obj.fraCaracteristicasLayout);
-    obj.flowLineBreak3:setName("flowLineBreak3");
-
     obj.flowLayout16 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout16:setParent(obj.fraCaracteristicasLayout);
+    obj.flowLayout16:setParent(obj.scrollBox2);
     obj.flowLayout16:setAutoHeight(true);
     obj.flowLayout16:setMinScaledWidth(290);
     obj.flowLayout16:setHorzAlign("center");
@@ -6644,9 +6627,9 @@ require('mudaNick.lua')
     obj.dataLink121:setField("contadoresMudaram");
     obj.dataLink121:setName("dataLink121");
 
-    obj.flowLineBreak4 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak4:setParent(obj.fraEquipamentoLayout);
-    obj.flowLineBreak4:setName("flowLineBreak4");
+    obj.flowLineBreak3 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak3:setParent(obj.fraEquipamentoLayout);
+    obj.flowLineBreak3:setName("flowLineBreak3");
 
     obj.flwPartEquipDefense = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flwPartEquipDefense:setParent(obj.fraEquipamentoLayout);
@@ -6695,9 +6678,9 @@ require('mudaNick.lua')
     obj.btnEquipDefenseNew:setWidth(160);
     obj.btnEquipDefenseNew:setMargins({top=4, bottom=4});
 
-    obj.flowLineBreak5 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak5:setParent(obj.fraEquipamentoLayout);
-    obj.flowLineBreak5:setName("flowLineBreak5");
+    obj.flowLineBreak4 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak4:setParent(obj.fraEquipamentoLayout);
+    obj.flowLineBreak4:setName("flowLineBreak4");
 
     obj.flowPart78 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart78:setParent(obj.fraEquipamentoLayout);
@@ -7191,9 +7174,9 @@ self.upperGridMagicBox3._RecalcSize();
     obj.editPENome:setHint("PENome");
     obj.editPENome:setFontSize(15);
 
-    obj.flowLineBreak6 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak6:setParent(obj.flowLayout21);
-    obj.flowLineBreak6:setName("flowLineBreak6");
+    obj.flowLineBreak5 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak5:setParent(obj.flowLayout21);
+    obj.flowLineBreak5:setName("flowLineBreak5");
 
     obj.rectangle5 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle5:setParent(obj.flowLayout21);
@@ -7202,9 +7185,9 @@ self.upperGridMagicBox3._RecalcSize();
     obj.rectangle5:setHeight(1);
     obj.rectangle5:setName("rectangle5");
 
-    obj.flowLineBreak7 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak7:setParent(obj.flowLayout21);
-    obj.flowLineBreak7:setName("flowLineBreak7");
+    obj.flowLineBreak6 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak6:setParent(obj.flowLayout21);
+    obj.flowLineBreak6:setName("flowLineBreak6");
 
     obj.fpPENivel = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.fpPENivel:setParent(obj.flowLayout21);
@@ -9387,9 +9370,9 @@ self.upperGridMagicBox3._RecalcSize();
     self.UpperGridCampo12:setHeight(self.edtUpperGridCampo12:getHeight() + self.labUpperGridCampo12:getHeight() + self.linUpperGridCampo12:getHeight());
 
 
-    obj.flowLineBreak8 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak8:setParent(obj.fraCompanionLayout);
-    obj.flowLineBreak8:setName("flowLineBreak8");
+    obj.flowLineBreak7 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak7:setParent(obj.fraCompanionLayout);
+    obj.flowLineBreak7:setName("flowLineBreak7");
 
     obj.flowLayout31 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout31:setParent(obj.fraCompanionLayout);
@@ -9468,9 +9451,9 @@ self.upperGridMagicBox3._RecalcSize();
     obj.label98:setFontSize(12);
     obj.label98:setFontColor("#D0D0D0");
 
-    obj.flowLineBreak9 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
-    obj.flowLineBreak9:setParent(obj.fraCompanionLayout);
-    obj.flowLineBreak9:setName("flowLineBreak9");
+    obj.flowLineBreak8 = GUI.fromHandle(_obj_newObject("flowLineBreak"));
+    obj.flowLineBreak8:setParent(obj.fraCompanionLayout);
+    obj.flowLineBreak8:setName("flowLineBreak8");
 
     obj.flowLayout32 = GUI.fromHandle(_obj_newObject("flowLayout"));
     obj.flowLayout32:setParent(obj.fraCompanionLayout);
@@ -19821,7 +19804,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.comboBox10 ~= nil then self.comboBox10:destroy(); self.comboBox10 = nil; end;
         if self.cbProfcompanionarcanismo ~= nil then self.cbProfcompanionarcanismo:destroy(); self.cbProfcompanionarcanismo = nil; end;
         if self.layout37 ~= nil then self.layout37:destroy(); self.layout37 = nil; end;
-        if self.fraCaracteristicasLayout ~= nil then self.fraCaracteristicasLayout:destroy(); self.fraCaracteristicasLayout = nil; end;
         if self.horzLine37 ~= nil then self.horzLine37:destroy(); self.horzLine37 = nil; end;
         if self.cbProfprestidigitacao ~= nil then self.cbProfprestidigitacao:destroy(); self.cbProfprestidigitacao = nil; end;
         if self.upperGridMagicBox3 ~= nil then self.upperGridMagicBox3:destroy(); self.upperGridMagicBox3 = nil; end;
@@ -20897,7 +20879,6 @@ self.upperGridMagicBox3._RecalcSize();
         if self.layout43 ~= nil then self.layout43:destroy(); self.layout43 = nil; end;
         if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
         if self.labupperGridMagicBox2 ~= nil then self.labupperGridMagicBox2:destroy(); self.labupperGridMagicBox2 = nil; end;
-        if self.flowLineBreak9 ~= nil then self.flowLineBreak9:destroy(); self.flowLineBreak9 = nil; end;
         if self.labProfiniciativa ~= nil then self.labProfiniciativa:destroy(); self.labProfiniciativa = nil; end;
         if self.horzLine61 ~= nil then self.horzLine61:destroy(); self.horzLine61 = nil; end;
         if self.layEquipAttackLeft ~= nil then self.layEquipAttackLeft:destroy(); self.layEquipAttackLeft = nil; end;
