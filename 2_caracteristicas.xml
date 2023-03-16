@@ -1,86 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form name="frmFichaRPGmeister9_svg" align="client" class="transparente vcenter" margins="{top=1}">
-<rectangle class="fundo" strokeColor="white" strokeSize="1">
-	<scrollBox align="client">
-
-		<template name="Descricao">
-			<label left="$(left1)" top="$(top)" width="90" height="20" text="$(text)" horzTextAlign="center"/>
-			<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
-		</template>
-		
-	<flowLayout class="tile" align="top" height="500" margins="{left=10, right=10, top=10}" autoHeight="true" horzAlign="center" lineSpacing="3" name="fraCaracteristicasLayout">
-	<flowLineBreak/>	
-
-	<!-- Primeira Linha -->
-	<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
-		<!-- PRIMEIRA COLUNA -->
-		<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
-		<!-- Descrição -->	
-		<layout left="10" top="10" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
-			<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center"/>
-			<comboBox left="100" top="10" width="100"  field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center"/>
-			<checkBox left="200" top="10" width="100" field="caracteristicas.quadrupede" text="Quadrúpede"/>
-
-			<Descricao left1="10" left2="110" top="38" text="SEXO" field="caracteristicas.sexo"/>
-			<Descricao left1="10" left2="110" top="65" text="OUTROS" field="caracteristicas.aparenciaOutros"/>
-
-			<Descricao left1="320" left2="420" top="10" text="PLANO" field="caracteristicas.plano"/>
-			<Descricao left1="320" left2="420" top="38" text="REGIÃO" field="caracteristicas.regiao"/>
-			<Descricao left1="320" left2="420" top="65" text="REINO" field="caracteristicas.reino"/>
-
-			<Descricao left1="620" left2="710" top="10" text="OLHOS" field="caracteristicas.aparenciaOlhos"/>
-			<Descricao left1="620" left2="710" top="38" text="PELE" field="caracteristicas.pele"/>
-			<Descricao left1="620" left2="710" top="65" text="CABELO" field="caracteristicas.cabelo"/>
-
-			<Descricao left1="900" left2="990" top="10" text="IDADE" field="caracteristicas.idade"/>
-			<Descricao left1="900" left2="990" top="38" text="ALTURA" field="caracteristicas.altura"/>
-			<Descricao left1="900" left2="990" top="65" text="PESO" field="caracteristicas.peso"/>
-		</layout >
-		</flowLayout>
-
-		<flowPart left="10" top="120" width="375" height="400" frameStyle="frames/panel4/frame.xml" margins="{left = 0, right = 4}">
-			<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true"/>
-			<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold"/>
-		</flowPart>
-
-		<!-- CARACTERISTICAS E TRACOS -->
-		<flowLayout class="tile" height="515" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
-		<flowPart  left="10" top="530" width="375" height="315" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}">
-			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
-			<textEditor left="10" top="30" width="355" height="265" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes"/>
-		</flowPart>
-
-		<!-- PERSONALIDADE, IDIOMA, VINCULOS, FRAQUEZAS -->
-		<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left=4, right=4}">
-		<flowPart  left="390" top="120" width="412" height="123" frameStyle="frames/panel4/frame.xml">
-			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="IDIOMAS"/>
-			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="idiomas"/>
-		</flowPart>
-
-		<flowPart  left="802" top="120" width="412" height="125" frameStyle="frames/panel4/frame.xml">
-			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="VÍNCULOS"/>
-			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="vinculos"/>
-		</flowPart>
-
-		<flowPart  left="390" top="248" width="412" height="123" frameStyle="frames/panel4/frame.xml">
-			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE"/>
-			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="personalidade"/>
-		</flowPart>
-
-		<flowPart left="802" top="248" width="412" height="125" frameStyle="frames/panel4/frame.xml">
-			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="FRAQUEZAS"/>
-			<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="fraquezas"/>
-		</flowPart>
-
-		<flowPart left="390" top="375" width="825" height="475" frameStyle="frames/panel4/frame.xml">
-			<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA"/>
-			<richEdit left="10" top="20" width="805" height="420" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white"/>
-		</flowPart >
-		</flowLayout>
-</flowLayout>
-
-	</flowLayout>
-	</flowLayout>
-	</scrollBox>
-</rectangle>
+	<rectangle class="fundo" strokeColor="white" strokeSize="1">
+		<scrollBox align="client">
+			<template name="Descricao">
+				<label left="$(left1)" top="$(top)" width="90" height="20" text="$(text)" horzTextAlign="center" />
+				<edit left="$(left2)" top="$(top)" width="200" height="25" field="$(field)" vertTextAlign="center" />
+			</template>
+			<!-- Primeira Linha -->
+			<flowLayout class="oneLineTile2" autoHeight="true" minScaledWidth="290" horzAlign="center" lineSpacing="10">
+				<!-- PRIMEIRA COLUNA -->
+				<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left = 4, right = 4}">
+					<!-- Descrição -->
+					<layout left="10" top="10" width="1205" height="105" frameStyle="frames/panel4transp/frame.xml">
+						<label left="10" top="10" width="90" height="20" text="TAMANHO" horzTextAlign="center" />
+						<comboBox left="100" top="10" width="100" field="caracteristicas.tamanho" fontColor="white" items="{'Minúsculo', 'Diminuto', 'Miúdo', 'Pequeno', 'Médio', 'Grande', 'Enorme', 'Imenso', 'Colossal'}" values="{'-4','-3','-2','-1','0','1','2','3','4'}" horzTextAlign="center" />
+						<checkBox left="200" top="10" width="100" field="caracteristicas.quadrupede" text="Quadrúpede" />
+						<Descricao left1="10" left2="110" top="38" text="SEXO" field="caracteristicas.sexo" />
+						<Descricao left1="10" left2="110" top="65" text="OUTROS" field="caracteristicas.aparenciaOutros" />
+						<Descricao left1="320" left2="420" top="10" text="PLANO" field="caracteristicas.plano" />
+						<Descricao left1="320" left2="420" top="38" text="REGIÃO" field="caracteristicas.regiao" />
+						<Descricao left1="320" left2="420" top="65" text="REINO" field="caracteristicas.reino" />
+						<Descricao left1="620" left2="710" top="10" text="OLHOS" field="caracteristicas.aparenciaOlhos" />
+						<Descricao left1="620" left2="710" top="38" text="PELE" field="caracteristicas.pele" />
+						<Descricao left1="620" left2="710" top="65" text="CABELO" field="caracteristicas.cabelo" />
+						<Descricao left1="900" left2="990" top="10" text="IDADE" field="caracteristicas.idade" />
+						<Descricao left1="900" left2="990" top="38" text="ALTURA" field="caracteristicas.altura" />
+						<Descricao left1="900" left2="990" top="65" text="PESO" field="caracteristicas.peso" />
+					</layout>
+				</flowLayout>
+				<flowPart left="10" top="120" width="375" height="400" frameStyle="frames/panel4/frame.xml" margins="{left = 0, right = 4}">
+					<image align="client" style="proportional" field="imagens.aparencia" class="transparente" margins="{top=2}" editable="true" animate="true" />
+					<label align="bottom" autoSize="true" text="APARENCIA" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" />
+				</flowPart>
+				<!-- CARACTERISTICAS E TRACOS -->
+				<flowLayout class="tile" height="515" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
+					<flowPart left="10" top="530" width="375" height="315" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}">
+						<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS" />
+						<textEditor left="10" top="30" width="355" height="265" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes" />
+					</flowPart>
+					<!-- PERSONALIDADE, IDIOMA, VINCULOS, FRAQUEZAS -->
+					<flowLayout maxControlsPerLine="1" autoHeight="true" class="tileCarac" lineSpacing="10" margins="{left=4, right=4}">
+						<flowPart left="390" top="120" width="412" height="123" frameStyle="frames/panel4/frame.xml">
+							<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="IDIOMAS" />
+							<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="idiomas" />
+						</flowPart>
+						<flowPart left="802" top="120" width="412" height="125" frameStyle="frames/panel4/frame.xml">
+							<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="VÍNCULOS" />
+							<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="vinculos" />
+						</flowPart>
+						<flowPart left="390" top="248" width="412" height="123" frameStyle="frames/panel4/frame.xml">
+							<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="PERSONALIDADE" />
+							<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="personalidade" />
+						</flowPart>
+						<flowPart left="802" top="248" width="412" height="125" frameStyle="frames/panel4/frame.xml">
+							<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="FRAQUEZAS" />
+							<textEditor left="10" top="20" width="392" height="61" class="transparente vcenter" field="fraquezas" />
+						</flowPart>
+						<flowPart left="390" top="375" width="825" height="475" frameStyle="frames/panel4/frame.xml">
+							<label align="bottom" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="HISTORIA" />
+							<richEdit left="10" top="20" width="805" height="420" class="transparente vcenter" field="background" backgroundColor="#333333" defaultFontSize="12" defaultFontColor="white" />
+						</flowPart>
+					</flowLayout>
+				</flowLayout>
+			</flowLayout>
+		</scrollBox>
+	</rectangle>
 </form>
