@@ -44,7 +44,7 @@
 		</flowPart>
 
 		<!-- CARACTERISTICAS E TRACOS -->
-		<flowPart class="tile" height="515" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
+		<flowLayout class="tile" height="515" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}" adjustHeightToLine="true">
 		<flowPart  left="10" top="530" width="375" height="315" frameStyle="frames/panel4/frame.xml" margins="{left = 4, right = 4}">
 			<label align="top" autoSize="true" vertTextAlign="center" horzTextAlign="center" fontStyle="bold" text="TRAÇOS"/>
 			<textEditor left="10" top="30" width="355" height="265" class="transparente vcenter" field="caracteristicas.caracteristicasETracoes"/>
@@ -78,8 +78,6 @@
 		</flowPart >
 		</flowLayout>
 
-
-	</flowLayout>
 	</flowLayout>
 	</scrollBox>
 </rectangle>
