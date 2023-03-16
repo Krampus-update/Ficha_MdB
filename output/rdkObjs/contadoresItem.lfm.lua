@@ -31,6 +31,10 @@ local function constructNew_frmContador()
     obj:setMargins({top=10});
 
 
+		
+
+
+
 			local function askForDelete()
 				Dialogs.confirmYesNo("Deseja realmente apagar este item?",
 									 function (confirmado)
@@ -40,6 +44,10 @@ local function constructNew_frmContador()
 									 end);
 			end;
 		
+
+
+
+	
 
 
     obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));

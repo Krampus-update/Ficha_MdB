@@ -29,6 +29,10 @@ local function constructNew_actions()
     obj:setName("actions");
 
 
+        
+
+
+
 			require("common.lua");
 			local function atualizarDesiredHeight()
 				local margins = self.layPrincipal.margins;
@@ -43,6 +47,10 @@ local function constructNew_actions()
 				self.height = h;
 			end;
             
+
+
+
+    
 
 
     obj.action_Frame = GUI.fromHandle(_obj_newObject("flowPart"));

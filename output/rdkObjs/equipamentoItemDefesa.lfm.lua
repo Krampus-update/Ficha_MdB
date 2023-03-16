@@ -28,6 +28,10 @@ local function constructNew_frmEquipamentoItemDefesa()
     obj:beginUpdate();
     obj:setName("frmEquipamentoItemDefesa");
 
+ 
+			
+
+
 
 			local function atualizarDesiredHeight()
 				local margins = self.layPrincipal.margins;
@@ -52,6 +56,10 @@ local function constructNew_frmEquipamentoItemDefesa()
 			end;
 				
 			
+
+
+		
+		
 
 
     obj.layMenu = GUI.fromHandle(_obj_newObject("layout"));
