@@ -5250,7 +5250,7 @@ require('mudaNick.lua')
     obj.flowLayout17:setVertAlign("leading");
 
     obj.layout59 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout59:setParent(obj.flowLayout16);
+    obj.layout59:setParent(obj.flowLayout17);
     obj.layout59:setLeft(10);
     obj.layout59:setTop(10);
     obj.layout59:setWidth(1205);
