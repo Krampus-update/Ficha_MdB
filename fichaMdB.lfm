@@ -11,9 +11,9 @@
 		</event>
 	</dataLink>
 	<tabControl align="client" name="pgcPrincipal">
-		<tab title="FRENTE">
+		<!-- <tab title="FRENTE">
 			<import file="1_frente.xml" />
-		</tab>
+		</tab> -->
 		<tab title="CARACTERISTICAS">
 			<import file="2_caracteristicas.xml" />
 		</tab>
