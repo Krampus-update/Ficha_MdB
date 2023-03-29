@@ -32,7 +32,9 @@ local function constructNew_frmMdB()
     obj:setName("frmMdB");
     obj:setTheme("dark");
 
-require('mudaNick.lua')
+
+		require('mudaNick.lua')
+	
 
 
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -16947,9 +16949,9 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event427 = obj.checkBox9:addEventListener("onChange",
         function (_)
             if sheet then
-            								self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
-            								self.historiaMerda:setVisible(not (sheet.historia.usarEditorFancy));
-            							end;
+            						self.historiaFancy:setVisible(sheet.historia.usarEditorFancy);
+            						self.historiaMerda:setVisible(not (sheet.historia.usarEditorFancy));
+            						end;
         end, obj);
 
     obj._e_event428 = obj.dataLink138:addEventListener("onChange",
@@ -18860,16 +18862,16 @@ self.upperGridMagicBox3._RecalcSize();
     obj._e_event706 = obj.checkBox10:addEventListener("onChange",
         function (_)
             if sheet then
-            							self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
-            							self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
+            						self.companionanotacoesFancy:setVisible(sheet.companion.anotacoes_melhorado);
+            						self.companionanotacoesMerda:setVisible(not (sheet.companion.anotacoes_melhorado));
             						end;
         end, obj);
 
     obj._e_event707 = obj.checkBox11:addEventListener("onChange",
         function (_)
             if sheet then
-            							self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
-            							self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
+            						self.anotacoesFancy:setVisible(sheet.outros.anotacoes_melhorado);
+            						self.anotacoesMerda:setVisible(not (sheet.outros.anotacoes_melhorado));
             						end;
         end, obj);
 
